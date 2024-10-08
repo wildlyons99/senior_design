@@ -1,4 +1,4 @@
 # Senior Design
-**With Tom and Jacob and Kinan and Drew and Cory**
+With **Tom** and **Jacob** and **Kinan** and **Drew** and **Cory**
 
-And away we go.
+> And away we go - Ghandi
