@@ -1,0 +1,21 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         21        100.0
+                               LUTGATE	          1        100.0
+                                LUTCCU	         20        100.0
+                                 IOBUF	         32        100.0
+                                   DSP	          2        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                            multiply32	          1        95.2
+---------------------------------------------------
+Report for cell multiply32
+   Instance path: top/mult_lut_test
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         20        95.2
+                                LUTCCU	         20        100.0
+                                   DSP	          2        100.0

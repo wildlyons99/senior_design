@@ -1,0 +1,20 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  0 of 5280 (0.000%)
+I/O cells:      32
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        10          100.0
+                              MAC16         2          100.0
+                                 OB        32          100.0
+SUB MODULES
+                         multiply32         1
+                              TOTAL        45
+----------------------------------------------------------------------
+Report for cell multiply32.v1
+Instance Path : mult_lut_test
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        10          100.0
+                              MAC16         2          100.0
+                              TOTAL        12
