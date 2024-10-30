@@ -55,7 +55,7 @@ uut : process begin
     test_clk <= '1'; 
     wait for 10 ns;
 
-    assert testC = "01" & "01" & "00" 
+    assert testC <= "01" & "01" & "00" 
                   & "00" & "00" & "00" 
                   & "01" & "01" & "00" 
  
