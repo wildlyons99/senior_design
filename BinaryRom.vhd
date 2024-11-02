@@ -30,7 +30,7 @@ begin
                 when "1101" => grayScale <= "00100111";
                 when "1110" => grayScale <= "00111010";
                 when "1111" => grayScale <= "00000000";
-                when others => grayScale <= "111111";
+                when others => grayScale <= "00000000";
         end case;
     end if;
     end process;
