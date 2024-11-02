@@ -14,23 +14,23 @@ begin
     process (clk) begin
         if rising_edge(clk) then
             case totaladr is
-                when "0000" => rgb <= "00000000";
-                when "0001" => rgb <= "00100101";
-                when "0010" => rgb <= "00100010";
-                when "0011" => rgb <= "00000000";
-                when "0100" => rgb <= "00000000";
-                when "0101" => rgb <= "01000110";
-                when "0110" => rgb <= "01010000";
-                when "0111" => rgb <= "00000000";
-                when "1000" => rgb <= "00000000";
-                when "1001" => rgb <= "01000001";
-                when "1010" => rgb <= "01010100";
-                when "1011" => rgb <= "00000000";
-                when "1100" => rgb <= "00000000";
-                when "1101" => rgb <= "00100111";
-                when "1110" => rgb <= "00111010";
-                when "1111" => rgb <= "00000000";
-                when others => rgb <= "111111";
+                when "0000" => grayScale <= "00000000";
+                when "0001" => grayScale <= "00100101";
+                when "0010" => grayScale <= "00100010";
+                when "0011" => grayScale <= "00000000";
+                when "0100" => grayScale <= "00000000";
+                when "0101" => grayScale <= "01000110";
+                when "0110" => grayScale <= "01010000";
+                when "0111" => grayScale <= "00000000";
+                when "1000" => grayScale <= "00000000";
+                when "1001" => grayScale <= "01000001";
+                when "1010" => grayScale <= "01010100";
+                when "1011" => grayScale <= "00000000";
+                when "1100" => grayScale <= "00000000";
+                when "1101" => grayScale <= "00100111";
+                when "1110" => grayScale <= "00111010";
+                when "1111" => grayScale <= "00000000";
+                when others => grayScale <= "111111";
         end case;
     end if;
     end process;
