@@ -18,6 +18,7 @@ begin
     process(clk) is
     begin 
         if rising_edge(clk) then 
+            -- Zero
             if(image_address = "0000") then 
                 rom_bytes(0)  <= "00000000";  
                 rom_bytes(1)  <= "00010010";  
@@ -36,6 +37,7 @@ begin
                 rom_bytes(13)  <= "00010011";  
                 rom_bytes(14)  <= "00000000";  
                 rom_bytes(15)  <= "00000000"; 
+                
             else 
                 for i in 0 to 15 loop
                     rom_bytes(i) <= "00000000";  
