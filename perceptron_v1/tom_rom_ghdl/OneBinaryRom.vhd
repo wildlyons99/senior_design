@@ -2,10 +2,10 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;entity BinaryRom is    port(
         clk : in std_logic;
-        totaladr : in unsigned(3 downto 0);
-        grayScale : out signed(7 downto 0)
+        totaladr: in unsigned(3 downto 0);
+        grayScale : out std_logic_vector(7 downto 0)
         );
-end BinaryRom;
+end OneBinaryRom;
 
 architecture synth of BinaryRom is
 
