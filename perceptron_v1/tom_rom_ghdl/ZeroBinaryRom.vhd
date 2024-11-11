@@ -2,14 +2,14 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity image is port(
+entity zero_image is port(
     clk : in std_logic;
     totaladr : in unsigned(3 downto 0);
     grayScale : out signed(7 downto 0)
     );
-end image;
+end zero_image;
 
-architecture synth of image is
+architecture synth of zero_image is
 begin
     process (clk) begin
         if rising_edge(clk) then
