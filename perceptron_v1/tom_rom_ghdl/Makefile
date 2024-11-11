@@ -10,7 +10,7 @@ perceptron1:
 	@$(GHDL) -r $(VERS) perceptron1_testbench
 
 perceptron:
-	@$(GHDL) -a $(VERS) perceptron.vhd ZeroBinaryRom.vhd WeightsRom.vhd perceptron1_tb.vhd
+	@$(GHDL) -a $(VERS) perceptron.vhd ZeroBinaryRom.vhd WeightsRom.vhd perceptron_tb.vhd
 	@$(GHDL) -e $(VERS) perceptron_testbench
 	@$(GHDL) -r $(VERS) perceptron_testbench
 
