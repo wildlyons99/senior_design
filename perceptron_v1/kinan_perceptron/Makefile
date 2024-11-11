@@ -1,15 +1,17 @@
 GHDL=ghdl
-# VERS="--std=08"
 
-# IMPORTANT: do not change the names of the testbench files or entities here
-# instead, ensure that YOUR testbench files and entity names match the ones here
+all: mult percept
 
-all: compile run
-
-compile:
+# Target for mult
+mult: 
 	@$(GHDL) -a array_pkg.vhd
 	@$(GHDL) -a mult.vhd mult_tb.vhd 
 	@$(GHDL) -e mult_tb
-
-run: 
 	@$(GHDL) -r mult_tb 
+
+# Target for percept
+percept:
+	@$(GHDL) -a array_pkg.vhd
+	@$(GHDL) -a perceptron_v1.vhd perceptron_v1_tb.vhd
+	@$(GHDL) -e perceptron_v1_tb
+	@$(GHDL) -r perceptron_v1_tb 
