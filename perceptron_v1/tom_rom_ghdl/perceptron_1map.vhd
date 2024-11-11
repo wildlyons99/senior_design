@@ -10,7 +10,7 @@ entity perceptron1 is port(
 end perceptron1;
 
 architecture behavioral of perceptron1 is
-    component image is port(
+    component OneBinaryRom is port(
         clk       : in std_logic;
         totaladr  : in unsigned(3 downto 0);
         grayScale : out signed(7 downto 0)
@@ -44,7 +44,7 @@ architecture behavioral of perceptron1 is
 begin
     -- port mapping to ROM to get pixel values of 1 image
     -- (image 1)
-    b: image port map(
+    b: OneBinaryRom port map(
         clk       => clk,
         totaladr  => index,
         grayScale => pixel_val
