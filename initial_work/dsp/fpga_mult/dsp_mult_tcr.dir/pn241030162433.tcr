@@ -1,0 +1,14 @@
+#Start recording tcl command: 10/30/2024 16:15:59
+#Project Location: Z:/senior_design/vhdl/dsp/fpga_mult; Project name: dsp_mult
+prj_open "Z:/senior_design/vhdl/dsp/fpga_mult/dsp_mult.rdf"
+prj_add_source "Z:/senior_design/vhdl/dsp/fpga_mult/source/impl_1/top.vhd"
+prj_add_source "Z:/senior_design/vhdl/dsp/fpga_mult/source/impl_1/mult32.vhd"
+prj_add_source "Z:/senior_design/vhdl/dsp/fpga_mult/source/impl_1/topvhd.vhd"
+prj_remove_source "Z:/senior_design/vhdl/dsp/fpga_mult/source/impl_1/top.vhd"
+prj_remove_source "Z:/senior_design/vhdl/dsp/fpga_mult/source/impl_1/mult32.vhd"
+prj_add_source "Z:/senior_design/vhdl/dsp/fpga_mult/source/impl_1/multiply32.vhd"
+prj_set_impl_opt -impl "impl_1" "top" "top"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 10/30/2024 16:24:33
