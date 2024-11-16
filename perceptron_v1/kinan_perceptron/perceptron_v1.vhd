@@ -15,14 +15,6 @@ end perceptron_v1;
 
 architecture structural of perceptron_v1 is 
 
-component mult is 
-    port(
-        clk : in std_logic;
-        input : in byte_array;
-        output : out std_logic_vector(15 downto 0)
-    );
-end component mult;
-
 component rom is 
     port(
         clk : in std_logic;
@@ -30,6 +22,14 @@ component rom is
         output_array : out byte_array
     );
 end component rom;
+
+component mult is 
+    port(
+        clk : in std_logic;
+        input : in byte_array;
+        output : out std_logic_vector(15 downto 0)
+    );
+end component mult;
 
 component activation is 
     port(
@@ -39,7 +39,7 @@ component activation is
 end component activation;
 
 signal image_data : byte_array;
-signal perceptron_output : std_logic_vector(15 downto 0);
+signal perceptron_output : std_logic_vector(15 downto 0) := (others => '0');
 
 begin 
     memory : rom port map(

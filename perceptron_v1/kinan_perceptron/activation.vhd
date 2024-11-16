@@ -11,6 +11,6 @@ end activation;
 
 architecture dataflow of activation is 
 begin 
-    output <= '1' when (signed(input_vector) > 0) else '0';
+    prediction <= '1' when (signed(input_vector) > 0) else '0';
 
 end dataflow;

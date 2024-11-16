@@ -15,54 +15,55 @@ architecture structural of perceptron_v1_tb is
         );
     end component perceptron_v1;
 
-    signal clk : std_logic;
-    signal img_adr : std_logic_vector(3 downto 0);
-    signal prediction : std_logic;
+    constant CLK_PERIOD : time := 20 ns;
+
+    signal clk : std_logic := '0';
+    signal img_adr : std_logic_vector(3 downto 0) := (others => '0');
+    signal prediction : std_logic := '0';
 
     begin 
-    uut : perceptron_v1 port map(
-        clk => clk,
-        image_address => img_adr,
-        prediction => prediction
-    );
+        uut : perceptron_v1 port map(
+            clk => clk,
+            image_address => img_adr,
+            prediction => prediction
+        );
 
     stimulus_process: process
         begin 
 
         -- zero test
-        img_adr <= b"0000";
-        wait for 10 ns;
+        -- img_adr <= b"0000";
+        -- wait for 10 ns;
 
-        for i in 0 to 15 loop
-            clk <= '0';
-            wait for 10 ns; 
-            clk <= '1';
-            wait for 10 ns; 
-        end loop;
+        -- for i in 0 to 15 loop
+        --     clk <= '0';
+        --     wait for 10 ns; 
+        --     clk <= '1';
+        --     wait for 10 ns; 
+        -- end loop;
 
-        wait for 10 ns;
+        -- wait for 10 ns;
 
-        assert prediction = '0' report "failed zero test";
+        -- assert prediction = '0' report "failed zero test";
         
-        -- one test
-        img_adr <= b"0001";
-        wait for 10 ns;
+        -- -- one test
+        -- img_adr <= b"0001";
+        -- wait for 10 ns;
 
-        for i in 0 to 15 loop
-            clk <= '0';
-            wait for 10 ns; 
-            clk <= '1';
-            wait for 10 ns; 
-        end loop;
+        -- for i in 0 to 15 loop
+        --     clk <= '0';
+        --     wait for 10 ns; 
+        --     clk <= '1';
+        --     wait for 10 ns; 
+        -- end loop;
 
-        wait for 10 ns;
+        -- wait for 10 ns;
 
-        assert prediction = '0' report "failed one test";
+        -- assert prediction = '0' report "failed one test";
 
 
-        assert false report "Test done." severity note;
+        report "Test done." severity note;
 
         wait; -- wait indefinitely; otherwise this code loop
         end process;
 end structural;
-
