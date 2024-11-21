@@ -40,7 +40,7 @@ architecture structural of perceptron_v1_tb is
             wait for 10 ns; 
             clk <= '1';
             wait for 10 ns; 
-            report "Prediction= " & std_logic'image(prediction);
+            -- report "Prediction= " & std_logic'image(prediction);
         end loop;
 
         wait for 10 ns;
@@ -50,15 +50,12 @@ architecture structural of perceptron_v1_tb is
         -- one test
         img_adr <= b"0001";
         wait for 10 ns;
-
-        report "booooooom";
         
         for i in 0 to 15 loop
             clk <= '0';
             wait for 10 ns; 
             clk <= '1';
             wait for 10 ns; 
-            report "Prediction= " & std_logic'image(prediction);
         end loop;
 
         wait for 10 ns;
