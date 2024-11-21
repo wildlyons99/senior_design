@@ -1,13 +1,13 @@
 GHDL=ghdl
 
-all: percept
+all: percept mult
 
 # Target for mult
-# mult: 
-# 	@$(GHDL) -a array_pkg.vhd
-# 	@$(GHDL) -a mult.vhd mult_tb.vhd 
-# 	@$(GHDL) -e mult_tb
-# 	@$(GHDL) -r mult_tb 
+mult: 
+	@$(GHDL) -a array_pkg.vhd
+	@$(GHDL) -a mult.vhd mult_tb.vhd 
+	@$(GHDL) -e mult_tb
+	@$(GHDL) -r mult_tb 
 
 # Target for percept
 percept:

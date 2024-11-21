@@ -26,6 +26,7 @@ end component rom;
 component mult is 
     port(
         clk : in std_logic;
+        reset : in std_logic;
         input : in byte_array;
         output : out std_logic_vector(15 downto 0)
     );
@@ -39,6 +40,7 @@ component activation is
 end component activation;
 
 signal image_data : byte_array;
+signal rst : std_logic := '0';
 signal perceptron_output : std_logic_vector(15 downto 0) := (others => '0');
 
 begin 
@@ -50,6 +52,7 @@ begin
 
     perceptron : mult port map(
         clk             => clk,
+        reset           => rst,
         input           => image_data,
         output          => perceptron_output
     );

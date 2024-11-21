@@ -32,34 +32,38 @@ architecture structural of perceptron_v1_tb is
         begin 
 
         -- zero test
-        -- img_adr <= b"0000";
-        -- wait for 10 ns;
+        img_adr <= b"0000";
+        wait for 10 ns;
 
-        -- for i in 0 to 15 loop
-        --     clk <= '0';
-        --     wait for 10 ns; 
-        --     clk <= '1';
-        --     wait for 10 ns; 
-        -- end loop;
+        for i in 0 to 15 loop
+            clk <= '0';
+            wait for 10 ns; 
+            clk <= '1';
+            wait for 10 ns; 
+            report "Prediction= " & std_logic'image(prediction);
+        end loop;
 
-        -- wait for 10 ns;
+        wait for 10 ns;
 
-        -- assert prediction = '0' report "failed zero test";
+        assert prediction = '0' report "failed zero test";
         
-        -- -- one test
-        -- img_adr <= b"0001";
-        -- wait for 10 ns;
+        -- one test
+        img_adr <= b"0001";
+        wait for 10 ns;
 
-        -- for i in 0 to 15 loop
-        --     clk <= '0';
-        --     wait for 10 ns; 
-        --     clk <= '1';
-        --     wait for 10 ns; 
-        -- end loop;
+        report "booooooom";
+        
+        for i in 0 to 15 loop
+            clk <= '0';
+            wait for 10 ns; 
+            clk <= '1';
+            wait for 10 ns; 
+            report "Prediction= " & std_logic'image(prediction);
+        end loop;
 
-        -- wait for 10 ns;
+        wait for 10 ns;
 
-        -- assert prediction = '0' report "failed one test";
+        assert prediction = '1' report "failed one test";
 
 
         report "Test done." severity note;
