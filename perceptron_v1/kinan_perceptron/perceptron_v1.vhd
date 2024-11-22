@@ -6,12 +6,11 @@ use work.array_pkg.ALL;
 entity perceptron_v1 is
     port(
         clk : in std_logic;
+        rst : in std_logic;
         image_address : in std_logic_vector(3 downto 0);
         prediction : out std_logic
     );
 end perceptron_v1;
-
-
 
 architecture structural of perceptron_v1 is 
 
@@ -40,7 +39,6 @@ component activation is
 end component activation;
 
 signal image_data : byte_array;
-signal rst : std_logic := '0';
 signal perceptron_output : std_logic_vector(15 downto 0) := (others => '0');
 
 begin 
