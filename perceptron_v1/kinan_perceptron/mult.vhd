@@ -53,8 +53,6 @@ architecture behavioral of mult is
                 else
                     -- End of calculation
                     output <= std_logic_vector(temp_output); 
-                    count <= 0;
-                    temp_output <= bias; 
                 end if;
             end if;
         end process;
