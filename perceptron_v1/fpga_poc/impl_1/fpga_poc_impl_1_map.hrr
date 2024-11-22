@@ -1,0 +1,33 @@
+---------------------------------------------------
+Report for cell perceptron_v1
+   Instance path: perceptron_v1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        264        100.0
+                               LUTGATE	        204        100.0
+                                LUTCCU	         60        100.0
+                                 IOBUF	         12        100.0
+                                PFUREG	        172        100.0
+                                   DSP	          1        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                                  mult	          1        48.9
+                                   rom	          1        13.6
+---------------------------------------------------
+Report for cell mult
+   Instance path: perceptron_v1/perceptron
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        129        48.9
+                               LUTGATE	         77        37.7
+                                LUTCCU	         52        86.7
+                                PFUREG	         64        37.2
+                                   DSP	          1        100.0
+---------------------------------------------------
+Report for cell rom
+   Instance path: perceptron_v1/memory
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         36        13.6
+                               LUTGATE	         36        17.6
+                                PFUREG	         96        55.8
