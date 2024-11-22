@@ -1,0 +1,5 @@
+
+Depreciated code - ROM less good for parallel output anway
+Currently having Metavalue errors 
+
+Use kinan_perceptron code - Byte Array for parallelism

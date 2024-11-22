@@ -5,6 +5,7 @@ use IEEE.numeric_std.all;
 entity perceptron is port(
         clk    : in std_logic; 
         enable : in std_logic; 
+        testing_sum : out signed(15 downto 0); 
         binary_class : out std_logic 
     );
 end perceptron;
@@ -42,6 +43,7 @@ architecture behavioral of perceptron is
     signal bias_val : signed(15 downto 0) := 16b"0"; 
 
 begin
+    sum <= testing_sum; 
     -- port mapping to ROM to get pixel values of 1 image
     -- (image 1)
     b: zero_image port map(
@@ -64,10 +66,12 @@ begin
     begin
         if rising_edge(clk) then
             case state is
-                when init =>
+                when INIT =>
                     if enable = '1' then 
                         state <= mult;
                         bias_val <= b"0000000001100000";
+                        
+                        sum <= to_signed(0, sum'length); 
                     end if; 
                 when MULT =>
                     temp_result <= pixel_val * weight; 

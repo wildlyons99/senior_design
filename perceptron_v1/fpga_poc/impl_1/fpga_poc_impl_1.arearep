@@ -1,0 +1,34 @@
+----------------------------------------------------------------------
+Report for cell perceptron_v1.TECH
+Register bits:  172 of 5280 (3.258%)
+I/O cells:      12
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        30          100.0
+                            FD1P3XZ       172          100.0
+                                 IB         4          100.0
+                               LUT4       134          100.0
+                              MAC16         1          100.0
+                                 OB         8          100.0
+SUB MODULES
+                               mult         1
+                                rom         1
+                              TOTAL       351
+----------------------------------------------------------------------
+Report for cell mult.v1
+Instance Path : perceptron
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        26           86.7
+                            FD1P3XZ        64           37.2
+                               LUT4        77           57.5
+                              MAC16         1          100.0
+                              TOTAL       168
+----------------------------------------------------------------------
+Report for cell rom.v1
+Instance Path : memory
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ        96           55.8
+                               LUT4        36           26.9
+                              TOTAL       132
