@@ -1,0 +1,36 @@
+#Start recording tcl command: 11/2/2024 15:52:26
+#Project Location: Z:/es4_ta_resources/nunchuck_testing; Project name: nunchuck_testing
+prj_open "Z:/es4_ta_resources/nunchuck_testing/nunchuck_testing.rdf"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_add_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top2.vhd"
+prj_disable_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top.vhd"
+prj_set_impl_opt -impl "impl_1" "top" "top"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Map -impl impl_1
+prj_disable_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top2.vhd"
+prj_enable_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top.vhd"
+prj_run Export -impl impl_1
+prj_disable_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top.vhd"
+prj_add_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top3.vhd"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_disable_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top3.vhd"
+prj_enable_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top.vhd"
+prj_run Map -impl impl_1
+prj_add_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top4.vhd"
+prj_disable_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top.vhd"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_disable_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top4.vhd"
+prj_enable_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top.vhd"
+prj_run Export -impl impl_1
+#Stop recording: 11/2/2024 17:03:41

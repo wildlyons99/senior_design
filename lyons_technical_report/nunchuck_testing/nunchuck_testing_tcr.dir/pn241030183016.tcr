@@ -1,0 +1,5 @@
+#Start recording tcl command: 10/30/2024 18:27:15
+#Project Location: Z:/es4_ta_resources/nunchuck_testing; Project name: nunchuck_testing
+prj_open "Z:/es4_ta_resources/nunchuck_testing/nunchuck_testing.rdf"
+prj_close
+#Stop recording: 10/30/2024 18:30:16

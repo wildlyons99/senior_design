@@ -1,0 +1,28 @@
+#Start recording tcl command: 11/14/2024 18:27:49
+#Project Location: Z:/es4_ta_resources/nunchuck_testing; Project name: nunchuck_testing
+prj_open "Z:/es4_ta_resources/nunchuck_testing/nunchuck_testing.rdf"
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_disable_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top.vhd"
+prj_enable_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top2.vhd"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 11/14/2024 20:21:49
