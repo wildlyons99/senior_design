@@ -1,6 +1,6 @@
 Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
-Thu Nov 21 21:18:59 2024
+Thu Nov 21 21:48:00 2024
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 	fpga_poc_impl_1_map.udb fpga_poc_impl_1.udb 

@@ -1,0 +1,43 @@
+----------------------------------------------------------------------
+Report for cell perceptron_v2.TECH
+Register bits:  176 of 5280 (3.333%)
+I/O cells:      9
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        30          100.0
+                            FD1P3XZ       176          100.0
+                                 IB         9          100.0
+                               LUT4       146          100.0
+                              MAC16         1          100.0
+                                 OB         7          100.0
+SUB MODULES
+                         activation         1
+                               mult         1
+                                rom         1
+                              TOTAL       372
+----------------------------------------------------------------------
+Report for cell mult.v1
+Instance Path : perceptron
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        26           86.7
+                            FD1P3XZ        64           36.4
+                               LUT4        68           46.6
+                              MAC16         1          100.0
+                              TOTAL       159
+----------------------------------------------------------------------
+Report for cell rom.v1
+Instance Path : memory
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ        96           54.5
+                                 IB         7           77.8
+                               LUT4        54           37.0
+                              TOTAL       157
+----------------------------------------------------------------------
+Report for cell activation.v1
+Instance Path : activator
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         5            3.4
+                              TOTAL         5
