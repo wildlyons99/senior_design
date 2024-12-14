@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Nov 21 21:18:53 2024
+Thu Nov 21 21:47:51 2024
 
 
 Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f fpga_poc_impl_1_lattice.synproj -gui -msgset Z:/senior_design/perceptron_v1/fpga_poc/promote.xml 
@@ -367,9 +367,9 @@ Top 10 highest fanout non-clock nets:
   Net : perceptron_output_0__N_16, loads : 16
 ################### End Clock Report ##################
 
-Peak Memory Usage: 106 MB
+Peak Memory Usage: 107 MB
 
 --------------------------------------------------------------
-Total CPU Time: 2 secs 
-Total REAL Time: 4 secs 
+Total CPU Time: 3 secs 
+Total REAL Time: 5 secs 
 --------------------------------------------------------------

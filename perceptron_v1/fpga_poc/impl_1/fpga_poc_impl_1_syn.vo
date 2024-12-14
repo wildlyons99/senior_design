@@ -1,0 +1,6092 @@
+module \rom  (
+    output \image_data[7][1] ,
+    (* \is_clock =1 ,
+       \lineinfo ="@0(69[8],69[11])" *)
+    input \clk ,
+    output \image_data[6][6] ,
+    input \image_address_c_0 ,
+    input \image_address_c_2 ,
+    output \image_data[6][5] ,
+    output \image_data[6][4] ,
+    output \image_data[6][3] ,
+    output \image_data[6][2] ,
+    output \image_data[6][1] ,
+    output \image_data[5][6] ,
+    output \image_data[5][5] ,
+    output \image_data[5][4] ,
+    output \image_data[5][3] ,
+    output \image_data[5][2] ,
+    output \image_data[2][4] ,
+    output \image_data[2][3] ,
+    output \image_data[2][1] ,
+    output \image_data[1][4] ,
+    input \rom_bytes_10__5__N_58 ,
+    input \rom_bytes_10__3__N_61 ,
+    output \image_data[1][2] ,
+    output \image_data[2][0] ,
+    output \image_data[5][1] ,
+    output \image_data[6][0] ,
+    output \image_data[7][0] ,
+    output \image_data[8][0] ,
+    output \image_data[9][0] ,
+    output \image_data[10][0] ,
+    output \image_data[11][0] ,
+    output \image_data[12][0] ,
+    output \image_data[13][0] ,
+    output \image_data[14][0] ,
+    input \image_address_c_1 ,
+    output \image_data[14][3] ,
+    output \image_data[14][2] ,
+    output \image_data[13][5] ,
+    output \image_data[13][4] ,
+    output \image_data[13][3] ,
+    output \image_data[13][1] ,
+    output \image_data[12][2] ,
+    output \image_data[11][5] ,
+    output \image_data[11][4] ,
+    output \image_data[10][6] ,
+    output \image_data[10][5] ,
+    output \image_data[10][3] ,
+    output \image_data[10][2] ,
+    output \image_data[10][1] ,
+    output \image_data[9][5] ,
+    output \image_data[9][4] ,
+    output \image_data[9][2] ,
+    output \image_data[9][1] ,
+    output \image_data[8][3] ,
+    output \image_data[7][4] ,
+    input \rom_bytes_2__4__N_33 ,
+    input \rom_bytes_5__2__N_39 ,
+    input \rom_bytes_9__4__N_52 ,
+    input \rom_bytes_9__0__N_55 ,
+    input \rom_bytes_5__1__N_40 ,
+    input \rom_bytes_10__1__N_63 ,
+    input \rom_bytes_10__4__N_59 ,
+    input \rom_bytes_1__2__N_32 ,
+    input \rom_bytes_11__4__N_66 ,
+    input \rom_bytes_13__1__N_75 ,
+    input \rom_bytes_13__3__N_73 ,
+    input \rom_bytes_14__4__N_77 ,
+    input \GND_net ,
+    input \VCC_net );
+
+    wire \rom_bytes_6__1__N_45 ;
+
+    wire \rom_bytes_14__3__N_78 ;
+
+    wire \rom_bytes_13__5__N_71 ;
+
+    wire \rom_bytes_13__4__N_72 ;
+
+    wire \rom_bytes_13__2__N_74 ;
+
+    wire \rom_bytes_12__2__N_69 ;
+
+    wire \rom_bytes_11__5__N_65 ;
+
+    wire \rom_bytes_11__2__N_67 ;
+
+    wire \rom_bytes_10__6__N_56 ;
+
+    wire \rom_bytes_10__5__N_57 ;
+
+    wire \rom_bytes_10__3__N_60 ;
+
+    wire \rom_bytes_10__2__N_62 ;
+
+    wire \rom_bytes_9__5__N_51 ;
+
+    wire \rom_bytes_2__0__N_36 ;
+
+    wire \rom_bytes_7__0__N_47 ;
+
+    wire \rom_bytes_8__0__N_50 ;
+
+    wire \rom_bytes_10__0__N_64 ;
+
+    wire \rom_bytes_11__0__N_68 ;
+
+    wire \rom_bytes_13__0__N_76 ;
+
+    wire \rom_bytes_14__0__N_80 ;
+
+    wire \rom_bytes_9__2__N_53 ;
+
+    wire \rom_bytes_9__1__N_54 ;
+
+    wire \rom_bytes_8__3__N_48 ;
+
+    wire \rom_bytes_7__4__N_46 ;
+
+    wire \rom_bytes_6__6__N_41 ;
+
+    wire \rom_bytes_6__4__N_42 ;
+
+    wire \rom_bytes_6__3__N_43 ;
+
+    wire \rom_bytes_6__2__N_44 ;
+
+    wire \rom_bytes_5__4__N_37 ;
+
+    wire \rom_bytes_5__3__N_38 ;
+
+    wire \rom_bytes_1__4__N_31 ;
+
+    wire \rom_bytes_12__0__N_70 ;
+
+    wire \rom_bytes_2__1__N_35 ;
+
+    wire \rom_bytes_2__3__N_34 ;
+
+    wire \rom_bytes_8__2__N_49 ;
+
+    wire \rom_bytes_14__2__N_79 ;
+
+    wire [7:0] \rom_bytes[8] ;
+
+    wire [7:0] \rom_bytes[6] ;
+
+    wire [7:0] \rom_bytes[10] ;
+
+    wire [7:0] \rom_bytes[11] ;
+
+    wire [7:0] \rom_bytes[14] ;
+
+    wire [7:0] \rom_bytes[5] ;
+
+    wire [7:0] \rom_bytes[2] ;
+
+    wire [7:0] \rom_bytes[1] ;
+
+    wire [7:0] \rom_bytes[13] ;
+
+    wire [7:0] \rom_bytes[12] ;
+
+    wire [7:0] \rom_bytes[9] ;
+
+    wire [7:0] \rom_bytes[7] ;
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_6__6__I_0 (
+      .\D (\rom_bytes[6] [6]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[6][6] ));
+    defparam \rom_bytes_6__6__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_6__6__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_10__4__I_0 (
+      .\D (\rom_bytes[10] [4]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[6][5] ));
+    defparam \rom_bytes_10__4__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_10__4__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0x6666" ,
+       \lut_function ="(!(A (B)+!A !(B)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i15_2_lut (
+      .\A (\image_address_c_0 ),
+      .\B (\image_address_c_2 ),
+      .\Z (\rom_bytes_6__1__N_45 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i15_2_lut .INIT = "0x6666";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_6__4__I_0 (
+      .\D (\rom_bytes[6] [4]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[6][4] ));
+    defparam \rom_bytes_6__4__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_6__4__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_6__3__I_0 (
+      .\D (\rom_bytes[6] [3]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[6][3] ));
+    defparam \rom_bytes_6__3__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_6__3__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_6__2__I_0 (
+      .\D (\rom_bytes[6] [2]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[6][2] ));
+    defparam \rom_bytes_6__2__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_6__2__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_6__1__I_0 (
+      .\D (\rom_bytes[6] [1]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[6][1] ));
+    defparam \rom_bytes_6__1__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_6__1__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_11__2__I_0 (
+      .\D (\rom_bytes[11] [2]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[5][6] ));
+    defparam \rom_bytes_11__2__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_11__2__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_14__4__I_0 (
+      .\D (\rom_bytes[14] [4]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[5][5] ));
+    defparam \rom_bytes_14__4__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_14__4__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_5__4__I_0 (
+      .\D (\rom_bytes[5] [4]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[5][4] ));
+    defparam \rom_bytes_5__4__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_5__4__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_5__3__I_0 (
+      .\D (\rom_bytes[5] [3]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[5][3] ));
+    defparam \rom_bytes_5__3__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_5__3__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_5__2__I_0 (
+      .\D (\rom_bytes[5] [2]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[5][2] ));
+    defparam \rom_bytes_5__2__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_5__2__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_2__4__I_0 (
+      .\D (\rom_bytes[2] [4]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[2][4] ));
+    defparam \rom_bytes_2__4__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_2__4__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_2__3__I_0 (
+      .\D (\rom_bytes[2] [3]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[2][3] ));
+    defparam \rom_bytes_2__3__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_2__3__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_2__1__I_0 (
+      .\D (\rom_bytes[2] [1]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[2][1] ));
+    defparam \rom_bytes_2__1__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_2__1__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_1__4__I_0 (
+      .\D (\rom_bytes[1] [4]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[1][4] ));
+    defparam \rom_bytes_1__4__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_1__4__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_14__3__I_179 (
+      .\D (\rom_bytes_14__3__N_78 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[14] [3]));
+    defparam \rom_bytes_14__3__I_179 .REGSET = "RESET";
+    defparam \rom_bytes_14__3__I_179 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_13__5__I_165 (
+      .\D (\rom_bytes_13__5__N_71 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[13] [5]));
+    defparam \rom_bytes_13__5__I_165 .REGSET = "RESET";
+    defparam \rom_bytes_13__5__I_165 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_13__4__I_167 (
+      .\D (\rom_bytes_13__4__N_72 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[13] [4]));
+    defparam \rom_bytes_13__4__I_167 .REGSET = "RESET";
+    defparam \rom_bytes_13__4__I_167 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_13__2__I_171 (
+      .\D (\rom_bytes_13__2__N_74 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[13] [2]));
+    defparam \rom_bytes_13__2__I_171 .REGSET = "RESET";
+    defparam \rom_bytes_13__2__I_171 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_12__2__I_161 (
+      .\D (\rom_bytes_12__2__N_69 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[12] [2]));
+    defparam \rom_bytes_12__2__I_161 .REGSET = "RESET";
+    defparam \rom_bytes_12__2__I_161 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_11__5__I_154 (
+      .\D (\rom_bytes_11__5__N_65 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[11] [5]));
+    defparam \rom_bytes_11__5__I_154 .REGSET = "RESET";
+    defparam \rom_bytes_11__5__I_154 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_11__2__I_158 (
+      .\D (\rom_bytes_11__2__N_67 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[11] [2]));
+    defparam \rom_bytes_11__2__I_158 .REGSET = "RESET";
+    defparam \rom_bytes_11__2__I_158 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_10__6__I_140 (
+      .\D (\rom_bytes_10__6__N_56 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[10] [6]));
+    defparam \rom_bytes_10__6__I_140 .REGSET = "RESET";
+    defparam \rom_bytes_10__6__I_140 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_10__5__I_142 (
+      .\D (\rom_bytes_10__5__N_57 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\rom_bytes_10__5__N_58 ),
+      .\Q (\rom_bytes[10] [5]));
+    defparam \rom_bytes_10__5__I_142 .REGSET = "RESET";
+    defparam \rom_bytes_10__5__I_142 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="SET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:::REGSET=SET SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_10__3__I_146 (
+      .\D (\rom_bytes_10__3__N_60 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\rom_bytes_10__3__N_61 ),
+      .\Q (\rom_bytes[10] [3]));
+    defparam \rom_bytes_10__3__I_146 .REGSET = "SET";
+    defparam \rom_bytes_10__3__I_146 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_10__2__I_148 (
+      .\D (\rom_bytes_10__2__N_62 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[10] [2]));
+    defparam \rom_bytes_10__2__I_148 .REGSET = "RESET";
+    defparam \rom_bytes_10__2__I_148 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_9__5__I_130 (
+      .\D (\rom_bytes_9__5__N_51 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[9] [5]));
+    defparam \rom_bytes_9__5__I_130 .REGSET = "RESET";
+    defparam \rom_bytes_9__5__I_130 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_2__0__I_100 (
+      .\D (\rom_bytes_2__0__N_36 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[2] [0]));
+    defparam \rom_bytes_2__0__I_100 .REGSET = "RESET";
+    defparam \rom_bytes_2__0__I_100 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_7__0__I_122 (
+      .\D (\rom_bytes_7__0__N_47 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\image_address_c_0 ),
+      .\Q (\rom_bytes[7] [0]));
+    defparam \rom_bytes_7__0__I_122 .REGSET = "RESET";
+    defparam \rom_bytes_7__0__I_122 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_8__0__I_128 (
+      .\D (\rom_bytes_8__0__N_50 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[8] [0]));
+    defparam \rom_bytes_8__0__I_128 .REGSET = "RESET";
+    defparam \rom_bytes_8__0__I_128 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_10__0__I_152 (
+      .\D (\rom_bytes_10__0__N_64 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[10] [0]));
+    defparam \rom_bytes_10__0__I_152 .REGSET = "RESET";
+    defparam \rom_bytes_10__0__I_152 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \image_address_c_2_I_0 (
+      .\D (\image_address_c_2 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\rom_bytes_11__0__N_68 ),
+      .\Q (\rom_bytes[11] [0]));
+    defparam \image_address_c_2_I_0 .REGSET = "RESET";
+    defparam \image_address_c_2_I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_13__0__I_175 (
+      .\D (\rom_bytes_13__0__N_76 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[13] [0]));
+    defparam \rom_bytes_13__0__I_175 .REGSET = "RESET";
+    defparam \rom_bytes_13__0__I_175 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_14__0__I_183 (
+      .\D (\rom_bytes_14__0__N_80 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[14] [0]));
+    defparam \rom_bytes_14__0__I_183 .REGSET = "RESET";
+    defparam \rom_bytes_14__0__I_183 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_1__2__I_0 (
+      .\D (\rom_bytes[1] [2]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[1][2] ));
+    defparam \rom_bytes_1__2__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_1__2__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_2__0__I_0 (
+      .\D (\rom_bytes[2] [0]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[2][0] ));
+    defparam \rom_bytes_2__0__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_2__0__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_5__1__I_0 (
+      .\D (\rom_bytes[5] [1]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[5][1] ));
+    defparam \rom_bytes_5__1__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_5__1__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_13__2__I_0 (
+      .\D (\rom_bytes[13] [2]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[6][0] ));
+    defparam \rom_bytes_13__2__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_13__2__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_7__0__I_0 (
+      .\D (\rom_bytes[7] [0]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[7][0] ));
+    defparam \rom_bytes_7__0__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_7__0__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_8__0__I_0 (
+      .\D (\rom_bytes[8] [0]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[8][0] ));
+    defparam \rom_bytes_8__0__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_8__0__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_9__0__I_0 (
+      .\D (\rom_bytes[9] [0]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[9][0] ));
+    defparam \rom_bytes_9__0__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_9__0__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_10__0__I_0 (
+      .\D (\rom_bytes[10] [0]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[10][0] ));
+    defparam \rom_bytes_10__0__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_10__0__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_11__0__I_0 (
+      .\D (\rom_bytes[11] [0]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[11][0] ));
+    defparam \rom_bytes_11__0__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_11__0__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_12__0__I_0 (
+      .\D (\rom_bytes[12] [0]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[12][0] ));
+    defparam \rom_bytes_12__0__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_12__0__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_13__0__I_0 (
+      .\D (\rom_bytes[13] [0]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[13][0] ));
+    defparam \rom_bytes_13__0__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_13__0__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_14__0__I_0 (
+      .\D (\rom_bytes[14] [0]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[14][0] ));
+    defparam \rom_bytes_14__0__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_14__0__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_9__2__I_134 (
+      .\D (\rom_bytes_9__2__N_53 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[9] [2]));
+    defparam \rom_bytes_9__2__I_134 .REGSET = "RESET";
+    defparam \rom_bytes_9__2__I_134 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_9__1__I_136 (
+      .\D (\rom_bytes_9__1__N_54 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[9] [1]));
+    defparam \rom_bytes_9__1__I_136 .REGSET = "RESET";
+    defparam \rom_bytes_9__1__I_136 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_8__3__I_124 (
+      .\D (\rom_bytes_8__3__N_48 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[8] [3]));
+    defparam \rom_bytes_8__3__I_124 .REGSET = "RESET";
+    defparam \rom_bytes_8__3__I_124 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_7__4__I_120 (
+      .\D (\rom_bytes_7__4__N_46 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[7] [4]));
+    defparam \rom_bytes_7__4__I_120 .REGSET = "RESET";
+    defparam \rom_bytes_7__4__I_120 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_6__6__I_110 (
+      .\D (\rom_bytes_6__6__N_41 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[6] [6]));
+    defparam \rom_bytes_6__6__I_110 .REGSET = "RESET";
+    defparam \rom_bytes_6__6__I_110 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_6__4__I_112 (
+      .\D (\rom_bytes_6__4__N_42 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[6] [4]));
+    defparam \rom_bytes_6__4__I_112 .REGSET = "RESET";
+    defparam \rom_bytes_6__4__I_112 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_6__3__I_114 (
+      .\D (\rom_bytes_6__3__N_43 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[6] [3]));
+    defparam \rom_bytes_6__3__I_114 .REGSET = "RESET";
+    defparam \rom_bytes_6__3__I_114 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_6__2__I_116 (
+      .\D (\rom_bytes_6__2__N_44 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[6] [2]));
+    defparam \rom_bytes_6__2__I_116 .REGSET = "RESET";
+    defparam \rom_bytes_6__2__I_116 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_6__1__I_118 (
+      .\D (\rom_bytes_6__1__N_45 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[6] [1]));
+    defparam \rom_bytes_6__1__I_118 .REGSET = "RESET";
+    defparam \rom_bytes_6__1__I_118 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_5__4__I_102 (
+      .\D (\rom_bytes_5__4__N_37 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[5] [4]));
+    defparam \rom_bytes_5__4__I_102 .REGSET = "RESET";
+    defparam \rom_bytes_5__4__I_102 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_5__3__I_104 (
+      .\D (\rom_bytes_5__3__N_38 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[5] [3]));
+    defparam \rom_bytes_5__3__I_104 .REGSET = "RESET";
+    defparam \rom_bytes_5__3__I_104 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_1__4__I_90 (
+      .\D (\rom_bytes_1__4__N_31 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[1] [4]));
+    defparam \rom_bytes_1__4__I_90 .REGSET = "RESET";
+    defparam \rom_bytes_1__4__I_90 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0xcaca" ,
+       \lut_function ="(A (B+!(C))+!A (B (C)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i11_3_lut (
+      .\A (\image_address_c_2 ),
+      .\B (\image_address_c_1 ),
+      .\C (\image_address_c_0 ),
+      .\Z (\rom_bytes_6__6__N_41 ),
+      .\D (1'b0));
+    defparam \i11_3_lut .INIT = "0xcaca";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_14__3__I_0 (
+      .\D (\rom_bytes[14] [3]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[14][3] ));
+    defparam \rom_bytes_14__3__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_14__3__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_14__2__I_0 (
+      .\D (\rom_bytes[14] [2]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[14][2] ));
+    defparam \rom_bytes_14__2__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_14__2__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_13__5__I_0 (
+      .\D (\rom_bytes[13] [5]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[13][5] ));
+    defparam \rom_bytes_13__5__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_13__5__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_13__4__I_0 (
+      .\D (\rom_bytes[13] [4]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[13][4] ));
+    defparam \rom_bytes_13__4__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_13__4__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_13__3__I_0 (
+      .\D (\rom_bytes[13] [3]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[13][3] ));
+    defparam \rom_bytes_13__3__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_13__3__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_13__1__I_0 (
+      .\D (\rom_bytes[13] [1]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[13][1] ));
+    defparam \rom_bytes_13__1__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_13__1__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_12__2__I_0 (
+      .\D (\rom_bytes[12] [2]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[12][2] ));
+    defparam \rom_bytes_12__2__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_12__2__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_11__5__I_0 (
+      .\D (\rom_bytes[11] [5]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[11][5] ));
+    defparam \rom_bytes_11__5__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_11__5__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_11__4__I_0 (
+      .\D (\rom_bytes[11] [4]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[11][4] ));
+    defparam \rom_bytes_11__4__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_11__4__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_10__6__I_0 (
+      .\D (\rom_bytes[10] [6]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[10][6] ));
+    defparam \rom_bytes_10__6__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_10__6__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_10__5__I_0 (
+      .\D (\rom_bytes[10] [5]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[10][5] ));
+    defparam \rom_bytes_10__5__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_10__5__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_10__3__I_0 (
+      .\D (\rom_bytes[10] [3]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[10][3] ));
+    defparam \rom_bytes_10__3__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_10__3__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_10__2__I_0 (
+      .\D (\rom_bytes[10] [2]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[10][2] ));
+    defparam \rom_bytes_10__2__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_10__2__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_10__1__I_0 (
+      .\D (\rom_bytes[10] [1]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[10][1] ));
+    defparam \rom_bytes_10__1__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_10__1__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_9__5__I_0 (
+      .\D (\rom_bytes[9] [5]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[9][5] ));
+    defparam \rom_bytes_9__5__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_9__5__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_9__4__I_0 (
+      .\D (\rom_bytes[9] [4]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[9][4] ));
+    defparam \rom_bytes_9__4__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_9__4__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_9__2__I_0 (
+      .\D (\rom_bytes[9] [2]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[9][2] ));
+    defparam \rom_bytes_9__2__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_9__2__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_9__1__I_0 (
+      .\D (\rom_bytes[9] [1]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[9][1] ));
+    defparam \rom_bytes_9__1__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_9__1__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_8__3__I_0 (
+      .\D (\rom_bytes[8] [3]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[8][3] ));
+    defparam \rom_bytes_8__3__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_8__3__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_7__4__I_0 (
+      .\D (\rom_bytes[7] [4]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[7][4] ));
+    defparam \rom_bytes_7__4__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_7__4__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0xb0b0" ,
+       \lut_function ="(A (C)+!A !(B+!(C)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1801_2_lut_3_lut (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_0 ),
+      .\C (\image_address_c_2 ),
+      .\Z (\rom_bytes_12__0__N_70 ),
+      .\D (1'b0));
+    defparam \i1801_2_lut_3_lut .INIT = "0xb0b0";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_2__1__I_98 (
+      .\D (\rom_bytes_2__1__N_35 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[2] [1]));
+    defparam \rom_bytes_2__1__I_98 .REGSET = "RESET";
+    defparam \rom_bytes_2__1__I_98 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0x0101" ,
+       \lut_function ="(!(A+(B+(C))))" ,
+       \lineinfo ="@1(22[16],22[38])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1786_2_lut_3_lut (
+      .\A (\image_address_c_0 ),
+      .\B (\image_address_c_1 ),
+      .\C (\image_address_c_2 ),
+      .\Z (\rom_bytes_11__5__N_65 ),
+      .\D (1'b0));
+    defparam \i1786_2_lut_3_lut .INIT = "0x0101";
+
+    (* \INIT ="0x3535" ,
+       \lut_function ="(!(A (B+!(C))+!A (B (C))))" ,
+       \lineinfo ="@1(22[13],178[20])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i13_3_lut (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_2 ),
+      .\C (\image_address_c_0 ),
+      .\Z (\rom_bytes_9__1__N_54 ),
+      .\D (1'b0));
+    defparam \i13_3_lut .INIT = "0x3535";
+
+    (* \INIT ="0x4343" ,
+       \lut_function ="(!(A (B+(C))+!A !(B (C)+!B !(C))))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i13_3_lut_3_lut (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_0 ),
+      .\C (\image_address_c_2 ),
+      .\Z (\rom_bytes_14__3__N_78 ),
+      .\D (1'b0));
+    defparam \i13_3_lut_3_lut .INIT = "0x4343";
+
+    (* \INIT ="0x4040" ,
+       \lut_function ="(!(A+!(B (C))))" ,
+       \lineinfo ="@1(137[19],137[41])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1803_2_lut_3_lut (
+      .\A (\image_address_c_0 ),
+      .\B (\image_address_c_1 ),
+      .\C (\image_address_c_2 ),
+      .\Z (\rom_bytes_11__2__N_67 ),
+      .\D (1'b0));
+    defparam \i1803_2_lut_3_lut .INIT = "0x4040";
+
+    (* \INIT ="0x8080" ,
+       \lut_function ="(A (B (C)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1053_2_lut_3_lut (
+      .\A (\image_address_c_0 ),
+      .\B (\image_address_c_1 ),
+      .\C (\image_address_c_2 ),
+      .\Z (\rom_bytes_10__6__N_56 ),
+      .\D (1'b0));
+    defparam \i1053_2_lut_3_lut .INIT = "0x8080";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_2__3__I_96 (
+      .\D (\rom_bytes_2__3__N_34 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[2] [3]));
+    defparam \rom_bytes_2__3__I_96 .REGSET = "RESET";
+    defparam \rom_bytes_2__3__I_96 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0x4444" ,
+       \lut_function ="(!(A+!(B)))" ,
+       \lineinfo ="@1(22[13],178[20])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1_2_lut_2_lut (
+      .\A (\image_address_c_2 ),
+      .\B (\image_address_c_1 ),
+      .\Z (\rom_bytes_10__3__N_60 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i1_2_lut_2_lut .INIT = "0x4444";
+
+    (* \INIT ="0x7878" ,
+       \lut_function ="(!(A (B (C)+!B !(C))+!A !(C)))" ,
+       \lineinfo ="@1(22[13],178[20])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i15_2_lut_3_lut (
+      .\A (\image_address_c_2 ),
+      .\B (\image_address_c_0 ),
+      .\C (\image_address_c_1 ),
+      .\Z (\rom_bytes_10__2__N_62 ),
+      .\D (1'b0));
+    defparam \i15_2_lut_3_lut .INIT = "0x7878";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_2__4__I_94 (
+      .\D (\rom_bytes_2__4__N_33 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[2] [4]));
+    defparam \rom_bytes_2__4__I_94 .REGSET = "RESET";
+    defparam \rom_bytes_2__4__I_94 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_5__2__I_106 (
+      .\D (\rom_bytes_5__2__N_39 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[5] [2]));
+    defparam \rom_bytes_5__2__I_106 .REGSET = "RESET";
+    defparam \rom_bytes_5__2__I_106 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_8__2__I_126 (
+      .\D (\rom_bytes_8__2__N_49 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[8] [2]));
+    defparam \rom_bytes_8__2__I_126 .REGSET = "RESET";
+    defparam \rom_bytes_8__2__I_126 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_9__4__I_132 (
+      .\D (\rom_bytes_9__4__N_52 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[9] [4]));
+    defparam \rom_bytes_9__4__I_132 .REGSET = "RESET";
+    defparam \rom_bytes_9__4__I_132 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_12__0__I_163 (
+      .\D (\rom_bytes_12__0__N_70 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[12] [0]));
+    defparam \rom_bytes_12__0__I_163 .REGSET = "RESET";
+    defparam \rom_bytes_12__0__I_163 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_9__0__I_138 (
+      .\D (\rom_bytes_9__0__N_55 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[9] [0]));
+    defparam \rom_bytes_9__0__I_138 .REGSET = "RESET";
+    defparam \rom_bytes_9__0__I_138 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_5__1__I_108 (
+      .\D (\rom_bytes_5__1__N_40 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[5] [1]));
+    defparam \rom_bytes_5__1__I_108 .REGSET = "RESET";
+    defparam \rom_bytes_5__1__I_108 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_10__1__I_150 (
+      .\D (\rom_bytes_10__1__N_63 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[10] [1]));
+    defparam \rom_bytes_10__1__I_150 .REGSET = "RESET";
+    defparam \rom_bytes_10__1__I_150 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_10__4__I_144 (
+      .\D (\rom_bytes_10__4__N_59 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[10] [4]));
+    defparam \rom_bytes_10__4__I_144 .REGSET = "RESET";
+    defparam \rom_bytes_10__4__I_144 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_1__2__I_92 (
+      .\D (\rom_bytes_1__2__N_32 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[1] [2]));
+    defparam \rom_bytes_1__2__I_92 .REGSET = "RESET";
+    defparam \rom_bytes_1__2__I_92 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_11__4__I_156 (
+      .\D (\rom_bytes_11__4__N_66 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[11] [4]));
+    defparam \rom_bytes_11__4__I_156 .REGSET = "RESET";
+    defparam \rom_bytes_11__4__I_156 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_13__1__I_173 (
+      .\D (\rom_bytes_13__1__N_75 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[13] [1]));
+    defparam \rom_bytes_13__1__I_173 .REGSET = "RESET";
+    defparam \rom_bytes_13__1__I_173 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_13__3__I_169 (
+      .\D (\rom_bytes_13__3__N_73 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[13] [3]));
+    defparam \rom_bytes_13__3__I_169 .REGSET = "RESET";
+    defparam \rom_bytes_13__3__I_169 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_14__2__I_181 (
+      .\D (\rom_bytes_14__2__N_79 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[14] [2]));
+    defparam \rom_bytes_14__2__I_181 .REGSET = "RESET";
+    defparam \rom_bytes_14__2__I_181 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_14__4__I_177 (
+      .\D (\rom_bytes_14__4__N_77 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\rom_bytes[14] [4]));
+    defparam \rom_bytes_14__4__I_177 .REGSET = "RESET";
+    defparam \rom_bytes_14__4__I_177 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0x8181" ,
+       \lut_function ="(A (B (C))+!A !(B+(C)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i13_3_lut_3_lut_adj_329 (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_0 ),
+      .\C (\image_address_c_2 ),
+      .\Z (\rom_bytes_8__0__N_50 ),
+      .\D (1'b0));
+    defparam \i13_3_lut_3_lut_adj_329 .INIT = "0x8181";
+
+    (* \INIT ="0xc5c5" ,
+       \lut_function ="(A (B (C))+!A (B+!(C)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i12_3_lut (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_2 ),
+      .\C (\image_address_c_0 ),
+      .\Z (\rom_bytes_14__0__N_80 ),
+      .\D (1'b0));
+    defparam \i12_3_lut .INIT = "0xc5c5";
+
+    (* \INIT ="0xb4b4" ,
+       \lut_function ="(A (C)+!A !(B (C)+!B !(C)))" ,
+       \lineinfo ="@1(22[13],178[20])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i19_4_lut_3_lut (
+      .\A (\image_address_c_2 ),
+      .\B (\image_address_c_0 ),
+      .\C (\image_address_c_1 ),
+      .\Z (\rom_bytes_10__0__N_64 ),
+      .\D (1'b0));
+    defparam \i19_4_lut_3_lut .INIT = "0xb4b4";
+
+    (* \INIT ="0xe1e1" ,
+       \lut_function ="(A (C)+!A (B (C)+!B !(C)))" ,
+       \lineinfo ="@1(22[13],178[20])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i19_4_lut_3_lut_adj_330 (
+      .\A (\image_address_c_2 ),
+      .\B (\image_address_c_1 ),
+      .\C (\image_address_c_0 ),
+      .\Z (\rom_bytes_9__2__N_53 ),
+      .\D (1'b0));
+    defparam \i19_4_lut_3_lut_adj_330 .INIT = "0xe1e1";
+
+    (* \INIT ="0xcaca" ,
+       \lut_function ="(A (B+!(C))+!A (B (C)))" ,
+       \lineinfo ="@1(22[13],178[20])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i11_3_lut_adj_331 (
+      .\A (\image_address_c_0 ),
+      .\B (\image_address_c_1 ),
+      .\C (\image_address_c_2 ),
+      .\Z (\rom_bytes_13__0__N_76 ),
+      .\D (1'b0));
+    defparam \i11_3_lut_adj_331 .INIT = "0xcaca";
+
+    (* \INIT ="0xb4b4" ,
+       \lut_function ="(A (C)+!A !(B (C)+!B !(C)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i19_3_lut_4_lut_3_lut (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_0 ),
+      .\C (\image_address_c_2 ),
+      .\Z (\rom_bytes_6__3__N_43 ),
+      .\D (1'b0));
+    defparam \i19_3_lut_4_lut_3_lut .INIT = "0xb4b4";
+
+    (* \INIT ="0x4d4d" ,
+       \lut_function ="(!(A ((C)+!B)+!A !(B+!(C))))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i718_3_lut_4_lut_3_lut (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_0 ),
+      .\C (\image_address_c_2 ),
+      .\Z (\rom_bytes_2__3__N_34 ),
+      .\D (1'b0));
+    defparam \i718_3_lut_4_lut_3_lut .INIT = "0x4d4d";
+
+    (* \INIT ="0x1111" ,
+       \lut_function ="(!(A+(B)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1795_2_lut (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_0 ),
+      .\Z (\rom_bytes_8__2__N_49 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i1795_2_lut .INIT = "0x1111";
+
+    (* \INIT ="0x4040" ,
+       \lut_function ="(!(A+!(B (C))))" ,
+       \lineinfo ="@1(118[19],118[41])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1805_2_lut_3_lut_3_lut (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_2 ),
+      .\C (\image_address_c_0 ),
+      .\Z (\rom_bytes_1__4__N_31 ),
+      .\D (1'b0));
+    defparam \i1805_2_lut_3_lut_3_lut .INIT = "0x4040";
+
+    (* \INIT ="0x0404" ,
+       \lut_function ="(!(A+((C)+!B)))" ,
+       \lineinfo ="@1(118[19],118[41])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1808_2_lut_3_lut_3_lut (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_2 ),
+      .\C (\image_address_c_0 ),
+      .\Z (\rom_bytes_7__4__N_46 ),
+      .\D (1'b0));
+    defparam \i1808_2_lut_3_lut_3_lut .INIT = "0x0404";
+
+    (* \INIT ="0x2929" ,
+       \lut_function ="(!(A (B (C)+!B !(C))+!A (B+(C))))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i23_3_lut_4_lut_3_lut (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_0 ),
+      .\C (\image_address_c_2 ),
+      .\Z (\rom_bytes_13__4__N_72 ),
+      .\D (1'b0));
+    defparam \i23_3_lut_4_lut_3_lut .INIT = "0x2929";
+
+    (* \INIT ="0x9999" ,
+       \lut_function ="(A (B)+!A !(B))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i338_2_lut (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_2 ),
+      .\Z (\rom_bytes_7__0__N_47 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i338_2_lut .INIT = "0x9999";
+
+    (* \INIT ="0xb2b2" ,
+       \lut_function ="(A ((C)+!B)+!A !(B+!(C)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i704_2_lut_3_lut_3_lut (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_0 ),
+      .\C (\image_address_c_2 ),
+      .\Z (\rom_bytes_14__2__N_79 ),
+      .\D (1'b0));
+    defparam \i704_2_lut_3_lut_3_lut .INIT = "0xb2b2";
+
+    (* \INIT ="0x3535" ,
+       \lut_function ="(!(A (B+!(C))+!A (B (C))))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i13_3_lut_adj_332 (
+      .\A (\image_address_c_0 ),
+      .\B (\image_address_c_2 ),
+      .\C (\image_address_c_1 ),
+      .\Z (\rom_bytes_2__0__N_36 ),
+      .\D (1'b0));
+    defparam \i13_3_lut_adj_332 .INIT = "0x3535";
+
+    (* \INIT ="0xdddd" ,
+       \lut_function ="((B)+!A)" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1_2_lut (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_0 ),
+      .\Z (\rom_bytes_9__5__N_51 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i1_2_lut .INIT = "0xdddd";
+
+    (* \INIT ="0x8a8a" ,
+       \lut_function ="(A (B+!(C)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1_2_lut_3_lut (
+      .\A (\image_address_c_2 ),
+      .\B (\image_address_c_1 ),
+      .\C (\image_address_c_0 ),
+      .\Z (\rom_bytes_8__3__N_48 ),
+      .\D (1'b0));
+    defparam \i1_2_lut_3_lut .INIT = "0x8a8a";
+
+    (* \INIT ="0x1e1e" ,
+       \lut_function ="(!(A (C)+!A (B (C)+!B !(C))))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i15_2_lut_3_lut_adj_333 (
+      .\A (\image_address_c_2 ),
+      .\B (\image_address_c_0 ),
+      .\C (\image_address_c_1 ),
+      .\Z (\rom_bytes_6__4__N_42 ),
+      .\D (1'b0));
+    defparam \i15_2_lut_3_lut_adj_333 .INIT = "0x1e1e";
+
+    (* \INIT ="0x7777" ,
+       \lut_function ="(!(A (B)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1816_2_lut (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_0 ),
+      .\Z (\rom_bytes_10__5__N_57 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i1816_2_lut .INIT = "0x7777";
+
+    (* \INIT ="0x0202" ,
+       \lut_function ="(!((B+(C))+!A))" ,
+       \lineinfo ="@1(41[19],41[41])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1810_2_lut_3_lut (
+      .\A (\image_address_c_0 ),
+      .\B (\image_address_c_1 ),
+      .\C (\image_address_c_2 ),
+      .\Z (\rom_bytes_6__2__N_44 ),
+      .\D (1'b0));
+    defparam \i1810_2_lut_3_lut .INIT = "0x0202";
+
+    (* \INIT ="0x8888" ,
+       \lut_function ="(A (B))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i969_2_lut (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_2 ),
+      .\Z (\rom_bytes_12__2__N_69 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i969_2_lut .INIT = "0x8888";
+
+    (* \INIT ="0x3a3a" ,
+       \lut_function ="(!(A (B (C))+!A (B+!(C))))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i12_3_lut_adj_334 (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_0 ),
+      .\C (\image_address_c_2 ),
+      .\Z (\rom_bytes_13__2__N_74 ),
+      .\D (1'b0));
+    defparam \i12_3_lut_adj_334 .INIT = "0x3a3a";
+
+    (* \INIT ="0xe6e6" ,
+       \lut_function ="(A ((C)+!B)+!A (B))" ,
+       \lineinfo ="@1(22[13],178[20])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i18_4_lut_3_lut (
+      .\A (\image_address_c_2 ),
+      .\B (\image_address_c_1 ),
+      .\C (\image_address_c_0 ),
+      .\Z (\rom_bytes_5__4__N_37 ),
+      .\D (1'b0));
+    defparam \i18_4_lut_3_lut .INIT = "0xe6e6";
+
+    (* \INIT ="0xa1a1" ,
+       \lut_function ="(A (C)+!A !(B+(C)))" ,
+       \lineinfo ="@1(22[13],178[20])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i13_3_lut_3_lut_adj_335 (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_0 ),
+      .\C (\image_address_c_2 ),
+      .\Z (\rom_bytes_5__3__N_38 ),
+      .\D (1'b0));
+    defparam \i13_3_lut_3_lut_adj_335 .INIT = "0xa1a1";
+
+    (* \INIT ="0x6666" ,
+       \lut_function ="(!(A (B)+!A !(B)))" ,
+       \lineinfo ="@1(22[13],178[20])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i17_2_lut (
+      .\A (\image_address_c_0 ),
+      .\B (\image_address_c_1 ),
+      .\Z (\rom_bytes_11__0__N_68 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i17_2_lut .INIT = "0x6666";
+
+    (* \INIT ="0x8888" ,
+       \lut_function ="(A (B))" ,
+       \lineinfo ="@1(22[13],178[20])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1_2_lut_adj_336 (
+      .\A (\image_address_c_2 ),
+      .\B (\image_address_c_0 ),
+      .\Z (\rom_bytes_2__1__N_35 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i1_2_lut_adj_336 .INIT = "0x8888";
+
+    (* \INIT ="0x8686" ,
+       \lut_function ="(A (B (C)+!B !(C))+!A !((C)+!B))" ,
+       \lineinfo ="@1(22[13],178[20])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i22_3_lut_3_lut (
+      .\A (\image_address_c_0 ),
+      .\B (\image_address_c_2 ),
+      .\C (\image_address_c_1 ),
+      .\Z (\rom_bytes_13__5__N_71 ),
+      .\D (1'b0));
+    defparam \i22_3_lut_3_lut .INIT = "0x8686";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rom_bytes_8__2__I_0 (
+      .\D (\rom_bytes[8] [2]),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\image_data[7][1] ));
+    defparam \rom_bytes_8__2__I_0 .REGSET = "RESET";
+    defparam \rom_bytes_8__2__I_0 .SRMODE = "CE_OVER_LSR";
+
+endmodule
+
+module \mult  (
+    input \image_data[1][2] ,
+    input \image_data[5][2] ,
+    input \image_data[10][5] ,
+    input \image_data[11][5] ,
+    input \image_data[1][4] ,
+    input \image_data[2][4] ,
+    output \prediction_bit_c ,
+    input \image_data[6][5] ,
+    input \image_data[11][4] ,
+    input \image_data[9][4] ,
+    input \image_data[14][2] ,
+    input \image_data[9][5] ,
+    input \image_data[5][6] ,
+    input \perceptron_output_0__N_16 ,
+    (* \is_clock =1 ,
+       \lineinfo ="@0(69[8],69[11])" *)
+    input \clk ,
+    input \rst ,
+    input \GND_net ,
+    input \image_data[12][2] ,
+    input \image_data[6][0] ,
+    input \image_data[5][5] ,
+    input \image_data[13][5] ,
+    input \image_data[6][3] ,
+    input \image_data[8][0] ,
+    input \image_data[5][3] ,
+    input \image_data[8][3] ,
+    input \image_data[10][3] ,
+    input \image_data[6][1] ,
+    input \image_data[7][1] ,
+    input \image_data[5][1] ,
+    output \n3 ,
+    input \image_data[10][6] ,
+    input \image_data[11][0] ,
+    input \image_data[2][3] ,
+    input \image_data[7][0] ,
+    input \image_data[2][1] ,
+    input \image_data[2][0] ,
+    input \VCC_net ,
+    input \image_data[9][0] ,
+    input \image_data[10][0] ,
+    input \image_data[14][0] ,
+    input \image_data[12][0] ,
+    input \image_data[13][0] ,
+    input \image_data[9][2] ,
+    input \image_data[10][2] ,
+    input \image_data[6][4] ,
+    input \image_data[7][4] ,
+    input \image_data[5][4] ,
+    input \image_data[6][2] ,
+    input \image_data[13][4] ,
+    input \image_data[6][6] ,
+    input \image_data[13][3] ,
+    input \image_data[14][3] ,
+    input \image_data[10][1] ,
+    input \image_data[13][1] ,
+    input \image_data[9][1] );
+
+    wire \n2404 ;
+
+    wire \n2769 ;
+
+    wire \n2401 ;
+
+    wire \n24 ;
+
+    wire \prediction_bit_c_N_179 ;
+
+    wire \prediction_bit_c_N_178 ;
+
+    wire \n2778 ;
+
+    wire \n13 ;
+
+    wire \n2805 ;
+
+    wire \prediction_bit_c_N_177 ;
+
+    wire \n9 ;
+
+    wire \n2410 ;
+
+    wire \n2415 ;
+
+    wire \n2442 ;
+
+    wire \n2772 ;
+
+    wire \n2808 ;
+
+    wire \n2802 ;
+
+    wire \n2790 ;
+
+    wire \n2796 ;
+
+    wire \n2418 ;
+
+    wire \n11 ;
+
+    wire \count_0__N_176 ;
+
+    wire \n5 ;
+
+    wire \n6_adj_185 ;
+
+    wire \n2469 ;
+
+    wire \n6_adj_186 ;
+
+    wire \n2464 ;
+
+    wire \n10_adj_187 ;
+
+    wire \n13_adj_188 ;
+
+    wire \n2799 ;
+
+    wire \n1885 ;
+
+    wire \n3085 ;
+
+    wire \n1887 ;
+
+    wire \n5_adj_189 ;
+
+    wire \n3022 ;
+
+    wire \n1904 ;
+
+    wire \n6_adj_190 ;
+
+    wire \n8 ;
+
+    wire \n2439 ;
+
+    wire \n1918 ;
+
+    wire \n3049 ;
+
+    wire \n2793 ;
+
+    wire \n1879 ;
+
+    wire \n3076 ;
+
+    wire \n1881 ;
+
+    wire \n5_adj_191 ;
+
+    wire \n2448 ;
+
+    wire \n2763 ;
+
+    wire \n2411 ;
+
+    wire \n2787 ;
+
+    wire \n1916 ;
+
+    wire \n3046 ;
+
+    wire \n1914 ;
+
+    wire \n3043 ;
+
+    wire \n2459 ;
+
+    wire \n6_adj_192 ;
+
+    wire \n2405 ;
+
+    wire \n2406 ;
+
+    wire \n2766 ;
+
+    wire \n1912 ;
+
+    wire \n3040 ;
+
+    wire \n5_adj_193 ;
+
+    wire \n1017 ;
+
+    wire \n2784 ;
+
+    wire \n1910 ;
+
+    wire \n3037 ;
+
+    wire \n42 ;
+
+    wire \n46 ;
+
+    wire \n44 ;
+
+    wire \n45 ;
+
+    wire \n43 ;
+
+    wire \n48 ;
+
+    wire \n52 ;
+
+    wire \n47 ;
+
+    wire \n1893 ;
+
+    wire \n3097 ;
+
+    wire \n1873 ;
+
+    wire \n3067 ;
+
+    wire \n1875 ;
+
+    wire \n1865 ;
+
+    wire \n3055 ;
+
+    wire \n1867 ;
+
+    wire \n1883 ;
+
+    wire \n3082 ;
+
+    wire \n1863 ;
+
+    wire \n3052 ;
+
+    wire \n3025 ;
+
+    wire \n1871 ;
+
+    wire \n3064 ;
+
+    wire \n1908 ;
+
+    wire \n3034 ;
+
+    wire \n1869 ;
+
+    wire \n3061 ;
+
+    wire \n3058 ;
+
+    wire \n1877 ;
+
+    wire \n3073 ;
+
+    wire \n3070 ;
+
+    wire \n2402 ;
+
+    wire \n1891 ;
+
+    wire \n3094 ;
+
+    wire \n1906 ;
+
+    wire \n3031 ;
+
+    wire \n1889 ;
+
+    wire \n3091 ;
+
+    wire \n3079 ;
+
+    wire \n8_adj_194 ;
+
+    wire \n9_adj_195 ;
+
+    wire \n8_adj_196 ;
+
+    wire \n9_adj_197 ;
+
+    wire \n2454 ;
+
+    wire \n11_adj_198 ;
+
+    wire \n5_adj_199 ;
+
+    wire \n3028 ;
+
+    wire \n3088 ;
+
+    wire \n2781 ;
+
+    wire \n2775 ;
+
+    wire [31:0] \count ;
+
+    wire [15:0] \perceptron_output ;
+
+    wire [7:0] \n21 ;
+
+    wire [15:0] \temp_output ;
+
+    wire [7:0] \n4 ;
+
+    wire [15:0] \n22 ;
+
+    wire [15:0] \temp_output_15__N_81 ;
+
+    wire [31:0] \count_31__N_113 ;
+
+    (* \INIT ="0x0ac0" ,
+       \lut_function ="(!(A (B (C (D)+!C !(D))+!B (C+!(D)))+!A (((D)+!C)+!B)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1614_4_lut (
+      .\A (\image_data[1][2] ),
+      .\B (\image_data[5][2] ),
+      .\C (\count [1]),
+      .\D (\count [0]),
+      .\Z (\n2404 ));
+    defparam \i1614_4_lut .INIT = "0x0ac0";
+
+    (* \INIT ="0xe4aa" ,
+       \lut_function ="(A (C+!(D))+!A (B (D)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \count[0]_bdd_4_lut_2 (
+      .\A (\count [0]),
+      .\B (\image_data[10][5] ),
+      .\C (\image_data[11][5] ),
+      .\D (\count [1]),
+      .\Z (\n2769 ));
+    defparam \count[0]_bdd_4_lut_2 .INIT = "0xe4aa";
+
+    (* \INIT ="0x0ac0" ,
+       \lut_function ="(!(A (B (C (D)+!C !(D))+!B (C+!(D)))+!A (((D)+!C)+!B)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1611_4_lut (
+      .\A (\image_data[1][4] ),
+      .\B (\image_data[2][4] ),
+      .\C (\count [1]),
+      .\D (\count [0]),
+      .\Z (\n2401 ));
+    defparam \i1611_4_lut .INIT = "0x0ac0";
+
+    (* \INIT ="0xfffe" ,
+       \lut_function ="(A+(B+(C+(D))))" ,
+       \lineinfo ="@0(61[8],61[25])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i9_4_lut (
+      .\A (\perceptron_output [9]),
+      .\B (\perceptron_output [8]),
+      .\C (\perceptron_output [2]),
+      .\D (\perceptron_output [6]),
+      .\Z (\n24 ));
+    defparam \i9_4_lut .INIT = "0xfffe";
+
+    (* \INIT ="0xfffe" ,
+       \lut_function ="(A+(B+(C+(D))))" ,
+       \lineinfo ="@0(61[8],61[25])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i11_4_lut (
+      .\A (\perceptron_output [4]),
+      .\B (\perceptron_output [7]),
+      .\C (\perceptron_output [14]),
+      .\D (\perceptron_output [0]),
+      .\Z (\prediction_bit_c_N_179 ));
+    defparam \i11_4_lut .INIT = "0xfffe";
+
+    (* \INIT ="0xfffe" ,
+       \lut_function ="(A+(B+(C+(D))))" ,
+       \lineinfo ="@0(61[8],61[25])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i10_4_lut (
+      .\A (\perceptron_output [5]),
+      .\B (\perceptron_output [1]),
+      .\C (\perceptron_output [13]),
+      .\D (\perceptron_output [10]),
+      .\Z (\prediction_bit_c_N_178 ));
+    defparam \i10_4_lut .INIT = "0xfffe";
+
+    (* \INIT ="0x1f15" ,
+       \lut_function ="(!(A (C+!(D))+!A (B (C))))" ,
+       \lineinfo ="@2(50[88],50[93])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i299_4_lut (
+      .\A (\count [2]),
+      .\B (\count [0]),
+      .\C (\count [3]),
+      .\D (\count [1]),
+      .\Z (\n21 [4]));
+    defparam \i299_4_lut .INIT = "0x1f15";
+
+    (* \INIT ="0xe4aa" ,
+       \lut_function ="(A (C+!(D))+!A (B (D)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \count[2]_bdd_4_lut (
+      .\A (\count [2]),
+      .\B (\n2778 ),
+      .\C (\n13 ),
+      .\D (\count [3]),
+      .\Z (\n2805 ));
+    defparam \count[2]_bdd_4_lut .INIT = "0xe4aa";
+
+    (* \INIT ="0xfffe" ,
+       \lut_function ="(A+(B+(C+(D))))" ,
+       \lineinfo ="@0(61[8],61[25])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i12_4_lut (
+      .\A (\perceptron_output [3]),
+      .\B (\n24 ),
+      .\C (\perceptron_output [12]),
+      .\D (\perceptron_output [11]),
+      .\Z (\prediction_bit_c_N_177 ));
+    defparam \i12_4_lut .INIT = "0xfffe";
+
+    (* \INIT ="0x3332" ,
+       \lut_function ="(!(A (B)+!A (B+!(C+(D)))))" ,
+       \lineinfo ="@0(61[8],61[25])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \prediction_bit_c_I_0 (
+      .\A (\prediction_bit_c_N_177 ),
+      .\B (\perceptron_output [15]),
+      .\C (\prediction_bit_c_N_178 ),
+      .\D (\prediction_bit_c_N_179 ),
+      .\Z (\prediction_bit_c ));
+    defparam \prediction_bit_c_I_0 .INIT = "0x3332";
+
+    (* \INIT ="0xcaca" ,
+       \lut_function ="(A (B+!(C))+!A (B (C)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_4_i9_3_lut (
+      .\A (\image_data[6][5] ),
+      .\B (\image_data[11][4] ),
+      .\C (\count [0]),
+      .\Z (\n9 ),
+      .\D (1'b0));
+    defparam \mux_5_Mux_4_i9_3_lut .INIT = "0xcaca";
+
+    (* \INIT ="0xcac0" ,
+       \lut_function ="(A (B (C+(D))+!B !(C+!(D)))+!A (B (C)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1620_4_lut (
+      .\A (\image_data[9][4] ),
+      .\B (\n9 ),
+      .\C (\count [1]),
+      .\D (\count [0]),
+      .\Z (\n2410 ));
+    defparam \i1620_4_lut .INIT = "0xcac0";
+
+    (* \INIT ="0x2d9a" ,
+       \lut_function ="(!(A (B (C (D))+!B !(C (D)+!C !(D)))+!A (B (C+!(D))+!B (C (D)+!C !(D)))))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1625_4_lut (
+      .\A (\count [0]),
+      .\B (\count [1]),
+      .\C (\count [3]),
+      .\D (\count [2]),
+      .\Z (\n2415 ));
+    defparam \i1625_4_lut .INIT = "0x2d9a";
+
+    (* \INIT ="0x2222" ,
+       \lut_function ="(!((B)+!A))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1702_2_lut (
+      .\A (\image_data[14][2] ),
+      .\B (\count [0]),
+      .\Z (\n2442 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i1702_2_lut .INIT = "0x2222";
+
+    (* \INIT ="0xaad8" ,
+       \lut_function ="(A (B+(D))+!A !((D)+!C))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \n2769_bdd_4_lut (
+      .\A (\n2769 ),
+      .\B (\image_data[9][5] ),
+      .\C (\image_data[5][6] ),
+      .\D (\count [1]),
+      .\Z (\n2772 ));
+    defparam \n2769_bdd_4_lut .INIT = "0xaad8";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_15__I_230 (
+      .\D (\temp_output_15__N_81 [0]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\temp_output [0]));
+    defparam \temp_output_15__I_230 .REGSET = "RESET";
+    defparam \temp_output_15__I_230 .SRMODE = "CE_OVER_LSR";
+
+    (* \NEG_TRIGGER ="0b0" ,
+       \A_REG ="0b0" ,
+       \B_REG ="0b0" ,
+       \C_REG ="0b0" ,
+       \D_REG ="0b0" ,
+       \TOP_8x8_MULT_REG ="0b0" ,
+       \BOT_8x8_MULT_REG ="0b0" ,
+       \PIPELINE_16x16_MULT_REG1 ="0b0" ,
+       \PIPELINE_16x16_MULT_REG2 ="0b0" ,
+       \TOPOUTPUT_SELECT ="0b10" ,
+       \TOPADDSUB_LOWERINPUT ="0b00" ,
+       \TOPADDSUB_UPPERINPUT ="0b0" ,
+       \TOPADDSUB_CARRYSELECT ="0b00" ,
+       \BOTOUTPUT_SELECT ="0b10" ,
+       \BOTADDSUB_LOWERINPUT ="0b00" ,
+       \BOTADDSUB_UPPERINPUT ="0b0" ,
+       \BOTADDSUB_CARRYSELECT ="0b00" ,
+       \MODE_8x8 ="0b1" ,
+       \A_SIGNED ="0b1" ,
+       \B_SIGNED ="0b1" ,
+       \lineinfo ="@2(50[73],50[95])" ,
+       \dm:primitive ="MAC16" ,
+       \dm:programming ="NEG_TRIGGER:#ON A_REG:#ON B_REG:#ON C_REG:#ON D_REG:#ON TOP_8x8_MULT_REG:#ON BOT_8x8_MULT_REG:#ON PIPELINE_16x16_MULT_REG1:#ON PIPELINE_16x16_MULT_REG2:#ON TOPOUTPUT_SELECT:::TOPOUTPUT_SELECT=0b10 TOPADDSUB_LOWERINPUT:#ON TOPADDSUB_UPPERINPUT:#ON TOPADDSUB_CARRYSELECT:#ON BOTOUTPUT_SELECT:::BOTOUTPUT_SELECT=0b10 BOTADDSUB_LOWERINPUT:#ON BOTADDSUB_UPPERINPUT:#ON BOTADDSUB_CARRYSELECT:#ON MODE_8x8:::MODE_8x8=0b1 A_SIGNED:::A_SIGNED=0b1 B_SIGNED:::B_SIGNED=0b1" ,
+       \dm:user ="0" *)
+    \MAC16  \mult_7 (
+      .\CLK (\GND_net ),
+      .\CE (\GND_net ),
+      .\C15 (\GND_net ),
+      .\C14 (\GND_net ),
+      .\C13 (\GND_net ),
+      .\C12 (\GND_net ),
+      .\C11 (\GND_net ),
+      .\C10 (\GND_net ),
+      .\C9 (\GND_net ),
+      .\C8 (\GND_net ),
+      .\C7 (\GND_net ),
+      .\C6 (\GND_net ),
+      .\C5 (\GND_net ),
+      .\C4 (\GND_net ),
+      .\C3 (\GND_net ),
+      .\C2 (\GND_net ),
+      .\C1 (\GND_net ),
+      .\C0 (\GND_net ),
+      .\A15 (\GND_net ),
+      .\A14 (\GND_net ),
+      .\A13 (\GND_net ),
+      .\A12 (\GND_net ),
+      .\A11 (\GND_net ),
+      .\A10 (\GND_net ),
+      .\A9 (\GND_net ),
+      .\A8 (\GND_net ),
+      .\A7 (\GND_net ),
+      .\A6 (\n4 [6]),
+      .\A5 (\n2796 ),
+      .\A4 (\n2790 ),
+      .\A3 (\n2802 ),
+      .\A2 (\n4 [2]),
+      .\A1 (\n2808 ),
+      .\A0 (\n4 [0]),
+      .\B15 (\n21 [7]),
+      .\B14 (\n21 [7]),
+      .\B13 (\n21 [7]),
+      .\B12 (\n21 [7]),
+      .\B11 (\n21 [7]),
+      .\B10 (\n21 [7]),
+      .\B9 (\n21 [7]),
+      .\B8 (\n21 [7]),
+      .\B7 (\n21 [7]),
+      .\B6 (\n21 [6]),
+      .\B5 (\n21 [5]),
+      .\B4 (\n21 [4]),
+      .\B3 (\n21 [3]),
+      .\B2 (\n21 [2]),
+      .\B1 (\n2418 ),
+      .\B0 (\n2415 ),
+      .\D15 (\GND_net ),
+      .\D14 (\GND_net ),
+      .\D13 (\GND_net ),
+      .\D12 (\GND_net ),
+      .\D11 (\GND_net ),
+      .\D10 (\GND_net ),
+      .\D9 (\GND_net ),
+      .\D8 (\GND_net ),
+      .\D7 (\GND_net ),
+      .\D6 (\GND_net ),
+      .\D5 (\GND_net ),
+      .\D4 (\GND_net ),
+      .\D3 (\GND_net ),
+      .\D2 (\GND_net ),
+      .\D1 (\GND_net ),
+      .\D0 (\GND_net ),
+      .\AHOLD (\GND_net ),
+      .\BHOLD (\GND_net ),
+      .\CHOLD (\GND_net ),
+      .\DHOLD (\GND_net ),
+      .\IRSTTOP (\GND_net ),
+      .\IRSTBOT (\GND_net ),
+      .\ORSTTOP (\GND_net ),
+      .\ORSTBOT (\GND_net ),
+      .\OLOADTOP (\GND_net ),
+      .\OLOADBOT (\GND_net ),
+      .\ADDSUBTOP (\GND_net ),
+      .\ADDSUBBOT (\GND_net ),
+      .\OHOLDTOP (\GND_net ),
+      .\OHOLDBOT (\GND_net ),
+      .\CI (\GND_net ),
+      .\ACCUMCI (\GND_net ),
+      .\SIGNEXTIN (\GND_net ),
+      .\O15 (\n22 [15]),
+      .\O14 (\n22 [14]),
+      .\O13 (\n22 [13]),
+      .\O12 (\n22 [12]),
+      .\O11 (\n22 [11]),
+      .\O10 (\n22 [10]),
+      .\O9 (\n22 [9]),
+      .\O8 (\n22 [8]),
+      .\O7 (\n22 [7]),
+      .\O6 (\n22 [6]),
+      .\O5 (\n22 [5]),
+      .\O4 (\n22 [4]),
+      .\O3 (\n22 [3]),
+      .\O2 (\n22 [2]),
+      .\O1 (\n22 [1]),
+      .\O0 (\n22 [0]));
+    defparam \mult_7 .NEG_TRIGGER = "0b0";
+    defparam \mult_7 .A_REG = "0b0";
+    defparam \mult_7 .B_REG = "0b0";
+    defparam \mult_7 .C_REG = "0b0";
+    defparam \mult_7 .D_REG = "0b0";
+    defparam \mult_7 .TOP_8x8_MULT_REG = "0b0";
+    defparam \mult_7 .BOT_8x8_MULT_REG = "0b0";
+    defparam \mult_7 .PIPELINE_16x16_MULT_REG1 = "0b0";
+    defparam \mult_7 .PIPELINE_16x16_MULT_REG2 = "0b0";
+    defparam \mult_7 .TOPOUTPUT_SELECT = "0b10";
+    defparam \mult_7 .TOPADDSUB_LOWERINPUT = "0b00";
+    defparam \mult_7 .TOPADDSUB_UPPERINPUT = "0b0";
+    defparam \mult_7 .TOPADDSUB_CARRYSELECT = "0b00";
+    defparam \mult_7 .BOTOUTPUT_SELECT = "0b10";
+    defparam \mult_7 .BOTADDSUB_LOWERINPUT = "0b00";
+    defparam \mult_7 .BOTADDSUB_UPPERINPUT = "0b0";
+    defparam \mult_7 .BOTADDSUB_CARRYSELECT = "0b00";
+    defparam \mult_7 .MODE_8x8 = "0b1";
+    defparam \mult_7 .A_SIGNED = "0b1";
+    defparam \mult_7 .B_SIGNED = "0b1";
+
+    (* \INIT ="0xcaca" ,
+       \lut_function ="(A (B+!(C))+!A (B (C)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_2_i11_3_lut (
+      .\A (\image_data[12][2] ),
+      .\B (\image_data[6][0] ),
+      .\C (\count [0]),
+      .\Z (\n11 ),
+      .\D (1'b0));
+    defparam \mux_5_Mux_2_i11_3_lut .INIT = "0xcaca";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_325 (
+      .\D (\count_31__N_113 [0]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [0]));
+    defparam \count_31__I_325 .REGSET = "RESET";
+    defparam \count_31__I_325 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0x3c49" ,
+       \lut_function ="(!(A (B (C)+!B !(C (D)))+!A (B (C (D)+!C !(D))+!B !(C (D)+!C !(D)))))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1628_4_lut (
+      .\A (\count [0]),
+      .\B (\count [3]),
+      .\C (\count [1]),
+      .\D (\count [2]),
+      .\Z (\n2418 ));
+    defparam \i1628_4_lut .INIT = "0x3c49";
+
+    (* \INIT ="0xcaca" ,
+       \lut_function ="(A (B+!(C))+!A (B (C)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_5_i5_3_lut (
+      .\A (\image_data[6][5] ),
+      .\B (\image_data[5][6] ),
+      .\C (\count [0]),
+      .\Z (\n5 ),
+      .\D (1'b0));
+    defparam \mux_5_Mux_5_i5_3_lut .INIT = "0xcaca";
+
+    (* \INIT ="0xaad8" ,
+       \lut_function ="(A (B+(D))+!A !((D)+!C))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \n2805_bdd_4_lut (
+      .\A (\n2805 ),
+      .\B (\n6_adj_185 ),
+      .\C (\n2469 ),
+      .\D (\count [3]),
+      .\Z (\n2808 ));
+    defparam \n2805_bdd_4_lut .INIT = "0xaad8";
+
+    (* \INIT ="0xcac0" ,
+       \lut_function ="(A (B (C+(D))+!B !(C+!(D)))+!A (B (C)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_5_i6_4_lut (
+      .\A (\image_data[5][5] ),
+      .\B (\n5 ),
+      .\C (\count [1]),
+      .\D (\count [0]),
+      .\Z (\n6_adj_186 ));
+    defparam \mux_5_Mux_5_i6_4_lut .INIT = "0xcac0";
+
+    (* \INIT ="0x2020" ,
+       \lut_function ="(!((B+!(C))+!A))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1690_3_lut (
+      .\A (\image_data[13][5] ),
+      .\B (\count [1]),
+      .\C (\count [0]),
+      .\Z (\n2464 ),
+      .\D (1'b0));
+    defparam \i1690_3_lut .INIT = "0x2020";
+
+    (* \INIT ="0xe4aa" ,
+       \lut_function ="(A (C+!(D))+!A (B (D)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \count[2]_bdd_4_lut_4 (
+      .\A (\count [2]),
+      .\B (\n10_adj_187 ),
+      .\C (\n13_adj_188 ),
+      .\D (\count [3]),
+      .\Z (\n2799 ));
+    defparam \count[2]_bdd_4_lut_4 .INIT = "0xe4aa";
+
+    (* \INIT ="0x3471" ,
+       \lut_function ="(!(A (B+!(C))+!A (B (C (D)+!C !(D))+!B !(C+!(D)))))" ,
+       \lineinfo ="@2(50[88],50[93])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i298_4_lut (
+      .\A (\count [1]),
+      .\B (\count [0]),
+      .\C (\count [3]),
+      .\D (\count [2]),
+      .\Z (\n21 [5]));
+    defparam \i298_4_lut .INIT = "0x3471";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(52[30],52[35])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_12_add_5_25 (
+      .\A0 (\GND_net ),
+      .\B0 (\count [23]),
+      .\C0 (\GND_net ),
+      .\D0 (\n1885 ),
+      .\CI0 (\n1885 ),
+      .\A1 (\GND_net ),
+      .\B1 (\count [24]),
+      .\C1 (\GND_net ),
+      .\D1 (\n3085 ),
+      .\CI1 (\n3085 ),
+      .\S0 (\count_31__N_113 [23]),
+      .\S1 (\count_31__N_113 [24]),
+      .\CO0 (\n3085 ),
+      .\CO1 (\n1887 ));
+    defparam \add_12_add_5_25 .INIT0 = "0xc33c";
+    defparam \add_12_add_5_25 .INIT1 = "0xc33c";
+
+    (* \INIT ="0xcaca" ,
+       \lut_function ="(A (B+!(C))+!A (B (C)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_3_i5_3_lut (
+      .\A (\image_data[6][3] ),
+      .\B (\image_data[8][0] ),
+      .\C (\count [0]),
+      .\Z (\n5_adj_189 ),
+      .\D (1'b0));
+    defparam \mux_5_Mux_3_i5_3_lut .INIT = "0xcaca";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(50[36],50[47])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_10_add_5_1 (
+      .\A0 (\GND_net ),
+      .\B0 (\GND_net ),
+      .\C0 (\GND_net ),
+      .\A1 (\GND_net ),
+      .\B1 (\temp_output [0]),
+      .\C1 (\n22 [0]),
+      .\D1 (\n3022 ),
+      .\CI1 (\n3022 ),
+      .\S1 (\temp_output_15__N_81 [0]),
+      .\CO0 (\n3022 ),
+      .\CO1 (\n1904 ),
+      .\D0 (1'b1),
+      .\CI0 (1'b1));
+    defparam \add_10_add_5_1 .INIT0 = "0xc33c";
+    defparam \add_10_add_5_1 .INIT1 = "0xc33c";
+
+    (* \INIT ="0xcac0" ,
+       \lut_function ="(A (B (C+(D))+!B !(C+!(D)))+!A (B (C)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_3_i6_4_lut (
+      .\A (\image_data[5][3] ),
+      .\B (\n5_adj_189 ),
+      .\C (\count [1]),
+      .\D (\count [0]),
+      .\Z (\n6_adj_190 ));
+    defparam \mux_5_Mux_3_i6_4_lut .INIT = "0xcac0";
+
+    (* \INIT ="0xcaca" ,
+       \lut_function ="(A (B+!(C))+!A (B (C)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_3_i8_3_lut (
+      .\A (\image_data[8][3] ),
+      .\B (\image_data[11][4] ),
+      .\C (\count [0]),
+      .\Z (\n8 ),
+      .\D (1'b0));
+    defparam \mux_5_Mux_3_i8_3_lut .INIT = "0xcaca";
+
+    (* \INIT ="0x0aca" ,
+       \lut_function ="(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_3_i10_4_lut (
+      .\A (\n8 ),
+      .\B (\image_data[10][3] ),
+      .\C (\count [1]),
+      .\D (\count [0]),
+      .\Z (\n10_adj_187 ));
+    defparam \mux_5_Mux_3_i10_4_lut .INIT = "0x0aca";
+
+    (* \INIT ="0xaad8" ,
+       \lut_function ="(A (B+(D))+!A !((D)+!C))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \n2799_bdd_4_lut (
+      .\A (\n2799 ),
+      .\B (\n6_adj_190 ),
+      .\C (\n2439 ),
+      .\D (\count [3]),
+      .\Z (\n2802 ));
+    defparam \n2799_bdd_4_lut .INIT = "0xaad8";
+
+    (* \INIT ="0x6ce4" ,
+       \lut_function ="(!(A (B (C (D)+!C !(D))+!B !(C))+!A !(B)))" ,
+       \lineinfo ="@2(50[88],50[93])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i278_4_lut (
+      .\A (\count [2]),
+      .\B (\count [3]),
+      .\C (\count [0]),
+      .\D (\count [1]),
+      .\Z (\n21 [7]));
+    defparam \i278_4_lut .INIT = "0x6ce4";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(50[36],50[47])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_10_add_5_17 (
+      .\A0 (\GND_net ),
+      .\B0 (\temp_output [15]),
+      .\C0 (\n22 [15]),
+      .\D0 (\n1918 ),
+      .\CI0 (\n1918 ),
+      .\A1 (\GND_net ),
+      .\B1 (\GND_net ),
+      .\C1 (\GND_net ),
+      .\D1 (\n3049 ),
+      .\CI1 (\n3049 ),
+      .\S0 (\temp_output_15__N_81 [15]),
+      .\CO0 (\n3049 ));
+    defparam \add_10_add_5_17 .INIT0 = "0xc33c";
+    defparam \add_10_add_5_17 .INIT1 = "0xc33c";
+
+    (* \INIT ="0xe4aa" ,
+       \lut_function ="(A (C+!(D))+!A (B (D)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \count[2]_bdd_4_lut_3 (
+      .\A (\count [2]),
+      .\B (\n2772 ),
+      .\C (\n2464 ),
+      .\D (\count [3]),
+      .\Z (\n2793 ));
+    defparam \count[2]_bdd_4_lut_3 .INIT = "0xe4aa";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(52[30],52[35])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_12_add_5_19 (
+      .\A0 (\GND_net ),
+      .\B0 (\count [17]),
+      .\C0 (\GND_net ),
+      .\D0 (\n1879 ),
+      .\CI0 (\n1879 ),
+      .\A1 (\GND_net ),
+      .\B1 (\count [18]),
+      .\C1 (\GND_net ),
+      .\D1 (\n3076 ),
+      .\CI1 (\n3076 ),
+      .\S0 (\count_31__N_113 [17]),
+      .\S1 (\count_31__N_113 [18]),
+      .\CO0 (\n3076 ),
+      .\CO1 (\n1881 ));
+    defparam \add_12_add_5_19 .INIT0 = "0xc33c";
+    defparam \add_12_add_5_19 .INIT1 = "0xc33c";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_15__I_221 (
+      .\D (\temp_output_15__N_81 [3]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\temp_output [3]));
+    defparam \temp_output_15__I_221 .REGSET = "RESET";
+    defparam \temp_output_15__I_221 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0xcaca" ,
+       \lut_function ="(A (B+!(C))+!A (B (C)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_1_i5_3_lut (
+      .\A (\image_data[6][1] ),
+      .\B (\image_data[7][1] ),
+      .\C (\count [0]),
+      .\Z (\n5_adj_191 ),
+      .\D (1'b0));
+    defparam \mux_5_Mux_1_i5_3_lut .INIT = "0xcaca";
+
+    (* \INIT ="0xe575" ,
+       \lut_function ="(A (B (C (D))+!B (C))+!A (B+!(C (D))))" ,
+       \lineinfo ="@2(50[88],50[93])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i316_4_lut (
+      .\A (\count [1]),
+      .\B (\count [0]),
+      .\C (\count [3]),
+      .\D (\count [2]),
+      .\Z (\n21 [3]));
+    defparam \i316_4_lut .INIT = "0xe575";
+
+    (* \INIT ="0xaad8" ,
+       \lut_function ="(A (B+(D))+!A !((D)+!C))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \n2793_bdd_4_lut (
+      .\A (\n2793 ),
+      .\B (\n6_adj_186 ),
+      .\C (\n2448 ),
+      .\D (\count [3]),
+      .\Z (\n2796 ));
+    defparam \n2793_bdd_4_lut .INIT = "0xaad8";
+
+    (* \INIT ="0xcac0" ,
+       \lut_function ="(A (B (C+(D))+!B !(C+!(D)))+!A (B (C)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_1_i6_4_lut (
+      .\A (\image_data[5][1] ),
+      .\B (\n5_adj_191 ),
+      .\C (\count [1]),
+      .\D (\count [0]),
+      .\Z (\n6_adj_185 ));
+    defparam \mux_5_Mux_1_i6_4_lut .INIT = "0xcac0";
+
+    (* \INIT ="0xe4aa" ,
+       \lut_function ="(A (C+!(D))+!A (B (D)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \count[1]_bdd_4_lut_2 (
+      .\A (\count [1]),
+      .\B (\n11 ),
+      .\C (\n2442 ),
+      .\D (\count [2]),
+      .\Z (\n2763 ));
+    defparam \count[1]_bdd_4_lut_2 .INIT = "0xe4aa";
+
+    (* \INIT ="0xe4aa" ,
+       \lut_function ="(A (C+!(D))+!A (B (D)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \count[2]_bdd_4_lut_2 (
+      .\A (\count [2]),
+      .\B (\n2410 ),
+      .\C (\n2411 ),
+      .\D (\count [3]),
+      .\Z (\n2787 ));
+    defparam \count[2]_bdd_4_lut_2 .INIT = "0xe4aa";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(50[36],50[47])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_10_add_5_15 (
+      .\A0 (\GND_net ),
+      .\B0 (\temp_output [13]),
+      .\C0 (\n22 [13]),
+      .\D0 (\n1916 ),
+      .\CI0 (\n1916 ),
+      .\A1 (\GND_net ),
+      .\B1 (\temp_output [14]),
+      .\C1 (\n22 [14]),
+      .\D1 (\n3046 ),
+      .\CI1 (\n3046 ),
+      .\S0 (\temp_output_15__N_81 [13]),
+      .\S1 (\temp_output_15__N_81 [14]),
+      .\CO0 (\n3046 ),
+      .\CO1 (\n1918 ));
+    defparam \add_10_add_5_15 .INIT0 = "0xc33c";
+    defparam \add_10_add_5_15 .INIT1 = "0xc33c";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(50[36],50[47])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_10_add_5_13 (
+      .\A0 (\GND_net ),
+      .\B0 (\temp_output [11]),
+      .\C0 (\n22 [11]),
+      .\D0 (\n1914 ),
+      .\CI0 (\n1914 ),
+      .\A1 (\GND_net ),
+      .\B1 (\temp_output [12]),
+      .\C1 (\n22 [12]),
+      .\D1 (\n3043 ),
+      .\CI1 (\n3043 ),
+      .\S0 (\temp_output_15__N_81 [11]),
+      .\S1 (\temp_output_15__N_81 [12]),
+      .\CO0 (\n3043 ),
+      .\CO1 (\n1916 ));
+    defparam \add_10_add_5_13 .INIT0 = "0xc33c";
+    defparam \add_10_add_5_13 .INIT1 = "0xc33c";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_15__I_224 (
+      .\D (\temp_output_15__N_81 [2]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\temp_output [2]));
+    defparam \temp_output_15__I_224 .REGSET = "RESET";
+    defparam \temp_output_15__I_224 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0xeeee" ,
+       \lut_function ="(A+(B))" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i600_2_lut (
+      .\A (\rst ),
+      .\B (\n3 ),
+      .\Z (\count_0__N_176 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i600_2_lut .INIT = "0xeeee";
+
+    (* \INIT ="0xfce2" ,
+       \lut_function ="(A (B (C+(D))+!B (C+!(D)))+!A (B (C+(D))+!B (C (D))))" ,
+       \lineinfo ="@2(50[88],50[93])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i277_4_lut (
+      .\A (\count [2]),
+      .\B (\count [3]),
+      .\C (\count [0]),
+      .\D (\count [1]),
+      .\Z (\n21 [6]));
+    defparam \i277_4_lut .INIT = "0xfce2";
+
+    (* \INIT ="0x32b4" ,
+       \lut_function ="(!(A (B ((D)+!C)+!B !(C+(D)))+!A (B (C+(D))+!B !(C))))" ,
+       \lineinfo ="@2(50[88],50[93])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i317_4_lut (
+      .\A (\count [2]),
+      .\B (\count [3]),
+      .\C (\count [0]),
+      .\D (\count [1]),
+      .\Z (\n21 [2]));
+    defparam \i317_4_lut .INIT = "0x32b4";
+
+    (* \INIT ="0x0020" ,
+       \lut_function ="(!((B+((D)+!C))+!A))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1711_4_lut (
+      .\A (\image_data[10][6] ),
+      .\B (\count [0]),
+      .\C (\count [1]),
+      .\D (\count [2]),
+      .\Z (\n2459 ));
+    defparam \i1711_4_lut .INIT = "0x0020";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_15__I_227 (
+      .\D (\temp_output_15__N_81 [1]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\temp_output [1]));
+    defparam \temp_output_15__I_227 .REGSET = "RESET";
+    defparam \temp_output_15__I_227 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0xcac0" ,
+       \lut_function ="(A (B (C+(D))+!B !(C+!(D)))+!A (B (C)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_6_i15_4_lut (
+      .\A (\n6_adj_192 ),
+      .\B (\n2459 ),
+      .\C (\count [3]),
+      .\D (\count [2]),
+      .\Z (\n4 [6]));
+    defparam \mux_5_Mux_6_i15_4_lut .INIT = "0xcac0";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_15__I_0 (
+      .\D (\temp_output [15]),
+      .\SP (\perceptron_output_0__N_16 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\perceptron_output [15]));
+    defparam \temp_output_15__I_0 .REGSET = "RESET";
+    defparam \temp_output_15__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_14__I_0 (
+      .\D (\temp_output [14]),
+      .\SP (\perceptron_output_0__N_16 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\perceptron_output [14]));
+    defparam \temp_output_14__I_0 .REGSET = "RESET";
+    defparam \temp_output_14__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0xcaca" ,
+       \lut_function ="(A (B+!(C))+!A (B (C)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1616_3_lut (
+      .\A (\n2404 ),
+      .\B (\n2405 ),
+      .\C (\count [2]),
+      .\Z (\n2406 ),
+      .\D (1'b0));
+    defparam \i1616_3_lut .INIT = "0xcaca";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_13__I_0 (
+      .\D (\temp_output [13]),
+      .\SP (\perceptron_output_0__N_16 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\perceptron_output [13]));
+    defparam \temp_output_13__I_0 .REGSET = "RESET";
+    defparam \temp_output_13__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0x4040" ,
+       \lut_function ="(!(A+!(B (C))))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1693_2_lut_3_lut (
+      .\A (\count [0]),
+      .\B (\count [1]),
+      .\C (\image_data[11][0] ),
+      .\Z (\n2448 ),
+      .\D (1'b0));
+    defparam \i1693_2_lut_3_lut .INIT = "0x4040";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_12__I_0 (
+      .\D (\temp_output [12]),
+      .\SP (\perceptron_output_0__N_16 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\perceptron_output [12]));
+    defparam \temp_output_12__I_0 .REGSET = "RESET";
+    defparam \temp_output_12__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_11__I_0 (
+      .\D (\temp_output [11]),
+      .\SP (\perceptron_output_0__N_16 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\perceptron_output [11]));
+    defparam \temp_output_11__I_0 .REGSET = "RESET";
+    defparam \temp_output_11__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0xcaca" ,
+       \lut_function ="(A (B+!(C))+!A (B (C)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i107716_i1_3_lut (
+      .\A (\n2406 ),
+      .\B (\n2766 ),
+      .\C (\count [3]),
+      .\Z (\n4 [2]),
+      .\D (1'b0));
+    defparam \i107716_i1_3_lut .INIT = "0xcaca";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_10__I_0 (
+      .\D (\temp_output [10]),
+      .\SP (\perceptron_output_0__N_16 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\perceptron_output [10]));
+    defparam \temp_output_10__I_0 .REGSET = "RESET";
+    defparam \temp_output_10__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_9__I_0 (
+      .\D (\temp_output [9]),
+      .\SP (\perceptron_output_0__N_16 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\perceptron_output [9]));
+    defparam \temp_output_9__I_0 .REGSET = "RESET";
+    defparam \temp_output_9__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(50[36],50[47])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_10_add_5_11 (
+      .\A0 (\GND_net ),
+      .\B0 (\temp_output [9]),
+      .\C0 (\n22 [9]),
+      .\D0 (\n1912 ),
+      .\CI0 (\n1912 ),
+      .\A1 (\GND_net ),
+      .\B1 (\temp_output [10]),
+      .\C1 (\n22 [10]),
+      .\D1 (\n3040 ),
+      .\CI1 (\n3040 ),
+      .\S0 (\temp_output_15__N_81 [9]),
+      .\S1 (\temp_output_15__N_81 [10]),
+      .\CO0 (\n3040 ),
+      .\CO1 (\n1914 ));
+    defparam \add_10_add_5_11 .INIT0 = "0xc33c";
+    defparam \add_10_add_5_11 .INIT1 = "0xc33c";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_15__I_185 (
+      .\D (\temp_output_15__N_81 [15]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\temp_output [15]));
+    defparam \temp_output_15__I_185 .REGSET = "RESET";
+    defparam \temp_output_15__I_185 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0x4040" ,
+       \lut_function ="(!(A+!(B (C))))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1713_2_lut_3_lut (
+      .\A (\count [0]),
+      .\B (\count [1]),
+      .\C (\image_data[2][3] ),
+      .\Z (\n2439 ),
+      .\D (1'b0));
+    defparam \i1713_2_lut_3_lut .INIT = "0x4040";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_8__I_0 (
+      .\D (\temp_output [8]),
+      .\SP (\perceptron_output_0__N_16 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\perceptron_output [8]));
+    defparam \temp_output_8__I_0 .REGSET = "RESET";
+    defparam \temp_output_8__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_7__I_0 (
+      .\D (\temp_output [7]),
+      .\SP (\perceptron_output_0__N_16 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\perceptron_output [7]));
+    defparam \temp_output_7__I_0 .REGSET = "RESET";
+    defparam \temp_output_7__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_15__I_188 (
+      .\D (\temp_output_15__N_81 [14]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\temp_output [14]));
+    defparam \temp_output_15__I_188 .REGSET = "RESET";
+    defparam \temp_output_15__I_188 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_6__I_0 (
+      .\D (\temp_output [6]),
+      .\SP (\perceptron_output_0__N_16 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\perceptron_output [6]));
+    defparam \temp_output_6__I_0 .REGSET = "RESET";
+    defparam \temp_output_6__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_5__I_0 (
+      .\D (\temp_output [5]),
+      .\SP (\perceptron_output_0__N_16 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\perceptron_output [5]));
+    defparam \temp_output_5__I_0 .REGSET = "RESET";
+    defparam \temp_output_5__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0xcaca" ,
+       \lut_function ="(A (B+!(C))+!A (B (C)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_0_i5_3_lut (
+      .\A (\image_data[6][0] ),
+      .\B (\image_data[7][0] ),
+      .\C (\count [0]),
+      .\Z (\n5_adj_193 ),
+      .\D (1'b0));
+    defparam \mux_5_Mux_0_i5_3_lut .INIT = "0xcaca";
+
+    (* \INIT ="0x4040" ,
+       \lut_function ="(!(A+!(B (C))))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1703_2_lut_3_lut (
+      .\A (\count [0]),
+      .\B (\count [1]),
+      .\C (\image_data[2][1] ),
+      .\Z (\n2469 ),
+      .\D (1'b0));
+    defparam \i1703_2_lut_3_lut .INIT = "0x4040";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_15__I_191 (
+      .\D (\temp_output_15__N_81 [13]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\temp_output [13]));
+    defparam \temp_output_15__I_191 .REGSET = "RESET";
+    defparam \temp_output_15__I_191 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_4__I_0 (
+      .\D (\temp_output [4]),
+      .\SP (\perceptron_output_0__N_16 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\perceptron_output [4]));
+    defparam \temp_output_4__I_0 .REGSET = "RESET";
+    defparam \temp_output_4__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_3__I_0 (
+      .\D (\temp_output [3]),
+      .\SP (\perceptron_output_0__N_16 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\perceptron_output [3]));
+    defparam \temp_output_3__I_0 .REGSET = "RESET";
+    defparam \temp_output_3__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_15__I_194 (
+      .\D (\temp_output_15__N_81 [12]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\temp_output [12]));
+    defparam \temp_output_15__I_194 .REGSET = "RESET";
+    defparam \temp_output_15__I_194 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_2__I_0 (
+      .\D (\temp_output [2]),
+      .\SP (\perceptron_output_0__N_16 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\perceptron_output [2]));
+    defparam \temp_output_2__I_0 .REGSET = "RESET";
+    defparam \temp_output_2__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_1__I_0 (
+      .\D (\temp_output [1]),
+      .\SP (\perceptron_output_0__N_16 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\perceptron_output [1]));
+    defparam \temp_output_1__I_0 .REGSET = "RESET";
+    defparam \temp_output_1__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0xc0ca" ,
+       \lut_function ="(A (B (C+!(D))+!B !(C+(D)))+!A (B (C)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i410_4_lut (
+      .\A (\image_data[2][0] ),
+      .\B (\n5_adj_193 ),
+      .\C (\count [2]),
+      .\D (\count [0]),
+      .\Z (\n1017 ));
+    defparam \i410_4_lut .INIT = "0xc0ca";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_15__I_200 (
+      .\D (\temp_output_15__N_81 [10]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\temp_output [10]));
+    defparam \temp_output_15__I_200 .REGSET = "RESET";
+    defparam \temp_output_15__I_200 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0xcac0" ,
+       \lut_function ="(A (B (C+(D))+!B !(C+!(D)))+!A (B (C)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_0_i15_4_lut (
+      .\A (\n1017 ),
+      .\B (\n2784 ),
+      .\C (\count [3]),
+      .\D (\count [1]),
+      .\Z (\n4 [0]));
+    defparam \mux_5_Mux_0_i15_4_lut .INIT = "0xcac0";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_15__I_203 (
+      .\D (\temp_output_15__N_81 [9]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\temp_output [9]));
+    defparam \temp_output_15__I_203 .REGSET = "RESET";
+    defparam \temp_output_15__I_203 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(50[36],50[47])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_10_add_5_9 (
+      .\A0 (\GND_net ),
+      .\B0 (\temp_output [7]),
+      .\C0 (\n22 [7]),
+      .\D0 (\n1910 ),
+      .\CI0 (\n1910 ),
+      .\A1 (\GND_net ),
+      .\B1 (\temp_output [8]),
+      .\C1 (\n22 [8]),
+      .\D1 (\n3037 ),
+      .\CI1 (\n3037 ),
+      .\S0 (\temp_output_15__N_81 [7]),
+      .\S1 (\temp_output_15__N_81 [8]),
+      .\CO0 (\n3037 ),
+      .\CO1 (\n1912 ));
+    defparam \add_10_add_5_9 .INIT0 = "0xc33c";
+    defparam \add_10_add_5_9 .INIT1 = "0xc33c";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_15__I_206 (
+      .\D (\temp_output_15__N_81 [8]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\temp_output [8]));
+    defparam \temp_output_15__I_206 .REGSET = "RESET";
+    defparam \temp_output_15__I_206 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0xfffe" ,
+       \lut_function ="(A+(B+(C+(D))))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i15_4_lut (
+      .\A (\count [6]),
+      .\B (\count [24]),
+      .\C (\count [30]),
+      .\D (\count [26]),
+      .\Z (\n42 ));
+    defparam \i15_4_lut .INIT = "0xfffe";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_15__I_209 (
+      .\D (\temp_output_15__N_81 [7]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\temp_output [7]));
+    defparam \temp_output_15__I_209 .REGSET = "RESET";
+    defparam \temp_output_15__I_209 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_15__I_212 (
+      .\D (\temp_output_15__N_81 [6]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\temp_output [6]));
+    defparam \temp_output_15__I_212 .REGSET = "RESET";
+    defparam \temp_output_15__I_212 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0xfffe" ,
+       \lut_function ="(A+(B+(C+(D))))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i19_4_lut (
+      .\A (\count [15]),
+      .\B (\count [13]),
+      .\C (\count [9]),
+      .\D (\count [12]),
+      .\Z (\n46 ));
+    defparam \i19_4_lut .INIT = "0xfffe";
+
+    (* \INIT ="0xfffe" ,
+       \lut_function ="(A+(B+(C+(D))))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i17_4_lut (
+      .\A (\count [5]),
+      .\B (\count [20]),
+      .\C (\count [28]),
+      .\D (\count [18]),
+      .\Z (\n44 ));
+    defparam \i17_4_lut .INIT = "0xfffe";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_15__I_215 (
+      .\D (\temp_output_15__N_81 [5]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\temp_output [5]));
+    defparam \temp_output_15__I_215 .REGSET = "RESET";
+    defparam \temp_output_15__I_215 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_15__I_218 (
+      .\D (\temp_output_15__N_81 [4]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\temp_output [4]));
+    defparam \temp_output_15__I_218 .REGSET = "RESET";
+    defparam \temp_output_15__I_218 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_322 (
+      .\D (\count_31__N_113 [1]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [1]));
+    defparam \count_31__I_322 .REGSET = "RESET";
+    defparam \count_31__I_322 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0xfffe" ,
+       \lut_function ="(A+(B+(C+(D))))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i18_4_lut (
+      .\A (\count [22]),
+      .\B (\count [10]),
+      .\C (\count [23]),
+      .\D (\count [11]),
+      .\Z (\n45 ));
+    defparam \i18_4_lut .INIT = "0xfffe";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_319 (
+      .\D (\count_31__N_113 [2]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [2]));
+    defparam \count_31__I_319 .REGSET = "RESET";
+    defparam \count_31__I_319 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0xfffe" ,
+       \lut_function ="(A+(B+(C+(D))))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i16_4_lut (
+      .\A (\count [25]),
+      .\B (\count [17]),
+      .\C (\count [14]),
+      .\D (\count [21]),
+      .\Z (\n43 ));
+    defparam \i16_4_lut .INIT = "0xfffe";
+
+    (* \INIT ="0xfffe" ,
+       \lut_function ="(A+(B+(C+(D))))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i21_4_lut (
+      .\A (\count [29]),
+      .\B (\n42 ),
+      .\C (\count [4]),
+      .\D (\count [27]),
+      .\Z (\n48 ));
+    defparam \i21_4_lut .INIT = "0xfffe";
+
+    (* \INIT ="0xfffe" ,
+       \lut_function ="(A+(B+(C+(D))))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i25_4_lut (
+      .\A (\n43 ),
+      .\B (\n45 ),
+      .\C (\n44 ),
+      .\D (\n46 ),
+      .\Z (\n52 ));
+    defparam \i25_4_lut .INIT = "0xfffe";
+
+    (* \INIT ="0xfffe" ,
+       \lut_function ="(A+(B+(C+(D))))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i20_4_lut (
+      .\A (\count [16]),
+      .\B (\count [8]),
+      .\C (\count [19]),
+      .\D (\count [7]),
+      .\Z (\n47 ));
+    defparam \i20_4_lut .INIT = "0xfffe";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(52[30],52[35])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_12_add_5_33 (
+      .\A0 (\GND_net ),
+      .\B0 (\count [31]),
+      .\C0 (\GND_net ),
+      .\D0 (\n1893 ),
+      .\CI0 (\n1893 ),
+      .\A1 (\GND_net ),
+      .\B1 (\GND_net ),
+      .\C1 (\GND_net ),
+      .\D1 (\n3097 ),
+      .\CI1 (\n3097 ),
+      .\S0 (\count_31__N_113 [31]),
+      .\CO0 (\n3097 ));
+    defparam \add_12_add_5_33 .INIT0 = "0xc33c";
+    defparam \add_12_add_5_33 .INIT1 = "0xc33c";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(52[30],52[35])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_12_add_5_13 (
+      .\A0 (\GND_net ),
+      .\B0 (\count [11]),
+      .\C0 (\GND_net ),
+      .\D0 (\n1873 ),
+      .\CI0 (\n1873 ),
+      .\A1 (\GND_net ),
+      .\B1 (\count [12]),
+      .\C1 (\GND_net ),
+      .\D1 (\n3067 ),
+      .\CI1 (\n3067 ),
+      .\S0 (\count_31__N_113 [11]),
+      .\S1 (\count_31__N_113 [12]),
+      .\CO0 (\n3067 ),
+      .\CO1 (\n1875 ));
+    defparam \add_12_add_5_13 .INIT0 = "0xc33c";
+    defparam \add_12_add_5_13 .INIT1 = "0xc33c";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(52[30],52[35])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_12_add_5_5 (
+      .\A0 (\GND_net ),
+      .\B0 (\count [3]),
+      .\C0 (\GND_net ),
+      .\D0 (\n1865 ),
+      .\CI0 (\n1865 ),
+      .\A1 (\GND_net ),
+      .\B1 (\count [4]),
+      .\C1 (\GND_net ),
+      .\D1 (\n3055 ),
+      .\CI1 (\n3055 ),
+      .\S0 (\count_31__N_113 [3]),
+      .\S1 (\count_31__N_113 [4]),
+      .\CO0 (\n3055 ),
+      .\CO1 (\n1867 ));
+    defparam \add_12_add_5_5 .INIT0 = "0xc33c";
+    defparam \add_12_add_5_5 .INIT1 = "0xc33c";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(52[30],52[35])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_12_add_5_23 (
+      .\A0 (\GND_net ),
+      .\B0 (\count [21]),
+      .\C0 (\GND_net ),
+      .\D0 (\n1883 ),
+      .\CI0 (\n1883 ),
+      .\A1 (\GND_net ),
+      .\B1 (\count [22]),
+      .\C1 (\GND_net ),
+      .\D1 (\n3082 ),
+      .\CI1 (\n3082 ),
+      .\S0 (\count_31__N_113 [21]),
+      .\S1 (\count_31__N_113 [22]),
+      .\CO0 (\n3082 ),
+      .\CO1 (\n1885 ));
+    defparam \add_12_add_5_23 .INIT0 = "0xc33c";
+    defparam \add_12_add_5_23 .INIT1 = "0xc33c";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(52[30],52[35])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_12_add_5_3 (
+      .\A0 (\GND_net ),
+      .\B0 (\count [1]),
+      .\C0 (\GND_net ),
+      .\D0 (\n1863 ),
+      .\CI0 (\n1863 ),
+      .\A1 (\GND_net ),
+      .\B1 (\count [2]),
+      .\C1 (\GND_net ),
+      .\D1 (\n3052 ),
+      .\CI1 (\n3052 ),
+      .\S0 (\count_31__N_113 [1]),
+      .\S1 (\count_31__N_113 [2]),
+      .\CO0 (\n3052 ),
+      .\CO1 (\n1865 ));
+    defparam \add_12_add_5_3 .INIT0 = "0xc33c";
+    defparam \add_12_add_5_3 .INIT1 = "0xc33c";
+
+    (* \INIT ="0xcccd" ,
+       \lut_function ="(A (B)+!A (B+!(C+(D))))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i254_4_lut (
+      .\A (\n47 ),
+      .\B (\count [31]),
+      .\C (\n52 ),
+      .\D (\n48 ),
+      .\Z (\n3 ));
+    defparam \i254_4_lut .INIT = "0xcccd";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(52[30],52[35])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_12_add_5_1 (
+      .\A0 (\GND_net ),
+      .\B0 (\GND_net ),
+      .\C0 (\GND_net ),
+      .\A1 (\GND_net ),
+      .\B1 (\count [0]),
+      .\C1 (\VCC_net ),
+      .\D1 (\n3025 ),
+      .\CI1 (\n3025 ),
+      .\S1 (\count_31__N_113 [0]),
+      .\CO0 (\n3025 ),
+      .\CO1 (\n1863 ),
+      .\D0 (1'b1),
+      .\CI0 (1'b1));
+    defparam \add_12_add_5_1 .INIT0 = "0xc33c";
+    defparam \add_12_add_5_1 .INIT1 = "0xc33c";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(52[30],52[35])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_12_add_5_11 (
+      .\A0 (\GND_net ),
+      .\B0 (\count [9]),
+      .\C0 (\GND_net ),
+      .\D0 (\n1871 ),
+      .\CI0 (\n1871 ),
+      .\A1 (\GND_net ),
+      .\B1 (\count [10]),
+      .\C1 (\GND_net ),
+      .\D1 (\n3064 ),
+      .\CI1 (\n3064 ),
+      .\S0 (\count_31__N_113 [9]),
+      .\S1 (\count_31__N_113 [10]),
+      .\CO0 (\n3064 ),
+      .\CO1 (\n1873 ));
+    defparam \add_12_add_5_11 .INIT0 = "0xc33c";
+    defparam \add_12_add_5_11 .INIT1 = "0xc33c";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_316 (
+      .\D (\count_31__N_113 [3]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [3]));
+    defparam \count_31__I_316 .REGSET = "RESET";
+    defparam \count_31__I_316 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(50[36],50[47])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_10_add_5_7 (
+      .\A0 (\GND_net ),
+      .\B0 (\temp_output [5]),
+      .\C0 (\n22 [5]),
+      .\D0 (\n1908 ),
+      .\CI0 (\n1908 ),
+      .\A1 (\GND_net ),
+      .\B1 (\temp_output [6]),
+      .\C1 (\n22 [6]),
+      .\D1 (\n3034 ),
+      .\CI1 (\n3034 ),
+      .\S0 (\temp_output_15__N_81 [5]),
+      .\S1 (\temp_output_15__N_81 [6]),
+      .\CO0 (\n3034 ),
+      .\CO1 (\n1910 ));
+    defparam \add_10_add_5_7 .INIT0 = "0xc33c";
+    defparam \add_10_add_5_7 .INIT1 = "0xc33c";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(52[30],52[35])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_12_add_5_9 (
+      .\A0 (\GND_net ),
+      .\B0 (\count [7]),
+      .\C0 (\GND_net ),
+      .\D0 (\n1869 ),
+      .\CI0 (\n1869 ),
+      .\A1 (\GND_net ),
+      .\B1 (\count [8]),
+      .\C1 (\GND_net ),
+      .\D1 (\n3061 ),
+      .\CI1 (\n3061 ),
+      .\S0 (\count_31__N_113 [7]),
+      .\S1 (\count_31__N_113 [8]),
+      .\CO0 (\n3061 ),
+      .\CO1 (\n1871 ));
+    defparam \add_12_add_5_9 .INIT0 = "0xc33c";
+    defparam \add_12_add_5_9 .INIT1 = "0xc33c";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(52[30],52[35])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_12_add_5_7 (
+      .\A0 (\GND_net ),
+      .\B0 (\count [5]),
+      .\C0 (\GND_net ),
+      .\D0 (\n1867 ),
+      .\CI0 (\n1867 ),
+      .\A1 (\GND_net ),
+      .\B1 (\count [6]),
+      .\C1 (\GND_net ),
+      .\D1 (\n3058 ),
+      .\CI1 (\n3058 ),
+      .\S0 (\count_31__N_113 [5]),
+      .\S1 (\count_31__N_113 [6]),
+      .\CO0 (\n3058 ),
+      .\CO1 (\n1869 ));
+    defparam \add_12_add_5_7 .INIT0 = "0xc33c";
+    defparam \add_12_add_5_7 .INIT1 = "0xc33c";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(52[30],52[35])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_12_add_5_17 (
+      .\A0 (\GND_net ),
+      .\B0 (\count [15]),
+      .\C0 (\GND_net ),
+      .\D0 (\n1877 ),
+      .\CI0 (\n1877 ),
+      .\A1 (\GND_net ),
+      .\B1 (\count [16]),
+      .\C1 (\GND_net ),
+      .\D1 (\n3073 ),
+      .\CI1 (\n3073 ),
+      .\S0 (\count_31__N_113 [15]),
+      .\S1 (\count_31__N_113 [16]),
+      .\CO0 (\n3073 ),
+      .\CO1 (\n1879 ));
+    defparam \add_12_add_5_17 .INIT0 = "0xc33c";
+    defparam \add_12_add_5_17 .INIT1 = "0xc33c";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(52[30],52[35])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_12_add_5_15 (
+      .\A0 (\GND_net ),
+      .\B0 (\count [13]),
+      .\C0 (\GND_net ),
+      .\D0 (\n1875 ),
+      .\CI0 (\n1875 ),
+      .\A1 (\GND_net ),
+      .\B1 (\count [14]),
+      .\C1 (\GND_net ),
+      .\D1 (\n3070 ),
+      .\CI1 (\n3070 ),
+      .\S0 (\count_31__N_113 [13]),
+      .\S1 (\count_31__N_113 [14]),
+      .\CO0 (\n3070 ),
+      .\CO1 (\n1877 ));
+    defparam \add_12_add_5_15 .INIT0 = "0xc33c";
+    defparam \add_12_add_5_15 .INIT1 = "0xc33c";
+
+    (* \INIT ="0xaad8" ,
+       \lut_function ="(A (B+(D))+!A !((D)+!C))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \n2787_bdd_4_lut (
+      .\A (\n2787 ),
+      .\B (\n2402 ),
+      .\C (\n2401 ),
+      .\D (\count [3]),
+      .\Z (\n2790 ));
+    defparam \n2787_bdd_4_lut .INIT = "0xaad8";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_313 (
+      .\D (\count_31__N_113 [4]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [4]));
+    defparam \count_31__I_313 .REGSET = "RESET";
+    defparam \count_31__I_313 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_310 (
+      .\D (\count_31__N_113 [5]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [5]));
+    defparam \count_31__I_310 .REGSET = "RESET";
+    defparam \count_31__I_310 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_307 (
+      .\D (\count_31__N_113 [6]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [6]));
+    defparam \count_31__I_307 .REGSET = "RESET";
+    defparam \count_31__I_307 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_304 (
+      .\D (\count_31__N_113 [7]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [7]));
+    defparam \count_31__I_304 .REGSET = "RESET";
+    defparam \count_31__I_304 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_301 (
+      .\D (\count_31__N_113 [8]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [8]));
+    defparam \count_31__I_301 .REGSET = "RESET";
+    defparam \count_31__I_301 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_298 (
+      .\D (\count_31__N_113 [9]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [9]));
+    defparam \count_31__I_298 .REGSET = "RESET";
+    defparam \count_31__I_298 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_295 (
+      .\D (\count_31__N_113 [10]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [10]));
+    defparam \count_31__I_295 .REGSET = "RESET";
+    defparam \count_31__I_295 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_292 (
+      .\D (\count_31__N_113 [11]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [11]));
+    defparam \count_31__I_292 .REGSET = "RESET";
+    defparam \count_31__I_292 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_289 (
+      .\D (\count_31__N_113 [12]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [12]));
+    defparam \count_31__I_289 .REGSET = "RESET";
+    defparam \count_31__I_289 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_286 (
+      .\D (\count_31__N_113 [13]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [13]));
+    defparam \count_31__I_286 .REGSET = "RESET";
+    defparam \count_31__I_286 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_283 (
+      .\D (\count_31__N_113 [14]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [14]));
+    defparam \count_31__I_283 .REGSET = "RESET";
+    defparam \count_31__I_283 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_280 (
+      .\D (\count_31__N_113 [15]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [15]));
+    defparam \count_31__I_280 .REGSET = "RESET";
+    defparam \count_31__I_280 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_277 (
+      .\D (\count_31__N_113 [16]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [16]));
+    defparam \count_31__I_277 .REGSET = "RESET";
+    defparam \count_31__I_277 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_274 (
+      .\D (\count_31__N_113 [17]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [17]));
+    defparam \count_31__I_274 .REGSET = "RESET";
+    defparam \count_31__I_274 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_271 (
+      .\D (\count_31__N_113 [18]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [18]));
+    defparam \count_31__I_271 .REGSET = "RESET";
+    defparam \count_31__I_271 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_268 (
+      .\D (\count_31__N_113 [19]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [19]));
+    defparam \count_31__I_268 .REGSET = "RESET";
+    defparam \count_31__I_268 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_265 (
+      .\D (\count_31__N_113 [20]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [20]));
+    defparam \count_31__I_265 .REGSET = "RESET";
+    defparam \count_31__I_265 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_262 (
+      .\D (\count_31__N_113 [21]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [21]));
+    defparam \count_31__I_262 .REGSET = "RESET";
+    defparam \count_31__I_262 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_259 (
+      .\D (\count_31__N_113 [22]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [22]));
+    defparam \count_31__I_259 .REGSET = "RESET";
+    defparam \count_31__I_259 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_256 (
+      .\D (\count_31__N_113 [23]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [23]));
+    defparam \count_31__I_256 .REGSET = "RESET";
+    defparam \count_31__I_256 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_253 (
+      .\D (\count_31__N_113 [24]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [24]));
+    defparam \count_31__I_253 .REGSET = "RESET";
+    defparam \count_31__I_253 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_250 (
+      .\D (\count_31__N_113 [25]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [25]));
+    defparam \count_31__I_250 .REGSET = "RESET";
+    defparam \count_31__I_250 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_247 (
+      .\D (\count_31__N_113 [26]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [26]));
+    defparam \count_31__I_247 .REGSET = "RESET";
+    defparam \count_31__I_247 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_244 (
+      .\D (\count_31__N_113 [27]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [27]));
+    defparam \count_31__I_244 .REGSET = "RESET";
+    defparam \count_31__I_244 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_241 (
+      .\D (\count_31__N_113 [28]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [28]));
+    defparam \count_31__I_241 .REGSET = "RESET";
+    defparam \count_31__I_241 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_238 (
+      .\D (\count_31__N_113 [29]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [29]));
+    defparam \count_31__I_238 .REGSET = "RESET";
+    defparam \count_31__I_238 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_235 (
+      .\D (\count_31__N_113 [30]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [30]));
+    defparam \count_31__I_235 .REGSET = "RESET";
+    defparam \count_31__I_235 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \count_31__I_0 (
+      .\D (\count_31__N_113 [31]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\count [31]));
+    defparam \count_31__I_0 .REGSET = "RESET";
+    defparam \count_31__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="SET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:::REGSET=SET SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_15__I_197 (
+      .\D (\temp_output_15__N_81 [11]),
+      .\SP (\count_0__N_176 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\temp_output [11]));
+    defparam \temp_output_15__I_197 .REGSET = "SET";
+    defparam \temp_output_15__I_197 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(52[30],52[35])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_12_add_5_31 (
+      .\A0 (\GND_net ),
+      .\B0 (\count [29]),
+      .\C0 (\GND_net ),
+      .\D0 (\n1891 ),
+      .\CI0 (\n1891 ),
+      .\A1 (\GND_net ),
+      .\B1 (\count [30]),
+      .\C1 (\GND_net ),
+      .\D1 (\n3094 ),
+      .\CI1 (\n3094 ),
+      .\S0 (\count_31__N_113 [29]),
+      .\S1 (\count_31__N_113 [30]),
+      .\CO0 (\n3094 ),
+      .\CO1 (\n1893 ));
+    defparam \add_12_add_5_31 .INIT0 = "0xc33c";
+    defparam \add_12_add_5_31 .INIT1 = "0xc33c";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(50[36],50[47])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_10_add_5_5 (
+      .\A0 (\GND_net ),
+      .\B0 (\temp_output [3]),
+      .\C0 (\n22 [3]),
+      .\D0 (\n1906 ),
+      .\CI0 (\n1906 ),
+      .\A1 (\GND_net ),
+      .\B1 (\temp_output [4]),
+      .\C1 (\n22 [4]),
+      .\D1 (\n3031 ),
+      .\CI1 (\n3031 ),
+      .\S0 (\temp_output_15__N_81 [3]),
+      .\S1 (\temp_output_15__N_81 [4]),
+      .\CO0 (\n3031 ),
+      .\CO1 (\n1908 ));
+    defparam \add_10_add_5_5 .INIT0 = "0xc33c";
+    defparam \add_10_add_5_5 .INIT1 = "0xc33c";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(52[30],52[35])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_12_add_5_29 (
+      .\A0 (\GND_net ),
+      .\B0 (\count [27]),
+      .\C0 (\GND_net ),
+      .\D0 (\n1889 ),
+      .\CI0 (\n1889 ),
+      .\A1 (\GND_net ),
+      .\B1 (\count [28]),
+      .\C1 (\GND_net ),
+      .\D1 (\n3091 ),
+      .\CI1 (\n3091 ),
+      .\S0 (\count_31__N_113 [27]),
+      .\S1 (\count_31__N_113 [28]),
+      .\CO0 (\n3091 ),
+      .\CO1 (\n1891 ));
+    defparam \add_12_add_5_29 .INIT0 = "0xc33c";
+    defparam \add_12_add_5_29 .INIT1 = "0xc33c";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(52[30],52[35])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_12_add_5_21 (
+      .\A0 (\GND_net ),
+      .\B0 (\count [19]),
+      .\C0 (\GND_net ),
+      .\D0 (\n1881 ),
+      .\CI0 (\n1881 ),
+      .\A1 (\GND_net ),
+      .\B1 (\count [20]),
+      .\C1 (\GND_net ),
+      .\D1 (\n3079 ),
+      .\CI1 (\n3079 ),
+      .\S0 (\count_31__N_113 [19]),
+      .\S1 (\count_31__N_113 [20]),
+      .\CO0 (\n3079 ),
+      .\CO1 (\n1883 ));
+    defparam \add_12_add_5_21 .INIT0 = "0xc33c";
+    defparam \add_12_add_5_21 .INIT1 = "0xc33c";
+
+    (* \INIT ="0xcaca" ,
+       \lut_function ="(A (B+!(C))+!A (B (C)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_0_i8_3_lut (
+      .\A (\image_data[8][0] ),
+      .\B (\image_data[9][0] ),
+      .\C (\count [0]),
+      .\Z (\n8_adj_194 ),
+      .\D (1'b0));
+    defparam \mux_5_Mux_0_i8_3_lut .INIT = "0xcaca";
+
+    (* \INIT ="0xaad8" ,
+       \lut_function ="(A (B+(D))+!A !((D)+!C))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \n2763_bdd_4_lut (
+      .\A (\n2763 ),
+      .\B (\n9_adj_195 ),
+      .\C (\n8_adj_196 ),
+      .\D (\count [2]),
+      .\Z (\n2766 ));
+    defparam \n2763_bdd_4_lut .INIT = "0xaad8";
+
+    (* \INIT ="0xcaca" ,
+       \lut_function ="(A (B+!(C))+!A (B (C)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_0_i9_3_lut (
+      .\A (\image_data[10][0] ),
+      .\B (\image_data[11][0] ),
+      .\C (\count [0]),
+      .\Z (\n9_adj_197 ),
+      .\D (1'b0));
+    defparam \mux_5_Mux_0_i9_3_lut .INIT = "0xcaca";
+
+    (* \INIT ="0x2222" ,
+       \lut_function ="(!((B)+!A))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1701_2_lut (
+      .\A (\image_data[14][0] ),
+      .\B (\count [0]),
+      .\Z (\n2454 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i1701_2_lut .INIT = "0x2222";
+
+    (* \INIT ="0xcaca" ,
+       \lut_function ="(A (B+!(C))+!A (B (C)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_0_i11_3_lut (
+      .\A (\image_data[12][0] ),
+      .\B (\image_data[13][0] ),
+      .\C (\count [0]),
+      .\Z (\n11_adj_198 ),
+      .\D (1'b0));
+    defparam \mux_5_Mux_0_i11_3_lut .INIT = "0xcaca";
+
+    (* \INIT ="0xcaca" ,
+       \lut_function ="(A (B+!(C))+!A (B (C)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_2_i8_3_lut (
+      .\A (\image_data[7][1] ),
+      .\B (\image_data[9][2] ),
+      .\C (\count [0]),
+      .\Z (\n8_adj_196 ),
+      .\D (1'b0));
+    defparam \mux_5_Mux_2_i8_3_lut .INIT = "0xcaca";
+
+    (* \INIT ="0xcaca" ,
+       \lut_function ="(A (B+!(C))+!A (B (C)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_2_i9_3_lut (
+      .\A (\image_data[10][2] ),
+      .\B (\image_data[5][6] ),
+      .\C (\count [0]),
+      .\Z (\n9_adj_195 ),
+      .\D (1'b0));
+    defparam \mux_5_Mux_2_i9_3_lut .INIT = "0xcaca";
+
+    (* \INIT ="0xcaca" ,
+       \lut_function ="(A (B+!(C))+!A (B (C)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_4_i5_3_lut (
+      .\A (\image_data[6][4] ),
+      .\B (\image_data[7][4] ),
+      .\C (\count [0]),
+      .\Z (\n5_adj_199 ),
+      .\D (1'b0));
+    defparam \mux_5_Mux_4_i5_3_lut .INIT = "0xcaca";
+
+    (* \INIT ="0xcac0" ,
+       \lut_function ="(A (B (C+(D))+!B !(C+!(D)))+!A (B (C)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1612_4_lut (
+      .\A (\image_data[5][4] ),
+      .\B (\n5_adj_199 ),
+      .\C (\count [1]),
+      .\D (\count [0]),
+      .\Z (\n2402 ));
+    defparam \i1612_4_lut .INIT = "0xcac0";
+
+    (* \INIT ="0x0ac0" ,
+       \lut_function ="(!(A (B (C (D)+!C !(D))+!B (C+!(D)))+!A (((D)+!C)+!B)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1615_4_lut (
+      .\A (\image_data[5][2] ),
+      .\B (\image_data[6][2] ),
+      .\C (\count [1]),
+      .\D (\count [0]),
+      .\Z (\n2405 ));
+    defparam \i1615_4_lut .INIT = "0x0ac0";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(50[36],50[47])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_10_add_5_3 (
+      .\A0 (\GND_net ),
+      .\B0 (\temp_output [1]),
+      .\C0 (\n22 [1]),
+      .\D0 (\n1904 ),
+      .\CI0 (\n1904 ),
+      .\A1 (\GND_net ),
+      .\B1 (\temp_output [2]),
+      .\C1 (\n22 [2]),
+      .\D1 (\n3028 ),
+      .\CI1 (\n3028 ),
+      .\S0 (\temp_output_15__N_81 [1]),
+      .\S1 (\temp_output_15__N_81 [2]),
+      .\CO0 (\n3028 ),
+      .\CO1 (\n1906 ));
+    defparam \add_10_add_5_3 .INIT0 = "0xc33c";
+    defparam \add_10_add_5_3 .INIT1 = "0xc33c";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \lineinfo ="@2(52[30],52[35])" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \add_12_add_5_27 (
+      .\A0 (\GND_net ),
+      .\B0 (\count [25]),
+      .\C0 (\GND_net ),
+      .\D0 (\n1887 ),
+      .\CI0 (\n1887 ),
+      .\A1 (\GND_net ),
+      .\B1 (\count [26]),
+      .\C1 (\GND_net ),
+      .\D1 (\n3088 ),
+      .\CI1 (\n3088 ),
+      .\S0 (\count_31__N_113 [25]),
+      .\S1 (\count_31__N_113 [26]),
+      .\CO0 (\n3088 ),
+      .\CO1 (\n1889 ));
+    defparam \add_12_add_5_27 .INIT0 = "0xc33c";
+    defparam \add_12_add_5_27 .INIT1 = "0xc33c";
+
+    (* \INIT ="0x0ac0" ,
+       \lut_function ="(!(A (B (C (D)+!C !(D))+!B (C+!(D)))+!A (((D)+!C)+!B)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1621_4_lut (
+      .\A (\image_data[13][4] ),
+      .\B (\image_data[5][5] ),
+      .\C (\count [1]),
+      .\D (\count [0]),
+      .\Z (\n2411 ));
+    defparam \i1621_4_lut .INIT = "0x0ac0";
+
+    (* \INIT ="0xe4aa" ,
+       \lut_function ="(A (C+!(D))+!A (B (D)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \count[1]_bdd_4_lut (
+      .\A (\count [1]),
+      .\B (\n11_adj_198 ),
+      .\C (\n2454 ),
+      .\D (\count [2]),
+      .\Z (\n2781 ));
+    defparam \count[1]_bdd_4_lut .INIT = "0xe4aa";
+
+    (* \INIT ="0x0ac0" ,
+       \lut_function ="(!(A (B (C (D)+!C !(D))+!B (C+!(D)))+!A (((D)+!C)+!B)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_6_i6_4_lut (
+      .\A (\image_data[5][6] ),
+      .\B (\image_data[6][6] ),
+      .\C (\count [1]),
+      .\D (\count [0]),
+      .\Z (\n6_adj_192 ));
+    defparam \mux_5_Mux_6_i6_4_lut .INIT = "0x0ac0";
+
+    (* \INIT ="0xaad8" ,
+       \lut_function ="(A (B+(D))+!A !((D)+!C))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \n2781_bdd_4_lut (
+      .\A (\n2781 ),
+      .\B (\n9_adj_197 ),
+      .\C (\n8_adj_194 ),
+      .\D (\count [2]),
+      .\Z (\n2784 ));
+    defparam \n2781_bdd_4_lut .INIT = "0xaad8";
+
+    (* \INIT ="0x0ac0" ,
+       \lut_function ="(!(A (B (C (D)+!C !(D))+!B (C+!(D)))+!A (((D)+!C)+!B)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_3_i13_4_lut (
+      .\A (\image_data[13][3] ),
+      .\B (\image_data[14][3] ),
+      .\C (\count [1]),
+      .\D (\count [0]),
+      .\Z (\n13_adj_188 ));
+    defparam \mux_5_Mux_3_i13_4_lut .INIT = "0x0ac0";
+
+    (* \INIT ="0xe4aa" ,
+       \lut_function ="(A (C+!(D))+!A (B (D)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \count[0]_bdd_4_lut (
+      .\A (\count [0]),
+      .\B (\image_data[10][1] ),
+      .\C (\image_data[8][0] ),
+      .\D (\count [1]),
+      .\Z (\n2775 ));
+    defparam \count[0]_bdd_4_lut .INIT = "0xe4aa";
+
+    (* \INIT ="0x0ac0" ,
+       \lut_function ="(!(A (B (C (D)+!C !(D))+!B (C+!(D)))+!A (((D)+!C)+!B)))" ,
+       \lineinfo ="@2(50[63],50[68])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \mux_5_Mux_1_i13_4_lut (
+      .\A (\image_data[13][1] ),
+      .\B (\image_data[11][0] ),
+      .\C (\count [1]),
+      .\D (\count [0]),
+      .\Z (\n13 ));
+    defparam \mux_5_Mux_1_i13_4_lut .INIT = "0x0ac0";
+
+    (* \INIT ="0xaad8" ,
+       \lut_function ="(A (B+(D))+!A !((D)+!C))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \n2775_bdd_4_lut (
+      .\A (\n2775 ),
+      .\B (\image_data[9][1] ),
+      .\C (\image_data[11][5] ),
+      .\D (\count [1]),
+      .\Z (\n2778 ));
+    defparam \n2775_bdd_4_lut .INIT = "0xaad8";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@2(42[13],57[20])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \temp_output_0__I_0 (
+      .\D (\temp_output [0]),
+      .\SP (\perceptron_output_0__N_16 ),
+      .\CK (\clk ),
+      .\SR (\rst ),
+      .\Q (\perceptron_output [0]));
+    defparam \temp_output_0__I_0 .REGSET = "RESET";
+    defparam \temp_output_0__I_0 .SRMODE = "CE_OVER_LSR";
+
+endmodule
+
+(* \db:architecture ="iCE40UP" ,
+   \db:device ="iCE40UP5K" ,
+   \db:package ="SG48" ,
+   \db:speed ="High-Performance_1.2V" ,
+   \db:timestamp ="1732243677" *)
+module \perceptron_v1  (
+    input \clk_12MHz ,
+    output \prediction_bit ,
+    input [2:0] \image_address ,
+    output [6:0] \prediction );
+
+    (* \is_clock =1 ,
+       \lineinfo ="@0(8[3],8[12])" *)
+    wire \clk_12MHz_c ;
+
+    (* \is_clock =1 ,
+       \lineinfo ="@0(69[8],69[11])" *)
+    wire \clk ;
+
+    wire \GND_net ;
+
+    wire \VCC_net ;
+
+    wire \image_address_c_2 ;
+
+    wire \image_address_c_1 ;
+
+    wire \image_address_c_0 ;
+
+    wire \perceptron_output_0__N_16 ;
+
+    wire \prediction_bit_c ;
+
+    wire \n3013 ;
+
+    wire \rst ;
+
+    wire \n3010 ;
+
+    wire \rom_bytes_10__3__N_61 ;
+
+    wire \rom_bytes_10__5__N_58 ;
+
+    wire \rom_bytes_10__4__N_59 ;
+
+    wire \rom_bytes_1__2__N_32 ;
+
+    wire \n1900 ;
+
+    wire \n1898 ;
+
+    wire \rom_bytes_2__4__N_33 ;
+
+    wire \n8 ;
+
+    wire \n3 ;
+
+    wire \n3019 ;
+
+    wire \n7 ;
+
+    wire \n1896 ;
+
+    wire \n3016 ;
+
+    wire \rom_bytes_5__2__N_39 ;
+
+    wire \rom_bytes_9__4__N_52 ;
+
+    wire \rst_N_180 ;
+
+    wire \rom_bytes_9__0__N_55 ;
+
+    wire \rom_bytes_5__1__N_40 ;
+
+    wire \rst_N_181 ;
+
+    wire \rom_bytes_10__1__N_63 ;
+
+    wire \rom_bytes_11__4__N_66 ;
+
+    wire \rom_bytes_13__1__N_75 ;
+
+    wire \rom_bytes_13__3__N_73 ;
+
+    wire \rom_bytes_14__4__N_77 ;
+
+    wire \clkcount_0__N_30 ;
+
+    wire \clk_N_182 ;
+
+    wire [7:0] \image_data[1] ;
+
+    wire [7:0] \image_data[2] ;
+
+    wire [7:0] \image_data[5] ;
+
+    wire [7:0] \image_data[6] ;
+
+    wire [7:0] \image_data[7] ;
+
+    wire [7:0] \image_data[8] ;
+
+    wire [7:0] \image_data[9] ;
+
+    wire [7:0] \image_data[10] ;
+
+    wire [7:0] \image_data[11] ;
+
+    wire [6:0] \clkcount_6__N_17 ;
+
+    wire [7:0] \image_data[12] ;
+
+    wire [7:0] \image_data[13] ;
+
+    wire [7:0] \image_data[14] ;
+
+    wire [6:0] \clkcount ;
+
+    wire [2:0] \prev_image_address ;
+
+    (* \dm:primitive ="VHI" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \VHI  \i2 (
+      .\Z (\VCC_net ));
+
+    (* \lineinfo ="@0(115[18],115[22])" ,
+       \dm:user ="0" *)
+    \mult  \perceptron (
+      .\image_data[1][2] (\image_data[1] [2]),
+      .\image_data[5][2] (\image_data[5] [2]),
+      .\image_data[10][5] (\image_data[10] [5]),
+      .\image_data[11][5] (\image_data[11] [5]),
+      .\image_data[1][4] (\image_data[1] [4]),
+      .\image_data[2][4] (\image_data[2] [4]),
+      .\prediction_bit_c (\prediction_bit_c ),
+      .\image_data[6][5] (\image_data[6] [5]),
+      .\image_data[11][4] (\image_data[11] [4]),
+      .\image_data[9][4] (\image_data[9] [4]),
+      .\image_data[14][2] (\image_data[14] [2]),
+      .\image_data[9][5] (\image_data[9] [5]),
+      .\image_data[5][6] (\image_data[5] [6]),
+      .\perceptron_output_0__N_16 (\perceptron_output_0__N_16 ),
+      .\clk (\clk ),
+      .\rst (\rst ),
+      .\GND_net (\GND_net ),
+      .\image_data[12][2] (\image_data[12] [2]),
+      .\image_data[6][0] (\image_data[6] [0]),
+      .\image_data[5][5] (\image_data[5] [5]),
+      .\image_data[13][5] (\image_data[13] [5]),
+      .\image_data[6][3] (\image_data[6] [3]),
+      .\image_data[8][0] (\image_data[8] [0]),
+      .\image_data[5][3] (\image_data[5] [3]),
+      .\image_data[8][3] (\image_data[8] [3]),
+      .\image_data[10][3] (\image_data[10] [3]),
+      .\image_data[6][1] (\image_data[6] [1]),
+      .\image_data[7][1] (\image_data[7] [1]),
+      .\image_data[5][1] (\image_data[5] [1]),
+      .\n3 (\n3 ),
+      .\image_data[10][6] (\image_data[10] [6]),
+      .\image_data[11][0] (\image_data[11] [0]),
+      .\image_data[2][3] (\image_data[2] [3]),
+      .\image_data[7][0] (\image_data[7] [0]),
+      .\image_data[2][1] (\image_data[2] [1]),
+      .\image_data[2][0] (\image_data[2] [0]),
+      .\VCC_net (\VCC_net ),
+      .\image_data[9][0] (\image_data[9] [0]),
+      .\image_data[10][0] (\image_data[10] [0]),
+      .\image_data[14][0] (\image_data[14] [0]),
+      .\image_data[12][0] (\image_data[12] [0]),
+      .\image_data[13][0] (\image_data[13] [0]),
+      .\image_data[9][2] (\image_data[9] [2]),
+      .\image_data[10][2] (\image_data[10] [2]),
+      .\image_data[6][4] (\image_data[6] [4]),
+      .\image_data[7][4] (\image_data[7] [4]),
+      .\image_data[5][4] (\image_data[5] [4]),
+      .\image_data[6][2] (\image_data[6] [2]),
+      .\image_data[13][4] (\image_data[13] [4]),
+      .\image_data[6][6] (\image_data[6] [6]),
+      .\image_data[13][3] (\image_data[13] [3]),
+      .\image_data[14][3] (\image_data[14] [3]),
+      .\image_data[10][1] (\image_data[10] [1]),
+      .\image_data[13][1] (\image_data[13] [1]),
+      .\image_data[9][1] (\image_data[9] [1]));
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \clkcount_6__I_84 (
+      .\D (\clkcount_6__N_17 [2]),
+      .\SP (\VCC_net ),
+      .\CK (\clk_12MHz_c ),
+      .\SR (\clkcount_0__N_30 ),
+      .\Q (\clkcount [2]));
+    defparam \clkcount_6__I_84 .REGSET = "RESET";
+    defparam \clkcount_6__I_84 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \clkcount_6__I_81 (
+      .\D (\clkcount_6__N_17 [5]),
+      .\SP (\VCC_net ),
+      .\CK (\clk_12MHz_c ),
+      .\SR (\clkcount_0__N_30 ),
+      .\Q (\clkcount [5]));
+    defparam \clkcount_6__I_81 .REGSET = "RESET";
+    defparam \clkcount_6__I_81 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \clkcount_6__I_85 (
+      .\D (\clkcount_6__N_17 [1]),
+      .\SP (\VCC_net ),
+      .\CK (\clk_12MHz_c ),
+      .\SR (\clkcount_0__N_30 ),
+      .\Q (\clkcount [1]));
+    defparam \clkcount_6__I_85 .REGSET = "RESET";
+    defparam \clkcount_6__I_85 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \clkcount_6__I_0 (
+      .\D (\clkcount_6__N_17 [6]),
+      .\SP (\VCC_net ),
+      .\CK (\clk_12MHz_c ),
+      .\SR (\clkcount_0__N_30 ),
+      .\Q (\clkcount [6]));
+    defparam \clkcount_6__I_0 .REGSET = "RESET";
+    defparam \clkcount_6__I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \clkcount_6__I_83 (
+      .\D (\clkcount_6__N_17 [3]),
+      .\SP (\VCC_net ),
+      .\CK (\clk_12MHz_c ),
+      .\SR (\clkcount_0__N_30 ),
+      .\Q (\clkcount [3]));
+    defparam \clkcount_6__I_83 .REGSET = "RESET";
+    defparam \clkcount_6__I_83 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@0(94[3],101[10])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \image_address_c_2_I_0_2 (
+      .\D (\image_address_c_2 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\prev_image_address [2]));
+    defparam \image_address_c_2_I_0_2 .REGSET = "RESET";
+    defparam \image_address_c_2_I_0_2 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0x7bde" ,
+       \lut_function ="(!(A (B (C (D))+!B !((D)+!C))+!A !(B (C+!(D))+!B (C+(D)))))" ,
+       \lineinfo ="@0(95[11],95[45])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1_4_lut (
+      .\A (\image_address_c_0 ),
+      .\B (\image_address_c_1 ),
+      .\C (\prev_image_address [0]),
+      .\D (\prev_image_address [1]),
+      .\Z (\rst_N_181 ));
+    defparam \i1_4_lut .INIT = "0x7bde";
+
+    (* \INIT ="0x6666" ,
+       \lut_function ="(!(A (B)+!A !(B)))" ,
+       \lineinfo ="@0(95[11],95[45])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \equal_12_i3_2_lut (
+      .\A (\image_address_c_2 ),
+      .\B (\prev_image_address [2]),
+      .\Z (\rst_N_180 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \equal_12_i3_2_lut .INIT = "0x6666";
+
+    (* \INIT ="0x6666" ,
+       \lut_function ="(!(A (B)+!A !(B)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1_2_lut (
+      .\A (\clk ),
+      .\B (\clkcount_0__N_30 ),
+      .\Z (\clk_N_182 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i1_2_lut .INIT = "0x6666";
+
+    (* \INIT ="0x1111" ,
+       \lut_function ="(!(A+(B)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1828_2_lut (
+      .\A (\image_address_c_2 ),
+      .\B (\image_address_c_0 ),
+      .\Z (\rom_bytes_1__2__N_32 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i1828_2_lut .INIT = "0x1111";
+
+    (* \dm:primitive ="VLO" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \VLO  \i1 (
+      .\Z (\GND_net ));
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \clkcount_219_add_4_7 (
+      .\A0 (\GND_net ),
+      .\B0 (\GND_net ),
+      .\C0 (\clkcount [5]),
+      .\D0 (\n1900 ),
+      .\CI0 (\n1900 ),
+      .\A1 (\GND_net ),
+      .\B1 (\GND_net ),
+      .\C1 (\clkcount [6]),
+      .\D1 (\n3019 ),
+      .\CI1 (\n3019 ),
+      .\S0 (\clkcount_6__N_17 [5]),
+      .\S1 (\clkcount_6__N_17 [6]),
+      .\CO0 (\n3019 ));
+    defparam \clkcount_219_add_4_7 .INIT0 = "0xc33c";
+    defparam \clkcount_219_add_4_7 .INIT1 = "0xc33c";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@0(83[3],90[10])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \clk_I_0 (
+      .\D (\clk_N_182 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk_12MHz_c ),
+      .\SR (\GND_net ),
+      .\Q (\clk ));
+    defparam \clk_I_0 .REGSET = "RESET";
+    defparam \clk_I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@0(94[3],101[10])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \image_address_c_1_I_0 (
+      .\D (\image_address_c_1 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\prev_image_address [1]));
+    defparam \image_address_c_1_I_0 .REGSET = "RESET";
+    defparam \image_address_c_1_I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \clkcount_219_add_4_5 (
+      .\A0 (\GND_net ),
+      .\B0 (\GND_net ),
+      .\C0 (\clkcount [3]),
+      .\D0 (\n1898 ),
+      .\CI0 (\n1898 ),
+      .\A1 (\GND_net ),
+      .\B1 (\GND_net ),
+      .\C1 (\clkcount [4]),
+      .\D1 (\n3016 ),
+      .\CI1 (\n3016 ),
+      .\S0 (\clkcount_6__N_17 [3]),
+      .\S1 (\clkcount_6__N_17 [4]),
+      .\CO0 (\n3016 ),
+      .\CO1 (\n1900 ));
+    defparam \clkcount_219_add_4_5 .INIT0 = "0xc33c";
+    defparam \clkcount_219_add_4_5 .INIT1 = "0xc33c";
+
+    (* \REGSET ="SET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@0(94[3],101[10])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:::REGSET=SET SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \rst_I_0 (
+      .\D (\rst_N_180 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\rst_N_181 ),
+      .\Q (\rst ));
+    defparam \rst_I_0 .REGSET = "SET";
+    defparam \rst_I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0x4545" ,
+       \lut_function ="(!(A+!(B+!(C))))" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i703_2_lut_3_lut_3_lut (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_2 ),
+      .\C (\image_address_c_0 ),
+      .\Z (\rom_bytes_14__4__N_77 ),
+      .\D (1'b0));
+    defparam \i703_2_lut_3_lut_3_lut .INIT = "0x4545";
+
+    (* \INIT ="0x4444" ,
+       \lut_function ="(!(A+!(B)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1799_2_lut (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_0 ),
+      .\Z (\rom_bytes_10__4__N_59 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i1799_2_lut .INIT = "0x4444";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \clkcount_219_add_4_3 (
+      .\A0 (\GND_net ),
+      .\B0 (\GND_net ),
+      .\C0 (\clkcount [1]),
+      .\D0 (\n1896 ),
+      .\CI0 (\n1896 ),
+      .\A1 (\GND_net ),
+      .\B1 (\GND_net ),
+      .\C1 (\clkcount [2]),
+      .\D1 (\n3013 ),
+      .\CI1 (\n3013 ),
+      .\S0 (\clkcount_6__N_17 [1]),
+      .\S1 (\clkcount_6__N_17 [2]),
+      .\CO0 (\n3013 ),
+      .\CO1 (\n1898 ));
+    defparam \clkcount_219_add_4_3 .INIT0 = "0xc33c";
+    defparam \clkcount_219_add_4_3 .INIT1 = "0xc33c";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \clkcount_6__I_86 (
+      .\D (\clkcount_6__N_17 [0]),
+      .\SP (\VCC_net ),
+      .\CK (\clk_12MHz_c ),
+      .\SR (\clkcount_0__N_30 ),
+      .\Q (\clkcount [0]));
+    defparam \clkcount_6__I_86 .REGSET = "RESET";
+    defparam \clkcount_6__I_86 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0x8888" ,
+       \lut_function ="(A (B))" ,
+       \lineinfo ="@0(84[7],84[24])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i2_2_lut (
+      .\A (\clkcount [3]),
+      .\B (\clkcount [0]),
+      .\Z (\n8 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i2_2_lut .INIT = "0x8888";
+
+    (* \INIT ="0x0202" ,
+       \lut_function ="(!((B+(C))+!A))" ,
+       \lineinfo ="@0(84[7],84[24])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1_3_lut (
+      .\A (\clkcount [5]),
+      .\B (\clkcount [2]),
+      .\C (\clkcount [6]),
+      .\Z (\n7 ),
+      .\D (1'b0));
+    defparam \i1_3_lut .INIT = "0x0202";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \lineinfo ="@0(94[3],101[10])" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \image_address_c_0_I_0 (
+      .\D (\image_address_c_0 ),
+      .\SP (\VCC_net ),
+      .\CK (\clk ),
+      .\SR (\GND_net ),
+      .\Q (\prev_image_address [0]));
+    defparam \image_address_c_0_I_0 .REGSET = "RESET";
+    defparam \image_address_c_0_I_0 .SRMODE = "CE_OVER_LSR";
+
+    (* \INIT ="0x8000" ,
+       \lut_function ="(A (B (C (D))))" ,
+       \lineinfo ="@0(84[7],84[24])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i5_4_lut (
+      .\A (\clkcount [1]),
+      .\B (\n7 ),
+      .\C (\clkcount [4]),
+      .\D (\n8 ),
+      .\Z (\clkcount_0__N_30 ));
+    defparam \i5_4_lut .INIT = "0x8000";
+
+    (* \INIT0 ="0xc33c" ,
+       \INIT1 ="0xc33c" ,
+       \dm:primitive ="FA2" ,
+       \dm:programming ="INIT0:::INIT0=0xc33c INIT1:::INIT1=0xc33c" ,
+       \dm:user ="0" *)
+    \FA2  \clkcount_219_add_4_1 (
+      .\A0 (\GND_net ),
+      .\B0 (\GND_net ),
+      .\C0 (\GND_net ),
+      .\A1 (\GND_net ),
+      .\B1 (\VCC_net ),
+      .\C1 (\clkcount [0]),
+      .\D1 (\n3010 ),
+      .\CI1 (\n3010 ),
+      .\S1 (\clkcount_6__N_17 [0]),
+      .\CO0 (\n3010 ),
+      .\CO1 (\n1896 ),
+      .\D0 (1'b1),
+      .\CI0 (1'b1));
+    defparam \clkcount_219_add_4_1 .INIT0 = "0xc33c";
+    defparam \clkcount_219_add_4_1 .INIT1 = "0xc33c";
+
+    (* \INIT ="0xdddd" ,
+       \lut_function ="((B)+!A)" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i223_2_lut (
+      .\A (\n3 ),
+      .\B (\rst ),
+      .\Z (\perceptron_output_0__N_16 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i223_2_lut .INIT = "0xdddd";
+
+    (* \INIT ="0x5555" ,
+       \lut_function ="(!(A))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1_1_lut (
+      .\A (\image_address_c_0 ),
+      .\Z (\rom_bytes_10__3__N_61 ),
+      .\B (1'b0),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i1_1_lut .INIT = "0x5555";
+
+    (* \INIT ="0x5555" ,
+       \lut_function ="(!(A))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i3_1_lut (
+      .\A (\image_address_c_2 ),
+      .\Z (\rom_bytes_10__5__N_58 ),
+      .\B (1'b0),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i3_1_lut .INIT = "0x5555";
+
+    (* \INIT ="0x1111" ,
+       \lut_function ="(!(A+(B)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1823_2_lut (
+      .\A (\image_address_c_1 ),
+      .\B (\image_address_c_2 ),
+      .\Z (\rom_bytes_2__4__N_33 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i1823_2_lut .INIT = "0x1111";
+
+    (* \INIT ="0x4141" ,
+       \lut_function ="(!(A+!(B (C)+!B !(C))))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i976_1_lut_3_lut (
+      .\A (\image_address_c_2 ),
+      .\B (\image_address_c_0 ),
+      .\C (\image_address_c_1 ),
+      .\Z (\rom_bytes_5__2__N_39 ),
+      .\D (1'b0));
+    defparam \i976_1_lut_3_lut .INIT = "0x4141";
+
+    (* \INIT ="0xbebe" ,
+       \lut_function ="(A+!(B (C)+!B !(C)))" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i714_2_lut_3_lut (
+      .\A (\image_address_c_2 ),
+      .\B (\image_address_c_0 ),
+      .\C (\image_address_c_1 ),
+      .\Z (\rom_bytes_9__4__N_52 ),
+      .\D (1'b0));
+    defparam \i714_2_lut_3_lut .INIT = "0xbebe";
+
+    (* \INIT ="0x7d7d" ,
+       \lut_function ="(!(A (B (C)+!B !(C))))" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i712_2_lut_3_lut (
+      .\A (\image_address_c_2 ),
+      .\B (\image_address_c_0 ),
+      .\C (\image_address_c_1 ),
+      .\Z (\rom_bytes_9__0__N_55 ),
+      .\D (1'b0));
+    defparam \i712_2_lut_3_lut .INIT = "0x7d7d";
+
+    (* \INIT ="0xd4d4" ,
+       \lut_function ="(A (B (C))+!A (B+(C)))" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i711_3_lut_3_lut (
+      .\A (\image_address_c_2 ),
+      .\B (\image_address_c_1 ),
+      .\C (\image_address_c_0 ),
+      .\Z (\rom_bytes_5__1__N_40 ),
+      .\D (1'b0));
+    defparam \i711_3_lut_3_lut .INIT = "0xd4d4";
+
+    (* \INIT ="0x5454" ,
+       \lut_function ="(!(A+!(B+(C))))" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i710_2_lut_3_lut (
+      .\A (\image_address_c_0 ),
+      .\B (\image_address_c_1 ),
+      .\C (\image_address_c_2 ),
+      .\Z (\rom_bytes_10__1__N_63 ),
+      .\D (1'b0));
+    defparam \i710_2_lut_3_lut .INIT = "0x5454";
+
+    (* \INIT ="0x4444" ,
+       \lut_function ="(!(A+!(B)))" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i1_2_lut_2_lut (
+      .\A (\image_address_c_0 ),
+      .\B (\image_address_c_2 ),
+      .\Z (\rom_bytes_11__4__N_66 ),
+      .\C (1'b0),
+      .\D (1'b0));
+    defparam \i1_2_lut_2_lut .INIT = "0x4444";
+
+    (* \INIT ="0xa2a2" ,
+       \lut_function ="(A ((C)+!B))" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i706_2_lut_3_lut (
+      .\A (\image_address_c_2 ),
+      .\B (\image_address_c_1 ),
+      .\C (\image_address_c_0 ),
+      .\Z (\rom_bytes_13__1__N_75 ),
+      .\D (1'b0));
+    defparam \i706_2_lut_3_lut .INIT = "0xa2a2";
+
+    (* \INIT ="0xeaea" ,
+       \lut_function ="(A+(B (C)))" ,
+       \lineinfo ="@1(20[9],180[16])" ,
+       \dm:primitive ="LUT4" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \LUT4  \i705_2_lut_3_lut (
+      .\A (\image_address_c_2 ),
+      .\B (\image_address_c_1 ),
+      .\C (\image_address_c_0 ),
+      .\Z (\rom_bytes_13__3__N_73 ),
+      .\D (1'b0));
+    defparam \i705_2_lut_3_lut .INIT = "0xeaea";
+
+    (* \REGSET ="RESET" ,
+       \SRMODE ="CE_OVER_LSR" ,
+       \dm:primitive ="FD1P3XZ" ,
+       \dm:programming ="REGSET:#ON SRMODE:#ON" ,
+       \dm:user ="0" *)
+    \FD1P3XZ  \clkcount_6__I_82 (
+      .\D (\clkcount_6__N_17 [4]),
+      .\SP (\VCC_net ),
+      .\CK (\clk_12MHz_c ),
+      .\SR (\clkcount_0__N_30 ),
+      .\Q (\clkcount [4]));
+    defparam \clkcount_6__I_82 .REGSET = "RESET";
+    defparam \clkcount_6__I_82 .SRMODE = "CE_OVER_LSR";
+
+    (* \lineinfo ="@0(109[14],109[17])" ,
+       \dm:user ="0" *)
+    \rom  \memory (
+      .\image_data[7][1] (\image_data[7] [1]),
+      .\clk (\clk ),
+      .\image_data[6][6] (\image_data[6] [6]),
+      .\image_address_c_0 (\image_address_c_0 ),
+      .\image_address_c_2 (\image_address_c_2 ),
+      .\image_data[6][5] (\image_data[6] [5]),
+      .\image_data[6][4] (\image_data[6] [4]),
+      .\image_data[6][3] (\image_data[6] [3]),
+      .\image_data[6][2] (\image_data[6] [2]),
+      .\image_data[6][1] (\image_data[6] [1]),
+      .\image_data[5][6] (\image_data[5] [6]),
+      .\image_data[5][5] (\image_data[5] [5]),
+      .\image_data[5][4] (\image_data[5] [4]),
+      .\image_data[5][3] (\image_data[5] [3]),
+      .\image_data[5][2] (\image_data[5] [2]),
+      .\image_data[2][4] (\image_data[2] [4]),
+      .\image_data[2][3] (\image_data[2] [3]),
+      .\image_data[2][1] (\image_data[2] [1]),
+      .\image_data[1][4] (\image_data[1] [4]),
+      .\rom_bytes_10__5__N_58 (\rom_bytes_10__5__N_58 ),
+      .\rom_bytes_10__3__N_61 (\rom_bytes_10__3__N_61 ),
+      .\image_data[1][2] (\image_data[1] [2]),
+      .\image_data[2][0] (\image_data[2] [0]),
+      .\image_data[5][1] (\image_data[5] [1]),
+      .\image_data[6][0] (\image_data[6] [0]),
+      .\image_data[7][0] (\image_data[7] [0]),
+      .\image_data[8][0] (\image_data[8] [0]),
+      .\image_data[9][0] (\image_data[9] [0]),
+      .\image_data[10][0] (\image_data[10] [0]),
+      .\image_data[11][0] (\image_data[11] [0]),
+      .\image_data[12][0] (\image_data[12] [0]),
+      .\image_data[13][0] (\image_data[13] [0]),
+      .\image_data[14][0] (\image_data[14] [0]),
+      .\image_address_c_1 (\image_address_c_1 ),
+      .\image_data[14][3] (\image_data[14] [3]),
+      .\image_data[14][2] (\image_data[14] [2]),
+      .\image_data[13][5] (\image_data[13] [5]),
+      .\image_data[13][4] (\image_data[13] [4]),
+      .\image_data[13][3] (\image_data[13] [3]),
+      .\image_data[13][1] (\image_data[13] [1]),
+      .\image_data[12][2] (\image_data[12] [2]),
+      .\image_data[11][5] (\image_data[11] [5]),
+      .\image_data[11][4] (\image_data[11] [4]),
+      .\image_data[10][6] (\image_data[10] [6]),
+      .\image_data[10][5] (\image_data[10] [5]),
+      .\image_data[10][3] (\image_data[10] [3]),
+      .\image_data[10][2] (\image_data[10] [2]),
+      .\image_data[10][1] (\image_data[10] [1]),
+      .\image_data[9][5] (\image_data[9] [5]),
+      .\image_data[9][4] (\image_data[9] [4]),
+      .\image_data[9][2] (\image_data[9] [2]),
+      .\image_data[9][1] (\image_data[9] [1]),
+      .\image_data[8][3] (\image_data[8] [3]),
+      .\image_data[7][4] (\image_data[7] [4]),
+      .\rom_bytes_2__4__N_33 (\rom_bytes_2__4__N_33 ),
+      .\rom_bytes_5__2__N_39 (\rom_bytes_5__2__N_39 ),
+      .\rom_bytes_9__4__N_52 (\rom_bytes_9__4__N_52 ),
+      .\rom_bytes_9__0__N_55 (\rom_bytes_9__0__N_55 ),
+      .\rom_bytes_5__1__N_40 (\rom_bytes_5__1__N_40 ),
+      .\rom_bytes_10__1__N_63 (\rom_bytes_10__1__N_63 ),
+      .\rom_bytes_10__4__N_59 (\rom_bytes_10__4__N_59 ),
+      .\rom_bytes_1__2__N_32 (\rom_bytes_1__2__N_32 ),
+      .\rom_bytes_11__4__N_66 (\rom_bytes_11__4__N_66 ),
+      .\rom_bytes_13__1__N_75 (\rom_bytes_13__1__N_75 ),
+      .\rom_bytes_13__3__N_73 (\rom_bytes_13__3__N_73 ),
+      .\rom_bytes_14__4__N_77 (\rom_bytes_14__4__N_77 ),
+      .\GND_net (\GND_net ),
+      .\VCC_net (\VCC_net ));
+
+    (* \lineinfo ="@0(9[9],9[22])" ,
+       \dm:primitive ="BB_B" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB_B  \image_address_pad[0].bb_inst (
+      .\T_N (\GND_net ),
+      .\O (\image_address_c_0 ),
+      .\B (\image_address [0]),
+      .\I (1'b0));
+
+    (* \lineinfo ="@0(9[9],9[22])" ,
+       \dm:primitive ="BB_B" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB_B  \image_address_pad[1].bb_inst (
+      .\T_N (\GND_net ),
+      .\O (\image_address_c_1 ),
+      .\B (\image_address [1]),
+      .\I (1'b0));
+
+    (* \lineinfo ="@0(9[9],9[22])" ,
+       \dm:primitive ="BB_B" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB_B  \image_address_pad[2].bb_inst (
+      .\T_N (\GND_net ),
+      .\O (\image_address_c_2 ),
+      .\B (\image_address [2]),
+      .\I (1'b0));
+
+    (* \lineinfo ="@0(8[3],8[12])" ,
+       \dm:primitive ="BB_B" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB_B  \clk_12MHz_pad.bb_inst (
+      .\T_N (\GND_net ),
+      .\O (\clk_12MHz_c ),
+      .\B (\clk_12MHz ),
+      .\I (1'b0));
+
+    (* \lineinfo ="@0(11[3],11[17])" ,
+       \dm:primitive ="BB_B" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB_B  \prediction_bit_pad.bb_inst (
+      .\T_N (\VCC_net ),
+      .\I (\prediction_bit_c ),
+      .\B (\prediction_bit ));
+
+    (* \lineinfo ="@0(10[3],10[13])" ,
+       \dm:primitive ="BB_B" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB_B  \prediction_pad[0].bb_inst (
+      .\T_N (\VCC_net ),
+      .\I (\VCC_net ),
+      .\B (\prediction [0]));
+
+    (* \lineinfo ="@0(10[3],10[13])" ,
+       \dm:primitive ="BB_B" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB_B  \prediction_pad[1].bb_inst (
+      .\T_N (\VCC_net ),
+      .\I (\prediction_bit_c ),
+      .\B (\prediction [1]));
+
+    (* \lineinfo ="@0(10[3],10[13])" ,
+       \dm:primitive ="BB_B" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB_B  \prediction_pad[2].bb_inst (
+      .\T_N (\VCC_net ),
+      .\I (\prediction_bit_c ),
+      .\B (\prediction [2]));
+
+    (* \lineinfo ="@0(10[3],10[13])" ,
+       \dm:primitive ="BB_B" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB_B  \prediction_pad[3].bb_inst (
+      .\T_N (\VCC_net ),
+      .\I (\prediction_bit_c ),
+      .\B (\prediction [3]));
+
+    (* \lineinfo ="@0(10[3],10[13])" ,
+       \dm:primitive ="BB_B" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB_B  \prediction_pad[4].bb_inst (
+      .\T_N (\VCC_net ),
+      .\I (\GND_net ),
+      .\B (\prediction [4]));
+
+    (* \lineinfo ="@0(10[3],10[13])" ,
+       \dm:primitive ="BB_B" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB_B  \prediction_pad[5].bb_inst (
+      .\T_N (\VCC_net ),
+      .\I (\GND_net ),
+      .\B (\prediction [5]));
+
+    (* \lineinfo ="@0(10[3],10[13])" ,
+       \dm:primitive ="BB_B" ,
+       \dm:programming ="" ,
+       \dm:user ="0" *)
+    \BB_B  \prediction_pad[6].bb_inst (
+      .\T_N (\VCC_net ),
+      .\I (\prediction_bit_c ),
+      .\B (\prediction [6]));
+
+endmodule
+

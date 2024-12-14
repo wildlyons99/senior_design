@@ -751,6 +751,13 @@
             <Dynamic>\perceptron/temp_output_i11</Dynamic>
         </Message>
     </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>70009502</ID>
+            <Severity>16</Severity>
+            <Dynamic>IO ports are not constrained.</Dynamic>
+        </Message>
+    </Task>
     <Task name="Export">
         <Message>
             <ID>1191031</ID>

@@ -102,14 +102,14 @@ begin
 	end process; 
 	
 	seven_map : sevenseg port map ( 
-		S => result_to_sevseg,
+		S => result_to_sevseg, 
 	    segments => prediction
 	); 
 
     memory : rom port map(
         clk             => clk,
         image_address   => image_address,
-        output_array    => image_data
+        output_array    => image_data 
     );
 
     perceptron : mult port map(

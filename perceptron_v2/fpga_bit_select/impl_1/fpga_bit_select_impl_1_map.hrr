@@ -1,0 +1,42 @@
+---------------------------------------------------
+Report for cell perceptron_v2
+   Instance path: perceptron_v2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        287        100.0
+                               LUTGATE	        227        100.0
+                                LUTCCU	         60        100.0
+                                 IOBUF	         16        100.0
+                                PFUREG	        176        100.0
+                                   DSP	          1        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                            activation	          1         1.7
+                                  mult	          1        41.8
+                                   rom	          1        17.8
+---------------------------------------------------
+Report for cell mult
+   Instance path: perceptron_v2/perceptron
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        120        41.8
+                               LUTGATE	         68        30.0
+                                LUTCCU	         52        86.7
+                                PFUREG	         64        36.4
+                                   DSP	          1        100.0
+---------------------------------------------------
+Report for cell rom
+   Instance path: perceptron_v2/memory
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         51        17.8
+                               LUTGATE	         51        22.5
+                                 IOBUF	          7        43.8
+                                PFUREG	         96        54.5
+---------------------------------------------------
+Report for cell activation
+   Instance path: perceptron_v2/activator
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         1.7
+                               LUTGATE	          5         2.2

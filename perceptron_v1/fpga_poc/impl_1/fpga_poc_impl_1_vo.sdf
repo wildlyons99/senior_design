@@ -1,7 +1,7 @@
 (DELAYFILE
   (SDFVERSION "3.0")
   (DESIGN "perceptron_v1")
-  (DATE "Thu Nov 21 21:19:10 2024")
+  (DATE "Thu Nov 21 21:48:13 2024")
   (VENDOR "Lattice")
   (PROGRAM "backanno")
   (VERSION "Radiant Software (64-bit) 2023.1.0.43.3")

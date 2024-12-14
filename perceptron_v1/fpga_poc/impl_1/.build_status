@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BuildStatus>
     <Strategy name="Strategy1">
-        <Milestone name="Export" build_result="2" build_time="1732241947">
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1732241947"/>
-            <Task name="IBIS" build_result="2" update_result="0" update_time="1732241949"/>
-            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1732241950"/>
+        <Milestone name="Export" build_result="2" build_time="1732243690">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1732243690"/>
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1732243692"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1732243693"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1732241939">
-            <Task name="Map" build_result="2" update_result="0" update_time="1732241939"/>
-            <Task name="MapTrace" build_result="0" update_result="2" update_time="1732236760"/>
+        <Milestone name="Map" build_result="2" build_time="1732243678">
+            <Task name="Map" build_result="2" update_result="0" update_time="1732243678"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1732243680"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1732241945">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1732241945"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1732241946"/>
-            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        <Milestone name="PAR" build_result="2" build_time="1732243686">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1732243686"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1732243688"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1732243689"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1732241938">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1732241938"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1732241950"/>
-            <Task name="SynTrace" build_result="0" update_result="2" update_time="1732235722"/>
-            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1732235722"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1732243677">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1732243677"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1732243693"/>
+            <Task name="SynTrace" build_result="2" update_result="0" update_time="1732243677"/>
+            <Task name="SynVerilogSimFile" build_result="2" update_result="0" update_time="1732243678"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
             <Task name="HDLE" build_result="0" update_result="2" update_time="1732235722"/>
@@ -28,17 +28,20 @@
             <Task name="PIODRC" build_result="0" update_result="2" update_time="1732235722"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="1732235722"/>
         </Milestone>
-        <Report name="IBIS/fpga_poc_impl_1.ibs" last_build_time="1732241949" last_build_size="54420"/>
-        <Report name="fpga_poc_impl_1.bgn" last_build_time="1732241947" last_build_size="991"/>
-        <Report name="fpga_poc_impl_1.bin" last_build_time="1732241947" last_build_size="104156"/>
+        <Report name="IBIS/fpga_poc_impl_1.ibs" last_build_time="1732243691" last_build_size="54420"/>
+        <Report name="fpga_poc_impl_1.bgn" last_build_time="1732243690" last_build_size="991"/>
+        <Report name="fpga_poc_impl_1.bin" last_build_time="1732243690" last_build_size="104156"/>
+        <Report name="fpga_poc_impl_1.ior.html" last_build_time="1732243689" last_build_size="3145"/>
         <Report name="fpga_poc_impl_1.lsedata" last_build_time="0" last_build_size="0"/>
-        <Report name="fpga_poc_impl_1.twr.html" last_build_time="1732241946" last_build_size="12589"/>
-        <Report name="fpga_poc_impl_1.udb" last_build_time="1732241945" last_build_size="40654"/>
-        <Report name="fpga_poc_impl_1_map.udb" last_build_time="1732241938" last_build_size="25495"/>
-        <Report name="fpga_poc_impl_1_rtl.udb" last_build_time="1732241935" last_build_size="25245"/>
-        <Report name="fpga_poc_impl_1_syn.udb" last_build_time="1732241938" last_build_size="17564"/>
-        <Report name="fpga_poc_impl_1_vo.sdf" last_build_time="1732241950" last_build_size="209980"/>
-        <Report name="fpga_poc_impl_1_vo.vo" last_build_time="1732241950" last_build_size="228679"/>
+        <Report name="fpga_poc_impl_1.tw1.html" last_build_time="1732243680" last_build_size="12585"/>
+        <Report name="fpga_poc_impl_1.twr.html" last_build_time="1732243688" last_build_size="12589"/>
+        <Report name="fpga_poc_impl_1.tws.html" last_build_time="1732243677" last_build_size="13695"/>
+        <Report name="fpga_poc_impl_1.udb" last_build_time="1732243686" last_build_size="40649"/>
+        <Report name="fpga_poc_impl_1_map.udb" last_build_time="1732243678" last_build_size="25508"/>
+        <Report name="fpga_poc_impl_1_rtl.udb" last_build_time="1732243674" last_build_size="25245"/>
+        <Report name="fpga_poc_impl_1_syn.udb" last_build_time="1732243677" last_build_size="17564"/>
+        <Report name="fpga_poc_impl_1_syn.vo" last_build_time="1732243678" last_build_size="188173"/>
+        <Report name="fpga_poc_impl_1_vo.sdf" last_build_time="1732243693" last_build_size="209980"/>
+        <Report name="fpga_poc_impl_1_vo.vo" last_build_time="1732243693" last_build_size="228679"/>
     </Strategy>
 </BuildStatus>
-                  

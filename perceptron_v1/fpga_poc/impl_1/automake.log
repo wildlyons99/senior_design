@@ -1,4 +1,4 @@
-
+.................................................................
 "C:/lscc/radiant/2023.1/tcltk/windows/bin/tclsh" "fpga_poc_impl_1_synthesize.tcl"
 
 synthesis -f fpga_poc_impl_1_lattice.synproj
@@ -9,7 +9,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Nov 21 21:18:53 2024
+Thu Nov 21 21:47:51 2024
 
 
 Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f fpga_poc_impl_1_lattice.synproj -gui -msgset Z:/senior_design/perceptron_v1/fpga_poc/promote.xml 
@@ -372,11 +372,11 @@ Top 10 highest fanout non-clock nets:
   Net : perceptron_output_0__N_16, loads : 16
 ################### End Clock Report ##################
 
-Peak Memory Usage: 106 MB
+Peak Memory Usage: 107 MB
 
 --------------------------------------------------------------
-Total CPU Time: 2 secs 
-Total REAL Time: 4 secs 
+Total CPU Time: 3 secs 
+Total REAL Time: 5 secs 
 --------------------------------------------------------------
 
 
@@ -405,6 +405,28 @@ Total CPU Time: 0 secs
 Total REAL Time: 0 secs 
 Peak Memory Usage: 34 MB
 
+
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1   -html -rpt "fpga_poc_impl_1.tws" "fpga_poc_impl_1_syn.udb" 
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -html -rpt fpga_poc_impl_1.tws fpga_poc_impl_1_syn.udb -gui
+Starting design reading...
+Initializing timer
+Starting design annotation....
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+High-Performance_1.2V
+
+Starting full timing analysis...
+Connections ignored  114  counted  1011  covered  0
+
+STA Runtime and Peak Memory Usage :
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 49 MB
+
+ 0.647277s wall, 0.218750s user + 0.015625s system = 0.234375s CPU (36.2%)
+
+
+log2sim -w -o "fpga_poc_impl_1_syn.vo"  "fpga_poc_impl_1_syn.udb" 
 
 map -i "fpga_poc_impl_1_syn.udb" -pdc "Z:/senior_design/perceptron_v1/fpga_poc/pins.pdc" -o "fpga_poc_impl_1_map.udb" -mp "fpga_poc_impl_1.mrp" -hierrpt     
 map:  version Radiant Software (64-bit) 2023.1.0.43.3
@@ -511,10 +533,44 @@ Total REAL Time: 0 secs
 Peak Memory Usage: 61 MB
 
 
+timing -sethld -sp High-Performance_1.2V -hsp m -v 10 -u 10 -endpoints 10 -nperend 1   -html -rpt "fpga_poc_impl_1.tw1" "fpga_poc_impl_1_map.udb" 
+timing -sethld -sp High-Performance_1.2V -hsp m -v 10 -u 10 -endpoints 10 -nperend 1 -html -rpt fpga_poc_impl_1.tw1 fpga_poc_impl_1_map.udb -gui
+Starting design reading...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Loading udb::Database ...
+Design:  perceptron_v1
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+
+
+
+Successfully loading udb, 0.06 seconds
+
+Initializing timer
+Starting design annotation....
+High-Performance_1.2V
+
+Starting full timing analysis...
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Connections ignored  148  counted  964  covered  0
+Changing speed to m;   changing temperature to -40
+
+STA Runtime and Peak Memory Usage :
+Total CPU Time: 0 secs 
+Total REAL Time: 2 secs 
+Peak Memory Usage: 71 MB
+
+ 1.116037s wall, 0.562500s user + 0.140625s system = 0.703125s CPU (63.0%)
+
+
 par -f "fpga_poc_impl_1.p2t" "fpga_poc_impl_1_map.udb" "fpga_poc_impl_1.udb"
 
 Lattice Place and Route Report for Design "fpga_poc_impl_1_map.udb"
-Thu Nov 21 21:18:59 2024
+Thu Nov 21 21:48:00 2024
 
 PAR: Place And Route Radiant Software (64-bit) 2023.1.0.43.3.
 Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON fpga_poc_impl_1_map.udb \
@@ -620,7 +676,7 @@ INFO - par: ASE feature is off due to non timing-driven settings.
 -----------------------------------------------------------------
 
 
-Start NBR router at 21:19:04 11/21/24
+Start NBR router at 21:48:05 11/21/24
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -654,7 +710,7 @@ Other clocks:
 --------------------------------------------------------------------------------
 Completed routing resource preassignment
 
-Start NBR section for initial routing at 21:19:04 11/21/24
+Start NBR section for initial routing at 21:48:05 11/21/24
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Routing in Serial Mode ......
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -664,7 +720,7 @@ Level 4, iteration 1
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 21:19:05 11/21/24
+Start NBR section for normal routing at 21:48:06 11/21/24
 Level 4, iteration 1
 2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
 Level 4, iteration 2
@@ -672,7 +728,7 @@ Level 4, iteration 2
 Level 4, iteration 3
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
 
-Start NBR section for post-routing at 21:19:05 11/21/24
+Start NBR section for post-routing at 21:48:06 11/21/24
 
 End NBR router with 0 unrouted connection
 
@@ -700,7 +756,7 @@ PAR_SUMMARY::Number of errors = 0
 
 Total CPU  Time: 5 secs 
 Total REAL Time: 6 secs 
-Peak Memory Usage: 93.98 MB
+Peak Memory Usage: 94.91 MB
 
 
 par done!
@@ -728,7 +784,7 @@ Performance Grade:   High-Performance_1.2V
 
 
 
-Successfully loading udb, 0.06 seconds
+Successfully loading udb, 0.05 seconds
 
 Initializing timer
 Starting design annotation....
@@ -741,10 +797,43 @@ Changing speed to m;   changing temperature to -40
 
 STA Runtime and Peak Memory Usage :
 Total CPU Time: 1 secs 
-Total REAL Time: 0 secs 
+Total REAL Time: 2 secs 
 Peak Memory Usage: 96 MB
 
- 1.473885s wall, 0.921875s user + 0.125000s system = 1.046875s CPU (71.0%)
+ 1.691019s wall, 0.953125s user + 0.093750s system = 1.046875s CPU (61.9%)
+
+
+timing  -iotime -html -rpt "fpga_poc_impl_1.ior" "fpga_poc_impl_1.udb" 
+timing -iotime -html -rpt fpga_poc_impl_1.ior fpga_poc_impl_1.udb -gui
+Starting design reading...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Loading udb::Database ...
+Design:  perceptron_v1
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+
+
+
+Successfully loading udb, 0.06 seconds
+
+Initializing timer
+Starting design annotation....
+High-Performance_1.2V
+
+Starting full timing analysis...
+Performance Hardware Data Status:   Advanced       Version 1.0.
+WARNING <70009502> - IO ports are not constrained.
+
+STA Runtime and Peak Memory Usage :
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 89 MB
+
+ 0.906817s wall, 0.781250s user + 0.062500s system = 0.843750s CPU (93.0%)
 
 
 tmcheck -par "fpga_poc_impl_1.par" 
@@ -797,7 +886,7 @@ Peak Memory Usage: 114 MB
 ibisgen "fpga_poc_impl_1.udb" "C:/lscc/radiant/2023.1/cae_library/ibis/iCE40UP.ibs"
 IBIS Models Generator: Lattice Radiant Software (64-bit) 2023.1.0.43.3
 
-Thu Nov 21 21:19:07 2024
+Thu Nov 21 21:48:10 2024
 
 Loading fpga_poc_impl_1.udb ...
 Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
