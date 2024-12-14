@@ -1,0 +1,50 @@
+#Start recording tcl command: 12/13/2024 17:23:22
+#Project Location: Z:/es4_ta_resources/nunchuck_testing; Project name: nunchuck_testing
+prj_open "Z:/es4_ta_resources/nunchuck_testing/nunchuck_testing.rdf"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Map -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Export -impl impl_1
+prj_enable_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top.vhd"
+prj_disable_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top2.vhd"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_add_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/pmod_temp_sensor_tcn75a.vhd"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_remove_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/pmod_temp_sensor_tcn75a.vhd"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_add_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top3.vhd"
+prj_disable_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top.vhd"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_disable_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top3.vhd"
+prj_enable_source "Z:/es4_ta_resources/nunchuck_testing/source/impl_1/top2.vhd"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+#Stop recording: 12/13/2024 20:26:34

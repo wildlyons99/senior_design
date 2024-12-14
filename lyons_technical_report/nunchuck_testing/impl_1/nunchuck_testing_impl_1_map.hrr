@@ -1,0 +1,23 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        151        100.0
+                               LUTGATE	        135        100.0
+                                LUTCCU	         16        100.0
+                                 IOBUF	          8        100.0
+                                PFUREG	         57        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                            i2c_master	          1        61.6
+---------------------------------------------------
+Report for cell i2c_master
+   Instance path: top/i2c_master_portmap
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         93        61.6
+                               LUTGATE	         85        63.0
+                                LUTCCU	          8        50.0
+                                 IOBUF	          2        25.0
+                                PFUREG	         32        56.1

@@ -1,0 +1,11 @@
+DRC: Design Rule Check Radiant Software (64-bit) 2023.1.0.43.3
+Fri Dec 13 20:05:13 2024
+
+WARNING <1027013> - No port matched 'clk'.
+WARNING <1014301> - Can't resolve object 'clk' in constraint 'ldc_set_location -site {36} [get_ports clk]'.
+WARNING <1027013> - No port matched 'byte_counter[0]'.
+WARNING <1014301> - Can't resolve object 'byte_counter[0]' in constraint 'ldc_set_location -site {44} [get_ports {byte_counter[0]}]'.
+WARNING <1027013> - No port matched 'byte_counter[1]'.
+WARNING <1014301> - Can't resolve object 'byte_counter[1]' in constraint 'ldc_set_location -site {6} [get_ports {byte_counter[1]}]'.
+WARNING <1027013> - No port matched 'byte_counter[2]'.
+WARNING <1014301> - Can't resolve object 'byte_counter[2]' in constraint 'ldc_set_location -site {9} [get_ports {byte_counter[2]}]'.

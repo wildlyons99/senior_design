@@ -1,0 +1,3178 @@
+
+// Verilog netlist produced by program backanno, Version Radiant Software (64-bit) 2023.1.0.43.3
+
+// backanno -o nunchuck_testing_impl_1_vo.vo -sp High-Performance_1.2V -w -neg -gui nunchuck_testing_impl_1.udb 
+// Netlist created on Fri Dec 13 20:21:49 2024
+// Netlist written on Fri Dec 13 20:21:55 2024
+// Design is for device iCE40UP5K
+// Design is for package SG48
+// Design is for performance grade High-Performance_1.2V
+
+`timescale 1 ns / 1 ps
+
+module top ( scl, sda, clk_12MHz, byte_counter, ena, busy );
+  input  clk_12MHz;
+  output sda;
+  output [2:0] byte_counter;
+  output ena, busy;
+  inout  scl;
+  wire   \i2c_master_portmap.n2361 , \i2c_master_portmap.count[2] , 
+         \i2c_master_portmap.n1773 , \i2c_master_portmap.count[1] , 
+         \i2c_master_portmap.count_0__N_76[1] , 
+         \i2c_master_portmap.count_0__N_76[2] , \i2c_master_portmap.n1775 , 
+         \i2c_master_portmap.n2367 , \i2c_master_portmap.count[6] , 
+         \i2c_master_portmap.n1777 , \i2c_master_portmap.count[5] , 
+         \i2c_master_portmap.count_0__N_76[5] , 
+         \i2c_master_portmap.count_0__N_76[6] , \i2c_master_portmap.n2364 , 
+         \i2c_master_portmap.count[4] , \i2c_master_portmap.count[3] , 
+         \i2c_master_portmap.count_0__N_76[3] , 
+         \i2c_master_portmap.count_0__N_76[4] , 
+         \i2c_master_portmap.count_0__N_76[0] , \i2c_master_portmap.n2358 , 
+         \i2c_master_portmap.n4_adj_97 , \i2c_master_portmap.count[0] , 
+         \i2c_master_portmap.count_0__N_77 , clk_12MHz_c, \clkCount_6__N_1[6] , 
+         \clkCount_6__N_1[5] , n2355, \clkCount[6] , n1785, \clkCount[5] , 
+         clkCount_0__N_14, \clkCount_6__N_1[4] , \clkCount_6__N_1[3] , n2352, 
+         \clkCount[4] , n1783, \clkCount[3] , \clkCount_6__N_1[2] , 
+         \clkCount_6__N_1[1] , n2349, \clkCount[2] , n1781, \clkCount[1] , 
+         \clkCount_6__N_1[0] , n2346, \clkCount[0] , VCC_net, 
+         \data_wr[1].sig_002.FeedThruLUT , \data_wr[0].sig_001.FeedThruLUT , 
+         \data_wr[1] , \data_wr[0] , \i2c_master_portmap.data_tx_0__N_60 , 
+         \i2c_master_portmap.data_tx_0__N_61 , \data_tx[0] , \data_tx[1] , 
+         \i2c_master_portmap.count_6__N_70[5]$n1 , 
+         \i2c_master_portmap.count_6__N_70[6]$n0 , 
+         \i2c_master_portmap.count_6__N_70[3] , 
+         \i2c_master_portmap.count_6__N_70[4] , 
+         \i2c_master_portmap.count_6__N_70[1]$n2 , 
+         \i2c_master_portmap.count_6__N_70[2] , 
+         \data_wr[3].sig_004.FeedThruLUT , \data_wr[2].sig_003.FeedThruLUT , 
+         \data_wr[3] , \data_wr[2] , \data_tx[2] , \data_tx[3] , 
+         \data_wr[5].sig_006.FeedThruLUT , \data_wr[4].sig_005.FeedThruLUT , 
+         \data_wr[5] , \data_wr[4] , \data_tx[4] , \data_tx[5] , 
+         \data_wr[7].sig_008.FeedThruLUT , \data_wr[6].sig_007.FeedThruLUT , 
+         \data_wr[7] , \data_wr[6] , \data_tx[6] , \data_tx[7] , 
+         \i2c_master_portmap.bit_cnt_2__N_62 , 
+         \i2c_master_portmap.bit_cnt_1__N_65[1]$n3 , \bit_cnt[0] , 
+         \i2c_master_portmap.n1431 , \bit_cnt[2] , \bit_cnt[1] , 
+         \i2c_master_portmap.bit_cnt_1__N_66 , 
+         \i2c_master_portmap.bit_cnt_0__N_69 , 
+         \i2c_master_portmap.state_1__N_34 , 
+         \i2c_master_portmap.state_2__N_31 , \i2c_master_portmap.state[2] , 
+         \i2c_master_portmap.state[1] , \i2c_master_portmap.state[0] , 
+         \i2c_master_portmap.n832 , \i2c_master_portmap.state_1__N_35 , 
+         \i2c_master_portmap.busy_c_N_80 , 
+         \I2C_ADDRESS[1].sig_009.FeedThruLUT , \I2C_ADDRESS[1] , 
+         \i2c_master_portmap.addr_rw[2] , \I2C_ADDRESS[6].sig_011.FeedThruLUT , 
+         \I2C_ADDRESS[4].sig_010.FeedThruLUT , \I2C_ADDRESS[6] , 
+         \I2C_ADDRESS[4] , \addr_rw[5] , \addr_rw[7] , n61, 
+         \data_wr_2__N_23[0] , \byte_counter_c_1_N_82[2] , n194, 
+         \byte_counter_c_1_N_82[1] , \byte_counter_c_1_N_82[3] , 
+         data_wr_0__N_28, data_wr_0__N_29, clk, 
+         \byte_counter_c_1_N_82[1].sig_013.FeedThruLUT , 
+         \n194.sig_012.FeedThruLUT , data_wr_5__N_20, data_wr_6__N_19, busy_c, 
+         \i2c_master_portmap.n1692 , first_time, data_wr_3__N_22, 
+         data_wr_4__N_21, \i2c_master_portmap.n1695 , clk_N_86, 
+         I2C_ADDRESS_1__N_17, I2C_ADDRESS_4__N_16, 
+         \i2c_master_portmap.count_6__N_70[1] , \i2c_master_portmap.n2010 , 
+         \i2c_master_portmap.n2013 , \i2c_master_portmap.n1029 , 
+         \i2c_master_portmap.n30 , \i2c_master_portmap.n2103 , 
+         \i2c_master_portmap.n2102 , \i2c_master_portmap.n2250 , 
+         \i2c_master_portmap.n2253 , \i2c_master_portmap.n2111 , 
+         \i2c_master_portmap.n2112 , \i2c_master_portmap.n2144 , 
+         \i2c_master_portmap.n1236 , \i2c_master_portmap.n1204 , 
+         \i2c_master_portmap.n1194 , \i2c_master_portmap.data_clk , 
+         \i2c_master_portmap.data_clk_prev , \i2c_master_portmap.n974 , n2117, 
+         \i2c_master_portmap.n2007 , \i2c_master_portmap.n101 , 
+         \i2c_master_portmap.n28 , \i2c_master_portmap.n17 , 
+         \i2c_master_portmap.n13 , ena_c, \i2c_master_portmap.sda_int_N_91 , 
+         \i2c_master_portmap.n1207 , \i2c_master_portmap.n1208 , n2099, n2100, 
+         n2256, n2259, n2118, \i2c_master_portmap.n2 , n2108, n2110, 
+         \i2c_master_portmap.n1047 , \i2c_master_portmap.n931 , 
+         \i2c_master_portmap.n12 , \i2c_master_portmap.bit_cnt_0__N_68[0] , 
+         \i2c_master_portmap.n1196 , \i2c_master_portmap.state[3] , 
+         \i2c_master_portmap.bit_cnt_1__N_65[1] , \i2c_master_portmap.n2262 , 
+         \i2c_master_portmap.n2265 , \i2c_master_portmap.n61 , 
+         \i2c_master_portmap.sda_int , \i2c_master_portmap.n1232 , 
+         \i2c_master_portmap.scl_ena_N_89 , \i2c_master_portmap.n2005 , 
+         \i2c_master_portmap.scl_ena , \i2c_master_portmap.n1838 , 
+         \i2c_master_portmap.state_0__N_38 , 
+         \i2c_master_portmap.count_6__N_70[5] , 
+         \i2c_master_portmap.count_6__N_70[6] , 
+         \i2c_master_portmap.stretch_N_93 , \i2c_master_portmap.n2143 , 
+         \i2c_master_portmap.state_3__N_30 , \i2c_master_portmap.n4_adj_99 , 
+         \i2c_master_portmap.n4_adj_94 , \i2c_master_portmap.n16 , 
+         \i2c_master_portmap.n1233 , \i2c_master_portmap.sda_int_N_90 , 
+         \i2c_master_portmap.n89 , \i2c_master_portmap.n2268 , n1, 
+         \i2c_master_portmap.n4_adj_95 , ena_c_N_81, \i2c_master_portmap.n894 , 
+         \i2c_master_portmap.n4 , \i2c_master_portmap.n1_adj_96 , 
+         \i2c_master_portmap.busy_c_N_79 , \i2c_master_portmap.n4_adj_98 , 
+         \i2c_master_portmap.n2127 , n8, n7, \i2c_master_portmap.busy_c_N_78 , 
+         data_wr_7__N_18, \i2c_master_portmap.data_clk.sig_000.FeedThruLUT , 
+         \i2c_master_portmap.data_clk_N_87 , \i2c_master_portmap.scl_clk_N_88 , 
+         \i2c_master_portmap.scl_clk , \i2c_master_portmap.n449 , 
+         data_wr_1__N_26, \data_wr_2__N_23[2] , 
+         \i2c_master_portmap.stretch_N_92 , \i2c_master_portmap.scl_out , 
+         \i2c_master_portmap.stretch , \i2c_master_portmap.state_0__N_37 , 
+         \i2c_master_portmap.n2141 , 
+         \byte_counter_c_1_N_82[2].sig_014.FeedThruLUT , byte_counter_c_1, 
+         byte_counter_c_0, GND_net, I2C_ADDRESS_6__N_15, \VCC_net\000.BUF1 ;
+
+  i2c_master_portmap_SLICE_0 \i2c_master_portmap.SLICE_0 ( 
+    .D1(\i2c_master_portmap.n2361 ), .B1(\i2c_master_portmap.count[2] ), 
+    .D0(\i2c_master_portmap.n1773 ), .B0(\i2c_master_portmap.count[1] ), 
+    .CIN0(\i2c_master_portmap.n1773 ), .CIN1(\i2c_master_portmap.n2361 ), 
+    .F0(\i2c_master_portmap.count_0__N_76[1] ), 
+    .F1(\i2c_master_portmap.count_0__N_76[2] ), 
+    .COUT1(\i2c_master_portmap.n1775 ), .COUT0(\i2c_master_portmap.n2361 ));
+  i2c_master_portmap_SLICE_1 \i2c_master_portmap.SLICE_1 ( 
+    .D1(\i2c_master_portmap.n2367 ), .B1(\i2c_master_portmap.count[6] ), 
+    .D0(\i2c_master_portmap.n1777 ), .B0(\i2c_master_portmap.count[5] ), 
+    .CIN0(\i2c_master_portmap.n1777 ), .CIN1(\i2c_master_portmap.n2367 ), 
+    .F0(\i2c_master_portmap.count_0__N_76[5] ), 
+    .F1(\i2c_master_portmap.count_0__N_76[6] ), 
+    .COUT0(\i2c_master_portmap.n2367 ));
+  i2c_master_portmap_SLICE_2 \i2c_master_portmap.SLICE_2 ( 
+    .D1(\i2c_master_portmap.n2364 ), .B1(\i2c_master_portmap.count[4] ), 
+    .D0(\i2c_master_portmap.n1775 ), .B0(\i2c_master_portmap.count[3] ), 
+    .CIN0(\i2c_master_portmap.n1775 ), .CIN1(\i2c_master_portmap.n2364 ), 
+    .F0(\i2c_master_portmap.count_0__N_76[3] ), 
+    .F1(\i2c_master_portmap.count_0__N_76[4] ), 
+    .COUT1(\i2c_master_portmap.n1777 ), .COUT0(\i2c_master_portmap.n2364 ));
+  i2c_master_portmap_SLICE_3 \i2c_master_portmap.SLICE_3 ( 
+    .DI1(\i2c_master_portmap.count_0__N_76[0] ), 
+    .D1(\i2c_master_portmap.n2358 ), .C1(\i2c_master_portmap.n4_adj_97 ), 
+    .B1(\i2c_master_portmap.count[0] ), 
+    .LSR(\i2c_master_portmap.count_0__N_77 ), .CLK(clk_12MHz_c), 
+    .CIN1(\i2c_master_portmap.n2358 ), .Q1(\i2c_master_portmap.count[0] ), 
+    .F1(\i2c_master_portmap.count_0__N_76[0] ), 
+    .COUT1(\i2c_master_portmap.n1773 ), .COUT0(\i2c_master_portmap.n2358 ));
+  SLICE_4 SLICE_4( .DI1(\clkCount_6__N_1[6] ), .DI0(\clkCount_6__N_1[5] ), 
+    .D1(n2355), .C1(\clkCount[6] ), .D0(n1785), .C0(\clkCount[5] ), 
+    .LSR(clkCount_0__N_14), .CLK(clk_12MHz_c), .CIN0(n1785), .CIN1(n2355), 
+    .Q0(\clkCount[5] ), .Q1(\clkCount[6] ), .F0(\clkCount_6__N_1[5] ), 
+    .F1(\clkCount_6__N_1[6] ), .COUT0(n2355));
+  SLICE_5 SLICE_5( .DI1(\clkCount_6__N_1[4] ), .DI0(\clkCount_6__N_1[3] ), 
+    .D1(n2352), .C1(\clkCount[4] ), .D0(n1783), .C0(\clkCount[3] ), 
+    .LSR(clkCount_0__N_14), .CLK(clk_12MHz_c), .CIN0(n1783), .CIN1(n2352), 
+    .Q0(\clkCount[3] ), .Q1(\clkCount[4] ), .F0(\clkCount_6__N_1[3] ), 
+    .F1(\clkCount_6__N_1[4] ), .COUT1(n1785), .COUT0(n2352));
+  SLICE_6 SLICE_6( .DI1(\clkCount_6__N_1[2] ), .DI0(\clkCount_6__N_1[1] ), 
+    .D1(n2349), .C1(\clkCount[2] ), .D0(n1781), .C0(\clkCount[1] ), 
+    .LSR(clkCount_0__N_14), .CLK(clk_12MHz_c), .CIN0(n1781), .CIN1(n2349), 
+    .Q0(\clkCount[1] ), .Q1(\clkCount[2] ), .F0(\clkCount_6__N_1[1] ), 
+    .F1(\clkCount_6__N_1[2] ), .COUT1(n1783), .COUT0(n2349));
+  SLICE_7 SLICE_7( .DI1(\clkCount_6__N_1[0] ), .D1(n2346), .C1(\clkCount[0] ), 
+    .B1(VCC_net), .LSR(clkCount_0__N_14), .CLK(clk_12MHz_c), .CIN1(n2346), 
+    .Q1(\clkCount[0] ), .F1(\clkCount_6__N_1[0] ), .COUT1(n1781), 
+    .COUT0(n2346));
+  SLICE_12 SLICE_12( .DI1(\data_wr[1].sig_002.FeedThruLUT ), 
+    .DI0(\data_wr[0].sig_001.FeedThruLUT ), .B1(\data_wr[1] ), 
+    .C0(\data_wr[0] ), .CE(\i2c_master_portmap.data_tx_0__N_60 ), 
+    .LSR(\i2c_master_portmap.data_tx_0__N_61 ), .CLK(clk_12MHz_c), 
+    .Q0(\data_tx[0] ), .Q1(\data_tx[1] ), 
+    .F0(\data_wr[0].sig_001.FeedThruLUT ), 
+    .F1(\data_wr[1].sig_002.FeedThruLUT ));
+  i2c_master_portmap_SLICE_15 \i2c_master_portmap.SLICE_15 ( 
+    .DI1(\i2c_master_portmap.count_6__N_70[5]$n1 ), 
+    .DI0(\i2c_master_portmap.count_6__N_70[6]$n0 ), 
+    .D1(\i2c_master_portmap.count_0__N_76[5] ), 
+    .A1(\i2c_master_portmap.count_0__N_77 ), 
+    .D0(\i2c_master_portmap.count_0__N_77 ), 
+    .A0(\i2c_master_portmap.count_0__N_76[6] ), .CLK(clk_12MHz_c), 
+    .Q0(\i2c_master_portmap.count[6] ), .Q1(\i2c_master_portmap.count[5] ), 
+    .F0(\i2c_master_portmap.count_6__N_70[6]$n0 ), 
+    .F1(\i2c_master_portmap.count_6__N_70[5]$n1 ));
+  i2c_master_portmap_SLICE_17 \i2c_master_portmap.SLICE_17 ( 
+    .DI1(\i2c_master_portmap.count_6__N_70[3] ), 
+    .DI0(\i2c_master_portmap.count_6__N_70[4] ), 
+    .D1(\i2c_master_portmap.count_0__N_76[3] ), 
+    .A1(\i2c_master_portmap.count_0__N_77 ), 
+    .D0(\i2c_master_portmap.count_0__N_77 ), 
+    .B0(\i2c_master_portmap.count_0__N_76[4] ), .CLK(clk_12MHz_c), 
+    .Q0(\i2c_master_portmap.count[4] ), .Q1(\i2c_master_portmap.count[3] ), 
+    .F0(\i2c_master_portmap.count_6__N_70[4] ), 
+    .F1(\i2c_master_portmap.count_6__N_70[3] ));
+  i2c_master_portmap_SLICE_19 \i2c_master_portmap.SLICE_19 ( 
+    .DI1(\i2c_master_portmap.count_6__N_70[1]$n2 ), 
+    .DI0(\i2c_master_portmap.count_6__N_70[2] ), 
+    .C1(\i2c_master_portmap.count_0__N_76[1] ), 
+    .A1(\i2c_master_portmap.count_0__N_77 ), 
+    .D0(\i2c_master_portmap.count_0__N_77 ), 
+    .B0(\i2c_master_portmap.count_0__N_76[2] ), .CLK(clk_12MHz_c), 
+    .Q0(\i2c_master_portmap.count[2] ), .Q1(\i2c_master_portmap.count[1] ), 
+    .F0(\i2c_master_portmap.count_6__N_70[2] ), 
+    .F1(\i2c_master_portmap.count_6__N_70[1]$n2 ));
+  SLICE_23 SLICE_23( .DI1(\data_wr[3].sig_004.FeedThruLUT ), 
+    .DI0(\data_wr[2].sig_003.FeedThruLUT ), .B1(\data_wr[3] ), 
+    .D0(\data_wr[2] ), .CE(\i2c_master_portmap.data_tx_0__N_60 ), 
+    .LSR(\i2c_master_portmap.data_tx_0__N_61 ), .CLK(clk_12MHz_c), 
+    .Q0(\data_tx[2] ), .Q1(\data_tx[3] ), 
+    .F0(\data_wr[2].sig_003.FeedThruLUT ), 
+    .F1(\data_wr[3].sig_004.FeedThruLUT ));
+  SLICE_25 SLICE_25( .DI1(\data_wr[5].sig_006.FeedThruLUT ), 
+    .DI0(\data_wr[4].sig_005.FeedThruLUT ), .D1(\data_wr[5] ), 
+    .B0(\data_wr[4] ), .CE(\i2c_master_portmap.data_tx_0__N_60 ), 
+    .LSR(\i2c_master_portmap.data_tx_0__N_61 ), .CLK(clk_12MHz_c), 
+    .Q0(\data_tx[4] ), .Q1(\data_tx[5] ), 
+    .F0(\data_wr[4].sig_005.FeedThruLUT ), 
+    .F1(\data_wr[5].sig_006.FeedThruLUT ));
+  SLICE_27 SLICE_27( .DI1(\data_wr[7].sig_008.FeedThruLUT ), 
+    .DI0(\data_wr[6].sig_007.FeedThruLUT ), .B1(\data_wr[7] ), 
+    .D0(\data_wr[6] ), .CE(\i2c_master_portmap.data_tx_0__N_60 ), 
+    .LSR(\i2c_master_portmap.data_tx_0__N_61 ), .CLK(clk_12MHz_c), 
+    .Q0(\data_tx[6] ), .Q1(\data_tx[7] ), 
+    .F0(\data_wr[6].sig_007.FeedThruLUT ), 
+    .F1(\data_wr[7].sig_008.FeedThruLUT ));
+  i2c_master_portmap_SLICE_29 \i2c_master_portmap.SLICE_29 ( 
+    .DI1(\i2c_master_portmap.bit_cnt_2__N_62 ), 
+    .DI0(\i2c_master_portmap.bit_cnt_1__N_65[1]$n3 ), .D1(\bit_cnt[0] ), 
+    .C1(\i2c_master_portmap.n1431 ), .B1(\bit_cnt[2] ), .A1(\bit_cnt[1] ), 
+    .D0(\bit_cnt[1] ), .A0(\bit_cnt[0] ), 
+    .CE(\i2c_master_portmap.bit_cnt_1__N_66 ), 
+    .LSR(\i2c_master_portmap.bit_cnt_0__N_69 ), .CLK(clk_12MHz_c), 
+    .Q0(\bit_cnt[1] ), .Q1(\bit_cnt[2] ), 
+    .F0(\i2c_master_portmap.bit_cnt_1__N_65[1]$n3 ), 
+    .F1(\i2c_master_portmap.bit_cnt_2__N_62 ));
+  i2c_master_portmap_SLICE_31 \i2c_master_portmap.SLICE_31 ( 
+    .DI1(\i2c_master_portmap.state_1__N_34 ), 
+    .DI0(\i2c_master_portmap.state_2__N_31 ), 
+    .D1(\i2c_master_portmap.state[2] ), .C1(\i2c_master_portmap.n1431 ), 
+    .B1(\i2c_master_portmap.state[1] ), .A1(\i2c_master_portmap.state[0] ), 
+    .D0(\i2c_master_portmap.state[2] ), .C0(\i2c_master_portmap.n832 ), 
+    .B0(\i2c_master_portmap.state[0] ), .A0(\i2c_master_portmap.state[1] ), 
+    .CE(\i2c_master_portmap.state_1__N_35 ), 
+    .LSR(\i2c_master_portmap.busy_c_N_80 ), .CLK(clk_12MHz_c), 
+    .Q0(\i2c_master_portmap.state[2] ), .Q1(\i2c_master_portmap.state[1] ), 
+    .F0(\i2c_master_portmap.state_2__N_31 ), 
+    .F1(\i2c_master_portmap.state_1__N_34 ));
+  SLICE_36 SLICE_36( .DI0(\I2C_ADDRESS[1].sig_009.FeedThruLUT ), 
+    .A0(\I2C_ADDRESS[1] ), .CE(\i2c_master_portmap.data_tx_0__N_60 ), 
+    .LSR(\i2c_master_portmap.data_tx_0__N_61 ), .CLK(clk_12MHz_c), 
+    .Q0(\i2c_master_portmap.addr_rw[2] ), 
+    .F0(\I2C_ADDRESS[1].sig_009.FeedThruLUT ));
+  SLICE_37 SLICE_37( .DI1(\I2C_ADDRESS[6].sig_011.FeedThruLUT ), 
+    .DI0(\I2C_ADDRESS[4].sig_010.FeedThruLUT ), .D1(\I2C_ADDRESS[6] ), 
+    .A0(\I2C_ADDRESS[4] ), .CE(\i2c_master_portmap.data_tx_0__N_60 ), 
+    .LSR(\i2c_master_portmap.data_tx_0__N_61 ), .CLK(clk_12MHz_c), 
+    .Q0(\addr_rw[5] ), .Q1(\addr_rw[7] ), 
+    .F0(\I2C_ADDRESS[4].sig_010.FeedThruLUT ), 
+    .F1(\I2C_ADDRESS[6].sig_011.FeedThruLUT ));
+  SLICE_40 SLICE_40( .DI1(n61), .DI0(\data_wr_2__N_23[0] ), 
+    .D1(\byte_counter_c_1_N_82[2] ), .B1(n194), 
+    .A1(\byte_counter_c_1_N_82[1] ), .C0(\byte_counter_c_1_N_82[2] ), 
+    .B0(\byte_counter_c_1_N_82[1] ), .A0(\byte_counter_c_1_N_82[3] ), 
+    .CE(data_wr_0__N_28), .LSR(data_wr_0__N_29), .CLK(clk), .Q0(\data_wr[0] ), 
+    .Q1(n194), .F0(\data_wr_2__N_23[0] ), .F1(n61));
+  SLICE_43 SLICE_43( .DI1(\byte_counter_c_1_N_82[1].sig_013.FeedThruLUT ), 
+    .DI0(\n194.sig_012.FeedThruLUT ), .A1(\byte_counter_c_1_N_82[1] ), 
+    .C0(n194), .CE(data_wr_0__N_28), .LSR(data_wr_0__N_29), .CLK(clk), 
+    .Q0(\byte_counter_c_1_N_82[1] ), .Q1(\byte_counter_c_1_N_82[2] ), 
+    .F0(\n194.sig_012.FeedThruLUT ), 
+    .F1(\byte_counter_c_1_N_82[1].sig_013.FeedThruLUT ));
+  SLICE_47 SLICE_47( .DI1(data_wr_5__N_20), .DI0(data_wr_6__N_19), 
+    .D1(\data_wr[5] ), .C1(busy_c), .B1(\i2c_master_portmap.n1692 ), 
+    .A1(first_time), .D0(\data_wr[6] ), .C0(busy_c), 
+    .B0(\byte_counter_c_1_N_82[3] ), .A0(first_time), .CLK(clk), 
+    .Q0(\data_wr[6] ), .Q1(\data_wr[5] ), .F0(data_wr_6__N_19), 
+    .F1(data_wr_5__N_20));
+  SLICE_49 SLICE_49( .DI1(data_wr_3__N_22), .DI0(data_wr_4__N_21), 
+    .D1(first_time), .C1(busy_c), .B1(\data_wr[3] ), 
+    .A1(\i2c_master_portmap.n1695 ), .D0(busy_c), 
+    .C0(\byte_counter_c_1_N_82[3] ), .B0(\data_wr[4] ), .A0(first_time), 
+    .CLK(clk), .Q0(\data_wr[4] ), .Q1(\data_wr[3] ), .F0(data_wr_4__N_21), 
+    .F1(data_wr_3__N_22));
+  SLICE_54 SLICE_54( .DI0(clk_N_86), .B0(clk), .A0(clkCount_0__N_14), 
+    .CLK(clk_12MHz_c), .Q0(clk), .F0(clk_N_86));
+  SLICE_55 SLICE_55( .DI1(I2C_ADDRESS_1__N_17), .DI0(I2C_ADDRESS_4__N_16), 
+    .D1(\I2C_ADDRESS[1] ), .B1(first_time), .D0(\I2C_ADDRESS[4] ), 
+    .A0(first_time), .CLK(clk), .Q0(\I2C_ADDRESS[4] ), .Q1(\I2C_ADDRESS[1] ), 
+    .F0(I2C_ADDRESS_4__N_16), .F1(I2C_ADDRESS_1__N_17));
+  i2c_master_portmap_SLICE_57 \i2c_master_portmap.SLICE_57 ( 
+    .D1(\i2c_master_portmap.count_0__N_76[5] ), 
+    .C1(\i2c_master_portmap.count_6__N_70[1] ), 
+    .B1(\i2c_master_portmap.count_0__N_76[6] ), 
+    .A1(\i2c_master_portmap.n2010 ), 
+    .D0(\i2c_master_portmap.count_0__N_76[1] ), 
+    .C0(\i2c_master_portmap.count_0__N_77 ), 
+    .F0(\i2c_master_portmap.count_6__N_70[1] ), 
+    .F1(\i2c_master_portmap.n2013 ));
+  i2c_master_portmap_SLICE_58 \i2c_master_portmap.SLICE_58 ( 
+    .D0(\i2c_master_portmap.count_0__N_76[1] ), 
+    .C0(\i2c_master_portmap.n2013 ), .B0(\i2c_master_portmap.n1029 ), 
+    .A0(\i2c_master_portmap.count_0__N_76[5] ), .F0(\i2c_master_portmap.n30 ));
+  i2c_master_portmap_SLICE_59 \i2c_master_portmap.SLICE_59 ( 
+    .D1(\i2c_master_portmap.n2103 ), .C1(\bit_cnt[2] ), .B1(\bit_cnt[1] ), 
+    .A1(\i2c_master_portmap.n2102 ), .C0(\data_wr[4] ), .B0(\data_wr[5] ), 
+    .A0(\bit_cnt[0] ), .F0(\i2c_master_portmap.n2102 ), 
+    .F1(\i2c_master_portmap.n2250 ));
+  i2c_master_portmap_SLICE_60 \i2c_master_portmap.SLICE_60 ( 
+    .C1(\i2c_master_portmap.n2253 ), .A1(\i2c_master_portmap.state[0] ), 
+    .D0(\i2c_master_portmap.n2111 ), .C0(\i2c_master_portmap.n2112 ), 
+    .B0(\bit_cnt[2] ), .A0(\i2c_master_portmap.n2250 ), 
+    .F0(\i2c_master_portmap.n2253 ), .F1(\i2c_master_portmap.n2144 ));
+  i2c_master_portmap_SLICE_61 \i2c_master_portmap.SLICE_61 ( 
+    .D0(\i2c_master_portmap.busy_c_N_80 ), .C0(\i2c_master_portmap.n1236 ), 
+    .B0(\i2c_master_portmap.state[2] ), .A0(\i2c_master_portmap.state[0] ), 
+    .F0(\i2c_master_portmap.bit_cnt_1__N_66 ));
+  i2c_master_portmap_SLICE_62 \i2c_master_portmap.SLICE_62 ( 
+    .D1(\i2c_master_portmap.n1204 ), .C1(\i2c_master_portmap.n1194 ), 
+    .B1(\i2c_master_portmap.state[0] ), .A1(\i2c_master_portmap.state[1] ), 
+    .C0(\i2c_master_portmap.data_clk ), .B0(\i2c_master_portmap.state[2] ), 
+    .A0(\i2c_master_portmap.data_clk_prev ), .F0(\i2c_master_portmap.n1194 ), 
+    .F1(\i2c_master_portmap.n1236 ));
+  i2c_master_portmap_SLICE_63 \i2c_master_portmap.SLICE_63 ( .D1(\bit_cnt[2] ), 
+    .B1(\data_tx[0] ), .A1(\data_tx[4] ), .D0(\bit_cnt[1] ), .C0(\bit_cnt[2] ), 
+    .A0(\bit_cnt[0] ), .F0(\i2c_master_portmap.n974 ), .F1(n2117));
+  i2c_master_portmap_SLICE_64 \i2c_master_portmap.SLICE_64 ( .D1(\bit_cnt[0] ), 
+    .C1(\i2c_master_portmap.n2007 ), .B1(\addr_rw[5] ), 
+    .A1(\i2c_master_portmap.n974 ), .D0(\bit_cnt[1] ), 
+    .C0(\i2c_master_portmap.addr_rw[2] ), .F0(\i2c_master_portmap.n2007 ), 
+    .F1(\i2c_master_portmap.n101 ));
+  i2c_master_portmap_SLICE_65 \i2c_master_portmap.SLICE_65 ( 
+    .D1(\i2c_master_portmap.state[2] ), .C1(\i2c_master_portmap.n1431 ), 
+    .B1(\i2c_master_portmap.state[0] ), .A1(\i2c_master_portmap.state[1] ), 
+    .D0(\bit_cnt[2] ), .B0(\bit_cnt[1] ), .A0(\bit_cnt[0] ), 
+    .F0(\i2c_master_portmap.n1431 ), .F1(\i2c_master_portmap.n28 ));
+  i2c_master_portmap_SLICE_66 \i2c_master_portmap.SLICE_66 ( 
+    .D1(\i2c_master_portmap.state[1] ), .C1(\i2c_master_portmap.n17 ), 
+    .B1(\i2c_master_portmap.n28 ), .A1(\i2c_master_portmap.state_1__N_35 ), 
+    .D0(\i2c_master_portmap.state[2] ), .C0(\i2c_master_portmap.n13 ), 
+    .B0(ena_c), .F0(\i2c_master_portmap.n17 ), 
+    .F1(\i2c_master_portmap.sda_int_N_91 ));
+  i2c_master_portmap_SLICE_67 \i2c_master_portmap.SLICE_67 ( .D1(\bit_cnt[0] ), 
+    .C1(\i2c_master_portmap.n1204 ), .B1(\i2c_master_portmap.state[0] ), 
+    .D0(\i2c_master_portmap.data_clk_prev ), 
+    .C0(\i2c_master_portmap.data_clk ), .A0(\i2c_master_portmap.state[2] ), 
+    .F0(\i2c_master_portmap.n1204 ), .F1(\i2c_master_portmap.n1207 ));
+  i2c_master_portmap_SLICE_68 \i2c_master_portmap.SLICE_68 ( .D1(\data_wr[6] ), 
+    .C1(\data_wr[7] ), .B1(\bit_cnt[0] ), .D0(\bit_cnt[0] ), 
+    .C0(\i2c_master_portmap.n1194 ), .B0(\i2c_master_portmap.state[1] ), 
+    .A0(\i2c_master_portmap.n1207 ), .F0(\i2c_master_portmap.n1208 ), 
+    .F1(\i2c_master_portmap.n2103 ));
+  SLICE_69 SLICE_69( .D1(\bit_cnt[1] ), .C1(n2099), .B1(\bit_cnt[0] ), 
+    .A1(n2100), .C0(\bit_cnt[2] ), .B0(\data_tx[1] ), .A0(\data_tx[5] ), 
+    .F0(n2099), .F1(n2256));
+  SLICE_70 SLICE_70( .D1(\i2c_master_portmap.state[0] ), .C1(n2259), 
+    .B1(\i2c_master_portmap.n1431 ), .A1(\i2c_master_portmap.n101 ), 
+    .D0(n2118), .C0(n2117), .B0(\bit_cnt[0] ), .A0(n2256), .F0(n2259), 
+    .F1(\i2c_master_portmap.n2 ));
+  SLICE_71 SLICE_71( .C1(n2108), .B1(\data_tx[5] ), .A1(\bit_cnt[0] ), 
+    .D0(\data_tx[6] ), .C0(\bit_cnt[1] ), .B0(\bit_cnt[0] ), .A0(\data_tx[4] ), 
+    .F0(n2108), .F1(n2110));
+  i2c_master_portmap_SLICE_73 \i2c_master_portmap.SLICE_73 ( 
+    .D1(\i2c_master_portmap.count_0__N_76[5] ), 
+    .C1(\i2c_master_portmap.n1047 ), .B1(\i2c_master_portmap.count_0__N_77 ), 
+    .A1(\i2c_master_portmap.count_0__N_76[6] ), 
+    .D0(\i2c_master_portmap.count_0__N_76[3] ), 
+    .C0(\i2c_master_portmap.count_0__N_76[2] ), 
+    .B0(\i2c_master_portmap.count_0__N_76[1] ), 
+    .A0(\i2c_master_portmap.count_0__N_76[4] ), 
+    .F0(\i2c_master_portmap.n1047 ), .F1(\i2c_master_portmap.n931 ));
+  i2c_master_portmap_SLICE_74 \i2c_master_portmap.SLICE_74 ( 
+    .D1(\i2c_master_portmap.count[1] ), .C1(\i2c_master_portmap.n12 ), 
+    .B1(\i2c_master_portmap.count[5] ), .A1(\i2c_master_portmap.count[3] ), 
+    .D0(\i2c_master_portmap.count[4] ), .C0(\i2c_master_portmap.count[2] ), 
+    .B0(\i2c_master_portmap.count[6] ), .A0(\i2c_master_portmap.count[0] ), 
+    .F0(\i2c_master_portmap.n12 ), .F1(\i2c_master_portmap.count_0__N_77 ));
+  i2c_master_portmap_SLICE_75 \i2c_master_portmap.SLICE_75 ( 
+    .DI1(\i2c_master_portmap.bit_cnt_0__N_68[0] ), .D1(\bit_cnt[0] ), 
+    .C1(\i2c_master_portmap.n1196 ), .B1(\i2c_master_portmap.state[3] ), 
+    .A1(\i2c_master_portmap.n1208 ), .B0(\bit_cnt[1] ), .A0(\bit_cnt[0] ), 
+    .LSR(\i2c_master_portmap.bit_cnt_0__N_69 ), .CLK(clk_12MHz_c), 
+    .Q1(\bit_cnt[0] ), .F0(\i2c_master_portmap.bit_cnt_1__N_65[1] ), 
+    .F1(\i2c_master_portmap.bit_cnt_0__N_68[0] ));
+  i2c_master_portmap_SLICE_76 \i2c_master_portmap.SLICE_76 ( .D1(\data_tx[1] ), 
+    .C1(\i2c_master_portmap.n2262 ), .B1(\data_tx[0] ), 
+    .A1(\i2c_master_portmap.bit_cnt_1__N_65[1] ), .D0(\data_tx[3] ), 
+    .C0(\bit_cnt[0] ), .B0(\bit_cnt[1] ), .A0(\data_tx[2] ), 
+    .F0(\i2c_master_portmap.n2262 ), .F1(\i2c_master_portmap.n2265 ));
+  i2c_master_portmap_SLICE_77 \i2c_master_portmap.SLICE_77 ( 
+    .C1(\i2c_master_portmap.n61 ), .B1(\i2c_master_portmap.data_clk_prev ), 
+    .A1(\i2c_master_portmap.sda_int ), .D0(\i2c_master_portmap.state[2] ), 
+    .C0(\i2c_master_portmap.state[1] ), .B0(\i2c_master_portmap.state[0] ), 
+    .F0(\i2c_master_portmap.n61 ), .F1(\i2c_master_portmap.n1232 ));
+  i2c_master_portmap_SLICE_78 \i2c_master_portmap.SLICE_78 ( 
+    .DI1(\i2c_master_portmap.scl_ena_N_89 ), 
+    .D1(\i2c_master_portmap.state[3] ), .C1(\i2c_master_portmap.n2005 ), 
+    .B1(\i2c_master_portmap.scl_ena ), .A1(\i2c_master_portmap.data_clk_prev ), 
+    .D0(\i2c_master_portmap.n61 ), .C0(\i2c_master_portmap.n1838 ), 
+    .B0(\i2c_master_portmap.data_clk ), .A0(\i2c_master_portmap.state[3] ), 
+    .CLK(clk_12MHz_c), .Q1(\i2c_master_portmap.scl_ena ), 
+    .F0(\i2c_master_portmap.n2005 ), .F1(\i2c_master_portmap.scl_ena_N_89 ));
+  i2c_master_portmap_SLICE_79 \i2c_master_portmap.SLICE_79 ( 
+    .D1(\i2c_master_portmap.state[1] ), .C1(\i2c_master_portmap.state[2] ), 
+    .B1(\i2c_master_portmap.state[3] ), 
+    .A1(\i2c_master_portmap.state_1__N_35 ), 
+    .C0(\i2c_master_portmap.data_clk ), 
+    .A0(\i2c_master_portmap.data_clk_prev ), 
+    .F0(\i2c_master_portmap.state_1__N_35 ), 
+    .F1(\i2c_master_portmap.state_0__N_38 ));
+  i2c_master_portmap_SLICE_81 \i2c_master_portmap.SLICE_81 ( 
+    .D1(\i2c_master_portmap.count_6__N_70[5] ), 
+    .C1(\i2c_master_portmap.count_6__N_70[6] ), .B1(\i2c_master_portmap.n931 ), 
+    .A1(\i2c_master_portmap.n2010 ), .D0(\i2c_master_portmap.count_0__N_77 ), 
+    .A0(\i2c_master_portmap.count_0__N_76[6] ), 
+    .F0(\i2c_master_portmap.count_6__N_70[6] ), 
+    .F1(\i2c_master_portmap.stretch_N_93 ));
+  i2c_master_portmap_SLICE_82 \i2c_master_portmap.SLICE_82 ( 
+    .D1(\i2c_master_portmap.count_0__N_76[5] ), 
+    .B1(\i2c_master_portmap.count_0__N_77 ), 
+    .D0(\i2c_master_portmap.count_0__N_76[3] ), 
+    .C0(\i2c_master_portmap.count_0__N_76[2] ), 
+    .B0(\i2c_master_portmap.count_0__N_77 ), 
+    .A0(\i2c_master_portmap.count_0__N_76[4] ), 
+    .F0(\i2c_master_portmap.n2010 ), 
+    .F1(\i2c_master_portmap.count_6__N_70[5] ));
+  i2c_master_portmap_SLICE_83 \i2c_master_portmap.SLICE_83 ( 
+    .D1(\i2c_master_portmap.state[0] ), .B1(\i2c_master_portmap.state[2] ), 
+    .A1(\i2c_master_portmap.state[1] ), .D0(\i2c_master_portmap.state[2] ), 
+    .C0(ena_c), .B0(\i2c_master_portmap.state[1] ), 
+    .A0(\i2c_master_portmap.state[0] ), .F0(\i2c_master_portmap.n2143 ), 
+    .F1(\i2c_master_portmap.n1838 ));
+  i2c_master_portmap_SLICE_84 \i2c_master_portmap.SLICE_84 ( 
+    .DI1(\i2c_master_portmap.state_3__N_30 ), 
+    .D1(\i2c_master_portmap.state_1__N_35 ), .C1(ena_c), 
+    .B1(\i2c_master_portmap.state[3] ), .A1(\i2c_master_portmap.n4_adj_99 ), 
+    .D0(\i2c_master_portmap.n61 ), .C0(\i2c_master_portmap.n2143 ), 
+    .B0(\i2c_master_portmap.state_1__N_35 ), 
+    .A0(\i2c_master_portmap.state[3] ), .CLK(clk_12MHz_c), 
+    .Q1(\i2c_master_portmap.state[3] ), 
+    .F0(\i2c_master_portmap.data_tx_0__N_60 ), 
+    .F1(\i2c_master_portmap.state_3__N_30 ));
+  i2c_master_portmap_SLICE_85 \i2c_master_portmap.SLICE_85 ( 
+    .D1(\i2c_master_portmap.data_clk_prev ), 
+    .C1(\i2c_master_portmap.n4_adj_94 ), .B1(\i2c_master_portmap.sda_int ), 
+    .A1(\i2c_master_portmap.state[0] ), .B0(\i2c_master_portmap.state[2] ), 
+    .A0(\i2c_master_portmap.state[1] ), .F0(\i2c_master_portmap.n4_adj_94 ), 
+    .F1(\i2c_master_portmap.n16 ));
+  i2c_master_portmap_SLICE_88 \i2c_master_portmap.SLICE_88 ( 
+    .C0(\i2c_master_portmap.state[3] ), .B0(\i2c_master_portmap.n1232 ), 
+    .A0(\i2c_master_portmap.n16 ), .F0(\i2c_master_portmap.n1233 ));
+  i2c_master_portmap_SLICE_89 \i2c_master_portmap.SLICE_89 ( 
+    .DI1(\i2c_master_portmap.sda_int_N_90 ), .D1(\i2c_master_portmap.n89 ), 
+    .C1(\i2c_master_portmap.n2 ), .B1(\i2c_master_portmap.state[2] ), 
+    .A1(\i2c_master_portmap.n2268 ), .D0(\bit_cnt[2] ), 
+    .C0(\i2c_master_portmap.n2007 ), .B0(\bit_cnt[0] ), .A0(n1), 
+    .CE(\i2c_master_portmap.sda_int_N_91 ), .CLK(clk_12MHz_c), 
+    .Q1(\i2c_master_portmap.sda_int ), .F0(\i2c_master_portmap.n89 ), 
+    .F1(\i2c_master_portmap.sda_int_N_90 ));
+  SLICE_90 SLICE_90( .D1(ena_c), .C1(\i2c_master_portmap.n4_adj_95 ), 
+    .B1(\I2C_ADDRESS[4] ), .A1(\addr_rw[5] ), .D0(\bit_cnt[1] ), 
+    .B0(\addr_rw[5] ), .A0(\addr_rw[7] ), .F0(n1), 
+    .F1(\i2c_master_portmap.n832 ));
+  i2c_master_portmap_SLICE_91 \i2c_master_portmap.SLICE_91 ( 
+    .C1(\i2c_master_portmap.n4_adj_95 ), .B1(\I2C_ADDRESS[4] ), 
+    .A1(\addr_rw[5] ), .D0(\I2C_ADDRESS[6] ), .C0(\I2C_ADDRESS[1] ), 
+    .B0(\i2c_master_portmap.addr_rw[2] ), .A0(\addr_rw[7] ), 
+    .F0(\i2c_master_portmap.n4_adj_95 ), .F1(\i2c_master_portmap.n13 ));
+  i2c_master_portmap_SLICE_96 \i2c_master_portmap.SLICE_96 ( .DI1(ena_c_N_81), 
+    .D1(first_time), .A1(busy_c), .D0(\i2c_master_portmap.state[1] ), 
+    .C0(\i2c_master_portmap.n1431 ), .A0(ena_c), .CLK(clk), .Q1(ena_c), 
+    .F0(\i2c_master_portmap.n894 ), .F1(ena_c_N_81));
+  i2c_master_portmap_SLICE_97 \i2c_master_portmap.SLICE_97 ( 
+    .C1(\i2c_master_portmap.n1029 ), 
+    .B1(\i2c_master_portmap.count_0__N_76[5] ), 
+    .A1(\i2c_master_portmap.count_0__N_76[1] ), 
+    .D0(\i2c_master_portmap.count_0__N_76[3] ), 
+    .C0(\i2c_master_portmap.count_0__N_76[4] ), 
+    .A0(\i2c_master_portmap.count_0__N_76[2] ), 
+    .F0(\i2c_master_portmap.n1029 ), .F1(\i2c_master_portmap.n4 ));
+  i2c_master_portmap_SLICE_99 \i2c_master_portmap.SLICE_99 ( 
+    .D1(\i2c_master_portmap.state_1__N_35 ), 
+    .C1(\i2c_master_portmap.n1_adj_96 ), .B1(\i2c_master_portmap.state[1] ), 
+    .A1(\i2c_master_portmap.state[3] ), .C0(ena_c), 
+    .A0(\i2c_master_portmap.state[2] ), .F0(\i2c_master_portmap.n1_adj_96 ), 
+    .F1(\i2c_master_portmap.busy_c_N_79 ));
+  i2c_master_portmap_SLICE_102 \i2c_master_portmap.SLICE_102 ( 
+    .D0(\i2c_master_portmap.state[2] ), .C0(\i2c_master_portmap.n2144 ), 
+    .B0(\i2c_master_portmap.state[1] ), .A0(\i2c_master_portmap.n4_adj_98 ), 
+    .F0(\i2c_master_portmap.n2268 ));
+  i2c_master_portmap_SLICE_103 \i2c_master_portmap.SLICE_103 ( .D1(ena_c), 
+    .C1(\i2c_master_portmap.n2127 ), .B1(\i2c_master_portmap.state[0] ), 
+    .A1(\i2c_master_portmap.n13 ), .D0(\i2c_master_portmap.n974 ), .C0(n2110), 
+    .B0(\i2c_master_portmap.n2265 ), .A0(\i2c_master_portmap.n1431 ), 
+    .F0(\i2c_master_portmap.n2127 ), .F1(\i2c_master_portmap.n4_adj_98 ));
+  i2c_master_portmap_SLICE_105 \i2c_master_portmap.SLICE_105 ( 
+    .D1(\i2c_master_portmap.state[1] ), .C1(\i2c_master_portmap.state[0] ), 
+    .B1(\i2c_master_portmap.state[2] ), .A1(\i2c_master_portmap.busy_c_N_80 ), 
+    .D0(\i2c_master_portmap.state[3] ), .C0(\i2c_master_portmap.data_clk ), 
+    .B0(\i2c_master_portmap.data_clk_prev ), 
+    .F0(\i2c_master_portmap.busy_c_N_80 ), 
+    .F1(\i2c_master_portmap.bit_cnt_0__N_69 ));
+  SLICE_107 SLICE_107( .C0(\clkCount[0] ), .A0(\clkCount[3] ), .F0(n8));
+  SLICE_108 SLICE_108( .D1(\clkCount[4] ), .C1(n7), .B1(\clkCount[1] ), 
+    .A1(n8), .C0(\clkCount[5] ), .B0(\clkCount[2] ), .A0(\clkCount[6] ), 
+    .F0(n7), .F1(clkCount_0__N_14));
+  i2c_master_portmap_SLICE_109 \i2c_master_portmap.SLICE_109 ( 
+    .DI1(\i2c_master_portmap.busy_c_N_78 ), .D1(ena_c), 
+    .C1(\i2c_master_portmap.state[0] ), .B1(\i2c_master_portmap.state[1] ), 
+    .A1(\i2c_master_portmap.state[2] ), .D0(\byte_counter_c_1_N_82[2] ), 
+    .C0(busy_c), .B0(\byte_counter_c_1_N_82[3] ), 
+    .CE(\i2c_master_portmap.busy_c_N_79 ), 
+    .LSR(\i2c_master_portmap.busy_c_N_80 ), .CLK(clk_12MHz_c), .Q1(busy_c), 
+    .F0(\i2c_master_portmap.n1695 ), .F1(\i2c_master_portmap.busy_c_N_78 ));
+  i2c_master_portmap_SLICE_110 \i2c_master_portmap.SLICE_110 ( 
+    .DI1(data_wr_7__N_18), .D1(\data_wr[7] ), .C1(\i2c_master_portmap.n1692 ), 
+    .B1(first_time), .A1(busy_c), .D0(busy_c), .C0(\byte_counter_c_1_N_82[2] ), 
+    .B0(\byte_counter_c_1_N_82[1] ), .A0(\byte_counter_c_1_N_82[3] ), 
+    .CLK(clk), .Q1(\data_wr[7] ), .F0(\i2c_master_portmap.n1692 ), 
+    .F1(data_wr_7__N_18));
+  i2c_master_portmap_SLICE_111 \i2c_master_portmap.SLICE_111 ( 
+    .DI1(\i2c_master_portmap.data_clk.sig_000.FeedThruLUT ), 
+    .A1(\i2c_master_portmap.data_clk ), 
+    .D0(\i2c_master_portmap.data_clk_prev ), 
+    .C0(\i2c_master_portmap.state[3] ), .B0(\i2c_master_portmap.n61 ), 
+    .A0(\i2c_master_portmap.data_clk ), .CLK(clk_12MHz_c), 
+    .Q1(\i2c_master_portmap.data_clk_prev ), 
+    .F0(\i2c_master_portmap.data_tx_0__N_61 ), 
+    .F1(\i2c_master_portmap.data_clk.sig_000.FeedThruLUT ));
+  i2c_master_portmap_SLICE_112 \i2c_master_portmap.SLICE_112 ( 
+    .C0(\i2c_master_portmap.data_clk ), 
+    .B0(\i2c_master_portmap.data_clk_prev ), .A0(\i2c_master_portmap.n61 ), 
+    .F0(\i2c_master_portmap.n1196 ));
+  i2c_master_portmap_SLICE_114 \i2c_master_portmap.SLICE_114 ( 
+    .DI1(\i2c_master_portmap.data_clk_N_87 ), .D1(\i2c_master_portmap.n4 ), 
+    .C1(\i2c_master_portmap.count_0__N_76[6] ), .B1(\i2c_master_portmap.n931 ), 
+    .A1(\i2c_master_portmap.count_0__N_77 ), 
+    .D0(\i2c_master_portmap.state[1] ), .C0(\i2c_master_portmap.state[2] ), 
+    .B0(\i2c_master_portmap.data_clk ), 
+    .A0(\i2c_master_portmap.data_clk_prev ), .CLK(clk_12MHz_c), 
+    .Q1(\i2c_master_portmap.data_clk ), .F0(\i2c_master_portmap.n4_adj_99 ), 
+    .F1(\i2c_master_portmap.data_clk_N_87 ));
+  SLICE_119 SLICE_119( .F0(VCC_net));
+  i2c_master_portmap_SLICE_120 \i2c_master_portmap.SLICE_120 ( 
+    .DI1(\i2c_master_portmap.scl_clk_N_88 ), .C1(\i2c_master_portmap.n30 ), 
+    .B1(\i2c_master_portmap.count_0__N_76[6] ), 
+    .A1(\i2c_master_portmap.count_0__N_77 ), .C0(\i2c_master_portmap.scl_ena ), 
+    .A0(\i2c_master_portmap.scl_clk ), .CLK(clk_12MHz_c), 
+    .Q1(\i2c_master_portmap.scl_clk ), .F0(\i2c_master_portmap.n449 ), 
+    .F1(\i2c_master_portmap.scl_clk_N_88 ));
+  i2c_master_portmap_SLICE_121 \i2c_master_portmap.SLICE_121 ( 
+    .DI1(data_wr_1__N_26), .D1(\data_wr[1] ), .C1(first_time), 
+    .B1(\i2c_master_portmap.n1695 ), .A1(busy_c), .C0(\bit_cnt[0] ), 
+    .B0(\data_wr[0] ), .A0(\data_wr[1] ), .CLK(clk), .Q1(\data_wr[1] ), 
+    .F0(\i2c_master_portmap.n2111 ), .F1(data_wr_1__N_26));
+  i2c_master_portmap_SLICE_122 \i2c_master_portmap.SLICE_122 ( 
+    .DI1(\data_wr_2__N_23[2] ), .D1(\byte_counter_c_1_N_82[2] ), 
+    .C1(\byte_counter_c_1_N_82[1] ), .B1(\byte_counter_c_1_N_82[3] ), 
+    .D0(\bit_cnt[0] ), .C0(\data_wr[3] ), .A0(\data_wr[2] ), 
+    .CE(data_wr_0__N_28), .LSR(data_wr_0__N_29), .CLK(clk), .Q1(\data_wr[2] ), 
+    .F0(\i2c_master_portmap.n2112 ), .F1(\data_wr_2__N_23[2] ));
+  i2c_master_portmap_SLICE_129 \i2c_master_portmap.SLICE_129 ( 
+    .DI1(\i2c_master_portmap.stretch_N_92 ), .C1(\i2c_master_portmap.scl_out ), 
+    .A0(\i2c_master_portmap.stretch ), .CE(\i2c_master_portmap.stretch_N_93 ), 
+    .CLK(clk_12MHz_c), .Q1(\i2c_master_portmap.stretch ), 
+    .F0(\i2c_master_portmap.n4_adj_97 ), 
+    .F1(\i2c_master_portmap.stretch_N_92 ));
+  i2c_master_portmap_SLICE_131 \i2c_master_portmap.SLICE_131 ( 
+    .DI1(\i2c_master_portmap.state_0__N_37 ), 
+    .D1(\i2c_master_portmap.state[0] ), .C1(\i2c_master_portmap.n894 ), 
+    .B1(\i2c_master_portmap.state[2] ), .A1(\i2c_master_portmap.n2141 ), 
+    .C0(\i2c_master_portmap.n13 ), .B0(ena_c), 
+    .A0(\i2c_master_portmap.state[0] ), 
+    .CE(\i2c_master_portmap.state_0__N_38 ), 
+    .LSR(\i2c_master_portmap.busy_c_N_80 ), .CLK(clk_12MHz_c), 
+    .Q1(\i2c_master_portmap.state[0] ), .F0(\i2c_master_portmap.n2141 ), 
+    .F1(\i2c_master_portmap.state_0__N_37 ));
+  SLICE_133 SLICE_133( .DI1(\byte_counter_c_1_N_82[2].sig_014.FeedThruLUT ), 
+    .D1(\byte_counter_c_1_N_82[2] ), .C0(\byte_counter_c_1_N_82[2] ), 
+    .A0(\byte_counter_c_1_N_82[3] ), .CE(data_wr_0__N_28), 
+    .LSR(data_wr_0__N_29), .CLK(clk), .Q1(\byte_counter_c_1_N_82[3] ), 
+    .F0(byte_counter_c_1), .F1(\byte_counter_c_1_N_82[2].sig_014.FeedThruLUT ));
+  SLICE_134 SLICE_134( .D0(\byte_counter_c_1_N_82[3] ), 
+    .A0(\byte_counter_c_1_N_82[1] ), .F0(byte_counter_c_0));
+  SLICE_135 SLICE_135( .F0(GND_net));
+  SLICE_137 SLICE_137( .D1(\data_tx[7] ), .C1(\bit_cnt[2] ), .B1(\data_tx[3] ), 
+    .D0(\data_tx[6] ), .B0(\data_tx[2] ), .A0(\bit_cnt[2] ), .F0(n2118), 
+    .F1(n2100));
+  SLICE_140 SLICE_140( .DI1(I2C_ADDRESS_6__N_15), .D1(first_time), 
+    .B1(\I2C_ADDRESS[6] ), .A0(first_time), .CLK(clk), .Q1(\I2C_ADDRESS[6] ), 
+    .F0(data_wr_0__N_29), .F1(I2C_ADDRESS_6__N_15));
+  SLICE_141 SLICE_141( .DI1(\VCC_net\000.BUF1 ), .C0(busy_c), .A0(first_time), 
+    .CLK(clk), .Q1(first_time), .F0(data_wr_0__N_28), .F1(\VCC_net\000.BUF1 ));
+  scl scl_I( .PADDT(\i2c_master_portmap.n449 ), .PADDO(GND_net), 
+    .PADDI(\i2c_master_portmap.scl_out ), .scl(scl));
+  sda sda_I( .PADDT(\i2c_master_portmap.n1233 ), .PADDO(GND_net), .sda(sda));
+  clk_12MHz clk_12MHz_I( .PADDI(clk_12MHz_c), .clk_12MHz(clk_12MHz));
+  byte_counter_0_ \byte_counter[0]_I ( .PADDO(byte_counter_c_0), 
+    .bytecounter0(byte_counter[0]));
+  byte_counter_1_ \byte_counter[1]_I ( .PADDO(byte_counter_c_1), 
+    .bytecounter1(byte_counter[1]));
+  byte_counter_2_ \byte_counter[2]_I ( .PADDO(GND_net), 
+    .bytecounter2(byte_counter[2]));
+  ena ena_I( .PADDO(ena_c), .ena(ena));
+  busy busy_I( .PADDO(busy_c), .busy(busy));
+endmodule
+
+module i2c_master_portmap_SLICE_0 ( input D1, B1, D0, B0, CIN0, CIN1, output 
+    F0, F1, COUT1, COUT0 );
+  wire   GNDI;
+
+  fa2 \i2c_master_portmap/add_6_add_5_3 ( .A0(GNDI), .B0(B0), .C0(GNDI), 
+    .D0(D0), .A1(GNDI), .B1(B1), .C1(GNDI), .D1(D1), .CI0(CIN0), .CI1(CIN1), 
+    .S0(F0), .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module fa2 ( input A0, B0, C0, D0, A1, B1, C1, D1, CI0, CI1, output S0, S1, 
+    CO0, CO1 );
+
+  FA2 inst1( .A0(A0), .B0(B0), .C0(C0), .D0(D0), .CI0(CI0), .A1(A1), .B1(B1), 
+    .C1(C1), .D1(D1), .CI1(CI1), .CO0(CO0), .CO1(CO1), .S0(S0), .S1(S1));
+  defparam inst1.INIT0 = "0xc33c";
+  defparam inst1.INIT1 = "0xc33c";
+endmodule
+
+module gnd ( output PWR0 );
+
+  VLO INST1( .Z(PWR0));
+endmodule
+
+module i2c_master_portmap_SLICE_1 ( input D1, B1, D0, B0, CIN0, CIN1, output 
+    F0, F1, COUT0 );
+  wire   GNDI;
+
+  fa2 \i2c_master_portmap/add_6_add_5_7 ( .A0(GNDI), .B0(B0), .C0(GNDI), 
+    .D0(D0), .A1(GNDI), .B1(B1), .C1(GNDI), .D1(D1), .CI0(CIN0), .CI1(CIN1), 
+    .S0(F0), .S1(F1), .CO0(COUT0), .CO1());
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module i2c_master_portmap_SLICE_2 ( input D1, B1, D0, B0, CIN0, CIN1, output 
+    F0, F1, COUT1, COUT0 );
+  wire   GNDI;
+
+  fa2 \i2c_master_portmap/add_6_add_5_5 ( .A0(GNDI), .B0(B0), .C0(GNDI), 
+    .D0(D0), .A1(GNDI), .B1(B1), .C1(GNDI), .D1(D1), .CI0(CIN0), .CI1(CIN1), 
+    .S0(F0), .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module i2c_master_portmap_SLICE_3 ( input DI1, D1, C1, B1, LSR, CLK, CIN1, 
+    output Q1, F1, COUT1, COUT0 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, LSR_dly;
+
+  fa2 \i2c_master_portmap/add_6_add_5_1 ( .A0(GNDI), .B0(GNDI), .C0(GNDI), 
+    .D0(VCCI), .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(VCCI), .CI1(CIN1), 
+    .S0(), .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 \i2c_master_portmap/count_0__I_0 ( .D0(DI1_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module vcc ( output PWR1 );
+
+  VHI INST1( .Z(PWR1));
+endmodule
+
+module ffsre2 ( input D0, SP, CK, LSR, output Q );
+
+  FD1P3XZ INST01( .D(D0), .SP(SP), .CK(CK), .SR(LSR), .Q(Q));
+  defparam INST01.REGSET = "RESET";
+  defparam INST01.SRMODE = "CE_OVER_LSR";
+endmodule
+
+module SLICE_4 ( input DI1, DI0, D1, C1, D0, C0, LSR, CLK, CIN0, CIN1, output 
+    Q0, Q1, F0, F1, COUT0 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  fa2 clkCount_399_add_4_7( .A0(GNDI), .B0(GNDI), .C0(C0), .D0(D0), .A1(GNDI), 
+    .B1(GNDI), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), .S1(F1), 
+    .CO0(COUT0), .CO1());
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 clkCount_6__I_1( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), 
+    .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 clkCount_6__I_0( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), 
+    .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module SLICE_5 ( input DI1, DI0, D1, C1, D0, C0, LSR, CLK, CIN0, CIN1, output 
+    Q0, Q1, F0, F1, COUT1, COUT0 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  fa2 clkCount_399_add_4_5( .A0(GNDI), .B0(GNDI), .C0(C0), .D0(D0), .A1(GNDI), 
+    .B1(GNDI), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), .S1(F1), 
+    .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 clkCount_6__I_3( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), 
+    .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 clkCount_6__I_2( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), 
+    .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module SLICE_6 ( input DI1, DI0, D1, C1, D0, C0, LSR, CLK, CIN0, CIN1, output 
+    Q0, Q1, F0, F1, COUT1, COUT0 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  fa2 clkCount_399_add_4_3( .A0(GNDI), .B0(GNDI), .C0(C0), .D0(D0), .A1(GNDI), 
+    .B1(GNDI), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), .S1(F1), 
+    .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 clkCount_6__I_5( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), 
+    .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 clkCount_6__I_4( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), 
+    .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module SLICE_7 ( input DI1, D1, C1, B1, LSR, CLK, CIN1, output Q1, F1, COUT1, 
+    COUT0 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, LSR_dly;
+
+  fa2 clkCount_399_add_4_1( .A0(GNDI), .B0(GNDI), .C0(GNDI), .D0(VCCI), 
+    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(VCCI), .CI1(CIN1), .S0(), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 clkCount_6__I_6( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), .LSR(LSR_dly), 
+    .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module SLICE_12 ( input DI1, DI0, B1, C0, CE, LSR, CLK, output Q0, Q1, F0, F1 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  lut4 SLICE_12_K1( .A(GNDI), .B(B1), .C(GNDI), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40001 SLICE_12_K0( .A(GNDI), .B(GNDI), .C(C0), .D(GNDI), .Z(F0));
+  ffsre2 \i2c_master_portmap/data_wr_1__I_0 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  ffsre2 \i2c_master_portmap/data_wr_0__I_0 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut4 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xCCCC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40001 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF0F0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_15 ( input DI1, DI0, D1, A1, D0, A0, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly;
+
+  lut40002 \i2c_master_portmap.SLICE_15_K1 ( .A(A1), .B(GNDI), .C(GNDI), 
+    .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40003 \i2c_master_portmap.SLICE_15_K0 ( .A(A0), .B(GNDI), .C(GNDI), 
+    .D(D0), .Z(F0));
+  ffsre2 \i2c_master_portmap/count_6__I_19 ( .D0(DI1_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 \i2c_master_portmap/count_6__I_0 ( .D0(DI0_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+  endspecify
+
+endmodule
+
+module lut40002 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x5500") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40003 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x00AA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_17 ( input DI1, DI0, D1, A1, D0, B0, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly;
+
+  lut40002 \i2c_master_portmap/i1089_2_lut ( .A(A1), .B(GNDI), .C(GNDI), 
+    .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40004 \i2c_master_portmap/i1086_2_lut ( .A(GNDI), .B(B0), .C(GNDI), 
+    .D(D0), .Z(F0));
+  ffsre2 \i2c_master_portmap/count_6__I_21 ( .D0(DI1_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 \i2c_master_portmap/count_6__I_20 ( .D0(DI0_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+  endspecify
+
+endmodule
+
+module lut40004 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x00CC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_19 ( input DI1, DI0, C1, A1, D0, B0, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly;
+
+  lut40005 \i2c_master_portmap.SLICE_19_K1 ( .A(A1), .B(GNDI), .C(C1), 
+    .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40004 \i2c_master_portmap/i1092_2_lut ( .A(GNDI), .B(B0), .C(GNDI), 
+    .D(D0), .Z(F0));
+  ffsre2 \i2c_master_portmap/count_6__I_23 ( .D0(DI1_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 \i2c_master_portmap/count_6__I_22 ( .D0(DI0_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+  endspecify
+
+endmodule
+
+module lut40005 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x5050") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_23 ( input DI1, DI0, B1, D0, CE, LSR, CLK, output Q0, Q1, F0, F1 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  lut4 SLICE_23_K1( .A(GNDI), .B(B1), .C(GNDI), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40006 SLICE_23_K0( .A(GNDI), .B(GNDI), .C(GNDI), .D(D0), .Z(F0));
+  ffsre2 \i2c_master_portmap/data_wr_3__I_0 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  ffsre2 \i2c_master_portmap/data_wr_2__I_0 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40006 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFF00") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_25 ( input DI1, DI0, D1, B0, CE, LSR, CLK, output Q0, Q1, F0, F1 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  lut40007 SLICE_25_K1( .A(GNDI), .B(GNDI), .C(GNDI), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40008 SLICE_25_K0( .A(GNDI), .B(B0), .C(GNDI), .D(GNDI), .Z(F0));
+  ffsre2 \i2c_master_portmap/data_wr_5__I_0 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  ffsre2 \i2c_master_portmap/data_wr_4__I_0 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40007 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFF00") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40008 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xCCCC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_27 ( input DI1, DI0, B1, D0, CE, LSR, CLK, output Q0, Q1, F0, F1 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  lut4 SLICE_27_K1( .A(GNDI), .B(B1), .C(GNDI), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40006 SLICE_27_K0( .A(GNDI), .B(GNDI), .C(GNDI), .D(D0), .Z(F0));
+  ffsre2 \i2c_master_portmap/data_wr_7__I_0 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  ffsre2 \i2c_master_portmap/data_wr_6__I_0 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module i2c_master_portmap_SLICE_29 ( input DI1, DI0, D1, C1, B1, A1, D0, A0, 
+    CE, LSR, CLK, output Q0, Q1, F0, F1 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  lut40009 \i2c_master_portmap.i1851_2_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40010 \i2c_master_portmap.SLICE_29_K0 ( .A(A0), .B(GNDI), .C(GNDI), 
+    .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \i2c_master_portmap/bit_cnt_2__I_0 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  ffsre2 \i2c_master_portmap/bit_cnt_1__I_0 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40009 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xCF9F") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40010 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xAA55") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_31 ( input DI1, DI0, D1, C1, B1, A1, D0, C0, 
+    B0, A0, CE, LSR, CLK, output Q0, Q1, F0, F1 );
+  wire   DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  lut40011 \i2c_master_portmap/mux_89_Mux_1_i7_4_lut ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40012 \i2c_master_portmap/mux_89_Mux_2_i7_4_lut ( .A(A0), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+  ffsre2 \i2c_master_portmap/state_1__I_0 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  ffsre2 \i2c_master_portmap/state_2__I_0 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40011 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0366") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40012 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF588") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_36 ( input DI0, A0, CE, LSR, CLK, output Q0, F0 );
+  wire   GNDI, DI0_dly, CLK_dly, CE_dly, LSR_dly;
+
+  lut40013 SLICE_36_K0( .A(A0), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \i2c_master_portmap/I2C_ADDRESS_1__I_0 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40013 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xAAAA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_37 ( input DI1, DI0, D1, A0, CE, LSR, CLK, output Q0, Q1, F0, F1 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  lut40007 SLICE_37_K1( .A(GNDI), .B(GNDI), .C(GNDI), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40013 SLICE_37_K0( .A(A0), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  ffsre2 \i2c_master_portmap/I2C_ADDRESS_6__I_0 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  ffsre2 \i2c_master_portmap/I2C_ADDRESS_4__I_0 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module SLICE_40 ( input DI1, DI0, D1, B1, A1, C0, B0, A0, CE, LSR, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  lut40014 i1838_2_lut_3_lut( .A(A1), .B(B1), .C(GNDI), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40015 i1_2_lut_3_lut( .A(A0), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+  ffsre20016 byte_counter_FSM_i0( .D0(DI1_dly), .SP(CE_dly), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q1));
+  ffsre2 data_wr_2__I_17( .D0(DI0_dly), .SP(CE_dly), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40014 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0011") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40015 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x5454") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module ffsre20016 ( input D0, SP, CK, LSR, output Q );
+
+  FD1P3XZ INST01( .D(D0), .SP(SP), .CK(CK), .SR(LSR), .Q(Q));
+  defparam INST01.REGSET = "SET";
+  defparam INST01.SRMODE = "CE_OVER_LSR";
+endmodule
+
+module SLICE_43 ( input DI1, DI0, A1, C0, CE, LSR, CLK, output Q0, Q1, F0, F1 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  lut40017 SLICE_43_K1( .A(A1), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40001 SLICE_43_K0( .A(GNDI), .B(GNDI), .C(C0), .D(GNDI), .Z(F0));
+  ffsre2 byte_counter_FSM_i2( .D0(DI1_dly), .SP(CE_dly), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q1));
+  ffsre2 byte_counter_FSM_i1( .D0(DI0_dly), .SP(CE_dly), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40017 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xAAAA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_47 ( input DI1, DI0, D1, C1, B1, A1, D0, C0, B0, A0, CLK, output 
+    Q0, Q1, F0, F1 );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly;
+
+  lut40018 \i2c_master_portmap/i1_4_lut_adj_50 ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40019 \i2c_master_portmap/i1_4_lut_adj_51 ( .A(A0), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+  ffsre2 data_wr_5__I_0_2( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), 
+    .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 data_wr_6__I_0_2( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), 
+    .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+  endspecify
+
+endmodule
+
+module lut40018 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xA888") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40019 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xA202") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_49 ( input DI1, DI0, D1, C1, B1, A1, D0, C0, B0, A0, CLK, output 
+    Q0, Q1, F0, F1 );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly;
+
+  lut40020 \i2c_master_portmap/i1_4_lut_adj_48 ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40021 \i2c_master_portmap/i1_4_lut_adj_49 ( .A(A0), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+  ffsre2 data_wr_3__I_0_2( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), 
+    .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 data_wr_4__I_0_2( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), 
+    .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+  endspecify
+
+endmodule
+
+module lut40020 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xEA00") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40021 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x880A") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_54 ( input DI0, B0, A0, CLK, output Q0, F0 );
+  wire   GNDI, VCCI, DI0_dly, CLK_dly;
+
+  lut40022 i1_2_lut_adj_57( .A(A0), .B(B0), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 clk_I_0_2( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+  endspecify
+
+endmodule
+
+module lut40022 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x6666") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_55 ( input DI1, DI0, D1, B1, D0, A0, CLK, output Q0, Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly;
+
+  lut40023 i1120_2_lut_2_lut( .A(GNDI), .B(B1), .C(GNDI), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40024 i1066_2_lut_2_lut( .A(A0), .B(GNDI), .C(GNDI), .D(D0), .Z(F0));
+  ffsre2 I2C_ADDRESS_1__I_0_2( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 I2C_ADDRESS_4__I_0_2( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+  endspecify
+
+endmodule
+
+module lut40023 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFF33") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40024 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFF55") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_57 ( input D1, C1, B1, A1, D0, C0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40025 \i2c_master_portmap/i1_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40026 \i2c_master_portmap/i1094_2_lut ( .A(GNDI), .B(GNDI), .C(C0), 
+    .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40025 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFEC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40026 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0F00") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_58 ( input D0, C0, B0, A0, output F0 );
+
+  lut40027 \i2c_master_portmap/i1_4_lut_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40027 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x7175") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_59 ( input D1, C1, B1, A1, C0, B0, A0, output 
+    F0, F1 );
+  wire   GNDI;
+
+  lut40028 \i2c_master_portmap/bit_cnt[1]_bdd_4_lut_2 ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40029 \i2c_master_portmap/i1741_3_lut ( .A(A0), .B(B0), .C(C0), .D(GNDI), 
+    .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40028 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xEC2C") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40029 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xD8D8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_60 ( input C1, A1, D0, C0, B0, A0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40030 \i2c_master_portmap/i1801_2_lut ( .A(A1), .B(GNDI), .C(C1), 
+    .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40031 \i2c_master_portmap/n2250_bdd_4_lut ( .A(A0), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40030 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFAFA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40031 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xB9A8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_61 ( input D0, C0, B0, A0, output F0 );
+
+  lut40032 \i2c_master_portmap/i1_3_lut_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40032 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFEF0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_62 ( input D1, C1, B1, A1, C0, B0, A0, output 
+    F0, F1 );
+  wire   GNDI;
+
+  lut40033 \i2c_master_portmap/i927_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40034 \i2c_master_portmap/i1_2_lut_3_lut_adj_47 ( .A(A0), .B(B0), .C(C0), 
+    .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40033 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x7250") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40034 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x4040") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_63 ( input D1, B1, A1, D0, C0, A0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40035 i1756_3_lut( .A(A1), .B(B1), .C(GNDI), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40036 \i2c_master_portmap/i1_2_lut_3_lut_adj_31 ( .A(A0), .B(GNDI), 
+    .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40035 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xAACC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40036 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0F5A") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_64 ( input D1, C1, B1, A1, D0, C0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40037 \i2c_master_portmap/Mux_45_i7_4_lut ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40038 \i2c_master_portmap/i1_2_lut_adj_39 ( .A(GNDI), .B(GNDI), .C(C0), 
+    .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40037 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xA044") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40038 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_65 ( input D1, C1, B1, A1, D0, B0, A0, output 
+    F0, F1 );
+  wire   GNDI;
+
+  lut40039 \i2c_master_portmap/i33_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40040 \i2c_master_portmap/i1712_2_lut_3_lut ( .A(A0), .B(B0), .C(GNDI), 
+    .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40039 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x15CC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40040 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFEE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_66 ( input D1, C1, B1, A1, D0, C0, B0, output 
+    F0, F1 );
+  wire   GNDI;
+
+  lut40041 \i2c_master_portmap/i1_4_lut_adj_33 ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40042 \i2c_master_portmap/i1_2_lut_3_lut_adj_54 ( .A(GNDI), .B(B0), 
+    .C(C0), .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40041 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xA888") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40042 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0CFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_67 ( input D1, C1, B1, D0, C0, A0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40043 \i2c_master_portmap/i898_3_lut ( .A(GNDI), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40044 \i2c_master_portmap/i1_2_lut_3_lut_adj_43 ( .A(A0), .B(GNDI), 
+    .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40043 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xCF30") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40044 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0050") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_68 ( input D1, C1, B1, D0, C0, B0, A0, output 
+    F0, F1 );
+  wire   GNDI;
+
+  lut40045 \i2c_master_portmap/i1742_3_lut ( .A(GNDI), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40046 \i2c_master_portmap/i899_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40045 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF3C0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40046 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x8BB8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_69 ( input D1, C1, B1, A1, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40047 \bit_cnt[1]_bdd_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40048 i1738_3_lut( .A(A0), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40047 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xBBC0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40048 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xACAC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_70 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40049 \i2c_master_portmap/Mux_90_i2_4_lut ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40050 n2256_bdd_4_lut( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40049 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF0BB") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40050 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xBA98") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_71 ( input C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40051 i1749_3_lut( .A(A1), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40052 i1747_4_lut( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40051 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xE4E4") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40052 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xEB28") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_73 ( input D1, C1, B1, A1, D0, C0, B0, A0, 
+    output F0, F1 );
+
+  lut40053 \i2c_master_portmap/i2_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40054 \i2c_master_portmap/i1_3_lut_4_lut_adj_38 ( .A(A0), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40053 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x2220") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40054 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xA800") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_74 ( input D1, C1, B1, A1, D0, C0, B0, A0, 
+    output F0, F1 );
+
+  lut40055 \i2c_master_portmap/i6_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40056 \i2c_master_portmap/i5_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40055 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x4000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40056 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x8000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_75 ( input DI1, D1, C1, B1, A1, B0, A0, LSR, 
+    CLK, output Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, LSR_dly;
+
+  lut40057 \i2c_master_portmap/i904_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40058 \i2c_master_portmap/i1_2_lut ( .A(A0), .B(B0), .C(GNDI), .D(GNDI), 
+    .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \i2c_master_portmap/bit_cnt_0__I_0 ( .D0(DI1_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40057 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x2EE2") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40058 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x9999") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_76 ( input D1, C1, B1, A1, D0, C0, B0, A0, 
+    output F0, F1 );
+
+  lut40059 \i2c_master_portmap/n2262_bdd_4_lut ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40060 \i2c_master_portmap/n95_bdd_4_lut_4_lut_4_lut ( .A(A0), .B(B0), 
+    .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40059 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF4A4") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40060 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x8F8C") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_77 ( input C1, B1, A1, D0, C0, B0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40061 \i2c_master_portmap/i20_3_lut ( .A(A1), .B(B1), .C(C1), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40062 \i2c_master_portmap/i1_2_lut_3_lut ( .A(GNDI), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40061 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x5C5C") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40062 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_78 ( input DI1, D1, C1, B1, A1, D0, C0, B0, A0, 
+    CLK, output Q1, F0, F1 );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly;
+
+  lut40063 \i2c_master_portmap/i12_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40064 \i2c_master_portmap/i2_4_lut_adj_44 ( .A(A0), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+  ffsre2 \i2c_master_portmap/scl_ena_I_0 ( .D0(DI1_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+  endspecify
+
+endmodule
+
+module lut40063 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x4CEC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40064 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x1032") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_79 ( input D1, C1, B1, A1, C0, A0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40065 \i2c_master_portmap/i1_4_lut_adj_53 ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40066 \i2c_master_portmap/i1_2_lut_adj_28 ( .A(A0), .B(GNDI), .C(C0), 
+    .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40065 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xAA8A") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40066 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x5050") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_81 ( input D1, C1, B1, A1, D0, A0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40067 \i2c_master_portmap/i1844_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40003 \i2c_master_portmap/i1084_2_lut ( .A(A0), .B(GNDI), .C(GNDI), 
+    .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40067 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x3230") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_82 ( input D1, B1, D0, C0, B0, A0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40068 \i2c_master_portmap/i1085_2_lut ( .A(GNDI), .B(B1), .C(GNDI), 
+    .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40069 \i2c_master_portmap/i1_3_lut_4_lut_adj_55 ( .A(A0), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40068 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x3300") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40069 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x2000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_83 ( input D1, B1, A1, D0, C0, B0, A0, output 
+    F0, F1 );
+  wire   GNDI;
+
+  lut40070 \i2c_master_portmap/i2_2_lut_3_lut ( .A(A1), .B(B1), .C(GNDI), 
+    .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40071 \i2c_master_portmap/i1796_4_lut_4_lut ( .A(A0), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40070 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x1100") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40071 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xC010") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_84 ( input DI1, D1, C1, B1, A1, D0, C0, B0, A0, 
+    CLK, output Q1, F0, F1 );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly;
+
+  lut40072 \i2c_master_portmap/i910_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40073 \i2c_master_portmap/i1695_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+  ffsre2 \i2c_master_portmap/state_3__I_0 ( .D0(DI1_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+  endspecify
+
+endmodule
+
+module lut40072 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x02CE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40073 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xC840") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_85 ( input D1, C1, B1, A1, B0, A0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40074 \i2c_master_portmap/i1083_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40075 \i2c_master_portmap/i1_2_lut_adj_29 ( .A(A0), .B(B0), .C(GNDI), 
+    .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40074 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xCEC4") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40075 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xEEEE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_88 ( input C0, B0, A0, output F0 );
+  wire   GNDI;
+
+  lut40076 \i2c_master_portmap/i924_3_lut ( .A(A0), .B(B0), .C(C0), .D(GNDI), 
+    .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40076 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xC5C5") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_89 ( input DI1, D1, C1, B1, A1, D0, C0, B0, A0, 
+    CE, CLK, output Q1, F0, F1 );
+  wire   GNDI, DI1_dly, CLK_dly, CE_dly;
+
+  lut40077 \i2c_master_portmap/n2268_bdd_4_lut ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40078 \i2c_master_portmap/i1032_4_lut_4_lut ( .A(A0), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+  ffsre2 \i2c_master_portmap/sda_int_I_0 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+  endspecify
+
+endmodule
+
+module lut40077 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xB9A8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40078 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x8830") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_90 ( input D1, C1, B1, A1, D0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40079 \i2c_master_portmap.i523_2_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40080 i5_3_lut( .A(A0), .B(B0), .C(GNDI), .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40079 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0900") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40080 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xAACC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_91 ( input C1, B1, A1, D0, C0, B0, A0, output 
+    F0, F1 );
+  wire   GNDI;
+
+  lut40081 \i2c_master_portmap/i2_3_lut ( .A(A1), .B(B1), .C(C1), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40082 \i2c_master_portmap/i1_4_lut_adj_30 ( .A(A0), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40081 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF6F6") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40082 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x7DBE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_96 ( input DI1, D1, A1, D0, C0, A0, CLK, 
+    output Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly;
+
+  lut40002 i1_2_lut( .A(A1), .B(GNDI), .C(GNDI), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40083 \i2c_master_portmap/i585_3_lut ( .A(A0), .B(GNDI), .C(C0), .D(D0), 
+    .Z(F0));
+  ffsre2 ena_c_I_0( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+  endspecify
+
+endmodule
+
+module lut40083 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0FAA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_97 ( input C1, B1, A1, D0, C0, A0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40084 \i2c_master_portmap/i1_2_lut_3_lut_adj_32 ( .A(A1), .B(B1), .C(C1), 
+    .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40085 \i2c_master_portmap/i1_2_lut_3_lut_adj_40 ( .A(A0), .B(GNDI), 
+    .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40084 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xECEC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40085 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xA000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_99 ( input D1, C1, B1, A1, C0, A0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40086 \i2c_master_portmap/i1_4_lut_adj_36 ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40087 \i2c_master_portmap/i1_2_lut_adj_34 ( .A(A0), .B(GNDI), .C(C0), 
+    .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40086 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFB00") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40087 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xA0A0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_102 ( input D0, C0, B0, A0, output F0 );
+
+  lut40088 \i2c_master_portmap/state[1]_bdd_4_lut ( .A(A0), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40088 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xE2CC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_103 ( input D1, C1, B1, A1, D0, C0, B0, A0, 
+    output F0, F1 );
+
+  lut40089 \i2c_master_portmap/Mux_90_i4_4_lut ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40090 \i2c_master_portmap/i1800_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40089 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xB8FC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40090 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xDDF5") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_105 ( input D1, C1, B1, A1, D0, C0, B0, 
+    output F0, F1 );
+  wire   GNDI;
+
+  lut40091 \i2c_master_portmap.i1_2_lut_adj_41 ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40092 \i2c_master_portmap/i1_2_lut_3_lut_adj_52 ( .A(GNDI), .B(B0), 
+    .C(C0), .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40091 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xAAA8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40092 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x3000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_107 ( input C0, A0, output F0 );
+  wire   GNDI;
+
+  lut40093 i2_2_lut( .A(A0), .B(GNDI), .C(C0), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40093 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xA0A0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_108 ( input D1, C1, B1, A1, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40094 i5_4_lut( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40095 i1_3_lut( .A(A0), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40094 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x8000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40095 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x1010") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_109 ( input DI1, D1, C1, B1, A1, D0, C0, B0, 
+    CE, LSR, CLK, output Q1, F0, F1 );
+  wire   GNDI, DI1_dly, CLK_dly, CE_dly, LSR_dly;
+
+  lut40096 \i2c_master_portmap/i939_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40097 \i2c_master_portmap/i1_2_lut_3_lut_adj_35 ( .A(GNDI), .B(B0), 
+    .C(C0), .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \i2c_master_portmap/busy_c_I_0 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40096 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x7772") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40097 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0300") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_110 ( input DI1, D1, C1, B1, A1, D0, C0, B0, 
+    A0, CLK, output Q1, F0, F1 );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly;
+
+  lut40098 \i2c_master_portmap/i1_4_lut_adj_27 ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40099 \i2c_master_portmap/i1_3_lut_4_lut_adj_37 ( .A(A0), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+  ffsre2 data_wr_7__I_0_2( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), 
+    .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+  endspecify
+
+endmodule
+
+module lut40098 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xC8C0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40099 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0051") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_111 ( input DI1, A1, D0, C0, B0, A0, CLK, 
+    output Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly;
+
+  lut40017 \i2c_master_portmap.SLICE_111_K1 ( .A(A1), .B(GNDI), .C(GNDI), 
+    .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40100 \i2c_master_portmap/i1_2_lut_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+  ffsre2 \i2c_master_portmap/data_clk_I_0 ( .D0(DI1_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+  endspecify
+
+endmodule
+
+module lut40100 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0080") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_112 ( input C0, B0, A0, output F0 );
+  wire   GNDI;
+
+  lut40101 \i2c_master_portmap/i1_2_lut_3_lut_adj_42 ( .A(A0), .B(B0), .C(C0), 
+    .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40101 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x2020") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_114 ( input DI1, D1, C1, B1, A1, D0, C0, B0, 
+    A0, CLK, output Q1, F0, F1 );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly;
+
+  lut40102 \i2c_master_portmap/i1835_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40103 \i2c_master_portmap.i1_2_lut_adj_46 ( .A(A0), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+  ffsre2 \i2c_master_portmap/data_clk_I_0_2 ( .D0(DI1_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+  endspecify
+
+endmodule
+
+module lut40102 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x1110") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40103 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x4000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_119 ( output F0 );
+  wire   GNDI;
+
+  lut40104 i2( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module lut40104 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_120 ( input DI1, C1, B1, A1, C0, A0, CLK, 
+    output Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly;
+
+  lut40105 \i2c_master_portmap/i1847_3_lut ( .A(A1), .B(B1), .C(C1), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40106 \i2c_master_portmap/i1_2_lut_adj_26 ( .A(A0), .B(GNDI), .C(C0), 
+    .D(GNDI), .Z(F0));
+  ffsre2 \i2c_master_portmap/scl_clk_I_0 ( .D0(DI1_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+  endspecify
+
+endmodule
+
+module lut40105 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x4545") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40106 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x5050") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_121 ( input DI1, D1, C1, B1, A1, C0, B0, A0, 
+    CLK, output Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly;
+
+  lut40107 \i2c_master_portmap/i1_4_lut_adj_45 ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40048 \i2c_master_portmap/i1750_3_lut ( .A(A0), .B(B0), .C(C0), .D(GNDI), 
+    .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 data_wr_1__I_0_2( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), 
+    .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+  endspecify
+
+endmodule
+
+module lut40107 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xE0C0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_122 ( input DI1, D1, C1, B1, D0, C0, A0, CE, 
+    LSR, CLK, output Q1, F0, F1 );
+  wire   GNDI, DI1_dly, CLK_dly, CE_dly, LSR_dly;
+
+  lut40108 i1_2_lut_3_lut_adj_56( .A(GNDI), .B(B1), .C(C1), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40109 \i2c_master_portmap/i1751_3_lut ( .A(A0), .B(GNDI), .C(C0), .D(D0), 
+    .Z(F0));
+  ffsre2 data_wr_2__I_0_2( .D0(DI1_dly), .SP(CE_dly), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40108 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0030") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40109 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF0AA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_129 ( input DI1, C1, A0, CE, CLK, output Q1, 
+    F0, F1 );
+  wire   GNDI, DI1_dly, CLK_dly, CE_dly;
+
+  lut40110 \i2c_master_portmap/i10_1_lut ( .A(GNDI), .B(GNDI), .C(C1), 
+    .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40111 \i2c_master_portmap/i6_1_lut ( .A(A0), .B(GNDI), .C(GNDI), .D(GNDI), 
+    .Z(F0));
+  ffsre2 \i2c_master_portmap/stretch_I_0 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+  endspecify
+
+endmodule
+
+module lut40110 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0F0F") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40111 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x5555") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module i2c_master_portmap_SLICE_131 ( input DI1, D1, C1, B1, A1, C0, B0, A0, 
+    CE, LSR, CLK, output Q1, F0, F1 );
+  wire   GNDI, DI1_dly, CLK_dly, CE_dly, LSR_dly;
+
+  lut40112 \i2c_master_portmap/mux_89_Mux_0_i7_4_lut ( .A(A1), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  lut40113 \i2c_master_portmap/i1789_3_lut ( .A(A0), .B(B0), .C(C0), .D(GNDI), 
+    .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \i2c_master_portmap/state_0__I_0 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40112 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x88B8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40113 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xC8C8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_133 ( input DI1, D1, C0, A0, CE, LSR, CLK, output Q1, F0, F1 );
+  wire   GNDI, DI1_dly, CLK_dly, CE_dly, LSR_dly;
+
+  lut40007 SLICE_133_K1( .A(GNDI), .B(GNDI), .C(GNDI), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40114 byte_counter_c_1_I_0( .A(A0), .B(GNDI), .C(C0), .D(GNDI), .Z(F0));
+  ffsre2 byte_counter_FSM_i3( .D0(DI1_dly), .SP(CE_dly), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40114 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFAFA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_134 ( input D0, A0, output F0 );
+  wire   GNDI;
+
+  lut40115 byte_counter_c_1_I_25( .A(A0), .B(GNDI), .C(GNDI), .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40115 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFAA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_135 ( output F0 );
+  wire   GNDI;
+
+  lut40116 i1( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module lut40116 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_137 ( input D1, C1, B1, D0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40117 i1739_3_lut( .A(GNDI), .B(B1), .C(C1), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40118 i1757_3_lut( .A(A0), .B(B0), .C(GNDI), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40117 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFC0C") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40118 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xEE44") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_140 ( input DI1, D1, B1, A0, CLK, output Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly;
+
+  lut40119 i1067_2_lut_2_lut( .A(GNDI), .B(B1), .C(GNDI), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40111 i404_1_lut( .A(A0), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  ffsre2 I2C_ADDRESS_6__I_0_2( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+  endspecify
+
+endmodule
+
+module lut40119 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xCCFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_141 ( input DI1, C0, A0, CLK, output Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly;
+
+  lut40120 \VCC_net\000.BUF1.BUF1 ( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40121 i1841_2_lut( .A(A0), .B(GNDI), .C(C0), .D(GNDI), .Z(F0));
+  ffsre2 clk_I_0( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+  endspecify
+
+endmodule
+
+module lut40120 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40121 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x5F5F") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module scl ( input PADDT, PADDO, output PADDI, inout scl );
+
+  BB_B_B \i2c_master_portmap/scl_pad ( .T_N(PADDT), .I(PADDO), .O(PADDI), 
+    .B(scl));
+
+  specify
+    (PADDT => scl) = (0:0:0,0:0:0);
+    (PADDO => scl) = (0:0:0,0:0:0);
+    (scl => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module BB_B_B ( input T_N, I, output O, inout B );
+
+  BB_B INST10( .T_N(T_N), .I(I), .O(O), .B(B));
+endmodule
+
+module sda ( input PADDT, PADDO, output sda );
+
+  BB_B_B \i2c_master_portmap/sda_pad.bb_inst ( .T_N(PADDT), .I(PADDO), .O(), 
+    .B(sda));
+
+  specify
+    (PADDT => sda) = (0:0:0,0:0:0);
+    (PADDO => sda) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module clk_12MHz ( output PADDI, input clk_12MHz );
+  wire   GNDI;
+
+  BB_B_B \clk_12MHz_pad.bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), 
+    .B(clk_12MHz));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (clk_12MHz => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_counter_0_ ( input PADDO, output bytecounter0 );
+  wire   VCCI;
+
+  BB_B_B \byte_counter_pad[0].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), 
+    .B(bytecounter0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => bytecounter0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_counter_1_ ( input PADDO, output bytecounter1 );
+  wire   VCCI;
+
+  BB_B_B \byte_counter_pad[1].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), 
+    .B(bytecounter1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => bytecounter1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module byte_counter_2_ ( input PADDO, output bytecounter2 );
+  wire   VCCI;
+
+  BB_B_B \byte_counter_pad[2].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), 
+    .B(bytecounter2));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => bytecounter2) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module ena ( input PADDO, output ena );
+  wire   VCCI;
+
+  BB_B_B \ena_pad.bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(ena));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => ena) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module busy ( input PADDO, output busy );
+  wire   VCCI;
+
+  BB_B_B \busy_pad.bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(busy));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => busy) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule

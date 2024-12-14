@@ -1,0 +1,27 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  57 of 5280 (1.080%)
+I/O cells:      6
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               BB_B         1          100.0
+                               CCU2         8          100.0
+                            FD1P3XZ        57          100.0
+                                 IB         1          100.0
+                               LUT4       113          100.0
+                                 OB         5          100.0
+                              OBZ_B         1          100.0
+SUB MODULES
+                         i2c_master         1
+                              TOTAL       187
+----------------------------------------------------------------------
+Report for cell i2c_master.v1
+Instance Path : i2c_master_portmap
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               BB_B         1          100.0
+                                FA2         4           50.0
+                            FD1P3XZ        32           56.1
+                               LUT4        89           78.8
+                              OBZ_B         1          100.0
+                              TOTAL       127

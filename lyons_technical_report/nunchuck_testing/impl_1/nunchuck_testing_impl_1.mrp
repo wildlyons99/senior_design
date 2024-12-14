@@ -1,0 +1,206 @@
+                         Lattice Mapping Report File
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:  High-Performance_1.2V
+
+Mapper:    version Radiant Software (64-bit) 2023.1.0.43.3
+Mapped on: Fri Dec 13 20:21:44 2024
+
+Design Information
+------------------
+
+Command line:   map -i nunchuck_testing_impl_1_syn.udb -pdc
+     Z:/es4_ta_resources/nunchuck_testing/pins.pdc -o
+     nunchuck_testing_impl_1_map.udb -mp nunchuck_testing_impl_1.mrp -hierrpt
+     -gui
+
+Design Summary
+--------------
+
+   Number of slice registers:  57 out of  5280 (1%)
+   Number of I/O registers:      0 out of   117 (0%)
+   Number of LUT4s:           151 out of  5280 (3%)
+      Number of logic LUT4s:             116
+      Number of inserted feedthru LUT4s:  15
+      Number of replicated LUT4s:          4
+      Number of ripple logic:              8 (16 LUT4s)
+   Number of IO sites used:   8 out of 39 (21%)
+      Number of IO sites used for general PIO: 8
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 8 out of 36 (22%)
+      Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 8 out of 39 (21%)
+   Number of DSPs:             0 out of 8 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  0 out of 1 (0%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             0 out of 30 (0%)
+   Number of PLLs:             0 out of 1 (0%)
+   Number of Clocks:  2
+      Net clk_12MHz_c: 37 loads, 37 rising, 0 falling (Driver: Port clk_12MHz)
+      Net clk: 17 loads, 17 rising, 0 falling (Driver: Pin clk_I_0_2/Q)
+   Number of Clock Enables:  8
+      Net i2c_master_portmap.sda_int_N_91: 1 loads, 1 SLICEs
+      Net i2c_master_portmap.data_tx_0__N_60: 11 loads, 11 SLICEs
+      Net i2c_master_portmap.busy_c_N_79: 1 loads, 1 SLICEs
+      Net i2c_master_portmap.state_1__N_35: 2 loads, 2 SLICEs
+      Net i2c_master_portmap.stretch_N_93: 1 loads, 1 SLICEs
+      Net i2c_master_portmap.bit_cnt_1__N_66: 2 loads, 2 SLICEs
+      Net i2c_master_portmap.state_0__N_38: 1 loads, 1 SLICEs
+      Net data_wr_0__N_28: 6 loads, 6 SLICEs
+
+                                    Page 1
+
+
+
+
+
+Design Summary (cont)
+---------------------
+   Number of LSRs:  6
+      Net i2c_master_portmap.count_0__N_77: 1 loads, 1 SLICEs
+      Net i2c_master_portmap.data_tx_0__N_61: 11 loads, 11 SLICEs
+      Net i2c_master_portmap.bit_cnt_0__N_69: 3 loads, 3 SLICEs
+      Net i2c_master_portmap.busy_c_N_80: 4 loads, 4 SLICEs
+      Net clkCount_0__N_14: 4 loads, 4 SLICEs
+      Net data_wr_0__N_29: 6 loads, 6 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net bit_cnt[0]: 19 loads
+      Net i2c_master_portmap.state[2]: 19 loads
+      Net i2c_master_portmap.state[0]: 17 loads
+      Net i2c_master_portmap.state[1]: 17 loads
+      Net i2c_master_portmap.count_0__N_77: 14 loads
+      Net first_time: 12 loads
+      Net bit_cnt[1]: 11 loads
+      Net busy_c: 11 loads
+      Net i2c_master_portmap.data_tx_0__N_60: 11 loads
+      Net i2c_master_portmap.data_tx_0__N_61: 11 loads
+
+
+
+
+   Number of warnings:  16
+   Number of errors:    0
+
+Design Errors/Warnings
+----------------------
+
+WARNING <1026001> - map: Z:/es4_ta_resources/nunchuck_testing/pins.pdc (2) : No
+     port matched 'clk'.
+WARNING <1026001> - map: Z:/es4_ta_resources/nunchuck_testing/pins.pdc (11) : No
+     port matched 'c_button'.
+WARNING <1026001> - map: Z:/es4_ta_resources/nunchuck_testing/pins.pdc (12) : No
+     port matched 'z_button'.
+WARNING <1026001> - map: Z:/es4_ta_resources/nunchuck_testing/pins.pdc (13) : No
+     port matched 'reset'.
+WARNING <1027013> - map: No port matched 'clk'.
+WARNING <1014301> - map: Can't resolve object 'clk' in constraint
+     'ldc_set_location -site {36} [get_ports clk]'.
+WARNING <1027013> - map: No port matched 'c_button'.
+WARNING <1014301> - map: Can't resolve object 'c_button' in constraint
+     'ldc_set_location -site {48} [get_ports c_button]'.
+WARNING <1027013> - map: No port matched 'z_button'.
+WARNING <1014301> - map: Can't resolve object 'z_button' in constraint
+     'ldc_set_location -site {4} [get_ports z_button]'.
+WARNING <1027013> - map: No port matched 'reset'.
+WARNING <1014301> - map: Can't resolve object 'reset' in constraint
+     'ldc_set_location -site {31} [get_ports reset]'.
+WARNING <1011001> - map: Remove invalid constraint 'ldc_set_location -site {36}
+     [get_ports clk]'.
+WARNING <1011001> - map: Remove invalid constraint 'ldc_set_location -site {48}
+     [get_ports c_button]'.
+WARNING <1011001> - map: Remove invalid constraint 'ldc_set_location -site {4}
+     [get_ports z_button]'.
+WARNING <1011001> - map: Remove invalid constraint 'ldc_set_location -site {31}
+     [get_ports reset]'.
+
+
+                                    Page 2
+
+
+
+
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| scl                 | BIDIR     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sda                 | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| clk_12MHz           | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| byte_counter[0]     | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| byte_counter[1]     | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| byte_counter[2]     | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ena                 | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| busy                | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+Constraint Summary
+------------------
+
+   Total number of constraints: 13
+   Total number of constraints dropped: 4
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs
+   Total REAL Time: 0 secs
+   Peak Memory Usage: 59 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 3
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor
+     Corporation,  All rights reserved.
