@@ -1,0 +1,19 @@
+# Inputs
+set_io -nowarn -pullup 1 clk_12MHz           20   # Pin for clk_12MHz
+set_io -nowarn -pullup 1 image_address[0]    34   # Pin for image_address[0]
+set_io -nowarn -pullup 1 image_address[1]    37   # Pin for image_address[1]
+set_io -nowarn -pullup 1 image_address[2]    31   # Pin for image_address[2]
+set_io -nowarn -pullup 1 image_address[3]    35   # Pin for image_address[3]
+set_io -nowarn -pullup 1 image_address[4]    32   # Pin for image_address[4]
+set_io -nowarn -pullup 1 image_address[5]    27   # Pin for image_address[5]
+set_io -nowarn -pullup 1 image_address[6]    26   # Pin for image_address[6]
+set_io -nowarn -pullup 1 image_address[7]    25   # Pin for image_address[7]
+
+# Outputs
+set_io -nowarn prediction[0]  44   # Pin for prediction[0]
+set_io -nowarn prediction[1]  4    # Pin for prediction[1]
+set_io -nowarn prediction[2]  3    # Pin for prediction[2]
+set_io -nowarn prediction[3]  48   # Pin for prediction[3]
+set_io -nowarn prediction[4]  45   # Pin for prediction[4]
+set_io -nowarn prediction[5]  47   # Pin for prediction[5]
+set_io -nowarn prediction[6]  46   # Pin for prediction[6]
