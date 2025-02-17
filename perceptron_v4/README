@@ -1,0 +1,82 @@
+Tom Lyons
+
+# Perceptron Verilog Project
+
+This project contains the Verilog implementation of a perceptron, a type
+of artificial neural network that is being used for binary classification 
+of ones and zeros. Below is a description of the files in this folder and 
+instructions on how to run the build script.
+
+This project was designed to run on the Lattice iCE405kUP
+
+These files mostly attempt to replicate the behavior of the vhdl module
+perceptron_2. 
+Notable differences: 
+- v3 attempts to perform all 16 multiply operations simulatiniously
+  TODO - Change this to replicate final behavior, using only one DSP 
+  to perform multiply accumulate. 
+  TODO - use MAC16 component 
+  (I think do both of these in a v4)
+- Attemps to fix 16 bit activation function error
+- rom.v uses a readmem verilog function to read the data from a file
+  into memory instead of listing the contents in the RDL 
+- In verilog instead of VHDL
+- AS OF MY MOST RECENT TEST DOES NOT CLASSIFY CORRECTLY
+
+## Files
+`top.v`:        
+    The top module for this function - module perceptron_v3
+    Generates 16 multiply modules that perform multiplications 
+     at the same time
+    Contains and connects mult module, to activation function, and sevenseg 
+    Performs the sum of products and adds the bias
+
+`mult.v`: 
+    Perform multiplication on rising edge of clock 
+
+`activation.v`:
+    Returns the result of our (potentially flawed) activation function
+    Asyncronous
+
+`seven_seg.v`:
+    Mapping to sevensegment display
+
+`rom.v`:
+    Loads the ROM Image Data into memory
+
+`rom_data.mem`:
+    The Image Data
+
+
+## How to Run the Build Script
+To run: 
+    sh build.sh perceptron
+
+To clean directory: 
+    sh clean.sh
+
+## Requirements
+
+- Install the open source OSS_CAD_SUITE
+- A .pcf file with the assigned pin mappings
+- A iCE405kUP attached VIA USB
+
+Note: 
+Windows support not currently documented
+
+### Installing OSS-CAD-SUITE For Macs
+Install: oss-cad-suite-darwin-arm64-20241214.tgz from: 
+https://github.com/YosysHQ/oss-cad-suite-build/releases/tag/2024-12-14
+
+Go to wherever you installed the file, and run ./activate to to allow 
+execution of quarantined files
+
+Edit your terminal configuration file to include the path. You can run 
+“echo $SHELL” to see what shell you use in the terminal. 
+
+For example to add to your ZSHRC path:
+nano .zshrc
+export PATH="<extracted_location>/oss-cad-suite/bin:$PATH"
+
+After this, you should be all set to run the script! 
+(You should also have GHDL installed locally!)
