@@ -1,61 +1,62 @@
 // Verilog netlist produced by program LSE :  version Radiant Software (64-bit) 2023.1.0.43.3
-// Netlist written on Wed Oct 30 16:20:38 2024
+// Netlist written on Mon Feb 17 15:26:37 2025
 // Source file index table: 
 // Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
 // file 0 "c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v"
 // file 1 "c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd"
-// file 2 "z:/senior_design/vhdl/dsp/fpga_mult/source/impl_1/multiply32.vhd"
-// file 3 "z:/senior_design/vhdl/dsp/fpga_mult/source/impl_1/topvhd.vhd"
-// file 4 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/ccu2_b.v"
-// file 5 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/fd1p3bz.v"
-// file 6 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/fd1p3dz.v"
-// file 7 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/fd1p3iz.v"
-// file 8 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/fd1p3jz.v"
-// file 9 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/hsosc.v"
-// file 10 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/hsosc1p8v.v"
-// file 11 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/ib.v"
-// file 12 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/ifd1p3az.v"
-// file 13 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/lsosc.v"
-// file 14 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/lsosc1p8v.v"
-// file 15 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/ob.v"
-// file 16 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/obz_b.v"
-// file 17 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/ofd1p3az.v"
-// file 18 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/pdp4k.v"
-// file 19 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/rgb.v"
-// file 20 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/rgb1p8v.v"
-// file 21 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/sp256k.v"
-// file 22 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/legacy.v"
-// file 23 "c:/lscc/radiant/2023.1/ip/avant/fifo/rtl/lscc_fifo.v"
-// file 24 "c:/lscc/radiant/2023.1/ip/avant/fifo_dc/rtl/lscc_fifo_dc.v"
-// file 25 "c:/lscc/radiant/2023.1/ip/avant/ram_dp/rtl/lscc_ram_dp.v"
-// file 26 "c:/lscc/radiant/2023.1/ip/avant/ram_dq/rtl/lscc_ram_dq.v"
-// file 27 "c:/lscc/radiant/2023.1/ip/avant/rom/rtl/lscc_rom.v"
-// file 28 "c:/lscc/radiant/2023.1/ip/common/adder/rtl/lscc_adder.v"
-// file 29 "c:/lscc/radiant/2023.1/ip/common/adder_subtractor/rtl/lscc_add_sub.v"
-// file 30 "c:/lscc/radiant/2023.1/ip/common/complex_mult/rtl/lscc_complex_mult.v"
-// file 31 "c:/lscc/radiant/2023.1/ip/common/counter/rtl/lscc_cntr.v"
-// file 32 "c:/lscc/radiant/2023.1/ip/common/mult_accumulate/rtl/lscc_mult_accumulate.v"
-// file 33 "c:/lscc/radiant/2023.1/ip/common/mult_add_sub/rtl/lscc_mult_add_sub.v"
-// file 34 "c:/lscc/radiant/2023.1/ip/common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v"
-// file 35 "c:/lscc/radiant/2023.1/ip/common/multiplier/rtl/lscc_multiplier.v"
-// file 36 "c:/lscc/radiant/2023.1/ip/common/subtractor/rtl/lscc_subtractor.v"
-// file 37 "c:/lscc/radiant/2023.1/ip/pmi/pmi_add.v"
-// file 38 "c:/lscc/radiant/2023.1/ip/pmi/pmi_addsub.v"
-// file 39 "c:/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v"
-// file 40 "c:/lscc/radiant/2023.1/ip/pmi/pmi_counter.v"
-// file 41 "c:/lscc/radiant/2023.1/ip/pmi/pmi_dsp.v"
-// file 42 "c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v"
-// file 43 "c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo_dc.v"
-// file 44 "c:/lscc/radiant/2023.1/ip/pmi/pmi_mac.v"
-// file 45 "c:/lscc/radiant/2023.1/ip/pmi/pmi_mult.v"
-// file 46 "c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v"
-// file 47 "c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v"
-// file 48 "c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp.v"
-// file 49 "c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v"
-// file 50 "c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq.v"
-// file 51 "c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v"
-// file 52 "c:/lscc/radiant/2023.1/ip/pmi/pmi_rom.v"
-// file 53 "c:/lscc/radiant/2023.1/ip/pmi/pmi_sub.v"
+// file 2 "z:/senior_design/initial_work/dsp/fpga_mult/multa/rtl/multa.v"
+// file 3 "z:/senior_design/initial_work/dsp/fpga_mult/source/impl_1/multiply32.vhd"
+// file 4 "z:/senior_design/initial_work/dsp/fpga_mult/source/impl_1/topvhd.vhd"
+// file 5 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/ccu2_b.v"
+// file 6 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/fd1p3bz.v"
+// file 7 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/fd1p3dz.v"
+// file 8 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/fd1p3iz.v"
+// file 9 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/fd1p3jz.v"
+// file 10 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/hsosc.v"
+// file 11 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/hsosc1p8v.v"
+// file 12 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/ib.v"
+// file 13 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/ifd1p3az.v"
+// file 14 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/lsosc.v"
+// file 15 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/lsosc1p8v.v"
+// file 16 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/ob.v"
+// file 17 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/obz_b.v"
+// file 18 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/ofd1p3az.v"
+// file 19 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/pdp4k.v"
+// file 20 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/rgb.v"
+// file 21 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/rgb1p8v.v"
+// file 22 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/sp256k.v"
+// file 23 "c:/lscc/radiant/2023.1/cae_library/simulation/verilog/ice40up/legacy.v"
+// file 24 "c:/lscc/radiant/2023.1/ip/avant/fifo/rtl/lscc_fifo.v"
+// file 25 "c:/lscc/radiant/2023.1/ip/avant/fifo_dc/rtl/lscc_fifo_dc.v"
+// file 26 "c:/lscc/radiant/2023.1/ip/avant/ram_dp/rtl/lscc_ram_dp.v"
+// file 27 "c:/lscc/radiant/2023.1/ip/avant/ram_dq/rtl/lscc_ram_dq.v"
+// file 28 "c:/lscc/radiant/2023.1/ip/avant/rom/rtl/lscc_rom.v"
+// file 29 "c:/lscc/radiant/2023.1/ip/common/adder/rtl/lscc_adder.v"
+// file 30 "c:/lscc/radiant/2023.1/ip/common/adder_subtractor/rtl/lscc_add_sub.v"
+// file 31 "c:/lscc/radiant/2023.1/ip/common/complex_mult/rtl/lscc_complex_mult.v"
+// file 32 "c:/lscc/radiant/2023.1/ip/common/counter/rtl/lscc_cntr.v"
+// file 33 "c:/lscc/radiant/2023.1/ip/common/mult_accumulate/rtl/lscc_mult_accumulate.v"
+// file 34 "c:/lscc/radiant/2023.1/ip/common/mult_add_sub/rtl/lscc_mult_add_sub.v"
+// file 35 "c:/lscc/radiant/2023.1/ip/common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v"
+// file 36 "c:/lscc/radiant/2023.1/ip/common/multiplier/rtl/lscc_multiplier.v"
+// file 37 "c:/lscc/radiant/2023.1/ip/common/subtractor/rtl/lscc_subtractor.v"
+// file 38 "c:/lscc/radiant/2023.1/ip/pmi/pmi_add.v"
+// file 39 "c:/lscc/radiant/2023.1/ip/pmi/pmi_addsub.v"
+// file 40 "c:/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v"
+// file 41 "c:/lscc/radiant/2023.1/ip/pmi/pmi_counter.v"
+// file 42 "c:/lscc/radiant/2023.1/ip/pmi/pmi_dsp.v"
+// file 43 "c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v"
+// file 44 "c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo_dc.v"
+// file 45 "c:/lscc/radiant/2023.1/ip/pmi/pmi_mac.v"
+// file 46 "c:/lscc/radiant/2023.1/ip/pmi/pmi_mult.v"
+// file 47 "c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v"
+// file 48 "c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v"
+// file 49 "c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp.v"
+// file 50 "c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v"
+// file 51 "c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq.v"
+// file 52 "c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v"
+// file 53 "c:/lscc/radiant/2023.1/ip/pmi/pmi_rom.v"
+// file 54 "c:/lscc/radiant/2023.1/ip/pmi/pmi_sub.v"
 
 //
 // Verilog Description of module top
@@ -64,228 +65,474 @@
 module top (output [31:0]C);
     
     
-    wire GND_net, VCC_net, C_c_31, C_c_30, C_c_29, C_c_28, C_c_27, 
-        C_c_26, C_c_25, C_c_24, C_c_23, C_c_22, C_c_21, C_c_20, 
-        C_c_19, C_c_18, C_c_17, C_c_16, C_c_15, C_c_14, C_c_13, 
-        C_c_12, C_c_11, C_c_10, C_c_9, C_c_8, C_c_7, C_c_6, C_c_5, 
-        C_c_4, C_c_3, C_c_2, C_c_1, C_c_0;
+    wire GND_net, VCC_net, C_c_29, C_0_25, C_c_21, C_0_17, C_c_13, 
+        C_0_9, C_c_5, C_0_1;
     
     VHI i2 (.Z(VCC_net));
-    (* lineinfo="@3(40[21],40[31])" *) multiply32 mult_lut_test (VCC_net, 
-            GND_net, C_c_0, C_c_1, C_c_2, C_c_3, C_c_4, C_c_5, 
-            C_c_6, C_c_7, C_c_8, C_c_9, C_c_10, C_c_11, C_c_12, 
-            C_c_13, C_c_14, C_c_15, C_c_18, C_c_19, C_c_16, C_c_17, 
-            C_c_20, C_c_21, C_c_22, C_c_23, C_c_24, C_c_25, C_c_26, 
-            C_c_27, C_c_28, C_c_29, C_c_30, C_c_31);
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[0]  (.I(C_c_0), .O(C[0]));
+    (* lineinfo="@4(106[19],106[28])" *) multiply8 mult_lut_test9 (VCC_net, 
+            GND_net, C_c_13);
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[23]  (.I(GND_net), .O(C[23]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[24]  (.I(GND_net), .O(C[24]));
+    (* lineinfo="@4(82[19],82[28])" *) multiply8_U1 mult_lut_test5 (VCC_net, 
+            GND_net, C_c_21);
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[25]  (.I(C_0_25), .O(C[25]));
+    (* lineinfo="@4(58[19],58[28])" *) multiply8_U3 mult_lut_test1 (VCC_net, 
+            GND_net, C_c_29);
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[26]  (.I(GND_net), .O(C[26]));
+    (* lineinfo="@4(94[19],94[28])" *) multiply8_U0 mult_lut_test7 (VCC_net, 
+            GND_net, C_0_17);
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[27]  (.I(GND_net), .O(C[27]));
+    (* lineinfo="@4(142[20],142[29])" *) multiply8_U4 mult_lut_test15 (VCC_net, 
+            GND_net, C_0_1);
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[28]  (.I(GND_net), .O(C[28]));
+    (* lineinfo="@4(70[19],70[28])" *) multiply8_U2 mult_lut_test3 (VCC_net, 
+            GND_net, C_0_25);
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[29]  (.I(C_c_29), .O(C[29]));
+    (* lineinfo="@4(118[20],118[29])" *) multiply8_U6 mult_lut_test11 (VCC_net, 
+            GND_net, C_0_9);
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[30]  (.I(GND_net), .O(C[30]));
+    (* lineinfo="@4(130[20],130[29])" *) multiply8_U5 mult_lut_test13 (VCC_net, 
+            GND_net, C_c_5);
     VLO i1 (.Z(GND_net));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[31]  (.I(C_c_31), .O(C[31]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[28]  (.I(C_c_28), .O(C[28]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[29]  (.I(C_c_29), .O(C[29]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[30]  (.I(C_c_30), .O(C[30]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[1]  (.I(C_c_1), .O(C[1]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[2]  (.I(C_c_2), .O(C[2]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[3]  (.I(C_c_3), .O(C[3]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[4]  (.I(C_c_4), .O(C[4]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[5]  (.I(C_c_5), .O(C[5]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[6]  (.I(C_c_6), .O(C[6]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[7]  (.I(C_c_7), .O(C[7]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[8]  (.I(C_c_8), .O(C[8]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[9]  (.I(C_c_9), .O(C[9]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[10]  (.I(C_c_10), .O(C[10]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[11]  (.I(C_c_11), .O(C[11]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[12]  (.I(C_c_12), .O(C[12]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[13]  (.I(C_c_13), .O(C[13]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[14]  (.I(C_c_14), .O(C[14]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[15]  (.I(C_c_15), .O(C[15]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[16]  (.I(C_c_16), .O(C[16]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[17]  (.I(C_c_17), .O(C[17]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[18]  (.I(C_c_18), .O(C[18]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[19]  (.I(C_c_19), .O(C[19]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[20]  (.I(C_c_20), .O(C[20]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[21]  (.I(C_c_21), .O(C[21]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[22]  (.I(C_c_22), .O(C[22]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[23]  (.I(C_c_23), .O(C[23]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[24]  (.I(C_c_24), .O(C[24]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[25]  (.I(C_c_25), .O(C[25]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[26]  (.I(C_c_26), .O(C[26]));
-    (* lineinfo="@3(9[9],9[10])" *) OB \C_pad[27]  (.I(C_c_27), .O(C[27]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[0]  (.I(GND_net), .O(C[0]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[1]  (.I(C_0_1), .O(C[1]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[2]  (.I(GND_net), .O(C[2]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[3]  (.I(GND_net), .O(C[3]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[4]  (.I(GND_net), .O(C[4]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[5]  (.I(C_c_5), .O(C[5]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[6]  (.I(GND_net), .O(C[6]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[7]  (.I(GND_net), .O(C[7]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[8]  (.I(GND_net), .O(C[8]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[9]  (.I(C_0_9), .O(C[9]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[10]  (.I(GND_net), .O(C[10]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[11]  (.I(GND_net), .O(C[11]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[12]  (.I(GND_net), .O(C[12]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[13]  (.I(C_c_13), .O(C[13]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[14]  (.I(GND_net), .O(C[14]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[15]  (.I(GND_net), .O(C[15]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[16]  (.I(GND_net), .O(C[16]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[17]  (.I(C_0_17), .O(C[17]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[18]  (.I(GND_net), .O(C[18]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[19]  (.I(GND_net), .O(C[19]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[20]  (.I(GND_net), .O(C[20]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[21]  (.I(C_c_21), .O(C[21]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[22]  (.I(GND_net), .O(C[22]));
+    (* lineinfo="@4(9[9],9[10])" *) OB \C_pad[31]  (.I(GND_net), .O(C[31]));
     
 endmodule
 
 //
-// Verilog Description of module multiply32
+// Verilog Description of module multiply8
 //
 
-module multiply32 (input VCC_net, input GND_net, output C_c_0, output C_c_1, 
-            output C_c_2, output C_c_3, output C_c_4, output C_c_5, 
-            output C_c_6, output C_c_7, output C_c_8, output C_c_9, 
-            output C_c_10, output C_c_11, output C_c_12, output C_c_13, 
-            output C_c_14, output C_c_15, output C_c_18, output C_c_19, 
-            output C_c_16, output C_c_17, output C_c_20, output C_c_21, 
-            output C_c_22, output C_c_23, output C_c_24, output C_c_25, 
-            output C_c_26, output C_c_27, output C_c_28, output C_c_29, 
-            output C_c_30, output C_c_31);
+module multiply8 (input VCC_net, input GND_net, output C_c_13);
     
-    wire [31:0]C_c_31_N_3;
-    wire [28:0]C_c_29_N_16;
     
-    wire n704, C_c_14_N_135, n707, C_c_16_N_119, C_c_18_N_103, n713, 
-        C_c_20_N_87, n710, n716, C_c_22_N_71, n719, C_c_24_N_55, 
-        n722, C_c_26_N_39, n725, C_c_28_N_24, n728, C_c_30_N_10, 
-        n731;
+    (* lineinfo="@3(15[21],15[24])" *) MAC16 mult_29 (.CLK(GND_net), .CE(GND_net), 
+            .C15(GND_net), .C14(GND_net), .C13(GND_net), .C12(GND_net), 
+            .C11(GND_net), .C10(GND_net), .C9(GND_net), .C8(GND_net), 
+            .C7(GND_net), .C6(GND_net), .C5(GND_net), .C4(GND_net), 
+            .C3(GND_net), .C2(GND_net), .C1(GND_net), .C0(GND_net), 
+            .A15(GND_net), .A14(GND_net), .A13(GND_net), .A12(GND_net), 
+            .A11(GND_net), .A10(GND_net), .A9(GND_net), .A8(GND_net), 
+            .A7(GND_net), .A6(GND_net), .A5(GND_net), .A4(VCC_net), 
+            .A3(GND_net), .A2(GND_net), .A1(VCC_net), .A0(VCC_net), 
+            .B15(GND_net), .B14(GND_net), .B13(GND_net), .B12(GND_net), 
+            .B11(GND_net), .B10(GND_net), .B9(GND_net), .B8(GND_net), 
+            .B7(GND_net), .B6(GND_net), .B5(GND_net), .B4(GND_net), 
+            .B3(GND_net), .B2(VCC_net), .B1(GND_net), .B0(VCC_net), 
+            .D15(GND_net), .D14(GND_net), .D13(GND_net), .D12(GND_net), 
+            .D11(GND_net), .D10(GND_net), .D9(GND_net), .D8(GND_net), 
+            .D7(GND_net), .D6(GND_net), .D5(GND_net), .D4(GND_net), 
+            .D3(GND_net), .D2(GND_net), .D1(GND_net), .D0(GND_net), 
+            .AHOLD(GND_net), .BHOLD(GND_net), .CHOLD(GND_net), .DHOLD(GND_net), 
+            .IRSTTOP(GND_net), .IRSTBOT(GND_net), .ORSTTOP(GND_net), .ORSTBOT(GND_net), 
+            .OLOADTOP(GND_net), .OLOADBOT(GND_net), .ADDSUBTOP(GND_net), 
+            .ADDSUBBOT(GND_net), .OHOLDTOP(GND_net), .OHOLDBOT(GND_net), 
+            .CI(GND_net), .ACCUMCI(GND_net), .SIGNEXTIN(GND_net), .O0(C_c_13));
+    defparam mult_29.NEG_TRIGGER = "0b0";
+    defparam mult_29.A_REG = "0b0";
+    defparam mult_29.B_REG = "0b0";
+    defparam mult_29.C_REG = "0b0";
+    defparam mult_29.D_REG = "0b0";
+    defparam mult_29.TOP_8x8_MULT_REG = "0b0";
+    defparam mult_29.BOT_8x8_MULT_REG = "0b0";
+    defparam mult_29.PIPELINE_16x16_MULT_REG1 = "0b0";
+    defparam mult_29.PIPELINE_16x16_MULT_REG2 = "0b0";
+    defparam mult_29.TOPOUTPUT_SELECT = "0b10";
+    defparam mult_29.TOPADDSUB_LOWERINPUT = "0b00";
+    defparam mult_29.TOPADDSUB_UPPERINPUT = "0b0";
+    defparam mult_29.TOPADDSUB_CARRYSELECT = "0b00";
+    defparam mult_29.BOTOUTPUT_SELECT = "0b10";
+    defparam mult_29.BOTADDSUB_LOWERINPUT = "0b00";
+    defparam mult_29.BOTADDSUB_UPPERINPUT = "0b0";
+    defparam mult_29.BOTADDSUB_CARRYSELECT = "0b00";
+    defparam mult_29.MODE_8x8 = "0b1";
+    defparam mult_29.A_SIGNED = "0b0";
+    defparam mult_29.B_SIGNED = "0b0";
     
-    MAC16 mult_6 (.CLK(GND_net), .CE(GND_net), .C15(GND_net), .C14(GND_net), 
-          .C13(GND_net), .C12(GND_net), .C11(GND_net), .C10(GND_net), 
-          .C9(GND_net), .C8(GND_net), .C7(GND_net), .C6(GND_net), .C5(GND_net), 
-          .C4(GND_net), .C3(GND_net), .C2(GND_net), .C1(GND_net), .C0(GND_net), 
-          .A15(VCC_net), .A14(VCC_net), .A13(VCC_net), .A12(VCC_net), 
-          .A11(VCC_net), .A10(VCC_net), .A9(VCC_net), .A8(VCC_net), 
-          .A7(VCC_net), .A6(VCC_net), .A5(VCC_net), .A4(VCC_net), .A3(VCC_net), 
-          .A2(VCC_net), .A1(VCC_net), .A0(VCC_net), .B15(VCC_net), .B14(GND_net), 
-          .B13(GND_net), .B12(VCC_net), .B11(GND_net), .B10(GND_net), 
-          .B9(GND_net), .B8(VCC_net), .B7(VCC_net), .B6(GND_net), .B5(VCC_net), 
-          .B4(GND_net), .B3(GND_net), .B2(VCC_net), .B1(GND_net), .B0(VCC_net), 
-          .D15(GND_net), .D14(GND_net), .D13(GND_net), .D12(GND_net), 
-          .D11(GND_net), .D10(GND_net), .D9(GND_net), .D8(GND_net), 
-          .D7(GND_net), .D6(GND_net), .D5(GND_net), .D4(GND_net), .D3(GND_net), 
-          .D2(GND_net), .D1(GND_net), .D0(GND_net), .AHOLD(GND_net), 
-          .BHOLD(GND_net), .CHOLD(GND_net), .DHOLD(GND_net), .IRSTTOP(GND_net), 
-          .IRSTBOT(GND_net), .ORSTTOP(GND_net), .ORSTBOT(GND_net), .OLOADTOP(GND_net), 
-          .OLOADBOT(GND_net), .ADDSUBTOP(GND_net), .ADDSUBBOT(GND_net), 
-          .OHOLDTOP(GND_net), .OHOLDBOT(GND_net), .CI(GND_net), .ACCUMCI(GND_net), 
-          .SIGNEXTIN(GND_net), .O18(C_c_31_N_3[18]), .O17(C_c_31_N_3[17]), 
-          .O16(C_c_31_N_3[16]), .O15(C_c_31_N_3[15]), .O14(C_c_31_N_3[14]), 
-          .O13(C_c_31_N_3[13]), .O12(C_c_31_N_3[12]), .O11(C_c_31_N_3[11]), 
-          .O10(C_c_31_N_3[10]), .O9(C_c_31_N_3[9]), .O8(C_c_31_N_3[8]), 
-          .O7(C_c_31_N_3[7]), .O6(C_c_31_N_3[6]), .O5(C_c_31_N_3[5]), 
-          .O4(C_c_31_N_3[4]), .O3(C_c_31_N_3[3]), .O2(C_c_31_N_3[2]), 
-          .O1(C_c_31_N_3[1]), .O0(C_c_31_N_3[0]));
-    defparam mult_6.NEG_TRIGGER = "0b0";
-    defparam mult_6.A_REG = "0b0";
-    defparam mult_6.B_REG = "0b0";
-    defparam mult_6.C_REG = "0b0";
-    defparam mult_6.D_REG = "0b0";
-    defparam mult_6.TOP_8x8_MULT_REG = "0b0";
-    defparam mult_6.BOT_8x8_MULT_REG = "0b0";
-    defparam mult_6.PIPELINE_16x16_MULT_REG1 = "0b0";
-    defparam mult_6.PIPELINE_16x16_MULT_REG2 = "0b0";
-    defparam mult_6.TOPOUTPUT_SELECT = "0b11";
-    defparam mult_6.TOPADDSUB_LOWERINPUT = "0b00";
-    defparam mult_6.TOPADDSUB_UPPERINPUT = "0b0";
-    defparam mult_6.TOPADDSUB_CARRYSELECT = "0b00";
-    defparam mult_6.BOTOUTPUT_SELECT = "0b11";
-    defparam mult_6.BOTADDSUB_LOWERINPUT = "0b00";
-    defparam mult_6.BOTADDSUB_UPPERINPUT = "0b0";
-    defparam mult_6.BOTADDSUB_CARRYSELECT = "0b00";
-    defparam mult_6.MODE_8x8 = "0b0";
-    defparam mult_6.A_SIGNED = "0b0";
-    defparam mult_6.B_SIGNED = "0b0";
-    MAC16 mult_7 (.CLK(GND_net), .CE(GND_net), .C15(GND_net), .C14(GND_net), 
-          .C13(GND_net), .C12(GND_net), .C11(GND_net), .C10(GND_net), 
-          .C9(GND_net), .C8(GND_net), .C7(GND_net), .C6(GND_net), .C5(GND_net), 
-          .C4(GND_net), .C3(GND_net), .C2(GND_net), .C1(GND_net), .C0(GND_net), 
-          .A15(VCC_net), .A14(VCC_net), .A13(VCC_net), .A12(VCC_net), 
-          .A11(VCC_net), .A10(VCC_net), .A9(VCC_net), .A8(VCC_net), 
-          .A7(VCC_net), .A6(VCC_net), .A5(VCC_net), .A4(VCC_net), .A3(VCC_net), 
-          .A2(VCC_net), .A1(VCC_net), .A0(VCC_net), .B15(GND_net), .B14(GND_net), 
-          .B13(GND_net), .B12(GND_net), .B11(VCC_net), .B10(GND_net), 
-          .B9(VCC_net), .B8(VCC_net), .B7(VCC_net), .B6(VCC_net), .B5(GND_net), 
-          .B4(GND_net), .B3(VCC_net), .B2(VCC_net), .B1(GND_net), .B0(VCC_net), 
-          .D15(GND_net), .D14(GND_net), .D13(GND_net), .D12(GND_net), 
-          .D11(GND_net), .D10(GND_net), .D9(GND_net), .D8(GND_net), 
-          .D7(GND_net), .D6(GND_net), .D5(GND_net), .D4(GND_net), .D3(GND_net), 
-          .D2(GND_net), .D1(GND_net), .D0(GND_net), .AHOLD(GND_net), 
-          .BHOLD(GND_net), .CHOLD(GND_net), .DHOLD(GND_net), .IRSTTOP(GND_net), 
-          .IRSTBOT(GND_net), .ORSTTOP(GND_net), .ORSTBOT(GND_net), .OLOADTOP(GND_net), 
-          .OLOADBOT(GND_net), .ADDSUBTOP(GND_net), .ADDSUBBOT(GND_net), 
-          .OHOLDTOP(GND_net), .OHOLDBOT(GND_net), .CI(GND_net), .ACCUMCI(GND_net), 
-          .SIGNEXTIN(GND_net), .O28(C_c_29_N_16[28]), .O27(C_c_29_N_16[27]), 
-          .O26(C_c_29_N_16[26]), .O25(C_c_29_N_16[25]), .O24(C_c_29_N_16[24]), 
-          .O23(C_c_29_N_16[23]), .O22(C_c_29_N_16[22]), .O21(C_c_29_N_16[21]), 
-          .O20(C_c_29_N_16[20]), .O19(C_c_29_N_16[19]), .O18(C_c_29_N_16[18]), 
-          .O17(C_c_29_N_16[17]), .O16(C_c_29_N_16[16]), .O15(C_c_29_N_16[15]), 
-          .O14(C_c_29_N_16[14]), .O13(C_c_29_N_16[13]), .O12(C_c_12), 
-          .O11(C_c_11), .O10(C_c_10), .O9(C_c_9), .O8(C_c_8), .O7(C_c_7), 
-          .O6(C_c_6), .O5(C_c_5), .O4(C_c_4), .O3(C_c_3), .O2(C_c_2), 
-          .O1(C_c_1), .O0(C_c_0));
-    defparam mult_7.NEG_TRIGGER = "0b0";
-    defparam mult_7.A_REG = "0b0";
-    defparam mult_7.B_REG = "0b0";
-    defparam mult_7.C_REG = "0b0";
-    defparam mult_7.D_REG = "0b0";
-    defparam mult_7.TOP_8x8_MULT_REG = "0b0";
-    defparam mult_7.BOT_8x8_MULT_REG = "0b0";
-    defparam mult_7.PIPELINE_16x16_MULT_REG1 = "0b0";
-    defparam mult_7.PIPELINE_16x16_MULT_REG2 = "0b0";
-    defparam mult_7.TOPOUTPUT_SELECT = "0b11";
-    defparam mult_7.TOPADDSUB_LOWERINPUT = "0b00";
-    defparam mult_7.TOPADDSUB_UPPERINPUT = "0b0";
-    defparam mult_7.TOPADDSUB_CARRYSELECT = "0b00";
-    defparam mult_7.BOTOUTPUT_SELECT = "0b11";
-    defparam mult_7.BOTADDSUB_LOWERINPUT = "0b00";
-    defparam mult_7.BOTADDSUB_UPPERINPUT = "0b0";
-    defparam mult_7.BOTADDSUB_CARRYSELECT = "0b00";
-    defparam mult_7.MODE_8x8 = "0b0";
-    defparam mult_7.A_SIGNED = "0b0";
-    defparam mult_7.B_SIGNED = "0b0";
-    FA2 C_c_13_I_0 (.A0(GND_net), .B0(GND_net), .C0(GND_net), .A1(GND_net), 
-        .B1(C_c_31_N_3[0]), .C1(C_c_29_N_16[13]), .D1(n704), .CI1(n704), 
-        .CO0(n704), .CO1(C_c_14_N_135), .S1(C_c_13));
-    defparam C_c_13_I_0.INIT0 = "0xc33c";
-    defparam C_c_13_I_0.INIT1 = "0xc33c";
-    FA2 C_c_15_I_0 (.A0(GND_net), .B0(C_c_31_N_3[1]), .C0(C_c_29_N_16[14]), 
-        .D0(C_c_14_N_135), .CI0(C_c_14_N_135), .A1(GND_net), .B1(C_c_31_N_3[2]), 
-        .C1(C_c_29_N_16[15]), .D1(n707), .CI1(n707), .CO0(n707), .CO1(C_c_16_N_119), 
-        .S0(C_c_14), .S1(C_c_15));
-    defparam C_c_15_I_0.INIT0 = "0xc33c";
-    defparam C_c_15_I_0.INIT1 = "0xc33c";
-    FA2 C_c_19_I_0 (.A0(GND_net), .B0(C_c_31_N_3[5]), .C0(C_c_29_N_16[18]), 
-        .D0(C_c_18_N_103), .CI0(C_c_18_N_103), .A1(GND_net), .B1(C_c_31_N_3[6]), 
-        .C1(C_c_29_N_16[19]), .D1(n713), .CI1(n713), .CO0(n713), .CO1(C_c_20_N_87), 
-        .S0(C_c_18), .S1(C_c_19));
-    defparam C_c_19_I_0.INIT0 = "0xc33c";
-    defparam C_c_19_I_0.INIT1 = "0xc33c";
-    FA2 C_c_17_I_0 (.A0(GND_net), .B0(C_c_31_N_3[3]), .C0(C_c_29_N_16[16]), 
-        .D0(C_c_16_N_119), .CI0(C_c_16_N_119), .A1(GND_net), .B1(C_c_31_N_3[4]), 
-        .C1(C_c_29_N_16[17]), .D1(n710), .CI1(n710), .CO0(n710), .CO1(C_c_18_N_103), 
-        .S0(C_c_16), .S1(C_c_17));
-    defparam C_c_17_I_0.INIT0 = "0xc33c";
-    defparam C_c_17_I_0.INIT1 = "0xc33c";
-    FA2 C_c_21_I_0 (.A0(GND_net), .B0(C_c_31_N_3[7]), .C0(C_c_29_N_16[20]), 
-        .D0(C_c_20_N_87), .CI0(C_c_20_N_87), .A1(GND_net), .B1(C_c_31_N_3[8]), 
-        .C1(C_c_29_N_16[21]), .D1(n716), .CI1(n716), .CO0(n716), .CO1(C_c_22_N_71), 
-        .S0(C_c_20), .S1(C_c_21));
-    defparam C_c_21_I_0.INIT0 = "0xc33c";
-    defparam C_c_21_I_0.INIT1 = "0xc33c";
-    FA2 C_c_23_I_0 (.A0(GND_net), .B0(C_c_31_N_3[9]), .C0(C_c_29_N_16[22]), 
-        .D0(C_c_22_N_71), .CI0(C_c_22_N_71), .A1(GND_net), .B1(C_c_31_N_3[10]), 
-        .C1(C_c_29_N_16[23]), .D1(n719), .CI1(n719), .CO0(n719), .CO1(C_c_24_N_55), 
-        .S0(C_c_22), .S1(C_c_23));
-    defparam C_c_23_I_0.INIT0 = "0xc33c";
-    defparam C_c_23_I_0.INIT1 = "0xc33c";
-    FA2 C_c_25_I_0 (.A0(GND_net), .B0(C_c_31_N_3[11]), .C0(C_c_29_N_16[24]), 
-        .D0(C_c_24_N_55), .CI0(C_c_24_N_55), .A1(GND_net), .B1(C_c_31_N_3[12]), 
-        .C1(C_c_29_N_16[25]), .D1(n722), .CI1(n722), .CO0(n722), .CO1(C_c_26_N_39), 
-        .S0(C_c_24), .S1(C_c_25));
-    defparam C_c_25_I_0.INIT0 = "0xc33c";
-    defparam C_c_25_I_0.INIT1 = "0xc33c";
-    FA2 C_c_27_I_0 (.A0(GND_net), .B0(C_c_31_N_3[13]), .C0(C_c_29_N_16[26]), 
-        .D0(C_c_26_N_39), .CI0(C_c_26_N_39), .A1(GND_net), .B1(C_c_31_N_3[14]), 
-        .C1(C_c_29_N_16[27]), .D1(n725), .CI1(n725), .CO0(n725), .CO1(C_c_28_N_24), 
-        .S0(C_c_26), .S1(C_c_27));
-    defparam C_c_27_I_0.INIT0 = "0xc33c";
-    defparam C_c_27_I_0.INIT1 = "0xc33c";
-    FA2 C_c_29_I_0 (.A0(GND_net), .B0(C_c_31_N_3[15]), .C0(C_c_29_N_16[28]), 
-        .D0(C_c_28_N_24), .CI0(C_c_28_N_24), .A1(GND_net), .B1(C_c_31_N_3[16]), 
-        .C1(GND_net), .D1(n728), .CI1(n728), .CO0(n728), .CO1(C_c_30_N_10), 
-        .S0(C_c_28), .S1(C_c_29));
-    defparam C_c_29_I_0.INIT0 = "0xc33c";
-    defparam C_c_29_I_0.INIT1 = "0xc33c";
-    FA2 C_c_31_I_0 (.A0(GND_net), .B0(C_c_31_N_3[17]), .C0(GND_net), .D0(C_c_30_N_10), 
-        .CI0(C_c_30_N_10), .A1(GND_net), .B1(C_c_31_N_3[18]), .C1(GND_net), 
-        .D1(n731), .CI1(n731), .CO0(n731), .S0(C_c_30), .S1(C_c_31));
-    defparam C_c_31_I_0.INIT0 = "0xc33c";
-    defparam C_c_31_I_0.INIT1 = "0xc33c";
+endmodule
+
+//
+// Verilog Description of module multiply8_U1
+//
+
+module multiply8_U1 (input VCC_net, input GND_net, output C_c_21);
+    
+    
+    (* lineinfo="@3(15[21],15[24])" *) MAC16 mult_33 (.CLK(GND_net), .CE(GND_net), 
+            .C15(GND_net), .C14(GND_net), .C13(GND_net), .C12(GND_net), 
+            .C11(GND_net), .C10(GND_net), .C9(GND_net), .C8(GND_net), 
+            .C7(GND_net), .C6(GND_net), .C5(GND_net), .C4(GND_net), 
+            .C3(GND_net), .C2(GND_net), .C1(GND_net), .C0(GND_net), 
+            .A15(GND_net), .A14(GND_net), .A13(GND_net), .A12(GND_net), 
+            .A11(GND_net), .A10(GND_net), .A9(GND_net), .A8(GND_net), 
+            .A7(GND_net), .A6(GND_net), .A5(GND_net), .A4(GND_net), 
+            .A3(VCC_net), .A2(VCC_net), .A1(VCC_net), .A0(VCC_net), 
+            .B15(GND_net), .B14(GND_net), .B13(GND_net), .B12(GND_net), 
+            .B11(GND_net), .B10(GND_net), .B9(GND_net), .B8(GND_net), 
+            .B7(GND_net), .B6(GND_net), .B5(GND_net), .B4(GND_net), 
+            .B3(GND_net), .B2(VCC_net), .B1(GND_net), .B0(VCC_net), 
+            .D15(GND_net), .D14(GND_net), .D13(GND_net), .D12(GND_net), 
+            .D11(GND_net), .D10(GND_net), .D9(GND_net), .D8(GND_net), 
+            .D7(GND_net), .D6(GND_net), .D5(GND_net), .D4(GND_net), 
+            .D3(GND_net), .D2(GND_net), .D1(GND_net), .D0(GND_net), 
+            .AHOLD(GND_net), .BHOLD(GND_net), .CHOLD(GND_net), .DHOLD(GND_net), 
+            .IRSTTOP(GND_net), .IRSTBOT(GND_net), .ORSTTOP(GND_net), .ORSTBOT(GND_net), 
+            .OLOADTOP(GND_net), .OLOADBOT(GND_net), .ADDSUBTOP(GND_net), 
+            .ADDSUBBOT(GND_net), .OHOLDTOP(GND_net), .OHOLDBOT(GND_net), 
+            .CI(GND_net), .ACCUMCI(GND_net), .SIGNEXTIN(GND_net), .O0(C_c_21));
+    defparam mult_33.NEG_TRIGGER = "0b0";
+    defparam mult_33.A_REG = "0b0";
+    defparam mult_33.B_REG = "0b0";
+    defparam mult_33.C_REG = "0b0";
+    defparam mult_33.D_REG = "0b0";
+    defparam mult_33.TOP_8x8_MULT_REG = "0b0";
+    defparam mult_33.BOT_8x8_MULT_REG = "0b0";
+    defparam mult_33.PIPELINE_16x16_MULT_REG1 = "0b0";
+    defparam mult_33.PIPELINE_16x16_MULT_REG2 = "0b0";
+    defparam mult_33.TOPOUTPUT_SELECT = "0b10";
+    defparam mult_33.TOPADDSUB_LOWERINPUT = "0b00";
+    defparam mult_33.TOPADDSUB_UPPERINPUT = "0b0";
+    defparam mult_33.TOPADDSUB_CARRYSELECT = "0b00";
+    defparam mult_33.BOTOUTPUT_SELECT = "0b10";
+    defparam mult_33.BOTADDSUB_LOWERINPUT = "0b00";
+    defparam mult_33.BOTADDSUB_UPPERINPUT = "0b0";
+    defparam mult_33.BOTADDSUB_CARRYSELECT = "0b00";
+    defparam mult_33.MODE_8x8 = "0b1";
+    defparam mult_33.A_SIGNED = "0b0";
+    defparam mult_33.B_SIGNED = "0b0";
+    
+endmodule
+
+//
+// Verilog Description of module multiply8_U3
+//
+
+module multiply8_U3 (input VCC_net, input GND_net, output C_c_29);
+    
+    
+    (* lineinfo="@3(15[21],15[24])" *) MAC16 mult_21 (.CLK(GND_net), .CE(GND_net), 
+            .C15(GND_net), .C14(GND_net), .C13(GND_net), .C12(GND_net), 
+            .C11(GND_net), .C10(GND_net), .C9(GND_net), .C8(GND_net), 
+            .C7(GND_net), .C6(GND_net), .C5(GND_net), .C4(GND_net), 
+            .C3(GND_net), .C2(GND_net), .C1(GND_net), .C0(GND_net), 
+            .A15(GND_net), .A14(GND_net), .A13(GND_net), .A12(GND_net), 
+            .A11(GND_net), .A10(GND_net), .A9(GND_net), .A8(GND_net), 
+            .A7(GND_net), .A6(GND_net), .A5(GND_net), .A4(GND_net), 
+            .A3(VCC_net), .A2(GND_net), .A1(VCC_net), .A0(VCC_net), 
+            .B15(GND_net), .B14(GND_net), .B13(GND_net), .B12(GND_net), 
+            .B11(GND_net), .B10(GND_net), .B9(GND_net), .B8(GND_net), 
+            .B7(GND_net), .B6(GND_net), .B5(GND_net), .B4(GND_net), 
+            .B3(GND_net), .B2(VCC_net), .B1(GND_net), .B0(VCC_net), 
+            .D15(GND_net), .D14(GND_net), .D13(GND_net), .D12(GND_net), 
+            .D11(GND_net), .D10(GND_net), .D9(GND_net), .D8(GND_net), 
+            .D7(GND_net), .D6(GND_net), .D5(GND_net), .D4(GND_net), 
+            .D3(GND_net), .D2(GND_net), .D1(GND_net), .D0(GND_net), 
+            .AHOLD(GND_net), .BHOLD(GND_net), .CHOLD(GND_net), .DHOLD(GND_net), 
+            .IRSTTOP(GND_net), .IRSTBOT(GND_net), .ORSTTOP(GND_net), .ORSTBOT(GND_net), 
+            .OLOADTOP(GND_net), .OLOADBOT(GND_net), .ADDSUBTOP(GND_net), 
+            .ADDSUBBOT(GND_net), .OHOLDTOP(GND_net), .OHOLDBOT(GND_net), 
+            .CI(GND_net), .ACCUMCI(GND_net), .SIGNEXTIN(GND_net), .O0(C_c_29));
+    defparam mult_21.NEG_TRIGGER = "0b0";
+    defparam mult_21.A_REG = "0b0";
+    defparam mult_21.B_REG = "0b0";
+    defparam mult_21.C_REG = "0b0";
+    defparam mult_21.D_REG = "0b0";
+    defparam mult_21.TOP_8x8_MULT_REG = "0b0";
+    defparam mult_21.BOT_8x8_MULT_REG = "0b0";
+    defparam mult_21.PIPELINE_16x16_MULT_REG1 = "0b0";
+    defparam mult_21.PIPELINE_16x16_MULT_REG2 = "0b0";
+    defparam mult_21.TOPOUTPUT_SELECT = "0b10";
+    defparam mult_21.TOPADDSUB_LOWERINPUT = "0b00";
+    defparam mult_21.TOPADDSUB_UPPERINPUT = "0b0";
+    defparam mult_21.TOPADDSUB_CARRYSELECT = "0b00";
+    defparam mult_21.BOTOUTPUT_SELECT = "0b10";
+    defparam mult_21.BOTADDSUB_LOWERINPUT = "0b00";
+    defparam mult_21.BOTADDSUB_UPPERINPUT = "0b0";
+    defparam mult_21.BOTADDSUB_CARRYSELECT = "0b00";
+    defparam mult_21.MODE_8x8 = "0b1";
+    defparam mult_21.A_SIGNED = "0b0";
+    defparam mult_21.B_SIGNED = "0b0";
+    
+endmodule
+
+//
+// Verilog Description of module multiply8_U0
+//
+
+module multiply8_U0 (input VCC_net, input GND_net, output C_0_17);
+    
+    
+    (* lineinfo="@3(15[21],15[24])" *) MAC16 mult_31 (.CLK(GND_net), .CE(GND_net), 
+            .C15(GND_net), .C14(GND_net), .C13(GND_net), .C12(GND_net), 
+            .C11(GND_net), .C10(GND_net), .C9(GND_net), .C8(GND_net), 
+            .C7(GND_net), .C6(GND_net), .C5(GND_net), .C4(GND_net), 
+            .C3(GND_net), .C2(GND_net), .C1(GND_net), .C0(GND_net), 
+            .A15(GND_net), .A14(GND_net), .A13(GND_net), .A12(GND_net), 
+            .A11(GND_net), .A10(GND_net), .A9(GND_net), .A8(GND_net), 
+            .A7(GND_net), .A6(GND_net), .A5(GND_net), .A4(VCC_net), 
+            .A3(GND_net), .A2(GND_net), .A1(GND_net), .A0(VCC_net), 
+            .B15(GND_net), .B14(GND_net), .B13(GND_net), .B12(GND_net), 
+            .B11(GND_net), .B10(GND_net), .B9(GND_net), .B8(GND_net), 
+            .B7(GND_net), .B6(GND_net), .B5(GND_net), .B4(GND_net), 
+            .B3(GND_net), .B2(VCC_net), .B1(GND_net), .B0(VCC_net), 
+            .D15(GND_net), .D14(GND_net), .D13(GND_net), .D12(GND_net), 
+            .D11(GND_net), .D10(GND_net), .D9(GND_net), .D8(GND_net), 
+            .D7(GND_net), .D6(GND_net), .D5(GND_net), .D4(GND_net), 
+            .D3(GND_net), .D2(GND_net), .D1(GND_net), .D0(GND_net), 
+            .AHOLD(GND_net), .BHOLD(GND_net), .CHOLD(GND_net), .DHOLD(GND_net), 
+            .IRSTTOP(GND_net), .IRSTBOT(GND_net), .ORSTTOP(GND_net), .ORSTBOT(GND_net), 
+            .OLOADTOP(GND_net), .OLOADBOT(GND_net), .ADDSUBTOP(GND_net), 
+            .ADDSUBBOT(GND_net), .OHOLDTOP(GND_net), .OHOLDBOT(GND_net), 
+            .CI(GND_net), .ACCUMCI(GND_net), .SIGNEXTIN(GND_net), .O0(C_0_17));
+    defparam mult_31.NEG_TRIGGER = "0b0";
+    defparam mult_31.A_REG = "0b0";
+    defparam mult_31.B_REG = "0b0";
+    defparam mult_31.C_REG = "0b0";
+    defparam mult_31.D_REG = "0b0";
+    defparam mult_31.TOP_8x8_MULT_REG = "0b0";
+    defparam mult_31.BOT_8x8_MULT_REG = "0b0";
+    defparam mult_31.PIPELINE_16x16_MULT_REG1 = "0b0";
+    defparam mult_31.PIPELINE_16x16_MULT_REG2 = "0b0";
+    defparam mult_31.TOPOUTPUT_SELECT = "0b10";
+    defparam mult_31.TOPADDSUB_LOWERINPUT = "0b00";
+    defparam mult_31.TOPADDSUB_UPPERINPUT = "0b0";
+    defparam mult_31.TOPADDSUB_CARRYSELECT = "0b00";
+    defparam mult_31.BOTOUTPUT_SELECT = "0b10";
+    defparam mult_31.BOTADDSUB_LOWERINPUT = "0b00";
+    defparam mult_31.BOTADDSUB_UPPERINPUT = "0b0";
+    defparam mult_31.BOTADDSUB_CARRYSELECT = "0b00";
+    defparam mult_31.MODE_8x8 = "0b1";
+    defparam mult_31.A_SIGNED = "0b0";
+    defparam mult_31.B_SIGNED = "0b0";
+    
+endmodule
+
+//
+// Verilog Description of module multiply8_U4
+//
+
+module multiply8_U4 (input VCC_net, input GND_net, output C_0_1);
+    
+    
+    (* lineinfo="@3(15[21],15[24])" *) MAC16 mult_23 (.CLK(GND_net), .CE(GND_net), 
+            .C15(GND_net), .C14(GND_net), .C13(GND_net), .C12(GND_net), 
+            .C11(GND_net), .C10(GND_net), .C9(GND_net), .C8(GND_net), 
+            .C7(GND_net), .C6(GND_net), .C5(GND_net), .C4(GND_net), 
+            .C3(GND_net), .C2(GND_net), .C1(GND_net), .C0(GND_net), 
+            .A15(GND_net), .A14(GND_net), .A13(GND_net), .A12(GND_net), 
+            .A11(GND_net), .A10(GND_net), .A9(GND_net), .A8(GND_net), 
+            .A7(GND_net), .A6(VCC_net), .A5(VCC_net), .A4(VCC_net), 
+            .A3(GND_net), .A2(GND_net), .A1(VCC_net), .A0(VCC_net), 
+            .B15(GND_net), .B14(GND_net), .B13(GND_net), .B12(GND_net), 
+            .B11(GND_net), .B10(GND_net), .B9(GND_net), .B8(GND_net), 
+            .B7(GND_net), .B6(GND_net), .B5(GND_net), .B4(GND_net), 
+            .B3(GND_net), .B2(VCC_net), .B1(GND_net), .B0(VCC_net), 
+            .D15(GND_net), .D14(GND_net), .D13(GND_net), .D12(GND_net), 
+            .D11(GND_net), .D10(GND_net), .D9(GND_net), .D8(GND_net), 
+            .D7(GND_net), .D6(GND_net), .D5(GND_net), .D4(GND_net), 
+            .D3(GND_net), .D2(GND_net), .D1(GND_net), .D0(GND_net), 
+            .AHOLD(GND_net), .BHOLD(GND_net), .CHOLD(GND_net), .DHOLD(GND_net), 
+            .IRSTTOP(GND_net), .IRSTBOT(GND_net), .ORSTTOP(GND_net), .ORSTBOT(GND_net), 
+            .OLOADTOP(GND_net), .OLOADBOT(GND_net), .ADDSUBTOP(GND_net), 
+            .ADDSUBBOT(GND_net), .OHOLDTOP(GND_net), .OHOLDBOT(GND_net), 
+            .CI(GND_net), .ACCUMCI(GND_net), .SIGNEXTIN(GND_net), .O0(C_0_1));
+    defparam mult_23.NEG_TRIGGER = "0b0";
+    defparam mult_23.A_REG = "0b0";
+    defparam mult_23.B_REG = "0b0";
+    defparam mult_23.C_REG = "0b0";
+    defparam mult_23.D_REG = "0b0";
+    defparam mult_23.TOP_8x8_MULT_REG = "0b0";
+    defparam mult_23.BOT_8x8_MULT_REG = "0b0";
+    defparam mult_23.PIPELINE_16x16_MULT_REG1 = "0b0";
+    defparam mult_23.PIPELINE_16x16_MULT_REG2 = "0b0";
+    defparam mult_23.TOPOUTPUT_SELECT = "0b10";
+    defparam mult_23.TOPADDSUB_LOWERINPUT = "0b00";
+    defparam mult_23.TOPADDSUB_UPPERINPUT = "0b0";
+    defparam mult_23.TOPADDSUB_CARRYSELECT = "0b00";
+    defparam mult_23.BOTOUTPUT_SELECT = "0b10";
+    defparam mult_23.BOTADDSUB_LOWERINPUT = "0b00";
+    defparam mult_23.BOTADDSUB_UPPERINPUT = "0b0";
+    defparam mult_23.BOTADDSUB_CARRYSELECT = "0b00";
+    defparam mult_23.MODE_8x8 = "0b1";
+    defparam mult_23.A_SIGNED = "0b0";
+    defparam mult_23.B_SIGNED = "0b0";
+    
+endmodule
+
+//
+// Verilog Description of module multiply8_U2
+//
+
+module multiply8_U2 (input VCC_net, input GND_net, output C_0_25);
+    
+    
+    (* lineinfo="@3(15[21],15[24])" *) MAC16 mult_35 (.CLK(GND_net), .CE(GND_net), 
+            .C15(GND_net), .C14(GND_net), .C13(GND_net), .C12(GND_net), 
+            .C11(GND_net), .C10(GND_net), .C9(GND_net), .C8(GND_net), 
+            .C7(GND_net), .C6(GND_net), .C5(GND_net), .C4(GND_net), 
+            .C3(GND_net), .C2(GND_net), .C1(GND_net), .C0(GND_net), 
+            .A15(GND_net), .A14(GND_net), .A13(GND_net), .A12(GND_net), 
+            .A11(GND_net), .A10(GND_net), .A9(GND_net), .A8(GND_net), 
+            .A7(GND_net), .A6(GND_net), .A5(GND_net), .A4(GND_net), 
+            .A3(VCC_net), .A2(VCC_net), .A1(GND_net), .A0(VCC_net), 
+            .B15(GND_net), .B14(GND_net), .B13(GND_net), .B12(GND_net), 
+            .B11(GND_net), .B10(GND_net), .B9(GND_net), .B8(GND_net), 
+            .B7(GND_net), .B6(GND_net), .B5(GND_net), .B4(GND_net), 
+            .B3(GND_net), .B2(VCC_net), .B1(GND_net), .B0(VCC_net), 
+            .D15(GND_net), .D14(GND_net), .D13(GND_net), .D12(GND_net), 
+            .D11(GND_net), .D10(GND_net), .D9(GND_net), .D8(GND_net), 
+            .D7(GND_net), .D6(GND_net), .D5(GND_net), .D4(GND_net), 
+            .D3(GND_net), .D2(GND_net), .D1(GND_net), .D0(GND_net), 
+            .AHOLD(GND_net), .BHOLD(GND_net), .CHOLD(GND_net), .DHOLD(GND_net), 
+            .IRSTTOP(GND_net), .IRSTBOT(GND_net), .ORSTTOP(GND_net), .ORSTBOT(GND_net), 
+            .OLOADTOP(GND_net), .OLOADBOT(GND_net), .ADDSUBTOP(GND_net), 
+            .ADDSUBBOT(GND_net), .OHOLDTOP(GND_net), .OHOLDBOT(GND_net), 
+            .CI(GND_net), .ACCUMCI(GND_net), .SIGNEXTIN(GND_net), .O0(C_0_25));
+    defparam mult_35.NEG_TRIGGER = "0b0";
+    defparam mult_35.A_REG = "0b0";
+    defparam mult_35.B_REG = "0b0";
+    defparam mult_35.C_REG = "0b0";
+    defparam mult_35.D_REG = "0b0";
+    defparam mult_35.TOP_8x8_MULT_REG = "0b0";
+    defparam mult_35.BOT_8x8_MULT_REG = "0b0";
+    defparam mult_35.PIPELINE_16x16_MULT_REG1 = "0b0";
+    defparam mult_35.PIPELINE_16x16_MULT_REG2 = "0b0";
+    defparam mult_35.TOPOUTPUT_SELECT = "0b10";
+    defparam mult_35.TOPADDSUB_LOWERINPUT = "0b00";
+    defparam mult_35.TOPADDSUB_UPPERINPUT = "0b0";
+    defparam mult_35.TOPADDSUB_CARRYSELECT = "0b00";
+    defparam mult_35.BOTOUTPUT_SELECT = "0b10";
+    defparam mult_35.BOTADDSUB_LOWERINPUT = "0b00";
+    defparam mult_35.BOTADDSUB_UPPERINPUT = "0b0";
+    defparam mult_35.BOTADDSUB_CARRYSELECT = "0b00";
+    defparam mult_35.MODE_8x8 = "0b1";
+    defparam mult_35.A_SIGNED = "0b0";
+    defparam mult_35.B_SIGNED = "0b0";
+    
+endmodule
+
+//
+// Verilog Description of module multiply8_U6
+//
+
+module multiply8_U6 (input VCC_net, input GND_net, output C_0_9);
+    
+    
+    (* lineinfo="@3(15[21],15[24])" *) MAC16 mult_27 (.CLK(GND_net), .CE(GND_net), 
+            .C15(GND_net), .C14(GND_net), .C13(GND_net), .C12(GND_net), 
+            .C11(GND_net), .C10(GND_net), .C9(GND_net), .C8(GND_net), 
+            .C7(GND_net), .C6(GND_net), .C5(GND_net), .C4(GND_net), 
+            .C3(GND_net), .C2(GND_net), .C1(GND_net), .C0(GND_net), 
+            .A15(GND_net), .A14(GND_net), .A13(GND_net), .A12(GND_net), 
+            .A11(GND_net), .A10(GND_net), .A9(GND_net), .A8(GND_net), 
+            .A7(GND_net), .A6(VCC_net), .A5(VCC_net), .A4(GND_net), 
+            .A3(VCC_net), .A2(VCC_net), .A1(VCC_net), .A0(VCC_net), 
+            .B15(GND_net), .B14(GND_net), .B13(GND_net), .B12(GND_net), 
+            .B11(GND_net), .B10(GND_net), .B9(GND_net), .B8(GND_net), 
+            .B7(GND_net), .B6(GND_net), .B5(GND_net), .B4(GND_net), 
+            .B3(GND_net), .B2(VCC_net), .B1(GND_net), .B0(VCC_net), 
+            .D15(GND_net), .D14(GND_net), .D13(GND_net), .D12(GND_net), 
+            .D11(GND_net), .D10(GND_net), .D9(GND_net), .D8(GND_net), 
+            .D7(GND_net), .D6(GND_net), .D5(GND_net), .D4(GND_net), 
+            .D3(GND_net), .D2(GND_net), .D1(GND_net), .D0(GND_net), 
+            .AHOLD(GND_net), .BHOLD(GND_net), .CHOLD(GND_net), .DHOLD(GND_net), 
+            .IRSTTOP(GND_net), .IRSTBOT(GND_net), .ORSTTOP(GND_net), .ORSTBOT(GND_net), 
+            .OLOADTOP(GND_net), .OLOADBOT(GND_net), .ADDSUBTOP(GND_net), 
+            .ADDSUBBOT(GND_net), .OHOLDTOP(GND_net), .OHOLDBOT(GND_net), 
+            .CI(GND_net), .ACCUMCI(GND_net), .SIGNEXTIN(GND_net), .O0(C_0_9));
+    defparam mult_27.NEG_TRIGGER = "0b0";
+    defparam mult_27.A_REG = "0b0";
+    defparam mult_27.B_REG = "0b0";
+    defparam mult_27.C_REG = "0b0";
+    defparam mult_27.D_REG = "0b0";
+    defparam mult_27.TOP_8x8_MULT_REG = "0b0";
+    defparam mult_27.BOT_8x8_MULT_REG = "0b0";
+    defparam mult_27.PIPELINE_16x16_MULT_REG1 = "0b0";
+    defparam mult_27.PIPELINE_16x16_MULT_REG2 = "0b0";
+    defparam mult_27.TOPOUTPUT_SELECT = "0b10";
+    defparam mult_27.TOPADDSUB_LOWERINPUT = "0b00";
+    defparam mult_27.TOPADDSUB_UPPERINPUT = "0b0";
+    defparam mult_27.TOPADDSUB_CARRYSELECT = "0b00";
+    defparam mult_27.BOTOUTPUT_SELECT = "0b10";
+    defparam mult_27.BOTADDSUB_LOWERINPUT = "0b00";
+    defparam mult_27.BOTADDSUB_UPPERINPUT = "0b0";
+    defparam mult_27.BOTADDSUB_CARRYSELECT = "0b00";
+    defparam mult_27.MODE_8x8 = "0b1";
+    defparam mult_27.A_SIGNED = "0b0";
+    defparam mult_27.B_SIGNED = "0b0";
+    
+endmodule
+
+//
+// Verilog Description of module multiply8_U5
+//
+
+module multiply8_U5 (input VCC_net, input GND_net, output C_c_5);
+    
+    
+    (* lineinfo="@3(15[21],15[24])" *) MAC16 mult_25 (.CLK(GND_net), .CE(GND_net), 
+            .C15(GND_net), .C14(GND_net), .C13(GND_net), .C12(GND_net), 
+            .C11(GND_net), .C10(GND_net), .C9(GND_net), .C8(GND_net), 
+            .C7(GND_net), .C6(GND_net), .C5(GND_net), .C4(GND_net), 
+            .C3(GND_net), .C2(GND_net), .C1(GND_net), .C0(GND_net), 
+            .A15(GND_net), .A14(GND_net), .A13(GND_net), .A12(GND_net), 
+            .A11(GND_net), .A10(GND_net), .A9(GND_net), .A8(GND_net), 
+            .A7(GND_net), .A6(VCC_net), .A5(VCC_net), .A4(VCC_net), 
+            .A3(GND_net), .A2(GND_net), .A1(GND_net), .A0(VCC_net), 
+            .B15(GND_net), .B14(GND_net), .B13(GND_net), .B12(GND_net), 
+            .B11(GND_net), .B10(GND_net), .B9(GND_net), .B8(GND_net), 
+            .B7(GND_net), .B6(GND_net), .B5(GND_net), .B4(GND_net), 
+            .B3(GND_net), .B2(VCC_net), .B1(GND_net), .B0(VCC_net), 
+            .D15(GND_net), .D14(GND_net), .D13(GND_net), .D12(GND_net), 
+            .D11(GND_net), .D10(GND_net), .D9(GND_net), .D8(GND_net), 
+            .D7(GND_net), .D6(GND_net), .D5(GND_net), .D4(GND_net), 
+            .D3(GND_net), .D2(GND_net), .D1(GND_net), .D0(GND_net), 
+            .AHOLD(GND_net), .BHOLD(GND_net), .CHOLD(GND_net), .DHOLD(GND_net), 
+            .IRSTTOP(GND_net), .IRSTBOT(GND_net), .ORSTTOP(GND_net), .ORSTBOT(GND_net), 
+            .OLOADTOP(GND_net), .OLOADBOT(GND_net), .ADDSUBTOP(GND_net), 
+            .ADDSUBBOT(GND_net), .OHOLDTOP(GND_net), .OHOLDBOT(GND_net), 
+            .CI(GND_net), .ACCUMCI(GND_net), .SIGNEXTIN(GND_net), .O0(C_c_5));
+    defparam mult_25.NEG_TRIGGER = "0b0";
+    defparam mult_25.A_REG = "0b0";
+    defparam mult_25.B_REG = "0b0";
+    defparam mult_25.C_REG = "0b0";
+    defparam mult_25.D_REG = "0b0";
+    defparam mult_25.TOP_8x8_MULT_REG = "0b0";
+    defparam mult_25.BOT_8x8_MULT_REG = "0b0";
+    defparam mult_25.PIPELINE_16x16_MULT_REG1 = "0b0";
+    defparam mult_25.PIPELINE_16x16_MULT_REG2 = "0b0";
+    defparam mult_25.TOPOUTPUT_SELECT = "0b10";
+    defparam mult_25.TOPADDSUB_LOWERINPUT = "0b00";
+    defparam mult_25.TOPADDSUB_UPPERINPUT = "0b0";
+    defparam mult_25.TOPADDSUB_CARRYSELECT = "0b00";
+    defparam mult_25.BOTOUTPUT_SELECT = "0b10";
+    defparam mult_25.BOTADDSUB_LOWERINPUT = "0b00";
+    defparam mult_25.BOTADDSUB_UPPERINPUT = "0b0";
+    defparam mult_25.BOTADDSUB_CARRYSELECT = "0b00";
+    defparam mult_25.MODE_8x8 = "0b1";
+    defparam mult_25.A_SIGNED = "0b0";
+    defparam mult_25.B_SIGNED = "0b0";
     
 endmodule

@@ -48,7 +48,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2023.1.0.43.3
-Mapped on: Wed Oct 30 16:20:39 2024
+Mapped on: Mon Feb 17 15:26:39 2025
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
@@ -59,9 +59,9 @@ Command line:   map -i dsp_mult_impl_1_syn.udb -o dsp_mult_impl_1_map.udb -mp
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
    Number of slice registers:   0 out of  5280 (0%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:            21 out of  5280 (<1%)
-      Number of logic LUT4s:               1
-      Number of ripple logic:             10 (20 LUT4s)
+   Number of LUT4s:             2 out of  5280 (<1%)
+      Number of logic LUT4s:               2
+      Number of ripple logic:              0 (0 LUT4s)
    Number of IO sites used:   32 out of 39 (82%)
       Number of IO sites used for general PIO: 32
       Number of IO sites used for I3C: 0 out of 2 (0%)
@@ -71,7 +71,7 @@ Command line:   map -i dsp_mult_impl_1_syn.udb -o dsp_mult_impl_1_map.udb -mp
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
       Number of IO sites used for PIO+I3C+OD+RGB: 32 out of 39 (82%)
-   Number of DSPs:             2 out of 8 (25%)
+   Number of DSPs:             8 out of 8 (100%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  0 out of 1 (0%)
    Number of Low Speed OSCs:   0 out of 1 (0%)
@@ -87,16 +87,16 @@ Command line:   map -i dsp_mult_impl_1_syn.udb -o dsp_mult_impl_1_map.udb -mp
    Number of Clock Enables:  0
    Number of LSRs:  0
    Top 10 highest fanout non-clock nets:
-      Net VCC_net: 47 loads
-      Net mult_lut_test.C_c_14_N_135: 2 loads
-      Net mult_lut_test.C_c_16_N_119: 2 loads
-      Net mult_lut_test.C_c_18_N_103: 2 loads
-      Net mult_lut_test.C_c_20_N_87: 2 loads
-      Net mult_lut_test.n704: 2 loads
-      Net mult_lut_test.n707: 2 loads
-      Net mult_lut_test.n710: 2 loads
-      Net mult_lut_test.n713: 2 loads
-      Net mult_lut_test.n716: 2 loads
+      Net VCC_net: 46 loads
+      Net C_0_1: 1 loads
+      Net C_0_17: 1 loads
+      Net C_0_25: 1 loads
+      Net C_0_9: 1 loads
+      Net C_c_13: 1 loads
+      Net C_c_21: 1 loads
+      Net C_c_29: 1 loads
+      Net C_c_5: 1 loads
+
 
 
 
@@ -121,15 +121,23 @@ Command line:   map -i dsp_mult_impl_1_syn.udb -o dsp_mult_impl_1_map.udb -mp
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| C[0]                | OUTPUT    |           |       |       |           |
+| C[23]               | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| C[31]               | OUTPUT    |           |       |       |           |
+| C[24]               | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| C[25]               | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| C[26]               | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| C[27]               | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | C[28]               | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | C[29]               | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | C[30]               | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| C[0]                | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | C[1]                | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -154,6 +162,7 @@ Command line:   map -i dsp_mult_impl_1_syn.udb -o dsp_mult_impl_1_map.udb -mp
 | C[11]               | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | C[12]               | OUTPUT    |           |       |       |           |
+
 +---------------------+-----------+-----------+-------+-------+-----------+
 | C[13]               | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -162,7 +171,6 @@ Command line:   map -i dsp_mult_impl_1_syn.udb -o dsp_mult_impl_1_map.udb -mp
 | C[15]               | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | C[16]               | OUTPUT    |           |       |       |           |
-
 +---------------------+-----------+-----------+-------+-------+-----------+
 | C[17]               | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -176,31 +184,29 @@ Command line:   map -i dsp_mult_impl_1_syn.udb -o dsp_mult_impl_1_map.udb -mp
 +---------------------+-----------+-----------+-------+-------+-----------+
 | C[22]               | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| C[23]               | OUTPUT    |           |       |       |           |
+| C[31]               | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| C[24]               | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| C[25]               | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| C[26]               | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| C[27]               | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-
-
-
-<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
-
-Block i1 was optimized away.
 
 
 
 <A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
 ---------------
 
-Instance Name: mult_lut_test/mult_6
+Instance Name: mult_lut_test9/mult_29
          Type: DSP
-Instance Name: mult_lut_test/mult_7
+Instance Name: mult_lut_test5/mult_33
+         Type: DSP
+Instance Name: mult_lut_test1/mult_21
+         Type: DSP
+Instance Name: mult_lut_test7/mult_31
+         Type: DSP
+Instance Name: mult_lut_test15/mult_23
+         Type: DSP
+Instance Name: mult_lut_test3/mult_35
+         Type: DSP
+Instance Name: mult_lut_test11/mult_27
+         Type: DSP
+Instance Name: mult_lut_test13/mult_25
          Type: DSP
 
 
@@ -218,14 +224,7 @@ Instance Name: mult_lut_test/mult_7
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 52 MB
-
-
-
-
-
-
-
+   Peak Memory Usage: 53 MB
 
 
 
@@ -300,7 +299,6 @@ Copyright (c) 2002-2023 Lattice Semiconductor
 <LI><A href=#mrp_ds>Design Summary</A></LI>
 <LI><A href=#mrp_dwe>Design Errors/Warnings</A></LI>
 <LI><A href=#mrp_ioa>IO (PIO) Attributes</A></LI>
-<LI><A href=#mrp_rm>Removed logic</A></LI>
 <LI><A href=#mrp_asic>ASIC Components</A></LI>
 <LI><A href=#mrp_consum>Constraint Summary</A></LI>
 <LI><A href=#mrp_runtime>Run Time and Memory Usage</A></LI>
