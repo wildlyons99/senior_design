@@ -4,17 +4,71 @@ Register bits:  0 of 5280 (0.000%)
 I/O cells:      32
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2        10          100.0
-                              MAC16         2          100.0
+                              MAC16         8          100.0
                                  OB        32          100.0
 SUB MODULES
-                         multiply32         1
-                              TOTAL        45
+                          multiply8         1
+                       multiply8_U0         1
+                       multiply8_U1         1
+                       multiply8_U2         1
+                       multiply8_U3         1
+                       multiply8_U4         1
+                       multiply8_U5         1
+                       multiply8_U6         1
+                              TOTAL        48
 ----------------------------------------------------------------------
-Report for cell multiply32.v1
-Instance Path : mult_lut_test
+Report for cell multiply8.v1
+Instance Path : mult_lut_test9
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        10          100.0
-                              MAC16         2          100.0
-                              TOTAL        12
+                              MAC16         1           12.5
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell multiply8_U1.v1
+Instance Path : mult_lut_test5
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              MAC16         1           12.5
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell multiply8_U3.v1
+Instance Path : mult_lut_test1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              MAC16         1           12.5
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell multiply8_U0.v1
+Instance Path : mult_lut_test7
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              MAC16         1           12.5
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell multiply8_U4.v1
+Instance Path : mult_lut_test15
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              MAC16         1           12.5
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell multiply8_U2.v1
+Instance Path : mult_lut_test3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              MAC16         1           12.5
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell multiply8_U6.v1
+Instance Path : mult_lut_test11
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              MAC16         1           12.5
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell multiply8_U5.v1
+Instance Path : mult_lut_test13
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              MAC16         1           12.5
+                              TOTAL         1
