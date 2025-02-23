@@ -1,0 +1,14 @@
+# Inputs
+set_io -nowarn -pullup 1 clk_12MHz            20   # Pin for clk_12MHz
+
+# Outputs
+set_io -nowarn RGB[0]          26   # Pin for RGB[0]
+set_io -nowarn RGB[1]          27   # Pin for RGB[1]
+set_io -nowarn RGB[2]          32   # Pin for RGB[2]
+set_io -nowarn RGB[3]          35   # Pin for RGB[3]
+set_io -nowarn RGB[4]          31   # Pin for RGB[4]
+set_io -nowarn RGB[5]          37   # Pin for RGB[5]
+set_io -nowarn HSYNC                25   # Pin for HSYNC
+set_io -nowarn VSYNC                23   # Pin for VSYNC
+set_io -nowarn global_clk             28   # Pin for clk_25Hz
+
