@@ -22,8 +22,8 @@
 
 module SCCB_interface
 #(
-    parameter CLK_FREQ = 25000000, // 25 MHz
-    parameter SCCB_FREQ = 100000 // 100 kHz
+    parameter CLK_FREQ = 25000000,
+    parameter SCCB_FREQ = 100000
 )
 (
     input wire clk,
