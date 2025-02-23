@@ -1,0 +1,25 @@
+# Inputs
+set_io -nowarn -pullup 1 REFERENCECLK    23
+set_io -nowarn -pullup 1 start    25
+set_io -nowarn -pullup 1 address[0]    26
+set_io -nowarn -pullup 1 address[1]    27
+set_io -nowarn -pullup 1 address[2]    32
+set_io -nowarn -pullup 1 address[3]    35
+set_io -nowarn -pullup 1 address[4]    31
+set_io -nowarn -pullup 1 address[5]    37
+set_io -nowarn -pullup 1 address[5]    34
+set_io -nowarn -pullup 1 address[6]    43
+set_io -nowarn -pullup 1 address[7]    36
+set_io -nowarn -pullup 1 data[0]    44
+set_io -nowarn -pullup 1 data[1]    4
+set_io -nowarn -pullup 1 data[2]    3
+set_io -nowarn -pullup 1 data[3]    48
+set_io -nowarn -pullup 1 data[4]    45
+set_io -nowarn -pullup 1 data[5]    47
+set_io -nowarn -pullup 1 data[6]    46
+set_io -nowarn -pullup 1 data[7]    2
+
+# Outputs
+set_io -nowarn ready  11 
+set_io -nowarn SIOC_oe  6 
+set_io -nowarn SIOD_oe  9 

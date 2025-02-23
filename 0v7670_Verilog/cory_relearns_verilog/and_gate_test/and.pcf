@@ -1,0 +1,6 @@
+# Inputs
+set_io -nowarn -pullup 1 a    31
+set_io -nowarn -pullup 1 b    35
+
+# Outputs
+set_io -nowarn y  44 
