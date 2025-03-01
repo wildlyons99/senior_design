@@ -3,19 +3,65 @@ Report for cell top
    Instance path: top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         21        100.0
-                               LUTGATE	          1        100.0
-                                LUTCCU	         20        100.0
+                                  LUT4	          2        100.0
+                               LUTGATE	          2        100.0
                                  IOBUF	         32        100.0
-                                   DSP	          2        100.0
+                                   DSP	          8        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                            multiply32	          1        95.2
+                             multiply8	          1         0.0
+                          multiply8_U0	          1         0.0
+                          multiply8_U1	          1         0.0
+                          multiply8_U2	          1         0.0
+                          multiply8_U3	          1         0.0
+                          multiply8_U4	          1         0.0
+                          multiply8_U5	          1         0.0
+                          multiply8_U6	          1         0.0
 ---------------------------------------------------
-Report for cell multiply32
-   Instance path: top/mult_lut_test
+Report for cell multiply8
+   Instance path: top/mult_lut_test9
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         20        95.2
-                                LUTCCU	         20        100.0
-                                   DSP	          2        100.0
+                                   DSP	          1        12.5
+---------------------------------------------------
+Report for cell multiply8_U1
+   Instance path: top/mult_lut_test5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   DSP	          1        12.5
+---------------------------------------------------
+Report for cell multiply8_U3
+   Instance path: top/mult_lut_test1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   DSP	          1        12.5
+---------------------------------------------------
+Report for cell multiply8_U0
+   Instance path: top/mult_lut_test7
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   DSP	          1        12.5
+---------------------------------------------------
+Report for cell multiply8_U4
+   Instance path: top/mult_lut_test15
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   DSP	          1        12.5
+---------------------------------------------------
+Report for cell multiply8_U2
+   Instance path: top/mult_lut_test3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   DSP	          1        12.5
+---------------------------------------------------
+Report for cell multiply8_U6
+   Instance path: top/mult_lut_test11
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   DSP	          1        12.5
+---------------------------------------------------
+Report for cell multiply8_U5
+   Instance path: top/mult_lut_test13
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   DSP	          1        12.5

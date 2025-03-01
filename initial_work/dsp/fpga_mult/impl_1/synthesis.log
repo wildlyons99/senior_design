@@ -5,10 +5,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Oct 30 16:20:35 2024
+Mon Feb 17 15:26:33 2025
 
 
-Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f dsp_mult_impl_1_lattice.synproj -gui -msgset Z:/senior_design/vhdl/dsp/fpga_mult/promote.xml 
+Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f dsp_mult_impl_1_lattice.synproj -gui -msgset Z:/senior_design/initial_work/dsp/fpga_mult/promote.xml 
 
 Synthesis options:
 The -a option is iCE40UP.
@@ -67,19 +67,22 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
+-sdc option: SDC file input is dsp_mult_impl_1_cpe.ldc.
 -vh2008
 
 -path C:/lscc/radiant/2023.1/ispfpga/ice40tp/data (searchpath added)
--path Z:/senior_design/vhdl/dsp/fpga_mult (searchpath added)
--path Z:/senior_design/vhdl/dsp/fpga_mult/impl_1 (searchpath added)
+-path Z:/senior_design/initial_work/dsp/fpga_mult (searchpath added)
+-path Z:/senior_design/initial_work/dsp/fpga_mult/impl_1 (searchpath added)
+-path Z:/senior_design/initial_work/dsp/fpga_mult/multa (searchpath added)
 Mixed language design
 Verilog design file = C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.v
+Verilog design file = Z:/senior_design/initial_work/dsp/fpga_mult/multa/rtl/multa.v
 VHDL library = pmi
 VHDL design file = C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.vhd
 VHDL library = work
-VHDL design file = Z:/senior_design/vhdl/dsp/fpga_mult/source/impl_1/topvhd.vhd
+VHDL design file = Z:/senior_design/initial_work/dsp/fpga_mult/source/impl_1/topvhd.vhd
 VHDL library = work
-VHDL design file = Z:/senior_design/vhdl/dsp/fpga_mult/source/impl_1/multiply32.vhd
+VHDL design file = Z:/senior_design/initial_work/dsp/fpga_mult/source/impl_1/multiply32.vhd
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 WARNING <35935050> - synthesis: input port TRIM9 is not connected on this instance. VDB-5050
 WARNING <35935050> - synthesis: input port TRIM8 is not connected on this instance. VDB-5050
@@ -128,21 +131,22 @@ INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v(49): 
 INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v. VERI-1328
 INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
 INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing Verilog file z:/senior_design/initial_work/dsp/fpga_mult/multa/rtl/multa.v. VERI-1482
 Analyzing VHDL file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd. VHDL-1481
 Analyzing VHDL file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd
 
 INFO <35921014> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
-Analyzing VHDL file z:/senior_design/vhdl/dsp/fpga_mult/source/impl_1/topvhd.vhd. VHDL-1481
-Analyzing VHDL file z:/senior_design/vhdl/dsp/fpga_mult/source/impl_1/topvhd.vhd
+Analyzing VHDL file z:/senior_design/initial_work/dsp/fpga_mult/source/impl_1/topvhd.vhd. VHDL-1481
+Analyzing VHDL file z:/senior_design/initial_work/dsp/fpga_mult/source/impl_1/topvhd.vhd
 
-INFO <35921012> - synthesis: z:/senior_design/vhdl/dsp/fpga_mult/source/impl_1/topvhd.vhd(5): analyzing entity top. VHDL-1012
-INFO <35921010> - synthesis: z:/senior_design/vhdl/dsp/fpga_mult/source/impl_1/topvhd.vhd(13): analyzing architecture structural. VHDL-1010
-Analyzing VHDL file z:/senior_design/vhdl/dsp/fpga_mult/source/impl_1/multiply32.vhd. VHDL-1481
-Analyzing VHDL file z:/senior_design/vhdl/dsp/fpga_mult/source/impl_1/multiply32.vhd
+INFO <35921012> - synthesis: z:/senior_design/initial_work/dsp/fpga_mult/source/impl_1/topvhd.vhd(5): analyzing entity top. VHDL-1012
+INFO <35921010> - synthesis: z:/senior_design/initial_work/dsp/fpga_mult/source/impl_1/topvhd.vhd(13): analyzing architecture structural. VHDL-1010
+Analyzing VHDL file z:/senior_design/initial_work/dsp/fpga_mult/source/impl_1/multiply32.vhd. VHDL-1481
+Analyzing VHDL file z:/senior_design/initial_work/dsp/fpga_mult/source/impl_1/multiply32.vhd
 
-INFO <35921012> - synthesis: z:/senior_design/vhdl/dsp/fpga_mult/source/impl_1/multiply32.vhd(5): analyzing entity multiply32. VHDL-1012
-INFO <35921010> - synthesis: z:/senior_design/vhdl/dsp/fpga_mult/source/impl_1/multiply32.vhd(13): analyzing architecture structural. VHDL-1010
-INFO <35921504> - synthesis: The default VHDL library search path is now "Z:/senior_design/vhdl/dsp/fpga_mult/impl_1". VHDL-1504
+INFO <35921012> - synthesis: z:/senior_design/initial_work/dsp/fpga_mult/source/impl_1/multiply32.vhd(5): analyzing entity multiply8. VHDL-1012
+INFO <35921010> - synthesis: z:/senior_design/initial_work/dsp/fpga_mult/source/impl_1/multiply32.vhd(13): analyzing architecture structural. VHDL-1010
+INFO <35921504> - synthesis: The default VHDL library search path is now "Z:/senior_design/initial_work/dsp/fpga_mult/impl_1". VHDL-1504
 Top module language type = VHDL.
 Top module name (VHDL, mixed language): top
                                                          
@@ -172,17 +176,16 @@ Top module name (VHDL, mixed language): top
 
 
 
-Mapped 2 multiplier(s)
+Mapped 8 multiplier(s)
 
 
 
 ################### Begin Area Report (top)######################
 Number of register bits => 0 of 5280 (0 % )
-CCU2 => 10
-MAC16 => 2
+MAC16 => 8
 OB => 32
 ################### End Area Report ##################
-Number of odd-length carry chains : 1
+Number of odd-length carry chains : 0
 Number of even-length carry chains : 0
 
 ################### Begin Clock Report ######################
@@ -192,21 +195,21 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : mult_lut_test/n704, loads : 2
-  Net : mult_lut_test/C_c_14_N_135, loads : 2
-  Net : mult_lut_test/n707, loads : 2
-  Net : mult_lut_test/C_c_16_N_119, loads : 2
-  Net : mult_lut_test/C_c_18_N_103, loads : 2
-  Net : mult_lut_test/n713, loads : 2
-  Net : mult_lut_test/C_c_20_N_87, loads : 2
-  Net : mult_lut_test/n710, loads : 2
-  Net : mult_lut_test/n716, loads : 2
-  Net : mult_lut_test/C_c_22_N_71, loads : 2
+  Net : mult_lut_test1/C_c_29, loads : 0
+  Net : mult_lut_test3/C_0_25, loads : 0
+  Net : mult_lut_test5/C_c_21, loads : 0
+  Net : mult_lut_test7/C_0_17, loads : 0
+  Net : mult_lut_test9/C_c_13, loads : 0
+  Net : mult_lut_test11/C_0_9, loads : 0
+  Net : mult_lut_test13/C_c_5, loads : 0
+  Net : mult_lut_test15/C_0_1, loads : 0
+  Net : C[0], loads : 0
+  Net : C[1], loads : 0
 ################### End Clock Report ##################
 
-Peak Memory Usage: 107 MB
+Peak Memory Usage: 106 MB
 
 --------------------------------------------------------------
-Total CPU Time: 1 secs 
-Total REAL Time: 4 secs 
+Total CPU Time: 3 secs 
+Total REAL Time: 5 secs 
 --------------------------------------------------------------

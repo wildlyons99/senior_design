@@ -2,8 +2,8 @@
 // Verilog netlist produced by program backanno, Version Radiant Software (64-bit) 2023.1.0.43.3
 
 // backanno -o dsp_mult_impl_1_vo.vo -sp High-Performance_1.2V -w -neg -gui dsp_mult_impl_1.udb 
-// Netlist created on Wed Oct 30 16:20:49 2024
-// Netlist written on Wed Oct 30 16:20:55 2024
+// Netlist created on Mon Feb 17 15:33:52 2025
+// Netlist written on Mon Feb 17 15:33:59 2025
 // Design is for device iCE40UP5K
 // Design is for package SG48
 // Design is for performance grade High-Performance_1.2V
@@ -12,434 +12,65 @@
 
 module top ( C );
   output [31:0] C;
-  wire   \mult_lut_test.n704 , \mult_lut_test.C_c_29_N_16[13] , 
-         \mult_lut_test.C_c_31_N_3[0] , C_c_13, \mult_lut_test.C_c_14_N_135 , 
-         \mult_lut_test.n707 , \mult_lut_test.C_c_29_N_16[15] , 
-         \mult_lut_test.C_c_31_N_3[2] , \mult_lut_test.C_c_29_N_16[14] , 
-         \mult_lut_test.C_c_31_N_3[1] , C_c_14, C_c_15, 
-         \mult_lut_test.C_c_16_N_119 , \mult_lut_test.n713 , 
-         \mult_lut_test.C_c_29_N_16[19] , \mult_lut_test.C_c_31_N_3[6] , 
-         \mult_lut_test.C_c_18_N_103 , \mult_lut_test.C_c_29_N_16[18] , 
-         \mult_lut_test.C_c_31_N_3[5] , C_c_18, C_c_19, 
-         \mult_lut_test.C_c_20_N_87 , \mult_lut_test.n710 , 
-         \mult_lut_test.C_c_29_N_16[17] , \mult_lut_test.C_c_31_N_3[4] , 
-         \mult_lut_test.C_c_29_N_16[16] , \mult_lut_test.C_c_31_N_3[3] , 
-         C_c_16, C_c_17, \mult_lut_test.n716 , \mult_lut_test.C_c_29_N_16[21] , 
-         \mult_lut_test.C_c_31_N_3[8] , \mult_lut_test.C_c_29_N_16[20] , 
-         \mult_lut_test.C_c_31_N_3[7] , C_c_20, C_c_21, 
-         \mult_lut_test.C_c_22_N_71 , \mult_lut_test.n719 , 
-         \mult_lut_test.C_c_29_N_16[23] , \mult_lut_test.C_c_31_N_3[10] , 
-         \mult_lut_test.C_c_29_N_16[22] , \mult_lut_test.C_c_31_N_3[9] , 
-         C_c_22, C_c_23, \mult_lut_test.C_c_24_N_55 , \mult_lut_test.n722 , 
-         \mult_lut_test.C_c_29_N_16[25] , \mult_lut_test.C_c_31_N_3[12] , 
-         \mult_lut_test.C_c_29_N_16[24] , \mult_lut_test.C_c_31_N_3[11] , 
-         C_c_24, C_c_25, \mult_lut_test.C_c_26_N_39 , \mult_lut_test.n725 , 
-         \mult_lut_test.C_c_29_N_16[27] , \mult_lut_test.C_c_31_N_3[14] , 
-         \mult_lut_test.C_c_29_N_16[26] , \mult_lut_test.C_c_31_N_3[13] , 
-         C_c_26, C_c_27, \mult_lut_test.C_c_28_N_24 , \mult_lut_test.n728 , 
-         \mult_lut_test.C_c_31_N_3[16] , \mult_lut_test.C_c_29_N_16[28] , 
-         \mult_lut_test.C_c_31_N_3[15] , C_c_28, C_c_29, 
-         \mult_lut_test.C_c_30_N_10 , \mult_lut_test.n731 , 
-         \mult_lut_test.C_c_31_N_3[18] , \mult_lut_test.C_c_31_N_3[17] , 
-         C_c_30, C_c_31, VCC_net, C_c_12, C_c_11, C_c_10, C_c_9, C_c_8, C_c_7, 
-         C_c_6, C_c_5, C_c_4, C_c_3, C_c_2, C_c_1, C_c_0;
+  wire   VCC_net, GND_net, C_c_13, C_c_21, C_c_29, C_0_17, C_0_1, C_0_25, 
+         C_0_9, C_c_5;
 
-  mult_lut_test_SLICE_0 \mult_lut_test.SLICE_0 ( .D1(\mult_lut_test.n704 ), 
-    .C1(\mult_lut_test.C_c_29_N_16[13] ), .B1(\mult_lut_test.C_c_31_N_3[0] ), 
-    .CIN1(\mult_lut_test.n704 ), .F1(C_c_13), 
-    .COUT1(\mult_lut_test.C_c_14_N_135 ), .COUT0(\mult_lut_test.n704 ));
-  mult_lut_test_SLICE_1 \mult_lut_test.SLICE_1 ( .D1(\mult_lut_test.n707 ), 
-    .C1(\mult_lut_test.C_c_29_N_16[15] ), .B1(\mult_lut_test.C_c_31_N_3[2] ), 
-    .D0(\mult_lut_test.C_c_14_N_135 ), .C0(\mult_lut_test.C_c_29_N_16[14] ), 
-    .B0(\mult_lut_test.C_c_31_N_3[1] ), .CIN0(\mult_lut_test.C_c_14_N_135 ), 
-    .CIN1(\mult_lut_test.n707 ), .F0(C_c_14), .F1(C_c_15), 
-    .COUT1(\mult_lut_test.C_c_16_N_119 ), .COUT0(\mult_lut_test.n707 ));
-  mult_lut_test_SLICE_2 \mult_lut_test.SLICE_2 ( .D1(\mult_lut_test.n713 ), 
-    .C1(\mult_lut_test.C_c_29_N_16[19] ), .B1(\mult_lut_test.C_c_31_N_3[6] ), 
-    .D0(\mult_lut_test.C_c_18_N_103 ), .C0(\mult_lut_test.C_c_29_N_16[18] ), 
-    .B0(\mult_lut_test.C_c_31_N_3[5] ), .CIN0(\mult_lut_test.C_c_18_N_103 ), 
-    .CIN1(\mult_lut_test.n713 ), .F0(C_c_18), .F1(C_c_19), 
-    .COUT1(\mult_lut_test.C_c_20_N_87 ), .COUT0(\mult_lut_test.n713 ));
-  mult_lut_test_SLICE_3 \mult_lut_test.SLICE_3 ( .D1(\mult_lut_test.n710 ), 
-    .C1(\mult_lut_test.C_c_29_N_16[17] ), .B1(\mult_lut_test.C_c_31_N_3[4] ), 
-    .D0(\mult_lut_test.C_c_16_N_119 ), .C0(\mult_lut_test.C_c_29_N_16[16] ), 
-    .B0(\mult_lut_test.C_c_31_N_3[3] ), .CIN0(\mult_lut_test.C_c_16_N_119 ), 
-    .CIN1(\mult_lut_test.n710 ), .F0(C_c_16), .F1(C_c_17), 
-    .COUT1(\mult_lut_test.C_c_18_N_103 ), .COUT0(\mult_lut_test.n710 ));
-  mult_lut_test_SLICE_4 \mult_lut_test.SLICE_4 ( .D1(\mult_lut_test.n716 ), 
-    .C1(\mult_lut_test.C_c_29_N_16[21] ), .B1(\mult_lut_test.C_c_31_N_3[8] ), 
-    .D0(\mult_lut_test.C_c_20_N_87 ), .C0(\mult_lut_test.C_c_29_N_16[20] ), 
-    .B0(\mult_lut_test.C_c_31_N_3[7] ), .CIN0(\mult_lut_test.C_c_20_N_87 ), 
-    .CIN1(\mult_lut_test.n716 ), .F0(C_c_20), .F1(C_c_21), 
-    .COUT1(\mult_lut_test.C_c_22_N_71 ), .COUT0(\mult_lut_test.n716 ));
-  mult_lut_test_SLICE_5 \mult_lut_test.SLICE_5 ( .D1(\mult_lut_test.n719 ), 
-    .C1(\mult_lut_test.C_c_29_N_16[23] ), .B1(\mult_lut_test.C_c_31_N_3[10] ), 
-    .D0(\mult_lut_test.C_c_22_N_71 ), .C0(\mult_lut_test.C_c_29_N_16[22] ), 
-    .B0(\mult_lut_test.C_c_31_N_3[9] ), .CIN0(\mult_lut_test.C_c_22_N_71 ), 
-    .CIN1(\mult_lut_test.n719 ), .F0(C_c_22), .F1(C_c_23), 
-    .COUT1(\mult_lut_test.C_c_24_N_55 ), .COUT0(\mult_lut_test.n719 ));
-  mult_lut_test_SLICE_6 \mult_lut_test.SLICE_6 ( .D1(\mult_lut_test.n722 ), 
-    .C1(\mult_lut_test.C_c_29_N_16[25] ), .B1(\mult_lut_test.C_c_31_N_3[12] ), 
-    .D0(\mult_lut_test.C_c_24_N_55 ), .C0(\mult_lut_test.C_c_29_N_16[24] ), 
-    .B0(\mult_lut_test.C_c_31_N_3[11] ), .CIN0(\mult_lut_test.C_c_24_N_55 ), 
-    .CIN1(\mult_lut_test.n722 ), .F0(C_c_24), .F1(C_c_25), 
-    .COUT1(\mult_lut_test.C_c_26_N_39 ), .COUT0(\mult_lut_test.n722 ));
-  mult_lut_test_SLICE_7 \mult_lut_test.SLICE_7 ( .D1(\mult_lut_test.n725 ), 
-    .C1(\mult_lut_test.C_c_29_N_16[27] ), .B1(\mult_lut_test.C_c_31_N_3[14] ), 
-    .D0(\mult_lut_test.C_c_26_N_39 ), .C0(\mult_lut_test.C_c_29_N_16[26] ), 
-    .B0(\mult_lut_test.C_c_31_N_3[13] ), .CIN0(\mult_lut_test.C_c_26_N_39 ), 
-    .CIN1(\mult_lut_test.n725 ), .F0(C_c_26), .F1(C_c_27), 
-    .COUT1(\mult_lut_test.C_c_28_N_24 ), .COUT0(\mult_lut_test.n725 ));
-  mult_lut_test_SLICE_8 \mult_lut_test.SLICE_8 ( .D1(\mult_lut_test.n728 ), 
-    .B1(\mult_lut_test.C_c_31_N_3[16] ), .D0(\mult_lut_test.C_c_28_N_24 ), 
-    .C0(\mult_lut_test.C_c_29_N_16[28] ), .B0(\mult_lut_test.C_c_31_N_3[15] ), 
-    .CIN0(\mult_lut_test.C_c_28_N_24 ), .CIN1(\mult_lut_test.n728 ), 
-    .F0(C_c_28), .F1(C_c_29), .COUT1(\mult_lut_test.C_c_30_N_10 ), 
-    .COUT0(\mult_lut_test.n728 ));
-  mult_lut_test_SLICE_9 \mult_lut_test.SLICE_9 ( .D1(\mult_lut_test.n731 ), 
-    .B1(\mult_lut_test.C_c_31_N_3[18] ), .D0(\mult_lut_test.C_c_30_N_10 ), 
-    .B0(\mult_lut_test.C_c_31_N_3[17] ), .CIN0(\mult_lut_test.C_c_30_N_10 ), 
-    .CIN1(\mult_lut_test.n731 ), .F0(C_c_30), .F1(C_c_31), 
-    .COUT0(\mult_lut_test.n731 ));
-  SLICE_10 SLICE_10( .F0(VCC_net));
-  mult_lut_test_mult_6 \mult_lut_test.mult_6 ( .A15(VCC_net), .A14(VCC_net), 
-    .A13(VCC_net), .A12(VCC_net), .A11(VCC_net), .A10(VCC_net), .A9(VCC_net), 
-    .A8(VCC_net), .A7(VCC_net), .A6(VCC_net), .A5(VCC_net), .A4(VCC_net), 
-    .A3(VCC_net), .A2(VCC_net), .A1(VCC_net), .A0(VCC_net), .B15(VCC_net), 
-    .B12(VCC_net), .B8(VCC_net), .B7(VCC_net), .B5(VCC_net), .B2(VCC_net), 
-    .B0(VCC_net), .O18(\mult_lut_test.C_c_31_N_3[18] ), 
-    .O17(\mult_lut_test.C_c_31_N_3[17] ), .O16(\mult_lut_test.C_c_31_N_3[16] ), 
-    .O15(\mult_lut_test.C_c_31_N_3[15] ), .O14(\mult_lut_test.C_c_31_N_3[14] ), 
-    .O13(\mult_lut_test.C_c_31_N_3[13] ), .O12(\mult_lut_test.C_c_31_N_3[12] ), 
-    .O11(\mult_lut_test.C_c_31_N_3[11] ), .O10(\mult_lut_test.C_c_31_N_3[10] ), 
-    .O9(\mult_lut_test.C_c_31_N_3[9] ), .O8(\mult_lut_test.C_c_31_N_3[8] ), 
-    .O7(\mult_lut_test.C_c_31_N_3[7] ), .O6(\mult_lut_test.C_c_31_N_3[6] ), 
-    .O5(\mult_lut_test.C_c_31_N_3[5] ), .O4(\mult_lut_test.C_c_31_N_3[4] ), 
-    .O3(\mult_lut_test.C_c_31_N_3[3] ), .O2(\mult_lut_test.C_c_31_N_3[2] ), 
-    .O1(\mult_lut_test.C_c_31_N_3[1] ), .O0(\mult_lut_test.C_c_31_N_3[0] ));
-  mult_lut_test_mult_7 \mult_lut_test.mult_7 ( .A15(VCC_net), .A14(VCC_net), 
-    .A13(VCC_net), .A12(VCC_net), .A11(VCC_net), .A10(VCC_net), .A9(VCC_net), 
-    .A8(VCC_net), .A7(VCC_net), .A6(VCC_net), .A5(VCC_net), .A4(VCC_net), 
-    .A3(VCC_net), .A2(VCC_net), .A1(VCC_net), .A0(VCC_net), .B11(VCC_net), 
-    .B9(VCC_net), .B8(VCC_net), .B7(VCC_net), .B6(VCC_net), .B3(VCC_net), 
-    .B2(VCC_net), .B0(VCC_net), .O28(\mult_lut_test.C_c_29_N_16[28] ), 
-    .O27(\mult_lut_test.C_c_29_N_16[27] ), 
-    .O26(\mult_lut_test.C_c_29_N_16[26] ), 
-    .O25(\mult_lut_test.C_c_29_N_16[25] ), 
-    .O24(\mult_lut_test.C_c_29_N_16[24] ), 
-    .O23(\mult_lut_test.C_c_29_N_16[23] ), 
-    .O22(\mult_lut_test.C_c_29_N_16[22] ), 
-    .O21(\mult_lut_test.C_c_29_N_16[21] ), 
-    .O20(\mult_lut_test.C_c_29_N_16[20] ), 
-    .O19(\mult_lut_test.C_c_29_N_16[19] ), 
-    .O18(\mult_lut_test.C_c_29_N_16[18] ), 
-    .O17(\mult_lut_test.C_c_29_N_16[17] ), 
-    .O16(\mult_lut_test.C_c_29_N_16[16] ), 
-    .O15(\mult_lut_test.C_c_29_N_16[15] ), 
-    .O14(\mult_lut_test.C_c_29_N_16[14] ), 
-    .O13(\mult_lut_test.C_c_29_N_16[13] ), .O12(C_c_12), .O11(C_c_11), 
-    .O10(C_c_10), .O9(C_c_9), .O8(C_c_8), .O7(C_c_7), .O6(C_c_6), .O5(C_c_5), 
-    .O4(C_c_4), .O3(C_c_3), .O2(C_c_2), .O1(C_c_1), .O0(C_c_0));
-  C_0_ \C[0]_I ( .PADDO(C_c_0), .C0(C[0]));
-  C_31_ \C[31]_I ( .PADDO(C_c_31), .C31(C[31]));
-  C_28_ \C[28]_I ( .PADDO(C_c_28), .C28(C[28]));
+  SLICE_0 SLICE_0( .F0(VCC_net));
+  SLICE_1 SLICE_1( .F0(GND_net));
+  mult_lut_test9_mult_29 \mult_lut_test9.mult_29 ( .A4(VCC_net), .A1(VCC_net), 
+    .A0(VCC_net), .B2(VCC_net), .B0(VCC_net), .O0(C_c_13));
+  mult_lut_test5_mult_33 \mult_lut_test5.mult_33 ( .A3(VCC_net), .A2(VCC_net), 
+    .A1(VCC_net), .A0(VCC_net), .B2(VCC_net), .B0(VCC_net), .O0(C_c_21));
+  mult_lut_test1_mult_21 \mult_lut_test1.mult_21 ( .A3(VCC_net), .A1(VCC_net), 
+    .A0(VCC_net), .B2(VCC_net), .B0(VCC_net), .O0(C_c_29));
+  mult_lut_test7_mult_31 \mult_lut_test7.mult_31 ( .A4(VCC_net), .A0(VCC_net), 
+    .B2(VCC_net), .B0(VCC_net), .O0(C_0_17));
+  mult_lut_test15_mult_23 \mult_lut_test15.mult_23 ( .A6(VCC_net), 
+    .A5(VCC_net), .A4(VCC_net), .A1(VCC_net), .A0(VCC_net), .B2(VCC_net), 
+    .B0(VCC_net), .O0(C_0_1));
+  mult_lut_test3_mult_35 \mult_lut_test3.mult_35 ( .A3(VCC_net), .A2(VCC_net), 
+    .A0(VCC_net), .B2(VCC_net), .B0(VCC_net), .O0(C_0_25));
+  mult_lut_test11_mult_27 \mult_lut_test11.mult_27 ( .A6(VCC_net), 
+    .A5(VCC_net), .A3(VCC_net), .A2(VCC_net), .A1(VCC_net), .A0(VCC_net), 
+    .B2(VCC_net), .B0(VCC_net), .O0(C_0_9));
+  mult_lut_test13_mult_25 \mult_lut_test13.mult_25 ( .A6(VCC_net), 
+    .A5(VCC_net), .A4(VCC_net), .A0(VCC_net), .B2(VCC_net), .B0(VCC_net), 
+    .O0(C_c_5));
+  C_23_ \C[23]_I ( .PADDO(GND_net), .C23(C[23]));
+  C_24_ \C[24]_I ( .PADDO(GND_net), .C24(C[24]));
+  C_25_ \C[25]_I ( .PADDO(C_0_25), .C25(C[25]));
+  C_26_ \C[26]_I ( .PADDO(GND_net), .C26(C[26]));
+  C_27_ \C[27]_I ( .PADDO(GND_net), .C27(C[27]));
+  C_28_ \C[28]_I ( .PADDO(GND_net), .C28(C[28]));
   C_29_ \C[29]_I ( .PADDO(C_c_29), .C29(C[29]));
-  C_30_ \C[30]_I ( .PADDO(C_c_30), .C30(C[30]));
-  C_1_ \C[1]_I ( .PADDO(C_c_1), .C1(C[1]));
-  C_2_ \C[2]_I ( .PADDO(C_c_2), .C2(C[2]));
-  C_3_ \C[3]_I ( .PADDO(C_c_3), .C3(C[3]));
-  C_4_ \C[4]_I ( .PADDO(C_c_4), .C4(C[4]));
+  C_30_ \C[30]_I ( .PADDO(GND_net), .C30(C[30]));
+  C_0_ \C[0]_I ( .PADDO(GND_net), .C0(C[0]));
+  C_1_ \C[1]_I ( .PADDO(C_0_1), .C1(C[1]));
+  C_2_ \C[2]_I ( .PADDO(GND_net), .C2(C[2]));
+  C_3_ \C[3]_I ( .PADDO(GND_net), .C3(C[3]));
+  C_4_ \C[4]_I ( .PADDO(GND_net), .C4(C[4]));
   C_5_ \C[5]_I ( .PADDO(C_c_5), .C5(C[5]));
-  C_6_ \C[6]_I ( .PADDO(C_c_6), .C6(C[6]));
-  C_7_ \C[7]_I ( .PADDO(C_c_7), .C7(C[7]));
-  C_8_ \C[8]_I ( .PADDO(C_c_8), .C8(C[8]));
-  C_9_ \C[9]_I ( .PADDO(C_c_9), .C9(C[9]));
-  C_10_ \C[10]_I ( .PADDO(C_c_10), .C10(C[10]));
-  C_11_ \C[11]_I ( .PADDO(C_c_11), .C11(C[11]));
-  C_12_ \C[12]_I ( .PADDO(C_c_12), .C12(C[12]));
+  C_6_ \C[6]_I ( .PADDO(GND_net), .C6(C[6]));
+  C_7_ \C[7]_I ( .PADDO(GND_net), .C7(C[7]));
+  C_8_ \C[8]_I ( .PADDO(GND_net), .C8(C[8]));
+  C_9_ \C[9]_I ( .PADDO(C_0_9), .C9(C[9]));
+  C_10_ \C[10]_I ( .PADDO(GND_net), .C10(C[10]));
+  C_11_ \C[11]_I ( .PADDO(GND_net), .C11(C[11]));
+  C_12_ \C[12]_I ( .PADDO(GND_net), .C12(C[12]));
   C_13_ \C[13]_I ( .PADDO(C_c_13), .C13(C[13]));
-  C_14_ \C[14]_I ( .PADDO(C_c_14), .C14(C[14]));
-  C_15_ \C[15]_I ( .PADDO(C_c_15), .C15(C[15]));
-  C_16_ \C[16]_I ( .PADDO(C_c_16), .C16(C[16]));
-  C_17_ \C[17]_I ( .PADDO(C_c_17), .C17(C[17]));
-  C_18_ \C[18]_I ( .PADDO(C_c_18), .C18(C[18]));
-  C_19_ \C[19]_I ( .PADDO(C_c_19), .C19(C[19]));
-  C_20_ \C[20]_I ( .PADDO(C_c_20), .C20(C[20]));
+  C_14_ \C[14]_I ( .PADDO(GND_net), .C14(C[14]));
+  C_15_ \C[15]_I ( .PADDO(GND_net), .C15(C[15]));
+  C_16_ \C[16]_I ( .PADDO(GND_net), .C16(C[16]));
+  C_17_ \C[17]_I ( .PADDO(C_0_17), .C17(C[17]));
+  C_18_ \C[18]_I ( .PADDO(GND_net), .C18(C[18]));
+  C_19_ \C[19]_I ( .PADDO(GND_net), .C19(C[19]));
+  C_20_ \C[20]_I ( .PADDO(GND_net), .C20(C[20]));
   C_21_ \C[21]_I ( .PADDO(C_c_21), .C21(C[21]));
-  C_22_ \C[22]_I ( .PADDO(C_c_22), .C22(C[22]));
-  C_23_ \C[23]_I ( .PADDO(C_c_23), .C23(C[23]));
-  C_24_ \C[24]_I ( .PADDO(C_c_24), .C24(C[24]));
-  C_25_ \C[25]_I ( .PADDO(C_c_25), .C25(C[25]));
-  C_26_ \C[26]_I ( .PADDO(C_c_26), .C26(C[26]));
-  C_27_ \C[27]_I ( .PADDO(C_c_27), .C27(C[27]));
+  C_22_ \C[22]_I ( .PADDO(GND_net), .C22(C[22]));
+  C_31_ \C[31]_I ( .PADDO(GND_net), .C31(C[31]));
 endmodule
 
-module mult_lut_test_SLICE_0 ( input D1, C1, B1, CIN1, output F1, COUT1, COUT0 );
-  wire   GNDI, VCCI;
-
-  fa2 \mult_lut_test/C_c_13_I_0 ( .A0(GNDI), .B0(GNDI), .C0(GNDI), .D0(VCCI), 
-    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(VCCI), .CI1(CIN1), .S0(), 
-    .S1(F1), .CO0(COUT0), .CO1(COUT1));
-  gnd DRIVEGND( .PWR0(GNDI));
-  vcc DRIVEVCC( .PWR1(VCCI));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (C1 => COUT1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (B1 => COUT1) = (0:0:0,0:0:0);
-    (CIN1 => COUT1) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module fa2 ( input A0, B0, C0, D0, A1, B1, C1, D1, CI0, CI1, output S0, S1, 
-    CO0, CO1 );
-
-  FA2 inst1( .A0(A0), .B0(B0), .C0(C0), .D0(D0), .CI0(CI0), .A1(A1), .B1(B1), 
-    .C1(C1), .D1(D1), .CI1(CI1), .CO0(CO0), .CO1(CO1), .S0(S0), .S1(S1));
-  defparam inst1.INIT0 = "0xc33c";
-  defparam inst1.INIT1 = "0xc33c";
-endmodule
-
-module gnd ( output PWR0 );
-
-  VLO INST1( .Z(PWR0));
-endmodule
-
-module vcc ( output PWR1 );
-
-  VHI INST1( .Z(PWR1));
-endmodule
-
-module mult_lut_test_SLICE_1 ( input D1, C1, B1, D0, C0, B0, CIN0, CIN1, 
-    output F0, F1, COUT1, COUT0 );
-  wire   GNDI;
-
-  fa2 \mult_lut_test/C_c_15_I_0 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
-    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
-    .S1(F1), .CO0(COUT0), .CO1(COUT1));
-  gnd DRIVEGND( .PWR0(GNDI));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (C1 => COUT1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (B1 => COUT1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (C0 => COUT0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
-    (B0 => COUT0) = (0:0:0,0:0:0);
-    (CIN0 => COUT0) = (0:0:0,0:0:0);
-    (CIN1 => COUT1) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module mult_lut_test_SLICE_2 ( input D1, C1, B1, D0, C0, B0, CIN0, CIN1, 
-    output F0, F1, COUT1, COUT0 );
-  wire   GNDI;
-
-  fa2 \mult_lut_test/C_c_19_I_0 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
-    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
-    .S1(F1), .CO0(COUT0), .CO1(COUT1));
-  gnd DRIVEGND( .PWR0(GNDI));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (C1 => COUT1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (B1 => COUT1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (C0 => COUT0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
-    (B0 => COUT0) = (0:0:0,0:0:0);
-    (CIN0 => COUT0) = (0:0:0,0:0:0);
-    (CIN1 => COUT1) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module mult_lut_test_SLICE_3 ( input D1, C1, B1, D0, C0, B0, CIN0, CIN1, 
-    output F0, F1, COUT1, COUT0 );
-  wire   GNDI;
-
-  fa2 \mult_lut_test/C_c_17_I_0 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
-    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
-    .S1(F1), .CO0(COUT0), .CO1(COUT1));
-  gnd DRIVEGND( .PWR0(GNDI));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (C1 => COUT1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (B1 => COUT1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (C0 => COUT0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
-    (B0 => COUT0) = (0:0:0,0:0:0);
-    (CIN0 => COUT0) = (0:0:0,0:0:0);
-    (CIN1 => COUT1) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module mult_lut_test_SLICE_4 ( input D1, C1, B1, D0, C0, B0, CIN0, CIN1, 
-    output F0, F1, COUT1, COUT0 );
-  wire   GNDI;
-
-  fa2 \mult_lut_test/C_c_21_I_0 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
-    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
-    .S1(F1), .CO0(COUT0), .CO1(COUT1));
-  gnd DRIVEGND( .PWR0(GNDI));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (C1 => COUT1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (B1 => COUT1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (C0 => COUT0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
-    (B0 => COUT0) = (0:0:0,0:0:0);
-    (CIN0 => COUT0) = (0:0:0,0:0:0);
-    (CIN1 => COUT1) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module mult_lut_test_SLICE_5 ( input D1, C1, B1, D0, C0, B0, CIN0, CIN1, 
-    output F0, F1, COUT1, COUT0 );
-  wire   GNDI;
-
-  fa2 \mult_lut_test/C_c_23_I_0 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
-    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
-    .S1(F1), .CO0(COUT0), .CO1(COUT1));
-  gnd DRIVEGND( .PWR0(GNDI));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (C1 => COUT1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (B1 => COUT1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (C0 => COUT0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
-    (B0 => COUT0) = (0:0:0,0:0:0);
-    (CIN0 => COUT0) = (0:0:0,0:0:0);
-    (CIN1 => COUT1) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module mult_lut_test_SLICE_6 ( input D1, C1, B1, D0, C0, B0, CIN0, CIN1, 
-    output F0, F1, COUT1, COUT0 );
-  wire   GNDI;
-
-  fa2 \mult_lut_test/C_c_25_I_0 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
-    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
-    .S1(F1), .CO0(COUT0), .CO1(COUT1));
-  gnd DRIVEGND( .PWR0(GNDI));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (C1 => COUT1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (B1 => COUT1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (C0 => COUT0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
-    (B0 => COUT0) = (0:0:0,0:0:0);
-    (CIN0 => COUT0) = (0:0:0,0:0:0);
-    (CIN1 => COUT1) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module mult_lut_test_SLICE_7 ( input D1, C1, B1, D0, C0, B0, CIN0, CIN1, 
-    output F0, F1, COUT1, COUT0 );
-  wire   GNDI;
-
-  fa2 \mult_lut_test/C_c_27_I_0 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
-    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
-    .S1(F1), .CO0(COUT0), .CO1(COUT1));
-  gnd DRIVEGND( .PWR0(GNDI));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (C1 => COUT1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (B1 => COUT1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (C0 => COUT0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
-    (B0 => COUT0) = (0:0:0,0:0:0);
-    (CIN0 => COUT0) = (0:0:0,0:0:0);
-    (CIN1 => COUT1) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module mult_lut_test_SLICE_8 ( input D1, B1, D0, C0, B0, CIN0, CIN1, output F0, 
-    F1, COUT1, COUT0 );
-  wire   GNDI;
-
-  fa2 \mult_lut_test/C_c_29_I_0 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
-    .A1(GNDI), .B1(B1), .C1(GNDI), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
-    .S1(F1), .CO0(COUT0), .CO1(COUT1));
-  gnd DRIVEGND( .PWR0(GNDI));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (B1 => COUT1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (C0 => COUT0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
-    (B0 => COUT0) = (0:0:0,0:0:0);
-    (CIN0 => COUT0) = (0:0:0,0:0:0);
-    (CIN1 => COUT1) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module mult_lut_test_SLICE_9 ( input D1, B1, D0, B0, CIN0, CIN1, output F0, F1, 
-    COUT0 );
-  wire   GNDI;
-
-  fa2 \mult_lut_test/C_c_31_I_0 ( .A0(GNDI), .B0(B0), .C0(GNDI), .D0(D0), 
-    .A1(GNDI), .B1(B1), .C1(GNDI), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
-    .S1(F1), .CO0(COUT0), .CO1());
-  gnd DRIVEGND( .PWR0(GNDI));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
-    (B0 => COUT0) = (0:0:0,0:0:0);
-    (CIN0 => COUT0) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module SLICE_10 ( output F0 );
+module SLICE_0 ( output F0 );
   wire   GNDI;
 
   lut4 i2( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
@@ -455,301 +86,54 @@ module lut4 ( input A, B, C, D, output Z );
   LUT4 #("0xFFFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module mult_lut_test_mult_6 ( input A15, A14, A13, A12, A11, A10, A9, A8, A7, 
-    A6, A5, A4, A3, A2, A1, A0, B15, B12, B8, B7, B5, B2, B0, output O18, O17, 
-    O16, O15, O14, O13, O12, O11, O10, O9, O8, O7, O6, O5, O4, O3, O2, O1, O0 );
+module gnd ( output PWR0 );
+
+  VLO INST1( .Z(PWR0));
+endmodule
+
+module SLICE_1 ( output F0 );
   wire   GNDI;
 
-  MAC16_B \mult_lut_test/mult_6 ( .CLK(GNDI), .CE(GNDI), .C15(GNDI), 
-    .C14(GNDI), .C13(GNDI), .C12(GNDI), .C11(GNDI), .C10(GNDI), .C9(GNDI), 
-    .C8(GNDI), .C7(GNDI), .C6(GNDI), .C5(GNDI), .C4(GNDI), .C3(GNDI), 
-    .C2(GNDI), .C1(GNDI), .C0(GNDI), .A15(A15), .A14(A14), .A13(A13), 
-    .A12(A12), .A11(A11), .A10(A10), .A9(A9), .A8(A8), .A7(A7), .A6(A6), 
-    .A5(A5), .A4(A4), .A3(A3), .A2(A2), .A1(A1), .A0(A0), .B15(B15), 
-    .B14(GNDI), .B13(GNDI), .B12(B12), .B11(GNDI), .B10(GNDI), .B9(GNDI), 
-    .B8(B8), .B7(B7), .B6(GNDI), .B5(B5), .B4(GNDI), .B3(GNDI), .B2(B2), 
-    .B1(GNDI), .B0(B0), .D15(GNDI), .D14(GNDI), .D13(GNDI), .D12(GNDI), 
-    .D11(GNDI), .D10(GNDI), .D9(GNDI), .D8(GNDI), .D7(GNDI), .D6(GNDI), 
-    .D5(GNDI), .D4(GNDI), .D3(GNDI), .D2(GNDI), .D1(GNDI), .D0(GNDI), 
-    .AHOLD(GNDI), .BHOLD(GNDI), .CHOLD(GNDI), .DHOLD(GNDI), .IRSTTOP(GNDI), 
-    .IRSTBOT(GNDI), .ORSTTOP(GNDI), .ORSTBOT(GNDI), .OLOADTOP(GNDI), 
-    .OLOADBOT(GNDI), .ADDSUBTOP(GNDI), .ADDSUBBOT(GNDI), .OHOLDTOP(GNDI), 
-    .OHOLDBOT(GNDI), .CI(GNDI), .ACCUMCI(GNDI), .SIGNEXTIN(GNDI), .O31(), 
-    .O30(), .O29(), .O28(), .O27(), .O26(), .O25(), .O24(), .O23(), .O22(), 
-    .O21(), .O20(), .O19(), .O18(O18), .O17(O17), .O16(O16), .O15(O15), 
-    .O14(O14), .O13(O13), .O12(O12), .O11(O11), .O10(O10), .O9(O9), .O8(O8), 
-    .O7(O7), .O6(O6), .O5(O5), .O4(O4), .O3(O3), .O2(O2), .O1(O1), .O0(O0), 
-    .CO(), .ACCUMCO(), .SIGNEXTOUT());
+  lut40001 i1( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
-    (A15 => O18) = (0:0:0,0:0:0);
-    (A15 => O17) = (0:0:0,0:0:0);
-    (A15 => O16) = (0:0:0,0:0:0);
-    (A15 => O15) = (0:0:0,0:0:0);
-    (A14 => O18) = (0:0:0,0:0:0);
-    (A14 => O17) = (0:0:0,0:0:0);
-    (A14 => O16) = (0:0:0,0:0:0);
-    (A14 => O15) = (0:0:0,0:0:0);
-    (A14 => O14) = (0:0:0,0:0:0);
-    (A13 => O18) = (0:0:0,0:0:0);
-    (A13 => O17) = (0:0:0,0:0:0);
-    (A13 => O16) = (0:0:0,0:0:0);
-    (A13 => O15) = (0:0:0,0:0:0);
-    (A13 => O14) = (0:0:0,0:0:0);
-    (A13 => O13) = (0:0:0,0:0:0);
-    (A12 => O18) = (0:0:0,0:0:0);
-    (A12 => O17) = (0:0:0,0:0:0);
-    (A12 => O16) = (0:0:0,0:0:0);
-    (A12 => O15) = (0:0:0,0:0:0);
-    (A12 => O14) = (0:0:0,0:0:0);
-    (A12 => O13) = (0:0:0,0:0:0);
-    (A12 => O12) = (0:0:0,0:0:0);
-    (A11 => O18) = (0:0:0,0:0:0);
-    (A11 => O17) = (0:0:0,0:0:0);
-    (A11 => O16) = (0:0:0,0:0:0);
-    (A11 => O15) = (0:0:0,0:0:0);
-    (A11 => O14) = (0:0:0,0:0:0);
-    (A11 => O13) = (0:0:0,0:0:0);
-    (A11 => O12) = (0:0:0,0:0:0);
-    (A11 => O11) = (0:0:0,0:0:0);
-    (A10 => O18) = (0:0:0,0:0:0);
-    (A10 => O17) = (0:0:0,0:0:0);
-    (A10 => O16) = (0:0:0,0:0:0);
-    (A10 => O15) = (0:0:0,0:0:0);
-    (A10 => O14) = (0:0:0,0:0:0);
-    (A10 => O13) = (0:0:0,0:0:0);
-    (A10 => O12) = (0:0:0,0:0:0);
-    (A10 => O11) = (0:0:0,0:0:0);
-    (A10 => O10) = (0:0:0,0:0:0);
-    (A9 => O18) = (0:0:0,0:0:0);
-    (A9 => O17) = (0:0:0,0:0:0);
-    (A9 => O16) = (0:0:0,0:0:0);
-    (A9 => O15) = (0:0:0,0:0:0);
-    (A9 => O14) = (0:0:0,0:0:0);
-    (A9 => O13) = (0:0:0,0:0:0);
-    (A9 => O12) = (0:0:0,0:0:0);
-    (A9 => O11) = (0:0:0,0:0:0);
-    (A9 => O10) = (0:0:0,0:0:0);
-    (A9 => O9) = (0:0:0,0:0:0);
-    (A8 => O18) = (0:0:0,0:0:0);
-    (A8 => O17) = (0:0:0,0:0:0);
-    (A8 => O16) = (0:0:0,0:0:0);
-    (A8 => O15) = (0:0:0,0:0:0);
-    (A8 => O14) = (0:0:0,0:0:0);
-    (A8 => O13) = (0:0:0,0:0:0);
-    (A8 => O12) = (0:0:0,0:0:0);
-    (A8 => O11) = (0:0:0,0:0:0);
-    (A8 => O10) = (0:0:0,0:0:0);
-    (A8 => O9) = (0:0:0,0:0:0);
-    (A8 => O8) = (0:0:0,0:0:0);
-    (A7 => O18) = (0:0:0,0:0:0);
-    (A7 => O17) = (0:0:0,0:0:0);
-    (A7 => O16) = (0:0:0,0:0:0);
-    (A7 => O15) = (0:0:0,0:0:0);
-    (A7 => O14) = (0:0:0,0:0:0);
-    (A7 => O13) = (0:0:0,0:0:0);
-    (A7 => O12) = (0:0:0,0:0:0);
-    (A7 => O11) = (0:0:0,0:0:0);
-    (A7 => O10) = (0:0:0,0:0:0);
-    (A7 => O9) = (0:0:0,0:0:0);
-    (A7 => O8) = (0:0:0,0:0:0);
-    (A7 => O7) = (0:0:0,0:0:0);
-    (A6 => O18) = (0:0:0,0:0:0);
-    (A6 => O17) = (0:0:0,0:0:0);
-    (A6 => O16) = (0:0:0,0:0:0);
-    (A6 => O15) = (0:0:0,0:0:0);
-    (A6 => O14) = (0:0:0,0:0:0);
-    (A6 => O13) = (0:0:0,0:0:0);
-    (A6 => O12) = (0:0:0,0:0:0);
-    (A6 => O11) = (0:0:0,0:0:0);
-    (A6 => O10) = (0:0:0,0:0:0);
-    (A6 => O9) = (0:0:0,0:0:0);
-    (A6 => O8) = (0:0:0,0:0:0);
-    (A6 => O7) = (0:0:0,0:0:0);
-    (A6 => O6) = (0:0:0,0:0:0);
-    (A5 => O18) = (0:0:0,0:0:0);
-    (A5 => O17) = (0:0:0,0:0:0);
-    (A5 => O16) = (0:0:0,0:0:0);
-    (A5 => O15) = (0:0:0,0:0:0);
-    (A5 => O14) = (0:0:0,0:0:0);
-    (A5 => O13) = (0:0:0,0:0:0);
-    (A5 => O12) = (0:0:0,0:0:0);
-    (A5 => O11) = (0:0:0,0:0:0);
-    (A5 => O10) = (0:0:0,0:0:0);
-    (A5 => O9) = (0:0:0,0:0:0);
-    (A5 => O8) = (0:0:0,0:0:0);
-    (A5 => O7) = (0:0:0,0:0:0);
-    (A5 => O6) = (0:0:0,0:0:0);
-    (A5 => O5) = (0:0:0,0:0:0);
-    (A4 => O18) = (0:0:0,0:0:0);
-    (A4 => O17) = (0:0:0,0:0:0);
-    (A4 => O16) = (0:0:0,0:0:0);
-    (A4 => O15) = (0:0:0,0:0:0);
-    (A4 => O14) = (0:0:0,0:0:0);
-    (A4 => O13) = (0:0:0,0:0:0);
-    (A4 => O12) = (0:0:0,0:0:0);
-    (A4 => O11) = (0:0:0,0:0:0);
-    (A4 => O10) = (0:0:0,0:0:0);
-    (A4 => O9) = (0:0:0,0:0:0);
-    (A4 => O8) = (0:0:0,0:0:0);
-    (A4 => O7) = (0:0:0,0:0:0);
-    (A4 => O6) = (0:0:0,0:0:0);
-    (A4 => O5) = (0:0:0,0:0:0);
-    (A4 => O4) = (0:0:0,0:0:0);
-    (A3 => O18) = (0:0:0,0:0:0);
-    (A3 => O17) = (0:0:0,0:0:0);
-    (A3 => O16) = (0:0:0,0:0:0);
-    (A3 => O15) = (0:0:0,0:0:0);
-    (A3 => O14) = (0:0:0,0:0:0);
-    (A3 => O13) = (0:0:0,0:0:0);
-    (A3 => O12) = (0:0:0,0:0:0);
-    (A3 => O11) = (0:0:0,0:0:0);
-    (A3 => O10) = (0:0:0,0:0:0);
-    (A3 => O9) = (0:0:0,0:0:0);
-    (A3 => O8) = (0:0:0,0:0:0);
-    (A3 => O7) = (0:0:0,0:0:0);
-    (A3 => O6) = (0:0:0,0:0:0);
-    (A3 => O5) = (0:0:0,0:0:0);
-    (A3 => O4) = (0:0:0,0:0:0);
-    (A3 => O3) = (0:0:0,0:0:0);
-    (A2 => O18) = (0:0:0,0:0:0);
-    (A2 => O17) = (0:0:0,0:0:0);
-    (A2 => O16) = (0:0:0,0:0:0);
-    (A2 => O15) = (0:0:0,0:0:0);
-    (A2 => O14) = (0:0:0,0:0:0);
-    (A2 => O13) = (0:0:0,0:0:0);
-    (A2 => O12) = (0:0:0,0:0:0);
-    (A2 => O11) = (0:0:0,0:0:0);
-    (A2 => O10) = (0:0:0,0:0:0);
-    (A2 => O9) = (0:0:0,0:0:0);
-    (A2 => O8) = (0:0:0,0:0:0);
-    (A2 => O7) = (0:0:0,0:0:0);
-    (A2 => O6) = (0:0:0,0:0:0);
-    (A2 => O5) = (0:0:0,0:0:0);
-    (A2 => O4) = (0:0:0,0:0:0);
-    (A2 => O3) = (0:0:0,0:0:0);
-    (A2 => O2) = (0:0:0,0:0:0);
-    (A1 => O18) = (0:0:0,0:0:0);
-    (A1 => O17) = (0:0:0,0:0:0);
-    (A1 => O16) = (0:0:0,0:0:0);
-    (A1 => O15) = (0:0:0,0:0:0);
-    (A1 => O14) = (0:0:0,0:0:0);
-    (A1 => O13) = (0:0:0,0:0:0);
-    (A1 => O12) = (0:0:0,0:0:0);
-    (A1 => O11) = (0:0:0,0:0:0);
-    (A1 => O10) = (0:0:0,0:0:0);
-    (A1 => O9) = (0:0:0,0:0:0);
-    (A1 => O8) = (0:0:0,0:0:0);
-    (A1 => O7) = (0:0:0,0:0:0);
-    (A1 => O6) = (0:0:0,0:0:0);
-    (A1 => O5) = (0:0:0,0:0:0);
-    (A1 => O4) = (0:0:0,0:0:0);
-    (A1 => O3) = (0:0:0,0:0:0);
-    (A1 => O2) = (0:0:0,0:0:0);
-    (A1 => O1) = (0:0:0,0:0:0);
-    (A0 => O18) = (0:0:0,0:0:0);
-    (A0 => O17) = (0:0:0,0:0:0);
-    (A0 => O16) = (0:0:0,0:0:0);
-    (A0 => O15) = (0:0:0,0:0:0);
-    (A0 => O14) = (0:0:0,0:0:0);
-    (A0 => O13) = (0:0:0,0:0:0);
-    (A0 => O12) = (0:0:0,0:0:0);
-    (A0 => O11) = (0:0:0,0:0:0);
-    (A0 => O10) = (0:0:0,0:0:0);
-    (A0 => O9) = (0:0:0,0:0:0);
-    (A0 => O8) = (0:0:0,0:0:0);
-    (A0 => O7) = (0:0:0,0:0:0);
-    (A0 => O6) = (0:0:0,0:0:0);
-    (A0 => O5) = (0:0:0,0:0:0);
-    (A0 => O4) = (0:0:0,0:0:0);
-    (A0 => O3) = (0:0:0,0:0:0);
-    (A0 => O2) = (0:0:0,0:0:0);
-    (A0 => O1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40001 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module mult_lut_test9_mult_29 ( input A4, A1, A0, B2, B0, output O0 );
+  wire   GNDI;
+
+  MAC16_B \mult_lut_test9/mult_29 ( .CLK(GNDI), .CE(GNDI), .C15(GNDI), 
+    .C14(GNDI), .C13(GNDI), .C12(GNDI), .C11(GNDI), .C10(GNDI), .C9(GNDI), 
+    .C8(GNDI), .C7(GNDI), .C6(GNDI), .C5(GNDI), .C4(GNDI), .C3(GNDI), 
+    .C2(GNDI), .C1(GNDI), .C0(GNDI), .A15(GNDI), .A14(GNDI), .A13(GNDI), 
+    .A12(GNDI), .A11(GNDI), .A10(GNDI), .A9(GNDI), .A8(GNDI), .A7(GNDI), 
+    .A6(GNDI), .A5(GNDI), .A4(A4), .A3(GNDI), .A2(GNDI), .A1(A1), .A0(A0), 
+    .B15(GNDI), .B14(GNDI), .B13(GNDI), .B12(GNDI), .B11(GNDI), .B10(GNDI), 
+    .B9(GNDI), .B8(GNDI), .B7(GNDI), .B6(GNDI), .B5(GNDI), .B4(GNDI), 
+    .B3(GNDI), .B2(B2), .B1(GNDI), .B0(B0), .D15(GNDI), .D14(GNDI), .D13(GNDI), 
+    .D12(GNDI), .D11(GNDI), .D10(GNDI), .D9(GNDI), .D8(GNDI), .D7(GNDI), 
+    .D6(GNDI), .D5(GNDI), .D4(GNDI), .D3(GNDI), .D2(GNDI), .D1(GNDI), 
+    .D0(GNDI), .AHOLD(GNDI), .BHOLD(GNDI), .CHOLD(GNDI), .DHOLD(GNDI), 
+    .IRSTTOP(GNDI), .IRSTBOT(GNDI), .ORSTTOP(GNDI), .ORSTBOT(GNDI), 
+    .OLOADTOP(GNDI), .OLOADBOT(GNDI), .ADDSUBTOP(GNDI), .ADDSUBBOT(GNDI), 
+    .OHOLDTOP(GNDI), .OHOLDBOT(GNDI), .CI(GNDI), .ACCUMCI(GNDI), 
+    .SIGNEXTIN(GNDI), .O31(), .O30(), .O29(), .O28(), .O27(), .O26(), .O25(), 
+    .O24(), .O23(), .O22(), .O21(), .O20(), .O19(), .O18(), .O17(), .O16(), 
+    .O15(), .O14(), .O13(), .O12(), .O11(), .O10(), .O9(), .O8(), .O7(), .O6(), 
+    .O5(), .O4(), .O3(), .O2(), .O1(), .O0(O0), .CO(), .ACCUMCO(), 
+    .SIGNEXTOUT());
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
     (A0 => O0) = (0:0:0,0:0:0);
-    (B15 => O18) = (0:0:0,0:0:0);
-    (B15 => O17) = (0:0:0,0:0:0);
-    (B15 => O16) = (0:0:0,0:0:0);
-    (B15 => O15) = (0:0:0,0:0:0);
-    (B12 => O18) = (0:0:0,0:0:0);
-    (B12 => O17) = (0:0:0,0:0:0);
-    (B12 => O16) = (0:0:0,0:0:0);
-    (B12 => O15) = (0:0:0,0:0:0);
-    (B12 => O14) = (0:0:0,0:0:0);
-    (B12 => O13) = (0:0:0,0:0:0);
-    (B12 => O12) = (0:0:0,0:0:0);
-    (B8 => O18) = (0:0:0,0:0:0);
-    (B8 => O17) = (0:0:0,0:0:0);
-    (B8 => O16) = (0:0:0,0:0:0);
-    (B8 => O15) = (0:0:0,0:0:0);
-    (B8 => O14) = (0:0:0,0:0:0);
-    (B8 => O13) = (0:0:0,0:0:0);
-    (B8 => O12) = (0:0:0,0:0:0);
-    (B8 => O11) = (0:0:0,0:0:0);
-    (B8 => O10) = (0:0:0,0:0:0);
-    (B8 => O9) = (0:0:0,0:0:0);
-    (B8 => O8) = (0:0:0,0:0:0);
-    (B7 => O18) = (0:0:0,0:0:0);
-    (B7 => O17) = (0:0:0,0:0:0);
-    (B7 => O16) = (0:0:0,0:0:0);
-    (B7 => O15) = (0:0:0,0:0:0);
-    (B7 => O14) = (0:0:0,0:0:0);
-    (B7 => O13) = (0:0:0,0:0:0);
-    (B7 => O12) = (0:0:0,0:0:0);
-    (B7 => O11) = (0:0:0,0:0:0);
-    (B7 => O10) = (0:0:0,0:0:0);
-    (B7 => O9) = (0:0:0,0:0:0);
-    (B7 => O8) = (0:0:0,0:0:0);
-    (B7 => O7) = (0:0:0,0:0:0);
-    (B5 => O18) = (0:0:0,0:0:0);
-    (B5 => O17) = (0:0:0,0:0:0);
-    (B5 => O16) = (0:0:0,0:0:0);
-    (B5 => O15) = (0:0:0,0:0:0);
-    (B5 => O14) = (0:0:0,0:0:0);
-    (B5 => O13) = (0:0:0,0:0:0);
-    (B5 => O12) = (0:0:0,0:0:0);
-    (B5 => O11) = (0:0:0,0:0:0);
-    (B5 => O10) = (0:0:0,0:0:0);
-    (B5 => O9) = (0:0:0,0:0:0);
-    (B5 => O8) = (0:0:0,0:0:0);
-    (B5 => O7) = (0:0:0,0:0:0);
-    (B5 => O6) = (0:0:0,0:0:0);
-    (B5 => O5) = (0:0:0,0:0:0);
-    (B2 => O18) = (0:0:0,0:0:0);
-    (B2 => O17) = (0:0:0,0:0:0);
-    (B2 => O16) = (0:0:0,0:0:0);
-    (B2 => O15) = (0:0:0,0:0:0);
-    (B2 => O14) = (0:0:0,0:0:0);
-    (B2 => O13) = (0:0:0,0:0:0);
-    (B2 => O12) = (0:0:0,0:0:0);
-    (B2 => O11) = (0:0:0,0:0:0);
-    (B2 => O10) = (0:0:0,0:0:0);
-    (B2 => O9) = (0:0:0,0:0:0);
-    (B2 => O8) = (0:0:0,0:0:0);
-    (B2 => O7) = (0:0:0,0:0:0);
-    (B2 => O6) = (0:0:0,0:0:0);
-    (B2 => O5) = (0:0:0,0:0:0);
-    (B2 => O4) = (0:0:0,0:0:0);
-    (B2 => O3) = (0:0:0,0:0:0);
-    (B2 => O2) = (0:0:0,0:0:0);
-    (B0 => O18) = (0:0:0,0:0:0);
-    (B0 => O17) = (0:0:0,0:0:0);
-    (B0 => O16) = (0:0:0,0:0:0);
-    (B0 => O15) = (0:0:0,0:0:0);
-    (B0 => O14) = (0:0:0,0:0:0);
-    (B0 => O13) = (0:0:0,0:0:0);
-    (B0 => O12) = (0:0:0,0:0:0);
-    (B0 => O11) = (0:0:0,0:0:0);
-    (B0 => O10) = (0:0:0,0:0:0);
-    (B0 => O9) = (0:0:0,0:0:0);
-    (B0 => O8) = (0:0:0,0:0:0);
-    (B0 => O7) = (0:0:0,0:0:0);
-    (B0 => O6) = (0:0:0,0:0:0);
-    (B0 => O5) = (0:0:0,0:0:0);
-    (B0 => O4) = (0:0:0,0:0:0);
-    (B0 => O3) = (0:0:0,0:0:0);
-    (B0 => O2) = (0:0:0,0:0:0);
-    (B0 => O1) = (0:0:0,0:0:0);
     (B0 => O0) = (0:0:0,0:0:0);
   endspecify
 
@@ -794,590 +178,252 @@ module MAC16_B ( input CLK, CE, C15, C14, C13, C12, C11, C10, C9, C8, C7, C6,
   defparam INST10.BOT_8x8_MULT_REG = "0b0";
   defparam INST10.PIPELINE_16x16_MULT_REG1 = "0b0";
   defparam INST10.PIPELINE_16x16_MULT_REG2 = "0b0";
-  defparam INST10.TOPOUTPUT_SELECT = "0b11";
+  defparam INST10.TOPOUTPUT_SELECT = "0b10";
   defparam INST10.TOPADDSUB_LOWERINPUT = "0b00";
   defparam INST10.TOPADDSUB_UPPERINPUT = "0b0";
   defparam INST10.TOPADDSUB_CARRYSELECT = "0b00";
-  defparam INST10.BOTOUTPUT_SELECT = "0b11";
+  defparam INST10.BOTOUTPUT_SELECT = "0b10";
   defparam INST10.BOTADDSUB_LOWERINPUT = "0b00";
   defparam INST10.BOTADDSUB_UPPERINPUT = "0b0";
   defparam INST10.BOTADDSUB_CARRYSELECT = "0b00";
-  defparam INST10.MODE_8x8 = "0b0";
+  defparam INST10.MODE_8x8 = "0b1";
   defparam INST10.A_SIGNED = "0b0";
   defparam INST10.B_SIGNED = "0b0";
 endmodule
 
-module mult_lut_test_mult_7 ( input A15, A14, A13, A12, A11, A10, A9, A8, A7, 
-    A6, A5, A4, A3, A2, A1, A0, B11, B9, B8, B7, B6, B3, B2, B0, output O28, 
-    O27, O26, O25, O24, O23, O22, O21, O20, O19, O18, O17, O16, O15, O14, O13, 
-    O12, O11, O10, O9, O8, O7, O6, O5, O4, O3, O2, O1, O0 );
+module mult_lut_test5_mult_33 ( input A3, A2, A1, A0, B2, B0, output O0 );
   wire   GNDI;
 
-  MAC16_B \mult_lut_test/mult_7 ( .CLK(GNDI), .CE(GNDI), .C15(GNDI), 
+  MAC16_B \mult_lut_test5/mult_33 ( .CLK(GNDI), .CE(GNDI), .C15(GNDI), 
     .C14(GNDI), .C13(GNDI), .C12(GNDI), .C11(GNDI), .C10(GNDI), .C9(GNDI), 
     .C8(GNDI), .C7(GNDI), .C6(GNDI), .C5(GNDI), .C4(GNDI), .C3(GNDI), 
-    .C2(GNDI), .C1(GNDI), .C0(GNDI), .A15(A15), .A14(A14), .A13(A13), 
-    .A12(A12), .A11(A11), .A10(A10), .A9(A9), .A8(A8), .A7(A7), .A6(A6), 
-    .A5(A5), .A4(A4), .A3(A3), .A2(A2), .A1(A1), .A0(A0), .B15(GNDI), 
-    .B14(GNDI), .B13(GNDI), .B12(GNDI), .B11(B11), .B10(GNDI), .B9(B9), 
-    .B8(B8), .B7(B7), .B6(B6), .B5(GNDI), .B4(GNDI), .B3(B3), .B2(B2), 
-    .B1(GNDI), .B0(B0), .D15(GNDI), .D14(GNDI), .D13(GNDI), .D12(GNDI), 
-    .D11(GNDI), .D10(GNDI), .D9(GNDI), .D8(GNDI), .D7(GNDI), .D6(GNDI), 
-    .D5(GNDI), .D4(GNDI), .D3(GNDI), .D2(GNDI), .D1(GNDI), .D0(GNDI), 
-    .AHOLD(GNDI), .BHOLD(GNDI), .CHOLD(GNDI), .DHOLD(GNDI), .IRSTTOP(GNDI), 
-    .IRSTBOT(GNDI), .ORSTTOP(GNDI), .ORSTBOT(GNDI), .OLOADTOP(GNDI), 
-    .OLOADBOT(GNDI), .ADDSUBTOP(GNDI), .ADDSUBBOT(GNDI), .OHOLDTOP(GNDI), 
-    .OHOLDBOT(GNDI), .CI(GNDI), .ACCUMCI(GNDI), .SIGNEXTIN(GNDI), .O31(), 
-    .O30(), .O29(), .O28(O28), .O27(O27), .O26(O26), .O25(O25), .O24(O24), 
-    .O23(O23), .O22(O22), .O21(O21), .O20(O20), .O19(O19), .O18(O18), 
-    .O17(O17), .O16(O16), .O15(O15), .O14(O14), .O13(O13), .O12(O12), 
-    .O11(O11), .O10(O10), .O9(O9), .O8(O8), .O7(O7), .O6(O6), .O5(O5), .O4(O4), 
-    .O3(O3), .O2(O2), .O1(O1), .O0(O0), .CO(), .ACCUMCO(), .SIGNEXTOUT());
+    .C2(GNDI), .C1(GNDI), .C0(GNDI), .A15(GNDI), .A14(GNDI), .A13(GNDI), 
+    .A12(GNDI), .A11(GNDI), .A10(GNDI), .A9(GNDI), .A8(GNDI), .A7(GNDI), 
+    .A6(GNDI), .A5(GNDI), .A4(GNDI), .A3(A3), .A2(A2), .A1(A1), .A0(A0), 
+    .B15(GNDI), .B14(GNDI), .B13(GNDI), .B12(GNDI), .B11(GNDI), .B10(GNDI), 
+    .B9(GNDI), .B8(GNDI), .B7(GNDI), .B6(GNDI), .B5(GNDI), .B4(GNDI), 
+    .B3(GNDI), .B2(B2), .B1(GNDI), .B0(B0), .D15(GNDI), .D14(GNDI), .D13(GNDI), 
+    .D12(GNDI), .D11(GNDI), .D10(GNDI), .D9(GNDI), .D8(GNDI), .D7(GNDI), 
+    .D6(GNDI), .D5(GNDI), .D4(GNDI), .D3(GNDI), .D2(GNDI), .D1(GNDI), 
+    .D0(GNDI), .AHOLD(GNDI), .BHOLD(GNDI), .CHOLD(GNDI), .DHOLD(GNDI), 
+    .IRSTTOP(GNDI), .IRSTBOT(GNDI), .ORSTTOP(GNDI), .ORSTBOT(GNDI), 
+    .OLOADTOP(GNDI), .OLOADBOT(GNDI), .ADDSUBTOP(GNDI), .ADDSUBBOT(GNDI), 
+    .OHOLDTOP(GNDI), .OHOLDBOT(GNDI), .CI(GNDI), .ACCUMCI(GNDI), 
+    .SIGNEXTIN(GNDI), .O31(), .O30(), .O29(), .O28(), .O27(), .O26(), .O25(), 
+    .O24(), .O23(), .O22(), .O21(), .O20(), .O19(), .O18(), .O17(), .O16(), 
+    .O15(), .O14(), .O13(), .O12(), .O11(), .O10(), .O9(), .O8(), .O7(), .O6(), 
+    .O5(), .O4(), .O3(), .O2(), .O1(), .O0(O0), .CO(), .ACCUMCO(), 
+    .SIGNEXTOUT());
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
-    (A15 => O28) = (0:0:0,0:0:0);
-    (A15 => O27) = (0:0:0,0:0:0);
-    (A15 => O26) = (0:0:0,0:0:0);
-    (A15 => O25) = (0:0:0,0:0:0);
-    (A15 => O24) = (0:0:0,0:0:0);
-    (A15 => O23) = (0:0:0,0:0:0);
-    (A15 => O22) = (0:0:0,0:0:0);
-    (A15 => O21) = (0:0:0,0:0:0);
-    (A15 => O20) = (0:0:0,0:0:0);
-    (A15 => O19) = (0:0:0,0:0:0);
-    (A15 => O18) = (0:0:0,0:0:0);
-    (A15 => O17) = (0:0:0,0:0:0);
-    (A15 => O16) = (0:0:0,0:0:0);
-    (A15 => O15) = (0:0:0,0:0:0);
-    (A14 => O28) = (0:0:0,0:0:0);
-    (A14 => O27) = (0:0:0,0:0:0);
-    (A14 => O26) = (0:0:0,0:0:0);
-    (A14 => O25) = (0:0:0,0:0:0);
-    (A14 => O24) = (0:0:0,0:0:0);
-    (A14 => O23) = (0:0:0,0:0:0);
-    (A14 => O22) = (0:0:0,0:0:0);
-    (A14 => O21) = (0:0:0,0:0:0);
-    (A14 => O20) = (0:0:0,0:0:0);
-    (A14 => O19) = (0:0:0,0:0:0);
-    (A14 => O18) = (0:0:0,0:0:0);
-    (A14 => O17) = (0:0:0,0:0:0);
-    (A14 => O16) = (0:0:0,0:0:0);
-    (A14 => O15) = (0:0:0,0:0:0);
-    (A14 => O14) = (0:0:0,0:0:0);
-    (A13 => O28) = (0:0:0,0:0:0);
-    (A13 => O27) = (0:0:0,0:0:0);
-    (A13 => O26) = (0:0:0,0:0:0);
-    (A13 => O25) = (0:0:0,0:0:0);
-    (A13 => O24) = (0:0:0,0:0:0);
-    (A13 => O23) = (0:0:0,0:0:0);
-    (A13 => O22) = (0:0:0,0:0:0);
-    (A13 => O21) = (0:0:0,0:0:0);
-    (A13 => O20) = (0:0:0,0:0:0);
-    (A13 => O19) = (0:0:0,0:0:0);
-    (A13 => O18) = (0:0:0,0:0:0);
-    (A13 => O17) = (0:0:0,0:0:0);
-    (A13 => O16) = (0:0:0,0:0:0);
-    (A13 => O15) = (0:0:0,0:0:0);
-    (A13 => O14) = (0:0:0,0:0:0);
-    (A13 => O13) = (0:0:0,0:0:0);
-    (A12 => O28) = (0:0:0,0:0:0);
-    (A12 => O27) = (0:0:0,0:0:0);
-    (A12 => O26) = (0:0:0,0:0:0);
-    (A12 => O25) = (0:0:0,0:0:0);
-    (A12 => O24) = (0:0:0,0:0:0);
-    (A12 => O23) = (0:0:0,0:0:0);
-    (A12 => O22) = (0:0:0,0:0:0);
-    (A12 => O21) = (0:0:0,0:0:0);
-    (A12 => O20) = (0:0:0,0:0:0);
-    (A12 => O19) = (0:0:0,0:0:0);
-    (A12 => O18) = (0:0:0,0:0:0);
-    (A12 => O17) = (0:0:0,0:0:0);
-    (A12 => O16) = (0:0:0,0:0:0);
-    (A12 => O15) = (0:0:0,0:0:0);
-    (A12 => O14) = (0:0:0,0:0:0);
-    (A12 => O13) = (0:0:0,0:0:0);
-    (A12 => O12) = (0:0:0,0:0:0);
-    (A11 => O28) = (0:0:0,0:0:0);
-    (A11 => O27) = (0:0:0,0:0:0);
-    (A11 => O26) = (0:0:0,0:0:0);
-    (A11 => O25) = (0:0:0,0:0:0);
-    (A11 => O24) = (0:0:0,0:0:0);
-    (A11 => O23) = (0:0:0,0:0:0);
-    (A11 => O22) = (0:0:0,0:0:0);
-    (A11 => O21) = (0:0:0,0:0:0);
-    (A11 => O20) = (0:0:0,0:0:0);
-    (A11 => O19) = (0:0:0,0:0:0);
-    (A11 => O18) = (0:0:0,0:0:0);
-    (A11 => O17) = (0:0:0,0:0:0);
-    (A11 => O16) = (0:0:0,0:0:0);
-    (A11 => O15) = (0:0:0,0:0:0);
-    (A11 => O14) = (0:0:0,0:0:0);
-    (A11 => O13) = (0:0:0,0:0:0);
-    (A11 => O12) = (0:0:0,0:0:0);
-    (A11 => O11) = (0:0:0,0:0:0);
-    (A10 => O28) = (0:0:0,0:0:0);
-    (A10 => O27) = (0:0:0,0:0:0);
-    (A10 => O26) = (0:0:0,0:0:0);
-    (A10 => O25) = (0:0:0,0:0:0);
-    (A10 => O24) = (0:0:0,0:0:0);
-    (A10 => O23) = (0:0:0,0:0:0);
-    (A10 => O22) = (0:0:0,0:0:0);
-    (A10 => O21) = (0:0:0,0:0:0);
-    (A10 => O20) = (0:0:0,0:0:0);
-    (A10 => O19) = (0:0:0,0:0:0);
-    (A10 => O18) = (0:0:0,0:0:0);
-    (A10 => O17) = (0:0:0,0:0:0);
-    (A10 => O16) = (0:0:0,0:0:0);
-    (A10 => O15) = (0:0:0,0:0:0);
-    (A10 => O14) = (0:0:0,0:0:0);
-    (A10 => O13) = (0:0:0,0:0:0);
-    (A10 => O12) = (0:0:0,0:0:0);
-    (A10 => O11) = (0:0:0,0:0:0);
-    (A10 => O10) = (0:0:0,0:0:0);
-    (A9 => O28) = (0:0:0,0:0:0);
-    (A9 => O27) = (0:0:0,0:0:0);
-    (A9 => O26) = (0:0:0,0:0:0);
-    (A9 => O25) = (0:0:0,0:0:0);
-    (A9 => O24) = (0:0:0,0:0:0);
-    (A9 => O23) = (0:0:0,0:0:0);
-    (A9 => O22) = (0:0:0,0:0:0);
-    (A9 => O21) = (0:0:0,0:0:0);
-    (A9 => O20) = (0:0:0,0:0:0);
-    (A9 => O19) = (0:0:0,0:0:0);
-    (A9 => O18) = (0:0:0,0:0:0);
-    (A9 => O17) = (0:0:0,0:0:0);
-    (A9 => O16) = (0:0:0,0:0:0);
-    (A9 => O15) = (0:0:0,0:0:0);
-    (A9 => O14) = (0:0:0,0:0:0);
-    (A9 => O13) = (0:0:0,0:0:0);
-    (A9 => O12) = (0:0:0,0:0:0);
-    (A9 => O11) = (0:0:0,0:0:0);
-    (A9 => O10) = (0:0:0,0:0:0);
-    (A9 => O9) = (0:0:0,0:0:0);
-    (A8 => O28) = (0:0:0,0:0:0);
-    (A8 => O27) = (0:0:0,0:0:0);
-    (A8 => O26) = (0:0:0,0:0:0);
-    (A8 => O25) = (0:0:0,0:0:0);
-    (A8 => O24) = (0:0:0,0:0:0);
-    (A8 => O23) = (0:0:0,0:0:0);
-    (A8 => O22) = (0:0:0,0:0:0);
-    (A8 => O21) = (0:0:0,0:0:0);
-    (A8 => O20) = (0:0:0,0:0:0);
-    (A8 => O19) = (0:0:0,0:0:0);
-    (A8 => O18) = (0:0:0,0:0:0);
-    (A8 => O17) = (0:0:0,0:0:0);
-    (A8 => O16) = (0:0:0,0:0:0);
-    (A8 => O15) = (0:0:0,0:0:0);
-    (A8 => O14) = (0:0:0,0:0:0);
-    (A8 => O13) = (0:0:0,0:0:0);
-    (A8 => O12) = (0:0:0,0:0:0);
-    (A8 => O11) = (0:0:0,0:0:0);
-    (A8 => O10) = (0:0:0,0:0:0);
-    (A8 => O9) = (0:0:0,0:0:0);
-    (A8 => O8) = (0:0:0,0:0:0);
-    (A7 => O28) = (0:0:0,0:0:0);
-    (A7 => O27) = (0:0:0,0:0:0);
-    (A7 => O26) = (0:0:0,0:0:0);
-    (A7 => O25) = (0:0:0,0:0:0);
-    (A7 => O24) = (0:0:0,0:0:0);
-    (A7 => O23) = (0:0:0,0:0:0);
-    (A7 => O22) = (0:0:0,0:0:0);
-    (A7 => O21) = (0:0:0,0:0:0);
-    (A7 => O20) = (0:0:0,0:0:0);
-    (A7 => O19) = (0:0:0,0:0:0);
-    (A7 => O18) = (0:0:0,0:0:0);
-    (A7 => O17) = (0:0:0,0:0:0);
-    (A7 => O16) = (0:0:0,0:0:0);
-    (A7 => O15) = (0:0:0,0:0:0);
-    (A7 => O14) = (0:0:0,0:0:0);
-    (A7 => O13) = (0:0:0,0:0:0);
-    (A7 => O12) = (0:0:0,0:0:0);
-    (A7 => O11) = (0:0:0,0:0:0);
-    (A7 => O10) = (0:0:0,0:0:0);
-    (A7 => O9) = (0:0:0,0:0:0);
-    (A7 => O8) = (0:0:0,0:0:0);
-    (A7 => O7) = (0:0:0,0:0:0);
-    (A6 => O28) = (0:0:0,0:0:0);
-    (A6 => O27) = (0:0:0,0:0:0);
-    (A6 => O26) = (0:0:0,0:0:0);
-    (A6 => O25) = (0:0:0,0:0:0);
-    (A6 => O24) = (0:0:0,0:0:0);
-    (A6 => O23) = (0:0:0,0:0:0);
-    (A6 => O22) = (0:0:0,0:0:0);
-    (A6 => O21) = (0:0:0,0:0:0);
-    (A6 => O20) = (0:0:0,0:0:0);
-    (A6 => O19) = (0:0:0,0:0:0);
-    (A6 => O18) = (0:0:0,0:0:0);
-    (A6 => O17) = (0:0:0,0:0:0);
-    (A6 => O16) = (0:0:0,0:0:0);
-    (A6 => O15) = (0:0:0,0:0:0);
-    (A6 => O14) = (0:0:0,0:0:0);
-    (A6 => O13) = (0:0:0,0:0:0);
-    (A6 => O12) = (0:0:0,0:0:0);
-    (A6 => O11) = (0:0:0,0:0:0);
-    (A6 => O10) = (0:0:0,0:0:0);
-    (A6 => O9) = (0:0:0,0:0:0);
-    (A6 => O8) = (0:0:0,0:0:0);
-    (A6 => O7) = (0:0:0,0:0:0);
-    (A6 => O6) = (0:0:0,0:0:0);
-    (A5 => O28) = (0:0:0,0:0:0);
-    (A5 => O27) = (0:0:0,0:0:0);
-    (A5 => O26) = (0:0:0,0:0:0);
-    (A5 => O25) = (0:0:0,0:0:0);
-    (A5 => O24) = (0:0:0,0:0:0);
-    (A5 => O23) = (0:0:0,0:0:0);
-    (A5 => O22) = (0:0:0,0:0:0);
-    (A5 => O21) = (0:0:0,0:0:0);
-    (A5 => O20) = (0:0:0,0:0:0);
-    (A5 => O19) = (0:0:0,0:0:0);
-    (A5 => O18) = (0:0:0,0:0:0);
-    (A5 => O17) = (0:0:0,0:0:0);
-    (A5 => O16) = (0:0:0,0:0:0);
-    (A5 => O15) = (0:0:0,0:0:0);
-    (A5 => O14) = (0:0:0,0:0:0);
-    (A5 => O13) = (0:0:0,0:0:0);
-    (A5 => O12) = (0:0:0,0:0:0);
-    (A5 => O11) = (0:0:0,0:0:0);
-    (A5 => O10) = (0:0:0,0:0:0);
-    (A5 => O9) = (0:0:0,0:0:0);
-    (A5 => O8) = (0:0:0,0:0:0);
-    (A5 => O7) = (0:0:0,0:0:0);
-    (A5 => O6) = (0:0:0,0:0:0);
-    (A5 => O5) = (0:0:0,0:0:0);
-    (A4 => O28) = (0:0:0,0:0:0);
-    (A4 => O27) = (0:0:0,0:0:0);
-    (A4 => O26) = (0:0:0,0:0:0);
-    (A4 => O25) = (0:0:0,0:0:0);
-    (A4 => O24) = (0:0:0,0:0:0);
-    (A4 => O23) = (0:0:0,0:0:0);
-    (A4 => O22) = (0:0:0,0:0:0);
-    (A4 => O21) = (0:0:0,0:0:0);
-    (A4 => O20) = (0:0:0,0:0:0);
-    (A4 => O19) = (0:0:0,0:0:0);
-    (A4 => O18) = (0:0:0,0:0:0);
-    (A4 => O17) = (0:0:0,0:0:0);
-    (A4 => O16) = (0:0:0,0:0:0);
-    (A4 => O15) = (0:0:0,0:0:0);
-    (A4 => O14) = (0:0:0,0:0:0);
-    (A4 => O13) = (0:0:0,0:0:0);
-    (A4 => O12) = (0:0:0,0:0:0);
-    (A4 => O11) = (0:0:0,0:0:0);
-    (A4 => O10) = (0:0:0,0:0:0);
-    (A4 => O9) = (0:0:0,0:0:0);
-    (A4 => O8) = (0:0:0,0:0:0);
-    (A4 => O7) = (0:0:0,0:0:0);
-    (A4 => O6) = (0:0:0,0:0:0);
-    (A4 => O5) = (0:0:0,0:0:0);
-    (A4 => O4) = (0:0:0,0:0:0);
-    (A3 => O28) = (0:0:0,0:0:0);
-    (A3 => O27) = (0:0:0,0:0:0);
-    (A3 => O26) = (0:0:0,0:0:0);
-    (A3 => O25) = (0:0:0,0:0:0);
-    (A3 => O24) = (0:0:0,0:0:0);
-    (A3 => O23) = (0:0:0,0:0:0);
-    (A3 => O22) = (0:0:0,0:0:0);
-    (A3 => O21) = (0:0:0,0:0:0);
-    (A3 => O20) = (0:0:0,0:0:0);
-    (A3 => O19) = (0:0:0,0:0:0);
-    (A3 => O18) = (0:0:0,0:0:0);
-    (A3 => O17) = (0:0:0,0:0:0);
-    (A3 => O16) = (0:0:0,0:0:0);
-    (A3 => O15) = (0:0:0,0:0:0);
-    (A3 => O14) = (0:0:0,0:0:0);
-    (A3 => O13) = (0:0:0,0:0:0);
-    (A3 => O12) = (0:0:0,0:0:0);
-    (A3 => O11) = (0:0:0,0:0:0);
-    (A3 => O10) = (0:0:0,0:0:0);
-    (A3 => O9) = (0:0:0,0:0:0);
-    (A3 => O8) = (0:0:0,0:0:0);
-    (A3 => O7) = (0:0:0,0:0:0);
-    (A3 => O6) = (0:0:0,0:0:0);
-    (A3 => O5) = (0:0:0,0:0:0);
-    (A3 => O4) = (0:0:0,0:0:0);
-    (A3 => O3) = (0:0:0,0:0:0);
-    (A2 => O28) = (0:0:0,0:0:0);
-    (A2 => O27) = (0:0:0,0:0:0);
-    (A2 => O26) = (0:0:0,0:0:0);
-    (A2 => O25) = (0:0:0,0:0:0);
-    (A2 => O24) = (0:0:0,0:0:0);
-    (A2 => O23) = (0:0:0,0:0:0);
-    (A2 => O22) = (0:0:0,0:0:0);
-    (A2 => O21) = (0:0:0,0:0:0);
-    (A2 => O20) = (0:0:0,0:0:0);
-    (A2 => O19) = (0:0:0,0:0:0);
-    (A2 => O18) = (0:0:0,0:0:0);
-    (A2 => O17) = (0:0:0,0:0:0);
-    (A2 => O16) = (0:0:0,0:0:0);
-    (A2 => O15) = (0:0:0,0:0:0);
-    (A2 => O14) = (0:0:0,0:0:0);
-    (A2 => O13) = (0:0:0,0:0:0);
-    (A2 => O12) = (0:0:0,0:0:0);
-    (A2 => O11) = (0:0:0,0:0:0);
-    (A2 => O10) = (0:0:0,0:0:0);
-    (A2 => O9) = (0:0:0,0:0:0);
-    (A2 => O8) = (0:0:0,0:0:0);
-    (A2 => O7) = (0:0:0,0:0:0);
-    (A2 => O6) = (0:0:0,0:0:0);
-    (A2 => O5) = (0:0:0,0:0:0);
-    (A2 => O4) = (0:0:0,0:0:0);
-    (A2 => O3) = (0:0:0,0:0:0);
-    (A2 => O2) = (0:0:0,0:0:0);
-    (A1 => O28) = (0:0:0,0:0:0);
-    (A1 => O27) = (0:0:0,0:0:0);
-    (A1 => O26) = (0:0:0,0:0:0);
-    (A1 => O25) = (0:0:0,0:0:0);
-    (A1 => O24) = (0:0:0,0:0:0);
-    (A1 => O23) = (0:0:0,0:0:0);
-    (A1 => O22) = (0:0:0,0:0:0);
-    (A1 => O21) = (0:0:0,0:0:0);
-    (A1 => O20) = (0:0:0,0:0:0);
-    (A1 => O19) = (0:0:0,0:0:0);
-    (A1 => O18) = (0:0:0,0:0:0);
-    (A1 => O17) = (0:0:0,0:0:0);
-    (A1 => O16) = (0:0:0,0:0:0);
-    (A1 => O15) = (0:0:0,0:0:0);
-    (A1 => O14) = (0:0:0,0:0:0);
-    (A1 => O13) = (0:0:0,0:0:0);
-    (A1 => O12) = (0:0:0,0:0:0);
-    (A1 => O11) = (0:0:0,0:0:0);
-    (A1 => O10) = (0:0:0,0:0:0);
-    (A1 => O9) = (0:0:0,0:0:0);
-    (A1 => O8) = (0:0:0,0:0:0);
-    (A1 => O7) = (0:0:0,0:0:0);
-    (A1 => O6) = (0:0:0,0:0:0);
-    (A1 => O5) = (0:0:0,0:0:0);
-    (A1 => O4) = (0:0:0,0:0:0);
-    (A1 => O3) = (0:0:0,0:0:0);
-    (A1 => O2) = (0:0:0,0:0:0);
-    (A1 => O1) = (0:0:0,0:0:0);
-    (A0 => O28) = (0:0:0,0:0:0);
-    (A0 => O27) = (0:0:0,0:0:0);
-    (A0 => O26) = (0:0:0,0:0:0);
-    (A0 => O25) = (0:0:0,0:0:0);
-    (A0 => O24) = (0:0:0,0:0:0);
-    (A0 => O23) = (0:0:0,0:0:0);
-    (A0 => O22) = (0:0:0,0:0:0);
-    (A0 => O21) = (0:0:0,0:0:0);
-    (A0 => O20) = (0:0:0,0:0:0);
-    (A0 => O19) = (0:0:0,0:0:0);
-    (A0 => O18) = (0:0:0,0:0:0);
-    (A0 => O17) = (0:0:0,0:0:0);
-    (A0 => O16) = (0:0:0,0:0:0);
-    (A0 => O15) = (0:0:0,0:0:0);
-    (A0 => O14) = (0:0:0,0:0:0);
-    (A0 => O13) = (0:0:0,0:0:0);
-    (A0 => O12) = (0:0:0,0:0:0);
-    (A0 => O11) = (0:0:0,0:0:0);
-    (A0 => O10) = (0:0:0,0:0:0);
-    (A0 => O9) = (0:0:0,0:0:0);
-    (A0 => O8) = (0:0:0,0:0:0);
-    (A0 => O7) = (0:0:0,0:0:0);
-    (A0 => O6) = (0:0:0,0:0:0);
-    (A0 => O5) = (0:0:0,0:0:0);
-    (A0 => O4) = (0:0:0,0:0:0);
-    (A0 => O3) = (0:0:0,0:0:0);
-    (A0 => O2) = (0:0:0,0:0:0);
-    (A0 => O1) = (0:0:0,0:0:0);
     (A0 => O0) = (0:0:0,0:0:0);
-    (B11 => O28) = (0:0:0,0:0:0);
-    (B11 => O27) = (0:0:0,0:0:0);
-    (B11 => O26) = (0:0:0,0:0:0);
-    (B11 => O25) = (0:0:0,0:0:0);
-    (B11 => O24) = (0:0:0,0:0:0);
-    (B11 => O23) = (0:0:0,0:0:0);
-    (B11 => O22) = (0:0:0,0:0:0);
-    (B11 => O21) = (0:0:0,0:0:0);
-    (B11 => O20) = (0:0:0,0:0:0);
-    (B11 => O19) = (0:0:0,0:0:0);
-    (B11 => O18) = (0:0:0,0:0:0);
-    (B11 => O17) = (0:0:0,0:0:0);
-    (B11 => O16) = (0:0:0,0:0:0);
-    (B11 => O15) = (0:0:0,0:0:0);
-    (B11 => O14) = (0:0:0,0:0:0);
-    (B11 => O13) = (0:0:0,0:0:0);
-    (B11 => O12) = (0:0:0,0:0:0);
-    (B11 => O11) = (0:0:0,0:0:0);
-    (B9 => O28) = (0:0:0,0:0:0);
-    (B9 => O27) = (0:0:0,0:0:0);
-    (B9 => O26) = (0:0:0,0:0:0);
-    (B9 => O25) = (0:0:0,0:0:0);
-    (B9 => O24) = (0:0:0,0:0:0);
-    (B9 => O23) = (0:0:0,0:0:0);
-    (B9 => O22) = (0:0:0,0:0:0);
-    (B9 => O21) = (0:0:0,0:0:0);
-    (B9 => O20) = (0:0:0,0:0:0);
-    (B9 => O19) = (0:0:0,0:0:0);
-    (B9 => O18) = (0:0:0,0:0:0);
-    (B9 => O17) = (0:0:0,0:0:0);
-    (B9 => O16) = (0:0:0,0:0:0);
-    (B9 => O15) = (0:0:0,0:0:0);
-    (B9 => O14) = (0:0:0,0:0:0);
-    (B9 => O13) = (0:0:0,0:0:0);
-    (B9 => O12) = (0:0:0,0:0:0);
-    (B9 => O11) = (0:0:0,0:0:0);
-    (B9 => O10) = (0:0:0,0:0:0);
-    (B9 => O9) = (0:0:0,0:0:0);
-    (B8 => O28) = (0:0:0,0:0:0);
-    (B8 => O27) = (0:0:0,0:0:0);
-    (B8 => O26) = (0:0:0,0:0:0);
-    (B8 => O25) = (0:0:0,0:0:0);
-    (B8 => O24) = (0:0:0,0:0:0);
-    (B8 => O23) = (0:0:0,0:0:0);
-    (B8 => O22) = (0:0:0,0:0:0);
-    (B8 => O21) = (0:0:0,0:0:0);
-    (B8 => O20) = (0:0:0,0:0:0);
-    (B8 => O19) = (0:0:0,0:0:0);
-    (B8 => O18) = (0:0:0,0:0:0);
-    (B8 => O17) = (0:0:0,0:0:0);
-    (B8 => O16) = (0:0:0,0:0:0);
-    (B8 => O15) = (0:0:0,0:0:0);
-    (B8 => O14) = (0:0:0,0:0:0);
-    (B8 => O13) = (0:0:0,0:0:0);
-    (B8 => O12) = (0:0:0,0:0:0);
-    (B8 => O11) = (0:0:0,0:0:0);
-    (B8 => O10) = (0:0:0,0:0:0);
-    (B8 => O9) = (0:0:0,0:0:0);
-    (B8 => O8) = (0:0:0,0:0:0);
-    (B7 => O28) = (0:0:0,0:0:0);
-    (B7 => O27) = (0:0:0,0:0:0);
-    (B7 => O26) = (0:0:0,0:0:0);
-    (B7 => O25) = (0:0:0,0:0:0);
-    (B7 => O24) = (0:0:0,0:0:0);
-    (B7 => O23) = (0:0:0,0:0:0);
-    (B7 => O22) = (0:0:0,0:0:0);
-    (B7 => O21) = (0:0:0,0:0:0);
-    (B7 => O20) = (0:0:0,0:0:0);
-    (B7 => O19) = (0:0:0,0:0:0);
-    (B7 => O18) = (0:0:0,0:0:0);
-    (B7 => O17) = (0:0:0,0:0:0);
-    (B7 => O16) = (0:0:0,0:0:0);
-    (B7 => O15) = (0:0:0,0:0:0);
-    (B7 => O14) = (0:0:0,0:0:0);
-    (B7 => O13) = (0:0:0,0:0:0);
-    (B7 => O12) = (0:0:0,0:0:0);
-    (B7 => O11) = (0:0:0,0:0:0);
-    (B7 => O10) = (0:0:0,0:0:0);
-    (B7 => O9) = (0:0:0,0:0:0);
-    (B7 => O8) = (0:0:0,0:0:0);
-    (B7 => O7) = (0:0:0,0:0:0);
-    (B6 => O28) = (0:0:0,0:0:0);
-    (B6 => O27) = (0:0:0,0:0:0);
-    (B6 => O26) = (0:0:0,0:0:0);
-    (B6 => O25) = (0:0:0,0:0:0);
-    (B6 => O24) = (0:0:0,0:0:0);
-    (B6 => O23) = (0:0:0,0:0:0);
-    (B6 => O22) = (0:0:0,0:0:0);
-    (B6 => O21) = (0:0:0,0:0:0);
-    (B6 => O20) = (0:0:0,0:0:0);
-    (B6 => O19) = (0:0:0,0:0:0);
-    (B6 => O18) = (0:0:0,0:0:0);
-    (B6 => O17) = (0:0:0,0:0:0);
-    (B6 => O16) = (0:0:0,0:0:0);
-    (B6 => O15) = (0:0:0,0:0:0);
-    (B6 => O14) = (0:0:0,0:0:0);
-    (B6 => O13) = (0:0:0,0:0:0);
-    (B6 => O12) = (0:0:0,0:0:0);
-    (B6 => O11) = (0:0:0,0:0:0);
-    (B6 => O10) = (0:0:0,0:0:0);
-    (B6 => O9) = (0:0:0,0:0:0);
-    (B6 => O8) = (0:0:0,0:0:0);
-    (B6 => O7) = (0:0:0,0:0:0);
-    (B6 => O6) = (0:0:0,0:0:0);
-    (B3 => O28) = (0:0:0,0:0:0);
-    (B3 => O27) = (0:0:0,0:0:0);
-    (B3 => O26) = (0:0:0,0:0:0);
-    (B3 => O25) = (0:0:0,0:0:0);
-    (B3 => O24) = (0:0:0,0:0:0);
-    (B3 => O23) = (0:0:0,0:0:0);
-    (B3 => O22) = (0:0:0,0:0:0);
-    (B3 => O21) = (0:0:0,0:0:0);
-    (B3 => O20) = (0:0:0,0:0:0);
-    (B3 => O19) = (0:0:0,0:0:0);
-    (B3 => O18) = (0:0:0,0:0:0);
-    (B3 => O17) = (0:0:0,0:0:0);
-    (B3 => O16) = (0:0:0,0:0:0);
-    (B3 => O15) = (0:0:0,0:0:0);
-    (B3 => O14) = (0:0:0,0:0:0);
-    (B3 => O13) = (0:0:0,0:0:0);
-    (B3 => O12) = (0:0:0,0:0:0);
-    (B3 => O11) = (0:0:0,0:0:0);
-    (B3 => O10) = (0:0:0,0:0:0);
-    (B3 => O9) = (0:0:0,0:0:0);
-    (B3 => O8) = (0:0:0,0:0:0);
-    (B3 => O7) = (0:0:0,0:0:0);
-    (B3 => O6) = (0:0:0,0:0:0);
-    (B3 => O5) = (0:0:0,0:0:0);
-    (B3 => O4) = (0:0:0,0:0:0);
-    (B3 => O3) = (0:0:0,0:0:0);
-    (B2 => O28) = (0:0:0,0:0:0);
-    (B2 => O27) = (0:0:0,0:0:0);
-    (B2 => O26) = (0:0:0,0:0:0);
-    (B2 => O25) = (0:0:0,0:0:0);
-    (B2 => O24) = (0:0:0,0:0:0);
-    (B2 => O23) = (0:0:0,0:0:0);
-    (B2 => O22) = (0:0:0,0:0:0);
-    (B2 => O21) = (0:0:0,0:0:0);
-    (B2 => O20) = (0:0:0,0:0:0);
-    (B2 => O19) = (0:0:0,0:0:0);
-    (B2 => O18) = (0:0:0,0:0:0);
-    (B2 => O17) = (0:0:0,0:0:0);
-    (B2 => O16) = (0:0:0,0:0:0);
-    (B2 => O15) = (0:0:0,0:0:0);
-    (B2 => O14) = (0:0:0,0:0:0);
-    (B2 => O13) = (0:0:0,0:0:0);
-    (B2 => O12) = (0:0:0,0:0:0);
-    (B2 => O11) = (0:0:0,0:0:0);
-    (B2 => O10) = (0:0:0,0:0:0);
-    (B2 => O9) = (0:0:0,0:0:0);
-    (B2 => O8) = (0:0:0,0:0:0);
-    (B2 => O7) = (0:0:0,0:0:0);
-    (B2 => O6) = (0:0:0,0:0:0);
-    (B2 => O5) = (0:0:0,0:0:0);
-    (B2 => O4) = (0:0:0,0:0:0);
-    (B2 => O3) = (0:0:0,0:0:0);
-    (B2 => O2) = (0:0:0,0:0:0);
-    (B0 => O28) = (0:0:0,0:0:0);
-    (B0 => O27) = (0:0:0,0:0:0);
-    (B0 => O26) = (0:0:0,0:0:0);
-    (B0 => O25) = (0:0:0,0:0:0);
-    (B0 => O24) = (0:0:0,0:0:0);
-    (B0 => O23) = (0:0:0,0:0:0);
-    (B0 => O22) = (0:0:0,0:0:0);
-    (B0 => O21) = (0:0:0,0:0:0);
-    (B0 => O20) = (0:0:0,0:0:0);
-    (B0 => O19) = (0:0:0,0:0:0);
-    (B0 => O18) = (0:0:0,0:0:0);
-    (B0 => O17) = (0:0:0,0:0:0);
-    (B0 => O16) = (0:0:0,0:0:0);
-    (B0 => O15) = (0:0:0,0:0:0);
-    (B0 => O14) = (0:0:0,0:0:0);
-    (B0 => O13) = (0:0:0,0:0:0);
-    (B0 => O12) = (0:0:0,0:0:0);
-    (B0 => O11) = (0:0:0,0:0:0);
-    (B0 => O10) = (0:0:0,0:0:0);
-    (B0 => O9) = (0:0:0,0:0:0);
-    (B0 => O8) = (0:0:0,0:0:0);
-    (B0 => O7) = (0:0:0,0:0:0);
-    (B0 => O6) = (0:0:0,0:0:0);
-    (B0 => O5) = (0:0:0,0:0:0);
-    (B0 => O4) = (0:0:0,0:0:0);
-    (B0 => O3) = (0:0:0,0:0:0);
-    (B0 => O2) = (0:0:0,0:0:0);
-    (B0 => O1) = (0:0:0,0:0:0);
     (B0 => O0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
-module C_0_ ( input PADDO, output C0 );
+module mult_lut_test1_mult_21 ( input A3, A1, A0, B2, B0, output O0 );
+  wire   GNDI;
+
+  MAC16_B \mult_lut_test1/mult_21 ( .CLK(GNDI), .CE(GNDI), .C15(GNDI), 
+    .C14(GNDI), .C13(GNDI), .C12(GNDI), .C11(GNDI), .C10(GNDI), .C9(GNDI), 
+    .C8(GNDI), .C7(GNDI), .C6(GNDI), .C5(GNDI), .C4(GNDI), .C3(GNDI), 
+    .C2(GNDI), .C1(GNDI), .C0(GNDI), .A15(GNDI), .A14(GNDI), .A13(GNDI), 
+    .A12(GNDI), .A11(GNDI), .A10(GNDI), .A9(GNDI), .A8(GNDI), .A7(GNDI), 
+    .A6(GNDI), .A5(GNDI), .A4(GNDI), .A3(A3), .A2(GNDI), .A1(A1), .A0(A0), 
+    .B15(GNDI), .B14(GNDI), .B13(GNDI), .B12(GNDI), .B11(GNDI), .B10(GNDI), 
+    .B9(GNDI), .B8(GNDI), .B7(GNDI), .B6(GNDI), .B5(GNDI), .B4(GNDI), 
+    .B3(GNDI), .B2(B2), .B1(GNDI), .B0(B0), .D15(GNDI), .D14(GNDI), .D13(GNDI), 
+    .D12(GNDI), .D11(GNDI), .D10(GNDI), .D9(GNDI), .D8(GNDI), .D7(GNDI), 
+    .D6(GNDI), .D5(GNDI), .D4(GNDI), .D3(GNDI), .D2(GNDI), .D1(GNDI), 
+    .D0(GNDI), .AHOLD(GNDI), .BHOLD(GNDI), .CHOLD(GNDI), .DHOLD(GNDI), 
+    .IRSTTOP(GNDI), .IRSTBOT(GNDI), .ORSTTOP(GNDI), .ORSTBOT(GNDI), 
+    .OLOADTOP(GNDI), .OLOADBOT(GNDI), .ADDSUBTOP(GNDI), .ADDSUBBOT(GNDI), 
+    .OHOLDTOP(GNDI), .OHOLDBOT(GNDI), .CI(GNDI), .ACCUMCI(GNDI), 
+    .SIGNEXTIN(GNDI), .O31(), .O30(), .O29(), .O28(), .O27(), .O26(), .O25(), 
+    .O24(), .O23(), .O22(), .O21(), .O20(), .O19(), .O18(), .O17(), .O16(), 
+    .O15(), .O14(), .O13(), .O12(), .O11(), .O10(), .O9(), .O8(), .O7(), .O6(), 
+    .O5(), .O4(), .O3(), .O2(), .O1(), .O0(O0), .CO(), .ACCUMCO(), 
+    .SIGNEXTOUT());
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A0 => O0) = (0:0:0,0:0:0);
+    (B0 => O0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module mult_lut_test7_mult_31 ( input A4, A0, B2, B0, output O0 );
+  wire   GNDI;
+
+  MAC16_B \mult_lut_test7/mult_31 ( .CLK(GNDI), .CE(GNDI), .C15(GNDI), 
+    .C14(GNDI), .C13(GNDI), .C12(GNDI), .C11(GNDI), .C10(GNDI), .C9(GNDI), 
+    .C8(GNDI), .C7(GNDI), .C6(GNDI), .C5(GNDI), .C4(GNDI), .C3(GNDI), 
+    .C2(GNDI), .C1(GNDI), .C0(GNDI), .A15(GNDI), .A14(GNDI), .A13(GNDI), 
+    .A12(GNDI), .A11(GNDI), .A10(GNDI), .A9(GNDI), .A8(GNDI), .A7(GNDI), 
+    .A6(GNDI), .A5(GNDI), .A4(A4), .A3(GNDI), .A2(GNDI), .A1(GNDI), .A0(A0), 
+    .B15(GNDI), .B14(GNDI), .B13(GNDI), .B12(GNDI), .B11(GNDI), .B10(GNDI), 
+    .B9(GNDI), .B8(GNDI), .B7(GNDI), .B6(GNDI), .B5(GNDI), .B4(GNDI), 
+    .B3(GNDI), .B2(B2), .B1(GNDI), .B0(B0), .D15(GNDI), .D14(GNDI), .D13(GNDI), 
+    .D12(GNDI), .D11(GNDI), .D10(GNDI), .D9(GNDI), .D8(GNDI), .D7(GNDI), 
+    .D6(GNDI), .D5(GNDI), .D4(GNDI), .D3(GNDI), .D2(GNDI), .D1(GNDI), 
+    .D0(GNDI), .AHOLD(GNDI), .BHOLD(GNDI), .CHOLD(GNDI), .DHOLD(GNDI), 
+    .IRSTTOP(GNDI), .IRSTBOT(GNDI), .ORSTTOP(GNDI), .ORSTBOT(GNDI), 
+    .OLOADTOP(GNDI), .OLOADBOT(GNDI), .ADDSUBTOP(GNDI), .ADDSUBBOT(GNDI), 
+    .OHOLDTOP(GNDI), .OHOLDBOT(GNDI), .CI(GNDI), .ACCUMCI(GNDI), 
+    .SIGNEXTIN(GNDI), .O31(), .O30(), .O29(), .O28(), .O27(), .O26(), .O25(), 
+    .O24(), .O23(), .O22(), .O21(), .O20(), .O19(), .O18(), .O17(), .O16(), 
+    .O15(), .O14(), .O13(), .O12(), .O11(), .O10(), .O9(), .O8(), .O7(), .O6(), 
+    .O5(), .O4(), .O3(), .O2(), .O1(), .O0(O0), .CO(), .ACCUMCO(), 
+    .SIGNEXTOUT());
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A0 => O0) = (0:0:0,0:0:0);
+    (B0 => O0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module mult_lut_test15_mult_23 ( input A6, A5, A4, A1, A0, B2, B0, output O0 );
+  wire   GNDI;
+
+  MAC16_B \mult_lut_test15/mult_23 ( .CLK(GNDI), .CE(GNDI), .C15(GNDI), 
+    .C14(GNDI), .C13(GNDI), .C12(GNDI), .C11(GNDI), .C10(GNDI), .C9(GNDI), 
+    .C8(GNDI), .C7(GNDI), .C6(GNDI), .C5(GNDI), .C4(GNDI), .C3(GNDI), 
+    .C2(GNDI), .C1(GNDI), .C0(GNDI), .A15(GNDI), .A14(GNDI), .A13(GNDI), 
+    .A12(GNDI), .A11(GNDI), .A10(GNDI), .A9(GNDI), .A8(GNDI), .A7(GNDI), 
+    .A6(A6), .A5(A5), .A4(A4), .A3(GNDI), .A2(GNDI), .A1(A1), .A0(A0), 
+    .B15(GNDI), .B14(GNDI), .B13(GNDI), .B12(GNDI), .B11(GNDI), .B10(GNDI), 
+    .B9(GNDI), .B8(GNDI), .B7(GNDI), .B6(GNDI), .B5(GNDI), .B4(GNDI), 
+    .B3(GNDI), .B2(B2), .B1(GNDI), .B0(B0), .D15(GNDI), .D14(GNDI), .D13(GNDI), 
+    .D12(GNDI), .D11(GNDI), .D10(GNDI), .D9(GNDI), .D8(GNDI), .D7(GNDI), 
+    .D6(GNDI), .D5(GNDI), .D4(GNDI), .D3(GNDI), .D2(GNDI), .D1(GNDI), 
+    .D0(GNDI), .AHOLD(GNDI), .BHOLD(GNDI), .CHOLD(GNDI), .DHOLD(GNDI), 
+    .IRSTTOP(GNDI), .IRSTBOT(GNDI), .ORSTTOP(GNDI), .ORSTBOT(GNDI), 
+    .OLOADTOP(GNDI), .OLOADBOT(GNDI), .ADDSUBTOP(GNDI), .ADDSUBBOT(GNDI), 
+    .OHOLDTOP(GNDI), .OHOLDBOT(GNDI), .CI(GNDI), .ACCUMCI(GNDI), 
+    .SIGNEXTIN(GNDI), .O31(), .O30(), .O29(), .O28(), .O27(), .O26(), .O25(), 
+    .O24(), .O23(), .O22(), .O21(), .O20(), .O19(), .O18(), .O17(), .O16(), 
+    .O15(), .O14(), .O13(), .O12(), .O11(), .O10(), .O9(), .O8(), .O7(), .O6(), 
+    .O5(), .O4(), .O3(), .O2(), .O1(), .O0(O0), .CO(), .ACCUMCO(), 
+    .SIGNEXTOUT());
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A0 => O0) = (0:0:0,0:0:0);
+    (B0 => O0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module mult_lut_test3_mult_35 ( input A3, A2, A0, B2, B0, output O0 );
+  wire   GNDI;
+
+  MAC16_B \mult_lut_test3/mult_35 ( .CLK(GNDI), .CE(GNDI), .C15(GNDI), 
+    .C14(GNDI), .C13(GNDI), .C12(GNDI), .C11(GNDI), .C10(GNDI), .C9(GNDI), 
+    .C8(GNDI), .C7(GNDI), .C6(GNDI), .C5(GNDI), .C4(GNDI), .C3(GNDI), 
+    .C2(GNDI), .C1(GNDI), .C0(GNDI), .A15(GNDI), .A14(GNDI), .A13(GNDI), 
+    .A12(GNDI), .A11(GNDI), .A10(GNDI), .A9(GNDI), .A8(GNDI), .A7(GNDI), 
+    .A6(GNDI), .A5(GNDI), .A4(GNDI), .A3(A3), .A2(A2), .A1(GNDI), .A0(A0), 
+    .B15(GNDI), .B14(GNDI), .B13(GNDI), .B12(GNDI), .B11(GNDI), .B10(GNDI), 
+    .B9(GNDI), .B8(GNDI), .B7(GNDI), .B6(GNDI), .B5(GNDI), .B4(GNDI), 
+    .B3(GNDI), .B2(B2), .B1(GNDI), .B0(B0), .D15(GNDI), .D14(GNDI), .D13(GNDI), 
+    .D12(GNDI), .D11(GNDI), .D10(GNDI), .D9(GNDI), .D8(GNDI), .D7(GNDI), 
+    .D6(GNDI), .D5(GNDI), .D4(GNDI), .D3(GNDI), .D2(GNDI), .D1(GNDI), 
+    .D0(GNDI), .AHOLD(GNDI), .BHOLD(GNDI), .CHOLD(GNDI), .DHOLD(GNDI), 
+    .IRSTTOP(GNDI), .IRSTBOT(GNDI), .ORSTTOP(GNDI), .ORSTBOT(GNDI), 
+    .OLOADTOP(GNDI), .OLOADBOT(GNDI), .ADDSUBTOP(GNDI), .ADDSUBBOT(GNDI), 
+    .OHOLDTOP(GNDI), .OHOLDBOT(GNDI), .CI(GNDI), .ACCUMCI(GNDI), 
+    .SIGNEXTIN(GNDI), .O31(), .O30(), .O29(), .O28(), .O27(), .O26(), .O25(), 
+    .O24(), .O23(), .O22(), .O21(), .O20(), .O19(), .O18(), .O17(), .O16(), 
+    .O15(), .O14(), .O13(), .O12(), .O11(), .O10(), .O9(), .O8(), .O7(), .O6(), 
+    .O5(), .O4(), .O3(), .O2(), .O1(), .O0(O0), .CO(), .ACCUMCO(), 
+    .SIGNEXTOUT());
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A0 => O0) = (0:0:0,0:0:0);
+    (B0 => O0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module mult_lut_test11_mult_27 ( input A6, A5, A3, A2, A1, A0, B2, B0, output 
+    O0 );
+  wire   GNDI;
+
+  MAC16_B \mult_lut_test11/mult_27 ( .CLK(GNDI), .CE(GNDI), .C15(GNDI), 
+    .C14(GNDI), .C13(GNDI), .C12(GNDI), .C11(GNDI), .C10(GNDI), .C9(GNDI), 
+    .C8(GNDI), .C7(GNDI), .C6(GNDI), .C5(GNDI), .C4(GNDI), .C3(GNDI), 
+    .C2(GNDI), .C1(GNDI), .C0(GNDI), .A15(GNDI), .A14(GNDI), .A13(GNDI), 
+    .A12(GNDI), .A11(GNDI), .A10(GNDI), .A9(GNDI), .A8(GNDI), .A7(GNDI), 
+    .A6(A6), .A5(A5), .A4(GNDI), .A3(A3), .A2(A2), .A1(A1), .A0(A0), 
+    .B15(GNDI), .B14(GNDI), .B13(GNDI), .B12(GNDI), .B11(GNDI), .B10(GNDI), 
+    .B9(GNDI), .B8(GNDI), .B7(GNDI), .B6(GNDI), .B5(GNDI), .B4(GNDI), 
+    .B3(GNDI), .B2(B2), .B1(GNDI), .B0(B0), .D15(GNDI), .D14(GNDI), .D13(GNDI), 
+    .D12(GNDI), .D11(GNDI), .D10(GNDI), .D9(GNDI), .D8(GNDI), .D7(GNDI), 
+    .D6(GNDI), .D5(GNDI), .D4(GNDI), .D3(GNDI), .D2(GNDI), .D1(GNDI), 
+    .D0(GNDI), .AHOLD(GNDI), .BHOLD(GNDI), .CHOLD(GNDI), .DHOLD(GNDI), 
+    .IRSTTOP(GNDI), .IRSTBOT(GNDI), .ORSTTOP(GNDI), .ORSTBOT(GNDI), 
+    .OLOADTOP(GNDI), .OLOADBOT(GNDI), .ADDSUBTOP(GNDI), .ADDSUBBOT(GNDI), 
+    .OHOLDTOP(GNDI), .OHOLDBOT(GNDI), .CI(GNDI), .ACCUMCI(GNDI), 
+    .SIGNEXTIN(GNDI), .O31(), .O30(), .O29(), .O28(), .O27(), .O26(), .O25(), 
+    .O24(), .O23(), .O22(), .O21(), .O20(), .O19(), .O18(), .O17(), .O16(), 
+    .O15(), .O14(), .O13(), .O12(), .O11(), .O10(), .O9(), .O8(), .O7(), .O6(), 
+    .O5(), .O4(), .O3(), .O2(), .O1(), .O0(O0), .CO(), .ACCUMCO(), 
+    .SIGNEXTOUT());
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A0 => O0) = (0:0:0,0:0:0);
+    (B0 => O0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module mult_lut_test13_mult_25 ( input A6, A5, A4, A0, B2, B0, output O0 );
+  wire   GNDI;
+
+  MAC16_B \mult_lut_test13/mult_25 ( .CLK(GNDI), .CE(GNDI), .C15(GNDI), 
+    .C14(GNDI), .C13(GNDI), .C12(GNDI), .C11(GNDI), .C10(GNDI), .C9(GNDI), 
+    .C8(GNDI), .C7(GNDI), .C6(GNDI), .C5(GNDI), .C4(GNDI), .C3(GNDI), 
+    .C2(GNDI), .C1(GNDI), .C0(GNDI), .A15(GNDI), .A14(GNDI), .A13(GNDI), 
+    .A12(GNDI), .A11(GNDI), .A10(GNDI), .A9(GNDI), .A8(GNDI), .A7(GNDI), 
+    .A6(A6), .A5(A5), .A4(A4), .A3(GNDI), .A2(GNDI), .A1(GNDI), .A0(A0), 
+    .B15(GNDI), .B14(GNDI), .B13(GNDI), .B12(GNDI), .B11(GNDI), .B10(GNDI), 
+    .B9(GNDI), .B8(GNDI), .B7(GNDI), .B6(GNDI), .B5(GNDI), .B4(GNDI), 
+    .B3(GNDI), .B2(B2), .B1(GNDI), .B0(B0), .D15(GNDI), .D14(GNDI), .D13(GNDI), 
+    .D12(GNDI), .D11(GNDI), .D10(GNDI), .D9(GNDI), .D8(GNDI), .D7(GNDI), 
+    .D6(GNDI), .D5(GNDI), .D4(GNDI), .D3(GNDI), .D2(GNDI), .D1(GNDI), 
+    .D0(GNDI), .AHOLD(GNDI), .BHOLD(GNDI), .CHOLD(GNDI), .DHOLD(GNDI), 
+    .IRSTTOP(GNDI), .IRSTBOT(GNDI), .ORSTTOP(GNDI), .ORSTBOT(GNDI), 
+    .OLOADTOP(GNDI), .OLOADBOT(GNDI), .ADDSUBTOP(GNDI), .ADDSUBBOT(GNDI), 
+    .OHOLDTOP(GNDI), .OHOLDBOT(GNDI), .CI(GNDI), .ACCUMCI(GNDI), 
+    .SIGNEXTIN(GNDI), .O31(), .O30(), .O29(), .O28(), .O27(), .O26(), .O25(), 
+    .O24(), .O23(), .O22(), .O21(), .O20(), .O19(), .O18(), .O17(), .O16(), 
+    .O15(), .O14(), .O13(), .O12(), .O11(), .O10(), .O9(), .O8(), .O7(), .O6(), 
+    .O5(), .O4(), .O3(), .O2(), .O1(), .O0(O0), .CO(), .ACCUMCO(), 
+    .SIGNEXTOUT());
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A0 => O0) = (0:0:0,0:0:0);
+    (B0 => O0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module C_23_ ( input PADDO, output C23 );
   wire   VCCI;
 
-  BB_B_B \C_pad[0].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(C0));
+  BB_B_B \C_pad[23].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(C23));
   vcc DRIVEVCC( .PWR1(VCCI));
 
   specify
-    (PADDO => C0) = (0:0:0,0:0:0);
+    (PADDO => C23) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
@@ -1387,14 +433,55 @@ module BB_B_B ( input T_N, I, output O, inout B );
   BB_B INST10( .T_N(T_N), .I(I), .O(O), .B(B));
 endmodule
 
-module C_31_ ( input PADDO, output C31 );
+module vcc ( output PWR1 );
+
+  VHI INST1( .Z(PWR1));
+endmodule
+
+module C_24_ ( input PADDO, output C24 );
   wire   VCCI;
 
-  BB_B_B \C_pad[31].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(C31));
+  BB_B_B \C_pad[24].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(C24));
   vcc DRIVEVCC( .PWR1(VCCI));
 
   specify
-    (PADDO => C31) = (0:0:0,0:0:0);
+    (PADDO => C24) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module C_25_ ( input PADDO, output C25 );
+  wire   VCCI;
+
+  BB_B_B \C_pad[25].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(C25));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => C25) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module C_26_ ( input PADDO, output C26 );
+  wire   VCCI;
+
+  BB_B_B \C_pad[26].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(C26));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => C26) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module C_27_ ( input PADDO, output C27 );
+  wire   VCCI;
+
+  BB_B_B \C_pad[27].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(C27));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => C27) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
@@ -1431,6 +518,18 @@ module C_30_ ( input PADDO, output C30 );
 
   specify
     (PADDO => C30) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module C_0_ ( input PADDO, output C0 );
+  wire   VCCI;
+
+  BB_B_B \C_pad[0].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(C0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => C0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
@@ -1699,62 +798,14 @@ module C_22_ ( input PADDO, output C22 );
 
 endmodule
 
-module C_23_ ( input PADDO, output C23 );
+module C_31_ ( input PADDO, output C31 );
   wire   VCCI;
 
-  BB_B_B \C_pad[23].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(C23));
+  BB_B_B \C_pad[31].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(C31));
   vcc DRIVEVCC( .PWR1(VCCI));
 
   specify
-    (PADDO => C23) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module C_24_ ( input PADDO, output C24 );
-  wire   VCCI;
-
-  BB_B_B \C_pad[24].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(C24));
-  vcc DRIVEVCC( .PWR1(VCCI));
-
-  specify
-    (PADDO => C24) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module C_25_ ( input PADDO, output C25 );
-  wire   VCCI;
-
-  BB_B_B \C_pad[25].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(C25));
-  vcc DRIVEVCC( .PWR1(VCCI));
-
-  specify
-    (PADDO => C25) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module C_26_ ( input PADDO, output C26 );
-  wire   VCCI;
-
-  BB_B_B \C_pad[26].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(C26));
-  vcc DRIVEVCC( .PWR1(VCCI));
-
-  specify
-    (PADDO => C26) = (0:0:0,0:0:0);
-  endspecify
-
-endmodule
-
-module C_27_ ( input PADDO, output C27 );
-  wire   VCCI;
-
-  BB_B_B \C_pad[27].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(C27));
-  vcc DRIVEVCC( .PWR1(VCCI));
-
-  specify
-    (PADDO => C27) = (0:0:0,0:0:0);
+    (PADDO => C31) = (0:0:0,0:0:0);
   endspecify
 
 endmodule

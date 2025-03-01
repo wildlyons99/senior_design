@@ -1,7 +1,7 @@
 |************************************************************************
 | IBIS Models Generator: Lattice Radiant Software (64-bit) 2023.1.0.43.3
-| Report Generate Date: Oct 30 2024
-| Report Generate Time: 16:20:52
+| Report Generate Date: Feb 17 2025
+| Report Generate Time: 15:33:57
 |************************************************************************
 |IBIS file ice40up.ibs   
 |Lattice Semiconductor Corporation   
@@ -136,38 +136,38 @@ L_pkg          2.652nH         1.989nH         3.504nH
 C_pkg          0.2807pF        0.2236pF        0.3481pF
 |
 [Pin]  signal_name          model_name           R_pin     L_pin     C_pin
-31            C[0]                 lvc330a080aaaaaaaaou
-19            C[31]                lvc330a080aaaaaaaaou
-4             C[28]                lvc330a080aaaaaaaaou
-10            C[29]                lvc330a080aaaaaaaaou
-11            C[30]                lvc330a080aaaaaaaaou
-46            C[1]                 lvc330a080aaaaaaaaou
-47            C[2]                 lvc330a080aaaaaaaaou
-23            C[3]                 lvc330a080aaaaaaaaou
-27            C[4]                 lvc330a080aaaaaaaaou
-45            C[5]                 lvc330a080aaaaaaaaou
-32            C[6]                 lvc330a080aaaaaaaaou
-25            C[7]                 lvc330a080aaaaaaaaou
-37            C[8]                 lvc330a080aaaaaaaaou
-34            C[9]                 lvc330a080aaaaaaaaou
-28            C[10]                lvc330a080aaaaaaaaou
-35            C[11]                lvc330a080aaaaaaaaou
-26            C[12]                lvc330a080aaaaaaaaou
-18            C[13]                lvc330a080aaaaaaaaou
-3             C[14]                lvc330a080aaaaaaaaou
-12            C[15]                lvc330a080aaaaaaaaou
-13            C[16]                lvc330a080aaaaaaaaou
-21            C[17]                lvc330a080aaaaaaaaou
-44            C[18]                lvc330a080aaaaaaaaou
-15            C[19]                lvc330a080aaaaaaaaou
-2             C[20]                lvc330a080aaaaaaaaou
-9             C[21]                lvc330a080aaaaaaaaou
-20            C[22]                lvc330a080aaaaaaaaou
-17            C[23]                lvc330a080aaaaaaaaou
-6             C[24]                lvc330a080aaaaaaaaou
-14            C[25]                lvc330a080aaaaaaaaou
-48            C[26]                lvc330a080aaaaaaaaou
-16            C[27]                lvc330a080aaaaaaaaou
+26            C[23]                lvc330a080aaaaaaaaou
+47            C[24]                lvc330a080aaaaaaaaou
+38            C[25]                lvc330a080aaaaaaaaou
+34            C[26]                lvc330a080aaaaaaaaou
+12            C[27]                lvc330a080aaaaaaaaou
+11            C[28]                lvc330a080aaaaaaaaou
+15            C[29]                lvc330a080aaaaaaaaou
+32            C[30]                lvc330a080aaaaaaaaou
+10            C[0]                 lvc330a080aaaaaaaaou
+25            C[1]                 lvc330a080aaaaaaaaou
+9             C[2]                 lvc330a080aaaaaaaaou
+13            C[3]                 lvc330a080aaaaaaaaou
+48            C[4]                 lvc330a080aaaaaaaaou
+16            C[5]                 lvc330a080aaaaaaaaou
+36            C[6]                 lvc330a080aaaaaaaaou
+27            C[7]                 lvc330a080aaaaaaaaou
+20            C[8]                 lvc330a080aaaaaaaaou
+17            C[9]                 lvc330a080aaaaaaaaou
+4             C[10]                lvc330a080aaaaaaaaou
+21            C[11]                lvc330a080aaaaaaaaou
+35            C[12]                lvc330a080aaaaaaaaou
+44            C[13]                lvc330a080aaaaaaaaou
+28            C[14]                lvc330a080aaaaaaaaou
+3             C[15]                lvc330a080aaaaaaaaou
+6             C[16]                lvc330a080aaaaaaaaou
+46            C[17]                lvc330a080aaaaaaaaou
+31            C[18]                lvc330a080aaaaaaaaou
+43            C[19]                lvc330a080aaaaaaaaou
+37            C[20]                lvc330a080aaaaaaaaou
+42            C[21]                lvc330a080aaaaaaaaou
+2             C[22]                lvc330a080aaaaaaaaou
+45            C[31]                lvc330a080aaaaaaaaou
 |************************************************************************
 [Model] lvc330a080aaaaaaaaou
 Model_type Output
