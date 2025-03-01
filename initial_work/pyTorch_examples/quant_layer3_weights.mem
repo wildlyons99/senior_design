@@ -1,0 +1,100 @@
+// Row 0 (weights pointing to neuron 0)
+BE
+F9
+F8
+AC
+EA
+26
+20
+7F
+
+// Row 1 (weights pointing to neuron 1)
+30
+33
+80
+28
+CE
+03
+E7
+BD
+
+// Row 2 (weights pointing to neuron 2)
+85
+D4
+2B
+48
+80
+7E
+09
+9C
+
+// Row 3 (weights pointing to neuron 3)
+56
+3B
+EF
+80
+D8
+3E
+18
+91
+
+// Row 4 (weights pointing to neuron 4)
+81
+FC
+31
+DD
+4B
+E1
+17
+F0
+
+// Row 5 (weights pointing to neuron 5)
+13
+DC
+81
+D1
+2E
+0B
+0B
+27
+
+// Row 6 (weights pointing to neuron 6)
+80
+26
+BC
+B2
+BB
+C4
+C4
+E2
+
+// Row 7 (weights pointing to neuron 7)
+31
+C4
+41
+FB
+97
+82
+F5
+4F
+
+// Row 8 (weights pointing to neuron 8)
+DB
+CD
+A9
+7F
+39
+16
+16
+CD
+
+// Row 9 (weights pointing to neuron 9)
+FB
+D3
+57
+59
+2F
+80
+CF
+91
+
