@@ -1,0 +1,23 @@
+#Start recording tcl command: 3/8/2025 16:14:30
+#Project Location: Z:/senior_design/0v7670_Verilog/SCCB; Project name: SCCB
+prj_open "Z:/senior_design/0v7670_Verilog/SCCB/SCCB.rdf"
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Export -impl impl_1
+prj_add_source "Z:/senior_design/0v7670_Verilog/SCCB/a.pdc"
+prj_enable_source "Z:/senior_design/0v7670_Verilog/SCCB/a.pdc"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+#Stop recording: 3/8/2025 17:06:59
