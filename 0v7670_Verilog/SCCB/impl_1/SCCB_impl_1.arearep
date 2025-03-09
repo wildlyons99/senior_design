@@ -1,0 +1,64 @@
+----------------------------------------------------------------------
+Report for cell camera_configure.TECH
+Register bits:  148 of 5280 (2.803%)
+I/O cells:      6
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        39          100.0
+                            FD1P3XZ       148          100.0
+                                 IB         2          100.0
+                              IOL_B         1          100.0
+                               LUT4       418          100.0
+                                 OB         2          100.0
+                              OBZ_B         2          100.0
+                              PLL_B         1          100.0
+SUB MODULES
+                      OV7670_config         1
+                  OV7670_config_rom         1
+                     SCCB_interface         1
+                              mypll         1
+mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
+                              TOTAL       618
+----------------------------------------------------------------------
+Report for cell OV7670_config.v1
+Instance Path : config_1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        22           56.4
+                            FD1P3XZ        59           39.9
+                              IOL_B         1          100.0
+                               LUT4        40            9.6
+                              TOTAL       122
+----------------------------------------------------------------------
+Report for cell OV7670_config_rom.v1
+Instance Path : rom1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ        16           10.8
+                               LUT4       281           67.2
+                              TOTAL       297
+----------------------------------------------------------------------
+Report for cell SCCB_interface.v1
+Instance Path : SCCB1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        17           43.6
+                            FD1P3XZ        73           49.3
+                               LUT4        95           22.7
+                              TOTAL       185
+----------------------------------------------------------------------
+Report for cell mypll.v1
+Instance Path : cory_pll
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              PLL_B         1          100.0
+SUB MODULES
+mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000").v1
+Instance Path : cory_pll.lscc_pll_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              PLL_B         1          100.0
+                              TOTAL         1
