@@ -1,0 +1,24 @@
+#Start recording tcl command: 3/8/2025 15:12:47
+#Project Location: Z:/senior_design/0v7670_Verilog/SCCB; Project name: SCCB
+prj_create -name "SCCB" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+prj_add_source "Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/camera_configure.v" "Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/camera_read.v" "Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/OV7670_config.v" "Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/OV7670_config_rom.v" "Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/SCCB_interface.v"
+prj_save 
+prj_add_source "Z:/senior_design/0v7670_Verilog/SCCB/mypll/mypll.ipx"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_set_impl_opt -impl "impl_1" "top" "OV7670_config"
+prj_set_impl_opt -impl "impl_1" "top" "camera_configure"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+#Stop recording: 3/8/2025 16:13:45
