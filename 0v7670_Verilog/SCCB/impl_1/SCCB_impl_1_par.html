@@ -42,7 +42,7 @@ if (a)
 <DIV id="content" onclick="hideTocList()"><PRE>
 <A name="Par"></A>Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
-Sat Mar  8 17:02:34 2025
+Sun Mar  9 13:15:26 2025
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 	SCCB_impl_1_map.udb SCCB_impl_1.udb 
@@ -60,7 +60,7 @@ Total (real) run time for 1-seed: 16 secs
 par done!
 
 Lattice Place and Route Report for Design &quot;SCCB_impl_1_map.udb&quot;
-Sat Mar  8 17:02:34 2025
+Sun Mar  9 13:15:26 2025
 
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
@@ -112,9 +112,9 @@ Number of Connections: 2277
    OPENDRAIN          0/3             0% used
 
 Pin Constraint Summary:
-   1 out of 6 pins locked (16% locked).
+   5 out of 6 pins locked (83% locked).
 .
-.............
+...........
 Finished Placer Phase 0 (HIER). CPU time: 1 secs , REAL time: 2 secs 
 
 
@@ -125,20 +125,20 @@ Starting Placer Phase 1. CPU time: 1 secs , REAL time: 2 secs
 ..  ..
 ....................
 
-Placer score = 113219.
+Placer score = 119780.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE            282/2640         10% used
+   SLICE            279/2640         10% used
 
 WARNING &lt;70001944&gt; - par: No master clock for
 	generated clock	create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
-Finished Placer Phase 1. CPU time: 12 secs , REAL time: 12 secs 
+Finished Placer Phase 1. CPU time: 11 secs , REAL time: 12 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  147866
-Finished Placer Phase 2.  CPU time: 12 secs , REAL time: 13 secs 
+Placer score =  156451
+Finished Placer Phase 2.  CPU time: 11 secs , REAL time: 12 secs 
 
 
 
@@ -162,17 +162,17 @@ I/O Bank Usage Summary:
 +----------+---------------+------------+------------+------------+
 | I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
 +----------+---------------+------------+------------+------------+
-| 0        | 3 / 14 ( 21%) | 3.3V       |            |            |
-| 1        | 2 / 14 ( 14%) | 3.3V       |            |            |
-| 2        | 1 / 8 ( 12%)  | 3.3V       |            |            |
+| 0        | 0 / 14 (  0%) | OFF        |            |            |
+| 1        | 1 / 14 (  7%) | 3.3V       |            |            |
+| 2        | 5 / 8 ( 62%)  | 3.3V       |            |            |
 +----------+---------------+------------+------------+------------+
 
-Total Placer CPU time: 12 secs , REAL time: 13 secs 
+Total Placer CPU time: 11 secs , REAL time: 12 secs 
 
 Writing design to file SCCB_impl_1_par.dir/5_1.udb ...
 
 
-Start NBR router at 17:02:47 03/08/25
+Start NBR router at 13:15:38 03/09/25
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -190,9 +190,9 @@ Note: NBR uses a different method to calculate timing slacks. The
 Starting routing resource preassignment
 Preassignment Summary:
 --------------------------------------------------------------------------------
-217 connections routed with dedicated routing resources
+216 connections routed with dedicated routing resources
 1 global clock signals routed
-312 connections routed (of 2210 total) (14.12%)
+311 connections routed (of 2210 total) (14.07%)
 ---------------------------------------------------------
 Clock routing summary:
 Primary clocks (1 used out of 8 available):
@@ -201,7 +201,7 @@ Primary clocks (1 used out of 8 available):
        Data    loads: 0     out of     1 routed (  0.00%)
 Other clocks:
     Signal &quot;clk_c&quot;
-       Clock   loads: 1     out of     1 routed (100.00%)
+       Clock   loads: 0     out of     1 routed (  0.00%)
     Signal &quot;cory_pll.lscc_pll_inst.feedback_w&quot;
        Clock   loads: 1     out of     1 routed (100.00%)
 ---------------------------------------------------------
@@ -213,30 +213,28 @@ WARNING &lt;70001944&gt; - par: No master clock for
 Routing in Serial Mode ......
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Start NBR section for initial routing at 17:02:47 03/08/25
+Start NBR section for initial routing at 13:15:39 03/09/25
 Level 4, iteration 1
-114(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 2 secs 
+115(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 17:02:49 03/08/25
+Start NBR section for normal routing at 13:15:41 03/09/25
 Level 4, iteration 1
-18(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 2 secs 
+14(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
 Level 4, iteration 2
-11(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 2 secs 
+8(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
 Level 4, iteration 3
-5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 2 secs 
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
 Level 4, iteration 4
-2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 2 secs 
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
 Level 4, iteration 5
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 2 secs 
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
 Level 4, iteration 6
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 2 secs 
-Level 4, iteration 7
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 2 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
 
-Start NBR section for post-routing at 17:02:49 03/08/25
+Start NBR section for post-routing at 13:15:41 03/09/25
 
 End NBR router with 0 unrouted connection
 WARNING &lt;70001944&gt; - par: No master clock for
@@ -258,7 +256,7 @@ Starting full timing analysis...
 
 
 Total CPU time 3 secs 
-Total REAL time: 3 secs 
+Total REAL time: 4 secs 
 Completely routed.
 End of route.  2210 routed (100.00%); 0 unrouted.
 
@@ -278,7 +276,7 @@ PAR_SUMMARY::Number of errors = 0
 
 Total CPU  Time: 15 secs 
 Total REAL Time: 16 secs 
-Peak Memory Usage: 124.57 MB
+Peak Memory Usage: 124.49 MB
 
 
 par done!
