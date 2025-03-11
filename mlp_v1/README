@@ -1,0 +1,5 @@
+To run testbench: 
+
+- Download icarus verilog
+- Compile: "iverilog -o testbench control_unit.v control_unit_tb.v"
+- Run: "vvp testbench"
