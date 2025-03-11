@@ -51,7 +51,7 @@ module OV7670_config
     
     reg [2:0] FSM_state = FSM_IDLE;
     reg [2:0] FSM_return_state;
-    reg [31:0] timer = 0; 
+    reg [31:0] timer = 0;
     
     always@(posedge clk) begin
     

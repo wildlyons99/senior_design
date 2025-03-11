@@ -1,4 +1,400 @@
 
+map -i "SCCB_impl_1_syn.udb" -pdc "Z:/senior_design/0v7670_Verilog/SCCB/a.pdc" -o "SCCB_impl_1_map.udb" -mp "SCCB_impl_1.mrp" -hierrpt     
+map:  version Radiant Software (64-bit) 2023.1.0.43.3
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Command line:   map -i SCCB_impl_1_syn.udb -pdc Z:/senior_design/0v7670_Verilog/SCCB/a.pdc -o SCCB_impl_1_map.udb -mp SCCB_impl_1.mrp -hierrpt -gui 
+
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+
+
+
+   Remove unused logic
+
+   Do not produce over sized UDBs.
+
+Design:  camera_configure
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:  High-Performance_1.2V
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of slice registers: 148 out of  5280 (3%)
+   Number of I/O registers:      1 out of   117 (1%)
+   Number of LUT4s:           531 out of  5280 (10%)
+      Number of logic LUT4s:             420
+      Number of inserted feedthru LUT4s:  33
+      Number of ripple logic:             39 (78 LUT4s)
+   Number of IO sites used:   6 out of 39 (15%)
+      Number of IO sites used for general PIO: 6
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 6 out of 36 (17%)
+      Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 6 out of 39 (15%)
+   Number of DSPs:             0 out of 8 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  0 out of 1 (0%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             0 out of 30 (0%)
+   Number of PLLs:             1 out of 1 (100%)
+   Number of Clocks:  2
+      Net test_clk_c: 127 loads, 127 rising, 0 falling (Driver: Pin cory_pll.lscc_pll_inst.u_PLL_B/OUTCORE)
+      Net clk_c: 1 loads, 1 rising, 0 falling (Driver: Port clk)
+   Number of Clock Enables:  18
+      Net FSM_state_0__N_77: 1 loads, 1 SLICEs
+      Net config_1.timer_0__N_165: 24 loads, 24 SLICEs
+      Net config_1.SCCB_data_0__N_72: 16 loads, 16 SLICEs
+      Net config_1.rom_addr_0__N_23: 5 loads, 5 SLICEs
+      Net FSM_state_1__N_74: 1 loads, 1 SLICEs
+      Net config_1.test_clk_c_enable_1: 1 loads, 0 SLICEs
+      Net SCCB1.byte_counter_0__N_295: 2 loads, 2 SLICEs
+      Net SCCB1.SCCB_ready_N_326: 1 loads, 1 SLICEs
+      Net SCCB1.SCCB_SIOD_oe_N_330: 1 loads, 1 SLICEs
+      Net SCCB1.FSM_state_0__N_174: 2 loads, 2 SLICEs
+      Net SCCB1.latched_data_0__N_291: 16 loads, 16 SLICEs
+      Net SCCB1.FSM_state_2__N_170: 2 loads, 2 SLICEs
+      Net SCCB1.tx_byte_0__N_311: 8 loads, 8 SLICEs
+      Net SCCB1.FSM_return_state_1__N_181: 3 loads, 3 SLICEs
+      Net SCCB1.timer_0__N_275: 3 loads, 3 SLICEs
+      Net SCCB1.timer_2__N_270: 18 loads, 18 SLICEs
+      Net SCCB1.SCCB_SIOC_oe_N_327: 1 loads, 1 SLICEs
+      Net SCCB1.byte_index_1__N_320: 3 loads, 3 SLICEs
+   Number of LSRs:  17
+      Net config_1.timer_0__N_166: 16 loads, 16 SLICEs
+      Net config_1.timer_19__N_116: 1 loads, 1 SLICEs
+      Net config_1.rom_addr_0__N_24: 5 loads, 5 SLICEs
+      Net config_1.FSM_state_1__N_75: 1 loads, 1 SLICEs
+      Net rom1.rom_dout_8__N_40: 3 loads, 3 SLICEs
+      Net rom1.rom_dout_4__N_48: 2 loads, 2 SLICEs
+      Net rom1.rom_dout_6__N_44: 2 loads, 2 SLICEs
+      Net rom1.rom_dout_0__N_56: 7 loads, 7 SLICEs
+      Net rom1.rom_dout_15__N_26: 1 loads, 1 SLICEs
+      Net rom1.rom_dout_7__N_42: 1 loads, 1 SLICEs
+      Net SCCB1.FSM_return_state_2__N_179: 1 loads, 1 SLICEs
+      Net SCCB1.timer_2__N_271: 3 loads, 3 SLICEs
+      Net SCCB1.tx_byte_0__N_312: 1 loads, 1 SLICEs
+      Net SCCB1.byte_index_1__N_321: 3 loads, 3 SLICEs
+      Net SCCB1.timer_3__N_268: 3 loads, 3 SLICEs
+      Net SCCB1.timer_18__N_224: 12 loads, 12 SLICEs
+      Net SCCB1.SCCB_SIOC_oe_N_328: 1 loads, 1 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net VCC_net: 65 loads
+      Net FSM_state_adj_415[2]: 44 loads
+      Net SCCB1.FSM_state[3]: 36 loads
+      Net rom1.n14_adj_343: 34 loads
+      Net FSM_state_adj_415[0]: 32 loads
+      Net rom1.n14_adj_336: 32 loads
+      Net rom1.n14_adj_348: 31 loads
+      Net SCCB1.FSM_state[1]_2: 30 loads
+      Net rom_addr[2]: 29 loads
+      Net rom_addr[3]: 29 loads
+Running physical design DRC...
+
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+Constraint Summary:
+   Total number of constraints: 6
+   Total number of constraints dropped: 0
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 63 MB
+
+
+par -f "SCCB_impl_1.p2t" "SCCB_impl_1_map.udb" "SCCB_impl_1.udb"
+
+Lattice Place and Route Report for Design "SCCB_impl_1_map.udb"
+Sun Mar  9 13:15:26 2025
+
+PAR: Place And Route Radiant Software (64-bit) 2023.1.0.43.3.
+Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON SCCB_impl_1_map.udb \
+	SCCB_impl_1_par.dir/5_1.udb 
+
+Loading SCCB_impl_1_map.udb ...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+
+
+
+Design:  camera_configure
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+WARNING <70001944> - No master clock for
+	generated clock	create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
+
+WARNING: Database constraint "create_generated_clock -name {test_clk_c} -source [get_pins cory_pll.lscc_pll_inst.u_PLL_B/REFERENCECLK] -divide_by 32 -multiply_by 67 [get_pins cory_pll.lscc_pll_inst.u_PLL_B/OUTCORE]" does not have corresponding timing constraint. Please check if the resource objects of the constraint are valid carefully!
+Number of Signals: 753
+Number of Connections: 2277
+Device utilization summary:
+
+   SLICE (est.)     285/2640         11% used
+     LUT            531/5280         10% used
+     REG            148/5280          3% used
+   PIO                6/56           11% used
+                      6/36           16% bonded
+   IOLOGIC            1/56            2% used
+   DSP                0/8             0% used
+   I2C                0/2             0% used
+   HFOSC              0/1             0% used
+   LFOSC              0/1             0% used
+   LEDDA_IP           0/1             0% used
+   RGBA_DRV           0/1             0% used
+   FILTER             0/2             0% used
+   SRAM               0/4             0% used
+   WARMBOOT           0/1             0% used
+   SPI                0/2             0% used
+   EBR                0/30            0% used
+   PLL                1/1           100% used
+   RGBOUTBUF          0/3             0% used
+   I3C                0/2             0% used
+   OPENDRAIN          0/3             0% used
+
+Pin Constraint Summary:
+   5 out of 6 pins locked (83% locked).
+.
+...........
+Finished Placer Phase 0 (HIER). CPU time: 1 secs , REAL time: 2 secs 
+
+
+................
+Finished Placer Phase 0 (AP).  CPU time: 1 secs , REAL time: 2 secs 
+
+Starting Placer Phase 1. CPU time: 1 secs , REAL time: 2 secs 
+..  ..
+....................
+
+Placer score = 119780.
+
+Device SLICE utilization summary after final SLICE packing:
+   SLICE            279/2640         10% used
+
+WARNING <70001944> - No master clock for
+	generated clock	create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
+Finished Placer Phase 1. CPU time: 11 secs , REAL time: 12 secs 
+
+Starting Placer Phase 2.
+.
+
+Placer score =  156451
+Finished Placer Phase 2.  CPU time: 11 secs , REAL time: 12 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clocks :
+  PRIMARY "test_clk_c" from OUTCORE on comp "cory_pll.lscc_pll_inst.u_PLL_B" on site "PLL_R13C32", clk load = 95, ce load = 0, sr load = 0
+
+  PRIMARY  : 1 out of 8 (12%)
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   6 out of 56 (10.7%) I/O sites used.
+   6 out of 36 (16.7%) bonded I/O sites used.
+   Number of I/O components: 6; differential: 0
+   Number of Vref pins used: 0
+
+I/O Bank Usage Summary:
++----------+---------------+------------+------------+------------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+---------------+------------+------------+------------+
+| 0        | 0 / 14 (  0%) | OFF        |            |            |
+| 1        | 1 / 14 (  7%) | 3.3V       |            |            |
+| 2        | 5 / 8 ( 62%)  | 3.3V       |            |            |
++----------+---------------+------------+------------+------------+
+
+Total Placer CPU time: 11 secs , REAL time: 12 secs 
+
+Writing design to file SCCB_impl_1_par.dir/5_1.udb ...
+
+
+Start NBR router at 13:15:38 03/09/25
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in timing report. You should always run the timing    
+      tool to verify your design.                                
+*****************************************************************
+
+Starting routing resource preassignment
+Preassignment Summary:
+--------------------------------------------------------------------------------
+216 connections routed with dedicated routing resources
+1 global clock signals routed
+311 connections routed (of 2210 total) (14.07%)
+---------------------------------------------------------
+Clock routing summary:
+Primary clocks (1 used out of 8 available):
+#0  Signal "test_clk_c"
+       Clock   loads: 95    out of    95 routed (100.00%)
+       Data    loads: 0     out of     1 routed (  0.00%)
+Other clocks:
+    Signal "clk_c"
+       Clock   loads: 0     out of     1 routed (  0.00%)
+    Signal "cory_pll.lscc_pll_inst.feedback_w"
+       Clock   loads: 1     out of     1 routed (100.00%)
+---------------------------------------------------------
+--------------------------------------------------------------------------------
+Completed routing resource preassignment
+WARNING <70001944> - No master clock for
+	generated clock	create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
+    TimerIf::skewscore 0
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Routing in Serial Mode ......
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Start NBR section for initial routing at 13:15:39 03/09/25
+Level 4, iteration 1
+115(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
+
+Info: Initial congestion level at 75.00% usage is 0
+Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 13:15:41 03/09/25
+Level 4, iteration 1
+14(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
+Level 4, iteration 2
+8(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
+Level 4, iteration 3
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
+Level 4, iteration 4
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
+Level 4, iteration 5
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
+Level 4, iteration 6
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
+
+Start NBR section for post-routing at 13:15:41 03/09/25
+
+End NBR router with 0 unrouted connection
+WARNING <70001944> - No master clock for
+	generated clock	create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
+Requested speed is the same as database speed
+Changing speed to M
+
+Starting full timing analysis...
+Changing speed to M;   changing temperature to -40
+Changing speed to 6;   changing temperature to 100
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Estimated worst slack<setup> : <n/a>
+  Estimated worst slack<hold > : <n/a>
+  Timing score<setup> : 0
+  Timing score<hold > : 0
+  Number of connections with timing violations<setup> : 0 (0.00%)
+  Number of connections with timing violations<hold > : 0 (0.00%)
+-----------
+
+
+Total CPU time 3 secs 
+Total REAL time: 4 secs 
+Completely routed.
+End of route.  2210 routed (100.00%); 0 unrouted.
+
+Writing design to file SCCB_impl_1_par.dir/5_1.udb ...
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = <n/a>
+PAR_SUMMARY::Timing score<setup/<ns>> = <n/a>
+PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
+PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  Time: 15 secs 
+Total REAL Time: 16 secs 
+Peak Memory Usage: 124.49 MB
+
+
+par done!
+
+Note: user must run 'timing' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m   -pwrprd -html -rpt "SCCB_impl_1.twr" "SCCB_impl_1.udb" 
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m -pwrprd -html -rpt SCCB_impl_1.twr SCCB_impl_1.udb -gui
+Starting design reading...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Loading udb::Database ...
+Design:  camera_configure
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+
+
+
+Successfully loading udb, 0.06 seconds
+
+Initializing timer
+Starting design annotation....
+WARNING <70001944> - No master clock for
+	generated clock	create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
+High-Performance_1.2V
+
+Starting full timing analysis...
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Connections ignored  97  counted  2035  covered  0
+Changing speed to m;   changing temperature to -40
+
+STA Runtime and Peak Memory Usage :
+Total CPU Time: 1 secs 
+Total REAL Time: 2 secs 
+Peak Memory Usage: 97 MB
+
+ 2.150323s wall, 1.484375s user + 0.171875s system = 1.656250s CPU (77.0%)
+
+
 tmcheck -par "SCCB_impl_1.par" 
 
 bitgen -w "SCCB_impl_1.udb" -f "SCCB_impl_1.t2b" 
@@ -39,6 +435,7 @@ Preference Summary:
 
 Creating bit map...
 Saving bit stream in "Z:\senior_design\0v7670_Verilog\SCCB\impl_1\SCCB_impl_1.bin".
+INFO <1081100> - Bitstream authenticated.
 Bitstream generation complete!
 
 Total CPU Time: 0 secs 
@@ -49,7 +446,7 @@ Peak Memory Usage: 116 MB
 ibisgen "SCCB_impl_1.udb" "C:/lscc/radiant/2023.1/cae_library/ibis/iCE40UP.ibs"
 IBIS Models Generator: Lattice Radiant Software (64-bit) 2023.1.0.43.3
 
-Sat Mar  8 17:02:54 2025
+Sun Mar  9 13:15:46 2025
 
 Loading SCCB_impl_1.udb ...
 Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
@@ -71,7 +468,8 @@ Created design models.
 Generating: Z:\senior_design\0v7670_Verilog\SCCB\impl_1\IBIS\SCCB_impl_1.ibs
 
 
-    <postMsg mid="1191031" type="Info" dynamic="0" navigation="0"  />
+INFO <1191031> - Design IBIS models are generated for board level analysis.
+
 
 backanno "SCCB_impl_1.udb"  -o "SCCB_impl_1_vo.vo"      -sp "High-Performance_1.2V"  -w -neg
 backanno: version Radiant Software (64-bit) 2023.1.0.43.3
@@ -99,5 +497,5 @@ Writing Verilog netlist to file SCCB_impl_1_vo.vo
 Writing SDF timing to file SCCB_impl_1_vo.sdf
 Backanno finished with 0 posted error messages.
 Total CPU Time: 1 secs 
-Total REAL Time: 2 secs 
+Total REAL Time: 0 secs 
 Peak Memory Usage: 97 MB

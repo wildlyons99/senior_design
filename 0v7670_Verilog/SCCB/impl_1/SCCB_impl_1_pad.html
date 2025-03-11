@@ -48,17 +48,17 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Sat Mar  8 17:02:47 2025
+Sun Mar  9 13:15:38 2025
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+------------------------------------------+
 | Port Name | Pin/Bank | Buffer Type  | Site  | Properties                               |
 +-----------+----------+--------------+-------+------------------------------------------+
-| clk       | 35/0     | LVCMOS33_IN  | PR13B | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
-| done      | 11/1     | LVCMOS33_OUT | PL18A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| sioc      | 32/0     | LVCMOS33_OUT | PR17A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| siod      | 31/0     | LVCMOS33_OUT | PR17B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| start     | 9/1      | LVCMOS33_IN  | PL16A | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
+| clk       | 44/2     | LVCMOS33_IN  | PL7B  | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
+| done      | 21/1     | LVCMOS33_OUT | PL19B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| sioc      | 46/2     | LVCMOS33_OUT | PL6A  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| siod      | 47/2     | LVCMOS33_OUT | PL7A  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| start     | 2/2      | LVCMOS33_IN  | PL9A  | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
 | test_clk  | 4/2      | LVCMOS33_OUT | PL10A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 +-----------+----------+--------------+-------+------------------------------------------+
 
@@ -66,7 +66,6 @@ Vccio by Bank:
 +------+-------+
 | Bank | Vccio |
 +------+-------+
-| 0    | 3.3V  |
 | 1    | 3.3V  |
 | 2    | 3.3V  |
 +------+-------+
@@ -75,13 +74,13 @@ Vccio by Bank:
 +----------+---------------------+------------+--------------+-------+------------------+
 | Pin/Bank | Pin Info            | Constraint | Buffer Type  | Site  | Dual Function    |
 +----------+---------------------+------------+--------------+-------+------------------+
-| 2/2      |     unused, PULL:UP |            |              | PL9A  |                  |
+| 2/2      | start               | LOCATED    | LVCMOS33_IN  | PL9A  |                  |
 | 3/2      |     unused, PULL:UP |            |              | PL10B |                  |
 | 4/2      | test_clk            | LOCATED    | LVCMOS33_OUT | PL10A |                  |
 | 6/1      |     unused, PULL:UP |            |              | PL14B |                  |
-| 9/1      | start               |            | LVCMOS33_IN  | PL16A |                  |
+| 9/1      |     unused, PULL:UP |            |              | PL16A |                  |
 | 10/1     |     unused, PULL:UP |            |              | PL17A |                  |
-| 11/1     | done                |            | LVCMOS33_OUT | PL18A |                  |
+| 11/1     |     unused, PULL:UP |            |              | PL18A |                  |
 | 12/1     |     unused, PULL:UP |            |              | PL19A |                  |
 | 13/1     |     unused, PULL:UP |            |              | PL20A |                  |
 | 14/1     |     unused, PULL:UP |            |              | PL24A | SPI_SO           |
@@ -91,16 +90,16 @@ Vccio by Bank:
 | 18/1     |     unused, PULL:UP |            |              | PL23B |                  |
 | 19/1     |     unused, PULL:UP |            |              | PL22B |                  |
 | 20/1     |     unused, PULL:UP |            |              | PL20B | PCLKT1_0         |
-| 21/1     |     unused, PULL:UP |            |              | PL19B |                  |
+| 21/1     | done                |            | LVCMOS33_OUT | PL19B |                  |
 | 23/0     |     unused, PULL:UP |            |              | PR20A |                  |
 | 25/0     |     unused, PULL:UP |            |              | PR20B |                  |
 | 26/0     |     unused, PULL:UP |            |              | PR19A |                  |
 | 27/0     |     unused, PULL:UP |            |              | PR19B |                  |
 | 28/0     |     unused, PULL:UP |            |              | PR18A |                  |
-| 31/0     | siod                |            | LVCMOS33_OUT | PR17B |                  |
-| 32/0     | sioc                |            | LVCMOS33_OUT | PR17A |                  |
+| 31/0     |     unused, PULL:UP |            |              | PR17B |                  |
+| 32/0     |     unused, PULL:UP |            |              | PR17A |                  |
 | 34/0     |     unused, PULL:UP |            |              | PR14B |                  |
-| 35/0     | clk                 |            | LVCMOS33_IN  | PR13B | GPLL_IN/PCLKT0_1 |
+| 35/0     |     unused, PULL:UP |            |              | PR13B | GPLL_IN/PCLKT0_1 |
 | 36/0     |     unused, PULL:UP |            |              | PR10B |                  |
 | 37/0     |     unused, PULL:UP |            |              | PR14A | PCLKT0_0         |
 | 38/0     |     unused, PULL:UP |            |              | PR9B  |                  |
@@ -109,10 +108,10 @@ Vccio by Bank:
 | 41/0     |                     |            |              | PR7A  | RGB2             |
 | 42/0     |     unused, PULL:UP |            |              | PR9A  |                  |
 | 43/0     |     unused, PULL:UP |            |              | PR10A |                  |
-| 44/2     |     unused, PULL:UP |            |              | PL7B  | PCLKT2_0         |
+| 44/2     | clk                 | LOCATED    | LVCMOS33_IN  | PL7B  | PCLKT2_0         |
 | 45/2     |     unused, PULL:UP |            |              | PL8B  |                  |
-| 46/2     |     unused, PULL:UP |            |              | PL6A  |                  |
-| 47/2     |     unused, PULL:UP |            |              | PL7A  |                  |
+| 46/2     | sioc                | LOCATED    | LVCMOS33_OUT | PL6A  |                  |
+| 47/2     | siod                | LOCATED    | LVCMOS33_OUT | PL7A  |                  |
 | 48/2     |     unused, PULL:UP |            |              | PL8A  |                  |
 | PL6B/2   |     unused, PULL:UP |            |              | PL6B  |                  |
 | PL9B/2   |     unused, PULL:UP |            |              | PL9B  |                  |
@@ -136,11 +135,11 @@ Vccio by Bank:
 
 Locate Constraints for each Pin: 
 
-ldc_set_location -site {35} [ get_ports {clk} ]
-ldc_set_location -site {11} [ get_ports {done} ]
-ldc_set_location -site {32} [ get_ports {sioc} ]
-ldc_set_location -site {31} [ get_ports {siod} ]
-ldc_set_location -site {9} [ get_ports {start} ]
+ldc_set_location -site {44} [ get_ports {clk} ]
+ldc_set_location -site {21} [ get_ports {done} ]
+ldc_set_location -site {46} [ get_ports {sioc} ]
+ldc_set_location -site {47} [ get_ports {siod} ]
+ldc_set_location -site {2} [ get_ports {start} ]
 ldc_set_location -site {4} [ get_ports {test_clk} ]
 
 
@@ -149,7 +148,7 @@ ldc_set_location -site {4} [ get_ports {test_clk} ]
 
 Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
-Sat Mar  8 17:02:47 2025
+Sun Mar  9 13:15:38 2025
 
 
 
