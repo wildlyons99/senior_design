@@ -27,9 +27,14 @@ module camera_configure
     (
     input wire clk,
     input wire start,
+	input wire vsync_in,
+	input wire href_in,
+	input wire [7:0] data_in,
     output wire sioc,
     output wire siod,
     output wire done,
+	output wire frame_done,
+	output wire pixel_valid,
 	output wire test_clk
     );
     
@@ -79,6 +84,16 @@ module camera_configure
 	mypll cory_pll(.ref_clk_i(clk),
         .rst_n_i(1),
         .outcore_o(fast_clk),
-        .outglobal_o());
+        .outglobal_o()
+		);
+		
+	camera_read reader(.p_clock(fast_clk),
+		.vsync(vsync_in),
+		.href(href_in),
+		.p_data(data_in),
+		.pixel_data(),
+		.pixel_valid(pixel_valid),
+		.frame_done(frame_done)
+		);
     
 endmodule
