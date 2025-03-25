@@ -6,7 +6,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2023.1.0.43.3
-Mapped on: Sun Mar  9 13:15:25 2025
+Mapped on: Tue Mar 25 16:11:02 2025
 
 Design Information
 ------------------
@@ -18,21 +18,22 @@ Command line:   map -i SCCB_impl_1_syn.udb -pdc
 Design Summary
 --------------
 
-   Number of slice registers: 148 out of  5280 (3%)
+   Number of slice registers: 152 out of  5280 (3%)
    Number of I/O registers:      1 out of   117 (1%)
-   Number of LUT4s:           531 out of  5280 (10%)
-      Number of logic LUT4s:             420
-      Number of inserted feedthru LUT4s:  33
+   Number of LUT4s:           547 out of  5280 (10%)
+      Number of logic LUT4s:             425
+      Number of inserted feedthru LUT4s:  43
+      Number of replicated LUT4s:          1
       Number of ripple logic:             39 (78 LUT4s)
-   Number of IO sites used:   6 out of 39 (15%)
-      Number of IO sites used for general PIO: 6
+   Number of IO sites used:   10 out of 39 (26%)
+      Number of IO sites used for general PIO: 10
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 6 out of 36 (17%)
+      Number of IO sites used for PIO+I3C: 10 out of 36 (28%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 6 out of 39 (15%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 10 out of 39 (26%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  0 out of 1 (0%)
@@ -46,19 +47,18 @@ Design Summary
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             1 out of 1 (100%)
    Number of Clocks:  2
-      Net test_clk_c: 127 loads, 127 rising, 0 falling (Driver: Pin
+      Net test_clk_c: 134 loads, 134 rising, 0 falling (Driver: Pin
      cory_pll.lscc_pll_inst.u_PLL_B/OUTCORE)
       Net clk_c: 1 loads, 1 rising, 0 falling (Driver: Port clk)
-   Number of Clock Enables:  18
-      Net FSM_state_0__N_77: 1 loads, 1 SLICEs
-      Net config_1.timer_0__N_165: 24 loads, 24 SLICEs
+   Number of Clock Enables:  19
       Net config_1.SCCB_data_0__N_72: 16 loads, 16 SLICEs
+      Net config_1.FSM_state_0__N_77: 1 loads, 1 SLICEs
+      Net config_1.timer_0__N_165: 23 loads, 23 SLICEs
       Net config_1.rom_addr_0__N_23: 5 loads, 5 SLICEs
-      Net FSM_state_1__N_74: 1 loads, 1 SLICEs
+      Net config_1.FSM_state_1__N_74: 1 loads, 1 SLICEs
       Net config_1.test_clk_c_enable_1: 1 loads, 0 SLICEs
+      Net SCCB1.SCCB_SIOD_oe_N_333: 1 loads, 1 SLICEs
       Net SCCB1.byte_counter_0__N_295: 2 loads, 2 SLICEs
-      Net SCCB1.SCCB_ready_N_326: 1 loads, 1 SLICEs
-      Net SCCB1.SCCB_SIOD_oe_N_330: 1 loads, 1 SLICEs
 
                                     Page 1
 
@@ -68,55 +68,99 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net SCCB1.FSM_state_0__N_174: 2 loads, 2 SLICEs
       Net SCCB1.latched_data_0__N_291: 16 loads, 16 SLICEs
+      Net SCCB1.FSM_state_0__N_174: 2 loads, 2 SLICEs
+      Net SCCB1.SCCB_ready_N_329: 1 loads, 1 SLICEs
       Net SCCB1.FSM_state_2__N_170: 2 loads, 2 SLICEs
       Net SCCB1.tx_byte_0__N_311: 8 loads, 8 SLICEs
+      Net SCCB1.timer_2__N_270: 22 loads, 22 SLICEs
       Net SCCB1.FSM_return_state_1__N_181: 3 loads, 3 SLICEs
       Net SCCB1.timer_0__N_275: 3 loads, 3 SLICEs
-      Net SCCB1.timer_2__N_270: 18 loads, 18 SLICEs
-      Net SCCB1.SCCB_SIOC_oe_N_327: 1 loads, 1 SLICEs
       Net SCCB1.byte_index_1__N_320: 3 loads, 3 SLICEs
-   Number of LSRs:  17
+      Net SCCB1.SCCB_SIOC_oe_N_330: 1 loads, 1 SLICEs
+      Net reader.FSM_state[0]: 1 loads, 1 SLICEs
+   Number of LSRs:  19
       Net config_1.timer_0__N_166: 16 loads, 16 SLICEs
-      Net config_1.timer_19__N_116: 1 loads, 1 SLICEs
       Net config_1.rom_addr_0__N_24: 5 loads, 5 SLICEs
       Net config_1.FSM_state_1__N_75: 1 loads, 1 SLICEs
-      Net rom1.rom_dout_8__N_40: 3 loads, 3 SLICEs
-      Net rom1.rom_dout_4__N_48: 2 loads, 2 SLICEs
-      Net rom1.rom_dout_6__N_44: 2 loads, 2 SLICEs
-      Net rom1.rom_dout_0__N_56: 7 loads, 7 SLICEs
-      Net rom1.rom_dout_15__N_26: 1 loads, 1 SLICEs
-      Net rom1.rom_dout_7__N_42: 1 loads, 1 SLICEs
-      Net SCCB1.FSM_return_state_2__N_179: 1 loads, 1 SLICEs
-      Net SCCB1.timer_2__N_271: 3 loads, 3 SLICEs
+      Net rom1.rom_dout_0__N_56: 4 loads, 4 SLICEs
+      Net rom1.rom_dout_6__N_44: 5 loads, 5 SLICEs
+      Net rom1.rom_dout_5__N_46: 4 loads, 4 SLICEs
+      Net rom1.rom_dout_3__N_50: 2 loads, 2 SLICEs
+      Net rom1.rom_dout_13__N_30: 1 loads, 1 SLICEs
       Net SCCB1.tx_byte_0__N_312: 1 loads, 1 SLICEs
       Net SCCB1.byte_index_1__N_321: 3 loads, 3 SLICEs
       Net SCCB1.timer_3__N_268: 3 loads, 3 SLICEs
-      Net SCCB1.timer_18__N_224: 12 loads, 12 SLICEs
-      Net SCCB1.SCCB_SIOC_oe_N_328: 1 loads, 1 SLICEs
+      Net SCCB1.timer_2__N_271: 3 loads, 3 SLICEs
+      Net SCCB1.FSM_return_state_2__N_179: 1 loads, 1 SLICEs
+      Net SCCB1.timer_9__N_251: 6 loads, 6 SLICEs
+      Net SCCB1.timer_18__N_224: 10 loads, 10 SLICEs
+      Net SCCB1.SCCB_SIOC_oe_N_331: 1 loads, 1 SLICEs
+      Net reader.frame_done_c_N_325: 1 loads, 1 SLICEs
+      Net reader.pixel_valid_c_N_326: 1 loads, 1 SLICEs
+      Net reader.pixel_half_N_335: 1 loads, 1 SLICEs
    Top 10 highest fanout non-clock nets:
       Net VCC_net: 65 loads
-      Net FSM_state_adj_415[2]: 44 loads
-      Net SCCB1.FSM_state[3]: 36 loads
-      Net rom1.n14_adj_343: 34 loads
-      Net FSM_state_adj_415[0]: 32 loads
-      Net rom1.n14_adj_336: 32 loads
-      Net rom1.n14_adj_348: 31 loads
-      Net SCCB1.FSM_state[1]_2: 30 loads
-      Net rom_addr[2]: 29 loads
-      Net rom_addr[3]: 29 loads
+      Net FSM_state_adj_425[2]: 45 loads
+      Net SCCB1.FSM_state[3]_2: 37 loads
+      Net rom1.n14: 36 loads
+      Net rom1.n14_adj_341: 34 loads
+      Net rom1.n14_adj_339: 33 loads
+      Net FSM_state_adj_425[0]: 32 loads
+      Net rom_addr[2]: 32 loads
+      Net rom_addr[3]: 32 loads
+      Net SCCB1.FSM_state[1]_2: 31 loads
 
 
 
 
-   Number of warnings:  0
+   Number of warnings:  16
    Number of errors:    0
 
 Design Errors/Warnings
 ----------------------
 
-   No errors or warnings present.
+WARNING <71003020> - map: Top module port 'data_in[7]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'data_in[6]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'data_in[5]' does not connect to
+
+                                    Page 2
+
+
+
+
+
+Design Errors/Warnings (cont)
+-----------------------------
+     anything.
+WARNING <71003020> - map: Top module port 'data_in[4]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'data_in[3]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'data_in[2]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'data_in[1]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'data_in[0]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'data_in[7]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'data_in[6]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'data_in[5]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'data_in[4]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'data_in[3]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'data_in[2]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'data_in[1]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'data_in[0]' does not connect to
+     anything.
 
 IO (PIO) Attributes
 -------------------
@@ -125,16 +169,9 @@ IO (PIO) Attributes
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
-
-                                    Page 2
-
-
-
-
-
-IO (PIO) Attributes (cont)
---------------------------
-| sioc                | OUTPUT    |           |       |       |           |
+| href_in             | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| vsync_in            | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | start               | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -142,10 +179,24 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+-------+-------+-----------+
 | test_clk            | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+| pixel_valid         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| frame_done          | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
 | done                | OUTPUT    |           | O     |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | siod                | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+| sioc                | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+
+
+                                    Page 3
+
+
+
+
 
 PLL/DLL Summary
 ---------------
@@ -190,14 +241,6 @@ Instance Name: config_1/FSM_state_1__I_0
 Instance Name: cory_pll/lscc_pll_inst/u_PLL_B
          Type: PLL
 
-
-
-                                    Page 3
-
-
-
-
-
 Constraint Summary
 ------------------
 
@@ -210,49 +253,6 @@ Run Time and Memory Usage
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 63 MB
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

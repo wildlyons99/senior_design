@@ -4,17 +4,18 @@ Report for cell camera_configure
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       1.00        100.0
-                                  LUT4	        531        100.0
-                               LUTGATE	        453        100.0
+                                  LUT4	        547        100.0
+                               LUTGATE	        469        100.0
                                 LUTCCU	         78        100.0
                                  IOREG	          1        100.0
-                                 IOBUF	          6        100.0
-                                PFUREG	        148        100.0
+                                 IOBUF	         10        100.0
+                                PFUREG	        152        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
                          OV7670_config	          1        15.4
-                     OV7670_config_rom	          1        46.0
-                        SCCB_interface	          1        23.7
+                     OV7670_config_rom	          1        45.0
+                        SCCB_interface	          1        22.7
+                           camera_read	          1         0.7
                                  mypll	          1         0.0
 ---------------------------------------------------
 Report for cell OV7670_config
@@ -22,28 +23,19 @@ Report for cell OV7670_config
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       1.00        100.0
-                                  LUT4	         82        15.4
-                               LUTGATE	         38         8.4
+                                  LUT4	         84        15.4
+                               LUTGATE	         40         8.5
                                 LUTCCU	         44        56.4
                                  IOREG	          1        100.0
-                                PFUREG	         59        39.9
+                                PFUREG	         59        38.8
 ---------------------------------------------------
 Report for cell OV7670_config_rom
    Instance path: camera_configure/rom1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        244        46.0
-                               LUTGATE	        244        53.9
-                                PFUREG	         16        10.8
----------------------------------------------------
-Report for cell SCCB_interface
-   Instance path: camera_configure/SCCB1
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	        126        23.7
-                               LUTGATE	         92        20.3
-                                LUTCCU	         34        43.6
-                                PFUREG	         73        49.3
+                                  LUT4	        246        45.0
+                               LUTGATE	        246        52.5
+                                PFUREG	         16        10.5
 ---------------------------------------------------
 Report for cell mypll
    Instance path: camera_configure/cory_pll
@@ -57,3 +49,20 @@ Report for cell mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1
    Instance path: camera_configure/cory_pll/lscc_pll_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell SCCB_interface
+   Instance path: camera_configure/SCCB1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        124        22.7
+                               LUTGATE	         90        19.2
+                                LUTCCU	         34        43.6
+                                PFUREG	         73        48.0
+---------------------------------------------------
+Report for cell camera_read
+   Instance path: camera_configure/reader
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.7
+                               LUTGATE	          4         0.9
+                                PFUREG	          4         2.6

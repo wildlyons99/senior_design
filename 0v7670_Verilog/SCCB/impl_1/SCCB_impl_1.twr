@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2023.1.0.43.3
 
-Sun Mar  9 13:15:44 2025
+Tue Mar 25 16:11:20 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -76,22 +76,24 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
-config_1/timer_31__I_23/D               |    No arrival or required
-config_1/timer_31__I_23/SP              |    No arrival or required
-config_1/timer_31__I_23/SR              |    No arrival or required
-config_1/timer_31__I_25/D               |    No arrival or required
-config_1/timer_31__I_25/SP              |    No arrival or required
-config_1/timer_31__I_25/SR              |    No arrival or required
-config_1/timer_31__I_26/D               |    No arrival or required
-config_1/timer_31__I_27/D               |    No arrival or required
-{config_1/timer_31__I_27/SP   config_1/timer_31__I_26/SP}                           
+config_1/timer_31__I_10/D               |    No arrival or required
+config_1/timer_31__I_11/D               |    No arrival or required
+{config_1/timer_31__I_11/SP   config_1/timer_31__I_10/SP}                           
                                         |    No arrival or required
-{config_1/timer_31__I_27/SR   config_1/timer_31__I_26/SR}                           
+{config_1/timer_31__I_11/SR   config_1/timer_31__I_10/SR}                           
                                         |    No arrival or required
+config_1/timer_31__I_31/D               |    No arrival or required
+config_1/timer_31__I_32/D               |    No arrival or required
+{config_1/timer_31__I_32/SP   config_1/timer_31__I_31/SP}                           
+                                        |    No arrival or required
+{config_1/timer_31__I_32/SR   config_1/timer_31__I_31/SR}                           
+                                        |    No arrival or required
+config_1/timer_31__I_34/D               |    No arrival or required
+config_1/timer_31__I_34/SP              |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
-ts                                      |                       285
+ts                                      |                       295
                                         |                          
 -------------------------------------------------------------------
 
@@ -109,16 +111,21 @@ create_generated_clock,
 ...
 
 -------------------------------------------------------------------
-     Listing 5 Start or End Points      |           Type           
+     Listing 10 Start or End Points     |           Type           
 -------------------------------------------------------------------
+href_in                                 |                     input
+vsync_in                                |                     input
 start                                   |                     input
 clk                                     |                     input
-sioc                                    |                    output
-done                                    |                    output
-siod                                    |                    output
+data_in[7]                              |                     input
+data_in[6]                              |                     input
+data_in[5]                              |                     input
+data_in[4]                              |                     input
+data_in[3]                              |                     input
+data_in[2]                              |                     input
 -------------------------------------------------------------------
                                         |                          
-Number of I/O ports without constraint  |                         5
+Number of I/O ports without constraint  |                        17
                                         |                          
 -------------------------------------------------------------------
 

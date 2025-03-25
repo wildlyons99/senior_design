@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Mar  8 17:02:26 2025
+Tue Mar 25 16:10:53 2025
 
 
 Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f SCCB_impl_1_lattice.synproj -gui -msgset Z:/senior_design/0v7670_Verilog/SCCB/promote.xml 
@@ -200,7 +200,8 @@ INFO <35901018> - synthesis: z:/senior_design/0v7670_verilog/sccb/mypll/rtl/mypl
 INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(428): compiling module PLL_B(PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",DIVF="66",DIVQ="5",FILTER_RANGE="1",FREQUENCY_PIN_REFERENCECLK="12.000000"). VERI-1018
 WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
 WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
-WARNING <35901330> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/camera_configure.v(80): actual bit length 32 differs from formal bit length 1 for port rst_n_i. VERI-1330
+WARNING <35901330> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/camera_configure.v(85): actual bit length 32 differs from formal bit length 1 for port rst_n_i. VERI-1330
+INFO <35901018> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/camera_read.v(21): compiling module camera_read. VERI-1018
                                                          
 
 
@@ -237,6 +238,15 @@ WARNING <35931002> - synthesis: z:/senior_design/0v7670_verilog/sccb/mypll/rtl/m
 CRITICAL <35001747> - synthesis: Bit 2 of Register \config_1/FSM_return_state is stuck at Zero
 CRITICAL <35001747> - synthesis: Bit 1 of Register \config_1/FSM_return_state is stuck at Zero
 CRITICAL <35001748> - synthesis: Bit 0 of Register \config_1/FSM_return_state is stuck at One
+CRITICAL <35001747> - synthesis: Bit 1 of Register \reader/FSM_state is stuck at Zero
+CRITICAL <35002028> - synthesis: I/O Port data_in[7] 's net has no driver and is unused.
+CRITICAL <35002028> - synthesis: I/O Port data_in[6] 's net has no driver and is unused.
+CRITICAL <35002028> - synthesis: I/O Port data_in[5] 's net has no driver and is unused.
+CRITICAL <35002028> - synthesis: I/O Port data_in[4] 's net has no driver and is unused.
+CRITICAL <35002028> - synthesis: I/O Port data_in[3] 's net has no driver and is unused.
+CRITICAL <35002028> - synthesis: I/O Port data_in[2] 's net has no driver and is unused.
+CRITICAL <35002028> - synthesis: I/O Port data_in[1] 's net has no driver and is unused.
+CRITICAL <35002028> - synthesis: I/O Port data_in[0] 's net has no driver and is unused.
 WARNING <35001779> - synthesis: Initial value found on instance \SCCB1/timer_i5 will be ignored.
 WARNING <35001779> - synthesis: Initial value found on instance \SCCB1/timer_i4 will be ignored.
 WARNING <35001779> - synthesis: Initial value found on instance \SCCB1/timer_i3 will be ignored.
@@ -247,13 +257,13 @@ INFO <35002039> - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for Thunde
 <A name="lse_area"></A><B><U><big>Area Report</big></U></B>
 
 ################### Begin Area Report (camera_configure)######################
-Number of register bits => 148 of 5280 (2 % )
+Number of register bits => 152 of 5280 (2 % )
 CCU2 => 39
-FD1P3XZ => 148
-IB => 2
+FD1P3XZ => 152
+IB => 4
 IOL_B => 1
-LUT4 => 418
-OB => 2
+LUT4 => 423
+OB => 4
 OBZ_B => 2
 PLL_B => 1
 ################### End Area Report ##################
@@ -272,23 +282,23 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : SCCB1/FSM_state[2], loads : 42
-  Net : SCCB1/FSM_state[3], loads : 35
-  Net : config_1/timer_0__N_165, loads : 34
-  Net : SCCB1/timer_2__N_270, loads : 32
-  Net : rom1/n14_adj_336, loads : 30
-  Net : SCCB1/FSM_state[0], loads : 28
-  Net : rom1/n14_adj_343, loads : 28
-  Net : SCCB1/FSM_state[1], loads : 28
-  Net : rom1/n14, loads : 27
-  Net : rom1/n14_adj_348, loads : 26
+  Net : SCCB1/FSM_state[2], loads : 44
+  Net : SCCB1/FSM_state[3], loads : 36
+  Net : config_1/timer_0__N_165, loads : 33
+  Net : rom1/n14_adj_339, loads : 33
+  Net : SCCB1/timer_2__N_270, loads : 33
+  Net : rom1/n14, loads : 30
+  Net : SCCB1/FSM_state[1], loads : 30
+  Net : SCCB1/FSM_state[0], loads : 29
+  Net : rom1/n14_adj_341, loads : 27
+  Net : config_1/timer_0__N_166, loads : 25
 ################### End Clock Report ##################
 
-Peak Memory Usage: 106 MB
+Peak Memory Usage: 104 MB
 
 --------------------------------------------------------------
 Total CPU Time: 4 secs 
-Total REAL Time: 7 secs 
+Total REAL Time: 8 secs 
 --------------------------------------------------------------
 
 

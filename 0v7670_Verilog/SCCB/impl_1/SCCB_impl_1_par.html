@@ -42,7 +42,7 @@ if (a)
 <DIV id="content" onclick="hideTocList()"><PRE>
 <A name="Par"></A>Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
-Sun Mar  9 13:15:26 2025
+Tue Mar 25 16:11:03 2025
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 	SCCB_impl_1_map.udb SCCB_impl_1.udb 
@@ -52,7 +52,7 @@ Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 Level/       Number       Worst        Timing       Worst        Timing       Run          Run
 Cost [udb]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            -            0            -            0            16           Completed
+5_1   *      0            -            0            -            0            15           Completed
 * : Design saved.
 
 Total (real) run time for 1-seed: 16 secs 
@@ -60,7 +60,7 @@ Total (real) run time for 1-seed: 16 secs
 par done!
 
 Lattice Place and Route Report for Design &quot;SCCB_impl_1_map.udb&quot;
-Sun Mar  9 13:15:26 2025
+Tue Mar 25 16:11:03 2025
 
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
@@ -84,16 +84,48 @@ WARNING &lt;70001944&gt; - par: No master clock for
 	generated clock	create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
 
 WARNING: Database constraint &quot;create_generated_clock -name {test_clk_c} -source [get_pins cory_pll.lscc_pll_inst.u_PLL_B/REFERENCECLK] -divide_by 32 -multiply_by 67 [get_pins cory_pll.lscc_pll_inst.u_PLL_B/OUTCORE]&quot; does not have corresponding timing constraint. Please check if the resource objects of the constraint are valid carefully!
-Number of Signals: 753
-Number of Connections: 2277
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[7]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[6]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[5]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[4]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[3]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[2]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[1]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[0]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[7]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[6]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[5]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[4]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[3]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[2]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[1]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[0]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[7]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[6]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[5]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[4]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[3]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[2]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[1]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[0]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[7]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[6]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[5]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[4]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[3]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[2]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[1]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;data_in[0]&apos; does not connect to anything.
+Number of Signals: 775
+Number of Connections: 2321
 
 <A name="par_dus"></A><B><U><big>Device utilization summary:</big></U></B>
 
-   SLICE (est.)     285/2640         11% used
-     LUT            531/5280         10% used
-     REG            148/5280          3% used
-   PIO                6/56           11% used
-                      6/36           16% bonded
+   SLICE (est.)     292/2640         11% used
+     LUT            547/5280         10% used
+     REG            152/5280          3% used
+   PIO               10/56           18% used
+                     10/36           27% bonded
    IOLOGIC            1/56            2% used
    DSP                0/8             0% used
    I2C                0/2             0% used
@@ -112,40 +144,40 @@ Number of Connections: 2277
    OPENDRAIN          0/3             0% used
 
 Pin Constraint Summary:
-   5 out of 6 pins locked (83% locked).
+   5 out of 10 pins locked (50% locked).
 .
-...........
+..............
 Finished Placer Phase 0 (HIER). CPU time: 1 secs , REAL time: 2 secs 
 
 
 ................
-Finished Placer Phase 0 (AP).  CPU time: 1 secs , REAL time: 2 secs 
+Finished Placer Phase 0 (AP).  CPU time: 1 secs , REAL time: 3 secs 
 
-Starting Placer Phase 1. CPU time: 1 secs , REAL time: 2 secs 
+Starting Placer Phase 1. CPU time: 1 secs , REAL time: 3 secs 
 ..  ..
 ....................
 
-Placer score = 119780.
+Placer score = 117174.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE            279/2640         10% used
+   SLICE            291/2640         11% used
 
 WARNING &lt;70001944&gt; - par: No master clock for
 	generated clock	create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
-Finished Placer Phase 1. CPU time: 11 secs , REAL time: 12 secs 
+Finished Placer Phase 1. CPU time: 10 secs , REAL time: 12 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  156451
-Finished Placer Phase 2.  CPU time: 11 secs , REAL time: 12 secs 
+Placer score =  152772
+Finished Placer Phase 2.  CPU time: 10 secs , REAL time: 12 secs 
 
 
 
 <A name="par_clk"></A><B><U><big>Clock Report</big></U></B>
 
 Global Clocks :
-  PRIMARY &quot;test_clk_c&quot; from OUTCORE on comp &quot;cory_pll.lscc_pll_inst.u_PLL_B&quot; on site &quot;PLL_R13C32&quot;, clk load = 95, ce load = 0, sr load = 0
+  PRIMARY &quot;test_clk_c&quot; from OUTCORE on comp &quot;cory_pll.lscc_pll_inst.u_PLL_B&quot; on site &quot;PLL_R13C32&quot;, clk load = 101, ce load = 0, sr load = 0
 
   PRIMARY  : 1 out of 8 (12%)
 
@@ -153,16 +185,16 @@ Global Clocks :
 
 
 I/O Usage Summary (final):
-   6 out of 56 (10.7%) I/O sites used.
-   6 out of 36 (16.7%) bonded I/O sites used.
-   Number of I/O components: 6; differential: 0
+   10 out of 56 (17.9%) I/O sites used.
+   10 out of 36 (27.8%) bonded I/O sites used.
+   Number of I/O components: 10; differential: 0
    Number of Vref pins used: 0
 
 I/O Bank Usage Summary:
 +----------+---------------+------------+------------+------------+
 | I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
 +----------+---------------+------------+------------+------------+
-| 0        | 0 / 14 (  0%) | OFF        |            |            |
+| 0        | 4 / 14 ( 28%) | 3.3V       |            |            |
 | 1        | 1 / 14 (  7%) | 3.3V       |            |            |
 | 2        | 5 / 8 ( 62%)  | 3.3V       |            |            |
 +----------+---------------+------------+------------+------------+
@@ -172,7 +204,7 @@ Total Placer CPU time: 11 secs , REAL time: 12 secs
 Writing design to file SCCB_impl_1_par.dir/5_1.udb ...
 
 
-Start NBR router at 13:15:38 03/09/25
+Start NBR router at 16:11:15 03/25/25
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -190,14 +222,14 @@ Note: NBR uses a different method to calculate timing slacks. The
 Starting routing resource preassignment
 Preassignment Summary:
 --------------------------------------------------------------------------------
-216 connections routed with dedicated routing resources
+220 connections routed with dedicated routing resources
 1 global clock signals routed
-311 connections routed (of 2210 total) (14.07%)
+321 connections routed (of 2249 total) (14.27%)
 ---------------------------------------------------------
 Clock routing summary:
 Primary clocks (1 used out of 8 available):
 #0  Signal &quot;test_clk_c&quot;
-       Clock   loads: 95    out of    95 routed (100.00%)
+       Clock   loads: 101   out of   101 routed (100.00%)
        Data    loads: 0     out of     1 routed (  0.00%)
 Other clocks:
     Signal &quot;clk_c&quot;
@@ -213,28 +245,24 @@ WARNING &lt;70001944&gt; - par: No master clock for
 Routing in Serial Mode ......
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Start NBR section for initial routing at 13:15:39 03/09/25
+Start NBR section for initial routing at 16:11:16 03/25/25
 Level 4, iteration 1
-115(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
+107(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 2 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 13:15:41 03/09/25
+Start NBR section for normal routing at 16:11:17 03/25/25
 Level 4, iteration 1
-14(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
+15(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
 Level 4, iteration 2
-8(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
+10(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
 Level 4, iteration 3
-4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
-Level 4, iteration 4
-3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
-Level 4, iteration 5
 1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
-Level 4, iteration 6
+Level 4, iteration 4
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
 
-Start NBR section for post-routing at 13:15:41 03/09/25
+Start NBR section for post-routing at 16:11:18 03/25/25
 
 End NBR router with 0 unrouted connection
 WARNING &lt;70001944&gt; - par: No master clock for
@@ -256,9 +284,9 @@ Starting full timing analysis...
 
 
 Total CPU time 3 secs 
-Total REAL time: 4 secs 
+Total REAL time: 3 secs 
 Completely routed.
-End of route.  2210 routed (100.00%); 0 unrouted.
+End of route.  2249 routed (100.00%); 0 unrouted.
 
 Writing design to file SCCB_impl_1_par.dir/5_1.udb ...
 
@@ -274,9 +302,9 @@ PAR_SUMMARY::Worst  slack&lt;hold /&lt;ns&gt;&gt; = &lt;n/a&gt;
 PAR_SUMMARY::Timing score&lt;hold /&lt;ns&gt;&gt; = &lt;n/a&gt;
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  Time: 15 secs 
+Total CPU  Time: 14 secs 
 Total REAL Time: 16 secs 
-Peak Memory Usage: 124.49 MB
+Peak Memory Usage: 124.69 MB
 
 
 par done!

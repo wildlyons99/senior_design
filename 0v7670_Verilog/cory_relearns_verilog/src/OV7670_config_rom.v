@@ -30,13 +30,13 @@ module OV7670_config_rom(
     case(addr) 
     0:  dout <= 16'h12_80; //reset
     1:  dout <= 16'hFF_F0; //delay
-    2:  dout <= 16'h12_04; // COM7,     set RGB color output
+    2:  dout <= 16'h12_10; // COM7,     set RGB color output
     3:  dout <= 16'h11_80; // CLKRC     internal PLL matches input clock
     4:  dout <= 16'h0C_00; // COM3,     default settings
     5:  dout <= 16'h3E_00; // COM14,    no scaling, normal pclock
-    6:  dout <= 16'h04_00; // COM1,     disable CCIR656
+    6:  dout <= 16'h04_40; // COM1,     disable CCIR656
     7:  dout <= 16'h40_d0; //COM15,     RGB565, full output range
-    8:  dout <= 16'h3a_04; //TSLB       set correct output data sequence (magic)
+    8:  dout <= 16'h3a_0D; //TSLB       set correct output data sequence (magic)
     9:  dout <= 16'h14_18; //COM9       MAX AGC value x4
     10: dout <= 16'h4F_B3; //MTX1       all of these are magical matrix coefficients
     11: dout <= 16'h50_B3; //MTX2
@@ -45,7 +45,7 @@ module OV7670_config_rom(
     14: dout <= 16'h53_A7; //MTX5
     15: dout <= 16'h54_E4; //MTX6
     16: dout <= 16'h58_9E; //MTXS
-    17: dout <= 16'h3D_C0; //COM13      sets gamma enable, does not preserve reserved bits, may be wrong?
+    17: dout <= 16'h3D_88; //COM13      sets gamma enable, does not preserve reserved bits, may be wrong?
     18: dout <= 16'h17_14; //HSTART     start high 8 bits
     19: dout <= 16'h18_02; //HSTOP      stop high 8 bits //these kill the odd colored line
     20: dout <= 16'h32_80; //HREF       edge offset
