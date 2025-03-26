@@ -1,0 +1,22 @@
+
+"C:/lscc/radiant/3.2/tcltk/windows/bin/tclsh" "demo_memory_impl_1_synthesize.tcl"
+
+postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o demo_memory_impl_1_syn.udb demo_memory_impl_1.vm
+POSTSYN: Post Synthesis Process Radiant Software (64-bit) 3.2.0.18.0
+Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o demo_memory_impl_1_syn.udb -gui -msgset C:/Users/jacob/Downloads/Tufts/Senior Design/demo_memory/promote.xml demo_memory_impl_1.vm 
+   Architecture:     iCE40UP
+   Device:           iCE40UP5K
+   Package:          SG48
+   Performance:      High-Performance_1.2V
+Reading input file 'demo_memory_impl_1.vm' ...
+CPU Time to convert: 0.09375
+REAL Time to convert: 1
+convert PEAK Memory Usage: 26 MB
+convert CURRENT Memory Usage: 26 MB
+Removing unused logic ...
+INFO - Instance i25 is optimized away.
+INFO - Instance i26 is optimized away.
+Starting design annotation....
+child killed: segmentation violation
+
+Fail to run postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o demo_memory_impl_1_syn.udb demo_memory_impl_1.vm -gui -msgset {C:/Users/jacob/Downloads/Tufts/Senior Design/demo_memory/promote.xml} 

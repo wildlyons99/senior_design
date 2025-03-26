@@ -1,0 +1,40 @@
+Config: Hidden1=30, Hidden2=16, Dropout=0.0, Weight Decay=0.0
+  Train Loss (Ep10): 0.2974, Val Loss (Ep10): 0.2797
+  Final Train Acc: 91.86%, Val Acc: 91.47%, Test Acc: 92.01%
+
+Config: Hidden1=30, Hidden2=16, Dropout=0.0, Weight Decay=1e-06
+  Train Loss (Ep10): 0.2927, Val Loss (Ep10): 0.2974
+  Final Train Acc: 91.39%, Val Acc: 91.01%, Test Acc: 91.42%
+
+Config: Hidden1=30, Hidden2=16, Dropout=0.0, Weight Decay=1e-05
+  Train Loss (Ep10): 0.3025, Val Loss (Ep10): 0.2938
+  Final Train Acc: 91.23%, Val Acc: 91.13%, Test Acc: 91.70%
+
+Config: Hidden1=30, Hidden2=16, Dropout=0.0, Weight Decay=0.0001
+  Train Loss (Ep10): 0.2656, Val Loss (Ep10): 0.2608
+  Final Train Acc: 91.98%, Val Acc: 91.87%, Test Acc: 92.15%
+
+Config: Hidden1=30, Hidden2=16, Dropout=0.0, Weight Decay=0.001
+  Train Loss (Ep10): 0.3101, Val Loss (Ep10): 0.3018
+  Final Train Acc: 91.22%, Val Acc: 91.14%, Test Acc: 91.49%
+
+Config: Hidden1=30, Hidden2=16, Dropout=0.1, Weight Decay=0.0
+  Train Loss (Ep10): 0.2824, Val Loss (Ep10): 0.2595
+  Final Train Acc: 92.46%, Val Acc: 92.22%, Test Acc: 92.39%
+
+Config: Hidden1=30, Hidden2=16, Dropout=0.1, Weight Decay=1e-06
+  Train Loss (Ep10): 0.3073, Val Loss (Ep10): 0.3242
+  Final Train Acc: 90.56%, Val Acc: 90.38%, Test Acc: 90.79%
+
+Config: Hidden1=30, Hidden2=16, Dropout=0.1, Weight Decay=1e-05
+  Train Loss (Ep10): 0.3070, Val Loss (Ep10): 0.3068
+  Final Train Acc: 90.69%, Val Acc: 90.81%, Test Acc: 90.64%
+
+Config: Hidden1=30, Hidden2=16, Dropout=0.1, Weight Decay=0.0001
+  Train Loss (Ep10): 0.2158, Val Loss (Ep10): 0.2111
+  Final Train Acc: 93.61%, Val Acc: 93.41%, Test Acc: 93.27%
+
+Config: Hidden1=30, Hidden2=16, Dropout=0.1, Weight Decay=0.001
+  Train Loss (Ep10): 0.2695, Val Loss (Ep10): 0.2911
+  Final Train Acc: 91.04%, Val Acc: 90.93%, Test Acc: 90.99%
+

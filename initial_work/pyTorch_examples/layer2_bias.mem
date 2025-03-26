@@ -1,17 +1,17 @@
 // Bias values
 // Neuron 0
-F9
+80
 // Neuron 1
-04
+7F
 // Neuron 2
-19
+7F
 // Neuron 3
-00
+91
 // Neuron 4
-13
+27
 // Neuron 5
-13
+AE
 // Neuron 6
-A8
+53
 // Neuron 7
-17
+BB
