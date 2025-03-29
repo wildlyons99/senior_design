@@ -1,0 +1,316 @@
+
+// Verilog netlist produced by program backanno, Version Radiant Software (64-bit) 2023.1.0.43.3
+
+// backanno -o max_verilog_impl_1_vo.vo -sp High-Performance_1.2V -w -neg -gui max_verilog_impl_1.udb 
+// Netlist created on Sat Mar 29 15:24:04 2025
+// Netlist written on Sat Mar 29 15:24:09 2025
+// Design is for device iCE40UP5K
+// Design is for package SG48
+// Design is for performance grade High-Performance_1.2V
+
+`timescale 1 ns / 1 ps
+
+module top ( out, input1, input2 );
+  input  [3:0] input1;
+  input  [3:0] input2;
+  output [3:0] out;
+  wire   \genericMax.n4 , input2_c_2, input1_c_2, input2_c_0, input1_c_0, 
+         input1_c_1, input2_c_1, \genericMax.max_num_0__N_1 , 
+         \genericMax.max_num[0] , input2_c_3, input1_c_3, out_c_2, out_c_1, 
+         out_c_0, out_c_3;
+
+  genericMax_SLICE_0 \genericMax.SLICE_0 ( .C1(\genericMax.n4 ), 
+    .B1(input2_c_2), .A1(input1_c_2), .D0(input2_c_0), .C0(input1_c_0), 
+    .B0(input1_c_1), .A0(input2_c_1), .F0(\genericMax.n4 ), 
+    .F1(\genericMax.max_num_0__N_1 ));
+  genericMax_SLICE_2 \genericMax.SLICE_2 ( .D1(input2_c_2), .C1(input1_c_2), 
+    .A1(\genericMax.max_num[0] ), .C0(input2_c_3), 
+    .B0(\genericMax.max_num_0__N_1 ), .A0(input1_c_3), 
+    .F0(\genericMax.max_num[0] ), .F1(out_c_2));
+  genericMax_SLICE_4 \genericMax.SLICE_4 ( .D1(input1_c_0), .C1(input2_c_0), 
+    .A1(\genericMax.max_num[0] ), .D0(\genericMax.max_num[0] ), 
+    .B0(input1_c_1), .A0(input2_c_1), .F0(out_c_1), .F1(out_c_0));
+  genericMax_SLICE_6 \genericMax.SLICE_6 ( .C0(input2_c_3), .A0(input1_c_3), 
+    .F0(out_c_3));
+  out_3_ \out[3]_I ( .PADDO(out_c_3), .out3(out[3]));
+  out_2_ \out[2]_I ( .PADDO(out_c_2), .out2(out[2]));
+  out_1_ \out[1]_I ( .PADDO(out_c_1), .out1(out[1]));
+  out_0_ \out[0]_I ( .PADDO(out_c_0), .out0(out[0]));
+  input1_3_ \input1[3]_I ( .PADDI(input1_c_3), .input13(input1[3]));
+  input1_2_ \input1[2]_I ( .PADDI(input1_c_2), .input12(input1[2]));
+  input1_1_ \input1[1]_I ( .PADDI(input1_c_1), .input11(input1[1]));
+  input1_0_ \input1[0]_I ( .PADDI(input1_c_0), .input10(input1[0]));
+  input2_3_ \input2[3]_I ( .PADDI(input2_c_3), .input23(input2[3]));
+  input2_2_ \input2[2]_I ( .PADDI(input2_c_2), .input22(input2[2]));
+  input2_1_ \input2[1]_I ( .PADDI(input2_c_1), .input21(input2[1]));
+  input2_0_ \input2[0]_I ( .PADDI(input2_c_0), .input20(input2[0]));
+endmodule
+
+module genericMax_SLICE_0 ( input C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut4 \genericMax/LessThan_3_i6_3_lut ( .A(A1), .B(B1), .C(C1), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40001 \genericMax/LessThan_3_i4_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut4 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xB2B2") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module gnd ( output PWR0 );
+
+  VLO INST1( .Z(PWR0));
+endmodule
+
+module lut40001 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x44D4") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module genericMax_SLICE_2 ( input D1, C1, A1, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40002 \genericMax/input2_c_2_I_0 ( .A(A1), .B(GNDI), .C(C1), .D(D1), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40003 \genericMax/max_num_0__I_0 ( .A(A0), .B(B0), .C(C0), .D(GNDI), 
+    .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40002 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF5A0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40003 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x8E8E") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module genericMax_SLICE_4 ( input D1, C1, A1, D0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40004 \genericMax/input2_c_0_I_0 ( .A(A1), .B(GNDI), .C(C1), .D(D1), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40005 \genericMax/input2_c_1_I_0 ( .A(A0), .B(B0), .C(GNDI), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40004 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFA50") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40005 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xCCAA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module genericMax_SLICE_6 ( input C0, A0, output F0 );
+  wire   GNDI;
+
+  lut40006 \genericMax/input2_c_3_I_0 ( .A(A0), .B(GNDI), .C(C0), .D(GNDI), 
+    .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40006 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFAFA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module out_3_ ( input PADDO, output out3 );
+  wire   VCCI;
+
+  BB_B_B \out_pad[3].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(out3));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => out3) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module BB_B_B ( input T_N, I, output O, inout B );
+
+  BB_B INST10( .T_N(T_N), .I(I), .O(O), .B(B));
+endmodule
+
+module vcc ( output PWR1 );
+
+  VHI INST1( .Z(PWR1));
+endmodule
+
+module out_2_ ( input PADDO, output out2 );
+  wire   VCCI;
+
+  BB_B_B \out_pad[2].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(out2));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => out2) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module out_1_ ( input PADDO, output out1 );
+  wire   VCCI;
+
+  BB_B_B \out_pad[1].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(out1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => out1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module out_0_ ( input PADDO, output out0 );
+  wire   VCCI;
+
+  BB_B_B \out_pad[0].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(out0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => out0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module input1_3_ ( output PADDI, input input13 );
+  wire   GNDI;
+
+  BB_B_B \input1_pad[3].bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), .B(input13));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (input13 => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module input1_2_ ( output PADDI, input input12 );
+  wire   GNDI;
+
+  BB_B_B \input1_pad[2].bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), .B(input12));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (input12 => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module input1_1_ ( output PADDI, input input11 );
+  wire   GNDI;
+
+  BB_B_B \input1_pad[1].bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), .B(input11));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (input11 => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module input1_0_ ( output PADDI, input input10 );
+  wire   GNDI;
+
+  BB_B_B \input1_pad[0].bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), .B(input10));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (input10 => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module input2_3_ ( output PADDI, input input23 );
+  wire   GNDI;
+
+  BB_B_B \input2_pad[3].bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), .B(input23));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (input23 => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module input2_2_ ( output PADDI, input input22 );
+  wire   GNDI;
+
+  BB_B_B \input2_pad[2].bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), .B(input22));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (input22 => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module input2_1_ ( output PADDI, input input21 );
+  wire   GNDI;
+
+  BB_B_B \input2_pad[1].bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), .B(input21));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (input21 => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module input2_0_ ( output PADDI, input input20 );
+  wire   GNDI;
+
+  BB_B_B \input2_pad[0].bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), .B(input20));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (input20 => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule

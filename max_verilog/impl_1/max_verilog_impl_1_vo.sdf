@@ -1,0 +1,232 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "top")
+  (DATE "Sat Mar 29 15:24:09 2025")
+  (VENDOR "Lattice")
+  (PROGRAM "backanno")
+  (VERSION "Radiant Software (64-bit) 2023.1.0.43.3")
+  (DIVIDER /)
+  (VOLTAGE 1.26:1.20:1.14)
+  (PROCESS "default")
+  (TEMPERATURE -40:25:85)
+  (TIMESCALE 1ps)
+  (CELL
+    (CELLTYPE "genericMax_SLICE_0")
+    (INSTANCE genericMax\.SLICE_0)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH C1 F1 (449:462:476)(449:462:476))
+        (IOPATH B1 F1 (449:462:476)(449:462:476))
+        (IOPATH A1 F1 (449:462:476)(449:462:476))
+        (IOPATH D0 F0 (449:462:476)(449:462:476))
+        (IOPATH C0 F0 (449:462:476)(449:462:476))
+        (IOPATH B0 F0 (449:462:476)(449:462:476))
+        (IOPATH A0 F0 (449:462:476)(449:462:476))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "genericMax_SLICE_2")
+    (INSTANCE genericMax\.SLICE_2)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH D1 F1 (449:462:476)(449:462:476))
+        (IOPATH C1 F1 (449:462:476)(449:462:476))
+        (IOPATH A1 F1 (449:462:476)(449:462:476))
+        (IOPATH C0 F0 (449:462:476)(449:462:476))
+        (IOPATH B0 F0 (449:462:476)(449:462:476))
+        (IOPATH A0 F0 (449:462:476)(449:462:476))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "genericMax_SLICE_4")
+    (INSTANCE genericMax\.SLICE_4)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH D1 F1 (449:462:476)(449:462:476))
+        (IOPATH C1 F1 (449:462:476)(449:462:476))
+        (IOPATH A1 F1 (449:462:476)(449:462:476))
+        (IOPATH D0 F0 (449:462:476)(449:462:476))
+        (IOPATH B0 F0 (449:462:476)(449:462:476))
+        (IOPATH A0 F0 (449:462:476)(449:462:476))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "genericMax_SLICE_6")
+    (INSTANCE genericMax\.SLICE_6)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH C0 F0 (449:462:476)(449:462:476))
+        (IOPATH A0 F0 (449:462:476)(449:462:476))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "out_3_")
+    (INSTANCE out\[3\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO out3 (1914:2001:2088)(1914:2001:2088))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "out_2_")
+    (INSTANCE out\[2\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO out2 (1914:2001:2088)(1914:2001:2088))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "out_1_")
+    (INSTANCE out\[1\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO out1 (1914:2001:2088)(1914:2001:2088))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "out_0_")
+    (INSTANCE out\[0\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO out0 (1914:2001:2088)(1914:2001:2088))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "input1_3_")
+    (INSTANCE input1\[3\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH input13 PADDI (460:485:510)(460:485:510))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "input1_2_")
+    (INSTANCE input1\[2\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH input12 PADDI (460:485:510)(460:485:510))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "input1_1_")
+    (INSTANCE input1\[1\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH input11 PADDI (460:485:510)(460:485:510))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "input1_0_")
+    (INSTANCE input1\[0\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH input10 PADDI (460:485:510)(460:485:510))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "input2_3_")
+    (INSTANCE input2\[3\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH input23 PADDI (460:485:510)(460:485:510))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "input2_2_")
+    (INSTANCE input2\[2\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH input22 PADDI (460:485:510)(460:485:510))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "input2_1_")
+    (INSTANCE input2\[1\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH input21 PADDI (460:485:510)(460:485:510))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "input2_0_")
+    (INSTANCE input2\[0\]_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH input20 PADDI (460:485:510)(460:485:510))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "top")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+        (INTERCONNECT genericMax\.SLICE_0/F0 genericMax\.SLICE_0/C1 (264:284:304)
+          (264:284:304))
+        (INTERCONNECT input2\[2\]_I/PADDI genericMax\.SLICE_0/B1 (3305:3490:3675)
+          (3305:3490:3675))
+        (INTERCONNECT input2\[2\]_I/PADDI genericMax\.SLICE_2/D1 (2948:3152:3357)
+          (2948:3152:3357))
+        (INTERCONNECT input1\[2\]_I/PADDI genericMax\.SLICE_0/A1 (2168:2399:2630)
+          (2168:2399:2630))
+        (INTERCONNECT input1\[2\]_I/PADDI genericMax\.SLICE_2/C1 (2062:2286:2511)
+          (2062:2286:2511))
+        (INTERCONNECT input2\[0\]_I/PADDI genericMax\.SLICE_0/D0 (3490:3681:3873)
+          (3490:3681:3873))
+        (INTERCONNECT input2\[0\]_I/PADDI genericMax\.SLICE_4/C1 (3794:3965:4137)
+          (3794:3965:4137))
+        (INTERCONNECT input1\[0\]_I/PADDI genericMax\.SLICE_0/C0 (3291:3436:3582)
+          (3291:3436:3582))
+        (INTERCONNECT input1\[0\]_I/PADDI genericMax\.SLICE_4/D1 (2987:3152:3318)
+          (2987:3152:3318))
+        (INTERCONNECT input1\[1\]_I/PADDI genericMax\.SLICE_0/B0 (2115:2339:2564)
+          (2115:2339:2564))
+        (INTERCONNECT input1\[1\]_I/PADDI genericMax\.SLICE_4/B0 (2115:2339:2564)
+          (2115:2339:2564))
+        (INTERCONNECT input2\[1\]_I/PADDI genericMax\.SLICE_0/A0 (3357:3549:3741)
+          (3357:3549:3741))
+        (INTERCONNECT input2\[1\]_I/PADDI genericMax\.SLICE_4/A0 (3357:3549:3741)
+          (3357:3549:3741))
+        (INTERCONNECT genericMax\.SLICE_0/F1 genericMax\.SLICE_2/B0 (2022:2253:2485)
+          (2022:2253:2485))
+        (INTERCONNECT genericMax\.SLICE_2/F0 genericMax\.SLICE_2/A1 (2075:2313:2551)
+          (2075:2313:2551))
+        (INTERCONNECT genericMax\.SLICE_2/F0 genericMax\.SLICE_4/A1 (2075:2313:2551)
+          (2075:2313:2551))
+        (INTERCONNECT genericMax\.SLICE_2/F0 genericMax\.SLICE_4/D0 (1665:1916:2168)
+          (1665:1916:2168))
+        (INTERCONNECT input2\[3\]_I/PADDI genericMax\.SLICE_2/C0 (2710:2908:3106)
+          (2710:2908:3106))
+        (INTERCONNECT input2\[3\]_I/PADDI genericMax\.SLICE_6/C0 (2710:2908:3106)
+          (2710:2908:3106))
+        (INTERCONNECT input1\[3\]_I/PADDI genericMax\.SLICE_2/A0 (3899:4077:4256)
+          (3899:4077:4256))
+        (INTERCONNECT input1\[3\]_I/PADDI genericMax\.SLICE_6/A0 (3899:4077:4256)
+          (3899:4077:4256))
+        (INTERCONNECT genericMax\.SLICE_2/F1 out\[2\]_I/PADDO (7138:7197:7257)
+          (7138:7197:7257))
+        (INTERCONNECT genericMax\.SLICE_4/F0 out\[1\]_I/PADDO (8341:8453:8565)
+          (8341:8453:8565))
+        (INTERCONNECT genericMax\.SLICE_4/F1 out\[0\]_I/PADDO (7746:7858:7970)
+          (7746:7858:7970))
+        (INTERCONNECT genericMax\.SLICE_6/F0 out\[3\]_I/PADDO (7693:7765:7838)
+          (7693:7765:7838))
+      )
+    )
+  )
+)

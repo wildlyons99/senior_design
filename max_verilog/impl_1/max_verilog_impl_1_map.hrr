@@ -1,0 +1,18 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7        100.0
+                               LUTGATE	          7        100.0
+                                 IOBUF	         12        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+          max(DATA_WIDTH=4,DATA_NUM=2)	          1        100.0
+---------------------------------------------------
+Report for cell max(DATA_WIDTH=4,DATA_NUM=2)
+   Instance path: top/genericMax
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7        100.0
+                               LUTGATE	          7        100.0

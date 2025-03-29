@@ -1,0 +1,19 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  0 of 5280 (0.000%)
+I/O cells:      12
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                 IB         8          100.0
+                               LUT4         7          100.0
+                                 OB         4          100.0
+SUB MODULES
+       max(DATA_WIDTH=4,DATA_NUM=2)         1
+                              TOTAL        20
+----------------------------------------------------------------------
+Report for cell max(DATA_WIDTH=4,DATA_NUM=2).v1
+Instance Path : genericMax
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         7          100.0
+                              TOTAL         7
