@@ -1,0 +1,7 @@
+-ver "C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.vhd"
+-ver "Z:/senior_design/0v7670_Verilog/vga_radiant/source/impl_1/vga.v" "Z:/senior_design/0v7670_Verilog/vga_radiant/source/impl_1/top.v" "Z:/senior_design/0v7670_Verilog/vga_radiant/source/impl_1/pattern_gen.v" "Z:/senior_design/0v7670_Verilog/vga_radiant/source/impl_1/spram.v"
+-path "Z:/senior_design/0v7670_Verilog/vga_radiant"
+-top top
+-isTop
+-a "iCE40UP"

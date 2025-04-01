@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="1742939336">
+            <Task name="Bitgen" build_result="0" update_result="2" update_time="1742939336"/>
+            <Task name="IBIS" build_result="0" update_result="2" update_time="1742939336"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1742939336"/>
+        </Milestone>
+        <Milestone name="Map" build_result="0" build_time="1742939336">
+            <Task name="Map" build_result="0" update_result="2" update_time="1742939336"/>
+            <Task name="MapTrace" build_result="0" update_result="2" update_time="1741545993"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="0" build_time="1742939336">
+            <Task name="PAR" build_result="0" update_result="2" update_time="1742939336"/>
+            <Task name="PARTrace" build_result="0" update_result="2" update_time="1742939336"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1742941055">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1742941055"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1742941055"/>
+            <Task name="SynTrace" build_result="0" update_result="2" update_time="1742941039"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1742941039"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0"/>
+        <Report name="IBIS/vga_radiant_impl_1.ibs" last_build_time="1741550481" last_build_size="54309"/>
+        <Report name="vga_radiant_impl_1.bgn" last_build_time="1741550480" last_build_size="1044"/>
+        <Report name="vga_radiant_impl_1.bin" last_build_time="1741550480" last_build_size="104156"/>
+        <Report name="vga_radiant_impl_1.lsedata" last_build_time="0" last_build_size="0"/>
+        <Report name="vga_radiant_impl_1.twr.html" last_build_time="1741550479" last_build_size="15109"/>
+        <Report name="vga_radiant_impl_1.udb" last_build_time="1741550477" last_build_size="9588"/>
+        <Report name="vga_radiant_impl_1_map.udb" last_build_time="1741550471" last_build_size="6891"/>
+        <Report name="vga_radiant_impl_1_rtl.udb" last_build_time="1742941053" last_build_size="4819"/>
+        <Report name="vga_radiant_impl_1_syn.udb" last_build_time="1742941055" last_build_size="5162"/>
+        <Report name="vga_radiant_impl_1_vo.sdf" last_build_time="1741550482" last_build_size="38034"/>
+        <Report name="vga_radiant_impl_1_vo.vo" last_build_time="1741550482" last_build_size="38927"/>
+    </Strategy>
+</BuildStatus>
+      

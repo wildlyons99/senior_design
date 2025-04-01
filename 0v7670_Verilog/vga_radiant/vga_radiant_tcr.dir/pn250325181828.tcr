@@ -1,0 +1,9 @@
+#Start recording tcl command: 3/25/2025 16:54:17
+#Project Location: Z:/senior_design/0v7670_Verilog/vga_radiant; Project name: vga_radiant
+prj_open "Z:/senior_design/0v7670_Verilog/vga_radiant/vga_radiant.rdf"
+prj_add_source "Z:/senior_design/0v7670_Verilog/vga_radiant/source/impl_1/spram.v"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_set_impl_opt -impl "impl_1" "top" "top"
+prj_run Synthesis -impl impl_1
+#Stop recording: 3/25/2025 18:18:28
