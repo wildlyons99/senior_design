@@ -63,7 +63,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>Z:/senior_design/0v7670_Verilog/vga_radiant/mypll/rtl/mypll.v(11): </Dynamic>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/vga_radiant/mypll/rtl/mypll.v(11):</Dynamic>
             <Dynamic>mypll</Dynamic>
             <Navigation>Z:/senior_design/0v7670_Verilog/vga_radiant/mypll/rtl/mypll.v</Navigation>
             <Navigation>11</Navigation>
@@ -71,7 +71,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>Z:/senior_design/0v7670_Verilog/vga_radiant/mypll/rtl/mypll.v(105): </Dynamic>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/vga_radiant/mypll/rtl/mypll.v(105):</Dynamic>
             <Dynamic>mypll_ipgen_lscc_pll(DIVR=&quot;0&quot;,DIVF=&quot;66&quot;,DIVQ=&quot;5&quot;,FILTER_RANGE=&quot;1&quot;,PLLOUT_SELECT_PORTA=&quot;GENCLK&quot;,PLLOUT_SELECT_PORTB=&quot;GENCLK&quot;,FREQUENCY_PIN_REFERENCECLK=&quot;12.000000&quot;)</Dynamic>
             <Navigation>Z:/senior_design/0v7670_Verilog/vga_radiant/mypll/rtl/mypll.v</Navigation>
             <Navigation>105</Navigation>
@@ -79,7 +79,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(428): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(428):</Dynamic>
             <Dynamic>PLL_B(PLLOUT_SELECT_PORTA=&quot;GENCLK&quot;,PLLOUT_SELECT_PORTB=&quot;GENCLK&quot;,DIVF=&quot;66&quot;,DIVQ=&quot;5&quot;,FILTER_RANGE=&quot;1&quot;,FREQUENCY_PIN_REFERENCECLK=&quot;12.000000&quot;)</Dynamic>
             <Navigation>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v</Navigation>
             <Navigation>428</Navigation>
@@ -161,7 +161,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>Z:/senior_design/0v7670_Verilog/vga_radiant/source/impl_1/top.v(1): </Dynamic>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/vga_radiant/source/impl_1/top.v(1):</Dynamic>
             <Dynamic>top</Dynamic>
             <Navigation>Z:/senior_design/0v7670_Verilog/vga_radiant/source/impl_1/top.v</Navigation>
             <Navigation>1</Navigation>
@@ -169,7 +169,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>mypll.v(63): </Dynamic>
+            <Dynamic>mypll.v(63):</Dynamic>
             <Dynamic>mypll</Dynamic>
             <Navigation>mypll.v</Navigation>
             <Navigation>63</Navigation>
@@ -177,7 +177,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>Z:/senior_design/0v7670_Verilog/vga_radiant/source/impl_1/vga.v(1): </Dynamic>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/vga_radiant/source/impl_1/vga.v(1):</Dynamic>
             <Dynamic>vga</Dynamic>
             <Navigation>Z:/senior_design/0v7670_Verilog/vga_radiant/source/impl_1/vga.v</Navigation>
             <Navigation>1</Navigation>
@@ -185,7 +185,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>Z:/senior_design/0v7670_Verilog/vga_radiant/source/impl_1/pattern_gen.v(1): </Dynamic>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/vga_radiant/source/impl_1/pattern_gen.v(1):</Dynamic>
             <Dynamic>pattern_gen</Dynamic>
             <Navigation>Z:/senior_design/0v7670_Verilog/vga_radiant/source/impl_1/pattern_gen.v</Navigation>
             <Navigation>1</Navigation>
@@ -252,7 +252,7 @@
         <Message>
             <ID>35921014</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd(4): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd(4):</Dynamic>
             <Dynamic>components</Dynamic>
             <Navigation>c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd</Navigation>
             <Navigation>4</Navigation>
@@ -260,7 +260,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/senior_design/0v7670_verilog/vga_radiant/source/impl_1/top.v(1): </Dynamic>
+            <Dynamic>z:/senior_design/0v7670_verilog/vga_radiant/source/impl_1/top.v(1):</Dynamic>
             <Dynamic>top</Dynamic>
             <Navigation>z:/senior_design/0v7670_verilog/vga_radiant/source/impl_1/top.v</Navigation>
             <Navigation>1</Navigation>
@@ -268,7 +268,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/senior_design/0v7670_verilog/vga_radiant/mypll/rtl/mypll.v(11): </Dynamic>
+            <Dynamic>z:/senior_design/0v7670_verilog/vga_radiant/mypll/rtl/mypll.v(11):</Dynamic>
             <Dynamic>mypll</Dynamic>
             <Navigation>z:/senior_design/0v7670_verilog/vga_radiant/mypll/rtl/mypll.v</Navigation>
             <Navigation>11</Navigation>
@@ -276,7 +276,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/senior_design/0v7670_verilog/vga_radiant/mypll/rtl/mypll.v(105): </Dynamic>
+            <Dynamic>z:/senior_design/0v7670_verilog/vga_radiant/mypll/rtl/mypll.v(105):</Dynamic>
             <Dynamic>mypll_ipgen_lscc_pll(DIVR=&quot;0&quot;,DIVF=&quot;66&quot;,DIVQ=&quot;5&quot;,FILTER_RANGE=&quot;1&quot;,PLLOUT_SELECT_PORTA=&quot;GENCLK&quot;,PLLOUT_SELECT_PORTB=&quot;GENCLK&quot;,FREQUENCY_PIN_REFERENCECLK=&quot;12.000000&quot;)</Dynamic>
             <Navigation>z:/senior_design/0v7670_verilog/vga_radiant/mypll/rtl/mypll.v</Navigation>
             <Navigation>105</Navigation>
@@ -284,7 +284,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(428): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(428):</Dynamic>
             <Dynamic>PLL_B(PLLOUT_SELECT_PORTA=&quot;GENCLK&quot;,PLLOUT_SELECT_PORTB=&quot;GENCLK&quot;,DIVF=&quot;66&quot;,DIVQ=&quot;5&quot;,FILTER_RANGE=&quot;1&quot;,FREQUENCY_PIN_REFERENCECLK=&quot;12.000000&quot;)</Dynamic>
             <Navigation>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v</Navigation>
             <Navigation>428</Navigation>
@@ -302,7 +302,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/senior_design/0v7670_verilog/vga_radiant/source/impl_1/vga.v(1): </Dynamic>
+            <Dynamic>z:/senior_design/0v7670_verilog/vga_radiant/source/impl_1/vga.v(1):</Dynamic>
             <Dynamic>vga</Dynamic>
             <Navigation>z:/senior_design/0v7670_verilog/vga_radiant/source/impl_1/vga.v</Navigation>
             <Navigation>1</Navigation>
@@ -310,7 +310,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/senior_design/0v7670_verilog/vga_radiant/source/impl_1/pattern_gen.v(1): </Dynamic>
+            <Dynamic>z:/senior_design/0v7670_verilog/vga_radiant/source/impl_1/pattern_gen.v(1):</Dynamic>
             <Dynamic>pattern_gen</Dynamic>
             <Navigation>z:/senior_design/0v7670_verilog/vga_radiant/source/impl_1/pattern_gen.v</Navigation>
             <Navigation>1</Navigation>
@@ -328,7 +328,7 @@
         <Message>
             <ID>70001944</ID>
             <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {clk_25Mhz_c} -source [get_pins {pll_instantiation/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_instantiation/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+            <Dynamic>create_generated_clock -name {clk_25Mhz_c} -source [get_pins {pll_instantiation/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll_instantiation/lscc_pll_inst/u_PLL_B/OUTCORE }]</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

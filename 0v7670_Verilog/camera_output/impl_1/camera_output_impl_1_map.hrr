@@ -1,0 +1,44 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         90        100.0
+                               LUTGATE	         52        100.0
+                                LUTCCU	         38        100.0
+                                 IOBUF	         17        100.0
+                                PFUREG	         38        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                                 mypll	          1         0.0
+                              sevenseg	          1        17.8
+                                   vga	          1        57.8
+---------------------------------------------------
+Report for cell mypll
+   Instance path: top/my_pll
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+        mypll_ipgen_lscc_pll_Z1_layer0	          1         0.0
+---------------------------------------------------
+Report for cell mypll_ipgen_lscc_pll_Z1_layer0
+   Instance path: top/my_pll/lscc_pll_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell vga
+   Instance path: top/vga_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         52        57.8
+                               LUTGATE	         32        61.5
+                                LUTCCU	         20        52.6
+                                PFUREG	         20        52.6
+---------------------------------------------------
+Report for cell sevenseg
+   Instance path: top/count_display
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         16        17.8
+                               LUTGATE	         16        30.8

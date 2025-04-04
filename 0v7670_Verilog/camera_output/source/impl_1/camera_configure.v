@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+// https://www.eevblog.com/forum/microcontrollers/lattice-radiant-for-ice40up-fpga-series/25/
 
 module top
 #(
@@ -9,23 +10,26 @@ module top
 	input  wire start,
 	
 	// Camera Inputs
-	input  wire CAMERA_VSYNC_IN,
-	input  wire CAMERA_HREF_IN,
-	input  wire [7:0] CAMERA_DATA_IN,
-	input  wire CAMERA_PCLOCK,
-	output wire sioc,
-	output wire siod,
-	output wire done,
-	output wire frame_done,
-	output wire pixel_valid,
-	output wire test_clk,
+	//input  wire CAMERA_VSYNC_IN,
+	//input  wire CAMERA_HREF_IN,
+	//input  wire [7:0] CAMERA_DATA_IN,
+	//input  wire CAMERA_PCLOCK,
+	//output wire sioc,
+	//output wire siod,
+	//output wire done,
+	//output wire frame_done,
+	//output wire pixel_valid,
 	
 	// VGA Outputs 
 	output wire [5:0]   RGB, 
+	//output reg [5:0]   RGB,
 	output wire         VGA_HSYNC,
-	output wire         VGA_VSYNC	
+	output wire         VGA_VSYNC, 
+	output wire [6:0]   seven_seg_out
 
 );
+	// temp since no input
+	wire [7:0] CAMERA_DATA_IN; 
     
     wire [7:0] rom_addr;
     wire [15:0] rom_dout;
@@ -53,52 +57,52 @@ module top
 	reg [15:0] count; 
 	wire [15:0] address_out;
     
-    OV7670_config_rom rom1(
-        .clk(clk_25MHz),
-        .addr(rom_addr),
-        .dout(rom_dout)
-    );
+    //OV7670_config_rom rom1(
+        //.clk(clk_25MHz),
+        //.addr(rom_addr),
+        //.dout(rom_dout)
+    //);
         
-    OV7670_config #(
-		.CLK_FREQ(CLK_FREQ)) config_1(
-        .clk(clk_25MHz),
-        .SCCB_interface_ready(SCCB_ready),
-        .rom_data(rom_dout),
-        .start(start),
-        .rom_addr(rom_addr),
-        .done(done),
-        .SCCB_interface_addr(SCCB_addr),
-        .SCCB_interface_data(SCCB_data),
-        .SCCB_interface_start(SCCB_start)
-    );
+    //OV7670_config #(
+		//.CLK_FREQ(CLK_FREQ)) config_1(
+        //.clk(clk_25MHz),
+        //.SCCB_interface_ready(SCCB_ready),
+        //.rom_data(rom_dout),
+        //.start(start),
+        //.rom_addr(rom_addr),
+        //.done(done),
+        //.SCCB_interface_addr(SCCB_addr),
+        //.SCCB_interface_data(SCCB_data),
+        //.SCCB_interface_start(SCCB_start)
+    //);
     
-    SCCB_interface #( 
-		.CLK_FREQ(CLK_FREQ)) SCCB1(
-        .clk(clk_25MHz),
-        .start(SCCB_start),
-        .address(SCCB_addr),
-        .data(SCCB_data),
-        .ready(SCCB_ready),
-        .SIOC_oe(SCCB_SIOC_oe),
-        .SIOD_oe(SCCB_SIOD_oe)
-    );
+    //SCCB_interface #( 
+		//.CLK_FREQ(CLK_FREQ)) SCCB1(
+        //.clk(clk_25MHz),
+        //.start(SCCB_start),
+        //.address(SCCB_addr),
+        //.data(SCCB_data),
+        //.ready(SCCB_ready),
+        //.SIOC_oe(SCCB_SIOC_oe),
+        //.SIOD_oe(SCCB_SIOD_oe)
+    //);
 		
 	mypll my_pll(
-		.ref_clk_i(clk_12MHz),
+		.ref_clk_i(clk_12MHz), 
         .rst_n_i(1'b1),
         .outcore_o(clk_25MHz),
         .outglobal_o()
 	);
 		
-	camera_read reader(
-		.p_clock(CAMERA_PCLOCK),
-		.vsync(CAMERA_VSYNC_IN),
-		.href(CAMERA_HREF_IN),
-		.p_data(CAMERA_DATA_IN),
-		.pixel_data(),
-		.pixel_valid(pixel_valid),
-		.frame_done(frame_done)
-	);
+	//camera_read reader(
+		//.p_clock(CAMERA_PCLOCK),
+		//.vsync(CAMERA_VSYNC_IN),
+		//.href(CAMERA_HREF_IN),
+		//.p_data(CAMERA_DATA_IN),
+		//.pixel_data(),
+		//.pixel_valid(pixel_valid),
+		//.frame_done(frame_done)
+	//);
 	
 	// Instantiate the VGA module
      vga vga_inst (
@@ -109,40 +113,48 @@ module top
          .row(row),
          .col(col)
      );
+	 //wire [5:0] temp; 
+	 //pattern_gen map_rgb(
+		 //.clk(clk_25MHz),
+		 //.y(row),
+		 //.x(col),
+		 //.RGB(RGB) 
+	 //); 
 	 
-	 pattern_gen map_rgb(
-		 .clk(clk_25MHz),
-		 .y(row),
-		 .x(col),
-		 .RGB(RGB) 
-	 ); 
-	 
-	 
-	 // initialize SPRAM module
-	 SB_SPRAM256KA SPRAM1(	
-		.ADDRESS(14'b0),
-		.DATAIN(count),
-		.MASKWREN(4'b1111),        // maskable write - leaving at default (4b'1111)
-		.WREN(WR),          // 1 is write, 0 is read
-		.CHIPSELECT(1'b1),     // 1 turns it on
-		.CLOCK(clk_25MHz),  // clock that drives the memory
-		.STANDBY(1'b0),        // when high, goes into low leakage mode
-		.SLEEP(1'b0),          
-		.POWEROFF(1'b1),       // when high, memory is on
-		.DATAOUT(address_out) // 16 bit out
-	);
+	SP256K SPRAM1 (
+	  .AD       (14'b0),  // I
+	  .DI       (count),  // I
+	  .MASKWE   (4'b1111),  // I
+	  .WE       (WR),  // I
+	  .CS       (1'b1),  // I
+	  .CK       (clk_25MHz),  // I
+	  .STDBY    (1'b0),  // I
+	  .SLEEP    (1'b0),  // I
+	  .PWROFF_N (1'b1),  // I
+	  .DO       (address_out)   // O
+	); 
 	
-	assign RGB = address_out[7:0];
+	// seven seg 
+	sevenseg count_display ( 
+		.S(address_out[3:0]),
+		.segments(seven_seg_out)
+	); 
+
+	assign RGB = (col > 240) ? address_out[5:0] : 6'b000011;
+	// assign RGB = (col > 240) ? 6'b111100 : 6'b000011; 
 
     // Edge detection and counter update
     always @(posedge clk_25MHz) begin
 		// Update previous state
 		start_prev <= start;
 		WR <= 0; 
+		//RGB <= address_out[5:0]; 
+		//RGB <= 6'b000011;
 		// Check for rising edge: current 'start' is high and previous was low
-		if (start && !start_prev) begin
+		if (!start && start_prev) begin
 			count <= count + 1;
             WR <= 1; 
+			//RGB <= 6'b110000;
         end
     end
     

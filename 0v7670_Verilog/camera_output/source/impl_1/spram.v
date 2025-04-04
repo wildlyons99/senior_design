@@ -12,7 +12,6 @@ module SB_SPRAM256KA (
     integer i;
 	
     always @(negedge POWEROFF) begin
-		// synthesis loop_limit 16383
         for (i = 0; i <= 16383; i = i+1)
             mem[i] = 'bx;
     end

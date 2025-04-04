@@ -1,0 +1,686 @@
+# Fri Apr  4 15:07:11 2025
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-1
+Install: C:\lscc\radiant\2023.1\synpbase
+OS: Windows 10 or later
+Hostname: H109W18
+
+Implementation : impl_1
+Synopsys Lattice Technology Mapper, Version map202303lat, Build 062R, Built May 29 2023 11:06:50, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 124MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 138MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 138MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 127MB peak: 138MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 129MB peak: 138MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 185MB peak: 185MB)
+
+@N: BZ173 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\seven_seg.v":7:8:7:11|ROM count_display.segments_1[6:0] (in view: work.top(verilog)) mapped in logic.
+@N: BZ173 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\seven_seg.v":7:8:7:11|ROM count_display.segments_1[6:0] (in view: work.top(verilog)) mapped in logic.
+@N: MO106 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\seven_seg.v":7:8:7:11|Found ROM count_display.segments_1[6:0] (in view: work.top(verilog)) with 16 words by 7 bits.
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 189MB)
+
+@N: MO231 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_configure.v":147:4:147:9|Found counter in view:work.top(verilog) instance count[15:0] 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 190MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 190MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+NConnInternalConnection caching is on
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 190MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 191MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 191MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 191MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 191MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 192MB peak: 192MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -2.21ns		  70 /        38
+   2		0h:00m:00s		    -2.21ns		  70 /        38
+
+   3		0h:00m:00s		    -2.21ns		  80 /        38
+
+
+   4		0h:00m:00s		    -0.09ns		  82 /        38
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 193MB peak: 193MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 193MB peak: 193MB)
+
+
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 193MB peak: 193MB)
+
+
+Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 193MB peak: 194MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 194MB)
+
+Writing Analyst data base Z:\senior_design\0v7670_Verilog\camera_output\impl_1\synwork\camera_output_impl_1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 194MB peak: 194MB)
+
+Writing Verilog Simulation files
+
+Writing scf file... (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 195MB)
+
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 195MB)
+
+
+Finished Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 196MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 194MB peak: 196MB)
+
+@W: MT246 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_configure.v":124:8:124:13|Blackbox SP256K is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"z:\senior_design\0v7670_verilog\camera_output\mypll\rtl\mypll.v":202:69:202:75|Blackbox PLL_B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net my_pll.lscc_pll_inst.clk_25MHz.
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Fri Apr  4 15:07:14 2025
+#
+
+
+Top view:               top
+Requested Frequency:    200.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1_cpe.ldc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -6.822
+
+                                                            Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock                                              Frequency     Frequency     Period        Period        Slack      Type         Group                
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     200.0 MHz     119.0 MHz     5.000         8.401         -3.401     inferred     Inferred_clkgroup_0_1
+System                                                      200.0 MHz     249.9 MHz     5.000         4.002         0.999      system       system_clkgroup      
+=================================================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                                            |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                                 Ending                                                   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                   System                                                   |  5.000       0.999   |  No paths    -      |  No paths    -      |  No paths    -    
+System                                                   mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock  |  5.000       -4.040  |  No paths    -      |  No paths    -      |  No paths    -    
+mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock  System                                                   |  5.000       -6.822  |  No paths    -      |  No paths    -      |  No paths    -    
+mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock  mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock  |  5.000       -3.401  |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                    Starting                                                                                   Arrival           
+Instance            Reference                                                   Type        Pin     Net        Time        Slack 
+                    Clock                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------
+vga_inst.col[2]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[2]     0.796       -6.822
+vga_inst.col[3]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[3]     0.796       -6.801
+vga_inst.row[3]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       row[3]     0.796       -5.358
+vga_inst.row[4]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       row[4]     0.796       -5.286
+vga_inst.col[0]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[0]     0.796       -5.069
+vga_inst.col[1]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[1]     0.796       -4.996
+vga_inst.col[5]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[5]     0.796       -4.965
+vga_inst.row[1]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       row[1]     0.796       -3.336
+vga_inst.col[4]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[4]     0.796       -3.325
+vga_inst.row[5]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       row[5]     0.796       -3.325
+=================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                    Starting                                                                                          Required           
+Instance            Reference                                                   Type        Pin     Net               Time         Slack 
+                    Clock                                                                                                                
+-----------------------------------------------------------------------------------------------------------------------------------------
+RGB_obuf[0]         mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       RGB_0_i[0]        5.000        -6.822
+RGB_obuf[1]         mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       RGB_0_i[1]        5.000        -6.822
+RGB_obuf[2]         mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       RGB_c[2]          5.000        -6.812
+RGB_obuf[3]         mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       RGB_c[3]          5.000        -6.812
+RGB_obuf[4]         mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       RGB_c[4]          5.000        -6.812
+RGB_obuf[5]         mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       RGB_c[5]          5.000        -6.812
+VGA_VSYNC_obuf      mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       VGA_VSYNC_0_i     5.000        -5.358
+vga_inst.col[5]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     D       col_3[5]          4.845        -3.401
+vga_inst.col[8]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     D       col_3[8]          4.845        -3.401
+vga_inst.col[9]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     D       col_3[9]          4.845        -3.401
+=========================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.000
+
+    - Propagation time:                      11.822
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -6.822
+
+    Number of logic level(s):                4
+    Starting point:                          vga_inst.col[2] / Q
+    Ending point:                            RGB_obuf[0] / I
+    The start point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                              Pin      Pin               Arrival      No. of    
+Name                                            Type        Name     Dir     Delay     Time         Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+vga_inst.col[2]                                 FD1P3DZ     Q        Out     0.796     0.796 f      -         
+col[2]                                          Net         -        -       1.599     -            3         
+count_display.segments_1_6_0_.un3_RGBlto3_0     LUT4        A        In      -         2.395 f      -         
+count_display.segments_1_6_0_.un3_RGBlto3_0     LUT4        Z        Out     0.661     3.056 r      -         
+un3_RGBlto3_0                                   Net         -        -       1.371     -            1         
+count_display.segments_1_6_0_.un3_RGBlto7_0     LUT4        D        In      -         4.427 r      -         
+count_display.segments_1_6_0_.un3_RGBlto7_0     LUT4        Z        Out     0.424     4.851 f      -         
+un3_RGBlto7_0                                   Net         -        -       1.371     -            1         
+count_display.segments_1_6_0_.un3_RGBlto7       LUT4        D        In      -         6.222 f      -         
+count_display.segments_1_6_0_.un3_RGBlto7       LUT4        Z        Out     0.424     6.646 f      -         
+un3_RGBlt9                                      Net         -        -       1.371     -            6         
+count_display.segments_1_6_0_.RGB_0_i[0]        LUT4        D        In      -         8.017 f      -         
+count_display.segments_1_6_0_.RGB_0_i[0]        LUT4        Z        Out     0.465     8.482 r      -         
+RGB_0_i[0]                                      Net         -        -       3.340     -            1         
+RGB_obuf[0]                                     OB          I        In      -         11.822 r     -         
+==============================================================================================================
+Total path delay (propagation time + setup) of 11.822 is 2.770(23.4%) logic and 9.052(76.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.000
+
+    - Propagation time:                      11.822
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -6.822
+
+    Number of logic level(s):                4
+    Starting point:                          vga_inst.col[2] / Q
+    Ending point:                            RGB_obuf[1] / I
+    The start point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                              Pin      Pin               Arrival      No. of    
+Name                                            Type        Name     Dir     Delay     Time         Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+vga_inst.col[2]                                 FD1P3DZ     Q        Out     0.796     0.796 f      -         
+col[2]                                          Net         -        -       1.599     -            3         
+count_display.segments_1_6_0_.un3_RGBlto3_0     LUT4        A        In      -         2.395 f      -         
+count_display.segments_1_6_0_.un3_RGBlto3_0     LUT4        Z        Out     0.661     3.056 r      -         
+un3_RGBlto3_0                                   Net         -        -       1.371     -            1         
+count_display.segments_1_6_0_.un3_RGBlto7_0     LUT4        D        In      -         4.427 r      -         
+count_display.segments_1_6_0_.un3_RGBlto7_0     LUT4        Z        Out     0.424     4.851 f      -         
+un3_RGBlto7_0                                   Net         -        -       1.371     -            1         
+count_display.segments_1_6_0_.un3_RGBlto7       LUT4        D        In      -         6.222 f      -         
+count_display.segments_1_6_0_.un3_RGBlto7       LUT4        Z        Out     0.424     6.646 f      -         
+un3_RGBlt9                                      Net         -        -       1.371     -            6         
+count_display.segments_1_6_0_.RGB_0_i[1]        LUT4        D        In      -         8.017 f      -         
+count_display.segments_1_6_0_.RGB_0_i[1]        LUT4        Z        Out     0.465     8.482 r      -         
+RGB_0_i[1]                                      Net         -        -       3.340     -            1         
+RGB_obuf[1]                                     OB          I        In      -         11.822 r     -         
+==============================================================================================================
+Total path delay (propagation time + setup) of 11.822 is 2.770(23.4%) logic and 9.052(76.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.000
+
+    - Propagation time:                      11.801
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -6.801
+
+    Number of logic level(s):                4
+    Starting point:                          vga_inst.col[3] / Q
+    Ending point:                            RGB_obuf[2] / I
+    The start point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                              Pin      Pin               Arrival      No. of    
+Name                                            Type        Name     Dir     Delay     Time         Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+vga_inst.col[3]                                 FD1P3DZ     Q        Out     0.796     0.796 r      -         
+col[3]                                          Net         -        -       1.599     -            3         
+count_display.segments_1_6_0_.un3_RGBlto3_0     LUT4        B        In      -         2.395 r      -         
+count_display.segments_1_6_0_.un3_RGBlto3_0     LUT4        Z        Out     0.558     2.953 f      -         
+un3_RGBlto3_0                                   Net         -        -       1.371     -            1         
+count_display.segments_1_6_0_.un3_RGBlto7_0     LUT4        D        In      -         4.324 f      -         
+count_display.segments_1_6_0_.un3_RGBlto7_0     LUT4        Z        Out     0.465     4.789 r      -         
+un3_RGBlto7_0                                   Net         -        -       1.371     -            1         
+count_display.segments_1_6_0_.un3_RGBlto7       LUT4        D        In      -         6.160 r      -         
+count_display.segments_1_6_0_.un3_RGBlto7       LUT4        Z        Out     0.465     6.625 r      -         
+un3_RGBlt9                                      Net         -        -       1.371     -            6         
+count_display.segments_1_6_0_.RGB[2]            LUT4        D        In      -         7.996 r      -         
+count_display.segments_1_6_0_.RGB[2]            LUT4        Z        Out     0.465     8.461 r      -         
+RGB_c[2]                                        Net         -        -       3.340     -            1         
+RGB_obuf[2]                                     OB          I        In      -         11.801 r     -         
+==============================================================================================================
+Total path delay (propagation time + setup) of 11.801 is 2.749(23.3%) logic and 9.052(76.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      5.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.000
+
+    - Propagation time:                      11.801
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -6.801
+
+    Number of logic level(s):                4
+    Starting point:                          vga_inst.col[3] / Q
+    Ending point:                            RGB_obuf[3] / I
+    The start point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                              Pin      Pin               Arrival      No. of    
+Name                                            Type        Name     Dir     Delay     Time         Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+vga_inst.col[3]                                 FD1P3DZ     Q        Out     0.796     0.796 r      -         
+col[3]                                          Net         -        -       1.599     -            3         
+count_display.segments_1_6_0_.un3_RGBlto3_0     LUT4        B        In      -         2.395 r      -         
+count_display.segments_1_6_0_.un3_RGBlto3_0     LUT4        Z        Out     0.558     2.953 f      -         
+un3_RGBlto3_0                                   Net         -        -       1.371     -            1         
+count_display.segments_1_6_0_.un3_RGBlto7_0     LUT4        D        In      -         4.324 f      -         
+count_display.segments_1_6_0_.un3_RGBlto7_0     LUT4        Z        Out     0.465     4.789 r      -         
+un3_RGBlto7_0                                   Net         -        -       1.371     -            1         
+count_display.segments_1_6_0_.un3_RGBlto7       LUT4        D        In      -         6.160 r      -         
+count_display.segments_1_6_0_.un3_RGBlto7       LUT4        Z        Out     0.465     6.625 r      -         
+un3_RGBlt9                                      Net         -        -       1.371     -            6         
+count_display.segments_1_6_0_.RGB[3]            LUT4        D        In      -         7.996 r      -         
+count_display.segments_1_6_0_.RGB[3]            LUT4        Z        Out     0.465     8.461 r      -         
+RGB_c[3]                                        Net         -        -       3.340     -            1         
+RGB_obuf[3]                                     OB          I        In      -         11.801 r     -         
+==============================================================================================================
+Total path delay (propagation time + setup) of 11.801 is 2.749(23.3%) logic and 9.052(76.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      5.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.000
+
+    - Propagation time:                      11.801
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -6.801
+
+    Number of logic level(s):                4
+    Starting point:                          vga_inst.col[3] / Q
+    Ending point:                            RGB_obuf[5] / I
+    The start point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                              Pin      Pin               Arrival      No. of    
+Name                                            Type        Name     Dir     Delay     Time         Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+vga_inst.col[3]                                 FD1P3DZ     Q        Out     0.796     0.796 r      -         
+col[3]                                          Net         -        -       1.599     -            3         
+count_display.segments_1_6_0_.un3_RGBlto3_0     LUT4        B        In      -         2.395 r      -         
+count_display.segments_1_6_0_.un3_RGBlto3_0     LUT4        Z        Out     0.558     2.953 f      -         
+un3_RGBlto3_0                                   Net         -        -       1.371     -            1         
+count_display.segments_1_6_0_.un3_RGBlto7_0     LUT4        D        In      -         4.324 f      -         
+count_display.segments_1_6_0_.un3_RGBlto7_0     LUT4        Z        Out     0.465     4.789 r      -         
+un3_RGBlto7_0                                   Net         -        -       1.371     -            1         
+count_display.segments_1_6_0_.un3_RGBlto7       LUT4        D        In      -         6.160 r      -         
+count_display.segments_1_6_0_.un3_RGBlto7       LUT4        Z        Out     0.465     6.625 r      -         
+un3_RGBlt9                                      Net         -        -       1.371     -            6         
+count_display.segments_1_6_0_.RGB[5]            LUT4        D        In      -         7.996 r      -         
+count_display.segments_1_6_0_.RGB[5]            LUT4        Z        Out     0.465     8.461 r      -         
+RGB_c[5]                                        Net         -        -       3.340     -            1         
+RGB_obuf[5]                                     OB          I        In      -         11.801 r     -         
+==============================================================================================================
+Total path delay (propagation time + setup) of 11.801 is 2.749(23.3%) logic and 9.052(76.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                 Starting                                                 Arrival           
+Instance                         Reference     Type       Pin          Net                Time        Slack 
+                                 Clock                                                                      
+------------------------------------------------------------------------------------------------------------
+start_ibuf                       System        IB         O            start_c            0.000       -4.040
+SPRAM1                           System        SP256K     DO[0]        address_out[0]     0.000       0.999 
+SPRAM1                           System        SP256K     DO[1]        address_out[1]     0.000       0.999 
+SPRAM1                           System        SP256K     DO[2]        address_out[2]     0.000       0.999 
+SPRAM1                           System        SP256K     DO[3]        address_out[3]     0.000       0.999 
+SPRAM1                           System        SP256K     DO[4]        address_out[4]     0.000       0.999 
+SPRAM1                           System        SP256K     DO[5]        address_out[5]     0.000       0.999 
+clk_12MHz_ibuf                   System        IB         O            clk_12MHz_c        0.000       5.000 
+my_pll.lscc_pll_inst.u_PLL_B     System        PLL_B      INTFBOUT     intfbout_w         0.000       5.000 
+============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+             Starting                                     Required           
+Instance     Reference     Type        Pin     Net        Time         Slack 
+             Clock                                                           
+-----------------------------------------------------------------------------
+WR           System        FD1P3DZ     D       count9     4.845        -4.040
+count[0]     System        FD1P3DZ     SP      count9     4.845        -4.040
+count[1]     System        FD1P3DZ     SP      count9     4.845        -4.040
+count[2]     System        FD1P3DZ     SP      count9     4.845        -4.040
+count[3]     System        FD1P3DZ     SP      count9     4.845        -4.040
+count[4]     System        FD1P3DZ     SP      count9     4.845        -4.040
+count[5]     System        FD1P3DZ     SP      count9     4.845        -4.040
+count[6]     System        FD1P3DZ     SP      count9     4.845        -4.040
+count[7]     System        FD1P3DZ     SP      count9     4.845        -4.040
+count[8]     System        FD1P3DZ     SP      count9     4.845        -4.040
+=============================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.845
+
+    - Propagation time:                      8.886
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -4.041
+
+    Number of logic level(s):                1
+    Starting point:                          start_ibuf / O
+    Ending point:                            WR / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                     Pin      Pin               Arrival     No. of    
+Name                   Type        Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------
+start_ibuf             IB          O        Out     0.000     0.000 f     -         
+start_c                Net         -        -       6.717     -           2         
+start_prev_RNITCNN     LUT4        A        In      -         6.717 f     -         
+start_prev_RNITCNN     LUT4        Z        Out     0.661     7.378 r     -         
+count9                 Net         -        -       1.507     -           17        
+WR                     FD1P3DZ     D        In      -         8.886 r     -         
+====================================================================================
+Total path delay (propagation time + setup) of 9.041 is 0.817(9.0%) logic and 8.224(91.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.845
+
+    - Propagation time:                      8.886
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -4.041
+
+    Number of logic level(s):                1
+    Starting point:                          start_ibuf / O
+    Ending point:                            count[0] / SP
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                     Pin      Pin               Arrival     No. of    
+Name                   Type        Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------
+start_ibuf             IB          O        Out     0.000     0.000 f     -         
+start_c                Net         -        -       6.717     -           2         
+start_prev_RNITCNN     LUT4        A        In      -         6.717 f     -         
+start_prev_RNITCNN     LUT4        Z        Out     0.661     7.378 r     -         
+count9                 Net         -        -       1.507     -           17        
+count[0]               FD1P3DZ     SP       In      -         8.886 r     -         
+====================================================================================
+Total path delay (propagation time + setup) of 9.041 is 0.817(9.0%) logic and 8.224(91.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.845
+
+    - Propagation time:                      8.886
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -4.041
+
+    Number of logic level(s):                1
+    Starting point:                          start_ibuf / O
+    Ending point:                            count[1] / SP
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                     Pin      Pin               Arrival     No. of    
+Name                   Type        Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------
+start_ibuf             IB          O        Out     0.000     0.000 f     -         
+start_c                Net         -        -       6.717     -           2         
+start_prev_RNITCNN     LUT4        A        In      -         6.717 f     -         
+start_prev_RNITCNN     LUT4        Z        Out     0.661     7.378 r     -         
+count9                 Net         -        -       1.507     -           17        
+count[1]               FD1P3DZ     SP       In      -         8.886 r     -         
+====================================================================================
+Total path delay (propagation time + setup) of 9.041 is 0.817(9.0%) logic and 8.224(91.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      5.000
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.845
+
+    - Propagation time:                      8.886
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -4.041
+
+    Number of logic level(s):                1
+    Starting point:                          start_ibuf / O
+    Ending point:                            count[2] / SP
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                     Pin      Pin               Arrival     No. of    
+Name                   Type        Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------
+start_ibuf             IB          O        Out     0.000     0.000 f     -         
+start_c                Net         -        -       6.717     -           2         
+start_prev_RNITCNN     LUT4        A        In      -         6.717 f     -         
+start_prev_RNITCNN     LUT4        Z        Out     0.661     7.378 r     -         
+count9                 Net         -        -       1.507     -           17        
+count[2]               FD1P3DZ     SP       In      -         8.886 r     -         
+====================================================================================
+Total path delay (propagation time + setup) of 9.041 is 0.817(9.0%) logic and 8.224(91.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      5.000
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.845
+
+    - Propagation time:                      8.886
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -4.041
+
+    Number of logic level(s):                1
+    Starting point:                          start_ibuf / O
+    Ending point:                            count[3] / SP
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                     Pin      Pin               Arrival     No. of    
+Name                   Type        Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------
+start_ibuf             IB          O        Out     0.000     0.000 f     -         
+start_c                Net         -        -       6.717     -           2         
+start_prev_RNITCNN     LUT4        A        In      -         6.717 f     -         
+start_prev_RNITCNN     LUT4        Z        Out     0.661     7.378 r     -         
+count9                 Net         -        -       1.507     -           17        
+count[3]               FD1P3DZ     SP       In      -         8.886 r     -         
+====================================================================================
+Total path delay (propagation time + setup) of 9.041 is 0.817(9.0%) logic and 8.224(91.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 196MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 196MB)
+
+---------------------------------------
+Resource Usage Report for top 
+
+Mapping to part: ice40up5ksg48i-6
+Cell usage:
+CCU2_B          19 uses
+FD1P3DZ         38 uses
+PLL_B           1 use
+SP256K          1 use
+VHI             5 uses
+VLO             5 uses
+LUT4            49 uses
+
+I/O ports: 17
+I/O primitives: 17
+IB             2 uses
+OB             15 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   38 of 5280 (0%)
+Total load per clock:
+   mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock: 39
+
+@S |Mapping Summary:
+Total  LUTs: 49 (0%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed LUTs 49 = 49 
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 63MB peak: 196MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:02s cputime
+# Fri Apr  4 15:07:15 2025
+
+###########################################################]

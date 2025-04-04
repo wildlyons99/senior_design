@@ -1,0 +1,17 @@
+@W: CG1337 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":44:11:44:14|Net sioc is not declared.
+@W: CG1337 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":45:11:45:14|Net siod is not declared.
+@W: CG1337 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":44:11:44:14|Net sioc is not declared.
+@W: CG1337 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":45:11:45:14|Net siod is not declared.
+@W: CG781 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":46:23:46:23|Input sclk_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":47:22:47:22|Input sdi_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":32:12:32:25|Removing wire CAMERA_DATA_IN, as there is no assignment to it.
+@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":34:15:34:22|Removing wire rom_addr, as there is no assignment to it.
+@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":35:16:35:23|Removing wire rom_dout, as there is no assignment to it.
+@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":36:15:36:23|Removing wire SCCB_addr, as there is no assignment to it.
+@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":37:15:37:23|Removing wire SCCB_data, as there is no assignment to it.
+@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":38:9:38:18|Removing wire SCCB_start, as there is no assignment to it.
+@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":39:9:39:18|Removing wire SCCB_ready, as there is no assignment to it.
+@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":40:9:40:20|Removing wire SCCB_SIOC_oe, as there is no assignment to it.
+@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":41:9:41:20|Removing wire SCCB_SIOD_oe, as there is no assignment to it.
+@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":42:6:42:13|Removing wire fast_clk, as there is no assignment to it.
+

@@ -1,0 +1,17 @@
+i my_pll.lscc_pll_inst.outcore_o
+m 0 0
+u 5 38
+n ckid0_0 {t:vga_inst.row[9:0].C} Clock Optimization not enabled
+p {p:vga_inst.clk}{t:vga_inst.row[9:0].C}
+e ckid0_0 {t:vga_inst.row[9:0].C} dffe
+p {p:my_pll.outcore_o}{t:my_pll.outcore_o}{t:count[15:0].C}
+e ckid0_1 {t:count[15:0].C} dff
+d ckid0_0,ckid0_1 {t:my_pll.lscc_pll_inst.u_PLL_B.OUTCORE} PLL_B Clock Optimization not enabled
+i my_pll.lscc_pll_inst.outcore_o_i
+m 0 0
+u 0 0
+i my_pll.lscc_pll_inst.intfbout_w
+m 0 0
+u 0 0
+l 0 0 0 0 0 0
+r 0 0 0 0 0 0 0 0
