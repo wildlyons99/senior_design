@@ -1,4 +1,4 @@
-@P:  Worst Slack : -6.822
+@P:  Worst Slack : -7.401
 @P:  mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock - Estimated Frequency : 119.0 MHz
 @P:  mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock - Requested Frequency : 200.0 MHz
 @P:  mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock - Estimated Period : 8.401
@@ -13,5 +13,5 @@
 @P: top I/O primitives : 17
 @P: top I/O Register bits : 0
 @P: top Register bits (Non I/O) : 38 (0%)
-@P: top Total Luts : 49 of 5280 (0%)
+@P: top Total Luts : 51 of 5280 (0%)
 @P:  CPU Time : 0h:00m:01s

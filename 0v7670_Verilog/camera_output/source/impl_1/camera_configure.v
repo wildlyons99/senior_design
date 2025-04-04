@@ -140,12 +140,12 @@ module top
 		.segments(seven_seg_out)
 	); 
 
-	assign RGB = (col > 240) ? address_out[5:0] : 6'b000011;
+	assign RGB = valid ? ((col > 240) ? address_out[5:0] : 6'b000011): 6'b000000;
 	// assign RGB = (col > 240) ? 6'b111100 : 6'b000011; 
 
     // Edge detection and counter update
     always @(posedge clk_25MHz) begin
-		// Update previous state
+		// Update previous state 
 		start_prev <= start;
 		WR <= 0; 
 		//RGB <= address_out[5:0]; 

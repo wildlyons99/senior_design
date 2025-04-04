@@ -33,13 +33,13 @@ Total SEQUENTIAL ELEMENTS in the block top:	38 (28.15 % Utilization)
 COMBINATIONAL LOGIC
 Name                   Total elements     Utilization     Notes
 ---------------------------------------------------------------
-LUT4                   49                                      
+LUT4                   51                                      
 CCU2_B                 19                                      
                                                                
-Total LUTS             49                 100 %                
+Total LUTS             51                 100 %                
 Total CARRY CHAINS     19                 100 %                
 ===============================================================
-Total COMBINATIONAL LOGIC in the block top:	68 (50.37 % Utilization)
+Total COMBINATIONAL LOGIC in the block top:	70 (51.85 % Utilization)
 
 
 IO PADS
@@ -57,13 +57,13 @@ BLACKBOX
 Name                Total elements     Utilization     Notes
 ------------------------------------------------------------
 SP256K              1                                       
-VLO                 5                                       
-VHI                 5                                       
+VLO                 4                                       
+VHI                 4                                       
 PLL_B               1                                       
                                                             
-Total BLACK BOX     12                 100 %                
+Total BLACK BOX     10                 100 %                
 ============================================================
-Total BLACKBOX in the block top:	12 (8.89 % Utilization)
+Total BLACKBOX in the block top:	10 (7.41 % Utilization)
 
 -----------------------------------------------------------
 ########   Utilization report for  cell:   mypll   ########
@@ -77,7 +77,7 @@ VLO                 2
 VHI                 2                                       
 PLL_B               1                                       
                                                             
-Total BLACK BOX     5                  41.7 %               
+Total BLACK BOX     5                  50 %                 
 ============================================================
 Total BLACKBOX in the block my_pll:	5 (3.70 % Utilization)
 
@@ -94,34 +94,9 @@ PLL_B               1
 VLO                 1                                       
 VHI                 1                                       
                                                             
-Total BLACK BOX     3                  25 %                 
+Total BLACK BOX     3                  30 %                 
 ============================================================
 Total BLACKBOX in the block my_pll.lscc_pll_inst:	3 (2.22 % Utilization)
-
---------------------------------------------------------------
-########   Utilization report for  cell:   sevenseg   ########
-Instance path:   count_display                                
-==============================================================
-
-COMBINATIONAL LOGIC
-Name           Total elements     Utilization     Notes
--------------------------------------------------------
-LUT4           16                                      
-                                                       
-Total LUTS     16                 32.7 %               
-=======================================================
-Total COMBINATIONAL LOGIC in the block count_display:	16 (11.85 % Utilization)
-
-
-BLACKBOX
-Name                Total elements     Utilization     Notes
-------------------------------------------------------------
-VLO                 1                                       
-VHI                 1                                       
-                                                            
-Total BLACK BOX     2                  16.7 %               
-============================================================
-Total BLACKBOX in the block count_display:	2 (1.48 % Utilization)
 
 ---------------------------------------------------------
 ########   Utilization report for  cell:   vga   ########
@@ -141,13 +116,13 @@ Total SEQUENTIAL ELEMENTS in the block vga_inst:	20 (14.81 % Utilization)
 COMBINATIONAL LOGIC
 Name                   Total elements     Utilization     Notes
 ---------------------------------------------------------------
-LUT4                   32                                      
+LUT4                   48                                      
 CCU2_B                 10                                      
                                                                
-Total LUTS             32                 65.3 %               
+Total LUTS             48                 94.1 %               
 Total CARRY CHAINS     10                 52.6 %               
 ===============================================================
-Total COMBINATIONAL LOGIC in the block vga_inst:	42 (31.11 % Utilization)
+Total COMBINATIONAL LOGIC in the block vga_inst:	58 (42.96 % Utilization)
 
 
 BLACKBOX
@@ -156,7 +131,7 @@ Name                Total elements     Utilization     Notes
 VLO                 1                                       
 VHI                 1                                       
                                                             
-Total BLACK BOX     2                  16.7 %               
+Total BLACK BOX     2                  20 %                 
 ============================================================
 Total BLACKBOX in the block vga_inst:	2 (1.48 % Utilization)
 

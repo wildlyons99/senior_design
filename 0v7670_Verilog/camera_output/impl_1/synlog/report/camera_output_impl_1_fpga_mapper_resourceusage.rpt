@@ -7,9 +7,9 @@ CCU2_B          19 uses
 FD1P3DZ         38 uses
 PLL_B           1 use
 SP256K          1 use
-VHI             5 uses
-VLO             5 uses
-LUT4            49 uses
+VHI             4 uses
+VLO             4 uses
+LUT4            51 uses
 
 I/O ports: 17
 I/O primitives: 17
@@ -20,8 +20,8 @@ I/O Register bits:                  0
 Register bits not including I/Os:   38 of 5280 (0%)
 
 @S |Mapping Summary:
-Total  LUTs: 49 (0%)
+Total  LUTs: 51 (0%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed LUTs 49 = 49 
+Distribution of All Consumed LUTs 51 = 51 
 

@@ -1,2 +1,495 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<BaliMessageLog/>
+<BaliMessageLog>
+    <Task name="Export">
+        <Message>
+            <ID>1081100</ID>
+            <Severity>1</Severity>
+            <Dynamic>Bitstream authenticated.</Dynamic>
+        </Message>
+        <Message>
+            <ID>1191031</ID>
+            <Severity>1</Severity>
+        </Message>
+    </Task>
+    <Task name="Synthesis">
+        <Message>
+            <ID>35831026</ID>
+            <Severity>16</Severity>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM9</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM8</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM7</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM6</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>I</Dynamic>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/camera_output/mypll/rtl/mypll.v(11): </Dynamic>
+            <Dynamic>mypll</Dynamic>
+            <Navigation>Z:/senior_design/0v7670_Verilog/camera_output/mypll/rtl/mypll.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/camera_output/mypll/rtl/mypll.v(105): </Dynamic>
+            <Dynamic>mypll_ipgen_lscc_pll(DIVR=&quot;0&quot;,DIVF=&quot;66&quot;,DIVQ=&quot;5&quot;,FILTER_RANGE=&quot;1&quot;,PLLOUT_SELECT_PORTA=&quot;GENCLK&quot;,PLLOUT_SELECT_PORTB=&quot;GENCLK&quot;,FREQUENCY_PIN_REFERENCECLK=&quot;12.000000&quot;)</Dynamic>
+            <Navigation>Z:/senior_design/0v7670_Verilog/camera_output/mypll/rtl/mypll.v</Navigation>
+            <Navigation>105</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(428): </Dynamic>
+            <Dynamic>PLL_B(PLLOUT_SELECT_PORTA=&quot;GENCLK&quot;,PLLOUT_SELECT_PORTB=&quot;GENCLK&quot;,DIVF=&quot;66&quot;,DIVQ=&quot;5&quot;,FILTER_RANGE=&quot;1&quot;,FREQUENCY_PIN_REFERENCECLK=&quot;12.000000&quot;)</Dynamic>
+            <Navigation>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v</Navigation>
+            <Navigation>428</Navigation>
+        </Message>
+        <Message>
+            <ID>35935049</ID>
+            <Severity>16</Severity>
+            <Dynamic>sclk_i</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935049</ID>
+            <Severity>16</Severity>
+            <Dynamic>sdi_i</Dynamic>
+        </Message>
+        <Message>
+            <ID>35831038</ID>
+            <Severity>1</Severity>
+            <Dynamic>top</Dynamic>
+        </Message>
+        <Message>
+            <ID>35831026</ID>
+            <Severity>16</Severity>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM9</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM8</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM7</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM6</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>I</Dynamic>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/camera_configure.v(4): </Dynamic>
+            <Dynamic>top</Dynamic>
+            <Navigation>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/camera_configure.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>mypll.v(63): </Dynamic>
+            <Dynamic>mypll</Dynamic>
+            <Navigation>mypll.v</Navigation>
+            <Navigation>63</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/vga.v(1): </Dynamic>
+            <Dynamic>vga</Dynamic>
+            <Navigation>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/vga.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(742): </Dynamic>
+            <Dynamic>SP256K</Dynamic>
+            <Navigation>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v</Navigation>
+            <Navigation>742</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/seven_seg.v(1): </Dynamic>
+            <Dynamic>sevenseg</Dynamic>
+            <Navigation>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/seven_seg.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>CG1337 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v&quot;:44:11:44:14|Net sioc is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v</Navigation>
+            <Navigation>44</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>44</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>Net sioc is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>CG1337 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v&quot;:45:11:45:14|Net siod is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>Net siod is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>CG1337 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v&quot;:44:11:44:14|Net sioc is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v</Navigation>
+            <Navigation>44</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>44</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>Net sioc is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>CG1337 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v&quot;:45:11:45:14|Net siod is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>Net siod is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>CG781 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v&quot;:46:23:46:23|Input sclk_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration.</Dynamic>
+            <Navigation>CG781</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v</Navigation>
+            <Navigation>46</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>46</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Input sclk_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>CG781 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v&quot;:47:22:47:22|Input sdi_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration.</Dynamic>
+            <Navigation>CG781</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v</Navigation>
+            <Navigation>47</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>47</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>Input sdi_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>CG360 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v&quot;:32:12:32:25|Removing wire CAMERA_DATA_IN, as there is no assignment to it.</Dynamic>
+            <Navigation>CG360</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>Removing wire CAMERA_DATA_IN, as there is no assignment to it.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>CG360 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v&quot;:34:15:34:22|Removing wire rom_addr, as there is no assignment to it.</Dynamic>
+            <Navigation>CG360</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v</Navigation>
+            <Navigation>34</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>34</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>Removing wire rom_addr, as there is no assignment to it.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>CG360 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v&quot;:35:16:35:23|Removing wire rom_dout, as there is no assignment to it.</Dynamic>
+            <Navigation>CG360</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v</Navigation>
+            <Navigation>35</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>35</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Removing wire rom_dout, as there is no assignment to it.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>CG360 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v&quot;:36:15:36:23|Removing wire SCCB_addr, as there is no assignment to it.</Dynamic>
+            <Navigation>CG360</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v</Navigation>
+            <Navigation>36</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>36</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Removing wire SCCB_addr, as there is no assignment to it.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>CG360 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v&quot;:37:15:37:23|Removing wire SCCB_data, as there is no assignment to it.</Dynamic>
+            <Navigation>CG360</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v</Navigation>
+            <Navigation>37</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>37</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Removing wire SCCB_data, as there is no assignment to it.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>CG360 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v&quot;:38:9:38:18|Removing wire SCCB_start, as there is no assignment to it.</Dynamic>
+            <Navigation>CG360</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>Removing wire SCCB_start, as there is no assignment to it.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>CG360 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v&quot;:39:9:39:18|Removing wire SCCB_ready, as there is no assignment to it.</Dynamic>
+            <Navigation>CG360</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v</Navigation>
+            <Navigation>39</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>39</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>Removing wire SCCB_ready, as there is no assignment to it.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>CG360 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v&quot;:40:9:40:20|Removing wire SCCB_SIOC_oe, as there is no assignment to it.</Dynamic>
+            <Navigation>CG360</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v</Navigation>
+            <Navigation>40</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>40</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Removing wire SCCB_SIOC_oe, as there is no assignment to it.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>CG360 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v&quot;:41:9:41:20|Removing wire SCCB_SIOD_oe, as there is no assignment to it.</Dynamic>
+            <Navigation>CG360</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v</Navigation>
+            <Navigation>41</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>41</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Removing wire SCCB_SIOD_oe, as there is no assignment to it.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>CG360 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v&quot;:42:6:42:13|Removing wire fast_clk, as there is no assignment to it.</Dynamic>
+            <Navigation>CG360</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>Removing wire fast_clk, as there is no assignment to it.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>MT530 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\vga.v&quot;:10:4:10:9|Found inferred clock mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock which controls 38 sequential elements including vga_inst.row[9:0]. This clock has no specified timing constraint which may adversely impact design performance.</Dynamic>
+            <Navigation>MT530</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\vga.v</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Found inferred clock mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock which controls 38 sequential elements including vga_inst.row[9:0]. This clock has no specified timing constraint which may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>MT246 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_configure.v&quot;:124:8:124:13|Blackbox SP256K is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_configure.v</Navigation>
+            <Navigation>124</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>124</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>Blackbox SP256K is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>MT246 :&quot;z:\senior_design\0v7670_verilog\camera_output\mypll\rtl\mypll.v&quot;:202:69:202:75|Blackbox PLL_B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\camera_output\mypll\rtl\mypll.v</Navigation>
+            <Navigation>202</Navigation>
+            <Navigation>69</Navigation>
+            <Navigation>202</Navigation>
+            <Navigation>75</Navigation>
+            <Navigation>Blackbox PLL_B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>16</Severity>
+            <Dynamic>MT420 |Found inferred clock mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net my_pll.lscc_pll_inst.clk_25MHz.</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net my_pll.lscc_pll_inst.clk_25MHz.</Navigation>
+        </Message>
+        <Message>
+            <ID>35811146</ID>
+            <Severity>1</Severity>
+            <Dynamic>vga_inst/un3_row_1_cry_1_c_0.CIN</Dynamic>
+        </Message>
+        <Message>
+            <ID>35811146</ID>
+            <Severity>1</Severity>
+            <Dynamic>vga_inst/un2_col_cry_1_c_0.CIN</Dynamic>
+        </Message>
+        <Message>
+            <ID>35811146</ID>
+            <Severity>1</Severity>
+            <Dynamic>count_cry_c_0[0].CIN</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

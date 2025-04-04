@@ -6,7 +6,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2023.1.0.43.3
-Mapped on: Fri Apr  4 15:07:17 2025
+Mapped on: Fri Apr  4 15:28:51 2025
 
 Design Information
 ------------------
@@ -20,8 +20,8 @@ Design Summary
 
    Number of slice registers:  38 out of  5280 (1%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:            90 out of  5280 (2%)
-      Number of logic LUT4s:              50
+   Number of LUT4s:            92 out of  5280 (2%)
+      Number of logic LUT4s:              52
       Number of inserted feedthru LUT4s:   1
       Number of replicated LUT4s:          1
       Number of ripple logic:             19 (38 LUT4s)
@@ -57,8 +57,8 @@ Design Summary
       Net WR: 1 loads, 0 SLICEs
    Number of LSRs:  0
    Top 10 highest fanout non-clock nets:
-      Net col[8]: 9 loads
-      Net col[9]: 9 loads
+      Net vga_inst.row[9]: 11 loads
+      Net count9: 9 loads
 
                                     Page 1
 
@@ -68,14 +68,14 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net count9: 9 loads
       Net VCC: 9 loads
+      Net vga_inst.col[9]: 9 loads
       Net address_out[0]: 8 loads
       Net address_out[1]: 8 loads
       Net address_out[2]: 8 loads
-      Net col[4]: 8 loads
-      Net col[6]: 8 loads
+      Net address_out[3]: 8 loads
       Net vga_inst.col11: 8 loads
+      Net vga_inst.col[4]: 7 loads
 
 
 

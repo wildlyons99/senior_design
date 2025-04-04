@@ -51,21 +51,21 @@ Finished optimization stage 1 on sevenseg (CPU Time 0h:00m:00s, Memory Used curr
 Running optimization stage 1 on top .......
 Finished optimization stage 1 on top (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
 Running optimization stage 2 on top .......
-Finished optimization stage 2 on top (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+Finished optimization stage 2 on top (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 114MB)
 Running optimization stage 2 on sevenseg .......
-Finished optimization stage 2 on sevenseg (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+Finished optimization stage 2 on sevenseg (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 114MB)
 Running optimization stage 2 on SP256K .......
-Finished optimization stage 2 on SP256K (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+Finished optimization stage 2 on SP256K (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 114MB)
 Running optimization stage 2 on vga .......
-Finished optimization stage 2 on vga (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+Finished optimization stage 2 on vga (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 114MB)
 Running optimization stage 2 on mypll .......
-Finished optimization stage 2 on mypll (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+Finished optimization stage 2 on mypll (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 114MB)
 Running optimization stage 2 on mypll_ipgen_lscc_pll_Z1_layer0 .......
 @N: CL159 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":130:10:130:19|Input feedback_i is unused.
 @N: CL159 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":131:37:131:51|Input dynamic_delay_i is unused.
-Finished optimization stage 2 on mypll_ipgen_lscc_pll_Z1_layer0 (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+Finished optimization stage 2 on mypll_ipgen_lscc_pll_Z1_layer0 (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 114MB)
 Running optimization stage 2 on PLL_B .......
-Finished optimization stage 2 on PLL_B (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+Finished optimization stage 2 on PLL_B (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 114MB)
 
 For a summary of runtime per design unit, please see file:
 ==========================================================

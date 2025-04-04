@@ -2,8 +2,8 @@
 // Verilog netlist produced by program backanno, Version Radiant Software (64-bit) 2023.1.0.43.3
 
 // backanno -o camera_output_impl_1_vo.vo -sp High-Performance_1.2V -w -neg -gui camera_output_impl_1.udb 
-// Netlist created on Fri Apr  4 15:07:24 2025
-// Netlist written on Fri Apr  4 15:07:29 2025
+// Netlist created on Fri Apr  4 15:28:58 2025
+// Netlist written on Fri Apr  4 15:29:03 2025
 // Design is for device iCE40UP5K
 // Design is for package SG48
 // Design is for performance grade High-Performance_1.2V
@@ -17,7 +17,7 @@ module top ( clk_12MHz, start, RGB, VGA_HSYNC, VGA_VSYNC, seven_seg_out );
   output [6:0] seven_seg_out;
   wire   \vga_inst.un3_row_1_cry_8_c_0_S0 , \vga_inst.un3_row_1_cry_8_c_0.CO0 , 
          \vga_inst.row[9] , \vga_inst.un3_row_1_cry_7 , \vga_inst.row[8] , 
-         \vga_inst.col11 , clk_25MHz, \vga_inst.N_56 , 
+         \vga_inst.col11 , clk_25MHz, \vga_inst.N_68 , 
          \vga_inst.un3_row_1_cry_6_c_0_S1 , \vga_inst.un3_row_1_cry_6_c_0_S0 , 
          \vga_inst.un3_row_1_cry_6_c_0.CO0 , \vga_inst.row[7] , 
          \vga_inst.un3_row_1_cry_5 , \vga_inst.row[6] , 
@@ -25,23 +25,24 @@ module top ( clk_12MHz, start, RGB, VGA_HSYNC, VGA_VSYNC, seven_seg_out );
          \vga_inst.un3_row_1_cry_4_c_0.CO0 , \vga_inst.row[5] , 
          \vga_inst.un3_row_1_cry_3 , \vga_inst.row[4] , 
          \vga_inst.un3_row_1_cry_2_c_0.CO0 , \vga_inst.row[3] , 
-         \vga_inst.un3_row_1_cry_1 , \vga_inst.row[2] , \vga_inst.N_49 , 
-         \vga_inst.N_50 , \vga_inst.un3_row_1_cry_1_c_0_S1 , 
+         \vga_inst.un3_row_1_cry_1 , \vga_inst.row[2] , \vga_inst.N_60 , 
+         \vga_inst.N_61 , \vga_inst.un3_row_1_cry_1_c_0_S1 , 
          \vga_inst.un3_row_1_cry_1_c_0.CO0 , \vga_inst.row[1] , 
-         \vga_inst.row[0] , \vga_inst.un2_col_cry_8_c_0.CO0 , \col[9] , 
-         \vga_inst.un2_col_cry_7 , \col[8] , \vga_inst.un2_col_cry_8_c_0_S0 , 
-         \vga_inst.un2_col_cry_8_c_0_S1 , \vga_inst.un2_col_cry_6_c_0_S1 , 
-         \vga_inst.un2_col_cry_6_c_0_S0 , \vga_inst.un2_col_cry_6_c_0.CO0 , 
-         \col[7] , \vga_inst.un2_col_cry_5 , \col[6] , 
+         \vga_inst.row[0] , \vga_inst.un2_col_cry_8_c_0.CO0 , 
+         \vga_inst.col[9] , \vga_inst.un2_col_cry_7 , \vga_inst.col[8] , 
+         \vga_inst.un2_col_cry_8_c_0_S0 , \vga_inst.un2_col_cry_8_c_0_S1 , 
+         \vga_inst.un2_col_cry_6_c_0_S1 , \vga_inst.un2_col_cry_6_c_0_S0 , 
+         \vga_inst.un2_col_cry_6_c_0.CO0 , \vga_inst.col[7] , 
+         \vga_inst.un2_col_cry_5 , \vga_inst.col[6] , 
          \vga_inst.un2_col_cry_4_c_0_S0 , \vga_inst.un2_col_cry_4_c_0.CO0 , 
-         \col[5] , \vga_inst.un2_col_cry_3 , \col[4] , 
+         \vga_inst.col[5] , \vga_inst.un2_col_cry_3 , \vga_inst.col[4] , 
          \vga_inst.un2_col_cry_4_c_0_S1 , \vga_inst.un2_col_cry_2_c_0_S1 , 
          \vga_inst.un2_col_cry_2_c_0_S0 , \vga_inst.un2_col_cry_2_c_0.CO0 , 
-         \col[3] , \vga_inst.un2_col_cry_1 , \col[2] , 
+         \vga_inst.col[3] , \vga_inst.un2_col_cry_1 , \vga_inst.col[2] , 
          \vga_inst.un2_col_cry_1_c_0_S1 , \vga_inst.un2_col_cry_1_c_0.CO0 , 
-         \col[1] , \col[0] , \count_s[15] , \count_RNO[15].CO0 , 
-         \carry_pack.count_cry[14] , \count[15] , count9, \count_s[14] , 
-         \count_s[13] , \count_cry_c_0[13].CO0 , \count[14] , 
+         \vga_inst.col[1] , \vga_inst.col[0] , \count_s[15] , 
+         \count_RNO[15].CO0 , \carry_pack.count_cry[14] , \count[15] , count9, 
+         \count_s[14] , \count_s[13] , \count_cry_c_0[13].CO0 , \count[14] , 
          \carry_pack.count_cry[12] , \count[13] , \count_s[12] , \count_s[11] , 
          \count_cry_c_0[11].CO0 , \count[12] , \carry_pack.count_cry[10] , 
          \count[11] , \count_s[10] , \count_s[9] , \count_cry_c_0[9].CO0 , 
@@ -54,33 +55,31 @@ module top ( clk_12MHz, start, RGB, VGA_HSYNC, VGA_VSYNC, seven_seg_out );
          \count_s[1] , \count_cry_c_0[1].CO0 , \count[2] , 
          \carry_pack.count_cry[0] , \count[1] , \count_s[0] , 
          \count_cry_c_0[0].CO0 , \count[0] , VCC, \vga_inst.row_3[9] , 
-         \vga_inst.row_3[3] , \vga_inst.g1_5 , \vga_inst.g1_4 , 
-         \vga_inst.g1_6 , \vga_inst.g1_6_0 , \vga_inst.g1_4_0 , 
+         \vga_inst.row_3[3] , \vga_inst.g1_6 , \vga_inst.g1_5 , 
+         \vga_inst.g1_4 , \vga_inst.g1_6_0 , \vga_inst.g1_4_0 , 
          \vga_inst.g1_5_0 , \vga_inst.row_3[0] , \vga_inst.row_3[2] , 
-         \vga_inst.g2_5 , \vga_inst.g0_2_1 , \vga_inst.g1_5_1 , 
-         \vga_inst.g1_6_1 , \vga_inst.g1_4_1 , \vga_inst.col_3[8] , 
-         \vga_inst.col_3[9] , \vga_inst.col_RNO_0[8] , \vga_inst.col11_6 , 
-         \vga_inst.col_RNO_0[9] , \vga_inst.col_RNO[0] , \vga_inst.col_3[5] , 
+         \vga_inst.g2_5 , \vga_inst.g0_2_1 , \vga_inst.g1_6_1 , 
+         \vga_inst.g1_5_1 , \vga_inst.g1_4_1 , \vga_inst.col_3[9] , 
+         \vga_inst.col_3[8] , \vga_inst.col_RNO_0[9] , \vga_inst.m92_6 , 
+         \vga_inst.col_RNO_0[8] , \vga_inst.col_RNO[0] , \vga_inst.col_3[5] , 
          \vga_inst.col_RNO_0[5] , \count9$n0 , start_prev, start_c, WR, 
-         \vga_inst.col11_5 , \vga_inst.N_20_mux , \vga_inst.m17_5 , 
-         \vga_inst.m17_4 , VGA_VSYNC_0_i, \vga_inst.un10_HSYNClt8 , 
-         \vga_inst.un5_HSYNClt8_0 , VGA_HSYNC_c, \count_display.un3_RGBlto3_0 , 
-         \count_display.un3_RGBlto7_0 , \address_out[1] , 
-         \count_display.un3_RGBlt9 , \RGB_0_i[1] , \address_out[3] , 
-         \address_out[2] , \address_out[0] , \seven_seg_out_c[0] , 
-         \count_display.segments_1_6_0_.N_23_i , \seven_seg_out_c[2] , 
-         \count_display.segments_1_6_0_.N_20_i , \seven_seg_out_c[1] , 
-         \count_display.segments_1_6_0_.i2_mux_0_i , \seven_seg_out_c[6] , 
-         \address_out[4] , \RGB_c[4] , \address_out[5] , \RGB_0_i[0] , 
-         \RGB_c[5] , \RGB_c[3] , \RGB_c[2] , \start_c.sig_000.FeedThruLUT , 
-         clk_12MHz_c, \my_pll.lscc_pll_inst.intfbout_w ;
+         \vga_inst.m76_3 , \vga_inst.N_129 , VGA_VSYNC_0_i, N_132, 
+         \vga_inst.m92_5 , \vga_inst.N_78 , \vga_inst.i7_mux , 
+         \vga_inst.N_108 , \vga_inst.N_120 , \vga_inst.N_56 , \vga_inst.N_57 , 
+         \address_out[0] , \RGB_c[0] , \address_out[1] , \RGB_c[1] , N_21, 
+         \address_out[4] , \RGB_c[4] , \address_out[3] , \address_out[2] , 
+         i19_mux, \count_display.segments_1_6_0_.N_23_i , \seven_seg_out_c[0] , 
+         \count_display.segments_1_6_0_.i2_mux_0_i , \seven_seg_out_c[1] , 
+         \seven_seg_out_c[6] , \seven_seg_out_c[2] , \RGB_c[3] , \RGB_c[2] , 
+         \address_out[5] , \RGB_c[5] , \start_c.sig_000.FeedThruLUT , 
+         VGA_HSYNC_c, clk_12MHz_c, \my_pll.lscc_pll_inst.intfbout_w ;
 
   vga_inst_SLICE_0 \vga_inst.SLICE_0 ( .DI0(\vga_inst.un3_row_1_cry_8_c_0_S0 ), 
     .D1(\vga_inst.un3_row_1_cry_8_c_0.CO0 ), .A1(\vga_inst.row[9] ), 
     .D0(\vga_inst.un3_row_1_cry_7 ), .B0(\vga_inst.row[8] ), 
     .CE(\vga_inst.col11 ), .CLK(clk_25MHz), .CIN0(\vga_inst.un3_row_1_cry_7 ), 
     .CIN1(\vga_inst.un3_row_1_cry_8_c_0.CO0 ), .Q0(\vga_inst.row[8] ), 
-    .F0(\vga_inst.un3_row_1_cry_8_c_0_S0 ), .F1(\vga_inst.N_56 ), 
+    .F0(\vga_inst.un3_row_1_cry_8_c_0_S0 ), .F1(\vga_inst.N_68 ), 
     .COUT0(\vga_inst.un3_row_1_cry_8_c_0.CO0 ));
   vga_inst_SLICE_1 \vga_inst.SLICE_1 ( .DI1(\vga_inst.un3_row_1_cry_6_c_0_S1 ), 
     .DI0(\vga_inst.un3_row_1_cry_6_c_0_S0 ), 
@@ -104,8 +103,8 @@ module top ( clk_12MHz, start, RGB, VGA_HSYNC, VGA_VSYNC, seven_seg_out );
     ( .D1(\vga_inst.un3_row_1_cry_2_c_0.CO0 ), .B1(\vga_inst.row[3] ), 
     .D0(\vga_inst.un3_row_1_cry_1 ), .B0(\vga_inst.row[2] ), 
     .CIN0(\vga_inst.un3_row_1_cry_1 ), 
-    .CIN1(\vga_inst.un3_row_1_cry_2_c_0.CO0 ), .F0(\vga_inst.N_49 ), 
-    .F1(\vga_inst.N_50 ), .COUT1(\vga_inst.un3_row_1_cry_3 ), 
+    .CIN1(\vga_inst.un3_row_1_cry_2_c_0.CO0 ), .F0(\vga_inst.N_60 ), 
+    .F1(\vga_inst.N_61 ), .COUT1(\vga_inst.un3_row_1_cry_3 ), 
     .COUT0(\vga_inst.un3_row_1_cry_2_c_0.CO0 ));
   vga_inst_SLICE_4 \vga_inst.SLICE_4 ( .DI1(\vga_inst.un3_row_1_cry_1_c_0_S1 ), 
     .D1(\vga_inst.un3_row_1_cry_1_c_0.CO0 ), .B1(\vga_inst.row[1] ), 
@@ -115,39 +114,40 @@ module top ( clk_12MHz, start, RGB, VGA_HSYNC, VGA_VSYNC, seven_seg_out );
     .COUT1(\vga_inst.un3_row_1_cry_1 ), 
     .COUT0(\vga_inst.un3_row_1_cry_1_c_0.CO0 ));
   vga_inst_un2_col_cry_8_c_0_SLICE_5 \vga_inst.un2_col_cry_8_c_0.SLICE_5 ( 
-    .D1(\vga_inst.un2_col_cry_8_c_0.CO0 ), .A1(\col[9] ), 
-    .D0(\vga_inst.un2_col_cry_7 ), .B0(\col[8] ), 
+    .D1(\vga_inst.un2_col_cry_8_c_0.CO0 ), .A1(\vga_inst.col[9] ), 
+    .D0(\vga_inst.un2_col_cry_7 ), .B0(\vga_inst.col[8] ), 
     .CIN0(\vga_inst.un2_col_cry_7 ), .CIN1(\vga_inst.un2_col_cry_8_c_0.CO0 ), 
     .F0(\vga_inst.un2_col_cry_8_c_0_S0 ), .F1(\vga_inst.un2_col_cry_8_c_0_S1 ), 
     .COUT0(\vga_inst.un2_col_cry_8_c_0.CO0 ));
   vga_inst_SLICE_6 \vga_inst.SLICE_6 ( .DI1(\vga_inst.un2_col_cry_6_c_0_S1 ), 
     .DI0(\vga_inst.un2_col_cry_6_c_0_S0 ), 
-    .D1(\vga_inst.un2_col_cry_6_c_0.CO0 ), .B1(\col[7] ), 
-    .D0(\vga_inst.un2_col_cry_5 ), .B0(\col[6] ), .CLK(clk_25MHz), 
+    .D1(\vga_inst.un2_col_cry_6_c_0.CO0 ), .B1(\vga_inst.col[7] ), 
+    .D0(\vga_inst.un2_col_cry_5 ), .B0(\vga_inst.col[6] ), .CLK(clk_25MHz), 
     .CIN0(\vga_inst.un2_col_cry_5 ), .CIN1(\vga_inst.un2_col_cry_6_c_0.CO0 ), 
-    .Q0(\col[6] ), .Q1(\col[7] ), .F0(\vga_inst.un2_col_cry_6_c_0_S0 ), 
-    .F1(\vga_inst.un2_col_cry_6_c_0_S1 ), .COUT1(\vga_inst.un2_col_cry_7 ), 
-    .COUT0(\vga_inst.un2_col_cry_6_c_0.CO0 ));
+    .Q0(\vga_inst.col[6] ), .Q1(\vga_inst.col[7] ), 
+    .F0(\vga_inst.un2_col_cry_6_c_0_S0 ), .F1(\vga_inst.un2_col_cry_6_c_0_S1 ), 
+    .COUT1(\vga_inst.un2_col_cry_7 ), .COUT0(\vga_inst.un2_col_cry_6_c_0.CO0 ));
   vga_inst_SLICE_7 \vga_inst.SLICE_7 ( .DI0(\vga_inst.un2_col_cry_4_c_0_S0 ), 
-    .D1(\vga_inst.un2_col_cry_4_c_0.CO0 ), .B1(\col[5] ), 
-    .D0(\vga_inst.un2_col_cry_3 ), .B0(\col[4] ), .CLK(clk_25MHz), 
+    .D1(\vga_inst.un2_col_cry_4_c_0.CO0 ), .B1(\vga_inst.col[5] ), 
+    .D0(\vga_inst.un2_col_cry_3 ), .B0(\vga_inst.col[4] ), .CLK(clk_25MHz), 
     .CIN0(\vga_inst.un2_col_cry_3 ), .CIN1(\vga_inst.un2_col_cry_4_c_0.CO0 ), 
-    .Q0(\col[4] ), .F0(\vga_inst.un2_col_cry_4_c_0_S0 ), 
+    .Q0(\vga_inst.col[4] ), .F0(\vga_inst.un2_col_cry_4_c_0_S0 ), 
     .F1(\vga_inst.un2_col_cry_4_c_0_S1 ), .COUT1(\vga_inst.un2_col_cry_5 ), 
     .COUT0(\vga_inst.un2_col_cry_4_c_0.CO0 ));
   vga_inst_SLICE_8 \vga_inst.SLICE_8 ( .DI1(\vga_inst.un2_col_cry_2_c_0_S1 ), 
     .DI0(\vga_inst.un2_col_cry_2_c_0_S0 ), 
-    .D1(\vga_inst.un2_col_cry_2_c_0.CO0 ), .B1(\col[3] ), 
-    .D0(\vga_inst.un2_col_cry_1 ), .B0(\col[2] ), .CLK(clk_25MHz), 
+    .D1(\vga_inst.un2_col_cry_2_c_0.CO0 ), .B1(\vga_inst.col[3] ), 
+    .D0(\vga_inst.un2_col_cry_1 ), .B0(\vga_inst.col[2] ), .CLK(clk_25MHz), 
     .CIN0(\vga_inst.un2_col_cry_1 ), .CIN1(\vga_inst.un2_col_cry_2_c_0.CO0 ), 
-    .Q0(\col[2] ), .Q1(\col[3] ), .F0(\vga_inst.un2_col_cry_2_c_0_S0 ), 
-    .F1(\vga_inst.un2_col_cry_2_c_0_S1 ), .COUT1(\vga_inst.un2_col_cry_3 ), 
-    .COUT0(\vga_inst.un2_col_cry_2_c_0.CO0 ));
+    .Q0(\vga_inst.col[2] ), .Q1(\vga_inst.col[3] ), 
+    .F0(\vga_inst.un2_col_cry_2_c_0_S0 ), .F1(\vga_inst.un2_col_cry_2_c_0_S1 ), 
+    .COUT1(\vga_inst.un2_col_cry_3 ), .COUT0(\vga_inst.un2_col_cry_2_c_0.CO0 ));
   vga_inst_SLICE_9 \vga_inst.SLICE_9 ( .DI1(\vga_inst.un2_col_cry_1_c_0_S1 ), 
-    .D1(\vga_inst.un2_col_cry_1_c_0.CO0 ), .B1(\col[1] ), .C0(\col[0] ), 
-    .B0(\col[0] ), .CLK(clk_25MHz), .CIN1(\vga_inst.un2_col_cry_1_c_0.CO0 ), 
-    .Q1(\col[1] ), .F1(\vga_inst.un2_col_cry_1_c_0_S1 ), 
-    .COUT1(\vga_inst.un2_col_cry_1 ), .COUT0(\vga_inst.un2_col_cry_1_c_0.CO0 ));
+    .D1(\vga_inst.un2_col_cry_1_c_0.CO0 ), .B1(\vga_inst.col[1] ), 
+    .C0(\vga_inst.col[0] ), .B0(\vga_inst.col[0] ), .CLK(clk_25MHz), 
+    .CIN1(\vga_inst.un2_col_cry_1_c_0.CO0 ), .Q1(\vga_inst.col[1] ), 
+    .F1(\vga_inst.un2_col_cry_1_c_0_S1 ), .COUT1(\vga_inst.un2_col_cry_1 ), 
+    .COUT0(\vga_inst.un2_col_cry_1_c_0.CO0 ));
   SLICE_10 SLICE_10( .DI0(\count_s[15] ), .D1(\count_RNO[15].CO0 ), 
     .D0(\carry_pack.count_cry[14] ), .A0(\count[15] ), .CE(count9), 
     .CLK(clk_25MHz), .CIN0(\carry_pack.count_cry[14] ), 
@@ -207,137 +207,133 @@ module top ( clk_12MHz, start, RGB, VGA_HSYNC, VGA_VSYNC, seven_seg_out );
     .CIN1(\count_cry_c_0[0].CO0 ), .Q1(\count[0] ), .F1(\count_s[0] ), 
     .COUT1(\carry_pack.count_cry[0] ), .COUT0(\count_cry_c_0[0].CO0 ));
   vga_inst_SLICE_19 \vga_inst.SLICE_19 ( .DI1(\vga_inst.row_3[9] ), 
-    .DI0(\vga_inst.row_3[3] ), .D1(\vga_inst.g1_5 ), .C1(\vga_inst.g1_4 ), 
-    .B1(\vga_inst.g1_6 ), .A1(\vga_inst.N_56 ), .D0(\vga_inst.g1_6_0 ), 
-    .C0(\vga_inst.g1_4_0 ), .B0(\vga_inst.N_50 ), .A0(\vga_inst.g1_5_0 ), 
+    .DI0(\vga_inst.row_3[3] ), .D1(\vga_inst.g1_6 ), .C1(\vga_inst.g1_5 ), 
+    .B1(\vga_inst.g1_4 ), .A1(\vga_inst.N_68 ), .D0(\vga_inst.N_61 ), 
+    .C0(\vga_inst.g1_6_0 ), .B0(\vga_inst.g1_4_0 ), .A0(\vga_inst.g1_5_0 ), 
     .CE(\vga_inst.col11 ), .CLK(clk_25MHz), .Q0(\vga_inst.row[3] ), 
     .Q1(\vga_inst.row[9] ), .F0(\vga_inst.row_3[3] ), .F1(\vga_inst.row_3[9] ));
   vga_inst_SLICE_20 \vga_inst.SLICE_20 ( .DI1(\vga_inst.row_3[0] ), 
-    .DI0(\vga_inst.row_3[2] ), .D1(\vga_inst.row[8] ), .C1(\vga_inst.row[0] ), 
-    .B1(\vga_inst.g2_5 ), .A1(\vga_inst.g0_2_1 ), .D0(\vga_inst.g1_5_1 ), 
-    .C0(\vga_inst.g1_6_1 ), .B0(\vga_inst.g1_4_1 ), .A0(\vga_inst.N_49 ), 
+    .DI0(\vga_inst.row_3[2] ), .D1(\vga_inst.row[0] ), .C1(\vga_inst.row[8] ), 
+    .B1(\vga_inst.g2_5 ), .A1(\vga_inst.g0_2_1 ), .D0(\vga_inst.g1_6_1 ), 
+    .C0(\vga_inst.g1_5_1 ), .B0(\vga_inst.g1_4_1 ), .A0(\vga_inst.N_60 ), 
     .CE(\vga_inst.col11 ), .CLK(clk_25MHz), .Q0(\vga_inst.row[2] ), 
     .Q1(\vga_inst.row[0] ), .F0(\vga_inst.row_3[2] ), .F1(\vga_inst.row_3[0] ));
-  vga_inst_SLICE_22 \vga_inst.SLICE_22 ( .DI1(\vga_inst.col_3[8] ), 
-    .DI0(\vga_inst.col_3[9] ), .D1(\vga_inst.col_RNO_0[8] ), 
-    .C1(\vga_inst.col11_6 ), .B1(\vga_inst.un2_col_cry_8_c_0_S0 ), 
-    .D0(\vga_inst.col11_6 ), .C0(\vga_inst.col_RNO_0[9] ), 
-    .B0(\vga_inst.un2_col_cry_8_c_0_S1 ), .CLK(clk_25MHz), .Q0(\col[9] ), 
-    .Q1(\col[8] ), .F0(\vga_inst.col_3[9] ), .F1(\vga_inst.col_3[8] ));
-  vga_inst_SLICE_24 \vga_inst.SLICE_24 ( .DI1(\vga_inst.col_RNO[0] ), 
-    .DI0(\vga_inst.col_3[5] ), .D1(\col[0] ), .D0(\vga_inst.col11_6 ), 
-    .C0(\vga_inst.col_RNO_0[5] ), .A0(\vga_inst.un2_col_cry_4_c_0_S1 ), 
-    .CLK(clk_25MHz), .Q0(\col[5] ), .Q1(\col[0] ), .F0(\vga_inst.col_3[5] ), 
+  vga_inst_SLICE_22 \vga_inst.SLICE_22 ( .DI1(\vga_inst.col_3[9] ), 
+    .DI0(\vga_inst.col_3[8] ), .D1(\vga_inst.col_RNO_0[9] ), 
+    .C1(\vga_inst.un2_col_cry_8_c_0_S1 ), .A1(\vga_inst.m92_6 ), 
+    .D0(\vga_inst.col_RNO_0[8] ), .C0(\vga_inst.un2_col_cry_8_c_0_S0 ), 
+    .B0(\vga_inst.m92_6 ), .CLK(clk_25MHz), .Q0(\vga_inst.col[8] ), 
+    .Q1(\vga_inst.col[9] ), .F0(\vga_inst.col_3[8] ), .F1(\vga_inst.col_3[9] ));
+  vga_inst_SLICE_23 \vga_inst.SLICE_23 ( .DI1(\vga_inst.col_RNO[0] ), 
+    .DI0(\vga_inst.col_3[5] ), .D1(\vga_inst.col[0] ), 
+    .D0(\vga_inst.un2_col_cry_4_c_0_S1 ), .C0(\vga_inst.col_RNO_0[5] ), 
+    .B0(\vga_inst.m92_6 ), .CLK(clk_25MHz), .Q0(\vga_inst.col[5] ), 
+    .Q1(\vga_inst.col[0] ), .F0(\vga_inst.col_3[5] ), 
     .F1(\vga_inst.col_RNO[0] ));
-  SLICE_27 SLICE_27( .DI0(\count9$n0 ), .D0(start_prev), .C0(start_c), 
+  SLICE_27 SLICE_27( .DI0(\count9$n0 ), .D0(start_prev), .B0(start_c), 
     .CLK(clk_25MHz), .Q0(WR), .F0(\count9$n0 ));
-  vga_inst_SLICE_29 \vga_inst.SLICE_29 ( .D1(\col[6] ), 
-    .C1(\vga_inst.col11_5 ), .B1(\col[4] ), 
-    .A1(\vga_inst.un2_col_cry_8_c_0_S1 ), .D0(\col[8] ), .C0(\col[2] ), 
-    .B0(\col[1] ), .A0(\col[0] ), .F0(\vga_inst.col11_5 ), 
+  vga_inst_SLICE_29 \vga_inst.SLICE_29 ( .D1(\vga_inst.row[4] ), 
+    .C1(\vga_inst.m76_3 ), .B1(\vga_inst.row[3] ), .A1(\vga_inst.N_129 ), 
+    .D0(\vga_inst.row[9] ), .C0(\vga_inst.row[1] ), .B0(\vga_inst.row[2] ), 
+    .A0(\vga_inst.row[0] ), .F0(\vga_inst.m76_3 ), .F1(VGA_VSYNC_0_i));
+  vga_inst_SLICE_30 \vga_inst.SLICE_30 ( .D1(\vga_inst.row[9] ), 
+    .C1(\vga_inst.N_129 ), .D0(\vga_inst.row[6] ), .C0(\vga_inst.row[5] ), 
+    .B0(\vga_inst.row[7] ), .A0(\vga_inst.row[8] ), .F0(\vga_inst.N_129 ), 
+    .F1(N_132));
+  vga_inst_SLICE_31 \vga_inst.SLICE_31 ( .D1(\vga_inst.col[4] ), 
+    .C1(\vga_inst.m92_5 ), .B1(\vga_inst.un2_col_cry_8_c_0_S1 ), 
+    .A1(\vga_inst.col[9] ), .D0(\vga_inst.col[3] ), .C0(\vga_inst.col[2] ), 
+    .B0(\vga_inst.col[1] ), .A0(\vga_inst.col[0] ), .F0(\vga_inst.m92_5 ), 
     .F1(\vga_inst.col_RNO_0[9] ));
-  vga_inst_SLICE_31 \vga_inst.SLICE_31 ( .D1(\vga_inst.row[6] ), 
-    .C1(\vga_inst.N_20_mux ), .B1(\vga_inst.row[7] ), .A1(\vga_inst.row[8] ), 
-    .D0(\vga_inst.row[4] ), .C0(\vga_inst.row[3] ), .F0(\vga_inst.N_20_mux ), 
-    .F1(\vga_inst.m17_5 ));
-  vga_inst_SLICE_33 \vga_inst.SLICE_33 ( .D1(\col[6] ), 
-    .C1(\vga_inst.col11_6 ), .B1(\col[4] ), .A1(\vga_inst.col11_5 ), 
-    .D0(\col[9] ), .C0(\col[7] ), .B0(\col[5] ), .A0(\col[3] ), 
-    .F0(\vga_inst.col11_6 ), .F1(\vga_inst.col11 ));
-  vga_inst_SLICE_35 \vga_inst.SLICE_35 ( .D1(\vga_inst.m17_5 ), 
-    .C1(\vga_inst.m17_4 ), .B1(\vga_inst.row[2] ), .A1(\vga_inst.row[0] ), 
-    .D0(\vga_inst.row[9] ), .C0(\vga_inst.row[5] ), .B0(\vga_inst.row[1] ), 
-    .F0(\vga_inst.m17_4 ), .F1(VGA_VSYNC_0_i));
-  vga_inst_SLICE_37 \vga_inst.SLICE_37 ( .D0(\col[5] ), .C0(\col[6] ), 
-    .B0(\col[4] ), .F0(\vga_inst.un10_HSYNClt8 ));
-  vga_inst_SLICE_38 \vga_inst.SLICE_38 ( .D1(\vga_inst.un10_HSYNClt8 ), 
-    .C1(\vga_inst.un5_HSYNClt8_0 ), .B1(\col[8] ), .A1(\col[9] ), 
-    .D0(\col[4] ), .C0(\col[6] ), .B0(\col[5] ), .A0(\col[7] ), 
-    .F0(\vga_inst.un5_HSYNClt8_0 ), .F1(VGA_HSYNC_c));
-  count_display_segments_1_6_0__SLICE_39 
-    \count_display.segments_1_6_0_.SLICE_39 ( .D1(\col[0] ), 
-    .C1(\count_display.un3_RGBlto3_0 ), .B1(\col[1] ), .A1(\col[5] ), 
-    .D0(\col[3] ), .C0(\col[2] ), .F0(\count_display.un3_RGBlto3_0 ), 
-    .F1(\count_display.un3_RGBlto7_0 ));
-  count_display_segments_1_6_0__SLICE_41 
-    \count_display.segments_1_6_0_.SLICE_41 ( .D1(\address_out[1] ), 
-    .C1(\count_display.un3_RGBlt9 ), .B1(\col[8] ), .A1(\col[9] ), 
-    .D0(\col[7] ), .C0(\count_display.un3_RGBlto7_0 ), .B0(\col[4] ), 
-    .A0(\col[6] ), .F0(\count_display.un3_RGBlt9 ), .F1(\RGB_0_i[1] ));
-  vga_inst_SLICE_43 \vga_inst.SLICE_43 ( .D1(\vga_inst.row[7] ), 
-    .C1(\vga_inst.row[4] ), .B1(\vga_inst.row[3] ), .A1(\vga_inst.row[2] ), 
-    .D0(\vga_inst.row[4] ), .C0(\vga_inst.row[3] ), .B0(\vga_inst.row[1] ), 
-    .A0(\vga_inst.row[9] ), .F0(\vga_inst.g1_6_1 ), .F1(\vga_inst.g0_2_1 ));
-  vga_inst_SLICE_44 \vga_inst.SLICE_44 ( .D1(\vga_inst.row[9] ), 
+  vga_inst_SLICE_33 \vga_inst.SLICE_33 ( .D1(\vga_inst.col[6] ), 
+    .C1(\vga_inst.N_78 ), .B1(\vga_inst.col[4] ), .A1(\vga_inst.col[5] ), 
+    .D0(\vga_inst.col[8] ), .C0(\vga_inst.col[7] ), .F0(\vga_inst.N_78 ), 
+    .F1(\vga_inst.i7_mux ));
+  vga_inst_SLICE_35 \vga_inst.SLICE_35 ( .D1(\vga_inst.m92_5 ), 
+    .C1(\vga_inst.m92_6 ), .B1(\vga_inst.col[4] ), .A1(\vga_inst.col[9] ), 
+    .D0(\vga_inst.col[5] ), .C0(\vga_inst.col[6] ), .B0(\vga_inst.col[8] ), 
+    .A0(\vga_inst.col[7] ), .F0(\vga_inst.m92_6 ), .F1(\vga_inst.col11 ));
+  vga_inst_SLICE_37 \vga_inst.SLICE_37 ( .D1(\vga_inst.col[4] ), 
+    .C1(\vga_inst.N_108 ), .B1(\vga_inst.col[5] ), .A1(\vga_inst.col[6] ), 
+    .D0(\vga_inst.col[3] ), .C0(\vga_inst.col[1] ), .B0(\vga_inst.col[2] ), 
+    .A0(\vga_inst.col[0] ), .F0(\vga_inst.N_108 ), .F1(\vga_inst.N_120 ));
+  vga_inst_SLICE_39 \vga_inst.SLICE_39 ( .D1(\vga_inst.N_56 ), 
+    .C1(\vga_inst.N_57 ), .B1(N_132), .A1(\address_out[0] ), 
+    .D0(\vga_inst.col[8] ), .C0(\vga_inst.col[7] ), .A0(\vga_inst.col[9] ), 
+    .F0(\vga_inst.N_57 ), .F1(\RGB_c[0] ));
+  vga_inst_SLICE_42 \vga_inst.SLICE_42 ( .D1(N_132), .C1(\vga_inst.N_56 ), 
+    .B1(\vga_inst.N_57 ), .A1(\address_out[1] ), .D0(\vga_inst.col[8] ), 
+    .C0(\vga_inst.col[9] ), .B0(\vga_inst.N_120 ), .A0(\vga_inst.col[7] ), 
+    .F0(\vga_inst.N_56 ), .F1(\RGB_c[1] ));
+  vga_inst_SLICE_43 \vga_inst.SLICE_43 ( .D1(\vga_inst.row[9] ), .C1(N_21), 
+    .B1(\address_out[4] ), .A1(\vga_inst.N_129 ), .D0(\vga_inst.col[8] ), 
+    .C0(\vga_inst.N_120 ), .B0(\vga_inst.col[9] ), .A0(\vga_inst.col[7] ), 
+    .F0(N_21), .F1(\RGB_c[4] ));
+  vga_inst_SLICE_45 \vga_inst.SLICE_45 ( .D1(\vga_inst.row[3] ), 
+    .C1(\vga_inst.row[2] ), .B1(\vga_inst.row[4] ), .A1(\vga_inst.row[7] ), 
+    .D0(\vga_inst.row[9] ), .C0(\vga_inst.row[3] ), .B0(\vga_inst.row[1] ), 
+    .A0(\vga_inst.row[4] ), .F0(\vga_inst.g1_6_1 ), .F1(\vga_inst.g0_2_1 ));
+  vga_inst_SLICE_46 \vga_inst.SLICE_46 ( .D1(\vga_inst.row[9] ), 
     .C1(\vga_inst.row[1] ), .B1(\vga_inst.row[4] ), .A1(\vga_inst.row[3] ), 
     .D0(\vga_inst.row[1] ), .C0(\vga_inst.row[9] ), .B0(\vga_inst.row[3] ), 
     .A0(\vga_inst.row[4] ), .F0(\vga_inst.g1_6 ), .F1(\vga_inst.g1_6_0 ));
-  vga_inst_SLICE_45 \vga_inst.SLICE_45 ( .D1(\vga_inst.row[9] ), 
-    .C1(\vga_inst.row[6] ), .B1(\vga_inst.row[5] ), .A1(\vga_inst.row[1] ), 
-    .D0(\vga_inst.row[6] ), .C0(\vga_inst.row[5] ), .B0(\vga_inst.row[7] ), 
-    .A0(\vga_inst.row[8] ), .F0(\vga_inst.g1_5_1 ), .F1(\vga_inst.g2_5 ));
-  vga_inst_SLICE_46 \vga_inst.SLICE_46 ( .D1(\vga_inst.row[6] ), 
-    .C1(\vga_inst.row[8] ), .B1(\vga_inst.row[5] ), .A1(\vga_inst.row[7] ), 
+  vga_inst_SLICE_47 \vga_inst.SLICE_47 ( .D1(\vga_inst.row[6] ), 
+    .C1(\vga_inst.row[9] ), .B1(\vga_inst.row[5] ), .A1(\vga_inst.row[1] ), 
+    .D0(\vga_inst.row[7] ), .C0(\vga_inst.row[6] ), .B0(\vga_inst.row[8] ), 
+    .A0(\vga_inst.row[5] ), .F0(\vga_inst.g1_5_1 ), .F1(\vga_inst.g2_5 ));
+  vga_inst_SLICE_48 \vga_inst.SLICE_48 ( .D1(\vga_inst.row[6] ), 
+    .C1(\vga_inst.row[7] ), .B1(\vga_inst.row[5] ), .A1(\vga_inst.row[8] ), 
     .D0(\vga_inst.row[7] ), .C0(\vga_inst.row[6] ), .B0(\vga_inst.row[8] ), 
     .A0(\vga_inst.row[5] ), .F0(\vga_inst.g1_5 ), .F1(\vga_inst.g1_5_0 ));
-  count_display_segments_1_6_0__SLICE_47 
-    \count_display.segments_1_6_0_.SLICE_47 ( .D0(\address_out[3] ), 
+  vga_inst_SLICE_49 \vga_inst.SLICE_49 ( .D0(\address_out[3] ), 
     .C0(\address_out[2] ), .B0(\address_out[1] ), .A0(\address_out[0] ), 
-    .F0(\seven_seg_out_c[0] ));
-  count_display_segments_1_6_0__SLICE_48 
-    \count_display.segments_1_6_0_.SLICE_48 ( .D1(\address_out[3] ), 
-    .C1(\address_out[2] ), .B1(\address_out[1] ), .A1(\address_out[0] ), 
-    .D0(\address_out[2] ), .C0(\address_out[3] ), .B0(\address_out[0] ), 
-    .A0(\address_out[1] ), .F0(\count_display.segments_1_6_0_.N_23_i ), 
-    .F1(\seven_seg_out_c[2] ));
-  count_display_segments_1_6_0__SLICE_50 
-    \count_display.segments_1_6_0_.SLICE_50 ( .D1(\address_out[2] ), 
+    .F0(i19_mux));
+  vga_inst_SLICE_50 \vga_inst.SLICE_50 ( .D1(\address_out[2] ), 
     .C1(\address_out[3] ), .B1(\address_out[0] ), .A1(\address_out[1] ), 
     .D0(\address_out[3] ), .C0(\address_out[2] ), .B0(\address_out[1] ), 
-    .A0(\address_out[0] ), .F0(\count_display.segments_1_6_0_.N_20_i ), 
-    .F1(\seven_seg_out_c[1] ));
-  count_display_segments_1_6_0__SLICE_52 
-    \count_display.segments_1_6_0_.SLICE_52 ( .D1(\address_out[3] ), 
+    .A0(\address_out[0] ), .F0(\count_display.segments_1_6_0_.N_23_i ), 
+    .F1(\seven_seg_out_c[0] ));
+  vga_inst_SLICE_52 \vga_inst.SLICE_52 ( .D1(\address_out[3] ), 
     .C1(\address_out[2] ), .B1(\address_out[1] ), .A1(\address_out[0] ), 
     .D0(\address_out[2] ), .C0(\address_out[3] ), .B0(\address_out[0] ), 
     .A0(\address_out[1] ), .F0(\count_display.segments_1_6_0_.i2_mux_0_i ), 
-    .F1(\seven_seg_out_c[6] ));
-  vga_inst_SLICE_53 \vga_inst.SLICE_53 ( .D1(\col[4] ), 
-    .C1(\vga_inst.un2_col_cry_4_c_0_S1 ), .B1(\col[6] ), 
-    .A1(\vga_inst.col11_5 ), .D0(\col[4] ), 
-    .C0(\vga_inst.un2_col_cry_8_c_0_S0 ), .B0(\vga_inst.col11_5 ), 
-    .A0(\col[6] ), .F0(\vga_inst.col_RNO_0[8] ), .F1(\vga_inst.col_RNO_0[5] ));
-  count_display_segments_1_6_0__SLICE_55 
-    \count_display.segments_1_6_0_.SLICE_55 ( .D0(\address_out[4] ), 
-    .C0(\count_display.un3_RGBlt9 ), .B0(\col[8] ), .A0(\col[9] ), 
-    .F0(\RGB_c[4] ));
-  count_display_segments_1_6_0__SLICE_56 
-    \count_display.segments_1_6_0_.SLICE_56 ( .D1(\address_out[5] ), 
-    .C1(\count_display.un3_RGBlt9 ), .B1(\col[8] ), .A1(\col[9] ), 
-    .D0(\count_display.un3_RGBlt9 ), .C0(\address_out[0] ), .B0(\col[9] ), 
-    .A0(\col[8] ), .F0(\RGB_0_i[0] ), .F1(\RGB_c[5] ));
-  count_display_segments_1_6_0__SLICE_58 
-    \count_display.segments_1_6_0_.SLICE_58 ( .D1(\address_out[2] ), 
-    .C1(\count_display.un3_RGBlt9 ), .B1(\col[8] ), .A1(\col[9] ), 
-    .D0(\count_display.un3_RGBlt9 ), .C0(\address_out[3] ), .B0(\col[9] ), 
-    .A0(\col[8] ), .F0(\RGB_c[3] ), .F1(\RGB_c[2] ));
-  vga_inst_SLICE_63 \vga_inst.SLICE_63 ( .D0(\vga_inst.row[2] ), 
-    .B0(\vga_inst.row[0] ), .F0(\vga_inst.g1_4_1 ));
-  vga_inst_SLICE_64 \vga_inst.SLICE_64 ( .D1(\vga_inst.row[0] ), 
-    .C1(\vga_inst.row[2] ), .D0(\vga_inst.row[2] ), .C0(\vga_inst.row[0] ), 
+    .F1(\seven_seg_out_c[1] ));
+  vga_inst_SLICE_54 \vga_inst.SLICE_54 ( .D1(\address_out[3] ), 
+    .C1(\address_out[1] ), .B1(\address_out[2] ), .A1(\address_out[0] ), 
+    .D0(\address_out[1] ), .C0(\address_out[3] ), .B0(\address_out[0] ), 
+    .A0(\address_out[2] ), .F0(\seven_seg_out_c[6] ), 
+    .F1(\seven_seg_out_c[2] ));
+  vga_inst_SLICE_55 \vga_inst.SLICE_55 ( .D1(\vga_inst.m92_5 ), 
+    .C1(\vga_inst.col[9] ), .B1(\vga_inst.col[4] ), 
+    .A1(\vga_inst.un2_col_cry_4_c_0_S1 ), .D0(\vga_inst.col[9] ), 
+    .C0(\vga_inst.m92_5 ), .B0(\vga_inst.un2_col_cry_8_c_0_S0 ), 
+    .A0(\vga_inst.col[4] ), .F0(\vga_inst.col_RNO_0[8] ), 
+    .F1(\vga_inst.col_RNO_0[5] ));
+  vga_inst_SLICE_57 \vga_inst.SLICE_57 ( .D1(\address_out[2] ), 
+    .C1(\vga_inst.row[9] ), .B1(\vga_inst.N_129 ), .A1(N_21), .D0(N_21), 
+    .C0(\vga_inst.N_129 ), .B0(\vga_inst.row[9] ), .A0(\address_out[3] ), 
+    .F0(\RGB_c[3] ), .F1(\RGB_c[2] ));
+  SLICE_58 SLICE_58( .D0(N_21), .C0(\vga_inst.N_129 ), .B0(\address_out[5] ), 
+    .A0(\vga_inst.row[9] ), .F0(\RGB_c[5] ));
+  vga_inst_SLICE_63 \vga_inst.SLICE_63 ( .C0(\vga_inst.row[2] ), 
+    .A0(\vga_inst.row[0] ), .F0(\vga_inst.g1_4_1 ));
+  vga_inst_SLICE_64 \vga_inst.SLICE_64 ( .D1(\vga_inst.row[2] ), 
+    .C1(\vga_inst.row[0] ), .D0(\vga_inst.row[0] ), .C0(\vga_inst.row[2] ), 
     .F0(\vga_inst.g1_4 ), .F1(\vga_inst.g1_4_0 ));
-  SLICE_67 SLICE_67( .DI1(\start_c.sig_000.FeedThruLUT ), .D1(start_c), 
-    .D0(start_prev), .C0(start_c), .CLK(clk_25MHz), .Q1(start_prev), 
+  SLICE_65 SLICE_65( .DI1(\start_c.sig_000.FeedThruLUT ), .C1(start_c), 
+    .D0(start_prev), .B0(start_c), .CLK(clk_25MHz), .Q1(start_prev), 
     .F0(count9), .F1(\start_c.sig_000.FeedThruLUT ));
-  SLICE_70 SLICE_70( .F0(VCC));
+  vga_inst_SLICE_70 \vga_inst.SLICE_70 ( .D0(\vga_inst.col[9] ), 
+    .C0(\vga_inst.i7_mux ), .F0(VGA_HSYNC_c));
+  SLICE_71 SLICE_71( .F0(VCC));
   my_pll_lscc_pll_inst_u_PLL_B \my_pll.lscc_pll_inst.u_PLL_B ( 
     .REFERENCECLK(clk_12MHz_c), .FEEDBACK(\my_pll.lscc_pll_inst.intfbout_w ), 
     .RESET_N(VCC), .INTFBOUT(\my_pll.lscc_pll_inst.intfbout_w ), 
     .OUTCORE(clk_25MHz));
   clk_12MHz clk_12MHz_I( .PADDI(clk_12MHz_c), .clk_12MHz(clk_12MHz));
   start start_I( .PADDI(start_c), .start(start));
-  RGB_0_ \RGB[0]_I ( .PADDO(\RGB_0_i[0] ), .RGB0(RGB[0]));
-  RGB_1_ \RGB[1]_I ( .PADDO(\RGB_0_i[1] ), .RGB1(RGB[1]));
+  RGB_0_ \RGB[0]_I ( .PADDO(\RGB_c[0] ), .RGB0(RGB[0]));
+  RGB_1_ \RGB[1]_I ( .PADDO(\RGB_c[1] ), .RGB1(RGB[1]));
   RGB_2_ \RGB[2]_I ( .PADDO(\RGB_c[2] ), .RGB2(RGB[2]));
   RGB_3_ \RGB[3]_I ( .PADDO(\RGB_c[3] ), .RGB3(RGB[3]));
   RGB_4_ \RGB[4]_I ( .PADDO(\RGB_c[4] ), .RGB4(RGB[4]));
@@ -353,8 +349,7 @@ module top ( clk_12MHz, start, RGB, VGA_HSYNC, VGA_VSYNC, seven_seg_out );
   seven_seg_out_3_ \seven_seg_out[3]_I ( 
     .PADDO(\count_display.segments_1_6_0_.i2_mux_0_i ), 
     .sevensegout3(seven_seg_out[3]));
-  seven_seg_out_4_ \seven_seg_out[4]_I ( 
-    .PADDO(\count_display.segments_1_6_0_.N_20_i ), 
+  seven_seg_out_4_ \seven_seg_out[4]_I ( .PADDO(i19_mux), 
     .sevensegout4(seven_seg_out[4]));
   seven_seg_out_5_ \seven_seg_out[5]_I ( 
     .PADDO(\count_display.segments_1_6_0_.N_23_i ), 
@@ -998,7 +993,7 @@ endmodule
 
 module lut40004 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xCCC8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xFE00") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module vga_inst_SLICE_20 ( input DI1, DI0, D1, C1, B1, A1, D0, C0, B0, A0, CE, 
@@ -1033,7 +1028,7 @@ endmodule
 
 module lut40005 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x0F0D") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x00FD") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40006 ( input A, B, C, D, output Z );
@@ -1041,23 +1036,23 @@ module lut40006 ( input A, B, C, D, output Z );
   LUT4 #("0xAAA8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module vga_inst_SLICE_22 ( input DI1, DI0, D1, C1, B1, D0, C0, B0, CLK, 
+module vga_inst_SLICE_22 ( input DI1, DI0, D1, C1, A1, D0, C0, B0, CLK, 
     output Q0, Q1, F0, F1 );
   wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly;
 
-  lut40007 \vga_inst/col_RNO[8] ( .A(GNDI), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40007 \vga_inst/col_RNO[9] ( .A(A1), .B(GNDI), .C(C1), .D(D1), .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40008 \vga_inst/col_RNO[9] ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
-  ffsre2 \vga_inst/col_Z[8].ff_inst ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
+  lut40008 \vga_inst/col_RNO[8] ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
+  ffsre2 \vga_inst/col_Z[9].ff_inst ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
     .LSR(GNDI), .Q(Q1));
   vcc DRIVEVCC( .PWR1(VCCI));
-  ffsre2 \vga_inst/col_Z[9].ff_inst ( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), 
+  ffsre2 \vga_inst/col_Z[8].ff_inst ( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), 
     .LSR(GNDI), .Q(Q0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
     (C1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
     (B0 => F0) = (0:0:0,0:0:0);
@@ -1071,22 +1066,22 @@ endmodule
 
 module lut40007 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFC0C") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xFA50") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40008 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xF0CC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xFC30") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module vga_inst_SLICE_24 ( input DI1, DI0, D1, D0, C0, A0, CLK, output Q0, Q1, 
+module vga_inst_SLICE_23 ( input DI1, DI0, D1, D0, C0, B0, CLK, output Q0, Q1, 
     F0, F1 );
   wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly;
 
   lut40009 \vga_inst/col_RNO_cZ[0] ( .A(GNDI), .B(GNDI), .C(GNDI), .D(D1), 
     .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40010 \vga_inst/col_RNO[5] ( .A(A0), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  lut40010 \vga_inst/col_RNO[5] ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
   ffsre2 \vga_inst/col_Z[0].ff_inst ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
     .LSR(GNDI), .Q(Q1));
   vcc DRIVEVCC( .PWR1(VCCI));
@@ -1097,7 +1092,7 @@ module vga_inst_SLICE_24 ( input DI1, DI0, D1, D0, C0, A0, CLK, output Q0, Q1,
     (D1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
-    (A0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
     (CLK => Q0) = (0:0:0,0:0:0);
     (CLK => Q1) = (0:0:0,0:0:0);
     $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
@@ -1113,13 +1108,13 @@ endmodule
 
 module lut40010 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xF0AA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xF3C0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module SLICE_27 ( input DI0, D0, C0, CLK, output Q0, F0 );
+module SLICE_27 ( input DI0, D0, B0, CLK, output Q0, F0 );
   wire   GNDI, VCCI, DI0_dly, CLK_dly;
 
-  lut40011 SLICE_27_K0( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  lut40011 SLICE_27_K0( .A(GNDI), .B(B0), .C(GNDI), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
   ffsre2 \WR_Z.ff_inst ( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), 
     .Q(Q0));
@@ -1127,7 +1122,7 @@ module SLICE_27 ( input DI0, D0, C0, CLK, output Q0, F0 );
 
   specify
     (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
     (CLK => Q0) = (0:0:0,0:0:0);
     $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
   endspecify
@@ -1136,13 +1131,13 @@ endmodule
 
 module lut40011 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x0F00") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x3300") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module vga_inst_SLICE_29 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
 
-  lut40012 \vga_inst/col_RNO_0_cZ[9] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40013 \vga_inst/col_RNI7LO71[1] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  lut40012 \vga_inst/row_RNI77M7[3] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40013 \vga_inst/row_RNIG923[1] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
@@ -1159,47 +1154,47 @@ endmodule
 
 module lut40012 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xAA2A") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xFF7F") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40013 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x8000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x0020") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module vga_inst_SLICE_31 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
+module vga_inst_SLICE_30 ( input D1, C1, D0, C0, B0, A0, output F0, F1 );
   wire   GNDI;
 
-  lut40014 \vga_inst/row_RNI99R3[6] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40015 \vga_inst/row_RNIP5H1[3] ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), 
-    .Z(F0));
+  lut40014 \vga_inst/row_RNIGGR3[9] ( .A(GNDI), .B(GNDI), .C(C1), .D(D1), 
+    .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
+  lut40015 \vga_inst/row_RNIUN23[5] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
     (C1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
 module lut40014 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x8000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x000F") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40015 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x00F0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x8000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module vga_inst_SLICE_33 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+module vga_inst_SLICE_31 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
 
-  lut40016 \vga_inst/col_RNI37E33[4] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40017 \vga_inst/col_RNIK2P71[3] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  lut40016 \vga_inst/col_RNO_0_cZ[9] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40017 \vga_inst/col_RNI2GO71[1] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
@@ -1216,19 +1211,20 @@ endmodule
 
 module lut40016 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x0080") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x4CCC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40017 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x0200") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x8000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module vga_inst_SLICE_35 ( input D1, C1, B1, A1, D0, C0, B0, output F0, F1 );
+module vga_inst_SLICE_33 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
   wire   GNDI;
 
-  lut40018 \vga_inst/row_RNI77M7[2] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40019 \vga_inst/row_RNIAT92[1] ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
+  lut40018 \vga_inst/col_RNI9BNH1[5] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40019 \vga_inst/col_RNIDKSJ[7] ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), 
+    .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -1238,44 +1234,53 @@ module vga_inst_SLICE_35 ( input D1, C1, B1, A1, D0, C0, B0, output F0, F1 );
     (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
 module lut40018 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xDFFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x70E0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40019 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x00C0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x00F0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module vga_inst_SLICE_37 ( input D0, C0, B0, output F0 );
-  wire   GNDI;
+module vga_inst_SLICE_35 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
 
-  lut40020 \vga_inst/col_RNISMQT[5] ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
-  gnd DRIVEGND( .PWR0(GNDI));
+  lut40020 \vga_inst/col_RNI37E33[4] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40021 \vga_inst/col_RNIM4P71[5] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
     (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
 module lut40020 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xC000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x8000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module vga_inst_SLICE_38 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+module lut40021 ( input A, B, C, D, output Z );
 
-  lut40021 \vga_inst/col_RNITDGP2[8] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40022 \vga_inst/col_RNII0P71[7] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  LUT4 #("0x0004") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module vga_inst_SLICE_37 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40022 \vga_inst/col_RNIU6J52[5] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40023 \vga_inst/col_RNI2GO71_0[1] ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
@@ -1290,24 +1295,22 @@ module vga_inst_SLICE_38 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 )
 
 endmodule
 
-module lut40021 ( input A, B, C, D, output Z );
-
-  LUT4 #("0x0020") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
 module lut40022 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xAAA8") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x0800") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module count_display_segments_1_6_0__SLICE_39 ( input D1, C1, B1, A1, D0, C0, 
-    output F0, F1 );
+module lut40023 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0001") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module vga_inst_SLICE_39 ( input D1, C1, B1, A1, D0, C0, A0, output F0, F1 );
   wire   GNDI;
 
-  lut40023 \count_display/segments_1_6_0_.un3_RGBlto7_0 ( .A(A1), .B(B1), 
-    .C(C1), .D(D1), .Z(F1));
-  lut40024 \count_display/segments_1_6_0_.un3_RGBlto3_0 ( .A(GNDI), .B(GNDI), 
-    .C(C0), .D(D0), .Z(F0));
+  lut40024 \vga_inst/col_RNIC9V84_0[7] ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40025 \vga_inst/col_RNI50RT[7] ( .A(A0), .B(GNDI), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -1317,111 +1320,82 @@ module count_display_segments_1_6_0__SLICE_39 ( input D1, C1, B1, A1, D0, C0,
     (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
   endspecify
 
-endmodule
-
-module lut40023 ( input A, B, C, D, output Z );
-
-  LUT4 #("0xAA8A") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40024 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x000F") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module count_display_segments_1_6_0__SLICE_41 ( input D1, C1, B1, A1, D0, C0, 
-    B0, A0, output F0, F1 );
-
-  lut40025 \count_display/segments_1_6_0_.RGB_0_i[1] ( .A(A1), .B(B1), .C(C1), 
-    .D(D1), .Z(F1));
-  lut40026 \count_display/segments_1_6_0_.un3_RGBlto7 ( .A(A0), .B(B0), .C(C0), 
-    .D(D0), .Z(F0));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (A1 => F1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
-    (A0 => F0) = (0:0:0,0:0:0);
-  endspecify
-
+  LUT4 #("0x4C08") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40025 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFF01") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xAAA0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module vga_inst_SLICE_42 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40026 \vga_inst/col_RNIC9V84[7] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40027 \vga_inst/col_RNI37E33_0[7] ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
 endmodule
 
 module lut40026 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x8000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module vga_inst_SLICE_43 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
-
-  lut40027 \vga_inst/row_RNO_0[0] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40028 \vga_inst/row_RNO_2[2] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (A1 => F1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
-    (A0 => F0) = (0:0:0,0:0:0);
-  endspecify
-
+  LUT4 #("0x7200") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40027 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x0008") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x0007") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module vga_inst_SLICE_43 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40028 \RGB_obuf_RNO[4] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40029 \vga_inst/col_RNI37E33[7] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
 endmodule
 
 module lut40028 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFFDF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module vga_inst_SLICE_44 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
-
-  lut40029 \vga_inst/row_RNO_2[3] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40030 \vga_inst/row_RNO_2[9] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (A1 => F1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
-    (A0 => F0) = (0:0:0,0:0:0);
-  endspecify
-
+  LUT4 #("0x0040") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40029 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFDFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module lut40030 ( input A, B, C, D, output Z );
-
-  LUT4 #("0xFFBF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x3364") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module vga_inst_SLICE_45 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
 
-  lut40031 \vga_inst/row_RNO_1[0] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40032 \vga_inst/row_RNO_1[2] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  lut40030 \vga_inst/row_RNO_0[0] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40031 \vga_inst/row_RNO_2[2] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
@@ -1434,22 +1408,22 @@ module vga_inst_SLICE_45 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 )
     (A0 => F0) = (0:0:0,0:0:0);
   endspecify
 
+endmodule
+
+module lut40030 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x1000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40031 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFEFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module lut40032 ( input A, B, C, D, output Z );
-
-  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xEFFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module vga_inst_SLICE_46 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
 
-  lut40033 \vga_inst/row_RNO_1[3] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40034 \vga_inst/row_RNO_1[9] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  lut40032 \vga_inst/row_RNO_2[3] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40033 \vga_inst/row_RNO_2[9] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
@@ -1464,23 +1438,26 @@ module vga_inst_SLICE_46 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 )
 
 endmodule
 
+module lut40032 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFDFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
 module lut40033 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xFFBF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40034 ( input A, B, C, D, output Z );
+module vga_inst_SLICE_47 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
 
-  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module count_display_segments_1_6_0__SLICE_47 ( input D0, C0, B0, A0, output 
-    F0 );
-
-  lut40035 \count_display/segments_1_6_0_.m4 ( .A(A0), .B(B0), .C(C0), .D(D0), 
-    .Z(F0));
+  lut40034 \vga_inst/row_RNO_1[0] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40035 \vga_inst/row_RNO_1[2] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
     (B0 => F0) = (0:0:0,0:0:0);
@@ -1489,18 +1466,20 @@ module count_display_segments_1_6_0__SLICE_47 ( input D0, C0, B0, A0, output
 
 endmodule
 
-module lut40035 ( input A, B, C, D, output Z );
+module lut40034 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x0083") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xFFEF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module count_display_segments_1_6_0__SLICE_48 ( input D1, C1, B1, A1, D0, C0, 
-    B0, A0, output F0, F1 );
+module lut40035 ( input A, B, C, D, output Z );
 
-  lut40036 \count_display/segments_1_6_0_.m11 ( .A(A1), .B(B1), .C(C1), .D(D1), 
-    .Z(F1));
-  lut40037 \count_display/segments_1_6_0_.N_23_i ( .A(A0), .B(B0), .C(C0), 
-    .D(D0), .Z(F0));
+  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module vga_inst_SLICE_48 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40036 \vga_inst/row_RNO_1[3] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40035 \vga_inst/row_RNO_1[9] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
@@ -1517,21 +1496,31 @@ endmodule
 
 module lut40036 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x02BA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module vga_inst_SLICE_49 ( input D0, C0, B0, A0, output F0 );
+
+  lut40037 \vga_inst/m35 ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
 endmodule
 
 module lut40037 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xB680") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xD004") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module count_display_segments_1_6_0__SLICE_50 ( input D1, C1, B1, A1, D0, C0, 
-    B0, A0, output F0, F1 );
+module vga_inst_SLICE_50 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
 
-  lut40038 \count_display/segments_1_6_0_.m8 ( .A(A1), .B(B1), .C(C1), .D(D1), 
-    .Z(F1));
-  lut40039 \count_display/segments_1_6_0_.N_20_i ( .A(A0), .B(B0), .C(C0), 
-    .D(D0), .Z(F0));
+  lut40038 \vga_inst/m30 ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40039 \vga_inst/N_23_i ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
@@ -1548,21 +1537,18 @@ endmodule
 
 module lut40038 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x580E") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x0805") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40039 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xD004") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xD860") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module count_display_segments_1_6_0__SLICE_52 ( input D1, C1, B1, A1, D0, C0, 
-    B0, A0, output F0, F1 );
+module vga_inst_SLICE_52 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
 
-  lut40040 \count_display/segments_1_6_0_.m25 ( .A(A1), .B(B1), .C(C1), .D(D1), 
-    .Z(F1));
-  lut40041 \count_display/segments_1_6_0_.i2_mux_0_i ( .A(A0), .B(B0), .C(C0), 
-    .D(D0), .Z(F0));
+  lut40040 \vga_inst/m52 ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40041 \vga_inst/i2_mux_0_i ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
@@ -1579,7 +1565,7 @@ endmodule
 
 module lut40040 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x3852") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x308E") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40041 ( input A, B, C, D, output Z );
@@ -1587,10 +1573,10 @@ module lut40041 ( input A, B, C, D, output Z );
   LUT4 #("0x8964") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module vga_inst_SLICE_53 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+module vga_inst_SLICE_54 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
 
-  lut40042 \vga_inst/col_RNO_0_cZ[5] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40043 \vga_inst/col_RNO_0_cZ[8] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  lut40042 \vga_inst/m45 ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40043 \vga_inst/m42 ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
@@ -1607,21 +1593,24 @@ endmodule
 
 module lut40042 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xD0F0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x02AE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40043 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xB0F0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x42A6") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module count_display_segments_1_6_0__SLICE_55 ( input D0, C0, B0, A0, output 
-    F0 );
+module vga_inst_SLICE_55 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
 
-  lut40044 \count_display/segments_1_6_0_.RGB[4] ( .A(A0), .B(B0), .C(C0), 
-    .D(D0), .Z(F0));
+  lut40044 \vga_inst/col_RNO_0_cZ[5] ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40045 \vga_inst/col_RNO_0_cZ[8] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
     (B0 => F0) = (0:0:0,0:0:0);
@@ -1632,47 +1621,19 @@ endmodule
 
 module lut40044 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFE00") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module count_display_segments_1_6_0__SLICE_56 ( input D1, C1, B1, A1, D0, C0, 
-    B0, A0, output F0, F1 );
-
-  lut40045 \count_display/segments_1_6_0_.RGB[5] ( .A(A1), .B(B1), .C(C1), 
-    .D(D1), .Z(F1));
-  lut40046 \count_display/segments_1_6_0_.RGB_0_i[0] ( .A(A0), .B(B0), .C(C0), 
-    .D(D0), .Z(F0));
-
-  specify
-    (D1 => F1) = (0:0:0,0:0:0);
-    (C1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
-    (A1 => F1) = (0:0:0,0:0:0);
-    (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
-    (A0 => F0) = (0:0:0,0:0:0);
-  endspecify
-
+  LUT4 #("0x2AAA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40045 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFE00") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x4CCC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module lut40046 ( input A, B, C, D, output Z );
+module vga_inst_SLICE_57 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
 
-  LUT4 #("0xF0F1") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
-endmodule
-
-module count_display_segments_1_6_0__SLICE_58 ( input D1, C1, B1, A1, D0, C0, 
-    B0, A0, output F0, F1 );
-
-  lut40045 \count_display/segments_1_6_0_.RGB[2] ( .A(A1), .B(B1), .C(C1), 
-    .D(D1), .Z(F1));
-  lut40047 \count_display/segments_1_6_0_.RGB[3] ( .A(A0), .B(B0), .C(C0), 
-    .D(D0), .Z(F0));
+  lut40046 \vga_inst.col_RNI794B3_0[7] ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40047 \vga_inst.col_RNI794B3[7] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
@@ -1687,35 +1648,58 @@ module count_display_segments_1_6_0__SLICE_58 ( input D1, C1, B1, A1, D0, C0,
 
 endmodule
 
-module lut40047 ( input A, B, C, D, output Z );
+module lut40046 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xF0E0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x0200") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module vga_inst_SLICE_63 ( input D0, B0, output F0 );
-  wire   GNDI;
+module lut40047 ( input A, B, C, D, output Z );
 
-  lut40048 \vga_inst/row_RNO_0[2] ( .A(GNDI), .B(B0), .C(GNDI), .D(D0), .Z(F0));
-  gnd DRIVEGND( .PWR0(GNDI));
+  LUT4 #("0x0200") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_58 ( input D0, C0, B0, A0, output F0 );
+
+  lut40048 \RGB_obuf_RNO[5] ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
     (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
 module lut40048 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xCCFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x0400") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module vga_inst_SLICE_63 ( input C0, A0, output F0 );
+  wire   GNDI;
+
+  lut40049 \vga_inst/row_RNO_0[2] ( .A(A0), .B(GNDI), .C(C0), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40049 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xAFAF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module vga_inst_SLICE_64 ( input D1, C1, D0, C0, output F0, F1 );
   wire   GNDI;
 
-  lut40049 \vga_inst/row_RNO_0[3] ( .A(GNDI), .B(GNDI), .C(C1), .D(D1), .Z(F1));
+  lut40050 \vga_inst/row_RNO_0[3] ( .A(GNDI), .B(GNDI), .C(C1), .D(D1), .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40050 \vga_inst/row_RNO_0[9] ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  lut40051 \vga_inst/row_RNO_0[9] ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
 
   specify
     (D1 => F1) = (0:0:0,0:0:0);
@@ -1724,11 +1708,6 @@ module vga_inst_SLICE_64 ( input D1, C1, D0, C0, output F0, F1 );
     (C0 => F0) = (0:0:0,0:0:0);
   endspecify
 
-endmodule
-
-module lut40049 ( input A, B, C, D, output Z );
-
-  LUT4 #("0xFF0F") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40050 ( input A, B, C, D, output Z );
@@ -1736,35 +1715,59 @@ module lut40050 ( input A, B, C, D, output Z );
   LUT4 #("0xF0FF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module SLICE_67 ( input DI1, D1, D0, C0, CLK, output Q1, F0, F1 );
+module lut40051 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFF0F") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_65 ( input DI1, C1, D0, B0, CLK, output Q1, F0, F1 );
   wire   GNDI, VCCI, DI1_dly, CLK_dly;
 
-  lut40051 SLICE_67_K1( .A(GNDI), .B(GNDI), .C(GNDI), .D(D1), .Z(F1));
+  lut40052 SLICE_65_K1( .A(GNDI), .B(GNDI), .C(C1), .D(GNDI), .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
-  lut40011 start_prev_RNITCNN( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  lut40011 start_prev_RNITCNN( .A(GNDI), .B(B0), .C(GNDI), .D(D0), .Z(F0));
   ffsre2 \start_prev_Z.ff_inst ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
     .LSR(GNDI), .Q(Q1));
   vcc DRIVEVCC( .PWR1(VCCI));
 
   specify
-    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
     (CLK => Q1) = (0:0:0,0:0:0);
     $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
   endspecify
 
 endmodule
 
-module lut40051 ( input A, B, C, D, output Z );
+module lut40052 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFF00") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xF0F0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module SLICE_70 ( output F0 );
+module vga_inst_SLICE_70 ( input D0, C0, output F0 );
   wire   GNDI;
 
-  lut40052 VCC_cZ( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  lut40053 \vga_inst/col_RNI1NLR1[9] ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), 
+    .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40053 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_71 ( output F0 );
+  wire   GNDI;
+
+  lut40054 VCC_cZ( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -1772,7 +1775,7 @@ module SLICE_70 ( output F0 );
 
 endmodule
 
-module lut40052 ( input A, B, C, D, output Z );
+module lut40054 ( input A, B, C, D, output Z );
 
   LUT4 #("0xFFFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule

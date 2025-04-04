@@ -1,34 +1,34 @@
 {
 "Synplify Pro (R) Job Log" : {
-	"Date" : "15:07:15    04-Apr-2025",
+	"Date" : "15:28:50    04-Apr-2025",
 	"Working Directory" : "Z:/senior_design/0v7670_Verilog/camera_output/impl_1",
 	"Install" : "C:/lscc/radiant/2023.1/synpbase"
 },
 "impl_1" :{
-   "Start Time" : "15:07:03",
-   "Runtime" : "12s",
-   "Executable Run Time" : "11s",
+   "Start Time" : "15:28:39",
+   "Runtime" : "11s",
+   "Executable Run Time" : "10s",
    "synthesis" : {
-      "Start Time" : "15:07:03",
-      "Runtime" : "12s",
-      "Executable Run Time" : "11s",
+      "Start Time" : "15:28:39",
+      "Runtime" : "11s",
+      "Executable Run Time" : "10s",
       "compile" : {
-         "Start Time" : "15:07:03",
-         "Runtime" : "08s",
-         "Executable Run Time" : "07s",
+         "Start Time" : "15:28:39",
+         "Runtime" : "07s",
+         "Executable Run Time" : "06s",
          "compile_flow" : {
-            "Start Time" : "15:07:03",
-            "Runtime" : "05s",
-            "Executable Run Time" : "04s",
+            "Start Time" : "15:28:39",
+            "Runtime" : "04s",
+            "Executable Run Time" : "03s",
             "compiler" : {
                "executable" : "bin64/c_hdl.exe",
                "Run Directory" : "Z:/senior_design/0v7670_Verilog/camera_output/impl_1",
                "Run State" : "Complete",
                "Return Code" : "0",
                "Has Errors" : "no",
-               "Run Start Time" : "15:07:03",
-               "Run Time" : "05s",
-               "Exe Run Time" : "04s",
+               "Run Start Time" : "15:28:39",
+               "Run Time" : "04s",
+               "Exe Run Time" : "03s",
                "Memory Usage" : "-",
                "Up-to-date (run skipped)" : "no"
             },
@@ -38,7 +38,7 @@
                "Run State" : "Complete",
                "Return Code" : "0",
                "Has Errors" : "no",
-               "Run Start Time" : "15:07:08",
+               "Run Start Time" : "15:28:43",
                "Run Time" : "00s",
                "Exe Run Time" : "00s",
                "Memory Usage" : "-",
@@ -51,7 +51,7 @@
             "Run State" : "Complete",
             "Return Code" : "1",
             "Has Errors" : "no",
-            "Run Start Time" : "15:07:08",
+            "Run Start Time" : "15:28:43",
             "Run Time" : "03s",
             "Exe Run Time" : "03s",
             "Memory Usage" : "-",
@@ -59,7 +59,7 @@
          }
       },
       "map" : {
-         "Start Time" : "15:07:11",
+         "Start Time" : "15:28:46",
          "Runtime" : "04s",
          "Executable Run Time" : "04s",
          "fpga_mapper" : {
@@ -68,7 +68,7 @@
             "Run State" : "Complete",
             "Return Code" : "1",
             "Has Errors" : "no",
-            "Run Start Time" : "15:07:11",
+            "Run Start Time" : "15:28:46",
             "Run Time" : "04s",
             "Exe Run Time" : "04s",
             "Memory Usage" : "-",
