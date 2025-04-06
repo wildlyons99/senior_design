@@ -1,7 +1,7 @@
 module control_unit 
     (   
         input clk, 
-        input start,
+        input run,
         output reg [11:0] input_neuron_addr,
         output reg [11:0] output_neuron_addr,
         // 16 bits
@@ -53,20 +53,9 @@ module control_unit
     ///////////////////////////
 
 
-    always @(posedge clk) begin
-        if (start && ~done) begin 
+    always @(negedge clk) begin
+        if (run) begin 
 
-            //////// Set addresses /////////////////////////////////////
-            // (can be optimized with address bases)
-
-            // input neuron address = layer_ptr | weight_ptr, 12 bits 
-            input_neuron_addr <= {layer_ptr, weight_ptr};
-
-            // output neuron address = layer_ptr + 1| neuron_ptr, 12 bits
-            output_neuron_addr <= {(layer_ptr + 2'b01), 6'b000000, neuron_ptr};
-
-            // weight address = layer_ptr | neuron_ptr | weight_ptr, 16 bits
-            input_weight_addr <= {layer_ptr, neuron_ptr, weight_ptr};   
                   
             /////////////////////////////////////////////////////////////
 
@@ -78,28 +67,52 @@ module control_unit
 
                     // Finished MLP calculations, proceed to softmax
                     if (neuron_count_array[(layer_ptr + 1)] == 1) begin 
-
-                    // if (layer_ptr == layers - 1 && neuron_ptr == neuron_count_array[layer_ptr] - 1) begin 
-                        done <= 1;
+                        done = 1;
                     end else begin 
-                        done <= 0;
-                        layer_ptr <= layer_ptr + 1;
-                        neuron_ptr <= 0;
+                        done = 0;
+                        layer_ptr = layer_ptr + 1;
+                        neuron_ptr = 0;
                     end
                 end else begin 
-                    neuron_ptr <= neuron_ptr + 1;
+                    neuron_ptr = neuron_ptr + 1;
                 end
 
-                weight_ptr <= 0;
-                write_neuron <= 1;
-                reset_mult_acc <= 1; 
+                weight_ptr = 0;
+                write_neuron = 1;
+                reset_mult_acc = 1; 
             end else begin
-                weight_ptr <= weight_ptr + 1;
-                write_neuron <= 0;
-                reset_mult_acc <= 0;
+                weight_ptr = weight_ptr + 1;
+                write_neuron = 0;
+                reset_mult_acc = 0;
             end
 
-        end 
+
+            //////// Set addresses /////////////////////////////////////
+            // (can be optimized with address bases)
+
+            // input neuron address = layer_ptr | weight_ptr, 12 bits 
+            input_neuron_addr = {layer_ptr, weight_ptr};
+
+            // output neuron address = layer_ptr + 1| neuron_ptr, 12 bits
+            output_neuron_addr = {(layer_ptr + 2'b01), 6'b000000, neuron_ptr};
+
+            // weight address = layer_ptr | neuron_ptr | weight_ptr, 16 bits
+            input_weight_addr = {layer_ptr, neuron_ptr, weight_ptr};   
+
+        // if run is false, i.e. we are restarting
+        end else begin
+            weight_ptr <= 0;
+            neuron_ptr <= 0;
+            layer_ptr <= 0;
+
+            input_neuron_addr <= 0;
+            output_neuron_addr <= 0;
+            input_weight_addr <= 0;
+            
+            done <= 0;
+            write_neuron <= 0;
+            reset_mult_acc <= 0; 
+        end  
     end
 
 endmodule

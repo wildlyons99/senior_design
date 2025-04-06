@@ -1,15 +1,14 @@
-module control_unit 
+module relu 
     (   
-        input reg [7:0] val,
-        output reg [7:0] rectified_val
+        input wire signed [15:0] in,
+        output reg signed [15:0] out
     );
 
     always @* begin
-        if (val[7] == 0) begin
-            rectified_val = val
-        end else begin
-            rectified_val = 8'b00000000;
-        end
+        if (in < 0)
+            out = 0;
+        else
+            out = in;
     end
 
 endmodule
