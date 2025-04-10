@@ -1,6 +1,6 @@
 -ver "C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.v"
 -lib pmi -vhd "C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.vhd"
--ver "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/my_pll.v" "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/vga.v" "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/camera_configure.v" "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/pattern_gen.v" "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/seven_seg.v"
+-ver "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/my_pll.v" "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/vga.v" "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/camera_configure.v" "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/camera_read.v" "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/OV7670_config.v" "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/OV7670_config_rom.v" "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/SCCB_interface.v" "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/pattern_gen.v"
 -path "Z:/senior_design/0v7670_Verilog/camera_output"
 -top top
 -isTop

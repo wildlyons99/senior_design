@@ -1,5 +1,5 @@
 <html><body><samp><pre>
-<!@TC:1743794926>
+<!@TC:1744321692>
 
 Copyright (C) 1994-2023 Synopsys, Inc.
 This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
@@ -14,7 +14,7 @@ Hostname: H109W18
 
 Implementation : impl_1
 
-# Written on Fri Apr  4 15:28:45 2025
+# Written on Thu Apr 10 17:48:12 2025
 
 ##### DESIGN INFO #######################################################
 
@@ -39,8 +39,10 @@ Found 0 issues in 0 out of 1 constraints
 Starting                                                    Ending                                                      |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 System                                                      System                                                      |     5.000            |     No paths         |     No paths         |     No paths                         
-mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     System                                                      |     5.000            |     No paths         |     No paths         |     No paths                         
-mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     |     5.000            |     No paths         |     No paths         |     No paths                         
+mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     System                                                      |     5.000            |     No paths         |     No paths         |     No paths                         
+mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     |     5.000            |     No paths         |     No paths         |     No paths                         
+top|CAMERA_PCLOCK                                           mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+top|CAMERA_PCLOCK                                           top|CAMERA_PCLOCK                                           |     5.000            |     No paths         |     No paths         |     No paths                         
 ===================================================================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -49,6 +51,16 @@ mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     mypll_ipgen_lscc_pll
 <a name=UnconstrainedStartEndPointsCCK48></a>Unconstrained Start/End Points</a>
 ******************************
 
+p:CAMERA_DATA_IN[0]
+p:CAMERA_DATA_IN[1]
+p:CAMERA_DATA_IN[2]
+p:CAMERA_DATA_IN[3]
+p:CAMERA_DATA_IN[4]
+p:CAMERA_DATA_IN[5]
+p:CAMERA_DATA_IN[6]
+p:CAMERA_DATA_IN[7]
+p:CAMERA_HREF_IN
+p:CAMERA_VSYNC_IN
 p:RGB[0]
 p:RGB[1]
 p:RGB[2]
@@ -58,13 +70,11 @@ p:RGB[5]
 p:VGA_HSYNC
 p:VGA_VSYNC
 p:clk_12MHz
-p:seven_seg_out[0]
-p:seven_seg_out[1]
-p:seven_seg_out[2]
-p:seven_seg_out[3]
-p:seven_seg_out[4]
-p:seven_seg_out[5]
-p:seven_seg_out[6]
+p:done
+p:frame_done
+p:pixel_valid
+p:sioc
+p:siod
 p:start
 
 

@@ -12,7 +12,7 @@ Hostname: H109W18
 
 Implementation : impl_1
 
-# Written on Fri Apr  4 15:28:44 2025
+# Written on Thu Apr 10 17:48:10 2025
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1_cpe.ldc"
@@ -34,17 +34,21 @@ Level     Clock                                                       Frequency 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 0 -       System                                                      200.0 MHz     5.000         system       system_clkgroup           0    
                                                                                                                                               
-0 -       mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     38   
+0 -       mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     201  
+                                                                                                                                              
+0 -       top|CAMERA_PCLOCK                                           200.0 MHz     5.000         inferred     Inferred_clkgroup_0_2     21   
 ==============================================================================================================================================
 
 
 Clock Load Summary
 ******************
 
-                                                            Clock     Source                                          Clock Pin        Non-clock Pin     Non-clock Pin
-Clock                                                       Load      Pin                                             Seq Example      Seq Example       Comb Example 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                                      0         -                                               -                -                 -            
-                                                                                                                                                                      
-mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     38        my_pll.lscc_pll_inst.u_PLL_B.OUTCORE(PLL_B)     start_prev.C     -                 -            
-======================================================================================================================================================================
+                                                            Clock     Source                                          Clock Pin                Non-clock Pin     Non-clock Pin
+Clock                                                       Load      Pin                                             Seq Example              Seq Example       Comb Example 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                      0         -                                               -                        -                 -            
+                                                                                                                                                                              
+mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     201       my_pll.lscc_pll_inst.u_PLL_B.OUTCORE(PLL_B)     spram_data_in[7:0].C     -                 -            
+                                                                                                                                                                              
+top|CAMERA_PCLOCK                                           21        CAMERA_PCLOCK(port)                             reader.pixel_valid.C     -                 -            
+==============================================================================================================================================================================

@@ -5,14 +5,20 @@ Runtime Summary:
 	=====================================================
 		* Library: work, DesignUnit: top
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: sevenseg
-			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: vga
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: camera_read
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: mypll
 			Hardware Generation Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: mypll_ipgen_lscc_pll_Z1_layer0
+		* Library: work, DesignUnit: mypll_ipgen_lscc_pll_Z2_layer0
 			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: SCCB_interface_Z1_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: OV7670_config_25000000s_0s_1s_2s_3s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: OV7670_config_rom
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: SP256K
 			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: PLL_B
