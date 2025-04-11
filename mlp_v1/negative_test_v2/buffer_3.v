@@ -1,6 +1,6 @@
 module buffer_3 (   
         input clk, 
-        input run,
+        input reset,
         
         input done_3,
         input [15:0] out_3,
@@ -21,7 +21,7 @@ module buffer_3 (
     end
 
     always @(posedge clk) begin
-        if (!run) begin
+        if (reset) begin
             done_4 <= 0;
             out_4 <= 16'b0;
             out_neuron_addr_4 <= 12'b0;

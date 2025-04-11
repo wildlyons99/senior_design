@@ -4,14 +4,14 @@ module top_tb;
 
     // Declare testbench signals
     reg clk;
-    reg run;
+    reg reset;
     wire [15:0] out;
     wire finished;
 
     // Instantiate the DUT (Device Under Test)
     top uut (
         .clk(clk),
-        .run(run),
+        .reset(reset),
         .out(out),
         .finished(finished)
     );
@@ -19,20 +19,20 @@ module top_tb;
     always #10 clk = ~clk; 
 
     initial begin
-        clk = 0;
-        run = 0;
+        clk = 1;
+        reset = 1;
 
-        #10
-        run = 1;
+        #20
+        reset = 0;
         
         // Wait and observe outputs
         #400; 
 
-        run = 0;
+        reset = 1;
 
-        #40;
+        #20;
 
-        run = 1;
+        reset = 0;
 
         #400;
 

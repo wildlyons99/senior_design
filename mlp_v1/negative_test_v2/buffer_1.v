@@ -1,6 +1,6 @@
 module buffer_1 (   
         input clk, 
-        input run,
+        input reset,
 
         input done_1,
         input [11:0] neuron_addr_1,
@@ -27,7 +27,7 @@ module buffer_1 (
     end
 
     always @(posedge clk) begin
-        if (!run) begin
+        if (reset) begin
             done_2 <= 0;
             neuron_addr_2 <= 0;
             weight_addr_2 <= 0;

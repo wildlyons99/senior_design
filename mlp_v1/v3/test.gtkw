@@ -1,0 +1,66 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Fri Apr 11 17:31:24 2025
+[*]
+[dumpfile] "/Users/kinanrabbat/Desktop/Code/senior_design/senior_design/mlp_v1/v3/wave.vcd"
+[dumpfile_mtime] "Fri Apr 11 17:14:04 2025"
+[dumpfile_size] 16339
+[savefile] "/Users/kinanrabbat/Desktop/Code/senior_design/senior_design/mlp_v1/v3/test.gtkw"
+[timestart] 58500
+[size] 1384 726
+[pos] -1 -1
+*-16.000000 131700 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top_tb.
+[treeopen] top_tb.uut.
+[sst_width] 253
+[signals_width] 218
+[sst_expanded] 1
+[sst_vpaned_height] 258
+@28
+top_tb.uut.clk
+@22
+top_tb.uut.neuron_addr[11:0]
+@420
+top_tb.uut.neuron_val[15:0]
+top_tb.uut.weight_val[7:0]
+@22
+top_tb.uut.out_neuron_addr_3[11:0]
+@420
+top_tb.uut.mu.op1[15:0]
+top_tb.uut.mu.op2[7:0]
+top_tb.uut.mu.product[15:0]
+@c00420
+top_tb.uut.mu.sum[15:0]
+@28
+(0)top_tb.uut.mu.sum[15:0]
+(1)top_tb.uut.mu.sum[15:0]
+(2)top_tb.uut.mu.sum[15:0]
+(3)top_tb.uut.mu.sum[15:0]
+(4)top_tb.uut.mu.sum[15:0]
+(5)top_tb.uut.mu.sum[15:0]
+(6)top_tb.uut.mu.sum[15:0]
+(7)top_tb.uut.mu.sum[15:0]
+(8)top_tb.uut.mu.sum[15:0]
+(9)top_tb.uut.mu.sum[15:0]
+(10)top_tb.uut.mu.sum[15:0]
+(11)top_tb.uut.mu.sum[15:0]
+(12)top_tb.uut.mu.sum[15:0]
+(13)top_tb.uut.mu.sum[15:0]
+(14)top_tb.uut.mu.sum[15:0]
+(15)top_tb.uut.mu.sum[15:0]
+@1401200
+-group_end
+@420
+top_tb.uut.mu.out[15:0]
+@28
+top_tb.uut.reset_mu_1
+top_tb.uut.reset_mu_2
+top_tb.uut.reset_mu_3
+@420
+top_tb.uut.nm.data[15:0]
+@28
+top_tb.uut.nm.write_enable
+@23
+top_tb.uut.nm.output_addr[11:0]
+[pattern_trace] 1
+[pattern_trace] 0

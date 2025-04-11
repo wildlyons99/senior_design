@@ -8,7 +8,7 @@ VVP = vvp
 OUT = mlp
 
 # Source files
-SRC = top.v control_unit.v neuron_mem.v weight_mem.v multiply_unit.v relu.v softmax.v buffer_1.v buffer_2.v buffer_3.v top_tb.v
+SRC = top.v control_unit.v neuron_mem.v weight_mem.v bias_mem.v multiply_unit.v relu.v softmax.v buffer_1.v buffer_2.v buffer_3.v top_tb.v
 
 # Default target
 all: $(OUT)

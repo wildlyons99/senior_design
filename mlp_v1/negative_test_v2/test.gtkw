@@ -1,0 +1,49 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Fri Apr 11 15:01:37 2025
+[*]
+[dumpfile] "/Users/kinanrabbat/Desktop/Code/senior_design/senior_design/mlp_v1/negative_test/wave.vcd"
+[dumpfile_mtime] "Thu Apr 10 21:43:24 2025"
+[dumpfile_size] 25179
+[savefile] "/Users/kinanrabbat/Desktop/Code/senior_design/senior_design/mlp_v1/negative_test/test.gtkw"
+[timestart] 106500
+[size] 1336 680
+[pos] -1 -1
+*-16.000000 180800 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top_tb.
+[treeopen] top_tb.uut.
+[sst_width] 253
+[signals_width] 202
+[sst_expanded] 1
+[sst_vpaned_height] 329
+@28
+top_tb.uut.clk
+top_tb.uut.reset
+@22
+top_tb.uut.neuron_addr_1[11:0]
+top_tb.uut.neuron_addr_2[11:0]
+@420
+top_tb.uut.mu.op1[15:0]
+top_tb.uut.mu.op2[7:0]
+top_tb.uut.mu.product[15:0]
+top_tb.uut.mu.sum[15:0]
+top_tb.uut.mu.out[15:0]
+top_tb.uut.ru.in[15:0]
+top_tb.uut.ru.out[15:0]
+@28
+top_tb.uut.nm.write_enable
+@22
+top_tb.uut.nm.output_addr[11:0]
+@420
+top_tb.uut.nm.data[15:0]
+@22
+top_tb.uut.nm.input_addr[11:0]
+top_tb.uut.nm.input_addr[11:0]
+top_tb.uut.nm.prev_input_addr[11:0]
+top_tb.uut.nm.output_addr[11:0]
+@29
+top_tb.uut.nm.newval
+@420
+top_tb.uut.nm.neuron_val[15:0]
+[pattern_trace] 1
+[pattern_trace] 0
