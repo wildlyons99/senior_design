@@ -42,7 +42,7 @@ if (a)
 <DIV id="content" onclick="hideTocList()"><PRE>
 <A name="Par"></A>Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
-Fri Apr 11 14:41:53 2025
+Fri Apr 11 17:02:25 2025
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 	camera_output_impl_1_map.udb camera_output_impl_1.udb 
@@ -55,12 +55,12 @@ Cost [udb]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Ti
 5_1   *      0            -            0            -            0            10           Completed
 * : Design saved.
 
-Total (real) run time for 1-seed: 10 secs 
+Total (real) run time for 1-seed: 9 secs 
 
 par done!
 
 Lattice Place and Route Report for Design &quot;camera_output_impl_1_map.udb&quot;
-Fri Apr 11 14:41:53 2025
+Fri Apr 11 17:02:25 2025
 
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
@@ -120,9 +120,9 @@ Finished Placer Phase 0 (HIER). CPU time: 0 secs , REAL time: 0 secs
 
 
 ................
-Finished Placer Phase 0 (AP).  CPU time: 1 secs , REAL time: 0 secs 
+Finished Placer Phase 0 (AP).  CPU time: 1 secs , REAL time: 2 secs 
 
-Starting Placer Phase 1. CPU time: 1 secs , REAL time: 0 secs 
+Starting Placer Phase 1. CPU time: 1 secs , REAL time: 2 secs 
 ..  ..
 ....................
 
@@ -133,13 +133,13 @@ Device SLICE utilization summary after final SLICE packing:
 
 WARNING &lt;70001944&gt; - par: No master clock for
 	generated clock	create_generated_clock -name {clk_25MHz} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
-Finished Placer Phase 1. CPU time: 7 secs , REAL time: 7 secs 
+Finished Placer Phase 1. CPU time: 6 secs , REAL time: 7 secs 
 
 Starting Placer Phase 2.
 .
 
 Placer score =  82064
-Finished Placer Phase 2.  CPU time: 7 secs , REAL time: 7 secs 
+Finished Placer Phase 2.  CPU time: 6 secs , REAL time: 8 secs 
 
 
 
@@ -169,12 +169,12 @@ I/O Bank Usage Summary:
 | 2        | 7 / 8 ( 87%)   | 3.3V       |            |            |
 +----------+----------------+------------+------------+------------+
 
-Total Placer CPU time: 7 secs , REAL time: 7 secs 
+Total Placer CPU time: 7 secs , REAL time: 8 secs 
 
 Writing design to file camera_output_impl_1_par.dir/5_1.udb ...
 
 
-Start NBR router at 14:42:01 04/11/25
+Start NBR router at 17:02:32 04/11/25
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -216,14 +216,14 @@ WARNING &lt;70001944&gt; - par: No master clock for
 Routing in Serial Mode ......
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Start NBR section for initial routing at 14:42:01 04/11/25
+Start NBR section for initial routing at 17:02:32 04/11/25
 Level 4, iteration 1
 47(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 14:42:02 04/11/25
+Start NBR section for normal routing at 17:02:33 04/11/25
 Level 4, iteration 1
 10(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
 Level 4, iteration 2
@@ -237,7 +237,7 @@ Level 4, iteration 5
 Level 4, iteration 6
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
 
-Start NBR section for post-routing at 14:42:02 04/11/25
+Start NBR section for post-routing at 17:02:33 04/11/25
 
 End NBR router with 0 unrouted connection
 WARNING &lt;70001944&gt; - par: No master clock for
@@ -279,7 +279,7 @@ PAR_SUMMARY::Number of errors = 0
 
 Total CPU  Time: 9 secs 
 Total REAL Time: 10 secs 
-Peak Memory Usage: 122.85 MB
+Peak Memory Usage: 122.32 MB
 
 
 par done!

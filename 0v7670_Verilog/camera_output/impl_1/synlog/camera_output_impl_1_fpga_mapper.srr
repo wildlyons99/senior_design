@@ -1,4 +1,4 @@
-# Fri Apr 11 14:41:45 2025
+# Fri Apr 11 16:59:20 2025
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -35,7 +35,7 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 186MB peak: 186MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 185MB peak: 185MB)
 
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 190MB)
@@ -94,13 +94,13 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 
    6		0h:00m:02s		    -4.98ns		 433 /       215
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 208MB peak: 208MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 207MB peak: 207MB)
 
 
 Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 208MB peak: 208MB)
 
 
-Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 208MB peak: 208MB)
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 208MB peak: 208MB)
 
 
 Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 208MB peak: 208MB)
@@ -110,7 +110,7 @@ Start Writing Netlists (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02
 
 Writing Analyst data base Z:\senior_design\0v7670_Verilog\camera_output\impl_1\synwork\camera_output_impl_1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 208MB peak: 208MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 208MB peak: 208MB)
 
 Writing Verilog Simulation files
 
@@ -125,7 +125,7 @@ Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:04s; CPU Tim
 Finished Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 203MB peak: 209MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 206MB peak: 209MB)
+Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 205MB peak: 209MB)
 
 @W: MT246 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_configure.v":133:8:133:13|Blackbox SP256K is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"z:\senior_design\0v7670_verilog\camera_output\mypll\rtl\mypll.v":202:69:202:75|Blackbox PLL_B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
@@ -134,7 +134,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Fri Apr 11 14:41:49 2025
+# Timing report written on Fri Apr 11 16:59:25 2025
 #
 
 
@@ -884,9 +884,9 @@ Distribution of All Consumed LUTs 374 = 374
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 69MB peak: 209MB)
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 68MB peak: 209MB)
 
 Process took 0h:00m:05s realtime, 0h:00m:03s cputime
-# Fri Apr 11 14:41:50 2025
+# Fri Apr 11 16:59:25 2025
 
 ###########################################################]

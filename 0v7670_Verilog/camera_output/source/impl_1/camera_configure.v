@@ -218,7 +218,8 @@ module top
 	end
 	
 	// convert greyscale to RGB using the most significant 2 bits of greyscale for R, G, and B
-	assign vga_output = address_counter[14] ? 6'b000000 : (data_out[7:6] & data_out[7:6] & data_out[7:6]);
+	//assign vga_output = address_counter[14] ? 6'b000000 : (data_out[7:6] & data_out[7:6] & data_out[7:6]);
+	assign vga_output = address_counter[14] ? 6'b000000 : data_out;
 	//assign color
 	assign RGB = valid ? vga_output : 6'b000000;
 	 

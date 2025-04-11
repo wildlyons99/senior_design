@@ -1,4 +1,4 @@
-# Fri Apr 11 14:41:42 2025
+# Fri Apr 11 16:59:17 2025
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -19,7 +19,7 @@ Synopsys Lattice Technology Pre-mapping, Version map202303lat, Build 062R, Built
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 124MB)
 
 
-Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 127MB peak: 138MB)
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 138MB)
 
 Reading constraint file: Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1_cpe.ldc
 @L: Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1_scck.rpt 
@@ -75,7 +75,7 @@ Started DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00
 Finished DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 187MB peak: 188MB)
 
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 189MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 189MB)
 
 
 Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 190MB)
@@ -150,7 +150,7 @@ Clock Tree ID     Driving Element                          Drive Element Type   
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 191MB peak: 191MB)
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 191MB)
 
 
 Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 191MB peak: 191MB)
@@ -160,9 +160,9 @@ Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:0
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 107MB peak: 193MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 103MB peak: 193MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Fri Apr 11 14:41:44 2025
+# Fri Apr 11 16:59:20 2025
 
 ###########################################################]

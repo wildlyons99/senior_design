@@ -1,37 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BuildStatus>
     <Strategy name="Strategy1">
-        <Milestone name="Export" build_result="2" build_time="1744396926">
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1744396926"/>
-            <Task name="IBIS" build_result="2" update_result="0" update_time="1744396929"/>
-            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1744396930"/>
+        <Milestone name="Export" build_result="2" build_time="1744405357">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1744405357"/>
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1744405360"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1744405362"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1744396913">
-            <Task name="Map" build_result="2" update_result="0" update_time="1744396913"/>
+        <Milestone name="Map" build_result="2" build_time="1744405235">
+            <Task name="Map" build_result="2" update_result="0" update_time="1744405235"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1744396923">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1744396923"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1744396925"/>
+        <Milestone name="PAR" build_result="2" build_time="1744405355">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1744405355"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1744405356"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1744396912">
-            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1744396912"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1744405168">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1744405168"/>
             <Task name="SynTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="SynVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="LSE_Compile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Report name="IBIS/camera_output_impl_1.ibs" last_build_time="1744396928" last_build_size="72539"/>
-        <Report name="camera_output_impl_1.bgn" last_build_time="1744396926" last_build_size="1050"/>
-        <Report name="camera_output_impl_1.bin" last_build_time="1744396926" last_build_size="104156"/>
+        <Report name="IBIS/camera_output_impl_1.ibs" last_build_time="1744405359" last_build_size="72539"/>
+        <Report name="camera_output_impl_1.bgn" last_build_time="1744405357" last_build_size="1050"/>
+        <Report name="camera_output_impl_1.bin" last_build_time="1744405357" last_build_size="104156"/>
         <Report name="camera_output_impl_1.lsedata" last_build_time="0" last_build_size="0"/>
-        <Report name="camera_output_impl_1.twr.html" last_build_time="1744396925" last_build_size="15745"/>
-        <Report name="camera_output_impl_1.udb" last_build_time="1744396923" last_build_size="76647"/>
-        <Report name="camera_output_impl_1_map.udb" last_build_time="1744396913" last_build_size="48387"/>
+        <Report name="camera_output_impl_1.twr.html" last_build_time="1744405356" last_build_size="15745"/>
+        <Report name="camera_output_impl_1.udb" last_build_time="1744405354" last_build_size="76657"/>
+        <Report name="camera_output_impl_1_map.udb" last_build_time="1744405235" last_build_size="48410"/>
         <Report name="camera_output_impl_1_rtl.udb" last_build_time="1743786223" last_build_size="4841"/>
-        <Report name="camera_output_impl_1_syn.udb" last_build_time="1744396912" last_build_size="27054"/>
-        <Report name="camera_output_impl_1_vo.sdf" last_build_time="1744396930" last_build_size="414721"/>
-        <Report name="camera_output_impl_1_vo.vo" last_build_time="1744396930" last_build_size="404048"/>
+        <Report name="camera_output_impl_1_syn.udb" last_build_time="1744405168" last_build_size="27047"/>
+        <Report name="camera_output_impl_1_vo.sdf" last_build_time="1744405362" last_build_size="414721"/>
+        <Report name="camera_output_impl_1_vo.vo" last_build_time="1744405362" last_build_size="404048"/>
     </Strategy>
 </BuildStatus>
-              

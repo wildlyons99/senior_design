@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Apr 11 14:42:05 2025
+Fri Apr 11 17:02:36 2025
 
 
 Command: bitgen -w -freq 0 -gui camera_output_impl_1.udb 

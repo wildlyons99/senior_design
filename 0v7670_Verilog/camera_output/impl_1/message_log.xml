@@ -817,32 +817,6 @@
     </Task>
     <Task name="Map">
         <Message>
-            <ID>1026001</ID>
-            <Severity>16</Severity>
-            <Dynamic>Z:/senior_design/0v7670_Verilog/camera_output/pins.pdc</Dynamic>
-            <Dynamic>11</Dynamic>
-            <Dynamic>No port matched 'seven_seg_out[6]'.</Dynamic>
-            <Navigation>Z:/senior_design/0v7670_Verilog/camera_output/pins.pdc</Navigation>
-            <Navigation>11</Navigation>
-        </Message>
-        <Message>
-            <ID>1027013</ID>
-            <Severity>16</Severity>
-            <Dynamic>port</Dynamic>
-            <Dynamic>seven_seg_out[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1014301</ID>
-            <Severity>16</Severity>
-            <Dynamic>seven_seg_out[6]</Dynamic>
-            <Dynamic>ldc_set_location -site {46} [get_ports {seven_seg_out[6]}]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1011001</ID>
-            <Severity>16</Severity>
-            <Dynamic>ldc_set_location -site {46} [get_ports {seven_seg_out[6]}]</Dynamic>
-        </Message>
-        <Message>
             <ID>71003005</ID>
             <Severity>256</Severity>
             <Dynamic>CAMERA_PCLOCK</Dynamic>

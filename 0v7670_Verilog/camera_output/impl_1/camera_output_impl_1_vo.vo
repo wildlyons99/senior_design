@@ -2,8 +2,8 @@
 // Verilog netlist produced by program backanno, Version Radiant Software (64-bit) 2023.1.0.43.3
 
 // backanno -o camera_output_impl_1_vo.vo -sp High-Performance_1.2V -w -neg -gui camera_output_impl_1.udb 
-// Netlist created on Fri Apr 11 14:42:03 2025
-// Netlist written on Fri Apr 11 14:42:10 2025
+// Netlist created on Fri Apr 11 17:02:34 2025
+// Netlist written on Fri Apr 11 17:02:41 2025
 // Design is for device iCE40UP5K
 // Design is for package SG48
 // Design is for performance grade High-Performance_1.2V
@@ -358,7 +358,7 @@ module top ( clk_12MHz, start, CAMERA_VSYNC_IN, CAMERA_HREF_IN, CAMERA_DATA_IN,
          \SCCB1.un68_FSM_state_17 , \SCCB1.un68_FSM_state_16 , 
          \vga_inst.col_RNO[0] , \vga_inst.m16_5 , \vga_inst.m16_4 , 
          \vga_inst.m8_5 , \vga_inst.m8_4 , \vga_inst.m30_4 , 
-         \vga_inst.N_42_mux , VGA_VSYNC_0_i, \data_out[6] , \vga_inst.m35_1 , 
+         \vga_inst.N_42_mux , VGA_VSYNC_0_i, \data_out[0] , \vga_inst.m35_1 , 
          \vga_inst.N_54 , \RGB_c[0] , \vga_inst.N_19 , VGA_HSYNC_c, 
          \SCCB1.un1_FSM_state_22_0_i , \SCCB1.FSM_return_state_0 , 
          \SCCB1.FSM_return_state_cnst_0[2] , \SCCB1.timer_lm[26] , 
@@ -1694,12 +1694,12 @@ module top ( clk_12MHz, start, CAMERA_VSYNC_IN, CAMERA_HREF_IN, CAMERA_DATA_IN,
     .C1(\vga_inst.m30_4 ), .B1(\vga_inst.row[2] ), .A1(\vga_inst.N_42_mux ), 
     .D0(\vga_inst.row[0] ), .C0(\vga_inst.row[9] ), .B0(\vga_inst.row[4] ), 
     .A0(\vga_inst.row[1] ), .F0(\vga_inst.m30_4 ), .F1(VGA_VSYNC_0_i));
-  vga_inst_SLICE_349 \vga_inst.SLICE_349 ( .D1(\data_out[6] ), 
+  vga_inst_SLICE_349 \vga_inst.SLICE_349 ( .D1(\data_out[0] ), 
     .C1(\vga_inst.N_42_mux ), .D0(\vga_inst.row[7] ), .C0(\vga_inst.row[5] ), 
     .B0(\vga_inst.row[6] ), .A0(\vga_inst.row[8] ), .F0(\vga_inst.N_42_mux ), 
     .F1(\vga_inst.m35_1 ));
   vga_inst_SLICE_351 \vga_inst.SLICE_351 ( .D1(\address_counter[14] ), 
-    .C1(\vga_inst.N_54 ), .B1(\vga_inst.row[9] ), .A1(\vga_inst.m35_1 ), 
+    .C1(\vga_inst.N_54 ), .B1(\vga_inst.m35_1 ), .A1(\vga_inst.row[9] ), 
     .D0(\vga_inst.col[9] ), .C0(\vga_inst.col[8] ), .B0(\vga_inst.col[7] ), 
     .F0(\vga_inst.N_54 ), .F1(\RGB_c[0] ));
   vga_inst_SLICE_353 \vga_inst.SLICE_353 ( .D1(\vga_inst.col[8] ), 
@@ -2015,7 +2015,7 @@ module top ( clk_12MHz, start, CAMERA_VSYNC_IN, CAMERA_HREF_IN, CAMERA_DATA_IN,
     .DATAIN2(\spram_data_in[2] ), .DATAIN1(\spram_data_in[1] ), 
     .DATAIN0(\spram_data_in[0] ), .MASKWREN3(VCC), .MASKWREN2(VCC), 
     .MASKWREN1(VCC), .MASKWREN0(VCC), .WREN(WR), .CHIPSELECT(VCC), 
-    .CLOCK(clk_25MHz), .POWEROFF_N(VCC), .DATAOUT6(\data_out[6] ));
+    .CLOCK(clk_25MHz), .POWEROFF_N(VCC), .DATAOUT0(\data_out[0] ));
 endmodule
 
 module config_1_SLICE_0 ( input DI1, D1, C1, B1, A1, D0, C0, B0, LSR, CLK, 
@@ -8397,7 +8397,7 @@ endmodule
 
 module lut40213 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x0002") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x0004") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40214 ( input A, B, C, D, output Z );
@@ -10312,7 +10312,7 @@ module SPRAM1_vfb_b_inst ( input ADDRESS13, ADDRESS12, ADDRESS11, ADDRESS10,
     ADDRESS9, ADDRESS8, ADDRESS7, ADDRESS6, ADDRESS5, ADDRESS4, ADDRESS3, 
     ADDRESS2, ADDRESS1, ADDRESS0, DATAIN7, DATAIN6, DATAIN5, DATAIN4, DATAIN3, 
     DATAIN2, DATAIN1, DATAIN0, MASKWREN3, MASKWREN2, MASKWREN1, MASKWREN0, 
-    WREN, CHIPSELECT, CLOCK, POWEROFF_N, output DATAOUT6 );
+    WREN, CHIPSELECT, CLOCK, POWEROFF_N, output DATAOUT0 );
   wire   GNDI, ADDRESS13_dly, CLOCK_dly, ADDRESS12_dly, ADDRESS11_dly, 
          ADDRESS10_dly, ADDRESS9_dly, ADDRESS8_dly, ADDRESS7_dly, ADDRESS6_dly, 
          ADDRESS5_dly, ADDRESS4_dly, ADDRESS3_dly, ADDRESS2_dly, ADDRESS1_dly, 
@@ -10338,13 +10338,13 @@ module SPRAM1_vfb_b_inst ( input ADDRESS13, ADDRESS12, ADDRESS11, ADDRESS10,
     .RDMARGIN1(GNDI), .RDMARGIN0(GNDI), .STANDBY(GNDI), .SLEEP(GNDI), 
     .POWEROFF_N(POWEROFF_N_dly), .TEST(GNDI), .DATAOUT15(), .DATAOUT14(), 
     .DATAOUT13(), .DATAOUT12(), .DATAOUT11(), .DATAOUT10(), .DATAOUT9(), 
-    .DATAOUT8(), .DATAOUT7(), .DATAOUT6(DATAOUT6), .DATAOUT5(), .DATAOUT4(), 
-    .DATAOUT3(), .DATAOUT2(), .DATAOUT1(), .DATAOUT0());
+    .DATAOUT8(), .DATAOUT7(), .DATAOUT6(), .DATAOUT5(), .DATAOUT4(), 
+    .DATAOUT3(), .DATAOUT2(), .DATAOUT1(), .DATAOUT0(DATAOUT0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
-    (CLOCK => DATAOUT6) = (0:0:0,0:0:0);
-    (POWEROFF_N => DATAOUT6) = (0:0:0,0:0:0);
+    (CLOCK => DATAOUT0) = (0:0:0,0:0:0);
+    (POWEROFF_N => DATAOUT0) = (0:0:0,0:0:0);
     $setuphold 
       (posedge CLOCK, ADDRESS13, 0:0:0, 0:0:0,,,, CLOCK_dly, ADDRESS13_dly);
     $setuphold 

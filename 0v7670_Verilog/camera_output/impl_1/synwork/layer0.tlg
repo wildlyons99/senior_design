@@ -58,12 +58,12 @@ Finished optimization stage 1 on PLL_B (CPU Time 0h:00m:00s, Memory Used current
 	FREQUENCY_PIN_REFERENCECLK=72'b001100010011001000101110001100000011000000110000001100000011000000110000
    Generated name = mypll_ipgen_lscc_pll_Z2_layer0
 Running optimization stage 1 on mypll_ipgen_lscc_pll_Z2_layer0 .......
-Finished optimization stage 1 on mypll_ipgen_lscc_pll_Z2_layer0 (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 114MB)
+Finished optimization stage 1 on mypll_ipgen_lscc_pll_Z2_layer0 (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 115MB)
 @N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":11:7:11:11|Synthesizing module mypll in library work.
 @W: CG781 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":46:23:46:23|Input sclk_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
 @W: CG781 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":47:22:47:22|Input sdi_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
 Running optimization stage 1 on mypll .......
-Finished optimization stage 1 on mypll (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 114MB)
+Finished optimization stage 1 on mypll (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 115MB)
 @N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_read.v":21:7:21:17|Synthesizing module camera_read in library work.
 Running optimization stage 1 on camera_read .......
 Finished optimization stage 1 on camera_read (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 115MB)
@@ -117,7 +117,7 @@ Running optimization stage 2 on SCCB_interface_Z1_layer0 .......
 @N: CL201 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Trying to extract state machine for register FSM_state.
 @N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Register bit timer[28] is always 0.
 @W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Pruning register bit 28 of timer[28:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-Finished optimization stage 2 on SCCB_interface_Z1_layer0 (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+Finished optimization stage 2 on SCCB_interface_Z1_layer0 (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 116MB)
 Running optimization stage 2 on OV7670_config_25000000s_0s_1s_2s_3s .......
 @N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":56:4:56:9|Register bit FSM_return_state[0] is always 1.
 @N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":56:4:56:9|Register bit FSM_return_state[1] is always 0.
