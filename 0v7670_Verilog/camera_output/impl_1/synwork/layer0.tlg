@@ -74,33 +74,30 @@ Finished optimization stage 1 on vga (CPU Time 0h:00m:00s, Memory Used current: 
 Running optimization stage 1 on SP256K .......
 Finished optimization stage 1 on SP256K (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 115MB)
 @N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":4:7:4:9|Synthesizing module top in library work.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":39:6:39:13|Removing wire fast_clk, as there is no assignment to it.
-@W: CG133 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":53:8:53:17|Object start_prev is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":23:12:23:15|Object TEST is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":41:6:41:13|Removing wire fast_clk, as there is no assignment to it.
+@W: CG133 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":55:8:55:17|Object start_prev is declared but not assigned. Either assign a value or remove the declaration.
 Running optimization stage 1 on top .......
-@W: CL169 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Pruning unused register prev_pixel_valid. Make sure that there are no unused intermediate registers.
 Finished optimization stage 1 on top (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 115MB)
 Running optimization stage 2 on top .......
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Register bit spram_data_in[8] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Register bit spram_data_in[9] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Register bit spram_data_in[10] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Register bit spram_data_in[11] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Register bit spram_data_in[12] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Register bit spram_data_in[13] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Register bit spram_data_in[14] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Register bit spram_data_in[15] is always 0.
-@W: CL279 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Pruning register bits 15 to 8 of spram_data_in[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL201 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Trying to extract state machine for register STATE.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Register bit STATE[1] is always 0.
-@W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Pruning register bit 1 of STATE[1:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL190 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Optimizing register bit WR to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL169 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Pruning unused register WR. Make sure that there are no unused intermediate registers.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[8] is always 0.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[9] is always 0.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[10] is always 0.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[11] is always 0.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[12] is always 0.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[13] is always 0.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[14] is always 0.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[15] is always 0.
+@W: CL279 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Pruning register bits 15 to 8 of spram_data_in[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Trying to extract state machine for register STATE.
+@A: CL153 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":23:12:23:15|*Unassigned bits of TEST are referenced and tied to 0 -- simulation mismatch possible.
 Finished optimization stage 2 on top (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
 Running optimization stage 2 on SP256K .......
 Finished optimization stage 2 on SP256K (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
 Running optimization stage 2 on vga .......
 Finished optimization stage 2 on vga (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
 Running optimization stage 2 on camera_read .......
-@N: CL201 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Trying to extract state machine for register FSM_state.
+@N: CL201 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|Trying to extract state machine for register FSM_state.
 Finished optimization stage 2 on camera_read (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
 Running optimization stage 2 on mypll .......
 Finished optimization stage 2 on mypll (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
@@ -120,7 +117,7 @@ Running optimization stage 2 on SCCB_interface_Z1_layer0 .......
 @N: CL201 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Trying to extract state machine for register FSM_state.
 @N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Register bit timer[28] is always 0.
 @W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Pruning register bit 28 of timer[28:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-Finished optimization stage 2 on SCCB_interface_Z1_layer0 (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 116MB)
+Finished optimization stage 2 on SCCB_interface_Z1_layer0 (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
 Running optimization stage 2 on OV7670_config_25000000s_0s_1s_2s_3s .......
 @N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":56:4:56:9|Register bit FSM_return_state[0] is always 1.
 @N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":56:4:56:9|Register bit FSM_return_state[1] is always 0.

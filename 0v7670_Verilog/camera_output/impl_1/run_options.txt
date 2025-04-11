@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version U-2023.03LR-1
 #--  Project file Z:\senior_design\0v7670_Verilog\camera_output\impl_1\run_options.txt
-#--  Written on Thu Apr 10 17:48:04 2025
+#--  Written on Fri Apr 11 14:41:36 2025
 
 
 #project files

@@ -20,6 +20,8 @@ module top
 	output wire frame_done,
 	output wire pixel_valid,
 	
+	output reg TEST,
+	
 	// VGA Outputs 
 	output wire [5:0]   RGB, 
 	output wire         VGA_HSYNC,
@@ -75,7 +77,7 @@ module top
         .clk(clk_25MHz),
         .SCCB_interface_ready(SCCB_ready),
         .rom_data(rom_dout),
-        .start(start),
+        .start(~start),
         .rom_addr(rom_addr),
         .done(done),
         .SCCB_interface_addr(SCCB_addr),
@@ -147,14 +149,15 @@ module top
 		//.segments(seven_seg_out)
 	//); 
 
-	//assign RGB = valid ? ((col > 240) ? address_out[5:0] : 6'b000011): 6'b000000; 
-
+	//assign RGB = valid ? ((col > 240) ? data_out[5:0] : 6'b000011): 6'b000000; 
+	//reg [2:0] count;
      //Edge detection and counter update
     //always @(posedge clk_25MHz) begin
 		 //Update previous state 
+		//spram_address_in <= 0;
 		//start_prev <= start;
 		//WR <= 0; 
-		//RGB <= address_out[5:0]; 
+		//RGB <= data_out[5:0]; 
 		//RGB <= 6'b000011;
 		 //Check for rising edge: current 'start' is high and previous was low
 		//if (!start && start_prev) begin
@@ -179,43 +182,45 @@ module top
 	always @(posedge clk_25MHz) begin
 		case(STATE)
 			INIT:begin
-				// Begin I2C Communication
-				// Reset SPRAM Address Counter
-				// Loading Screen Graphic????
+				//Begin I2C Communication
+				//Reset SPRAM Address Counter
+				//Loading Screen Graphic????
 				prev_pixel_valid <= 0;
 				address_counter <= 0;
 				WR <= 0;
+				spram_data_in <= 8'b11111111;
+				spram_address_in <= 0;
 				if (done) begin
 					STATE <= WAIT_FOR_PIXEL_VALID;
 				end
 			end
 			
 			WAIT_FOR_PIXEL_VALID: begin
-				// Set Spram read
-				// Wait for pixel_valid to go high
+				//Set Spram read
+				//Wait for pixel_valid to go high
 				WR <= 0;
 				address_counter <= frame_done ? 0 : address_counter;
-				if (pixel_valid && !prev_pixel_valid) STATE <= WAIT_FOR_PIXEL_VALID;
+				if (pixel_valid && !prev_pixel_valid) STATE <= UPDATE_SPRAM;
 				prev_pixel_valid <= pixel_valid;
 			end
 			
 			UPDATE_SPRAM:begin
-				// Set Spram write
-				// Write most significant 8 bits of camera data
-				// Increment address counter
+				//Set Spram write
+				//Write most significant 8 bits of camera data
+				//Increment address counter
 				WR <= 1;
-				spram_address_in <= address_counter[13:0];
 				spram_data_in <= pixel_data[15:8];
+				spram_address_in <= address_counter[13:0];
 				address_counter <= address_counter + 1;
 				STATE <= WAIT_FOR_PIXEL_VALID;
 			end
 		endcase
 	end
 	
-	// assign color 
-	assign RGB = valid ? vga_output : 6'b000000; 
-
-	assign vga_output = address_counter[14] ? data_out : 6'b000000; 
+	// convert greyscale to RGB using the most significant 2 bits of greyscale for R, G, and B
+	assign vga_output = address_counter[14] ? 6'b000000 : (data_out[7:6] & data_out[7:6] & data_out[7:6]);
+	//assign color
+	assign RGB = valid ? vga_output : 6'b000000;
 	 
     
 endmodule

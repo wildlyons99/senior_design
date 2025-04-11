@@ -1,6 +1,6 @@
 
 Lattice Place and Route Report for Design "camera_output_impl_1_map.udb"
-Thu Apr 10 17:48:21 2025
+Fri Apr 11 14:41:53 2025
 
 PAR: Place And Route Radiant Software (64-bit) 2023.1.0.43.3.
 Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON \
@@ -18,116 +18,20 @@ Family:  iCE40UP
 Device:  iCE40UP5K
 Package: SG48
 Performance Grade:   High-Performance_1.2V
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[1]' in the constraint 'ldc_set_location -site {45} [get_ports {CAMERA_DATA_IN[1]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {45} [get_ports {CAMERA_DATA_IN[1]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[2]' in the constraint 'ldc_set_location -site {48} [get_ports {CAMERA_DATA_IN[2]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {48} [get_ports {CAMERA_DATA_IN[2]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[3]' in the constraint 'ldc_set_location -site {3} [get_ports {CAMERA_DATA_IN[3]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {3} [get_ports {CAMERA_DATA_IN[3]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[5]' in the constraint 'ldc_set_location -site {4} [get_ports {CAMERA_DATA_IN[5]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {4} [get_ports {CAMERA_DATA_IN[5]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[4]' in the constraint 'ldc_set_location -site {44} [get_ports {CAMERA_DATA_IN[4]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {44} [get_ports {CAMERA_DATA_IN[4]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[7]' in the constraint 'ldc_set_location -site {9} [get_ports {CAMERA_DATA_IN[7]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {9} [get_ports {CAMERA_DATA_IN[7]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[6]' in the constraint 'ldc_set_location -site {6} [get_ports {CAMERA_DATA_IN[6]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {6} [get_ports {CAMERA_DATA_IN[6]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[0]' in the constraint 'ldc_set_location -site {47} [get_ports {CAMERA_DATA_IN[0]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {47} [get_ports {CAMERA_DATA_IN[0]}]', the locate object is not specified
-
 WARNING <70001944> - par: No master clock for
 	generated clock	create_generated_clock -name {clk_25MHz} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[1]' in the constraint 'ldc_set_location -site {45} [get_ports {CAMERA_DATA_IN[1]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {45} [get_ports {CAMERA_DATA_IN[1]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[2]' in the constraint 'ldc_set_location -site {48} [get_ports {CAMERA_DATA_IN[2]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {48} [get_ports {CAMERA_DATA_IN[2]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[3]' in the constraint 'ldc_set_location -site {3} [get_ports {CAMERA_DATA_IN[3]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {3} [get_ports {CAMERA_DATA_IN[3]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[5]' in the constraint 'ldc_set_location -site {4} [get_ports {CAMERA_DATA_IN[5]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {4} [get_ports {CAMERA_DATA_IN[5]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[4]' in the constraint 'ldc_set_location -site {44} [get_ports {CAMERA_DATA_IN[4]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {44} [get_ports {CAMERA_DATA_IN[4]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[7]' in the constraint 'ldc_set_location -site {9} [get_ports {CAMERA_DATA_IN[7]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {9} [get_ports {CAMERA_DATA_IN[7]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[6]' in the constraint 'ldc_set_location -site {6} [get_ports {CAMERA_DATA_IN[6]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {6} [get_ports {CAMERA_DATA_IN[6]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[0]' in the constraint 'ldc_set_location -site {47} [get_ports {CAMERA_DATA_IN[0]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {47} [get_ports {CAMERA_DATA_IN[0]}]', the locate object is not specified
-
 
 WARNING: Database constraint "create_generated_clock -name {clk_25MHz} -source [get_pins my_pll.lscc_pll_inst.u_PLL_B/REFERENCECLK] -divide_by 32 -multiply_by 67 [get_pins my_pll.lscc_pll_inst.u_PLL_B/OUTCORE]" does not have corresponding timing constraint. Please check if the resource objects of the constraint are valid carefully!
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[7]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[6]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[5]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[4]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[3]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[2]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[1]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[0]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[7]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[6]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[5]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[4]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[3]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[2]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[1]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[0]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[7]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[6]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[5]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[4]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[3]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[2]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[1]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[0]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[7]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[6]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[5]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[4]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[3]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[2]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[1]' does not connect to anything.
-WARNING <71003020> - par: Top module port 'CAMERA_DATA_IN[0]' does not connect to anything.
 CRITICAL <71003005> - par: The clock port [CAMERA_PCLOCK] is assigned to a non clock dedicated pin [11], which might affect the clock performance. Use dedicated clock resources for the port.
-Number of Signals: 716
-Number of Connections: 2011
+Number of Signals: 849
+Number of Connections: 2312
 Device utilization summary:
 
-   SLICE (est.)     250/2640          9% used
-     LUT            473/5280          9% used
-     REG            166/5280          3% used
-   PIO               18/56           32% used
-                     18/36           50% bonded
+   SLICE (est.)     282/2640         11% used
+     LUT            534/5280         10% used
+     REG            215/5280          4% used
+   PIO               27/56           48% used
+                     27/36           75% bonded
    IOLOGIC            0/56            0% used
    DSP                0/8             0% used
    I2C                0/2             0% used
@@ -136,7 +40,7 @@ Device utilization summary:
    LEDDA_IP           0/1             0% used
    RGBA_DRV           0/1             0% used
    FILTER             0/2             0% used
-   SRAM               0/4             0% used
+   SRAM               1/4            25% used
    WARMBOOT           0/1             0% used
    SPI                0/2             0% used
    EBR                0/30            0% used
@@ -146,9 +50,9 @@ Device utilization summary:
    OPENDRAIN          0/3             0% used
 
 Pin Constraint Summary:
-   15 out of 18 pins locked (83% locked).
+   23 out of 27 pins locked (85% locked).
 .
-............
+.............
 Finished Placer Phase 0 (HIER). CPU time: 0 secs , REAL time: 0 secs 
 
 
@@ -159,117 +63,54 @@ Starting Placer Phase 1. CPU time: 1 secs , REAL time: 0 secs
 ..  ..
 ....................
 
-Placer score = 61002.
+Placer score = 75339.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE            246/2640          9% used
+   SLICE            279/2640         10% used
 
 WARNING <70001944> - par: No master clock for
 	generated clock	create_generated_clock -name {clk_25MHz} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[1]' in the constraint 'ldc_set_location -site {45} [get_ports {CAMERA_DATA_IN[1]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {45} [get_ports {CAMERA_DATA_IN[1]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[2]' in the constraint 'ldc_set_location -site {48} [get_ports {CAMERA_DATA_IN[2]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {48} [get_ports {CAMERA_DATA_IN[2]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[3]' in the constraint 'ldc_set_location -site {3} [get_ports {CAMERA_DATA_IN[3]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {3} [get_ports {CAMERA_DATA_IN[3]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[5]' in the constraint 'ldc_set_location -site {4} [get_ports {CAMERA_DATA_IN[5]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {4} [get_ports {CAMERA_DATA_IN[5]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[4]' in the constraint 'ldc_set_location -site {44} [get_ports {CAMERA_DATA_IN[4]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {44} [get_ports {CAMERA_DATA_IN[4]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[7]' in the constraint 'ldc_set_location -site {9} [get_ports {CAMERA_DATA_IN[7]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {9} [get_ports {CAMERA_DATA_IN[7]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[6]' in the constraint 'ldc_set_location -site {6} [get_ports {CAMERA_DATA_IN[6]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {6} [get_ports {CAMERA_DATA_IN[6]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[0]' in the constraint 'ldc_set_location -site {47} [get_ports {CAMERA_DATA_IN[0]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {47} [get_ports {CAMERA_DATA_IN[0]}]', the locate object is not specified
-
 Finished Placer Phase 1. CPU time: 7 secs , REAL time: 7 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  75639
+Placer score =  82064
 Finished Placer Phase 2.  CPU time: 7 secs , REAL time: 7 secs 
 
 
 ------------------ Clock Report ------------------
 
 Global Clocks :
-  PRIMARY "clk_25MHz" from OUTCORE on comp "my_pll.lscc_pll_inst.u_PLL_B" on site "PLL_R13C32", clk load = 90, ce load = 0, sr load = 0
+  PRIMARY "clk_25MHz" from OUTCORE on comp "my_pll.lscc_pll_inst.u_PLL_B" on site "PLL_R13C32", clk load = 112, ce load = 0, sr load = 0
+  PRIMARY "CAMERA_PCLOCK_c" from comp "CAMERA_PCLOCK" on PIO site "11 (PL18A)", clk load = 7, ce load = 0, sr load = 0
 
-  PRIMARY  : 1 out of 8 (12%)
+  PRIMARY  : 2 out of 8 (25%)
 
 --------------- End of Clock Report ---------------
 
 
 I/O Usage Summary (final):
-   18 out of 56 (32.1%) I/O sites used.
-   18 out of 36 (50.0%) bonded I/O sites used.
-   Number of I/O components: 18; differential: 0
+   27 out of 56 (48.2%) I/O sites used.
+   27 out of 36 (75.0%) bonded I/O sites used.
+   Number of I/O components: 27; differential: 0
    Number of Vref pins used: 0
 
 I/O Bank Usage Summary:
-+----------+---------------+------------+------------+------------+
-| I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
-+----------+---------------+------------+------------+------------+
-| 0        | 8 / 14 ( 57%) | 3.3V       |            |            |
-| 1        | 9 / 14 ( 64%) | 3.3V       |            |            |
-| 2        | 1 / 8 ( 12%)  | 3.3V       |            |            |
-+----------+---------------+------------+------------+------------+
++----------+----------------+------------+------------+------------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+----------------+------------+------------+------------+
+| 0        | 9 / 14 ( 64%)  | 3.3V       |            |            |
+| 1        | 11 / 14 ( 78%) | 3.3V       |            |            |
+| 2        | 7 / 8 ( 87%)   | 3.3V       |            |            |
++----------+----------------+------------+------------+------------+
 
 Total Placer CPU time: 7 secs , REAL time: 7 secs 
 
 Writing design to file camera_output_impl_1_par.dir/5_1.udb ...
 
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[1]' in the constraint 'ldc_set_location -site {45} [get_ports {CAMERA_DATA_IN[1]}]'
 
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {45} [get_ports {CAMERA_DATA_IN[1]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[2]' in the constraint 'ldc_set_location -site {48} [get_ports {CAMERA_DATA_IN[2]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {48} [get_ports {CAMERA_DATA_IN[2]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[3]' in the constraint 'ldc_set_location -site {3} [get_ports {CAMERA_DATA_IN[3]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {3} [get_ports {CAMERA_DATA_IN[3]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[5]' in the constraint 'ldc_set_location -site {4} [get_ports {CAMERA_DATA_IN[5]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {4} [get_ports {CAMERA_DATA_IN[5]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[4]' in the constraint 'ldc_set_location -site {44} [get_ports {CAMERA_DATA_IN[4]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {44} [get_ports {CAMERA_DATA_IN[4]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[7]' in the constraint 'ldc_set_location -site {9} [get_ports {CAMERA_DATA_IN[7]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {9} [get_ports {CAMERA_DATA_IN[7]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[6]' in the constraint 'ldc_set_location -site {6} [get_ports {CAMERA_DATA_IN[6]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {6} [get_ports {CAMERA_DATA_IN[6]}]', the locate object is not specified
-
-WARNING <77001032> - par: Unable to find the instance/port 'CAMERA_DATA_IN[0]' in the constraint 'ldc_set_location -site {47} [get_ports {CAMERA_DATA_IN[0]}]'
-
-WARNING <77001031> - par: In the constraint 'ldc_set_location -site {47} [get_ports {CAMERA_DATA_IN[0]}]', the locate object is not specified
-
-
-Start NBR router at 17:48:29 04/10/25
+Start NBR router at 14:42:01 04/11/25
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -287,21 +128,21 @@ Note: NBR uses a different method to calculate timing slacks. The
 Starting routing resource preassignment
 Preassignment Summary:
 --------------------------------------------------------------------------------
-233 connections routed with dedicated routing resources
-1 global clock signals routed
-323 connections routed (of 1884 total) (17.14%)
+296 connections routed with dedicated routing resources
+2 global clock signals routed
+415 connections routed (of 2140 total) (19.39%)
 ---------------------------------------------------------
 Clock routing summary:
-Primary clocks (1 used out of 8 available):
+Primary clocks (2 used out of 8 available):
 #0  Signal "clk_25MHz"
-       Clock   loads: 90    out of    90 routed (100.00%)
+       Clock   loads: 112   out of   112 routed (100.00%)
+#7  Signal "CAMERA_PCLOCK_c"
+       Clock   loads: 7     out of     7 routed (100.00%)
 Other clocks:
     Signal "clk_12MHz_c"
        Clock   loads: 0     out of     1 routed (  0.00%)
     Signal "my_pll.lscc_pll_inst.intfbout_w"
        Clock   loads: 1     out of     1 routed (100.00%)
-    Signal "CAMERA_PCLOCK_c"
-       Clock   loads: 0     out of     3 routed (  0.00%)
 ---------------------------------------------------------
 --------------------------------------------------------------------------------
 Completed routing resource preassignment
@@ -311,22 +152,28 @@ WARNING <70001944> - par: No master clock for
 Routing in Serial Mode ......
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Start NBR section for initial routing at 17:48:29 04/10/25
+Start NBR section for initial routing at 14:42:01 04/11/25
 Level 4, iteration 1
 47(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 17:48:30 04/10/25
+Start NBR section for normal routing at 14:42:02 04/11/25
 Level 4, iteration 1
-8(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
+10(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
 Level 4, iteration 2
-5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
+7(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
 Level 4, iteration 3
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
+Level 4, iteration 4
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
+Level 4, iteration 5
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
+Level 4, iteration 6
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
 
-Start NBR section for post-routing at 17:48:30 04/10/25
+Start NBR section for post-routing at 14:42:02 04/11/25
 
 End NBR router with 0 unrouted connection
 WARNING <70001944> - par: No master clock for
@@ -346,10 +193,10 @@ NBR Summary
 -----------
 
 
-Total CPU time 1 secs 
+Total CPU time 2 secs 
 Total REAL time: 2 secs 
 Completely routed.
-End of route.  1884 routed (100.00%); 0 unrouted.
+End of route.  2140 routed (100.00%); 0 unrouted.
 
 Writing design to file camera_output_impl_1_par.dir/5_1.udb ...
 
@@ -367,7 +214,7 @@ PAR_SUMMARY::Number of errors = 0
 
 Total CPU  Time: 9 secs 
 Total REAL Time: 10 secs 
-Peak Memory Usage: 121.35 MB
+Peak Memory Usage: 122.85 MB
 
 
 par done!

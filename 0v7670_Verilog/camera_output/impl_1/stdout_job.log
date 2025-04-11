@@ -1,23 +1,23 @@
 {
 "Synplify Pro (R) Job Log" : {
-	"Date" : "17:48:18    10-Apr-2025",
+	"Date" : "14:41:51    11-Apr-2025",
 	"Working Directory" : "Z:/senior_design/0v7670_Verilog/camera_output/impl_1",
 	"Install" : "C:/lscc/radiant/2023.1/synpbase"
 },
 "impl_1" :{
-   "Start Time" : "17:48:04",
-   "Runtime" : "14s",
+   "Start Time" : "14:41:36",
+   "Runtime" : "15s",
    "Executable Run Time" : "12s",
    "synthesis" : {
-      "Start Time" : "17:48:04",
-      "Runtime" : "14s",
+      "Start Time" : "14:41:36",
+      "Runtime" : "15s",
       "Executable Run Time" : "12s",
       "compile" : {
-         "Start Time" : "17:48:04",
-         "Runtime" : "08s",
+         "Start Time" : "14:41:36",
+         "Runtime" : "09s",
          "Executable Run Time" : "07s",
          "compile_flow" : {
-            "Start Time" : "17:48:04",
+            "Start Time" : "14:41:36",
             "Runtime" : "06s",
             "Executable Run Time" : "05s",
             "compiler" : {
@@ -26,7 +26,7 @@
                "Run State" : "Complete",
                "Return Code" : "0",
                "Has Errors" : "no",
-               "Run Start Time" : "17:48:04",
+               "Run Start Time" : "14:41:36",
                "Run Time" : "05s",
                "Exe Run Time" : "04s",
                "Memory Usage" : "-",
@@ -38,7 +38,7 @@
                "Run State" : "Complete",
                "Return Code" : "0",
                "Has Errors" : "no",
-               "Run Start Time" : "17:48:09",
+               "Run Start Time" : "14:41:41",
                "Run Time" : "01s",
                "Exe Run Time" : "01s",
                "Memory Usage" : "-",
@@ -51,16 +51,16 @@
             "Run State" : "Complete",
             "Return Code" : "1",
             "Has Errors" : "no",
-            "Run Start Time" : "17:48:10",
-            "Run Time" : "02s",
+            "Run Start Time" : "14:41:42",
+            "Run Time" : "03s",
             "Exe Run Time" : "02s",
             "Memory Usage" : "-",
             "Up-to-date (run skipped)" : "no"
          }
       },
       "map" : {
-         "Start Time" : "17:48:13",
-         "Runtime" : "05s",
+         "Start Time" : "14:41:45",
+         "Runtime" : "06s",
          "Executable Run Time" : "05s",
          "fpga_mapper" : {
             "executable" : "bin64/m_generic.exe",
@@ -68,8 +68,8 @@
             "Run State" : "Complete",
             "Return Code" : "1",
             "Has Errors" : "no",
-            "Run Start Time" : "17:48:13",
-            "Run Time" : "05s",
+            "Run Start Time" : "14:41:45",
+            "Run Time" : "06s",
             "Exe Run Time" : "05s",
             "Memory Usage" : "-",
             "Up-to-date (run skipped)" : "no"

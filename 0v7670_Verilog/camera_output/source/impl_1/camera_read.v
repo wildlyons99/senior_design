@@ -34,8 +34,7 @@ module camera_read(
 	
 	localparam WAIT_FRAME_START = 0;
 	localparam ROW_CAPTURE = 1;
-	
-	
+
 	always@(posedge p_clock)
 	begin 
 	

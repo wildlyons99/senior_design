@@ -1,7 +1,7 @@
 C:\lscc\radiant\2023.1\synpbase\bin64\syn_nfilter.exe  -link  -top  top  -multisrs  Z:\senior_design\0v7670_Verilog\camera_output\impl_1\synwork\camera_output_impl_1_comp.srs  -osyn  Z:\senior_design\0v7670_Verilog\camera_output\impl_1\synwork\camera_output_impl_1_mult.srs  -log  Z:\senior_design\0v7670_Verilog\camera_output\impl_1\synlog\camera_output_impl_1_multi_srs_gen.srr 
 relcom:C:\lscc\radiant\2023.1\synpbase\bin64\syn_nfilter.exe -link -top top -multisrs ..\synwork\camera_output_impl_1_comp.srs -osyn ..\synwork\camera_output_impl_1_mult.srs -log ..\synlog\camera_output_impl_1_multi_srs_gen.srr
 rc:0 success:1 runtime:1
-file:..\synwork\camera_output_impl_1_comp.srs|io:i|time:1744321688|size:24335|exec:0|csum:8E0215F4306F9C9C702868CE2EE59DCA
-file:..\synwork\camera_output_impl_1_mult.srs|io:o|time:1744321690|size:7000|exec:0|csum:
-file:..\synlog\camera_output_impl_1_multi_srs_gen.srr|io:o|time:1744321690|size:1160|exec:0|csum:
+file:..\synwork\camera_output_impl_1_comp.srs|io:i|time:1744396900|size:25420|exec:0|csum:223DEE8C9265D3474CCA18A44D76BF7F
+file:..\synwork\camera_output_impl_1_mult.srs|io:o|time:1744396902|size:8071|exec:0|csum:
+file:..\synlog\camera_output_impl_1_multi_srs_gen.srr|io:o|time:1744396902|size:1160|exec:0|csum:
 file:c:\lscc\radiant\2023.1\synpbase\bin64\syn_nfilter.exe|io:i|time:1685564428|size:10600960|exec:1|csum:5D87BCE07D7E863695AC28DD65895E86
