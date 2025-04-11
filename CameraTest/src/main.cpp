@@ -1,30 +1,189 @@
-/****************************************************
- * 
- *Simple test program for OV7670 library
- *
- *  Saves a VGA image as a .bmp file on SD card
- *  
- *  requires T4.1 with PSRAM as VGA image is 614,400 bytes
- *  which is too large for onboard RAM
- ******************************************************** */
+// /****************************************************
+//  * 
+//  *Simple test program for OV7670 library
+//  *
+//  *  Saves a VGA image as a .bmp file on SD card
+//  *  
+//  *  requires T4.1 with PSRAM as VGA image is 614,400 bytes
+//  *  which is too large for onboard RAM
+//  ******************************************************** */
+// #include <Arduino.h>
+// #include <OV7670.h>
+// #include <SD.h>
+
+// // function init
+// void CMSI(void);
+// void CMCS(void);
+
+// // Show Camera Registers
+// void CMCR(void);
+// void CMGF(char *filename);
+
+// const int ledpin = 13;
+
+// //  Put all the buffers in EXTMEM  (PSRAM)
+// uint8_t fcaptbuff[640l * 480l * 2] EXTMEM;
+// uint8_t cbuff1[640l * 480l * 2] EXTMEM;
+// uint8_t cbuff2[640l * 480l * 2] EXTMEM;
+
+
+// const char compileTime [] = " Compiled on " __DATE__ " " __TIME__;
+
+// #define SD_CONFIG SdioConfig(DMA_SDIO)
+
+// #define  LEDON digitalWriteFast(ledpin, HIGH); // Also marks IRQ handler timing
+// #define  LEDOFF digitalWriteFast(ledpin, LOW);
+
+// tBMPHDR565 fileheader;
+// File bmpfile;
+// const int pinCamReset = 14;
+
+// void setup() {
+//   Serial.begin(9600);
+//   while (!Serial) ; 
+
+//   delay(200);
+//   Wire.begin();
+
+//   pinMode(pinCamReset, OUTPUT);
+//   pinMode(ledpin, OUTPUT);
+
+//   digitalWriteFast(pinCamReset, LOW);
+//   delay(10);
+//   digitalWriteFast(pinCamReset, HIGH);  // subsequent resets via SCB
+
+//   Serial.print("Initializing SD card...");
+
+//   if (!SD.begin(BUILTIN_SDCARD)) {
+//     Serial.println("initialization failed!");
+//     while (1){
+//         LEDON; delay(100);
+//         LEDOFF; delay(100);
+//       }
+//   }
+//   Serial.println("initialization done.");
+
+//   if (OV7670.begin(VGA, cbuff1, cbuff2)) {
+//     Serial.println("OV7670 camera initialized.");
+//     Serial.printf("cbuff1 at   %p\n", cbuff1);
+//     Serial.printf("cbuff2 at    %p\n", cbuff2);
+//     Serial.printf("fcaptbuff at %p\n", fcaptbuff);
+//   }
+//   OV7670.ShowCamConfig();
+
+//   LEDOFF
+// }
+
+// char filename[10];
+// int file_index = 0;
+
+// void loop() {
+//   // put your main code here, to run repeatedly:
+
+//   char ch;
+//   if (Serial.available()) {
+//     ch = Serial.read();
+//     if (ch == 's') CMSI(); // Show CSI registers
+//     if (ch == 'c') CMCS(); // Show Camera Registers
+//     if (ch == 'r') CMCR();
+//     if (ch == 'f') {
+//       sprintf(filename, "0_%d.bmp", file_index);
+//       file_index++;  // increment for next time
+//       CMGF(filename);
+//     }
+//   }
+
+// }
+
+// void CMSI(void) {
+//   Serial.printf("\n\nOV7670 Camera  VGA Test 3 %s\n", compileTime);
+//   OV7670.ShowCamConfig();
+// }
+
+
+// void CMCS(void) {  // Show CSI registers
+//   OV7670.ShowCSIRegisters();
+// }
+
+
+// // Show Camera Registers
+// void CMCR(void) {
+//   uint8_t regs[200];
+//   OV7670.ReadAll(regs);
+//   OV7670.ShowAll(regs);
+// }
+
+// void CMGF(char *filename) {
+//   uint32_t imagesize, hdrsize, fbc;
+
+//   imagesize = OV7670.ImageSize();
+
+//   hdrsize = sizeof(tBMPHDR565);
+//   Serial.printf("BMP Hdr is %lu bytes at %p \n", hdrsize, OV7670.GetHeaderPtr());
+//   Serial.printf("Ready to save %lu bytes.\n", imagesize);
+//   Serial.println("Saving OV7670.bmp ");
+
+//   if (SD.exists(filename)) {
+//     // delete the file:
+//     Serial.println("Removing old  OV7670.bmp...");
+//     SD.remove(filename);
+//   }
+//   Serial.println("Opening File\n");
+//   bmpfile = SD.open(filename, FILE_WRITE);
+//   Serial.printf("bmpfile: %p\n", bmpfile);
+//   if (bmpfile) {
+//     Serial.println("Writing...");
+//   } else {
+//     Serial.println("Could not open file.");
+//     return;
+//   }
+
+//   delay(10);
+//   bmpfile.write((const uint8_t *)OV7670.GetHeaderPtr(), 66);
+//   bmpfile.write(cbuff2, imagesize);
+
+//   Serial.printf("bmpfile: %p\n", bmpfile);
+//   delay(5);
+//   Serial.println("Write complete");
+//     Serial.printf("bmpfile: %p\n", bmpfile);
+//   delay(5);
+//   bmpfile.close();
+//   Serial.printf("bmpfile: %p  closed \n", bmpfile);
+//   Serial.println("File saved to SD card.");
+// }
+
+
+
+
+// // /****************************************************
+
+// //     QVGA  test program for OV7670 library
+
+// //     Saves a QVGA image as a .bmp file on SD card
+
+// //     requires T4.1  and saves frames in  DMAMEM
+// //     which means that you do not need PSRAM
+// //  ******************************************************** */
+
 #include <Arduino.h>
 #include <OV7670.h>
 #include <SD.h>
 
-// function init
+// function definitions
+void BlinkForever(void); 
 void CMSI(void);
 void CMCS(void);
-
 // Show Camera Registers
 void CMCR(void);
-void CMGF(void);
+void CMGF(char *filename);
+
 
 const int ledpin = 13;
 
-//  Put all the buffers in EXTMEM  (PSRAM)
-uint8_t fcaptbuff[640l * 480l * 2] EXTMEM;
-uint8_t cbuff1[640l * 480l * 2] EXTMEM;
-uint8_t cbuff2[640l * 480l * 2] EXTMEM;
+//  Put all the buffers in DMAMEM
+uint8_t fcaptbuff[320l * 240l * 2] DMAMEM;
+uint8_t cbuff1[320l * 240l * 2] DMAMEM;
+uint8_t cbuff2[320l * 240l * 2] DMAMEM;
 
 
 const char compileTime [] = " Compiled on " __DATE__ " " __TIME__;
@@ -40,9 +199,11 @@ const int pinCamReset = 14;
 
 void setup() {
   Serial.begin(9600);
-  while (!Serial) ; 
-
   delay(200);
+
+  // wait for serial monitor connect
+  while (!Serial); 
+
   Wire.begin();
 
   pinMode(pinCamReset, OUTPUT);
@@ -52,27 +213,37 @@ void setup() {
   delay(10);
   digitalWriteFast(pinCamReset, HIGH);  // subsequent resets via SCB
 
-  Serial.print("Initializing SD card...");
+  Serial.print("\n\nInitializing SD card...");
 
   if (!SD.begin(BUILTIN_SDCARD)) {
     Serial.println("initialization failed!");
-    while (1){
-        LEDON; delay(100);
-        LEDOFF; delay(100);
-      }
+    BlinkForever();
   }
   Serial.println("initialization done.");
 
-  if (OV7670.begin(VGA, cbuff1, cbuff2)) {
+  if (OV7670.begin(QVGA, cbuff1, cbuff2)) {
     Serial.println("OV7670 camera initialized.");
     Serial.printf("cbuff1 at   %p\n", cbuff1);
     Serial.printf("cbuff2 at    %p\n", cbuff2);
     Serial.printf("fcaptbuff at %p\n", fcaptbuff);
+  } else {
+    Serial.println("Error initializing OV7670");
+    BlinkForever();
   }
-  OV7670.ShowCamConfig();
+  CMSI();
 
   LEDOFF
 }
+
+void BlinkForever(void) {
+  while (1) {
+    LEDON; delay(100);
+    LEDOFF; delay(100);
+  }
+}
+
+char filename[10];
+int file_index = 0;
 
 void loop() {
   // put your main code here, to run repeatedly:
@@ -83,13 +254,17 @@ void loop() {
     if (ch == 's') CMSI(); // Show CSI registers
     if (ch == 'c') CMCS(); // Show Camera Registers
     if (ch == 'r') CMCR();
-    if (ch == 'f') CMGF();
+    if (ch >= '0' && ch <= '9') {
+      sprintf(filename, "%c_%lu.bmp", ch, millis());
+      file_index++;  // increment for next time (if needed)
+      CMGF(filename);
+    }    
   }
 
 }
 
 void CMSI(void) {
-  Serial.printf("\n\nOV7670 Camera  VGA Test 3 %s\n", compileTime);
+  Serial.printf("\n\nOV7670 Camera  QVGA Test 3 %s\n", compileTime);
   OV7670.ShowCamConfig();
 }
 
@@ -106,8 +281,8 @@ void CMCR(void) {
   OV7670.ShowAll(regs);
 }
 
-void CMGF(void) {
-  uint32_t imagesize, hdrsize, fbc;
+void CMGF(char *filename) {
+  uint32_t imagesize, hdrsize;
 
   imagesize = OV7670.ImageSize();
 
@@ -116,16 +291,16 @@ void CMGF(void) {
   Serial.printf("Ready to save %lu bytes.\n", imagesize);
   Serial.println("Saving OV7670.bmp ");
 
-  if (SD.exists("OV7670.bmp")) {
+  if (SD.exists(filename)) {
     // delete the file:
     Serial.println("Removing old  OV7670.bmp...");
-    SD.remove("OV7670.bmp");
+    SD.remove(filename);
   }
   Serial.println("Opening File\n");
-  bmpfile = SD.open("OV7670.bmp", FILE_WRITE);
-  Serial.printf("bmpfile: %p\n", bmpfile);
+  bmpfile = SD.open(filename, FILE_WRITE);
+
   if (bmpfile) {
-    Serial.println("Writing...");
+    Serial.print("Writing...");
   } else {
     Serial.println("Could not open file.");
     return;
@@ -133,191 +308,31 @@ void CMGF(void) {
 
   delay(10);
   bmpfile.write((const uint8_t *)OV7670.GetHeaderPtr(), 66);
-  bmpfile.write(cbuff2, imagesize);
 
-  Serial.printf("bmpfile: %p\n", bmpfile);
+  Serial.println("Wrote header to the bmp file");
+
+
+  OV7670.ClearFrameReady();
+
+  Serial.println("wait until cbuff2 is ready");
+
+
+  // wait until cbuff2 is ready
+  while(OV7670.FrameReady() != 2){}
+
+  Serial.println("Frame / cbuff2 ready - copying image to SD ");
+
+  // copy the image to the capture buffer
+  memcpy(fcaptbuff, cbuff2, imagesize);
+  bmpfile.write(cbuff2, imagesize);
   delay(5);
   Serial.println("Write complete");
-    Serial.printf("bmpfile: %p\n", bmpfile);
+
   delay(5);
   bmpfile.close();
-  Serial.printf("bmpfile: %p  closed \n", bmpfile);
+  Serial.printf("bmpfile closed \n");
   Serial.println("File saved to SD card.");
 }
-
-
-
-
-// // /****************************************************
-
-// //     QVGA  test program for OV7670 library
-
-// //     Saves a QVGA image as a .bmp file on SD card
-
-// //     requires T4.1  and saves frames in  DMAMEM
-// //     which means that you do not need PSRAM
-// //  ******************************************************** */
-
-// // #include <Arduino.h>
-// // #include <OV7670.h>
-// // #include <SD.h>
-
-// // // function definitions
-// // void BlinkForever(void); 
-// // void CMSI(void);
-// // void CMCS(void);
-// // // Show Camera Registers
-// // void CMCR(void);
-// // void CMGF(void);
-
-
-// // const int ledpin = 13;
-
-// // //  Put all the buffers in DMAMEM
-// // uint8_t fcaptbuff[320l * 240l * 2] DMAMEM;
-// // uint8_t cbuff1[320l * 240l * 2] DMAMEM;
-// // uint8_t cbuff2[320l * 240l * 2] DMAMEM;
-
-
-// // const char compileTime [] = " Compiled on " __DATE__ " " __TIME__;
-
-// // #define SD_CONFIG SdioConfig(DMA_SDIO)
-
-// // #define  LEDON digitalWriteFast(ledpin, HIGH); // Also marks IRQ handler timing
-// // #define  LEDOFF digitalWriteFast(ledpin, LOW);
-
-// // tBMPHDR565 fileheader;
-// // File bmpfile;
-// // const int pinCamReset = 14;
-
-// // void setup() {
-// //   Serial.begin(9600);
-// //   delay(200);
-
-// //   // wait for serial monitor connect
-// //   while (!Serial); 
-
-// //   Wire.begin();
-
-// //   pinMode(pinCamReset, OUTPUT);
-// //   pinMode(ledpin, OUTPUT);
-
-// //   digitalWriteFast(pinCamReset, LOW);
-// //   delay(10);
-// //   digitalWriteFast(pinCamReset, HIGH);  // subsequent resets via SCB
-
-// //   Serial.print("\n\nInitializing SD card...");
-
-// //   if (!SD.begin(BUILTIN_SDCARD)) {
-// //     Serial.println("initialization failed!");
-// //     BlinkForever();
-// //   }
-// //   Serial.println("initialization done.");
-
-// //   if (OV7670.begin(QVGA, cbuff1, cbuff2)) {
-// //     Serial.println("OV7670 camera initialized.");
-// //     Serial.printf("cbuff1 at   %p\n", cbuff1);
-// //     Serial.printf("cbuff2 at    %p\n", cbuff2);
-// //     Serial.printf("fcaptbuff at %p\n", fcaptbuff);
-// //   } else {
-// //     Serial.println("Error initializing OV7670");
-// //     BlinkForever();
-// //   }
-// //   CMSI();
-
-// //   LEDOFF
-// // }
-
-// // void BlinkForever(void) {
-// //   while (1) {
-// //     LEDON; delay(100);
-// //     LEDOFF; delay(100);
-// //   }
-// // }
-
-// // void loop() {
-
-// //   char ch;
-// //   if (Serial.available()) {
-// //     ch = Serial.read();
-// //     if (ch == 's') CMSI(); // show config 
-// //     if (ch == 'c') CMCS(); // show CSI registers
-// //     if (ch == 'r') CMCR(); // show camera registers
-// //     if (ch == 'f') CMGF(); // take a photo? 
-// //   }
-
-// // }
-
-// // void CMSI(void) {
-// //   Serial.printf("\n\nOV7670 Camera  QVGA Test 3 %s\n", compileTime);
-// //   OV7670.ShowCamConfig();
-// // }
-
-
-// // void CMCS(void) {  // Show CSI registers
-// //   OV7670.ShowCSIRegisters();
-// // }
-
-
-// // // Show Camera Registers
-// // void CMCR(void) {
-// //   uint8_t regs[200];
-// //   OV7670.ReadAll(regs);
-// //   OV7670.ShowAll(regs);
-// // }
-
-// // void CMGF(void) {
-// //   uint32_t imagesize, hdrsize;
-
-// //   imagesize = OV7670.ImageSize();
-
-// //   hdrsize = sizeof(tBMPHDR565);
-// //   Serial.printf("BMP Hdr is %lu bytes at %p \n", hdrsize, OV7670.GetHeaderPtr());
-// //   Serial.printf("Ready to save %lu bytes.\n", imagesize);
-// //   Serial.println("Saving OV7670.bmp ");
-
-// //   if (SD.exists("OV76701.bmp")) {
-// //     // delete the file:
-// //     Serial.println("Removing old  OV7670.bmp...");
-// //     SD.remove("OV76701.bmp");
-// //   }
-// //   Serial.println("Opening File\n");
-// //   bmpfile = SD.open("OV76701.bmp", FILE_WRITE);
-
-// //   if (bmpfile) {
-// //     Serial.print("Writing...");
-// //   } else {
-// //     Serial.println("Could not open file.");
-// //     return;
-// //   }
-
-// //   delay(10);
-// //   bmpfile.write((const uint8_t *)OV7670.GetHeaderPtr(), 66);
-
-// //   Serial.println("Wrote header to the bmp file");
-
-
-// //   OV7670.ClearFrameReady();
-
-// //   Serial.println("wait until cbuff2 is ready");
-
-
-// //   // wait until cbuff2 is ready
-// //   while(OV7670.FrameReady() != 2){}
-
-// //   Serial.println("Frame / cbuff2 ready - copying image to SD ");
-
-// //   // copy the image to the capture buffer
-// //   memcpy(fcaptbuff, cbuff2, imagesize);
-// //   bmpfile.write(cbuff2, imagesize);
-// //   delay(5);
-// //   Serial.println("Write complete");
-
-// //   delay(5);
-// //   bmpfile.close();
-// //   Serial.printf("bmpfile closed \n");
-// //   Serial.println("File saved to SD card.");
-// // }
 
 
 
