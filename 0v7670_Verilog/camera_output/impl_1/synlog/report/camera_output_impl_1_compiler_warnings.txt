@@ -1,17 +1,19 @@
-@W: CG1337 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":44:11:44:14|Net sioc is not declared.
-@W: CG1337 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":45:11:45:14|Net siod is not declared.
-@W: CG1337 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":44:11:44:14|Net sioc is not declared.
-@W: CG1337 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":45:11:45:14|Net siod is not declared.
+@W: CG532 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":39:4:39:10|Within an initial block, only Verilog force statements and memory initialization statements and initialization of entire variable are recognized, and all other content is ignored. Simulation mismatch may occur
+@W: CG532 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":54:4:54:10|Within an initial block, only Verilog force statements and memory initialization statements and initialization of entire variable are recognized, and all other content is ignored. Simulation mismatch may occur
 @W: CG781 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":46:23:46:23|Input sclk_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
 @W: CG781 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":47:22:47:22|Input sdi_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":32:12:32:25|Removing wire CAMERA_DATA_IN, as there is no assignment to it.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":34:15:34:22|Removing wire rom_addr, as there is no assignment to it.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":35:16:35:23|Removing wire rom_dout, as there is no assignment to it.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":36:15:36:23|Removing wire SCCB_addr, as there is no assignment to it.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":37:15:37:23|Removing wire SCCB_data, as there is no assignment to it.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":38:9:38:18|Removing wire SCCB_start, as there is no assignment to it.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":39:9:39:18|Removing wire SCCB_ready, as there is no assignment to it.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":40:9:40:20|Removing wire SCCB_SIOC_oe, as there is no assignment to it.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":41:9:41:20|Removing wire SCCB_SIOD_oe, as there is no assignment to it.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":42:6:42:13|Removing wire fast_clk, as there is no assignment to it.
+@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":39:6:39:13|Removing wire fast_clk, as there is no assignment to it.
+@W: CG133 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":53:8:53:17|Object start_prev is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL169 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Pruning unused register prev_pixel_valid. Make sure that there are no unused intermediate registers.
+@W: CL279 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Pruning register bits 15 to 8 of spram_data_in[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Pruning register bit 1 of STATE[1:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Optimizing register bit WR to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Pruning unused register WR. Make sure that there are no unused intermediate registers.
+@W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Pruning register bit 31 of timer[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Pruning register bit 30 of timer[30:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Pruning register bit 29 of timer[29:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Pruning register bit 28 of timer[28:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":56:4:56:9|Pruning register bit 31 of timer[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":56:4:56:9|Pruning register bit 30 of timer[30:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":56:4:56:9|Pruning register bit 29 of timer[29:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 

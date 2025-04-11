@@ -6,15 +6,20 @@
 
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
-0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 38 clock pin(s) of sequential element(s)
-0 instances converted, 38 sequential instances remain driven by gated/generated clocks
+1 non-gated/non-generated clock tree(s) driving 21 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 201 clock pin(s) of sequential element(s)
+0 instances converted, 201 sequential instances remain driven by gated/generated clocks
 
-================================================================= Gated/Generated Clocks ==================================================================
-Clock Tree ID     Driving Element                          Drive Element Type     Unconverted Fanout     Sample Instance     Explanation                   
------------------------------------------------------------------------------------------------------------------------------------------------------------
-@KP:ckid0_1       my_pll.lscc_pll_inst.u_PLL_B.OUTCORE     PLL_B                  38                     count[15:0]         Clock Optimization not enabled
-===========================================================================================================================================================
+============================== Non-Gated/Non-Generated Clocks ===============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance      
+---------------------------------------------------------------------------------------------
+@KP:ckid0_5       CAMERA_PCLOCK       port                   21         reader.FSM_state[1:0]
+=============================================================================================
+===================================================================== Gated/Generated Clocks =====================================================================
+Clock Tree ID     Driving Element                          Drive Element Type     Unconverted Fanout     Sample Instance            Explanation                   
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_4       my_pll.lscc_pll_inst.u_PLL_B.OUTCORE     PLL_B                  201                    spram_address_in[13:0]     Clock Optimization not enabled
+==================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######

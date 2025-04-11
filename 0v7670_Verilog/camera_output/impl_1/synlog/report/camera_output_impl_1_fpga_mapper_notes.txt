@@ -1,10 +1,28 @@
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
-@N: BZ173 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\seven_seg.v":7:8:7:11|ROM count_display.segments_1[6:0] (in view: work.top(verilog)) mapped in logic.
-@N: BZ173 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\seven_seg.v":7:8:7:11|ROM count_display.segments_1[6:0] (in view: work.top(verilog)) mapped in logic.
-@N: MO106 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\seven_seg.v":7:8:7:11|Found ROM count_display.segments_1[6:0] (in view: work.top(verilog)) with 16 words by 7 bits.
-@N: MO231 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_configure.v":147:4:147:9|Found counter in view:work.top(verilog) instance count[15:0] 
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Removing sequential instance STATE[0] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Removing sequential instance spram_data_in[7:0] (in view: work.top(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":56:4:56:9|Removing sequential instance FSM_state[2] (in view: work.OV7670_config_25000000s_0s_1s_2s_3s(verilog)) because it does not drive other instances.
+@N: MO231 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|Found counter in view:work.SCCB_interface_Z1_layer0(verilog) instance timer[27:0] 
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance FSM_state[1] (in view: work.camera_read(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[15] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[14] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[13] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[12] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[11] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[10] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[9] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[8] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[7] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[6] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[5] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[4] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[3] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[2] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[1] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[0] (in view: work.top(verilog)) because it does not drive other instances.
+@N: MO106 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config_rom.v":30:4:30:7|Found ROM rom1.dout_2_0[15:0] (in view: work.top(verilog)) with 73 words by 16 bits.
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.

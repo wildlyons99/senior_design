@@ -3,7 +3,7 @@
 #OS: Windows 10 or later
 #Hostname: H109W18
 
-# Fri Apr  4 15:28:38 2025
+# Thu Apr 10 17:48:04 2025
 
 #Implementation: impl_1
 
@@ -49,7 +49,7 @@ At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memor
 
 
 Process completed successfully.
-# Fri Apr  4 15:28:39 2025
+# Thu Apr 10 17:48:05 2025
 
 ###########################################################]
 ###########################################################[
@@ -142,18 +142,19 @@ Synopsys Verilog Compiler, Version comp202303synp1, Build 100R, Built May 29 202
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\my_pll.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\vga.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v" (library work)
-@W: CG1337 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":44:11:44:14|Net sioc is not declared.
-@W: CG1337 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":45:11:45:14|Net siod is not declared.
+@I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_read.v" (library work)
+@I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v" (library work)
+@I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config_rom.v" (library work)
+@I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\pattern_gen.v" (library work)
-@I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\seven_seg.v" (library work)
 Verilog syntax check successful!
 
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
 
 
 Process completed successfully.
-# Fri Apr  4 15:28:39 2025
+# Thu Apr 10 17:48:05 2025
 
 ###########################################################]
 ###########################################################[
@@ -230,16 +231,53 @@ Process completed successfully.
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\my_pll.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\vga.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v" (library work)
-@W: CG1337 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":44:11:44:14|Net sioc is not declared.
-@W: CG1337 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":45:11:45:14|Net siod is not declared.
+@I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_read.v" (library work)
+@I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v" (library work)
+@I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config_rom.v" (library work)
+@I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\pattern_gen.v" (library work)
-@I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\seven_seg.v" (library work)
 Verilog syntax check successful!
 File Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v changed - recompiling
+@N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config_rom.v":23:7:23:23|Synthesizing module OV7670_config_rom in library work.
+Running optimization stage 1 on OV7670_config_rom .......
+Finished optimization stage 1 on OV7670_config_rom (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 114MB)
+@N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":23:7:23:19|Synthesizing module OV7670_config in library work.
+
+	CLK_FREQ=32'b00000001011111010111100001000000
+	FSM_IDLE=32'b00000000000000000000000000000000
+	FSM_SEND_CMD=32'b00000000000000000000000000000001
+	FSM_DONE=32'b00000000000000000000000000000010
+	FSM_TIMER=32'b00000000000000000000000000000011
+   Generated name = OV7670_config_25000000s_0s_1s_2s_3s
+@W: CG532 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":39:4:39:10|Within an initial block, only Verilog force statements and memory initialization statements and initialization of entire variable are recognized, and all other content is ignored. Simulation mismatch may occur
+Running optimization stage 1 on OV7670_config_25000000s_0s_1s_2s_3s .......
+Finished optimization stage 1 on OV7670_config_25000000s_0s_1s_2s_3s (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 114MB)
+@N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":23:7:23:20|Synthesizing module SCCB_interface in library work.
+
+	CLK_FREQ=32'b00000001011111010111100001000000
+	SCCB_FREQ=32'b00000000000000011000011010100000
+	CAMERA_ADDR=8'b01000010
+	FSM_IDLE=32'b00000000000000000000000000000000
+	FSM_START_SIGNAL=32'b00000000000000000000000000000001
+	FSM_LOAD_BYTE=32'b00000000000000000000000000000010
+	FSM_TX_BYTE_1=32'b00000000000000000000000000000011
+	FSM_TX_BYTE_2=32'b00000000000000000000000000000100
+	FSM_TX_BYTE_3=32'b00000000000000000000000000000101
+	FSM_TX_BYTE_4=32'b00000000000000000000000000000110
+	FSM_END_SIGNAL_1=32'b00000000000000000000000000000111
+	FSM_END_SIGNAL_2=32'b00000000000000000000000000001000
+	FSM_END_SIGNAL_3=32'b00000000000000000000000000001001
+	FSM_END_SIGNAL_4=32'b00000000000000000000000000001010
+	FSM_DONE=32'b00000000000000000000000000001011
+	FSM_TIMER=32'b00000000000000000000000000001100
+   Generated name = SCCB_interface_Z1_layer0
+@W: CG532 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":54:4:54:10|Within an initial block, only Verilog force statements and memory initialization statements and initialization of entire variable are recognized, and all other content is ignored. Simulation mismatch may occur
+Running optimization stage 1 on SCCB_interface_Z1_layer0 .......
+Finished optimization stage 1 on SCCB_interface_Z1_layer0 (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 114MB)
 @N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\generic\ice40up.v":438:7:438:11|Synthesizing module PLL_B in library work.
 Running optimization stage 1 on PLL_B .......
-Finished optimization stage 1 on PLL_B (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 112MB)
+Finished optimization stage 1 on PLL_B (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 114MB)
 @N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":105:7:105:26|Synthesizing module mypll_ipgen_lscc_pll in library work.
 
 	DIVR=8'b00110000
@@ -259,52 +297,85 @@ Finished optimization stage 1 on PLL_B (CPU Time 0h:00m:00s, Memory Used current
 	ENABLE_ICEGATE_PORTA=8'b00110000
 	ENABLE_ICEGATE_PORTB=8'b00110000
 	FREQUENCY_PIN_REFERENCECLK=72'b001100010011001000101110001100000011000000110000001100000011000000110000
-   Generated name = mypll_ipgen_lscc_pll_Z1_layer0
-Running optimization stage 1 on mypll_ipgen_lscc_pll_Z1_layer0 .......
-Finished optimization stage 1 on mypll_ipgen_lscc_pll_Z1_layer0 (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
+   Generated name = mypll_ipgen_lscc_pll_Z2_layer0
+Running optimization stage 1 on mypll_ipgen_lscc_pll_Z2_layer0 .......
+Finished optimization stage 1 on mypll_ipgen_lscc_pll_Z2_layer0 (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 114MB)
 @N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":11:7:11:11|Synthesizing module mypll in library work.
 @W: CG781 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":46:23:46:23|Input sclk_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
 @W: CG781 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":47:22:47:22|Input sdi_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
 Running optimization stage 1 on mypll .......
-Finished optimization stage 1 on mypll (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
+Finished optimization stage 1 on mypll (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 114MB)
+@N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_read.v":21:7:21:17|Synthesizing module camera_read in library work.
+Running optimization stage 1 on camera_read .......
+Finished optimization stage 1 on camera_read (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 115MB)
 @N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\vga.v":1:7:1:9|Synthesizing module vga in library work.
 Running optimization stage 1 on vga .......
-Finished optimization stage 1 on vga (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+Finished optimization stage 1 on vga (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 115MB)
 @N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\generic\ice40up.v":753:7:753:12|Synthesizing module SP256K in library work.
 Running optimization stage 1 on SP256K .......
-Finished optimization stage 1 on SP256K (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
-@N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\seven_seg.v":1:7:1:14|Synthesizing module sevenseg in library work.
-Running optimization stage 1 on sevenseg .......
-Finished optimization stage 1 on sevenseg (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+Finished optimization stage 1 on SP256K (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 115MB)
 @N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":4:7:4:9|Synthesizing module top in library work.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":32:12:32:25|Removing wire CAMERA_DATA_IN, as there is no assignment to it.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":34:15:34:22|Removing wire rom_addr, as there is no assignment to it.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":35:16:35:23|Removing wire rom_dout, as there is no assignment to it.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":36:15:36:23|Removing wire SCCB_addr, as there is no assignment to it.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":37:15:37:23|Removing wire SCCB_data, as there is no assignment to it.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":38:9:38:18|Removing wire SCCB_start, as there is no assignment to it.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":39:9:39:18|Removing wire SCCB_ready, as there is no assignment to it.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":40:9:40:20|Removing wire SCCB_SIOC_oe, as there is no assignment to it.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":41:9:41:20|Removing wire SCCB_SIOD_oe, as there is no assignment to it.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":42:6:42:13|Removing wire fast_clk, as there is no assignment to it.
+@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":39:6:39:13|Removing wire fast_clk, as there is no assignment to it.
+@W: CG133 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":53:8:53:17|Object start_prev is declared but not assigned. Either assign a value or remove the declaration.
 Running optimization stage 1 on top .......
-Finished optimization stage 1 on top (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+@W: CL169 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Pruning unused register prev_pixel_valid. Make sure that there are no unused intermediate registers.
+Finished optimization stage 1 on top (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 115MB)
 Running optimization stage 2 on top .......
-Finished optimization stage 2 on top (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 114MB)
-Running optimization stage 2 on sevenseg .......
-Finished optimization stage 2 on sevenseg (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 114MB)
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Register bit spram_data_in[8] is always 0.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Register bit spram_data_in[9] is always 0.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Register bit spram_data_in[10] is always 0.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Register bit spram_data_in[11] is always 0.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Register bit spram_data_in[12] is always 0.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Register bit spram_data_in[13] is always 0.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Register bit spram_data_in[14] is always 0.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Register bit spram_data_in[15] is always 0.
+@W: CL279 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Pruning register bits 15 to 8 of spram_data_in[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Trying to extract state machine for register STATE.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Register bit STATE[1] is always 0.
+@W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Pruning register bit 1 of STATE[1:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Optimizing register bit WR to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Pruning unused register WR. Make sure that there are no unused intermediate registers.
+Finished optimization stage 2 on top (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
 Running optimization stage 2 on SP256K .......
-Finished optimization stage 2 on SP256K (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 114MB)
+Finished optimization stage 2 on SP256K (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
 Running optimization stage 2 on vga .......
-Finished optimization stage 2 on vga (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 114MB)
+Finished optimization stage 2 on vga (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+Running optimization stage 2 on camera_read .......
+@N: CL201 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Trying to extract state machine for register FSM_state.
+Finished optimization stage 2 on camera_read (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
 Running optimization stage 2 on mypll .......
-Finished optimization stage 2 on mypll (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 114MB)
-Running optimization stage 2 on mypll_ipgen_lscc_pll_Z1_layer0 .......
+Finished optimization stage 2 on mypll (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+Running optimization stage 2 on mypll_ipgen_lscc_pll_Z2_layer0 .......
 @N: CL159 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":130:10:130:19|Input feedback_i is unused.
 @N: CL159 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":131:37:131:51|Input dynamic_delay_i is unused.
-Finished optimization stage 2 on mypll_ipgen_lscc_pll_Z1_layer0 (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 114MB)
+Finished optimization stage 2 on mypll_ipgen_lscc_pll_Z2_layer0 (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
 Running optimization stage 2 on PLL_B .......
-Finished optimization stage 2 on PLL_B (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 114MB)
+Finished optimization stage 2 on PLL_B (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+Running optimization stage 2 on SCCB_interface_Z1_layer0 .......
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Register bit timer[31] is always 0.
+@W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Pruning register bit 31 of timer[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Register bit timer[30] is always 0.
+@W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Pruning register bit 30 of timer[30:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Register bit timer[29] is always 0.
+@W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Pruning register bit 29 of timer[29:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Trying to extract state machine for register FSM_state.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Register bit timer[28] is always 0.
+@W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Pruning register bit 28 of timer[28:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+Finished optimization stage 2 on SCCB_interface_Z1_layer0 (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 116MB)
+Running optimization stage 2 on OV7670_config_25000000s_0s_1s_2s_3s .......
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":56:4:56:9|Register bit FSM_return_state[0] is always 1.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":56:4:56:9|Register bit FSM_return_state[1] is always 0.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":56:4:56:9|Register bit FSM_return_state[2] is always 0.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":56:4:56:9|Register bit timer[31] is always 0.
+@W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":56:4:56:9|Pruning register bit 31 of timer[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":56:4:56:9|Register bit timer[30] is always 0.
+@W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":56:4:56:9|Pruning register bit 30 of timer[30:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":56:4:56:9|Register bit timer[29] is always 0.
+@W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":56:4:56:9|Pruning register bit 29 of timer[29:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":56:4:56:9|Trying to extract state machine for register FSM_state.
+Finished optimization stage 2 on OV7670_config_25000000s_0s_1s_2s_3s (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 116MB)
+Running optimization stage 2 on OV7670_config_rom .......
+Finished optimization stage 2 on OV7670_config_rom (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 116MB)
 
 For a summary of runtime per design unit, please see file:
 ==========================================================
@@ -312,11 +383,11 @@ For a summary of runtime per design unit, please see file:
 
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 114MB)
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 116MB peak: 116MB)
 
 
 Process completed successfully.
-# Fri Apr  4 15:28:41 2025
+# Thu Apr 10 17:48:07 2025
 
 ###########################################################]
 ###########################################################[
@@ -337,12 +408,12 @@ Synopsys Synopsys Netlist Linker, Version comp202303synp1, Build 100R, Built May
 
 @N|Running in 64-bit mode
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 91MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 91MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Apr  4 15:28:41 2025
+# Thu Apr 10 17:48:08 2025
 
 ###########################################################]
 
@@ -352,12 +423,12 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 23MB peak: 24MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 23MB peak: 24MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+Process took 0h:00m:03s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Apr  4 15:28:42 2025
+# Thu Apr 10 17:48:08 2025
 
 ###########################################################]
 ###########################################################[
@@ -384,10 +455,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Apr  4 15:28:43 2025
+# Thu Apr 10 17:48:09 2025
 
 ###########################################################]
-# Fri Apr  4 15:28:44 2025
+# Thu Apr 10 17:48:10 2025
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -417,39 +488,61 @@ See clock summary report "Z:\senior_design\0v7670_Verilog\camera_output\impl_1\c
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 138MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 138MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 138MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 138MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 138MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 138MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 138MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 138MB)
 
 NConnInternalConnection caching is on
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":56:4:56:9|User-specified initial value defined for instance config_1.FSM_state[2:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":56:4:56:9|User-specified initial value defined for instance config_1.rom_addr[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":56:4:56:9|User-specified initial value defined for instance config_1.timer[28:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":56:4:56:9|User-specified initial value defined for instance config_1.SCCB_interface_start is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":56:4:56:9|User-specified initial value defined for instance config_1.SCCB_interface_data[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":56:4:56:9|User-specified initial value defined for instance config_1.SCCB_interface_addr[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":56:4:56:9|User-specified initial value defined for instance config_1.done is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|User-specified initial value defined for instance SCCB1.timer[27:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|User-specified initial value defined for instance SCCB1.SIOC_oe is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|User-specified initial value defined for instance SCCB1.FSM_state[3:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|User-specified initial value defined for instance SCCB1.byte_index[3:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|User-specified initial value defined for instance SCCB1.SIOD_oe is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|User-specified initial value defined for instance SCCB1.byte_counter[1:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|User-specified initial value defined for instance SCCB1.tx_byte[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|User-specified initial value defined for instance SCCB1.FSM_return_state[3:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|User-specified initial value defined for instance SCCB1.ready is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|User-specified initial value defined for instance reader.FSM_state[1:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|User-specified initial value defined for instance reader.pixel_data[15:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|User-specified initial value defined for instance reader.pixel_half is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|User-specified initial value defined for instance reader.frame_done is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|User-specified initial value defined for instance reader.pixel_valid is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|User-specified initial value defined for instance STATE[0] is being ignored due to limitations in architecture. 
 
-Starting HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 186MB peak: 187MB)
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 188MB)
 
 
-Finished HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 186MB peak: 187MB)
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 188MB)
 
 
-Started DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 186MB peak: 187MB)
+Started DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 188MB)
 
 
-Finished DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 186MB peak: 187MB)
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 188MB)
 
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 188MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 190MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 188MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 190MB)
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=30 on top level netlist top 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 189MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 190MB)
 
 
 
@@ -461,7 +554,9 @@ Level     Clock                                                       Frequency 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 0 -       System                                                      200.0 MHz     5.000         system       system_clkgroup           0    
                                                                                                                                               
-0 -       mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     38   
+0 -       mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     201  
+                                                                                                                                              
+0 -       top|CAMERA_PCLOCK                                           200.0 MHz     5.000         inferred     Inferred_clkgroup_0_2     21   
 ==============================================================================================================================================
 
 
@@ -469,15 +564,18 @@ Level     Clock                                                       Frequency 
 Clock Load Summary
 ***********************
 
-                                                            Clock     Source                                          Clock Pin        Non-clock Pin     Non-clock Pin
-Clock                                                       Load      Pin                                             Seq Example      Seq Example       Comb Example 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                                      0         -                                               -                -                 -            
-                                                                                                                                                                      
-mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     38        my_pll.lscc_pll_inst.u_PLL_B.OUTCORE(PLL_B)     start_prev.C     -                 -            
-======================================================================================================================================================================
+                                                            Clock     Source                                          Clock Pin                Non-clock Pin     Non-clock Pin
+Clock                                                       Load      Pin                                             Seq Example              Seq Example       Comb Example 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                      0         -                                               -                        -                 -            
+                                                                                                                                                                              
+mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     201       my_pll.lscc_pll_inst.u_PLL_B.OUTCORE(PLL_B)     spram_data_in[7:0].C     -                 -            
+                                                                                                                                                                              
+top|CAMERA_PCLOCK                                           21        CAMERA_PCLOCK(port)                             reader.pixel_valid.C     -                 -            
+==============================================================================================================================================================================
 
-@W: MT530 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\vga.v":10:4:10:9|Found inferred clock mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock which controls 38 sequential elements including vga_inst.row[9:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config_rom.v":29:4:29:9|Found inferred clock mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock which controls 201 sequential elements including rom1.dout[15:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Found inferred clock top|CAMERA_PCLOCK which controls 21 sequential elements including reader.FSM_state[1:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -490,15 +588,20 @@ Number of ICG latches not removed:	0
 
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
-0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 38 clock pin(s) of sequential element(s)
-0 instances converted, 38 sequential instances remain driven by gated/generated clocks
+1 non-gated/non-generated clock tree(s) driving 21 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 201 clock pin(s) of sequential element(s)
+0 instances converted, 201 sequential instances remain driven by gated/generated clocks
 
-================================================================= Gated/Generated Clocks ==================================================================
-Clock Tree ID     Driving Element                          Drive Element Type     Unconverted Fanout     Sample Instance     Explanation                   
------------------------------------------------------------------------------------------------------------------------------------------------------------
-@KP:ckid0_1       my_pll.lscc_pll_inst.u_PLL_B.OUTCORE     PLL_B                  38                     count[15:0]         Clock Optimization not enabled
-===========================================================================================================================================================
+============================== Non-Gated/Non-Generated Clocks ===============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance      
+---------------------------------------------------------------------------------------------
+@KP:ckid0_5       CAMERA_PCLOCK       port                   21         reader.FSM_state[1:0]
+=============================================================================================
+===================================================================== Gated/Generated Clocks =====================================================================
+Clock Tree ID     Driving Element                          Drive Element Type     Unconverted Fanout     Sample Instance            Explanation                   
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_4       my_pll.lscc_pll_inst.u_PLL_B.OUTCORE     PLL_B                  201                    spram_address_in[13:0]     Clock Optimization not enabled
+==================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######
@@ -507,25 +610,25 @@ Clock Tree ID     Driving Element                          Drive Element Type   
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 189MB)
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 191MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 190MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 191MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 190MB)
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 192MB peak: 192MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 106MB peak: 191MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 193MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Fri Apr  4 15:28:46 2025
+# Thu Apr 10 17:48:12 2025
 
 ###########################################################]
 Map & Optimize Report
 
-# Fri Apr  4 15:28:46 2025
+# Thu Apr 10 17:48:13 2025
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -564,18 +667,20 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 185MB peak: 185MB)
 
-@N: BZ173 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\seven_seg.v":7:8:7:11|ROM count_display.segments_1[6:0] (in view: work.top(verilog)) mapped in logic.
-@N: BZ173 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\seven_seg.v":7:8:7:11|ROM count_display.segments_1[6:0] (in view: work.top(verilog)) mapped in logic.
-@N: MO106 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\seven_seg.v":7:8:7:11|Found ROM count_display.segments_1[6:0] (in view: work.top(verilog)) with 16 words by 7 bits.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Removing sequential instance STATE[0] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_configure.v":179:1:179:6|Removing sequential instance spram_data_in[7:0] (in view: work.top(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@W: BN114 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_configure.v":131:8:131:13|Removing instance SPRAM1 (in view: work.top(verilog)) because it does not drive other instances.
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 189MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 190MB)
 
-@N: MO231 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_configure.v":147:4:147:9|Found counter in view:work.top(verilog) instance count[15:0] 
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":56:4:56:9|Removing sequential instance FSM_state[2] (in view: work.OV7670_config_25000000s_0s_1s_2s_3s(verilog)) because it does not drive other instances.
+@N: MO231 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|Found counter in view:work.SCCB_interface_Z1_layer0(verilog) instance timer[27:0] 
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance FSM_state[1] (in view: work.camera_read(verilog)) because it does not drive other instances.
 
-Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 190MB)
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 191MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 190MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 193MB peak: 193MB)
 
 
 Available hyper_sources - for debug and ip models
@@ -583,73 +688,94 @@ Available hyper_sources - for debug and ip models
 
 NConnInternalConnection caching is on
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 191MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 193MB peak: 193MB)
+
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[15] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[14] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[13] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[12] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[11] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[10] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[9] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[8] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[7] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[6] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[5] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[4] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[3] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[2] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[1] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":39:1:39:6|Removing sequential instance reader.pixel_data[0] (in view: work.top(verilog)) because it does not drive other instances.
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 194MB peak: 194MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 191MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 194MB peak: 194MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 192MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 194MB peak: 194MB)
+
+@W: FX553 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config_rom.v":30:4:30:7|Could not implement Block ROM for rom1.dout_2_0[15:0].
+@N: MO106 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config_rom.v":30:4:30:7|Found ROM rom1.dout_2_0[15:0] (in view: work.top(verilog)) with 73 words by 16 bits.
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 196MB peak: 196MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 192MB peak: 192MB)
-
-
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 192MB peak: 192MB)
-
-
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 192MB peak: 192MB)
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 202MB peak: 202MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:00s		    -2.21ns		  73 /        38
-   2		0h:00m:00s		    -2.21ns		  73 /        38
+   1		0h:00m:01s		    -7.75ns		 417 /       166
+   2		0h:00m:01s		    -7.75ns		 395 /       166
+   3		0h:00m:01s		    -4.98ns		 394 /       166
+   4		0h:00m:01s		    -4.98ns		 394 /       166
 
-   3		0h:00m:00s		    -2.21ns		  83 /        38
-
-
-   4		0h:00m:00s		    -0.09ns		  85 /        38
-
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 193MB peak: 193MB)
+   5		0h:00m:02s		    -4.98ns		 395 /       166
+   6		0h:00m:02s		    -4.98ns		 396 /       166
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 193MB peak: 193MB)
+   7		0h:00m:02s		    -4.98ns		 403 /       166
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 207MB peak: 207MB)
 
 
-Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 194MB peak: 194MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 208MB peak: 208MB)
 
 
-Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 194MB peak: 194MB)
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 208MB peak: 208MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 194MB)
+Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 208MB peak: 208MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 160MB peak: 208MB)
 
 Writing Analyst data base Z:\senior_design\0v7670_Verilog\camera_output\impl_1\synwork\camera_output_impl_1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 194MB peak: 194MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 207MB peak: 208MB)
 
 Writing Verilog Simulation files
 
-Writing scf file... (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 195MB)
+Writing scf file... (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 208MB peak: 208MB)
 
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 195MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 208MB peak: 209MB)
 
 
-Finished Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 195MB)
+Finished Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 208MB peak: 209MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 194MB peak: 195MB)
+Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 205MB peak: 209MB)
 
-@W: MT246 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_configure.v":124:8:124:13|Blackbox SP256K is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"z:\senior_design\0v7670_verilog\camera_output\mypll\rtl\mypll.v":202:69:202:75|Blackbox PLL_B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT420 |Found inferred clock mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net my_pll.lscc_pll_inst.clk_25MHz.
+@W: MT420 |Found inferred clock mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net my_pll.lscc_pll_inst.clk_25MHz.
+@W: MT420 |Found inferred clock top|CAMERA_PCLOCK with period 5.00ns. Please declare a user-defined clock on port CAMERA_PCLOCK.
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Fri Apr  4 15:28:49 2025
+# Timing report written on Thu Apr 10 17:48:17 2025
 #
 
 
@@ -669,14 +795,16 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -7.401
+Worst slack in design: -6.244
 
                                                             Requested     Estimated     Requested     Estimated                Clock        Clock                
 Starting Clock                                              Frequency     Frequency     Period        Period        Slack      Type         Group                
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     200.0 MHz     119.0 MHz     5.000         8.401         -3.401     inferred     Inferred_clkgroup_0_1
-System                                                      200.0 MHz     249.9 MHz     5.000         4.002         0.999      system       system_clkgroup      
+mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     200.0 MHz     88.9 MHz      5.000         11.244        -6.244     inferred     Inferred_clkgroup_0_1
+top|CAMERA_PCLOCK                                           200.0 MHz     NA            5.000         NA            NA         inferred     Inferred_clkgroup_0_2
+System                                                      200.0 MHz     110.6 MHz     5.000         9.040         -4.040     system       system_clkgroup      
 =================================================================================================================================================================
+Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
 
 
 
@@ -689,10 +817,10 @@ Clocks                                                                          
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Starting                                                 Ending                                                   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                                   System                                                   |  5.000       0.999   |  No paths    -      |  No paths    -      |  No paths    -    
-System                                                   mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock  |  5.000       -4.040  |  No paths    -      |  No paths    -      |  No paths    -    
-mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock  System                                                   |  5.000       -7.401  |  No paths    -      |  No paths    -      |  No paths    -    
-mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock  mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock  |  5.000       -3.401  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                                   System                                                   |  5.000       -4.040  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                                   mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock  |  5.000       -3.937  |  No paths    -      |  No paths    -      |  No paths    -    
+mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock  System                                                   |  5.000       -3.429  |  No paths    -      |  No paths    -      |  No paths    -    
+mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock  mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock  |  5.000       -6.244  |  No paths    -      |  No paths    -      |  No paths    -    
 =========================================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -707,7 +835,7 @@ No IO constraint found
 
 
 ====================================
-Detailed Report for Clock: mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock
+Detailed Report for Clock: mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock
 ====================================
 
 
@@ -715,41 +843,41 @@ Detailed Report for Clock: mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clo
 Starting Points with Worst Slack
 ********************************
 
-                    Starting                                                                                   Arrival           
-Instance            Reference                                                   Type        Pin     Net        Time        Slack 
-                    Clock                                                                                                        
----------------------------------------------------------------------------------------------------------------------------------
-vga_inst.col[0]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[0]     0.796       -7.401
-vga_inst.col[1]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[1]     0.796       -7.391
-vga_inst.col[2]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[2]     0.796       -7.349
-vga_inst.col[3]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[3]     0.796       -7.256
-vga_inst.col[4]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[4]     0.796       -5.389
-vga_inst.col[7]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[7]     0.796       -5.389
-vga_inst.col[5]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[5]     0.796       -5.358
-vga_inst.col[8]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[8]     0.796       -5.317
-vga_inst.row[5]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       row[5]     0.796       -5.296
-vga_inst.row[6]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       row[6]     0.796       -5.286
-=================================================================================================================================
+                          Starting                                                                                         Arrival           
+Instance                  Reference                                                   Type        Pin     Net              Time        Slack 
+                          Clock                                                                                                              
+---------------------------------------------------------------------------------------------------------------------------------------------
+config_1.FSM_state[0]     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       FSM_state[0]     0.796       -6.244
+config_1.FSM_state[1]     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       FSM_state[1]     0.796       -6.171
+SCCB1.timer[5]            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       timer[5]         0.796       -5.816
+config_1.rom_addr[0]      mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3IZ     Q       rom_addr[0]      0.796       -5.744
+SCCB1.timer[6]            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       timer[6]         0.796       -5.744
+rom1.dout[0]              mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3JZ     Q       rom_dout[0]      0.796       -5.713
+SCCB1.timer[7]            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       timer[7]         0.796       -5.713
+config_1.rom_addr[1]      mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3IZ     Q       rom_addr[1]      0.796       -5.671
+rom1.dout[8]              mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3JZ     Q       rom_dout[8]      0.796       -5.671
+rom1.dout[1]              mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3JZ     Q       rom_dout[1]      0.796       -5.640
+=============================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                    Starting                                                                                        Required           
-Instance            Reference                                                   Type        Pin     Net             Time         Slack 
-                    Clock                                                                                                              
----------------------------------------------------------------------------------------------------------------------------------------
-RGB_obuf[0]         mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       RGB_c[0]        5.000        -7.401
-RGB_obuf[1]         mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       RGB_c[1]        5.000        -7.401
-RGB_obuf[2]         mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       RGB_c[2]        5.000        -7.401
-RGB_obuf[3]         mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       RGB_c[3]        5.000        -7.401
-RGB_obuf[4]         mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       RGB_c[4]        5.000        -7.401
-RGB_obuf[5]         mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       RGB_c[5]        5.000        -7.401
-VGA_HSYNC_obuf      mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       VGA_HSYNC_c     5.000        -5.389
-vga_inst.col[5]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     D       col_3[5]        4.845        -3.401
-vga_inst.col[8]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     D       col_3[8]        4.845        -3.401
-vga_inst.col[9]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     D       col_3[9]        4.845        -3.401
-=======================================================================================================================================
+                       Starting                                                                                            Required           
+Instance               Reference                                                   Type        Pin     Net                 Time         Slack 
+                       Clock                                                                                                                  
+----------------------------------------------------------------------------------------------------------------------------------------------
+config_1.timer[27]     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3IZ     D       timer_5[27]         4.845        -6.244
+config_1.timer[25]     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3IZ     D       timer_5[25]         4.845        -5.952
+config_1.timer[26]     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3IZ     D       timer_5[26]         4.845        -5.952
+SCCB1.FSM_state[0]     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3DZ     D       FSM_state_2         4.845        -5.816
+rom1.dout[0]           mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3JZ     D       dout_2_0ro_i_i      4.845        -5.744
+rom1.dout[1]           mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3JZ     D       dout_2_1ro_i_i      4.845        -5.744
+rom1.dout[6]           mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3JZ     D       dout_2_6ro_i_i      4.845        -5.744
+rom1.dout[10]          mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3JZ     D       dout_2_10ro_i_i     4.845        -5.744
+rom1.dout[13]          mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3JZ     D       dout_2_13ro_i_i     4.845        -5.744
+rom1.dout[14]          mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3JZ     D       dout_2_14ro_i_i     4.845        -5.744
+==============================================================================================================================================
 
 
 
@@ -759,201 +887,382 @@ Worst Path Information
 
 Path information for path number 1: 
       Requested Period:                      5.000
-    - Setup time:                            0.000
+    - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    + Estimated clock delay at ending point: 0.000
-    = Required time:                         5.000
+    = Required time:                         4.845
 
-    - Propagation time:                      12.401
+    - Propagation time:                      11.089
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -7.401
+    = Slack (critical) :                     -6.244
 
-    Number of logic level(s):                4
-    Starting point:                          vga_inst.col[0] / Q
-    Ending point:                            RGB_obuf[4] / I
-    The start point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
-    The end   point is clocked by            System [rising]
+    Number of logic level(s):                17
+    Starting point:                          config_1.FSM_state[0] / Q
+    Ending point:                            config_1.timer[27] / D
+    The start point is clocked by            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
 
-Instance / Net                             Pin      Pin               Arrival      No. of    
-Name                           Type        Name     Dir     Delay     Time         Fan Out(s)
----------------------------------------------------------------------------------------------
-vga_inst.col[0]                FD1P3DZ     Q        Out     0.796     0.796 r      -         
-col[0]                         Net         -        -       1.599     -            5         
-vga_inst.col_RNI2GO71_0[1]     LUT4        A        In      -         2.395 r      -         
-vga_inst.col_RNI2GO71_0[1]     LUT4        Z        Out     0.569     2.963 f      -         
-N_108                          Net         -        -       1.371     -            1         
-vga_inst.col_RNIU6J52[5]       LUT4        A        In      -         4.334 f      -         
-vga_inst.col_RNIU6J52[5]       LUT4        Z        Out     0.661     4.996 r      -         
-N_120                          Net         -        -       1.371     -            2         
-vga_inst.col_RNI37E33[7]       LUT4        A        In      -         6.367 r      -         
-vga_inst.col_RNI37E33[7]       LUT4        Z        Out     0.661     7.028 r      -         
-N_21                           Net         -        -       1.371     -            4         
-RGB_obuf_RNO[4]                LUT4        A        In      -         8.399 r      -         
-RGB_obuf_RNO[4]                LUT4        Z        Out     0.661     9.061 r      -         
-RGB_c[4]                       Net         -        -       3.340     -            1         
-RGB_obuf[4]                    OB          I        In      -         12.401 r     -         
-=============================================================================================
-Total path delay (propagation time + setup) of 12.401 is 3.349(27.0%) logic and 9.052(73.0%) route.
+Instance / Net                                     Pin      Pin               Arrival      No. of    
+Name                                   Type        Name     Dir     Delay     Time         Fan Out(s)
+-----------------------------------------------------------------------------------------------------
+config_1.FSM_state[0]                  FD1P3DZ     Q        Out     0.796     0.796 r      -         
+FSM_state[0]                           Net         -        -       1.599     -            42        
+config_1.un1_timer_cry_0_0_c_0_RNO     LUT4        A        In      -         2.395 r      -         
+config_1.un1_timer_cry_0_0_c_0_RNO     LUT4        Z        Out     0.661     3.056 r      -         
+un1_timer_cry_0_0_c_0_RNO              Net         -        -       0.905     -            1         
+config_1.un1_timer_cry_0_0_c_0         CCU2_B      C1       In      -         3.961 r      -         
+config_1.un1_timer_cry_0_0_c_0         CCU2_B      COUT     Out     0.358     4.319 r      -         
+un1_timer_cry_0                        Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_1_0_c_0         CCU2_B      CIN      In      -         4.333 r      -         
+config_1.un1_timer_cry_1_0_c_0         CCU2_B      COUT     Out     0.278     4.611 r      -         
+un1_timer_cry_2                        Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_3_0_c_0         CCU2_B      CIN      In      -         4.625 r      -         
+config_1.un1_timer_cry_3_0_c_0         CCU2_B      COUT     Out     0.278     4.903 r      -         
+un1_timer_cry_4                        Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_5_0_c_0         CCU2_B      CIN      In      -         4.917 r      -         
+config_1.un1_timer_cry_5_0_c_0         CCU2_B      COUT     Out     0.278     5.195 r      -         
+un1_timer_cry_6                        Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_7_0_c_0         CCU2_B      CIN      In      -         5.209 r      -         
+config_1.un1_timer_cry_7_0_c_0         CCU2_B      COUT     Out     0.278     5.487 r      -         
+un1_timer_cry_8                        Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_9_0_c_0         CCU2_B      CIN      In      -         5.501 r      -         
+config_1.un1_timer_cry_9_0_c_0         CCU2_B      COUT     Out     0.278     5.779 r      -         
+un1_timer_cry_10                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_11_0_c_0        CCU2_B      CIN      In      -         5.793 r      -         
+config_1.un1_timer_cry_11_0_c_0        CCU2_B      COUT     Out     0.278     6.071 r      -         
+un1_timer_cry_12                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_13_0_c_0        CCU2_B      CIN      In      -         6.085 r      -         
+config_1.un1_timer_cry_13_0_c_0        CCU2_B      COUT     Out     0.278     6.363 r      -         
+un1_timer_cry_14                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_15_0_c_0        CCU2_B      CIN      In      -         6.377 r      -         
+config_1.un1_timer_cry_15_0_c_0        CCU2_B      COUT     Out     0.278     6.655 r      -         
+un1_timer_cry_16                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_17_0_c_0        CCU2_B      CIN      In      -         6.669 r      -         
+config_1.un1_timer_cry_17_0_c_0        CCU2_B      COUT     Out     0.278     6.947 r      -         
+un1_timer_cry_18                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_19_0_c_0        CCU2_B      CIN      In      -         6.961 r      -         
+config_1.un1_timer_cry_19_0_c_0        CCU2_B      COUT     Out     0.278     7.239 r      -         
+un1_timer_cry_20                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_21_0_c_0        CCU2_B      CIN      In      -         7.253 r      -         
+config_1.un1_timer_cry_21_0_c_0        CCU2_B      COUT     Out     0.278     7.531 r      -         
+un1_timer_cry_22                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_23_0_c_0        CCU2_B      CIN      In      -         7.545 r      -         
+config_1.un1_timer_cry_23_0_c_0        CCU2_B      COUT     Out     0.278     7.823 r      -         
+un1_timer_cry_24                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_25_0_c_0        CCU2_B      CIN      In      -         7.837 r      -         
+config_1.un1_timer_cry_25_0_c_0        CCU2_B      COUT     Out     0.278     8.115 r      -         
+un1_timer_cry_26                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_27_0_c_0        CCU2_B      CIN      In      -         8.129 r      -         
+config_1.un1_timer_cry_27_0_c_0        CCU2_B      S0       Out     0.477     8.606 r      -         
+un1_timer[27]                          Net         -        -       0.386     -            1         
+config_1.timer_RNO[27]                 LUT4        B        In      -         8.992 r      -         
+config_1.timer_RNO[27]                 LUT4        Z        Out     0.589     9.582 r      -         
+timer_5[27]                            Net         -        -       1.507     -            1         
+config_1.timer[27]                     FD1P3IZ     D        In      -         11.089 r     -         
+=====================================================================================================
+Total path delay (propagation time + setup) of 11.244 is 6.651(59.2%) logic and 4.593(40.8%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 2: 
       Requested Period:                      5.000
-    - Setup time:                            0.000
+    - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    + Estimated clock delay at ending point: 0.000
-    = Required time:                         5.000
+    = Required time:                         4.845
 
-    - Propagation time:                      12.401
+    - Propagation time:                      11.016
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -7.401
+    = Slack (non-critical) :                 -6.171
 
-    Number of logic level(s):                4
-    Starting point:                          vga_inst.col[0] / Q
-    Ending point:                            RGB_obuf[3] / I
-    The start point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
-    The end   point is clocked by            System [rising]
+    Number of logic level(s):                17
+    Starting point:                          config_1.FSM_state[1] / Q
+    Ending point:                            config_1.timer[27] / D
+    The start point is clocked by            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
 
-Instance / Net                             Pin      Pin               Arrival      No. of    
-Name                           Type        Name     Dir     Delay     Time         Fan Out(s)
----------------------------------------------------------------------------------------------
-vga_inst.col[0]                FD1P3DZ     Q        Out     0.796     0.796 r      -         
-col[0]                         Net         -        -       1.599     -            5         
-vga_inst.col_RNI2GO71_0[1]     LUT4        A        In      -         2.395 r      -         
-vga_inst.col_RNI2GO71_0[1]     LUT4        Z        Out     0.569     2.963 f      -         
-N_108                          Net         -        -       1.371     -            1         
-vga_inst.col_RNIU6J52[5]       LUT4        A        In      -         4.334 f      -         
-vga_inst.col_RNIU6J52[5]       LUT4        Z        Out     0.661     4.996 r      -         
-N_120                          Net         -        -       1.371     -            2         
-vga_inst.col_RNI37E33[7]       LUT4        A        In      -         6.367 r      -         
-vga_inst.col_RNI37E33[7]       LUT4        Z        Out     0.661     7.028 r      -         
-N_21                           Net         -        -       1.371     -            4         
-vga_inst.col_RNI794B3[7]       LUT4        A        In      -         8.399 r      -         
-vga_inst.col_RNI794B3[7]       LUT4        Z        Out     0.661     9.061 r      -         
-RGB_c[3]                       Net         -        -       3.340     -            1         
-RGB_obuf[3]                    OB          I        In      -         12.401 r     -         
-=============================================================================================
-Total path delay (propagation time + setup) of 12.401 is 3.349(27.0%) logic and 9.052(73.0%) route.
+Instance / Net                                     Pin      Pin               Arrival      No. of    
+Name                                   Type        Name     Dir     Delay     Time         Fan Out(s)
+-----------------------------------------------------------------------------------------------------
+config_1.FSM_state[1]                  FD1P3DZ     Q        Out     0.796     0.796 r      -         
+FSM_state[1]                           Net         -        -       1.599     -            43        
+config_1.un1_timer_cry_0_0_c_0_RNO     LUT4        B        In      -         2.395 r      -         
+config_1.un1_timer_cry_0_0_c_0_RNO     LUT4        Z        Out     0.589     2.984 r      -         
+un1_timer_cry_0_0_c_0_RNO              Net         -        -       0.905     -            1         
+config_1.un1_timer_cry_0_0_c_0         CCU2_B      C1       In      -         3.889 r      -         
+config_1.un1_timer_cry_0_0_c_0         CCU2_B      COUT     Out     0.358     4.247 r      -         
+un1_timer_cry_0                        Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_1_0_c_0         CCU2_B      CIN      In      -         4.261 r      -         
+config_1.un1_timer_cry_1_0_c_0         CCU2_B      COUT     Out     0.278     4.539 r      -         
+un1_timer_cry_2                        Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_3_0_c_0         CCU2_B      CIN      In      -         4.553 r      -         
+config_1.un1_timer_cry_3_0_c_0         CCU2_B      COUT     Out     0.278     4.831 r      -         
+un1_timer_cry_4                        Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_5_0_c_0         CCU2_B      CIN      In      -         4.845 r      -         
+config_1.un1_timer_cry_5_0_c_0         CCU2_B      COUT     Out     0.278     5.123 r      -         
+un1_timer_cry_6                        Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_7_0_c_0         CCU2_B      CIN      In      -         5.137 r      -         
+config_1.un1_timer_cry_7_0_c_0         CCU2_B      COUT     Out     0.278     5.415 r      -         
+un1_timer_cry_8                        Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_9_0_c_0         CCU2_B      CIN      In      -         5.429 r      -         
+config_1.un1_timer_cry_9_0_c_0         CCU2_B      COUT     Out     0.278     5.707 r      -         
+un1_timer_cry_10                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_11_0_c_0        CCU2_B      CIN      In      -         5.721 r      -         
+config_1.un1_timer_cry_11_0_c_0        CCU2_B      COUT     Out     0.278     5.999 r      -         
+un1_timer_cry_12                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_13_0_c_0        CCU2_B      CIN      In      -         6.013 r      -         
+config_1.un1_timer_cry_13_0_c_0        CCU2_B      COUT     Out     0.278     6.291 r      -         
+un1_timer_cry_14                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_15_0_c_0        CCU2_B      CIN      In      -         6.305 r      -         
+config_1.un1_timer_cry_15_0_c_0        CCU2_B      COUT     Out     0.278     6.583 r      -         
+un1_timer_cry_16                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_17_0_c_0        CCU2_B      CIN      In      -         6.597 r      -         
+config_1.un1_timer_cry_17_0_c_0        CCU2_B      COUT     Out     0.278     6.875 r      -         
+un1_timer_cry_18                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_19_0_c_0        CCU2_B      CIN      In      -         6.889 r      -         
+config_1.un1_timer_cry_19_0_c_0        CCU2_B      COUT     Out     0.278     7.167 r      -         
+un1_timer_cry_20                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_21_0_c_0        CCU2_B      CIN      In      -         7.181 r      -         
+config_1.un1_timer_cry_21_0_c_0        CCU2_B      COUT     Out     0.278     7.459 r      -         
+un1_timer_cry_22                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_23_0_c_0        CCU2_B      CIN      In      -         7.473 r      -         
+config_1.un1_timer_cry_23_0_c_0        CCU2_B      COUT     Out     0.278     7.751 r      -         
+un1_timer_cry_24                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_25_0_c_0        CCU2_B      CIN      In      -         7.765 r      -         
+config_1.un1_timer_cry_25_0_c_0        CCU2_B      COUT     Out     0.278     8.043 r      -         
+un1_timer_cry_26                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_27_0_c_0        CCU2_B      CIN      In      -         8.057 r      -         
+config_1.un1_timer_cry_27_0_c_0        CCU2_B      S0       Out     0.477     8.534 r      -         
+un1_timer[27]                          Net         -        -       0.386     -            1         
+config_1.timer_RNO[27]                 LUT4        B        In      -         8.920 r      -         
+config_1.timer_RNO[27]                 LUT4        Z        Out     0.589     9.509 r      -         
+timer_5[27]                            Net         -        -       1.507     -            1         
+config_1.timer[27]                     FD1P3IZ     D        In      -         11.016 r     -         
+=====================================================================================================
+Total path delay (propagation time + setup) of 11.171 is 6.578(58.9%) logic and 4.593(41.1%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 3: 
       Requested Period:                      5.000
-    - Setup time:                            0.000
+    - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    + Estimated clock delay at ending point: 0.000
-    = Required time:                         5.000
+    = Required time:                         4.845
 
-    - Propagation time:                      12.401
+    - Propagation time:                      10.797
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -7.401
+    = Slack (non-critical) :                 -5.952
 
-    Number of logic level(s):                4
-    Starting point:                          vga_inst.col[0] / Q
-    Ending point:                            RGB_obuf[2] / I
-    The start point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
-    The end   point is clocked by            System [rising]
+    Number of logic level(s):                16
+    Starting point:                          config_1.FSM_state[0] / Q
+    Ending point:                            config_1.timer[27] / D
+    The start point is clocked by            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
 
-Instance / Net                             Pin      Pin               Arrival      No. of    
-Name                           Type        Name     Dir     Delay     Time         Fan Out(s)
----------------------------------------------------------------------------------------------
-vga_inst.col[0]                FD1P3DZ     Q        Out     0.796     0.796 r      -         
-col[0]                         Net         -        -       1.599     -            5         
-vga_inst.col_RNI2GO71_0[1]     LUT4        A        In      -         2.395 r      -         
-vga_inst.col_RNI2GO71_0[1]     LUT4        Z        Out     0.569     2.963 f      -         
-N_108                          Net         -        -       1.371     -            1         
-vga_inst.col_RNIU6J52[5]       LUT4        A        In      -         4.334 f      -         
-vga_inst.col_RNIU6J52[5]       LUT4        Z        Out     0.661     4.996 r      -         
-N_120                          Net         -        -       1.371     -            2         
-vga_inst.col_RNI37E33[7]       LUT4        A        In      -         6.367 r      -         
-vga_inst.col_RNI37E33[7]       LUT4        Z        Out     0.661     7.028 r      -         
-N_21                           Net         -        -       1.371     -            4         
-vga_inst.col_RNI794B3_0[7]     LUT4        A        In      -         8.399 r      -         
-vga_inst.col_RNI794B3_0[7]     LUT4        Z        Out     0.661     9.061 r      -         
-RGB_c[2]                       Net         -        -       3.340     -            1         
-RGB_obuf[2]                    OB          I        In      -         12.401 r     -         
-=============================================================================================
-Total path delay (propagation time + setup) of 12.401 is 3.349(27.0%) logic and 9.052(73.0%) route.
+Instance / Net                                       Pin      Pin               Arrival      No. of    
+Name                                     Type        Name     Dir     Delay     Time         Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+config_1.FSM_state[0]                    FD1P3DZ     Q        Out     0.796     0.796 r      -         
+FSM_state[0]                             Net         -        -       1.599     -            42        
+config_1.un1_timer_cry_1_0_c_0_RNO_0     LUT4        A        In      -         2.395 r      -         
+config_1.un1_timer_cry_1_0_c_0_RNO_0     LUT4        Z        Out     0.661     3.056 r      -         
+un1_timer_cry_1_0_c_0_RNO_0              Net         -        -       0.905     -            1         
+config_1.un1_timer_cry_1_0_c_0           CCU2_B      C1       In      -         3.961 r      -         
+config_1.un1_timer_cry_1_0_c_0           CCU2_B      COUT     Out     0.358     4.319 r      -         
+un1_timer_cry_2                          Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_3_0_c_0           CCU2_B      CIN      In      -         4.333 r      -         
+config_1.un1_timer_cry_3_0_c_0           CCU2_B      COUT     Out     0.278     4.611 r      -         
+un1_timer_cry_4                          Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_5_0_c_0           CCU2_B      CIN      In      -         4.625 r      -         
+config_1.un1_timer_cry_5_0_c_0           CCU2_B      COUT     Out     0.278     4.903 r      -         
+un1_timer_cry_6                          Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_7_0_c_0           CCU2_B      CIN      In      -         4.917 r      -         
+config_1.un1_timer_cry_7_0_c_0           CCU2_B      COUT     Out     0.278     5.195 r      -         
+un1_timer_cry_8                          Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_9_0_c_0           CCU2_B      CIN      In      -         5.209 r      -         
+config_1.un1_timer_cry_9_0_c_0           CCU2_B      COUT     Out     0.278     5.487 r      -         
+un1_timer_cry_10                         Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_11_0_c_0          CCU2_B      CIN      In      -         5.501 r      -         
+config_1.un1_timer_cry_11_0_c_0          CCU2_B      COUT     Out     0.278     5.779 r      -         
+un1_timer_cry_12                         Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_13_0_c_0          CCU2_B      CIN      In      -         5.793 r      -         
+config_1.un1_timer_cry_13_0_c_0          CCU2_B      COUT     Out     0.278     6.071 r      -         
+un1_timer_cry_14                         Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_15_0_c_0          CCU2_B      CIN      In      -         6.085 r      -         
+config_1.un1_timer_cry_15_0_c_0          CCU2_B      COUT     Out     0.278     6.363 r      -         
+un1_timer_cry_16                         Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_17_0_c_0          CCU2_B      CIN      In      -         6.377 r      -         
+config_1.un1_timer_cry_17_0_c_0          CCU2_B      COUT     Out     0.278     6.655 r      -         
+un1_timer_cry_18                         Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_19_0_c_0          CCU2_B      CIN      In      -         6.669 r      -         
+config_1.un1_timer_cry_19_0_c_0          CCU2_B      COUT     Out     0.278     6.947 r      -         
+un1_timer_cry_20                         Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_21_0_c_0          CCU2_B      CIN      In      -         6.961 r      -         
+config_1.un1_timer_cry_21_0_c_0          CCU2_B      COUT     Out     0.278     7.239 r      -         
+un1_timer_cry_22                         Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_23_0_c_0          CCU2_B      CIN      In      -         7.253 r      -         
+config_1.un1_timer_cry_23_0_c_0          CCU2_B      COUT     Out     0.278     7.531 r      -         
+un1_timer_cry_24                         Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_25_0_c_0          CCU2_B      CIN      In      -         7.545 r      -         
+config_1.un1_timer_cry_25_0_c_0          CCU2_B      COUT     Out     0.278     7.823 r      -         
+un1_timer_cry_26                         Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_27_0_c_0          CCU2_B      CIN      In      -         7.837 r      -         
+config_1.un1_timer_cry_27_0_c_0          CCU2_B      S0       Out     0.477     8.314 r      -         
+un1_timer[27]                            Net         -        -       0.386     -            1         
+config_1.timer_RNO[27]                   LUT4        B        In      -         8.700 r      -         
+config_1.timer_RNO[27]                   LUT4        Z        Out     0.589     9.290 r      -         
+timer_5[27]                              Net         -        -       1.507     -            1         
+config_1.timer[27]                       FD1P3IZ     D        In      -         10.797 r     -         
+=======================================================================================================
+Total path delay (propagation time + setup) of 10.952 is 6.373(58.2%) logic and 4.579(41.8%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 4: 
       Requested Period:                      5.000
-    - Setup time:                            0.000
+    - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    + Estimated clock delay at ending point: 0.000
-    = Required time:                         5.000
+    = Required time:                         4.845
 
-    - Propagation time:                      12.401
+    - Propagation time:                      10.797
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -7.401
+    = Slack (non-critical) :                 -5.952
 
-    Number of logic level(s):                4
-    Starting point:                          vga_inst.col[0] / Q
-    Ending point:                            RGB_obuf[5] / I
-    The start point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
-    The end   point is clocked by            System [rising]
+    Number of logic level(s):                16
+    Starting point:                          config_1.FSM_state[0] / Q
+    Ending point:                            config_1.timer[27] / D
+    The start point is clocked by            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
 
-Instance / Net                             Pin      Pin               Arrival      No. of    
-Name                           Type        Name     Dir     Delay     Time         Fan Out(s)
----------------------------------------------------------------------------------------------
-vga_inst.col[0]                FD1P3DZ     Q        Out     0.796     0.796 r      -         
-col[0]                         Net         -        -       1.599     -            5         
-vga_inst.col_RNI2GO71_0[1]     LUT4        A        In      -         2.395 r      -         
-vga_inst.col_RNI2GO71_0[1]     LUT4        Z        Out     0.569     2.963 f      -         
-N_108                          Net         -        -       1.371     -            1         
-vga_inst.col_RNIU6J52[5]       LUT4        A        In      -         4.334 f      -         
-vga_inst.col_RNIU6J52[5]       LUT4        Z        Out     0.661     4.996 r      -         
-N_120                          Net         -        -       1.371     -            2         
-vga_inst.col_RNI37E33[7]       LUT4        A        In      -         6.367 r      -         
-vga_inst.col_RNI37E33[7]       LUT4        Z        Out     0.661     7.028 r      -         
-N_21                           Net         -        -       1.371     -            4         
-RGB_obuf_RNO[5]                LUT4        A        In      -         8.399 r      -         
-RGB_obuf_RNO[5]                LUT4        Z        Out     0.661     9.061 r      -         
-RGB_c[5]                       Net         -        -       3.340     -            1         
-RGB_obuf[5]                    OB          I        In      -         12.401 r     -         
-=============================================================================================
-Total path delay (propagation time + setup) of 12.401 is 3.349(27.0%) logic and 9.052(73.0%) route.
+Instance / Net                                     Pin      Pin               Arrival      No. of    
+Name                                   Type        Name     Dir     Delay     Time         Fan Out(s)
+-----------------------------------------------------------------------------------------------------
+config_1.FSM_state[0]                  FD1P3DZ     Q        Out     0.796     0.796 r      -         
+FSM_state[0]                           Net         -        -       1.599     -            42        
+config_1.un1_timer_cry_1_0_c_0_RNO     LUT4        A        In      -         2.395 r      -         
+config_1.un1_timer_cry_1_0_c_0_RNO     LUT4        Z        Out     0.661     3.056 r      -         
+un1_timer_cry_1_0_c_0_RNO              Net         -        -       0.905     -            1         
+config_1.un1_timer_cry_1_0_c_0         CCU2_B      C0       In      -         3.961 r      -         
+config_1.un1_timer_cry_1_0_c_0         CCU2_B      COUT     Out     0.358     4.319 r      -         
+un1_timer_cry_2                        Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_3_0_c_0         CCU2_B      CIN      In      -         4.333 r      -         
+config_1.un1_timer_cry_3_0_c_0         CCU2_B      COUT     Out     0.278     4.611 r      -         
+un1_timer_cry_4                        Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_5_0_c_0         CCU2_B      CIN      In      -         4.625 r      -         
+config_1.un1_timer_cry_5_0_c_0         CCU2_B      COUT     Out     0.278     4.903 r      -         
+un1_timer_cry_6                        Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_7_0_c_0         CCU2_B      CIN      In      -         4.917 r      -         
+config_1.un1_timer_cry_7_0_c_0         CCU2_B      COUT     Out     0.278     5.195 r      -         
+un1_timer_cry_8                        Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_9_0_c_0         CCU2_B      CIN      In      -         5.209 r      -         
+config_1.un1_timer_cry_9_0_c_0         CCU2_B      COUT     Out     0.278     5.487 r      -         
+un1_timer_cry_10                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_11_0_c_0        CCU2_B      CIN      In      -         5.501 r      -         
+config_1.un1_timer_cry_11_0_c_0        CCU2_B      COUT     Out     0.278     5.779 r      -         
+un1_timer_cry_12                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_13_0_c_0        CCU2_B      CIN      In      -         5.793 r      -         
+config_1.un1_timer_cry_13_0_c_0        CCU2_B      COUT     Out     0.278     6.071 r      -         
+un1_timer_cry_14                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_15_0_c_0        CCU2_B      CIN      In      -         6.085 r      -         
+config_1.un1_timer_cry_15_0_c_0        CCU2_B      COUT     Out     0.278     6.363 r      -         
+un1_timer_cry_16                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_17_0_c_0        CCU2_B      CIN      In      -         6.377 r      -         
+config_1.un1_timer_cry_17_0_c_0        CCU2_B      COUT     Out     0.278     6.655 r      -         
+un1_timer_cry_18                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_19_0_c_0        CCU2_B      CIN      In      -         6.669 r      -         
+config_1.un1_timer_cry_19_0_c_0        CCU2_B      COUT     Out     0.278     6.947 r      -         
+un1_timer_cry_20                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_21_0_c_0        CCU2_B      CIN      In      -         6.961 r      -         
+config_1.un1_timer_cry_21_0_c_0        CCU2_B      COUT     Out     0.278     7.239 r      -         
+un1_timer_cry_22                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_23_0_c_0        CCU2_B      CIN      In      -         7.253 r      -         
+config_1.un1_timer_cry_23_0_c_0        CCU2_B      COUT     Out     0.278     7.531 r      -         
+un1_timer_cry_24                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_25_0_c_0        CCU2_B      CIN      In      -         7.545 r      -         
+config_1.un1_timer_cry_25_0_c_0        CCU2_B      COUT     Out     0.278     7.823 r      -         
+un1_timer_cry_26                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_27_0_c_0        CCU2_B      CIN      In      -         7.837 r      -         
+config_1.un1_timer_cry_27_0_c_0        CCU2_B      S0       Out     0.477     8.314 r      -         
+un1_timer[27]                          Net         -        -       0.386     -            1         
+config_1.timer_RNO[27]                 LUT4        B        In      -         8.700 r      -         
+config_1.timer_RNO[27]                 LUT4        Z        Out     0.589     9.290 r      -         
+timer_5[27]                            Net         -        -       1.507     -            1         
+config_1.timer[27]                     FD1P3IZ     D        In      -         10.797 r     -         
+=====================================================================================================
+Total path delay (propagation time + setup) of 10.952 is 6.373(58.2%) logic and 4.579(41.8%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 5: 
       Requested Period:                      5.000
-    - Setup time:                            0.000
+    - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    + Estimated clock delay at ending point: 0.000
-    = Required time:                         5.000
+    = Required time:                         4.845
 
-    - Propagation time:                      12.390
+    - Propagation time:                      10.797
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -7.390
+    = Slack (non-critical) :                 -5.952
 
-    Number of logic level(s):                4
-    Starting point:                          vga_inst.col[1] / Q
-    Ending point:                            RGB_obuf[4] / I
-    The start point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
-    The end   point is clocked by            System [rising]
+    Number of logic level(s):                16
+    Starting point:                          config_1.FSM_state[0] / Q
+    Ending point:                            config_1.timer[25] / D
+    The start point is clocked by            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
 
-Instance / Net                             Pin      Pin               Arrival      No. of    
-Name                           Type        Name     Dir     Delay     Time         Fan Out(s)
----------------------------------------------------------------------------------------------
-vga_inst.col[1]                FD1P3DZ     Q        Out     0.796     0.796 r      -         
-col[1]                         Net         -        -       1.599     -            3         
-vga_inst.col_RNI2GO71_0[1]     LUT4        B        In      -         2.395 r      -         
-vga_inst.col_RNI2GO71_0[1]     LUT4        Z        Out     0.558     2.953 f      -         
-N_108                          Net         -        -       1.371     -            1         
-vga_inst.col_RNIU6J52[5]       LUT4        A        In      -         4.324 f      -         
-vga_inst.col_RNIU6J52[5]       LUT4        Z        Out     0.661     4.986 r      -         
-N_120                          Net         -        -       1.371     -            2         
-vga_inst.col_RNI37E33[7]       LUT4        A        In      -         6.356 r      -         
-vga_inst.col_RNI37E33[7]       LUT4        Z        Out     0.661     7.018 r      -         
-N_21                           Net         -        -       1.371     -            4         
-RGB_obuf_RNO[4]                LUT4        A        In      -         8.389 r      -         
-RGB_obuf_RNO[4]                LUT4        Z        Out     0.661     9.050 r      -         
-RGB_c[4]                       Net         -        -       3.340     -            1         
-RGB_obuf[4]                    OB          I        In      -         12.390 r     -         
-=============================================================================================
-Total path delay (propagation time + setup) of 12.390 is 3.339(26.9%) logic and 9.052(73.1%) route.
+Instance / Net                                     Pin      Pin               Arrival      No. of    
+Name                                   Type        Name     Dir     Delay     Time         Fan Out(s)
+-----------------------------------------------------------------------------------------------------
+config_1.FSM_state[0]                  FD1P3DZ     Q        Out     0.796     0.796 r      -         
+FSM_state[0]                           Net         -        -       1.599     -            42        
+config_1.un1_timer_cry_0_0_c_0_RNO     LUT4        A        In      -         2.395 r      -         
+config_1.un1_timer_cry_0_0_c_0_RNO     LUT4        Z        Out     0.661     3.056 r      -         
+un1_timer_cry_0_0_c_0_RNO              Net         -        -       0.905     -            1         
+config_1.un1_timer_cry_0_0_c_0         CCU2_B      C1       In      -         3.961 r      -         
+config_1.un1_timer_cry_0_0_c_0         CCU2_B      COUT     Out     0.358     4.319 r      -         
+un1_timer_cry_0                        Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_1_0_c_0         CCU2_B      CIN      In      -         4.333 r      -         
+config_1.un1_timer_cry_1_0_c_0         CCU2_B      COUT     Out     0.278     4.611 r      -         
+un1_timer_cry_2                        Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_3_0_c_0         CCU2_B      CIN      In      -         4.625 r      -         
+config_1.un1_timer_cry_3_0_c_0         CCU2_B      COUT     Out     0.278     4.903 r      -         
+un1_timer_cry_4                        Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_5_0_c_0         CCU2_B      CIN      In      -         4.917 r      -         
+config_1.un1_timer_cry_5_0_c_0         CCU2_B      COUT     Out     0.278     5.195 r      -         
+un1_timer_cry_6                        Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_7_0_c_0         CCU2_B      CIN      In      -         5.209 r      -         
+config_1.un1_timer_cry_7_0_c_0         CCU2_B      COUT     Out     0.278     5.487 r      -         
+un1_timer_cry_8                        Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_9_0_c_0         CCU2_B      CIN      In      -         5.501 r      -         
+config_1.un1_timer_cry_9_0_c_0         CCU2_B      COUT     Out     0.278     5.779 r      -         
+un1_timer_cry_10                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_11_0_c_0        CCU2_B      CIN      In      -         5.793 r      -         
+config_1.un1_timer_cry_11_0_c_0        CCU2_B      COUT     Out     0.278     6.071 r      -         
+un1_timer_cry_12                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_13_0_c_0        CCU2_B      CIN      In      -         6.085 r      -         
+config_1.un1_timer_cry_13_0_c_0        CCU2_B      COUT     Out     0.278     6.363 r      -         
+un1_timer_cry_14                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_15_0_c_0        CCU2_B      CIN      In      -         6.377 r      -         
+config_1.un1_timer_cry_15_0_c_0        CCU2_B      COUT     Out     0.278     6.655 r      -         
+un1_timer_cry_16                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_17_0_c_0        CCU2_B      CIN      In      -         6.669 r      -         
+config_1.un1_timer_cry_17_0_c_0        CCU2_B      COUT     Out     0.278     6.947 r      -         
+un1_timer_cry_18                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_19_0_c_0        CCU2_B      CIN      In      -         6.961 r      -         
+config_1.un1_timer_cry_19_0_c_0        CCU2_B      COUT     Out     0.278     7.239 r      -         
+un1_timer_cry_20                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_21_0_c_0        CCU2_B      CIN      In      -         7.253 r      -         
+config_1.un1_timer_cry_21_0_c_0        CCU2_B      COUT     Out     0.278     7.531 r      -         
+un1_timer_cry_22                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_23_0_c_0        CCU2_B      CIN      In      -         7.545 r      -         
+config_1.un1_timer_cry_23_0_c_0        CCU2_B      COUT     Out     0.278     7.823 r      -         
+un1_timer_cry_24                       Net         -        -       0.014     -            1         
+config_1.un1_timer_cry_25_0_c_0        CCU2_B      CIN      In      -         7.837 r      -         
+config_1.un1_timer_cry_25_0_c_0        CCU2_B      S0       Out     0.477     8.314 r      -         
+un1_timer[25]                          Net         -        -       0.386     -            1         
+config_1.timer_RNO[25]                 LUT4        B        In      -         8.700 r      -         
+config_1.timer_RNO[25]                 LUT4        Z        Out     0.589     9.290 r      -         
+timer_5[25]                            Net         -        -       1.507     -            1         
+config_1.timer[25]                     FD1P3IZ     D        In      -         10.797 r     -         
+=====================================================================================================
+Total path delay (propagation time + setup) of 10.952 is 6.373(58.2%) logic and 4.579(41.8%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -968,40 +1277,41 @@ Detailed Report for Clock: System
 Starting Points with Worst Slack
 ********************************
 
-                                 Starting                                                 Arrival           
-Instance                         Reference     Type       Pin          Net                Time        Slack 
-                                 Clock                                                                      
-------------------------------------------------------------------------------------------------------------
-start_ibuf                       System        IB         O            start_c            0.000       -4.040
-SPRAM1                           System        SP256K     DO[0]        address_out[0]     0.000       0.999 
-SPRAM1                           System        SP256K     DO[1]        address_out[1]     0.000       1.071 
-SPRAM1                           System        SP256K     DO[2]        address_out[2]     0.000       1.102 
-SPRAM1                           System        SP256K     DO[3]        address_out[3]     0.000       1.102 
-SPRAM1                           System        SP256K     DO[4]        address_out[4]     0.000       1.102 
-SPRAM1                           System        SP256K     DO[5]        address_out[5]     0.000       1.102 
-clk_12MHz_ibuf                   System        IB         O            clk_12MHz_c        0.000       5.000 
-my_pll.lscc_pll_inst.u_PLL_B     System        PLL_B      INTFBOUT     intfbout_w         0.000       5.000 
-============================================================================================================
+                         Starting                                                Arrival           
+Instance                 Reference     Type        Pin     Net                   Time        Slack 
+                         Clock                                                                     
+---------------------------------------------------------------------------------------------------
+CAMERA_HREF_IN_ibuf      System        IB          O       CAMERA_HREF_IN_c      0.000       -4.040
+CAMERA_VSYNC_IN_ibuf     System        IB          O       CAMERA_VSYNC_IN_c     0.000       -4.040
+start_ibuf               System        IB          O       start_c               0.000       -3.937
+reader.FSM_state[0]      System        FD1P3DZ     Q       FSM_state[0]          0.796       0.354 
+reader.pixel_half        System        FD1P3DZ     Q       pixel_half            0.796       0.354 
+reader.frame_done        System        FD1P3DZ     Q       frame_done_c          0.796       1.976 
+reader.pixel_valid       System        FD1P3DZ     Q       pixel_valid_c         0.796       1.976 
+clk_12MHz_ibuf           System        IB          O       clk_12MHz_c           0.000       5.000 
+sioc_obuft_RNO           System        INV         Z       N_792_i               0.000       5.000 
+siod_obuft_RNO           System        INV         Z       N_793_i               0.000       5.000 
+===================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-             Starting                                     Required           
-Instance     Reference     Type        Pin     Net        Time         Slack 
-             Clock                                                           
------------------------------------------------------------------------------
-WR           System        FD1P3DZ     D       count9     4.845        -4.040
-count[0]     System        FD1P3DZ     SP      count9     4.845        -4.040
-count[1]     System        FD1P3DZ     SP      count9     4.845        -4.040
-count[2]     System        FD1P3DZ     SP      count9     4.845        -4.040
-count[3]     System        FD1P3DZ     SP      count9     4.845        -4.040
-count[4]     System        FD1P3DZ     SP      count9     4.845        -4.040
-count[5]     System        FD1P3DZ     SP      count9     4.845        -4.040
-count[6]     System        FD1P3DZ     SP      count9     4.845        -4.040
-count[7]     System        FD1P3DZ     SP      count9     4.845        -4.040
-count[8]     System        FD1P3DZ     SP      count9     4.845        -4.040
-=============================================================================
+                          Starting                                                  Required           
+Instance                  Reference     Type        Pin     Net                     Time         Slack 
+                          Clock                                                                        
+-------------------------------------------------------------------------------------------------------
+reader.FSM_state[0]       System        FD1P3DZ     D       CAMERA_VSYNC_IN_c_i     4.845        -4.040
+reader.frame_done         System        FD1P3DZ     D       frame_done              4.845        -4.040
+reader.pixel_half         System        FD1P3DZ     D       pixel_half_1            4.845        -4.040
+reader.pixel_valid        System        FD1P3DZ     D       pixel_data_0_sqmuxa     4.845        -4.040
+config_1.done             System        FD1P3DZ     D       done_0                  4.845        -3.937
+config_1.FSM_state[0]     System        FD1P3DZ     D       N_4_i                   4.845        -3.844
+reader.pixel_valid        System        FD1P3DZ     SP      FSM_state[0]            4.845        1.481 
+frame_done_obuf           System        OB          I       frame_done_c            5.000        1.976 
+pixel_valid_obuf          System        OB          I       pixel_valid_c           5.000        1.976 
+sioc_obuft                System        OBZ_B       T_N     N_792_i                 5.000        5.000 
+=======================================================================================================
 
 
 
@@ -1013,6 +1323,7 @@ Path information for path number 1:
       Requested Period:                      5.000
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
     = Required time:                         4.845
 
     - Propagation time:                      8.886
@@ -1021,21 +1332,21 @@ Path information for path number 1:
     = Slack (non-critical) :                 -4.041
 
     Number of logic level(s):                1
-    Starting point:                          start_ibuf / O
-    Ending point:                            WR / D
+    Starting point:                          CAMERA_HREF_IN_ibuf / O
+    Ending point:                            reader.pixel_half / D
     The start point is clocked by            System [rising]
-    The end   point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            System [rising] on pin CK
 
-Instance / Net                     Pin      Pin               Arrival     No. of    
-Name                   Type        Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------
-start_ibuf             IB          O        Out     0.000     0.000 f     -         
-start_c                Net         -        -       6.717     -           2         
-start_prev_RNITCNN     LUT4        A        In      -         6.717 f     -         
-start_prev_RNITCNN     LUT4        Z        Out     0.661     7.378 r     -         
-count9                 Net         -        -       1.507     -           17        
-WR                     FD1P3DZ     D        In      -         8.886 r     -         
-====================================================================================
+Instance / Net                        Pin      Pin               Arrival     No. of    
+Name                      Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------
+CAMERA_HREF_IN_ibuf       IB          O        Out     0.000     0.000 r     -         
+CAMERA_HREF_IN_c          Net         -        -       6.717     -           2         
+reader.pixel_half_RNO     LUT4        A        In      -         6.717 r     -         
+reader.pixel_half_RNO     LUT4        Z        Out     0.661     7.378 r     -         
+pixel_half_1              Net         -        -       1.507     -           1         
+reader.pixel_half         FD1P3DZ     D        In      -         8.886 r     -         
+=======================================================================================
 Total path delay (propagation time + setup) of 9.041 is 0.817(9.0%) logic and 8.224(91.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
@@ -1044,6 +1355,7 @@ Path information for path number 2:
       Requested Period:                      5.000
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
     = Required time:                         4.845
 
     - Propagation time:                      8.886
@@ -1052,21 +1364,21 @@ Path information for path number 2:
     = Slack (non-critical) :                 -4.041
 
     Number of logic level(s):                1
-    Starting point:                          start_ibuf / O
-    Ending point:                            count[0] / SP
+    Starting point:                          CAMERA_VSYNC_IN_ibuf / O
+    Ending point:                            reader.frame_done / D
     The start point is clocked by            System [rising]
-    The end   point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            System [rising] on pin CK
 
-Instance / Net                     Pin      Pin               Arrival     No. of    
-Name                   Type        Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------
-start_ibuf             IB          O        Out     0.000     0.000 f     -         
-start_c                Net         -        -       6.717     -           2         
-start_prev_RNITCNN     LUT4        A        In      -         6.717 f     -         
-start_prev_RNITCNN     LUT4        Z        Out     0.661     7.378 r     -         
-count9                 Net         -        -       1.507     -           17        
-count[0]               FD1P3DZ     SP       In      -         8.886 r     -         
-====================================================================================
+Instance / Net                        Pin      Pin               Arrival     No. of    
+Name                      Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------
+CAMERA_VSYNC_IN_ibuf      IB          O        Out     0.000     0.000 r     -         
+CAMERA_VSYNC_IN_c         Net         -        -       6.717     -           2         
+reader.frame_done_RNO     LUT4        A        In      -         6.717 r     -         
+reader.frame_done_RNO     LUT4        Z        Out     0.661     7.378 r     -         
+frame_done                Net         -        -       1.507     -           1         
+reader.frame_done         FD1P3DZ     D        In      -         8.886 r     -         
+=======================================================================================
 Total path delay (propagation time + setup) of 9.041 is 0.817(9.0%) logic and 8.224(91.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
@@ -1075,6 +1387,7 @@ Path information for path number 3:
       Requested Period:                      5.000
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
     = Required time:                         4.845
 
     - Propagation time:                      8.886
@@ -1083,21 +1396,21 @@ Path information for path number 3:
     = Slack (non-critical) :                 -4.041
 
     Number of logic level(s):                1
-    Starting point:                          start_ibuf / O
-    Ending point:                            count[1] / SP
+    Starting point:                          CAMERA_HREF_IN_ibuf / O
+    Ending point:                            reader.pixel_valid / D
     The start point is clocked by            System [rising]
-    The end   point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            System [rising] on pin CK
 
-Instance / Net                     Pin      Pin               Arrival     No. of    
-Name                   Type        Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------
-start_ibuf             IB          O        Out     0.000     0.000 f     -         
-start_c                Net         -        -       6.717     -           2         
-start_prev_RNITCNN     LUT4        A        In      -         6.717 f     -         
-start_prev_RNITCNN     LUT4        Z        Out     0.661     7.378 r     -         
-count9                 Net         -        -       1.507     -           17        
-count[1]               FD1P3DZ     SP       In      -         8.886 r     -         
-====================================================================================
+Instance / Net                         Pin      Pin               Arrival     No. of    
+Name                       Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------
+CAMERA_HREF_IN_ibuf        IB          O        Out     0.000     0.000 r     -         
+CAMERA_HREF_IN_c           Net         -        -       6.717     -           2         
+reader.pixel_valid_RNO     LUT4        A        In      -         6.717 r     -         
+reader.pixel_valid_RNO     LUT4        Z        Out     0.661     7.378 r     -         
+pixel_data_0_sqmuxa        Net         -        -       1.507     -           1         
+reader.pixel_valid         FD1P3DZ     D        In      -         8.886 r     -         
+========================================================================================
 Total path delay (propagation time + setup) of 9.041 is 0.817(9.0%) logic and 8.224(91.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
@@ -1106,30 +1419,31 @@ Path information for path number 4:
       Requested Period:                      5.000
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
     = Required time:                         4.845
 
-    - Propagation time:                      8.886
+    - Propagation time:                      8.793
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -4.041
+    = Slack (non-critical) :                 -3.948
 
     Number of logic level(s):                1
-    Starting point:                          start_ibuf / O
-    Ending point:                            count[2] / SP
+    Starting point:                          CAMERA_VSYNC_IN_ibuf / O
+    Ending point:                            reader.FSM_state[0] / D
     The start point is clocked by            System [rising]
-    The end   point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            System [rising] on pin CK
 
-Instance / Net                     Pin      Pin               Arrival     No. of    
-Name                   Type        Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------
-start_ibuf             IB          O        Out     0.000     0.000 f     -         
-start_c                Net         -        -       6.717     -           2         
-start_prev_RNITCNN     LUT4        A        In      -         6.717 f     -         
-start_prev_RNITCNN     LUT4        Z        Out     0.661     7.378 r     -         
-count9                 Net         -        -       1.507     -           17        
-count[2]               FD1P3DZ     SP       In      -         8.886 r     -         
-====================================================================================
-Total path delay (propagation time + setup) of 9.041 is 0.817(9.0%) logic and 8.224(91.0%) route.
+Instance / Net                          Pin      Pin               Arrival     No. of    
+Name                        Type        Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------
+CAMERA_VSYNC_IN_ibuf        IB          O        Out     0.000     0.000 r     -         
+CAMERA_VSYNC_IN_c           Net         -        -       6.717     -           2         
+reader.FSM_state_RNO[0]     LUT4        A        In      -         6.717 r     -         
+reader.FSM_state_RNO[0]     LUT4        Z        Out     0.569     7.285 f     -         
+CAMERA_VSYNC_IN_c_i         Net         -        -       1.507     -           1         
+reader.FSM_state[0]         FD1P3DZ     D        In      -         8.793 f     -         
+=========================================================================================
+Total path delay (propagation time + setup) of 8.948 is 0.724(8.1%) logic and 8.224(91.9%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1139,28 +1453,28 @@ Path information for path number 5:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         4.845
 
-    - Propagation time:                      8.886
+    - Propagation time:                      8.782
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -4.041
+    = Slack (non-critical) :                 -3.937
 
     Number of logic level(s):                1
     Starting point:                          start_ibuf / O
-    Ending point:                            count[3] / SP
+    Ending point:                            config_1.done / D
     The start point is clocked by            System [rising]
-    The end   point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
 
-Instance / Net                     Pin      Pin               Arrival     No. of    
-Name                   Type        Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------
-start_ibuf             IB          O        Out     0.000     0.000 f     -         
-start_c                Net         -        -       6.717     -           2         
-start_prev_RNITCNN     LUT4        A        In      -         6.717 f     -         
-start_prev_RNITCNN     LUT4        Z        Out     0.661     7.378 r     -         
-count9                 Net         -        -       1.507     -           17        
-count[3]               FD1P3DZ     SP       In      -         8.886 r     -         
-====================================================================================
-Total path delay (propagation time + setup) of 9.041 is 0.817(9.0%) logic and 8.224(91.0%) route.
+Instance / Net                    Pin      Pin               Arrival     No. of    
+Name                  Type        Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------
+start_ibuf            IB          O        Out     0.000     0.000 f     -         
+start_c               Net         -        -       6.717     -           2         
+config_1.done_RNO     LUT4        C        In      -         6.717 f     -         
+config_1.done_RNO     LUT4        Z        Out     0.558     7.275 r     -         
+done_0                Net         -        -       1.507     -           1         
+config_1.done         FD1P3DZ     D        In      -         8.782 r     -         
+===================================================================================
+Total path delay (propagation time + setup) of 8.937 is 0.713(8.0%) logic and 8.224(92.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1169,45 +1483,49 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 195MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 206MB peak: 209MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 195MB)
+Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 206MB peak: 209MB)
 
 ---------------------------------------
 Resource Usage Report for top 
 
 Mapping to part: ice40up5ksg48i-6
 Cell usage:
-CCU2_B          19 uses
-FD1P3DZ         38 uses
+CCU2_B          39 uses
+FD1P3DZ         113 uses
+FD1P3IZ         30 uses
+FD1P3JZ         23 uses
+INV             2 uses
 PLL_B           1 use
-SP256K          1 use
-VHI             4 uses
-VLO             4 uses
-LUT4            51 uses
+VHI             8 uses
+VLO             8 uses
+LUT4            359 uses
 
-I/O ports: 17
-I/O primitives: 17
-IB             2 uses
-OB             15 uses
+I/O ports: 26
+I/O primitives: 18
+IB             5 uses
+OB             11 uses
+OBZ_B          2 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   38 of 5280 (0%)
+Register bits not including I/Os:   166 of 5280 (3%)
 Total load per clock:
-   mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock: 39
+   mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock: 162
+   top|CAMERA_PCLOCK: 1
 
 @S |Mapping Summary:
-Total  LUTs: 51 (0%)
+Total  LUTs: 359 (6%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed LUTs 51 = 51 
+Distribution of All Consumed LUTs 359 = 359 
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 64MB peak: 195MB)
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 66MB peak: 209MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:01s cputime
-# Fri Apr  4 15:28:49 2025
+Process took 0h:00m:05s realtime, 0h:00m:03s cputime
+# Thu Apr 10 17:48:18 2025
 
 ###########################################################]

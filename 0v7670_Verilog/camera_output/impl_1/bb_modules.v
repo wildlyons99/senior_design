@@ -1,29 +1,4 @@
 `timescale 100 ps/100 ps
-module SP256K (
-  AD,
-  DI,
-  MASKWE,
-  WE,
-  CS,
-  CK,
-  STDBY,
-  SLEEP,
-  PWROFF_N,
-  DO
-)
-;
-input [13:0] AD ;
-input [15:0] DI ;
-input [3:0] MASKWE ;
-input WE ;
-input CS ;
-input CK ;
-input STDBY ;
-input SLEEP ;
-input PWROFF_N ;
-output [15:0] DO ;
-endmodule /* SP256K */
-
 module PLL_B (
   REFERENCECLK,
   FEEDBACK,

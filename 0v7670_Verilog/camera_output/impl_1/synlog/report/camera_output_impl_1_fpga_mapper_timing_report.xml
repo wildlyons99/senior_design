@@ -15,15 +15,21 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <data tcl_name="slack">Slack</data>
 </row>
 <row>
-<data>mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock</data>
+<data>mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock</data>
 <data>200.0 MHz</data>
-<data>119.0 MHz</data>
-<data>-3.401</data>
+<data>88.9 MHz</data>
+<data>-6.244</data>
+</row>
+<row>
+<data>top|CAMERA_PCLOCK</data>
+<data>200.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
 </row>
 <row>
 <data>System</data>
 <data>200.0 MHz</data>
-<data>249.9 MHz</data>
-<data>0.999</data>
+<data>110.6 MHz</data>
+<data>-4.040</data>
 </row>
 </report_table>

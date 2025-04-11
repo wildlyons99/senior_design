@@ -18,8 +18,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>../../impl_1/camera_output_impl_1.bin</File>
-			<FileTime>04/01/25 16:18:53</FileTime>
-			<JedecChecksum>0xA6FA</JedecChecksum>
+			<FileTime>04/10/25 15:30:29</FileTime>
+			<JedecChecksum>0x6B7C</JedecChecksum>
 			<MemoryType>External SPI Flash Memory (SPI FLASH)</MemoryType>
 			<Operation>Erase,Program,Verify</Operation>
 			<Option>
@@ -93,6 +93,7 @@
 		<OperationOverride>No Override</OperationOverride>
 		<StartTAP>TLR</StartTAP>
 		<EndTAP>TLR</EndTAP>
+		<DisableCheckBoard value="TRUE"/>
 		<VerifyUsercode value="FALSE"/>
 		<TCKDelay>1</TCKDelay>
 	</ProjectOptions>

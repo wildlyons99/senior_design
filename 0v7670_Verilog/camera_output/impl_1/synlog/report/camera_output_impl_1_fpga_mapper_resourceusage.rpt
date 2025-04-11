@@ -3,25 +3,28 @@ Resource Usage Report for top
 
 Mapping to part: ice40up5ksg48i-6
 Cell usage:
-CCU2_B          19 uses
-FD1P3DZ         38 uses
+CCU2_B          39 uses
+FD1P3DZ         113 uses
+FD1P3IZ         30 uses
+FD1P3JZ         23 uses
+INV             2 uses
 PLL_B           1 use
-SP256K          1 use
-VHI             4 uses
-VLO             4 uses
-LUT4            51 uses
+VHI             8 uses
+VLO             8 uses
+LUT4            359 uses
 
-I/O ports: 17
-I/O primitives: 17
-IB             2 uses
-OB             15 uses
+I/O ports: 26
+I/O primitives: 18
+IB             5 uses
+OB             11 uses
+OBZ_B          2 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   38 of 5280 (0%)
+Register bits not including I/Os:   166 of 5280 (3%)
 
 @S |Mapping Summary:
-Total  LUTs: 51 (0%)
+Total  LUTs: 359 (6%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed LUTs 51 = 51 
+Distribution of All Consumed LUTs 359 = 359 
 
