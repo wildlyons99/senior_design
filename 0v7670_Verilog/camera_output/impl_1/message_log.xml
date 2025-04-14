@@ -8,6 +8,39 @@
             <Dynamic>11</Dynamic>
         </Message>
     </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>71003005</ID>
+            <Severity>256</Severity>
+            <Dynamic>CAMERA_PCLOCK</Dynamic>
+            <Dynamic>11</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+    </Task>
     <Task name="Synthesis">
         <Message>
             <ID>35831026</ID>
@@ -177,9 +210,9 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/OV7670_config_rom.v(23): </Dynamic>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/chatGPT_register_config.v(23): </Dynamic>
             <Dynamic>OV7670_config_rom</Dynamic>
-            <Navigation>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/OV7670_config_rom.v</Navigation>
+            <Navigation>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/chatGPT_register_config.v</Navigation>
             <Navigation>23</Navigation>
         </Message>
         <Message>
@@ -665,9 +698,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>MT530 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config_rom.v&quot;:29:4:29:9|Found inferred clock mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock which controls 195 sequential elements including rom1.dout[15:0]. This clock has no specified timing constraint which may adversely impact design performance.</Dynamic>
+            <Dynamic>MT530 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\chatgpt_register_config.v&quot;:29:4:29:9|Found inferred clock mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock which controls 195 sequential elements including rom1.dout[15:0]. This clock has no specified timing constraint which may adversely impact design performance.</Dynamic>
             <Navigation>MT530</Navigation>
-            <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config_rom.v</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\chatgpt_register_config.v</Navigation>
             <Navigation>29</Navigation>
             <Navigation>4</Navigation>
             <Navigation>29</Navigation>
@@ -689,26 +722,26 @@
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>BN132 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\vga.v&quot;:10:4:10:9|Removing sequential instance vga_inst.row_rep[9:2] because it is equivalent to instance vga_inst.row[9:2]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\vga.v&quot;:10:4:10:9|Removing sequential instance vga_inst.row_rep[9:0] because it is equivalent to instance vga_inst.row[9:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\vga.v</Navigation>
             <Navigation>10</Navigation>
             <Navigation>4</Navigation>
             <Navigation>10</Navigation>
             <Navigation>9</Navigation>
-            <Navigation>Removing sequential instance vga_inst.row_rep[9:2] because it is equivalent to instance vga_inst.row[9:2]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>Removing sequential instance vga_inst.row_rep[9:0] because it is equivalent to instance vga_inst.row[9:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>FX553 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config_rom.v&quot;:30:4:30:7|Could not implement Block ROM for rom1.dout_2_0[15:0].</Dynamic>
-            <Navigation>FX553</Navigation>
-            <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config_rom.v</Navigation>
-            <Navigation>30</Navigation>
+            <Dynamic>BN132 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\vga.v&quot;:10:4:10:9|Removing sequential instance vga_inst.row_rep[9:0] because it is equivalent to instance vga_inst.row[9:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\vga.v</Navigation>
+            <Navigation>10</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>30</Navigation>
-            <Navigation>7</Navigation>
-            <Navigation>Could not implement Block ROM for rom1.dout_2_0[15:0].</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Removing sequential instance vga_inst.row_rep[9:0] because it is equivalent to instance vga_inst.row[9:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -789,39 +822,6 @@
             <ID>35811146</ID>
             <Severity>1</Severity>
             <Dynamic>un1_address_counter_cry_0_c_0.CIN</Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-    </Task>
-    <Task name="PAR">
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>71003005</ID>
-            <Severity>256</Severity>
-            <Dynamic>CAMERA_PCLOCK</Dynamic>
-            <Dynamic>11</Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
         </Message>
         <Message>
             <ID>70001944</ID>

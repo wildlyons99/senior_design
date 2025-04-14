@@ -1,4 +1,3 @@
-@E: CS187 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v":216:24:216:24|Expecting ;
-@E: CG429 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v":216:25:216:26|Found unsized single bit literal in Verilog-2001 mode.
+@E: CS219 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\chatGPT_register_config.v":62:0:62:2|Expecting one of the keywords module, primitive or macromodule
 @E::Verilog compiler failed
 

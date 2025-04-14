@@ -23,7 +23,7 @@ Running in Lattice mode
 Starting:    C:\lscc\radiant\2023.1\synpbase\bin64\mbin\synbatch.exe
 Install:     C:\lscc\radiant\2023.1\synpbase
 Hostname:    H109W18
-Date:        Sun Apr 13 23:42:09 2025
+Date:        Mon Apr 14 12:52:24 2025
 Version:     U-2023.03LR-1
 
 Arguments:   -product synplify_base -batch camera_output_impl_1_synplify.tcl
@@ -39,62 +39,32 @@ Running: impl_1 in foreground
 Running proj_1|impl_1
 
 Running Flow: compile (Compile) on proj_1|impl_1
-# Sun Apr 13 23:42:10 2025
+# Mon Apr 14 12:52:25 2025
 
 Running Flow: compile_flow (Compile Process) on proj_1|impl_1
-# Sun Apr 13 23:42:10 2025
+# Mon Apr 14 12:52:25 2025
 
 Running: compiler (Compile Input) on proj_1|impl_1
-# Sun Apr 13 23:42:10 2025
-Copied Z:\senior_design\0v7670_Verilog\camera_output\impl_1\synwork\camera_output_impl_1_comp.srs to Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1.srs
+# Mon Apr 14 12:52:25 2025
+compiler exited with errors
+Job failed on: proj_1|impl_1
 
-compiler completed
-# Sun Apr 13 23:42:15 2025
+Job: "compiler" terminated with error status: 2
+See log file: "Z:\senior_design\0v7670_Verilog\camera_output\impl_1\synlog\camera_output_impl_1_compiler.srr"
+# Mon Apr 14 12:52:26 2025
 
-Return Code: 0
-Run Time:00h:00m:04s
-
-Running: multi_srs_gen (Multi-srs Generator) on proj_1|impl_1
-# Sun Apr 13 23:42:15 2025
-
-multi_srs_gen completed
-# Sun Apr 13 23:42:15 2025
-
-Return Code: 0
-Run Time:00h:00m:00s
-Copied Z:\senior_design\0v7670_Verilog\camera_output\impl_1\synwork\camera_output_impl_1_mult.srs to Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1.srs
-Copied Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1.srr to Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1.srf
+Return Code: 2
+Run Time:00h:00m:01s
 Complete: Compile Process on proj_1|impl_1
-
-Running: premap (Premap) on proj_1|impl_1
-# Sun Apr 13 23:42:15 2025
-
-premap completed with warnings
-# Sun Apr 13 23:42:18 2025
-
-Return Code: 1
-Run Time:00h:00m:03s
 Complete: Compile on proj_1|impl_1
-
-Running Flow: map (Map) on proj_1|impl_1
-# Sun Apr 13 23:42:19 2025
-License granted for 4 parallel jobs
-
-Running: fpga_mapper (Map & Optimize) on proj_1|impl_1
-# Sun Apr 13 23:42:19 2025
-Copied Z:\senior_design\0v7670_Verilog\camera_output\impl_1\synwork\camera_output_impl_1_m.srm to Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1.srm
-
-fpga_mapper completed with warnings
-# Sun Apr 13 23:42:24 2025
-
-Return Code: 1
-Run Time:00h:00m:05s
-Complete: Map on proj_1|impl_1
-Copied Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1.srr to Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1.srf
 Complete: Logic Synthesis on proj_1|impl_1
+Copied Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1.srr to Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1.srf
+Error: At line 70 while processing "camera_output_impl_1_synplify.tcl"
+2
 TCL script complete: "camera_output_impl_1_synplify.tcl"
-exit status=0
-exit status=0
+TCL script had errors: "camera_output_impl_1_synplify.tcl"
+exit status=9
+exit status=9
 Save changes for project:
 Z:\senior_design\0v7670_Verilog\camera_output\impl_1\proj_1.prj
 batch mode default:no

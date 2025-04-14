@@ -3,46 +3,46 @@ Report for cell top
    Instance path: top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        623        100.0
-                               LUTGATE	        515        100.0
+                                  LUT4	        531        100.0
+                               LUTGATE	        423        100.0
                                 LUTCCU	        108        100.0
                                  IOBUF	         30        100.0
-                                PFUREG	        211        100.0
+                                PFUREG	        207        100.0
                                    DSP	          1        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-   OV7670_config_25000000s_0s_1s_2s_3s	          1        20.9
-                     OV7670_config_rom	          1        22.0
-              SCCB_interface_Z1_layer0	          1        24.6
-                           camera_read	          1        10.4
+   OV7670_config_25000000s_0s_1s_2s_3s	          1        26.7
+                     OV7670_config_rom	          1         7.9
+              SCCB_interface_Z1_layer0	          1        29.6
+                           camera_read	          1        10.0
                                  mypll	          1         0.0
-                                   vga	          1         6.7
+                                   vga	          1         7.9
 ---------------------------------------------------
 Report for cell OV7670_config_rom
    Instance path: top/rom1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        137        22.0
-                               LUTGATE	        137        26.6
-                                PFUREG	         16         7.6
+                                  LUT4	         42         7.9
+                               LUTGATE	         42         9.9
+                                PFUREG	         16         7.7
 ---------------------------------------------------
 Report for cell OV7670_config_25000000s_0s_1s_2s_3s
    Instance path: top/config_1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        130        20.9
-                               LUTGATE	        100        19.4
+                                  LUT4	        142        26.7
+                               LUTGATE	        112        26.5
                                 LUTCCU	         30        27.8
-                                PFUREG	         57        27.0
+                                PFUREG	         57        27.5
 ---------------------------------------------------
 Report for cell SCCB_interface_Z1_layer0
    Instance path: top/SCCB1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        153        24.6
-                               LUTGATE	        125        24.3
+                                  LUT4	        157        29.6
+                               LUTGATE	        129        30.5
                                 LUTCCU	         28        25.9
-                                PFUREG	         73        34.6
+                                PFUREG	         69        33.3
 ---------------------------------------------------
 Report for cell mypll
    Instance path: top/my_pll
@@ -61,15 +61,15 @@ Report for cell camera_read
    Instance path: top/reader
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         65        10.4
-                               LUTGATE	         65        12.6
-                                PFUREG	         12         5.7
+                                  LUT4	         53        10.0
+                               LUTGATE	         53        12.5
+                                PFUREG	         12         5.8
 ---------------------------------------------------
 Report for cell vga
    Instance path: top/vga_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         42         6.7
-                               LUTGATE	         22         4.3
+                                  LUT4	         42         7.9
+                               LUTGATE	         22         5.2
                                 LUTCCU	         20        18.5
-                                PFUREG	         20         9.5
+                                PFUREG	         20         9.7

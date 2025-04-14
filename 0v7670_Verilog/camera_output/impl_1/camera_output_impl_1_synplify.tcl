@@ -51,11 +51,11 @@ add_file -verilog -vlog_std v2001 {Z:/senior_design/0v7670_Verilog/camera_output
 add_file -verilog -vlog_std v2001 {Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/vga.v}
 add_file -verilog -vlog_std v2001 {Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/camera_read.v}
 add_file -verilog -vlog_std v2001 {Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/OV7670_config.v}
-add_file -verilog -vlog_std v2001 {Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/OV7670_config_rom.v}
 add_file -verilog -vlog_std v2001 {Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/SCCB_interface.v}
 add_file -verilog -vlog_std v2001 {Z:/senior_design/0v7670_Verilog/camera_output/mypll/rtl/mypll.v}
 add_file -verilog -vlog_std v2001 {Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/pattern_gen.v}
 add_file -verilog -vlog_std v2001 {Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/single_capture.v}
+add_file -verilog -vlog_std v2001 {Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/chatGPT_register_config.v}
 #-- top module name
 set_option -top_module top
 set_option -include_path {Z:/senior_design/0v7670_Verilog/camera_output}

@@ -142,7 +142,7 @@ module top
     // (Assuming that 'row' and 'col' are limited to the QVGA display region.)
     wire [13:0] vga_read_address;
 	wire [15:0] vga_read_address_raw;
-    assign vga_read_address_raw = ((row >> 2) * 160) + (col >> 2);
+    assign vga_read_address_raw = ((row >> 0) * 320) + (col >> 0);
 	
 	assign vga_read_address = (vga_read_address_raw < 16000) ? vga_read_address_raw : (14'd0); 
     
@@ -225,7 +225,7 @@ module top
                 //if (frame_done) begin
                     //fsm_state <= COMPLETE;
                 //end
-				if (address_counter[13]) begin
+				if (address_counter[14]) begin
 					fsm_state <= COMPLETE;
 				end 
             end

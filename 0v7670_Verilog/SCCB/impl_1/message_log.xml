@@ -1,5 +1,285 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[0]</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Export">
+        <Message>
+            <ID>1081100</ID>
+            <Severity>1</Severity>
+            <Dynamic>Bitstream authenticated.</Dynamic>
+        </Message>
+        <Message>
+            <ID>1191031</ID>
+            <Severity>1</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>data_in[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }]</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }]</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }]</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }]</Dynamic>
+        </Message>
+    </Task>
     <Task name="Synthesis">
         <Message>
             <ID>35831026</ID>
@@ -63,7 +343,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>Z:/senior_design/0v7670_Verilog/SCCB/mypll/rtl/mypll.v(11): </Dynamic>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/SCCB/mypll/rtl/mypll.v(11):</Dynamic>
             <Dynamic>mypll</Dynamic>
             <Navigation>Z:/senior_design/0v7670_Verilog/SCCB/mypll/rtl/mypll.v</Navigation>
             <Navigation>11</Navigation>
@@ -71,7 +351,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>Z:/senior_design/0v7670_Verilog/SCCB/mypll/rtl/mypll.v(105): </Dynamic>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/SCCB/mypll/rtl/mypll.v(105):</Dynamic>
             <Dynamic>mypll_ipgen_lscc_pll(DIVR=&quot;0&quot;,DIVF=&quot;66&quot;,DIVQ=&quot;5&quot;,FILTER_RANGE=&quot;1&quot;,PLLOUT_SELECT_PORTA=&quot;GENCLK&quot;,PLLOUT_SELECT_PORTB=&quot;GENCLK&quot;,FREQUENCY_PIN_REFERENCECLK=&quot;12.000000&quot;)</Dynamic>
             <Navigation>Z:/senior_design/0v7670_Verilog/SCCB/mypll/rtl/mypll.v</Navigation>
             <Navigation>105</Navigation>
@@ -79,7 +359,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(428): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(428):</Dynamic>
             <Dynamic>PLL_B(PLLOUT_SELECT_PORTA=&quot;GENCLK&quot;,PLLOUT_SELECT_PORTB=&quot;GENCLK&quot;,DIVF=&quot;66&quot;,DIVQ=&quot;5&quot;,FILTER_RANGE=&quot;1&quot;,FREQUENCY_PIN_REFERENCECLK=&quot;12.000000&quot;)</Dynamic>
             <Navigation>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v</Navigation>
             <Navigation>428</Navigation>
@@ -161,7 +441,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/camera_configure.v(23): </Dynamic>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/camera_configure.v(23):</Dynamic>
             <Dynamic>camera_configure</Dynamic>
             <Navigation>Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/camera_configure.v</Navigation>
             <Navigation>23</Navigation>
@@ -169,7 +449,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/OV7670_config_rom.v(23): </Dynamic>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/OV7670_config_rom.v(23):</Dynamic>
             <Dynamic>OV7670_config_rom</Dynamic>
             <Navigation>Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/OV7670_config_rom.v</Navigation>
             <Navigation>23</Navigation>
@@ -177,7 +457,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/OV7670_config.v(23): </Dynamic>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/OV7670_config.v(23):</Dynamic>
             <Dynamic>OV7670_config</Dynamic>
             <Navigation>Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/OV7670_config.v</Navigation>
             <Navigation>23</Navigation>
@@ -185,7 +465,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/SCCB_interface.v(23): </Dynamic>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/SCCB_interface.v(23):</Dynamic>
             <Dynamic>SCCB_interface</Dynamic>
             <Navigation>Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/SCCB_interface.v</Navigation>
             <Navigation>23</Navigation>
@@ -193,7 +473,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>mypll.v(63): </Dynamic>
+            <Dynamic>mypll.v(63):</Dynamic>
             <Dynamic>mypll</Dynamic>
             <Navigation>mypll.v</Navigation>
             <Navigation>63</Navigation>
@@ -201,7 +481,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/camera_read.v(21): </Dynamic>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/camera_read.v(21):</Dynamic>
             <Dynamic>camera_read</Dynamic>
             <Navigation>Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/camera_read.v</Navigation>
             <Navigation>21</Navigation>
@@ -268,7 +548,7 @@
         <Message>
             <ID>35921014</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd(4): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd(4):</Dynamic>
             <Dynamic>components</Dynamic>
             <Navigation>c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd</Navigation>
             <Navigation>4</Navigation>
@@ -276,7 +556,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/camera_configure.v(23): </Dynamic>
+            <Dynamic>z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/camera_configure.v(23):</Dynamic>
             <Dynamic>camera_configure</Dynamic>
             <Navigation>z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/camera_configure.v</Navigation>
             <Navigation>23</Navigation>
@@ -284,7 +564,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/ov7670_config_rom.v(23): </Dynamic>
+            <Dynamic>z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/ov7670_config_rom.v(23):</Dynamic>
             <Dynamic>OV7670_config_rom</Dynamic>
             <Navigation>z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/ov7670_config_rom.v</Navigation>
             <Navigation>23</Navigation>
@@ -292,7 +572,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/ov7670_config.v(23): </Dynamic>
+            <Dynamic>z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/ov7670_config.v(23):</Dynamic>
             <Dynamic>OV7670_config</Dynamic>
             <Navigation>z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/ov7670_config.v</Navigation>
             <Navigation>23</Navigation>
@@ -300,7 +580,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/sccb_interface.v(23): </Dynamic>
+            <Dynamic>z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/sccb_interface.v(23):</Dynamic>
             <Dynamic>SCCB_interface</Dynamic>
             <Navigation>z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/sccb_interface.v</Navigation>
             <Navigation>23</Navigation>
@@ -308,7 +588,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/senior_design/0v7670_verilog/sccb/mypll/rtl/mypll.v(11): </Dynamic>
+            <Dynamic>z:/senior_design/0v7670_verilog/sccb/mypll/rtl/mypll.v(11):</Dynamic>
             <Dynamic>mypll</Dynamic>
             <Navigation>z:/senior_design/0v7670_verilog/sccb/mypll/rtl/mypll.v</Navigation>
             <Navigation>11</Navigation>
@@ -316,7 +596,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/senior_design/0v7670_verilog/sccb/mypll/rtl/mypll.v(105): </Dynamic>
+            <Dynamic>z:/senior_design/0v7670_verilog/sccb/mypll/rtl/mypll.v(105):</Dynamic>
             <Dynamic>mypll_ipgen_lscc_pll(DIVR=&quot;0&quot;,DIVF=&quot;66&quot;,DIVQ=&quot;5&quot;,FILTER_RANGE=&quot;1&quot;,PLLOUT_SELECT_PORTA=&quot;GENCLK&quot;,PLLOUT_SELECT_PORTB=&quot;GENCLK&quot;,FREQUENCY_PIN_REFERENCECLK=&quot;12.000000&quot;)</Dynamic>
             <Navigation>z:/senior_design/0v7670_verilog/sccb/mypll/rtl/mypll.v</Navigation>
             <Navigation>105</Navigation>
@@ -324,7 +604,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(428): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(428):</Dynamic>
             <Dynamic>PLL_B(PLLOUT_SELECT_PORTA=&quot;GENCLK&quot;,PLLOUT_SELECT_PORTB=&quot;GENCLK&quot;,DIVF=&quot;66&quot;,DIVQ=&quot;5&quot;,FILTER_RANGE=&quot;1&quot;,FREQUENCY_PIN_REFERENCECLK=&quot;12.000000&quot;)</Dynamic>
             <Navigation>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v</Navigation>
             <Navigation>428</Navigation>
@@ -342,7 +622,7 @@
         <Message>
             <ID>35901330</ID>
             <Severity>16</Severity>
-            <Dynamic>z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/camera_configure.v(85): </Dynamic>
+            <Dynamic>z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/camera_configure.v(85):</Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>1</Dynamic>
             <Dynamic>rst_n_i</Dynamic>
@@ -352,7 +632,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/camera_read.v(21): </Dynamic>
+            <Dynamic>z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/camera_read.v(21):</Dynamic>
             <Dynamic>camera_read</Dynamic>
             <Navigation>z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/camera_read.v</Navigation>
             <Navigation>21</Navigation>
@@ -458,287 +738,7 @@
         <Message>
             <ID>70001944</ID>
             <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-    </Task>
-    <Task name="Export">
-        <Message>
-            <ID>1081100</ID>
-            <Severity>1</Severity>
-            <Dynamic>Bitstream authenticated.</Dynamic>
-        </Message>
-        <Message>
-            <ID>1191031</ID>
-            <Severity>1</Severity>
-        </Message>
-    </Task>
-    <Task name="Map">
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[7]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[7]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[0]</Dynamic>
-        </Message>
-    </Task>
-    <Task name="PAR">
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[7]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[7]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[7]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[7]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>data_in[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+            <Dynamic>create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }]</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

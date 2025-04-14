@@ -71,7 +71,7 @@
 @N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v":155:11:155:22|Read directive translate_on.
 @N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v":87:11:87:23|Read directive translate_off.
 @N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v":95:11:95:22|Read directive translate_on.
-@N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config_rom.v":23:7:23:23|Synthesizing module OV7670_config_rom in library work.
+@N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\chatGPT_register_config.v":23:7:23:23|Synthesizing module OV7670_config_rom in library work.
 @N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v":23:7:23:19|Synthesizing module OV7670_config in library work.
 @N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":23:7:23:20|Synthesizing module SCCB_interface in library work.
 @N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\generic\ice40up.v":438:7:438:11|Synthesizing module PLL_B in library work.
