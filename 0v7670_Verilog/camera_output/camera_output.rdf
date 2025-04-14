@@ -2,15 +2,15 @@
 <RadiantProject version="4.2" radiant="2023.1.0.43.3" title="camera_output" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" default_implementation="impl_1">
     <Options/>
     <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="synplify" default_strategy="Strategy1">
-        <Options def_top="pattern_gen" top="top"/>
+        <Options def_top="top" top="top"/>
         <Source name="source/impl_1/my_pll.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="source/impl_1/vga.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="source/impl_1/camera_configure.v" type="Verilog" type_short="Verilog">
-            <Options top_module="top"/>
+        <Source name="source/impl_1/camera_configure.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
         </Source>
         <Source name="source/impl_1/camera_read.v" type="Verilog" type_short="Verilog">
             <Options/>
@@ -35,6 +35,9 @@
         </Source>
         <Source name="source/impl_1/seven_seg.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
+        </Source>
+        <Source name="source/impl_1/single_capture.v" type="Verilog" type_short="Verilog">
+            <Options top_module="top"/>
         </Source>
         <Source name="pins.pdc" type="Physical Constraints File" type_short="PDC">
             <Options/>

@@ -80,16 +80,8 @@
 @N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_read.v":21:7:21:17|Synthesizing module camera_read in library work.
 @N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\vga.v":1:7:1:9|Synthesizing module vga in library work.
 @N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\generic\ice40up.v":753:7:753:12|Synthesizing module SP256K in library work.
-@N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":4:7:4:9|Synthesizing module top in library work.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[8] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[9] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[10] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[11] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[12] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[13] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[14] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[15] is always 0.
-@N: CL201 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Trying to extract state machine for register STATE.
+@N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v":3:7:3:9|Synthesizing module top in library work.
+@N: CL201 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v":171:4:171:9|Trying to extract state machine for register fsm_state.
 @N: CL201 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|Trying to extract state machine for register FSM_state.
 @N: CL159 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":130:10:130:19|Input feedback_i is unused.
 @N: CL159 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":131:37:131:51|Input dynamic_delay_i is unused.

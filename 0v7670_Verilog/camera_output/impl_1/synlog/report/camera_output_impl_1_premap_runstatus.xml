@@ -13,7 +13,7 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>6</data>
+<data>8</data>
 <report_link name="more">
 <data>Z:\senior_design\0v7670_Verilog\camera_output\impl_1\synlog\report\camera_output_impl_1_premap_notes.txt</data>
 </report_link>
@@ -37,10 +37,10 @@ The file contains the job information from mapper to be displayed as part of the
 <data>0h:00m:02s</data>
 </info>
 <info name="Peak Memory">
-<data>193MB</data>
+<data>194MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1744405159</data>
+<data type="timestamp">1744602646</data>
 </info>
 </job_info>
 </job_run_status>

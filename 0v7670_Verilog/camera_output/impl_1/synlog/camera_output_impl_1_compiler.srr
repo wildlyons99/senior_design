@@ -40,7 +40,7 @@ At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memor
 
 
 Process completed successfully.
-# Fri Apr 11 16:59:12 2025
+# Sun Apr 13 23:50:38 2025
 
 ###########################################################]
 ###########################################################[
@@ -132,20 +132,20 @@ Synopsys Verilog Compiler, Version comp202303synp1, Build 100R, Built May 29 202
 @I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_dsp.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\my_pll.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\vga.v" (library work)
-@I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_read.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config_rom.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\pattern_gen.v" (library work)
+@I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v" (library work)
 Verilog syntax check successful!
 
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
 
 
 Process completed successfully.
-# Fri Apr 11 16:59:12 2025
+# Sun Apr 13 23:50:38 2025
 
 ###########################################################]
 ###########################################################[
@@ -221,15 +221,15 @@ Process completed successfully.
 @I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_dsp.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\my_pll.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\vga.v" (library work)
-@I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_read.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config_rom.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v" (library work)
 @I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\pattern_gen.v" (library work)
+@I::"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v" (library work)
 Verilog syntax check successful!
-File Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v changed - recompiling
+File Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v changed - recompiling
 @N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config_rom.v":23:7:23:23|Synthesizing module OV7670_config_rom in library work.
 Running optimization stage 1 on OV7670_config_rom .......
 Finished optimization stage 1 on OV7670_config_rom (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 114MB)
@@ -265,10 +265,10 @@ Finished optimization stage 1 on OV7670_config_25000000s_0s_1s_2s_3s (CPU Time 0
    Generated name = SCCB_interface_Z1_layer0
 @W: CG532 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":54:4:54:10|Within an initial block, only Verilog force statements and memory initialization statements and initialization of entire variable are recognized, and all other content is ignored. Simulation mismatch may occur
 Running optimization stage 1 on SCCB_interface_Z1_layer0 .......
-Finished optimization stage 1 on SCCB_interface_Z1_layer0 (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 114MB)
+Finished optimization stage 1 on SCCB_interface_Z1_layer0 (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 115MB)
 @N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\generic\ice40up.v":438:7:438:11|Synthesizing module PLL_B in library work.
 Running optimization stage 1 on PLL_B .......
-Finished optimization stage 1 on PLL_B (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 114MB)
+Finished optimization stage 1 on PLL_B (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 115MB)
 @N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":105:7:105:26|Synthesizing module mypll_ipgen_lscc_pll in library work.
 
 	DIVR=8'b00110000
@@ -305,40 +305,30 @@ Finished optimization stage 1 on vga (CPU Time 0h:00m:00s, Memory Used current: 
 @N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\generic\ice40up.v":753:7:753:12|Synthesizing module SP256K in library work.
 Running optimization stage 1 on SP256K .......
 Finished optimization stage 1 on SP256K (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 115MB)
-@N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":4:7:4:9|Synthesizing module top in library work.
-@W: CG133 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":23:12:23:15|Object TEST is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":41:6:41:13|Removing wire fast_clk, as there is no assignment to it.
-@W: CG133 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":55:8:55:17|Object start_prev is declared but not assigned. Either assign a value or remove the declaration.
+@N: CG364 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v":3:7:3:9|Synthesizing module top in library work.
+@W: CG360 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v":30:15:30:18|Removing wire TEST, as there is no assignment to it.
 Running optimization stage 1 on top .......
-Finished optimization stage 1 on top (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 115MB)
+@W: CL318 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v":30:15:30:18|*Output TEST has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+Finished optimization stage 1 on top (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
 Running optimization stage 2 on top .......
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[8] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[9] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[10] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[11] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[12] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[13] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[14] is always 0.
-@N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Register bit spram_data_in[15] is always 0.
-@W: CL279 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Pruning register bits 15 to 8 of spram_data_in[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL201 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":182:1:182:6|Trying to extract state machine for register STATE.
-@A: CL153 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v":23:12:23:15|*Unassigned bits of TEST are referenced and tied to 0 -- simulation mismatch possible.
-Finished optimization stage 2 on top (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+@N: CL201 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v":171:4:171:9|Trying to extract state machine for register fsm_state.
+@W: CL279 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v":171:4:171:9|Pruning register bits 15 to 9 of spram_data_in[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Finished optimization stage 2 on top (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 116MB)
 Running optimization stage 2 on SP256K .......
-Finished optimization stage 2 on SP256K (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+Finished optimization stage 2 on SP256K (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 116MB)
 Running optimization stage 2 on vga .......
-Finished optimization stage 2 on vga (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+Finished optimization stage 2 on vga (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 116MB)
 Running optimization stage 2 on camera_read .......
 @N: CL201 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|Trying to extract state machine for register FSM_state.
-Finished optimization stage 2 on camera_read (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+Finished optimization stage 2 on camera_read (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 116MB)
 Running optimization stage 2 on mypll .......
-Finished optimization stage 2 on mypll (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+Finished optimization stage 2 on mypll (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 116MB)
 Running optimization stage 2 on mypll_ipgen_lscc_pll_Z2_layer0 .......
 @N: CL159 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":130:10:130:19|Input feedback_i is unused.
 @N: CL159 :"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v":131:37:131:51|Input dynamic_delay_i is unused.
-Finished optimization stage 2 on mypll_ipgen_lscc_pll_Z2_layer0 (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+Finished optimization stage 2 on mypll_ipgen_lscc_pll_Z2_layer0 (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 116MB)
 Running optimization stage 2 on PLL_B .......
-Finished optimization stage 2 on PLL_B (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+Finished optimization stage 2 on PLL_B (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 116MB)
 Running optimization stage 2 on SCCB_interface_Z1_layer0 .......
 @N: CL189 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Register bit timer[31] is always 0.
 @W: CL260 :"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v":70:4:70:9|Pruning register bit 31 of timer[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
@@ -371,11 +361,11 @@ For a summary of runtime per design unit, please see file:
 
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 116MB peak: 116MB)
+At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 116MB peak: 116MB)
 
 
 Process completed successfully.
-# Fri Apr 11 16:59:15 2025
+# Sun Apr 13 23:50:41 2025
 
 ###########################################################]
 ###########################################################[
@@ -401,7 +391,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Apr 11 16:59:15 2025
+# Sun Apr 13 23:50:42 2025
 
 ###########################################################]
 
@@ -411,11 +401,11 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 23MB peak: 24MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 23MB peak: 24MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:02s cputime
+Process took 0h:00m:04s realtime, 0h:00m:02s cputime
 
 Process completed successfully.
-# Fri Apr 11 16:59:15 2025
+# Sun Apr 13 23:50:42 2025
 
 ###########################################################]

@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2023.1.0.43.3
 
-Fri Apr 11 17:02:35 2025
+Sun Apr 13 23:51:09 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -49,7 +49,7 @@ Package Status:                     Preliminary    Version 1.5
 
 1.1  SDC Constraints
 =====================
-[IGNORED:]create_generated_clock -name {clk_25MHz} -source [get_pins my_pll.lscc_pll_inst.u_PLL_B/REFERENCECLK] -divide_by 32 -multiply_by 67 [get_pins my_pll.lscc_pll_inst.u_PLL_B/OUTCORE]
+[IGNORED:]create_generated_clock -name {clk_25MHz_c} -source [get_pins my_pll.lscc_pll_inst.u_PLL_B/REFERENCECLK] -divide_by 32 -multiply_by 67 [get_pins my_pll.lscc_pll_inst.u_PLL_B/OUTCORE]
 
 1.2  Constraint Coverage
 ---------------------------
@@ -78,20 +78,20 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
 config_1/timer_Z[28].ff_inst/D          |    No arrival or required
 config_1/timer_Z[28].ff_inst/SR         |    No arrival or required
-vga_inst/row_Z[8].ff_inst/D             |    No arrival or required
-vga_inst/row_Z[8].ff_inst/SP            |    No arrival or required
-vga_inst/row_Z[7].ff_inst/D             |    No arrival or required
-vga_inst/row_Z[6].ff_inst/D             |    No arrival or required
-{vga_inst/row_Z[6].ff_inst/SP   vga_inst/row_Z[7].ff_inst/SP}                           
+vga_inst/row_e_0[8].ff_inst/D           |    No arrival or required
+vga_inst/row_e_0[8].ff_inst/SP          |    No arrival or required
+vga_inst/row_e_0[7].ff_inst/D           |    No arrival or required
+vga_inst/row_e_0[6].ff_inst/D           |    No arrival or required
+{vga_inst/row_e_0[6].ff_inst/SP   vga_inst/row_e_0[7].ff_inst/SP}                           
                                         |    No arrival or required
-vga_inst/row_Z[5].ff_inst/D             |    No arrival or required
-vga_inst/row_Z[4].ff_inst/D             |    No arrival or required
-{vga_inst/row_Z[4].ff_inst/SP   vga_inst/row_Z[5].ff_inst/SP}                           
+vga_inst/row_e_0[5].ff_inst/D           |    No arrival or required
+vga_inst/row_e_0[4].ff_inst/D           |    No arrival or required
+{vga_inst/row_e_0[4].ff_inst/SP   vga_inst/row_e_0[5].ff_inst/SP}                           
                                         |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
-ts                                      |                       330
+ts                                      |                       318
                                         |                          
 -------------------------------------------------------------------
 
@@ -123,7 +123,7 @@ CAMERA_DATA_IN[4]                       |                     input
 CAMERA_DATA_IN[5]                       |                     input
 -------------------------------------------------------------------
                                         |                          
-Number of I/O ports without constraint  |                        21
+Number of I/O ports without constraint  |                        28
                                         |                          
 -------------------------------------------------------------------
 
@@ -149,7 +149,7 @@ None
 1.6  Error/Warning Messages
 ============================
 WARNING "70001944" - No master clock for
-	generated clock	create_generated_clock -name {clk_25MHz} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
+	generated clock	create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
 
 ===============================================================
 2  Setup at Speed Grade High-Performance_1.2V Corner at 100 Degrees
@@ -158,15 +158,15 @@ WARNING "70001944" - No master clock for
 2.1  Clock Summary
 =======================
 
-2.1.1 Clock "clk_25MHz"
+2.1.1 Clock "clk_25MHz_c"
 =======================
-create_generated_clock -name {clk_25MHz} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] 
+create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] 
 
 Single Clock Domain
 -------------------------------------------------------------------------------------------------------
-            Clock clk_25MHz             |                    |       Period       |     Frequency      
+           Clock clk_25MHz_c            |                    |       Period       |     Frequency      
 -------------------------------------------------------------------------------------------------------
- From clk_25MHz                         |             Target |               +INF |          0.000 MHz 
+ From clk_25MHz_c                       |             Target |               +INF |          0.000 MHz 
                                         | Actual (all paths) |           0.416 ns |       2403.846 MHz 
 SPRAM1.vfb_b_inst/CLOCK (MPW)           |   (50% duty cycle) |           0.416 ns |       2403.846 MHz 
 -------------------------------------------------------------------------------------------------------

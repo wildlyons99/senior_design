@@ -11,13 +11,13 @@ Click here to go to specific block report:
 SEQUENTIAL ELEMENTS
 Name            Total elements     Utilization     Notes
 --------------------------------------------------------
-FD1P3DZ         125                                     
-FD1P3IZ         59                                      
-FD1P3JZ         31                                      
+FD1P3DZ         141                                     
+FD1P3IZ         47                                      
+FD1P3JZ         23                                      
                                                         
-Total FLOPS     215                100 %                
+Total FLOPS     211                100 %                
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block top:	215 (31.48 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block top:	211 (26.78 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 
@@ -25,13 +25,24 @@ COMBINATIONAL LOGIC
 Name                   Total elements     Utilization     Notes
 ---------------------------------------------------------------
 INV                    2                                       
-LUT4                   374                                     
-CCU2_B                 47                                      
+LUT4                   472                                     
+CCU2_B                 54                                      
                                                                
-Total LUTS             376                100 %                
-Total CARRY CHAINS     47                 100 %                
+Total LUTS             474                100 %                
+Total CARRY CHAINS     54                 100 %                
 ===============================================================
-Total COMBINATIONAL LOGIC in the block top:	423 (61.93 % Utilization)
+Total COMBINATIONAL LOGIC in the block top:	528 (67.01 % Utilization)
+
+<a href="#TopSummary"><h5 align="right">Top</h5></a>
+
+DSP
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+MAC16         1                                       
+                                                      
+Total DSP     1                  100 %                
+======================================================
+Total DSP in the block top:	1 (0.13 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 
@@ -39,12 +50,12 @@ IO PADS
 Name         Total elements     Utilization     Notes
 -----------------------------------------------------
 IB           13                                      
-OBZ_B        2                                       
-OB           12                                      
+OBZ_B        3                                       
+OB           14                                      
                                                      
-TOTAL IO     27                 100 %                
+TOTAL IO     30                 100 %                
 =====================================================
-Total IO PADS in the block top:	27 (3.95 % Utilization)
+Total IO PADS in the block top:	30 (3.81 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 
@@ -58,7 +69,7 @@ PLL_B               1
                                                             
 Total BLACK BOX     18                 100 %                
 ============================================================
-Total BLACKBOX in the block top:	18 (2.64 % Utilization)
+Total BLACKBOX in the block top:	18 (2.28 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 <a name=config_1>
@@ -74,22 +85,22 @@ FD1P3DZ         20
 FD1P3IZ         30                                      
 FD1P3JZ         7                                       
                                                         
-Total FLOPS     57                 26.5 %               
+Total FLOPS     57                 27 %                 
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block config_1:	57 (8.35 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block config_1:	57 (7.23 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 
 COMBINATIONAL LOGIC
 Name                   Total elements     Utilization     Notes
 ---------------------------------------------------------------
-LUT4                   103                                     
+LUT4                   104                                     
 CCU2_B                 15                                      
                                                                
-Total LUTS             103                27.4 %               
-Total CARRY CHAINS     15                 31.9 %               
+Total LUTS             104                21.9 %               
+Total CARRY CHAINS     15                 27.8 %               
 ===============================================================
-Total COMBINATIONAL LOGIC in the block config_1:	118 (17.28 % Utilization)
+Total COMBINATIONAL LOGIC in the block config_1:	119 (15.10 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 
@@ -101,7 +112,7 @@ VHI                 1
                                                             
 Total BLACK BOX     2                  11.1 %               
 ============================================================
-Total BLACKBOX in the block config_1:	2 (0.29 % Utilization)
+Total BLACKBOX in the block config_1:	2 (0.25 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 <a name=rom1>
@@ -115,20 +126,20 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3JZ         16                                      
                                                         
-Total FLOPS     16                 7.44 %               
+Total FLOPS     16                 7.58 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block rom1:	16 (2.34 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block rom1:	16 (2.03 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 
 COMBINATIONAL LOGIC
 Name           Total elements     Utilization     Notes
 -------------------------------------------------------
-LUT4           134                                     
+LUT4           137                                     
                                                        
-Total LUTS     134                35.6 %               
+Total LUTS     137                28.9 %               
 =======================================================
-Total COMBINATIONAL LOGIC in the block rom1:	134 (19.62 % Utilization)
+Total COMBINATIONAL LOGIC in the block rom1:	137 (17.39 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 
@@ -140,7 +151,7 @@ VHI                 1
                                                             
 Total BLACK BOX     2                  11.1 %               
 ============================================================
-Total BLACKBOX in the block rom1:	2 (0.29 % Utilization)
+Total BLACKBOX in the block rom1:	2 (0.25 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 <a name=SCCB1>
@@ -152,24 +163,25 @@ Instance path:   SCCB1
 SEQUENTIAL ELEMENTS
 Name            Total elements     Utilization     Notes
 --------------------------------------------------------
-FD1P3DZ         69                                      
+FD1P3DZ         72                                      
+FD1P3IZ         1                                       
                                                         
-Total FLOPS     69                 32.1 %               
+Total FLOPS     73                 34.6 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block SCCB1:	69 (10.10 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block SCCB1:	73 (9.26 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 
 COMBINATIONAL LOGIC
 Name                   Total elements     Utilization     Notes
 ---------------------------------------------------------------
-LUT4                   104                                     
+LUT4                   129                                     
 CCU2_B                 14                                      
                                                                
-Total LUTS             104                27.7 %               
-Total CARRY CHAINS     14                 29.8 %               
+Total LUTS             129                27.2 %               
+Total CARRY CHAINS     14                 25.9 %               
 ===============================================================
-Total COMBINATIONAL LOGIC in the block SCCB1:	118 (17.28 % Utilization)
+Total COMBINATIONAL LOGIC in the block SCCB1:	143 (18.15 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 
@@ -181,7 +193,7 @@ VHI                 1
                                                             
 Total BLACK BOX     2                  11.1 %               
 ============================================================
-Total BLACKBOX in the block SCCB1:	2 (0.29 % Utilization)
+Total BLACKBOX in the block SCCB1:	2 (0.25 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 <a name=reader>
@@ -195,20 +207,20 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DZ         12                                      
                                                         
-Total FLOPS     12                 5.58 %               
+Total FLOPS     12                 5.69 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block reader:	12 (1.76 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block reader:	12 (1.52 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 
 COMBINATIONAL LOGIC
 Name           Total elements     Utilization     Notes
 -------------------------------------------------------
-LUT4           7                                       
+LUT4           66                                      
                                                        
-Total LUTS     7                  1.86 %               
+Total LUTS     66                 13.9 %               
 =======================================================
-Total COMBINATIONAL LOGIC in the block reader:	7 (1.02 % Utilization)
+Total COMBINATIONAL LOGIC in the block reader:	66 (8.38 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 
@@ -220,7 +232,7 @@ VHI                 1
                                                             
 Total BLACK BOX     2                  11.1 %               
 ============================================================
-Total BLACKBOX in the block reader:	2 (0.29 % Utilization)
+Total BLACKBOX in the block reader:	2 (0.25 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 <a name=my_pll>
@@ -238,7 +250,7 @@ PLL_B               1
                                                             
 Total BLACK BOX     5                  27.8 %               
 ============================================================
-Total BLACKBOX in the block my_pll:	5 (0.73 % Utilization)
+Total BLACKBOX in the block my_pll:	5 (0.63 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 <a name=my_pll.lscc_pll_inst>
@@ -257,7 +269,7 @@ VHI                 1
                                                             
 Total BLACK BOX     3                  16.7 %               
 ============================================================
-Total BLACKBOX in the block my_pll.lscc_pll_inst:	3 (0.44 % Utilization)
+Total BLACKBOX in the block my_pll.lscc_pll_inst:	3 (0.38 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 <a name=vga_inst>
@@ -271,22 +283,22 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DZ         20                                      
                                                         
-Total FLOPS     20                 9.3 %                
+Total FLOPS     20                 9.48 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block vga_inst:	20 (2.93 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block vga_inst:	20 (2.54 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 
 COMBINATIONAL LOGIC
 Name                   Total elements     Utilization     Notes
 ---------------------------------------------------------------
-LUT4                   19                                      
+LUT4                   23                                      
 CCU2_B                 10                                      
                                                                
-Total LUTS             19                 5.05 %               
-Total CARRY CHAINS     10                 21.3 %               
+Total LUTS             23                 4.85 %               
+Total CARRY CHAINS     10                 18.5 %               
 ===============================================================
-Total COMBINATIONAL LOGIC in the block vga_inst:	29 (4.25 % Utilization)
+Total COMBINATIONAL LOGIC in the block vga_inst:	33 (4.19 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 
@@ -298,7 +310,7 @@ VHI                 1
                                                             
 Total BLACK BOX     2                  11.1 %               
 ============================================================
-Total BLACKBOX in the block vga_inst:	2 (0.29 % Utilization)
+Total BLACKBOX in the block vga_inst:	2 (0.25 % Utilization)
 
 <a href="#TopSummary"><h5 align="right">Top</h5></a>
 

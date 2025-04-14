@@ -41,13 +41,13 @@
 #CUR:"C:\\lscc\\radiant\\2023.1\\ip\\pmi\\pmi_dsp.v":1536293095
 #CUR:"Z:\\senior_design\\0v7670_Verilog\\camera_output\\source\\impl_1\\my_pll.v":1743537417
 #CUR:"Z:\\senior_design\\0v7670_Verilog\\camera_output\\source\\impl_1\\vga.v":1743537389
-#CUR:"Z:\\senior_design\\0v7670_Verilog\\camera_output\\source\\impl_1\\camera_configure.v":1744405124
 #CUR:"Z:\\senior_design\\0v7670_Verilog\\camera_output\\source\\impl_1\\camera_read.v":1744386676
 #CUR:"Z:\\senior_design\\0v7670_Verilog\\camera_output\\source\\impl_1\\OV7670_config.v":1744319373
 #CUR:"Z:\\senior_design\\0v7670_Verilog\\camera_output\\source\\impl_1\\OV7670_config_rom.v":1743535033
 #CUR:"Z:\\senior_design\\0v7670_Verilog\\camera_output\\source\\impl_1\\SCCB_interface.v":1740342250
 #CUR:"Z:\\senior_design\\0v7670_Verilog\\camera_output\\mypll\\rtl\\mypll.v":1743536373
 #CUR:"Z:\\senior_design\\0v7670_Verilog\\camera_output\\source\\impl_1\\pattern_gen.v":1743537497
+#CUR:"Z:\\senior_design\\0v7670_Verilog\\camera_output\\source\\impl_1\\single_capture.v":1744602630
 #numinternalfiles:4
 #defaultlanguage:verilog
 0			"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v" verilog
@@ -84,13 +84,13 @@
 31		*	"C:\lscc\radiant\2023.1\ip\pmi\pmi_dsp.v" verilog
 32			"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\my_pll.v" verilog
 33			"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\vga.v" verilog
-34			"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_configure.v" verilog
-35			"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_read.v" verilog
-36			"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v" verilog
-37			"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config_rom.v" verilog
-38			"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v" verilog
-39			"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v" verilog
-40			"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\pattern_gen.v" verilog
+34			"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\camera_read.v" verilog
+35			"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v" verilog
+36			"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config_rom.v" verilog
+37			"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v" verilog
+38			"Z:\senior_design\0v7670_Verilog\camera_output\mypll\rtl\mypll.v" verilog
+39			"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\pattern_gen.v" verilog
+40			"Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v" verilog
 #Dependency Lists(Uses List)
 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
 1 0 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
@@ -126,13 +126,13 @@
 31 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
 32 -1
 33 -1
-34 37 36 38 39 35 33
+34 -1
 35 -1
 36 -1
 37 -1
 38 -1
 39 -1
-40 -1
+40 36 35 37 38 34 33
 #Dependency Lists(Users Of)
 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
 1 0 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
@@ -167,13 +167,13 @@
 30 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 31
 31 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
 32 -1
-33 34
-34 -1
-35 34
-36 34
-37 34
-38 34
-39 34
+33 40
+34 40
+35 40
+36 40
+37 40
+38 40
+39 -1
 40 -1
 #Design Unit to File Association
 module work lscc_add_sub 2
@@ -232,14 +232,14 @@ module work pmi_ram_dq_be 30
 module work pmi_dsp 31
 module work my_pll 32
 module work vga 33
-module work top 34
-module work OV7670_config_rom 37
-module work OV7670_config 36
-module work SCCB_interface 38
-module work mypll 39
-module work camera_read 35
-module work mypll_ipgen_lscc_pll 39
-module work pattern_gen 40
+module work camera_read 34
+module work OV7670_config 35
+module work OV7670_config_rom 36
+module work SCCB_interface 37
+module work mypll 38
+module work mypll_ipgen_lscc_pll 38
+module work pattern_gen 39
+module work top 40
 #Unbound instances to file Association.
 inst work my_pll SB_PLL40_CORE 32
 inst work my_pll SB_PLL40_CORE 32
