@@ -1,0 +1,16 @@
+<RadiantSimulationProject language="1" simType="ModelSim" stage="0" version="2.0" name="simulator" path=".">
+    <Source langstandard="Verilog 2001" type="VERILOG" path="source/impl_1/my_pll.v" worklib="work" include="none"/>
+    <Source langstandard="Verilog 2001" type="VERILOG" path="source/impl_1/vga.v" worklib="work" include="none"/>
+    <Source langstandard="Verilog 2001" type="VERILOG" path="source/impl_1/camera_read.v" worklib="work" include="none"/>
+    <Source langstandard="Verilog 2001" type="VERILOG" path="source/impl_1/OV7670_config.v" worklib="work" include="none"/>
+    <Source langstandard="Verilog 2001" type="VERILOG" path="source/impl_1/OV7670_config_rom.v" worklib="work" include="none"/>
+    <Source langstandard="Verilog 2001" type="VERILOG" path="source/impl_1/SCCB_interface.v" worklib="work" include="none"/>
+    <Source langstandard="" type="VERILOG" path="mypll/rtl/mypll.v" worklib="work" include="none"/>
+    <Source langstandard="Verilog 2001" type="VERILOG" path="source/impl_1/pattern_gen.v" worklib="work" include="none"/>
+    <Source langstandard="Verilog 2001" type="VERILOG" path="source/impl_1/single_capture.v" worklib="work" include="none"/>
+    <SimLib value="pmi_work ovi_ice40up"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <Udo value=""/>
+    <TopModule instance="" language="VERILOG" name="top"/>
+</RadiantSimulationProject>

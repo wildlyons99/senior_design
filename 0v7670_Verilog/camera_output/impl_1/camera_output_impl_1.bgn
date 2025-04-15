@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Apr 14 13:00:03 2025
+Mon Apr 14 23:47:56 2025
 
 
 Command: bitgen -w -freq 0 -gui camera_output_impl_1.udb 
@@ -22,4 +22,5 @@ Preference Summary:
 
 Creating bit map...
 Saving bit stream in "Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1.bin".
+INFO <1081100> - Bitstream authenticated.
 Bitstream generation complete!

@@ -39,7 +39,13 @@
         <Source name="source/impl_1/single_capture.v" type="Verilog" type_short="Verilog">
             <Options top_module="top"/>
         </Source>
+        <Source name="source/impl_1/chatGPT_register_config.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
         <Source name="pins.pdc" type="Physical Constraints File" type_short="PDC">
+            <Options/>
+        </Source>
+        <Source name="simulator/simulator.spf" type="Simulation Project File" type_short="SPF">
             <Options/>
         </Source>
         <Source name="source/impl_1.xcf" type="Programming Project File" type_short="Programming">

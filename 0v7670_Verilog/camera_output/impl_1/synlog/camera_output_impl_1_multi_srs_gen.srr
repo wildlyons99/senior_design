@@ -17,11 +17,11 @@ Synopsys Synopsys Netlist Linker, Version comp202303synp1, Build 100R, Built May
 @N|Running in 64-bit mode
 File Z:\senior_design\0v7670_Verilog\camera_output\impl_1\synwork\camera_output_impl_1_comp.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 91MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Apr 14 12:59:36 2025
+# Mon Apr 14 23:47:32 2025
 
 ###########################################################]

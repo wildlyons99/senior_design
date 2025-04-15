@@ -1,4 +1,4 @@
-# Mon Apr 14 12:59:37 2025
+# Mon Apr 14 23:47:32 2025
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -28,10 +28,10 @@ See clock summary report "Z:\senior_design\0v7670_Verilog\camera_output\impl_1\c
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 138MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 138MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 138MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 138MB)
 
 
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 138MB)
@@ -40,28 +40,28 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 138MB)
 
 NConnInternalConnection caching is on
-@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":56:4:56:9|User-specified initial value defined for instance config_1.FSM_state[2:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":56:4:56:9|User-specified initial value defined for instance config_1.rom_addr[7:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":56:4:56:9|User-specified initial value defined for instance config_1.timer[28:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":56:4:56:9|User-specified initial value defined for instance config_1.SCCB_interface_start is being ignored due to limitations in architecture. 
-@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":56:4:56:9|User-specified initial value defined for instance config_1.SCCB_interface_data[7:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":56:4:56:9|User-specified initial value defined for instance config_1.SCCB_interface_addr[7:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":56:4:56:9|User-specified initial value defined for instance config_1.done is being ignored due to limitations in architecture. 
-@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|User-specified initial value defined for instance SCCB1.timer[27:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|User-specified initial value defined for instance SCCB1.SIOC_oe is being ignored due to limitations in architecture. 
-@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|User-specified initial value defined for instance SCCB1.FSM_state[3:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|User-specified initial value defined for instance SCCB1.byte_index[3:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|User-specified initial value defined for instance SCCB1.SIOD_oe is being ignored due to limitations in architecture. 
-@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|User-specified initial value defined for instance SCCB1.byte_counter[1:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|User-specified initial value defined for instance SCCB1.tx_byte[7:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|User-specified initial value defined for instance SCCB1.FSM_return_state[3:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":70:4:70:9|User-specified initial value defined for instance SCCB1.ready is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":34:4:34:9|User-specified initial value defined for instance config_1.FSM_state[2:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":34:4:34:9|User-specified initial value defined for instance config_1.rom_addr[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":34:4:34:9|User-specified initial value defined for instance config_1.timer[28:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":34:4:34:9|User-specified initial value defined for instance config_1.SCCB_interface_start is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":34:4:34:9|User-specified initial value defined for instance config_1.SCCB_interface_data[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":34:4:34:9|User-specified initial value defined for instance config_1.SCCB_interface_addr[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":34:4:34:9|User-specified initial value defined for instance config_1.done is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":50:4:50:9|User-specified initial value defined for instance SCCB1.timer[27:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":50:4:50:9|User-specified initial value defined for instance SCCB1.SIOC_oe is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":50:4:50:9|User-specified initial value defined for instance SCCB1.FSM_state[3:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":50:4:50:9|User-specified initial value defined for instance SCCB1.byte_index[3:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":50:4:50:9|User-specified initial value defined for instance SCCB1.SIOD_oe is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":50:4:50:9|User-specified initial value defined for instance SCCB1.byte_counter[1:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":50:4:50:9|User-specified initial value defined for instance SCCB1.tx_byte[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":50:4:50:9|User-specified initial value defined for instance SCCB1.FSM_return_state[3:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":50:4:50:9|User-specified initial value defined for instance SCCB1.ready is being ignored due to limitations in architecture. 
 @W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|User-specified initial value defined for instance reader.FSM_state[1:0] is being ignored due to limitations in architecture. 
 @W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|User-specified initial value defined for instance reader.pixel_data[15:0] is being ignored due to limitations in architecture. 
 @W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|User-specified initial value defined for instance reader.pixel_half is being ignored due to limitations in architecture. 
 @W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|User-specified initial value defined for instance reader.frame_done is being ignored due to limitations in architecture. 
 @W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|User-specified initial value defined for instance reader.pixel_valid is being ignored due to limitations in architecture. 
-@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v":171:4:171:9|User-specified initial value defined for instance fsm_state[2:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v":223:4:223:9|User-specified initial value defined for instance fsm_state[2:0] is being ignored due to limitations in architecture. 
 
 Starting HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 188MB)
 
@@ -73,7 +73,7 @@ Finished HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:0
 Started DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 188MB)
 
 
-Finished DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 188MB)
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 188MB)
 
 
 Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 190MB)
@@ -83,7 +83,7 @@ Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=30 on top level netlist top 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 190MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 191MB)
 
 
 
@@ -95,7 +95,7 @@ Level     Clock                                                       Frequency 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 0 -       System                                                      200.0 MHz     5.000         system       system_clkgroup           0    
                                                                                                                                               
-0 -       mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     195  
+0 -       mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     205  
                                                                                                                                               
 0 -       top|CAMERA_PCLOCK                                           200.0 MHz     5.000         inferred     Inferred_clkgroup_0_2     21   
 ==============================================================================================================================================
@@ -110,12 +110,12 @@ Clock                                                       Load      Pin       
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 System                                                      0         -                                               -                        -                 -            
                                                                                                                                                                               
-mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     195       my_pll.lscc_pll_inst.u_PLL_B.OUTCORE(PLL_B)     start_config.C           -                 -            
+mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     205       my_pll.lscc_pll_inst.u_PLL_B.OUTCORE(PLL_B)     start_config.C           -                 -            
                                                                                                                                                                               
 top|CAMERA_PCLOCK                                           21        CAMERA_PCLOCK(port)                             reader.pixel_valid.C     -                 -            
 ==============================================================================================================================================================================
 
-@W: MT530 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\chatgpt_register_config.v":29:4:29:9|Found inferred clock mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock which controls 195 sequential elements including rom1.dout[15:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config_rom.v":29:4:29:9|Found inferred clock mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock which controls 205 sequential elements including rom1.dout[15:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 @W: MT530 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|Found inferred clock top|CAMERA_PCLOCK which controls 21 sequential elements including reader.FSM_state[1:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 ICG Latch Removal Summary:
@@ -130,8 +130,8 @@ Number of ICG latches not removed:	0
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
 1 non-gated/non-generated clock tree(s) driving 21 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 195 clock pin(s) of sequential element(s)
-0 instances converted, 195 sequential instances remain driven by gated/generated clocks
+1 gated/generated clock tree(s) driving 205 clock pin(s) of sequential element(s)
+0 instances converted, 205 sequential instances remain driven by gated/generated clocks
 
 ============================== Non-Gated/Non-Generated Clocks ===============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance      
@@ -141,7 +141,7 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 ==================================================================== Gated/Generated Clocks =====================================================================
 Clock Tree ID     Driving Element                          Drive Element Type     Unconverted Fanout     Sample Instance           Explanation                   
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-@KP:ckid0_4       my_pll.lscc_pll_inst.u_PLL_B.OUTCORE     PLL_B                  195                    address_counter[15:0]     Clock Optimization not enabled
+@KP:ckid0_4       my_pll.lscc_pll_inst.u_PLL_B.OUTCORE     PLL_B                  205                    address_counter[15:0]     Clock Optimization not enabled
 =================================================================================================================================================================
 
 
@@ -162,9 +162,9 @@ Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:0
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 103MB peak: 193MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 108MB peak: 194MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Mon Apr 14 12:59:40 2025
+# Mon Apr 14 23:47:35 2025
 
 ###########################################################]

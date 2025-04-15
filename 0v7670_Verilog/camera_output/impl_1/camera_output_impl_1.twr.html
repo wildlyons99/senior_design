@@ -46,7 +46,7 @@ if (a)
 <A name="Timing_rpt_top">Timing Report</A><B><U><big></big></U></B>
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2023.1.0.43.3
 
-Mon Apr 14 13:00:01 2025
+Mon Apr 14 23:47:55 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -120,20 +120,20 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
 config_1/timer_Z[28].ff_inst/D          |    No arrival or required
 config_1/timer_Z[28].ff_inst/SR         |    No arrival or required
+vga_inst/row_Z[9].ff_inst/D             |    No arrival or required
 vga_inst/row_Z[8].ff_inst/D             |    No arrival or required
-vga_inst/row_Z[8].ff_inst/SP            |    No arrival or required
+{vga_inst/row_Z[8].ff_inst/SP   vga_inst/row_Z[9].ff_inst/SP}                           
+                                        |    No arrival or required
 vga_inst/row_Z[7].ff_inst/D             |    No arrival or required
 vga_inst/row_Z[6].ff_inst/D             |    No arrival or required
 {vga_inst/row_Z[6].ff_inst/SP   vga_inst/row_Z[7].ff_inst/SP}                           
                                         |    No arrival or required
 vga_inst/row_Z[5].ff_inst/D             |    No arrival or required
 vga_inst/row_Z[4].ff_inst/D             |    No arrival or required
-{vga_inst/row_Z[4].ff_inst/SP   vga_inst/row_Z[5].ff_inst/SP}                           
-                                        |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
-ts                                      |                       308
+ts                                      |                       396
                                         |                          
 -------------------------------------------------------------------
 
@@ -206,7 +206,7 @@ Single Clock Domain
 -------------------------------------------------------------------------------------------------------
  From clk_25MHz_c                       |             Target |               +INF |          0.000 MHz 
                                         | Actual (all paths) |           0.416 ns |       2403.846 MHz 
-SPRAM1.vfb_b_inst/CLOCK (MPW)           |   (50% duty cycle) |           0.416 ns |       2403.846 MHz 
+SPRAM2.vfb_b_inst/CLOCK (MPW)           |   (50% duty cycle) |           0.416 ns |       2403.846 MHz 
 -------------------------------------------------------------------------------------------------------
 
 Clock Domain Crossing

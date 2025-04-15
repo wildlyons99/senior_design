@@ -48,7 +48,7 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Mon Apr 14 12:59:57 2025
+Mon Apr 14 23:47:50 2025
 
 Pinout by Port Name:
 +-------------------+----------+--------------+-------+------------------------------------------+
@@ -78,9 +78,9 @@ Pinout by Port Name:
 | clk_25MHz         | 43/0     | LVCMOS33_OUT | PR10A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | debug_state[0]    | 28/0     | LVCMOS33_OUT | PR18A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | debug_state[1]    | 38/0     | LVCMOS33_OUT | PR9B  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| done              | 10/1     | LVCMOS33_OUT | PL17A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| done              | 34/0     | LVCMOS33_OUT | PR14B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | frame_done        | 46/2     | LVCMOS33_OUT | PL6A  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| pixel_valid       | 17/1     | LVCMOS33_OUT | PL24B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| pixel_valid       | 10/1     | LVCMOS33_OUT | PL17A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | sioc              | 12/1     | LVCMOS33_OUT | PL19A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | siod              | 21/1     | LVCMOS33_OUT | PL19B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | start             | 2/2      | LVCMOS33_IN  | PL9A  | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
@@ -104,14 +104,14 @@ Vccio by Bank:
 | 4/2      | CAMERA_DATA_IN[5]   | LOCATED    | LVCMOS33_IN  | PL10A |                  |
 | 6/1      | CAMERA_DATA_IN[6]   | LOCATED    | LVCMOS33_IN  | PL14B |                  |
 | 9/1      | CAMERA_DATA_IN[7]   | LOCATED    | LVCMOS33_IN  | PL16A |                  |
-| 10/1     | done                |            | LVCMOS33_OUT | PL17A |                  |
+| 10/1     | pixel_valid         |            | LVCMOS33_OUT | PL17A |                  |
 | 11/1     | CAMERA_PCLOCK       | LOCATED    | LVCMOS33_IN  | PL18A |                  |
 | 12/1     | sioc                | LOCATED    | LVCMOS33_OUT | PL19A |                  |
 | 13/1     |     unused, PULL:UP |            |              | PL20A |                  |
 | 14/1     |     unused, PULL:UP |            |              | PL24A | SPI_SO           |
 | 15/1     |     unused, PULL:UP |            |              | PL25A | SPISCK           |
 | 16/1     |     unused, PULL:UP |            |              | PL25B | SPI_SS           |
-| 17/1     | pixel_valid         |            | LVCMOS33_OUT | PL24B | SPI_SI           |
+| 17/1     |     unused, PULL:UP |            |              | PL24B | SPI_SI           |
 | 18/1     | CAMERA_HREF_IN      | LOCATED    | LVCMOS33_IN  | PL23B |                  |
 | 19/1     | CAMERA_VSYNC_IN     | LOCATED    | LVCMOS33_IN  | PL22B |                  |
 | 20/1     | clk_12MHz           | LOCATED    | LVCMOS33_IN  | PL20B | PCLKT1_0         |
@@ -123,7 +123,7 @@ Vccio by Bank:
 | 28/0     | debug_state[0]      | LOCATED    | LVCMOS33_OUT | PR18A |                  |
 | 31/0     | RGB[4]              | LOCATED    | LVCMOS33_OUT | PR17B |                  |
 | 32/0     | RGB[2]              | LOCATED    | LVCMOS33_OUT | PR17A |                  |
-| 34/0     |     unused, PULL:UP |            |              | PR14B |                  |
+| 34/0     | done                |            | LVCMOS33_OUT | PR14B |                  |
 | 35/0     | RGB[3]              | LOCATED    | LVCMOS33_OUT | PR13B | GPLL_IN/PCLKT0_1 |
 | 36/0     |     unused, PULL:UP |            |              | PR10B |                  |
 | 37/0     | RGB[5]              | LOCATED    | LVCMOS33_OUT | PR14A | PCLKT0_0         |
@@ -184,9 +184,9 @@ ldc_set_location -site {20} [ get_ports {clk_12MHz} ]
 ldc_set_location -site {43} [ get_ports {clk_25MHz} ]
 ldc_set_location -site {28} [ get_ports {debug_state[0]} ]
 ldc_set_location -site {38} [ get_ports {debug_state[1]} ]
-ldc_set_location -site {10} [ get_ports {done} ]
+ldc_set_location -site {34} [ get_ports {done} ]
 ldc_set_location -site {46} [ get_ports {frame_done} ]
-ldc_set_location -site {17} [ get_ports {pixel_valid} ]
+ldc_set_location -site {10} [ get_ports {pixel_valid} ]
 ldc_set_location -site {12} [ get_ports {sioc} ]
 ldc_set_location -site {21} [ get_ports {siod} ]
 ldc_set_location -site {2} [ get_ports {start} ]
@@ -197,7 +197,7 @@ ldc_set_location -site {2} [ get_ports {start} ]
 
 Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
-Mon Apr 14 12:59:57 2025
+Mon Apr 14 23:47:50 2025
 
 
 

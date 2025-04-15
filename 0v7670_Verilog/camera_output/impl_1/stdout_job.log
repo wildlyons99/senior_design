@@ -1,32 +1,32 @@
 {
 "Synplify Pro (R) Job Log" : {
-	"Date" : "12:59:46    14-Apr-2025",
+	"Date" : "23:47:41    14-Apr-2025",
 	"Working Directory" : "Z:/senior_design/0v7670_Verilog/camera_output/impl_1",
 	"Install" : "C:/lscc/radiant/2023.1/synpbase"
 },
 "impl_1" :{
-   "Start Time" : "12:59:31",
+   "Start Time" : "23:47:26",
    "Runtime" : "15s",
    "Executable Run Time" : "13s",
    "synthesis" : {
-      "Start Time" : "12:59:31",
+      "Start Time" : "23:47:26",
       "Runtime" : "15s",
       "Executable Run Time" : "13s",
       "compile" : {
-         "Start Time" : "12:59:31",
+         "Start Time" : "23:47:26",
          "Runtime" : "09s",
-         "Executable Run Time" : "07s",
+         "Executable Run Time" : "08s",
          "compile_flow" : {
-            "Start Time" : "12:59:31",
+            "Start Time" : "23:47:26",
             "Runtime" : "06s",
-            "Executable Run Time" : "04s",
+            "Executable Run Time" : "05s",
             "compiler" : {
                "executable" : "bin64/c_hdl.exe",
                "Run Directory" : "Z:/senior_design/0v7670_Verilog/camera_output/impl_1",
                "Run State" : "Complete",
                "Return Code" : "0",
                "Has Errors" : "no",
-               "Run Start Time" : "12:59:31",
+               "Run Start Time" : "23:47:26",
                "Run Time" : "05s",
                "Exe Run Time" : "04s",
                "Memory Usage" : "-",
@@ -38,9 +38,9 @@
                "Run State" : "Complete",
                "Return Code" : "0",
                "Has Errors" : "no",
-               "Run Start Time" : "12:59:36",
+               "Run Start Time" : "23:47:31",
                "Run Time" : "01s",
-               "Exe Run Time" : "00s",
+               "Exe Run Time" : "01s",
                "Memory Usage" : "-",
                "Up-to-date (run skipped)" : "no"
             }
@@ -51,7 +51,7 @@
             "Run State" : "Complete",
             "Return Code" : "1",
             "Has Errors" : "no",
-            "Run Start Time" : "12:59:37",
+            "Run Start Time" : "23:47:32",
             "Run Time" : "03s",
             "Exe Run Time" : "03s",
             "Memory Usage" : "-",
@@ -59,18 +59,18 @@
          }
       },
       "map" : {
-         "Start Time" : "12:59:40",
+         "Start Time" : "23:47:35",
          "Runtime" : "06s",
-         "Executable Run Time" : "06s",
+         "Executable Run Time" : "05s",
          "fpga_mapper" : {
             "executable" : "bin64/m_generic.exe",
             "Run Directory" : "Z:/senior_design/0v7670_Verilog/camera_output/impl_1",
             "Run State" : "Complete",
             "Return Code" : "1",
             "Has Errors" : "no",
-            "Run Start Time" : "12:59:40",
+            "Run Start Time" : "23:47:35",
             "Run Time" : "06s",
-            "Exe Run Time" : "06s",
+            "Exe Run Time" : "05s",
             "Memory Usage" : "-",
             "Up-to-date (run skipped)" : "no"
          }

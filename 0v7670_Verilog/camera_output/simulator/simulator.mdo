@@ -1,0 +1,32 @@
+if {![file exists "Z:/senior_design/0v7670_Verilog/camera_output/simulator/simulator.mpf"]} { 
+	project new "Z:/senior_design/0v7670_Verilog/camera_output/simulator" simulator
+	project addfile "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/my_pll.v" verilog
+	project addfile "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/vga.v" verilog
+	project addfile "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/camera_read.v" verilog
+	project addfile "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/OV7670_config.v" verilog
+	project addfile "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/OV7670_config_rom.v" verilog
+	project addfile "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/SCCB_interface.v" verilog
+	project addfile "Z:/senior_design/0v7670_Verilog/camera_output/mypll/rtl/mypll.v" verilog
+	project addfile "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/pattern_gen.v" verilog
+	project addfile "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/single_capture.v" verilog
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+
+	vlog  "+incdir+Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1" -work work  "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/my_pll.v" -suppress 2388
+	vlog  "+incdir+Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1" -work work  "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/vga.v" -suppress 2388
+	vlog  "+incdir+Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1" -work work  "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/camera_read.v" -suppress 2388
+	vlog  "+incdir+Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1" -work work  "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/OV7670_config.v" -suppress 2388
+	vlog  "+incdir+Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1" -work work  "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/OV7670_config_rom.v" -suppress 2388
+	vlog  "+incdir+Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1" -work work  "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/SCCB_interface.v" -suppress 2388
+	vlog  "+incdir+Z:/senior_design/0v7670_Verilog/camera_output/mypll/rtl" -work work  "Z:/senior_design/0v7670_Verilog/camera_output/mypll/rtl/mypll.v" -suppress 2388
+	vlog  "+incdir+Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1" -work work  "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/pattern_gen.v" -suppress 2388
+	vlog  "+incdir+Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1" -work work  "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/single_capture.v" -suppress 2388
+} else {
+	project open "Z:/senior_design/0v7670_Verilog/camera_output/simulator/simulator"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -lib work -L pmi_work -L ovi_ice40up  -suppress vsim-7033,vsim-8630,3009,3389 top 
+view wave
+add wave /*
+run 100 ns

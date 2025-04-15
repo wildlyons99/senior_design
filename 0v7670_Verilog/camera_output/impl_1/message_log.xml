@@ -1,46 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="Map">
-        <Message>
-            <ID>71003005</ID>
-            <Severity>256</Severity>
-            <Dynamic>CAMERA_PCLOCK</Dynamic>
-            <Dynamic>11</Dynamic>
-        </Message>
-    </Task>
-    <Task name="PAR">
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>71003005</ID>
-            <Severity>256</Severity>
-            <Dynamic>CAMERA_PCLOCK</Dynamic>
-            <Dynamic>11</Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-    </Task>
     <Task name="Synthesis">
         <Message>
             <ID>35831026</ID>
@@ -210,26 +169,26 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/chatGPT_register_config.v(23): </Dynamic>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/OV7670_config_rom.v(23): </Dynamic>
             <Dynamic>OV7670_config_rom</Dynamic>
-            <Navigation>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/chatGPT_register_config.v</Navigation>
+            <Navigation>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/OV7670_config_rom.v</Navigation>
             <Navigation>23</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/OV7670_config.v(23): </Dynamic>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/OV7670_config.v(1): </Dynamic>
             <Dynamic>OV7670_config</Dynamic>
             <Navigation>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/OV7670_config.v</Navigation>
-            <Navigation>23</Navigation>
+            <Navigation>1</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/SCCB_interface.v(23): </Dynamic>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/SCCB_interface.v(3): </Dynamic>
             <Dynamic>SCCB_interface</Dynamic>
             <Navigation>Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/SCCB_interface.v</Navigation>
-            <Navigation>23</Navigation>
+            <Navigation>3</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -266,24 +225,24 @@
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>CG532 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v&quot;:39:4:39:10|Within an initial block, only Verilog force statements and memory initialization statements and initialization of entire variable are recognized, and all other content is ignored. Simulation mismatch may occur</Dynamic>
+            <Dynamic>CG532 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v&quot;:17:4:17:10|Within an initial block, only Verilog force statements and memory initialization statements and initialization of entire variable are recognized, and all other content is ignored. Simulation mismatch may occur</Dynamic>
             <Navigation>CG532</Navigation>
             <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v</Navigation>
-            <Navigation>39</Navigation>
+            <Navigation>17</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>39</Navigation>
+            <Navigation>17</Navigation>
             <Navigation>10</Navigation>
             <Navigation>Within an initial block, only Verilog force statements and memory initialization statements and initialization of entire variable are recognized, and all other content is ignored. Simulation mismatch may occur</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>CG532 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v&quot;:54:4:54:10|Within an initial block, only Verilog force statements and memory initialization statements and initialization of entire variable are recognized, and all other content is ignored. Simulation mismatch may occur</Dynamic>
+            <Dynamic>CG532 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v&quot;:34:4:34:10|Within an initial block, only Verilog force statements and memory initialization statements and initialization of entire variable are recognized, and all other content is ignored. Simulation mismatch may occur</Dynamic>
             <Navigation>CG532</Navigation>
             <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v</Navigation>
-            <Navigation>54</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>54</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>10</Navigation>
             <Navigation>Within an initial block, only Verilog force statements and memory initialization statements and initialization of entire variable are recognized, and all other content is ignored. Simulation mismatch may occur</Navigation>
         </Message>
@@ -326,6 +285,18 @@
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
+            <Dynamic>CG360 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v&quot;:60:16:60:23|Removing wire data_out, as there is no assignment to it.</Dynamic>
+            <Navigation>CG360</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Removing wire data_out, as there is no assignment to it.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
             <Dynamic>CL318 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v&quot;:30:15:30:18|*Output TEST has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Dynamic>
             <Navigation>CL318</Navigation>
             <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v</Navigation>
@@ -338,288 +309,300 @@
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>CL279 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v&quot;:171:4:171:9|Pruning register bits 15 to 9 of spram_data_in[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
-            <Navigation>CL279</Navigation>
+            <Dynamic>CL260 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v&quot;:223:4:223:9|Pruning register bit 3 of spram_maskwe[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
             <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v</Navigation>
-            <Navigation>171</Navigation>
+            <Navigation>223</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>171</Navigation>
+            <Navigation>223</Navigation>
             <Navigation>9</Navigation>
-            <Navigation>Pruning register bits 15 to 9 of spram_data_in[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+            <Navigation>Pruning register bit 3 of spram_maskwe[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>CL260 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v&quot;:70:4:70:9|Pruning register bit 31 of timer[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v&quot;:223:4:223:9|Pruning register bit 1 of spram_maskwe[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\single_capture.v</Navigation>
+            <Navigation>223</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>223</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning register bit 1 of spram_maskwe[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>CL260 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v&quot;:50:4:50:9|Pruning register bit 31 of timer[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
             <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>9</Navigation>
             <Navigation>Pruning register bit 31 of timer[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>CL260 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v&quot;:70:4:70:9|Pruning register bit 30 of timer[30:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v&quot;:50:4:50:9|Pruning register bit 30 of timer[30:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
             <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>9</Navigation>
             <Navigation>Pruning register bit 30 of timer[30:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>CL260 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v&quot;:70:4:70:9|Pruning register bit 29 of timer[29:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v&quot;:50:4:50:9|Pruning register bit 29 of timer[29:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
             <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>9</Navigation>
             <Navigation>Pruning register bit 29 of timer[29:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>CL260 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v&quot;:70:4:70:9|Pruning register bit 28 of timer[28:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v&quot;:50:4:50:9|Pruning register bit 28 of timer[28:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
             <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\SCCB_interface.v</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>9</Navigation>
             <Navigation>Pruning register bit 28 of timer[28:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>CL260 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v&quot;:56:4:56:9|Pruning register bit 31 of timer[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v&quot;:34:4:34:9|Pruning register bit 31 of timer[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
             <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>9</Navigation>
             <Navigation>Pruning register bit 31 of timer[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>CL260 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v&quot;:56:4:56:9|Pruning register bit 30 of timer[30:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v&quot;:34:4:34:9|Pruning register bit 30 of timer[30:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
             <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>9</Navigation>
             <Navigation>Pruning register bit 30 of timer[30:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>CL260 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v&quot;:56:4:56:9|Pruning register bit 29 of timer[29:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v&quot;:34:4:34:9|Pruning register bit 29 of timer[29:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
             <Navigation>Z:\senior_design\0v7670_Verilog\camera_output\source\impl_1\OV7670_config.v</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>9</Navigation>
             <Navigation>Pruning register bit 29 of timer[29:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v&quot;:56:4:56:9|User-specified initial value defined for instance config_1.FSM_state[2:0] is being ignored due to limitations in architecture.</Dynamic>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v&quot;:34:4:34:9|User-specified initial value defined for instance config_1.FSM_state[2:0] is being ignored due to limitations in architecture.</Dynamic>
             <Navigation>FX1172</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>9</Navigation>
             <Navigation>User-specified initial value defined for instance config_1.FSM_state[2:0] is being ignored due to limitations in architecture. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v&quot;:56:4:56:9|User-specified initial value defined for instance config_1.rom_addr[7:0] is being ignored due to limitations in architecture.</Dynamic>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v&quot;:34:4:34:9|User-specified initial value defined for instance config_1.rom_addr[7:0] is being ignored due to limitations in architecture.</Dynamic>
             <Navigation>FX1172</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>9</Navigation>
             <Navigation>User-specified initial value defined for instance config_1.rom_addr[7:0] is being ignored due to limitations in architecture. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v&quot;:56:4:56:9|User-specified initial value defined for instance config_1.timer[28:0] is being ignored due to limitations in architecture.</Dynamic>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v&quot;:34:4:34:9|User-specified initial value defined for instance config_1.timer[28:0] is being ignored due to limitations in architecture.</Dynamic>
             <Navigation>FX1172</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>9</Navigation>
             <Navigation>User-specified initial value defined for instance config_1.timer[28:0] is being ignored due to limitations in architecture. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v&quot;:56:4:56:9|User-specified initial value defined for instance config_1.SCCB_interface_start is being ignored due to limitations in architecture.</Dynamic>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v&quot;:34:4:34:9|User-specified initial value defined for instance config_1.SCCB_interface_start is being ignored due to limitations in architecture.</Dynamic>
             <Navigation>FX1172</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>9</Navigation>
             <Navigation>User-specified initial value defined for instance config_1.SCCB_interface_start is being ignored due to limitations in architecture. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v&quot;:56:4:56:9|User-specified initial value defined for instance config_1.SCCB_interface_data[7:0] is being ignored due to limitations in architecture.</Dynamic>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v&quot;:34:4:34:9|User-specified initial value defined for instance config_1.SCCB_interface_data[7:0] is being ignored due to limitations in architecture.</Dynamic>
             <Navigation>FX1172</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>9</Navigation>
             <Navigation>User-specified initial value defined for instance config_1.SCCB_interface_data[7:0] is being ignored due to limitations in architecture. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v&quot;:56:4:56:9|User-specified initial value defined for instance config_1.SCCB_interface_addr[7:0] is being ignored due to limitations in architecture.</Dynamic>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v&quot;:34:4:34:9|User-specified initial value defined for instance config_1.SCCB_interface_addr[7:0] is being ignored due to limitations in architecture.</Dynamic>
             <Navigation>FX1172</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>9</Navigation>
             <Navigation>User-specified initial value defined for instance config_1.SCCB_interface_addr[7:0] is being ignored due to limitations in architecture. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v&quot;:56:4:56:9|User-specified initial value defined for instance config_1.done is being ignored due to limitations in architecture.</Dynamic>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v&quot;:34:4:34:9|User-specified initial value defined for instance config_1.done is being ignored due to limitations in architecture.</Dynamic>
             <Navigation>FX1172</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>56</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>9</Navigation>
             <Navigation>User-specified initial value defined for instance config_1.done is being ignored due to limitations in architecture. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v&quot;:70:4:70:9|User-specified initial value defined for instance SCCB1.timer[27:0] is being ignored due to limitations in architecture.</Dynamic>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v&quot;:50:4:50:9|User-specified initial value defined for instance SCCB1.timer[27:0] is being ignored due to limitations in architecture.</Dynamic>
             <Navigation>FX1172</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>9</Navigation>
             <Navigation>User-specified initial value defined for instance SCCB1.timer[27:0] is being ignored due to limitations in architecture. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v&quot;:70:4:70:9|User-specified initial value defined for instance SCCB1.SIOC_oe is being ignored due to limitations in architecture.</Dynamic>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v&quot;:50:4:50:9|User-specified initial value defined for instance SCCB1.SIOC_oe is being ignored due to limitations in architecture.</Dynamic>
             <Navigation>FX1172</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>9</Navigation>
             <Navigation>User-specified initial value defined for instance SCCB1.SIOC_oe is being ignored due to limitations in architecture. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v&quot;:70:4:70:9|User-specified initial value defined for instance SCCB1.FSM_state[3:0] is being ignored due to limitations in architecture.</Dynamic>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v&quot;:50:4:50:9|User-specified initial value defined for instance SCCB1.FSM_state[3:0] is being ignored due to limitations in architecture.</Dynamic>
             <Navigation>FX1172</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>9</Navigation>
             <Navigation>User-specified initial value defined for instance SCCB1.FSM_state[3:0] is being ignored due to limitations in architecture. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v&quot;:70:4:70:9|User-specified initial value defined for instance SCCB1.byte_index[3:0] is being ignored due to limitations in architecture.</Dynamic>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v&quot;:50:4:50:9|User-specified initial value defined for instance SCCB1.byte_index[3:0] is being ignored due to limitations in architecture.</Dynamic>
             <Navigation>FX1172</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>9</Navigation>
             <Navigation>User-specified initial value defined for instance SCCB1.byte_index[3:0] is being ignored due to limitations in architecture. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v&quot;:70:4:70:9|User-specified initial value defined for instance SCCB1.SIOD_oe is being ignored due to limitations in architecture.</Dynamic>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v&quot;:50:4:50:9|User-specified initial value defined for instance SCCB1.SIOD_oe is being ignored due to limitations in architecture.</Dynamic>
             <Navigation>FX1172</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>9</Navigation>
             <Navigation>User-specified initial value defined for instance SCCB1.SIOD_oe is being ignored due to limitations in architecture. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v&quot;:70:4:70:9|User-specified initial value defined for instance SCCB1.byte_counter[1:0] is being ignored due to limitations in architecture.</Dynamic>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v&quot;:50:4:50:9|User-specified initial value defined for instance SCCB1.byte_counter[1:0] is being ignored due to limitations in architecture.</Dynamic>
             <Navigation>FX1172</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>9</Navigation>
             <Navigation>User-specified initial value defined for instance SCCB1.byte_counter[1:0] is being ignored due to limitations in architecture. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v&quot;:70:4:70:9|User-specified initial value defined for instance SCCB1.tx_byte[7:0] is being ignored due to limitations in architecture.</Dynamic>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v&quot;:50:4:50:9|User-specified initial value defined for instance SCCB1.tx_byte[7:0] is being ignored due to limitations in architecture.</Dynamic>
             <Navigation>FX1172</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>9</Navigation>
             <Navigation>User-specified initial value defined for instance SCCB1.tx_byte[7:0] is being ignored due to limitations in architecture. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v&quot;:70:4:70:9|User-specified initial value defined for instance SCCB1.FSM_return_state[3:0] is being ignored due to limitations in architecture.</Dynamic>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v&quot;:50:4:50:9|User-specified initial value defined for instance SCCB1.FSM_return_state[3:0] is being ignored due to limitations in architecture.</Dynamic>
             <Navigation>FX1172</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>9</Navigation>
             <Navigation>User-specified initial value defined for instance SCCB1.FSM_return_state[3:0] is being ignored due to limitations in architecture. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v&quot;:70:4:70:9|User-specified initial value defined for instance SCCB1.ready is being ignored due to limitations in architecture.</Dynamic>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v&quot;:50:4:50:9|User-specified initial value defined for instance SCCB1.ready is being ignored due to limitations in architecture.</Dynamic>
             <Navigation>FX1172</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>50</Navigation>
             <Navigation>9</Navigation>
             <Navigation>User-specified initial value defined for instance SCCB1.ready is being ignored due to limitations in architecture. </Navigation>
         </Message>
@@ -686,26 +669,26 @@
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v&quot;:171:4:171:9|User-specified initial value defined for instance fsm_state[2:0] is being ignored due to limitations in architecture.</Dynamic>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v&quot;:223:4:223:9|User-specified initial value defined for instance fsm_state[2:0] is being ignored due to limitations in architecture.</Dynamic>
             <Navigation>FX1172</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v</Navigation>
-            <Navigation>171</Navigation>
+            <Navigation>223</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>171</Navigation>
+            <Navigation>223</Navigation>
             <Navigation>9</Navigation>
             <Navigation>User-specified initial value defined for instance fsm_state[2:0] is being ignored due to limitations in architecture. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>MT530 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\chatgpt_register_config.v&quot;:29:4:29:9|Found inferred clock mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock which controls 195 sequential elements including rom1.dout[15:0]. This clock has no specified timing constraint which may adversely impact design performance.</Dynamic>
+            <Dynamic>MT530 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config_rom.v&quot;:29:4:29:9|Found inferred clock mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock which controls 205 sequential elements including rom1.dout[15:0]. This clock has no specified timing constraint which may adversely impact design performance.</Dynamic>
             <Navigation>MT530</Navigation>
-            <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\chatgpt_register_config.v</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config_rom.v</Navigation>
             <Navigation>29</Navigation>
             <Navigation>4</Navigation>
             <Navigation>29</Navigation>
             <Navigation>9</Navigation>
-            <Navigation>Found inferred clock mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock which controls 195 sequential elements including rom1.dout[15:0]. This clock has no specified timing constraint which may adversely impact design performance. </Navigation>
+            <Navigation>Found inferred clock mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock which controls 205 sequential elements including rom1.dout[15:0]. This clock has no specified timing constraint which may adversely impact design performance. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -746,24 +729,36 @@
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>MT246 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v&quot;:145:36:145:51|Blackbox MAC16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Dynamic>FX553 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config_rom.v&quot;:30:4:30:7|Could not implement Block ROM for rom1.dout_2_0[15:0].</Dynamic>
+            <Navigation>FX553</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config_rom.v</Navigation>
+            <Navigation>30</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>30</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>Could not implement Block ROM for rom1.dout_2_0[15:0].</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>MT246 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v&quot;:149:29:149:46|Blackbox MAC16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
             <Navigation>MT246</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v</Navigation>
-            <Navigation>145</Navigation>
-            <Navigation>36</Navigation>
-            <Navigation>145</Navigation>
-            <Navigation>51</Navigation>
+            <Navigation>149</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>149</Navigation>
+            <Navigation>46</Navigation>
             <Navigation>Blackbox MAC16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>16</Severity>
-            <Dynamic>MT246 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v&quot;:157:11:157:16|Blackbox SP256K is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Dynamic>MT246 :&quot;z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v&quot;:197:11:197:16|Blackbox SP256K is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
             <Navigation>MT246</Navigation>
             <Navigation>z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v</Navigation>
-            <Navigation>157</Navigation>
+            <Navigation>197</Navigation>
             <Navigation>11</Navigation>
-            <Navigation>157</Navigation>
+            <Navigation>197</Navigation>
             <Navigation>16</Navigation>
             <Navigation>Blackbox SP256K is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
         </Message>
@@ -816,12 +811,53 @@
         <Message>
             <ID>35811146</ID>
             <Severity>1</Severity>
-            <Dynamic>vga_read_address_raw_cry_0_c_0.CIN</Dynamic>
+            <Dynamic>vga_read_address_cry_0_c_0.CIN</Dynamic>
         </Message>
         <Message>
             <ID>35811146</ID>
             <Severity>1</Severity>
-            <Dynamic>un1_address_counter_cry_0_c_0.CIN</Dynamic>
+            <Dynamic>un1_address_counter_4_cry_0_c_0.CIN</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>71003005</ID>
+            <Severity>256</Severity>
+            <Dynamic>CAMERA_PCLOCK</Dynamic>
+            <Dynamic>11</Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>71003005</ID>
+            <Severity>256</Severity>
+            <Dynamic>CAMERA_PCLOCK</Dynamic>
+            <Dynamic>11</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
         </Message>
         <Message>
             <ID>70001944</ID>
@@ -830,6 +866,11 @@
         </Message>
     </Task>
     <Task name="Export">
+        <Message>
+            <ID>1081100</ID>
+            <Severity>1</Severity>
+            <Dynamic>Bitstream authenticated.</Dynamic>
+        </Message>
         <Message>
             <ID>1191031</ID>
             <Severity>1</Severity>
