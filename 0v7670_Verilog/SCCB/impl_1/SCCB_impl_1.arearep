@@ -1,43 +1,42 @@
 ----------------------------------------------------------------------
 Report for cell camera_configure.TECH
-Register bits:  152 of 5280 (2.879%)
-I/O cells:      10
+Register bits:  138 of 5280 (2.614%)
+I/O cells:      9
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2        39          100.0
-                            FD1P3XZ       152          100.0
-                                 IB         4          100.0
+                               CCU2        43          100.0
+                            FD1P3XZ       138          100.0
+                                 IB         2          100.0
                               IOL_B         1          100.0
-                               LUT4       423          100.0
-                                 OB         4          100.0
+                               LUT4       147          100.0
+                                 OB         5          100.0
                               OBZ_B         2          100.0
                               PLL_B         1          100.0
 SUB MODULES
                       OV7670_config         1
                   OV7670_config_rom         1
                      SCCB_interface         1
-                        camera_read         1
                               mypll         1
 mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
-                              TOTAL       632
+                              TOTAL       344
 ----------------------------------------------------------------------
 Report for cell OV7670_config.v1
 Instance Path : config_1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        22           56.4
-                            FD1P3XZ        59           38.8
+                                FA2        22           51.2
+                            FD1P3XZ        53           38.4
                               IOL_B         1          100.0
-                               LUT4        42            9.9
-                              TOTAL       124
+                               LUT4        29           19.7
+                              TOTAL       105
 ----------------------------------------------------------------------
 Report for cell OV7670_config_rom.v1
 Instance Path : rom1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3XZ        16           10.5
-                               LUT4       281           66.4
-                              TOTAL       297
+                            FD1P3XZ        10            7.2
+                               LUT4        19           12.9
+                              TOTAL        29
 ----------------------------------------------------------------------
 Report for cell mypll.v1
 Instance Path : cory_pll
@@ -59,15 +58,7 @@ Report for cell SCCB_interface.v1
 Instance Path : SCCB1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        17           43.6
-                            FD1P3XZ        73           48.0
-                               LUT4        92           21.7
-                              TOTAL       182
-----------------------------------------------------------------------
-Report for cell camera_read.v1
-Instance Path : reader
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1P3XZ         4            2.6
-                               LUT4         4            0.9
-                              TOTAL         8
+                                FA2        17           39.5
+                            FD1P3XZ        67           48.6
+                               LUT4        90           61.2
+                              TOTAL       174

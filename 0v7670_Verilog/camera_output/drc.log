@@ -1,3 +1,33 @@
 DRC: Design Rule Check Radiant Software (64-bit) 2023.1.0.43.3
-Mon Apr 14 21:39:58 2025
+Tue Apr 15 15:15:03 2025
 
+WARNING <71003020> - Top module port 'clk_12MHz' does not connect to anything.
+WARNING <71003020> - Top module port 'start' does not connect to anything.
+WARNING <71003020> - Top module port 'CAMERA_VSYNC_IN' does not connect to anything.
+WARNING <71003020> - Top module port 'CAMERA_HREF_IN' does not connect to anything.
+WARNING <71003020> - Top module port 'CAMERA_DATA_IN[7]' does not connect to anything.
+WARNING <71003020> - Top module port 'CAMERA_DATA_IN[6]' does not connect to anything.
+WARNING <71003020> - Top module port 'CAMERA_DATA_IN[5]' does not connect to anything.
+WARNING <71003020> - Top module port 'CAMERA_DATA_IN[4]' does not connect to anything.
+WARNING <71003020> - Top module port 'CAMERA_DATA_IN[3]' does not connect to anything.
+WARNING <71003020> - Top module port 'CAMERA_DATA_IN[2]' does not connect to anything.
+WARNING <71003020> - Top module port 'CAMERA_DATA_IN[1]' does not connect to anything.
+WARNING <71003020> - Top module port 'CAMERA_DATA_IN[0]' does not connect to anything.
+WARNING <71003020> - Top module port 'CAMERA_PCLOCK' does not connect to anything.
+WARNING <71003020> - Top module port 'sioc' does not connect to anything.
+WARNING <71003020> - Top module port 'siod' does not connect to anything.
+WARNING <71003020> - Top module port 'done' does not connect to anything.
+WARNING <71003020> - Top module port 'frame_done' does not connect to anything.
+WARNING <71003020> - Top module port 'pixel_valid' does not connect to anything.
+WARNING <71003020> - Top module port 'debug_state[1]' does not connect to anything.
+WARNING <71003020> - Top module port 'debug_state[0]' does not connect to anything.
+WARNING <71003020> - Top module port 'RGB[5]' does not connect to anything.
+WARNING <71003020> - Top module port 'RGB[4]' does not connect to anything.
+WARNING <71003020> - Top module port 'RGB[3]' does not connect to anything.
+WARNING <71003020> - Top module port 'RGB[2]' does not connect to anything.
+WARNING <71003020> - Top module port 'RGB[1]' does not connect to anything.
+WARNING <71003020> - Top module port 'RGB[0]' does not connect to anything.
+WARNING <71003020> - Top module port 'VGA_HSYNC' does not connect to anything.
+WARNING <71003020> - Top module port 'VGA_VSYNC' does not connect to anything.
+WARNING <71003020> - Top module port 'clk_25MHz' does not connect to anything.
+WARNING <71003020> - Top module port 'TEST' does not connect to anything.

@@ -36,16 +36,19 @@
 
 -use_io_insertion 1
 -resolve_mixed_drivers 0
--sdc "camera_output_impl_1_cpe.ldc"
 -path "Z:/senior_design/0v7670_Verilog/camera_output/mypll"
 -path "C:/lscc/radiant/2023.1/ispfpga/ice40tp/data" "Z:/senior_design/0v7670_Verilog/camera_output/impl_1" "Z:/senior_design/0v7670_Verilog/camera_output"
 -ver "C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.v"
 -lib pmi -vhd "C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.vhd"
 -ver "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/my_pll.v"
 "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/vga.v"
-"Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/camera_configure.v"
+"Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/camera_read.v"
+"Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/OV7670_config.v"
+"Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/OV7670_config_rom.v"
+"Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/SCCB_interface.v"
 "Z:/senior_design/0v7670_Verilog/camera_output/mypll/rtl/mypll.v"
 "Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/pattern_gen.v"
+"Z:/senior_design/0v7670_Verilog/camera_output/source/impl_1/single_capture.v"
 
 
 -path "Z:/senior_design/0v7670_Verilog/camera_output"

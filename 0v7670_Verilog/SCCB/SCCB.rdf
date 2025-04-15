@@ -6,7 +6,7 @@
         <Source name="../cory_relearns_verilog/src/camera_configure.v" type="Verilog" type_short="Verilog">
             <Options top_module="camera_configure"/>
         </Source>
-        <Source name="../cory_relearns_verilog/src/camera_read.v" type="Verilog" type_short="Verilog">
+        <Source name="../cory_relearns_verilog/src/camera_read.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
         <Source name="../cory_relearns_verilog/src/OV7670_config.v" type="Verilog" type_short="Verilog">

@@ -41,7 +41,9 @@ module top
     wire SCCB_SIOC_oe;
     wire SCCB_SIOD_oe;
 	reg start_config;
-    
+	
+	//assign TEST = rom_addr[0];
+	
     assign sioc = SCCB_SIOC_oe ? 1'b0 : 1'bZ;
     assign siod = SCCB_SIOD_oe ? 1'b0 : 1'bZ;
     
@@ -70,32 +72,33 @@ module top
     );
     
 	// configure camera
-    OV7670_config #(
-        .CLK_FREQ(CLK_FREQ)
-    ) 
-    config_1(
-        .clk(clk_25MHz),
-        .SCCB_interface_ready(SCCB_ready),
-        .rom_data(rom_dout),
-		.start(start_config),
-        .rom_addr(rom_addr),
-        .done(done),
-        .SCCB_interface_addr(SCCB_addr),
-        .SCCB_interface_data(SCCB_data),
-        .SCCB_interface_start(SCCB_start)
-    );
+    //OV7670_config #( 
+        //.CLK_FREQ(CLK_FREQ)
+    //) 
+    //config_1(
+        //.clk(clk_25MHz),
+        //.SCCB_interface_ready(SCCB_ready),
+        //.rom_data(rom_dout),
+		//.start(start_config),
+        //.rom_addr(rom_addr),
+        //.done(done),
+        //.SCCB_interface_addr(SCCB_addr),
+        //.SCCB_interface_data(SCCB_data),
+        //.SCCB_interface_start(SCCB_start),
+		//.TEST(TEST)
+    //);
     
-    SCCB_interface #( 
-        .CLK_FREQ(CLK_FREQ)
-    ) SCCB1(
-        .clk(clk_25MHz),
-        .start(SCCB_start),
-        .address(SCCB_addr),
-        .data(SCCB_data),
-        .ready(SCCB_ready),
-        .SIOC_oe(SCCB_SIOC_oe),
-        .SIOD_oe(SCCB_SIOD_oe)
-    );
+    //SCCB_interface #( 
+        //.CLK_FREQ(CLK_FREQ)
+    //) SCCB1(
+        //.clk(clk_25MHz),
+        //.start(SCCB_start),
+        //.address(SCCB_addr),
+        //.data(SCCB_data),
+        //.ready(SCCB_ready),
+        //.SIOC_oe(SCCB_SIOC_oe),
+        //.SIOD_oe(SCCB_SIOD_oe)
+    //);
     
 	// pll
     mypll my_pll(
@@ -145,7 +148,7 @@ module top
  
 	wire [15:0] vga_read_address;
 	wire [1:0] read_spram_select;
-    //assign vga_read_address = ((row >> 1) * (320 >> 1)) + (col >> 1);
+    //assign vga_read_address = ((row >> 1) * (320 >> 1)) + (col >> 1); // QVGA
 	assign vga_read_address = ((row) * (640 >> 1)) + (col); // vga 
     assign read_spram_select = vga_read_address[15:14];
 	
@@ -242,7 +245,7 @@ module top
                 address_counter <= 0;
 				
                 spram_data_in <= 16'hFFFF; // default value
-				 pixel_toggle <= 1'b0;     // First pixel goes to upper half
+				pixel_toggle <= 1'b0;     // First pixel goes to upper half
                 prev_pixel_valid <= 0;
                 if (start_prev && !start) begin
                     fsm_state <= WAIT_FRAME;

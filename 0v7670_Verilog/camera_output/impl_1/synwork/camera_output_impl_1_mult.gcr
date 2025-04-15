@@ -1,24 +1,18 @@
 i my_pll.lscc_pll_inst.outcore_o
 m 0 0
-u 31 205
+u 11 61
 n ckid0_0 {t:vga_inst.row[9:0].C} Clock Optimization not enabled
 p {p:vga_inst.clk}{t:vga_inst.row[9:0].C}
 e ckid0_0 {t:vga_inst.row[9:0].C} dffe
-p {p:SCCB1.clk}{t:SCCB1.timer[27:0].C}
-e ckid0_1 {t:SCCB1.timer[27:0].C} dff
-p {p:config_1.clk}{t:config_1.FSM_state[2:0].C}
-e ckid0_2 {t:config_1.FSM_state[2:0].C} dff
-p {p:rom1.clk}{t:rom1.dout[15:0].C}
-e ckid0_3 {t:rom1.dout[15:0].C} dff
 p {p:my_pll.outcore_o}{t:my_pll.outcore_o}{t:address_counter[15:0].C}
-e ckid0_4 {t:address_counter[15:0].C} sdffr
-d ckid0_0,ckid0_1,ckid0_2,ckid0_3,ckid0_4 {t:my_pll.lscc_pll_inst.u_PLL_B.OUTCORE} PLL_B Clock Optimization not enabled
+e ckid0_1 {t:address_counter[15:0].C} sdffr
+d ckid0_0,ckid0_1 {t:my_pll.lscc_pll_inst.u_PLL_B.OUTCORE} PLL_B Clock Optimization not enabled
 i CAMERA_PCLOCK
 m 0 0
 u 5 21
 p {p:CAMERA_PCLOCK}{t:reader.p_clock}{p:reader.p_clock}{t:reader.FSM_state[1:0].C}
-e ckid0_5 {t:reader.FSM_state[1:0].C} dff
-c ckid0_5 {p:CAMERA_PCLOCK} port Unsupported/too complex instance on clock path
+e ckid0_2 {t:reader.FSM_state[1:0].C} dff
+c ckid0_2 {p:CAMERA_PCLOCK} port Unsupported/too complex instance on clock path
 i my_pll.lscc_pll_inst.outcore_o_i
 m 0 0
 u 0 0

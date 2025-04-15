@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Mar 25 16:10:53 2025
+Tue Apr 15 11:08:48 2025
 
 
 Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f SCCB_impl_1_lattice.synproj -gui -msgset Z:/senior_design/0v7670_Verilog/SCCB/promote.xml 
@@ -75,7 +75,6 @@ The -syn option is FALSE.
 Mixed language design
 Verilog design file = C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.v
 Verilog design file = Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/camera_configure.v
-Verilog design file = Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/camera_read.v
 Verilog design file = Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/OV7670_config.v
 Verilog design file = Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/OV7670_config_rom.v
 Verilog design file = Z:/senior_design/0v7670_Verilog/cory_relearns_verilog/src/SCCB_interface.v
@@ -131,7 +130,6 @@ INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(16): an
 INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
 INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_dsp.v. VERI-1328
 Analyzing Verilog file z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/camera_configure.v. VERI-1482
-Analyzing Verilog file z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/camera_read.v. VERI-1482
 Analyzing Verilog file z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/ov7670_config.v. VERI-1482
 Analyzing Verilog file z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/ov7670_config_rom.v. VERI-1482
 Analyzing Verilog file z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/sccb_interface.v. VERI-1482
@@ -143,11 +141,12 @@ INFO <35921014> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd(4): a
 INFO <35921504> - synthesis: The default VHDL library search path is now "Z:/senior_design/0v7670_Verilog/SCCB/impl_1". VHDL-1504
 Top module language type = Verilog.
 Top module name (Verilog, mixed language): camera_configure
-INFO <35901018> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/camera_configure.v(23): compiling module camera_configure. VERI-1018
+INFO <35901018> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/camera_configure.v(2): compiling module camera_configure. VERI-1018
+WARNING <35901209> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/camera_configure.v(46): expression size 32 truncated to fit in target size 6. VERI-1209
 INFO <35901018> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/ov7670_config_rom.v(23): compiling module OV7670_config_rom. VERI-1018
-INFO <35901018> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/ov7670_config.v(23): compiling module OV7670_config. VERI-1018
-WARNING <35901209> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/ov7670_config.v(76): expression size 32 truncated to fit in target size 8. VERI-1209
-WARNING <35901209> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/ov7670_config.v(84): expression size 32 truncated to fit in target size 8. VERI-1209
+INFO <35901018> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/ov7670_config.v(2): compiling module OV7670_config. VERI-1018
+WARNING <35901209> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/ov7670_config.v(55): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING <35901209> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/ov7670_config.v(63): expression size 32 truncated to fit in target size 8. VERI-1209
 INFO <35901018> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/sccb_interface.v(23): compiling module SCCB_interface. VERI-1018
 WARNING <35901209> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/sccb_interface.v(98): expression size 32 truncated to fit in target size 2. VERI-1209
 WARNING <35901209> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/sccb_interface.v(119): expression size 32 truncated to fit in target size 1. VERI-1209
@@ -157,8 +156,7 @@ INFO <35901018> - synthesis: z:/senior_design/0v7670_verilog/sccb/mypll/rtl/mypl
 INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(428): compiling module PLL_B(PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",DIVF="66",DIVQ="5",FILTER_RANGE="1",FREQUENCY_PIN_REFERENCECLK="12.000000"). VERI-1018
 WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
 WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
-WARNING <35901330> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/camera_configure.v(85): actual bit length 32 differs from formal bit length 1 for port rst_n_i. VERI-1330
-INFO <35901018> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/camera_read.v(21): compiling module camera_read. VERI-1018
+WARNING <35901330> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_verilog/src/camera_configure.v(87): actual bit length 32 differs from formal bit length 1 for port rst_n_i. VERI-1330
                                                          
 
 
@@ -185,17 +183,8 @@ INFO <35901018> - synthesis: z:/senior_design/0v7670_verilog/cory_relearns_veril
 
 WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
 WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
-WARNING <35931002> - synthesis: z:/senior_design/0v7670_verilog/sccb/mypll/rtl/mypll.v(139): net \cory_pll/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: z:/senior_design/0v7670_verilog/sccb/mypll/rtl/mypll.v(140): net \cory_pll/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
-######## Missing driver on net \cory_pll/lscc_pll_inst/sclk_i. Patching with GND.
-######## Missing driver on net \cory_pll/lscc_pll_inst/sdi_i. Patching with GND.
-
-
-
-CRITICAL <35001747> - synthesis: Bit 2 of Register \config_1/FSM_return_state is stuck at Zero
-CRITICAL <35001747> - synthesis: Bit 1 of Register \config_1/FSM_return_state is stuck at Zero
-CRITICAL <35001748> - synthesis: Bit 0 of Register \config_1/FSM_return_state is stuck at One
-CRITICAL <35001747> - synthesis: Bit 1 of Register \reader/FSM_state is stuck at Zero
+CRITICAL <35002028> - synthesis: I/O Port vsync_in 's net has no driver and is unused.
+CRITICAL <35002028> - synthesis: I/O Port href_in 's net has no driver and is unused.
 CRITICAL <35002028> - synthesis: I/O Port data_in[7] 's net has no driver and is unused.
 CRITICAL <35002028> - synthesis: I/O Port data_in[6] 's net has no driver and is unused.
 CRITICAL <35002028> - synthesis: I/O Port data_in[5] 's net has no driver and is unused.
@@ -204,50 +193,82 @@ CRITICAL <35002028> - synthesis: I/O Port data_in[3] 's net has no driver and is
 CRITICAL <35002028> - synthesis: I/O Port data_in[2] 's net has no driver and is unused.
 CRITICAL <35002028> - synthesis: I/O Port data_in[1] 's net has no driver and is unused.
 CRITICAL <35002028> - synthesis: I/O Port data_in[0] 's net has no driver and is unused.
-WARNING <35001779> - synthesis: Initial value found on instance \SCCB1/timer_i5 will be ignored.
-WARNING <35001779> - synthesis: Initial value found on instance \SCCB1/timer_i4 will be ignored.
-WARNING <35001779> - synthesis: Initial value found on instance \SCCB1/timer_i3 will be ignored.
+CRITICAL <35002028> - synthesis: I/O Port frame_done 's net has no driver and is unused.
+CRITICAL <35002028> - synthesis: I/O Port pixel_valid 's net has no driver and is unused.
+WARNING <35931002> - synthesis: z:/senior_design/0v7670_verilog/sccb/mypll/rtl/mypll.v(139): net \cory_pll/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: z:/senior_design/0v7670_verilog/sccb/mypll/rtl/mypll.v(140): net \cory_pll/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
+######## Missing driver on net frame_done. Patching with GND.
+######## Missing driver on net pixel_valid. Patching with GND.
+######## Missing driver on net \cory_pll/lscc_pll_inst/sclk_i. Patching with GND.
+######## Missing driver on net \cory_pll/lscc_pll_inst/sdi_i. Patching with GND.
+
+
+
+CRITICAL <35001747> - synthesis: Bit 2 of Register \config_1/FSM_return_state is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 1 of Register \config_1/FSM_return_state is stuck at Zero
+CRITICAL <35001748> - synthesis: Bit 0 of Register \config_1/FSM_return_state is stuck at One
+CRITICAL <35002028> - synthesis: I/O Port vsync_in 's net has no driver and is unused.
+CRITICAL <35002028> - synthesis: I/O Port href_in 's net has no driver and is unused.
+CRITICAL <35002028> - synthesis: I/O Port data_in[7] 's net has no driver and is unused.
+CRITICAL <35002028> - synthesis: I/O Port data_in[6] 's net has no driver and is unused.
+CRITICAL <35002028> - synthesis: I/O Port data_in[5] 's net has no driver and is unused.
+CRITICAL <35002028> - synthesis: I/O Port data_in[4] 's net has no driver and is unused.
+CRITICAL <35002028> - synthesis: I/O Port data_in[3] 's net has no driver and is unused.
+CRITICAL <35002028> - synthesis: I/O Port data_in[2] 's net has no driver and is unused.
+CRITICAL <35002028> - synthesis: I/O Port data_in[1] 's net has no driver and is unused.
+CRITICAL <35002028> - synthesis: I/O Port data_in[0] 's net has no driver and is unused.
 WARNING <35001779> - synthesis: Initial value found on instance \SCCB1/timer_i2 will be ignored.
+WARNING <35001779> - synthesis: Initial value found on instance \SCCB1/timer_i3 will be ignored.
+WARNING <35001779> - synthesis: Initial value found on instance \SCCB1/timer_i4 will be ignored.
+WARNING <35001779> - synthesis: Initial value found on instance \SCCB1/timer_i5 will be ignored.
+Duplicate register/latch removal. \config_1/SCCB_interface_addr__i1 is a one-to-one match with \config_1/SCCB_interface_data__i5.
+Duplicate register/latch removal. \SCCB1/latched_data_i0 is a one-to-one match with \SCCB1/latched_data_i3.
+Duplicate register/latch removal. \config_1/SCCB_interface_addr__i7 is a one-to-one match with \config_1/SCCB_interface_data__i3.
+Duplicate register/latch removal. \SCCB1/latched_address_i6 is a one-to-one match with \SCCB1/latched_address_i7.
+Duplicate register/latch removal. \SCCB1/latched_data_i1 is a one-to-one match with \SCCB1/latched_data_i2.
+Duplicate register/latch removal. \SCCB1/latched_address_i0 is a one-to-one match with \SCCB1/latched_data_i7.
+Duplicate register/latch removal. \SCCB1/latched_data_i0 is a one-to-one match with \SCCB1/latched_data_i1.
+Duplicate register/latch removal. \SCCB1/latched_address_i6 is a one-to-one match with \SCCB1/latched_data_i5.
 INFO <35002039> - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
 
 ################### Begin Area Report (camera_configure)######################
-Number of register bits => 152 of 5280 (2 % )
-CCU2 => 39
-FD1P3XZ => 152
-IB => 4
+Number of register bits => 138 of 5280 (2 % )
+CCU2 => 43
+FD1P3XZ => 138
+IB => 2
 IOL_B => 1
-LUT4 => 423
-OB => 4
+LUT4 => 147
+OB => 5
 OBZ_B => 2
 PLL_B => 1
 ################### End Area Report ##################
 Number of odd-length carry chains : 0
-Number of even-length carry chains : 3
+Number of even-length carry chains : 4
 
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 2
-  Net : cory_pll/lscc_pll_inst/test_clk_c, loads : 1
+  Net : cory_pll/lscc_pll_inst/clk_25MHz_c, loads : 1
   Net : clk_c, loads : 1
 Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : SCCB1/FSM_state[2], loads : 44
-  Net : SCCB1/FSM_state[3], loads : 36
-  Net : config_1/timer_0__N_165, loads : 33
-  Net : rom1/n14_adj_339, loads : 33
-  Net : SCCB1/timer_2__N_270, loads : 33
-  Net : rom1/n14, loads : 30
-  Net : SCCB1/FSM_state[1], loads : 30
-  Net : SCCB1/FSM_state[0], loads : 29
-  Net : rom1/n14_adj_341, loads : 27
-  Net : config_1/timer_0__N_166, loads : 25
+  Net : SCCB1/FSM_state[2], loads : 45
+  Net : SCCB1/FSM_state[3], loads : 33
+  Net : config_1/timer_0__N_155, loads : 33
+  Net : SCCB1/timer_2__N_260, loads : 33
+  Net : SCCB1/FSM_state[1], loads : 28
+  Net : SCCB1/FSM_state[0], loads : 28
+  Net : config_1/timer_0__N_156, loads : 25
+  Net : SCCB1/n63, loads : 15
+  Net : config_1/FSM_state[1], loads : 12
+  Net : SCCB1/timer_20__N_208, loads : 12
 ################### End Clock Report ##################
 
-Peak Memory Usage: 104 MB
+Peak Memory Usage: 94 MB
 
 --------------------------------------------------------------
-Total CPU Time: 4 secs 
-Total REAL Time: 8 secs 
+Total CPU Time: 2 secs 
+Total REAL Time: 5 secs 
 --------------------------------------------------------------

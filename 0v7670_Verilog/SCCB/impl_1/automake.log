@@ -14,6 +14,14 @@ Family:  iCE40UP
 Device:  iCE40UP5K
 Package: SG48
 Performance Grade:   High-Performance_1.2V
+WARNING <77001032> - bitgen: Unable to find the instance/port 'href_in' in the constraint 'ldc_set_location -site {18} [get_ports href_in]'
+
+WARNING <77001031> - bitgen: In the constraint 'ldc_set_location -site {18} [get_ports href_in]', the locate object is not specified
+
+WARNING <77001032> - bitgen: Unable to find the instance/port 'vsync_in' in the constraint 'ldc_set_location -site {19} [get_ports vsync_in]'
+
+WARNING <77001031> - bitgen: In the constraint 'ldc_set_location -site {19} [get_ports vsync_in]', the locate object is not specified
+
 Successfully loading design udb and device data from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
 
 
@@ -44,13 +52,13 @@ Bitstream generation complete!
 
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 116 MB
+Peak Memory Usage: 113 MB
 
 
 ibisgen "SCCB_impl_1.udb" "C:/lscc/radiant/2023.1/cae_library/ibis/iCE40UP.ibs"
 IBIS Models Generator: Lattice Radiant Software (64-bit) 2023.1.0.43.3
 
-Tue Mar 25 16:11:23 2025
+Tue Apr 15 11:09:07 2025
 
 Loading SCCB_impl_1.udb ...
 Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2023.1/ispfpga.
@@ -64,6 +72,10 @@ Family:  iCE40UP
 Device:  iCE40UP5K
 Package: SG48
 Performance Grade:   High-Performance_1.2V
+    <postMsg mid="77001032" type="Warning" dynamic="2" navigation="0" arg0="href_in" arg1="ldc_set_location -site {18} [get_ports href_in]"  />
+    <postMsg mid="77001031" type="Warning" dynamic="1" navigation="0" arg0="ldc_set_location -site {18} [get_ports href_in]"  />
+    <postMsg mid="77001032" type="Warning" dynamic="2" navigation="0" arg0="vsync_in" arg1="ldc_set_location -site {19} [get_ports vsync_in]"  />
+    <postMsg mid="77001031" type="Warning" dynamic="1" navigation="0" arg0="ldc_set_location -site {19} [get_ports vsync_in]"  />
 Successfully loading design udb and device data from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
 
 Created design models.
@@ -99,6 +111,6 @@ Writing a verilog netlist based on the SCCB_impl_1 design file.
 Writing Verilog netlist to file SCCB_impl_1_vo.vo
 Writing SDF timing to file SCCB_impl_1_vo.sdf
 Backanno finished with 0 posted error messages.
-Total CPU Time: 1 secs 
-Total REAL Time: 2 secs 
-Peak Memory Usage: 98 MB
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 88 MB

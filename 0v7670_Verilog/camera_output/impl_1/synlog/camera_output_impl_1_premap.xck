@@ -1,2 +1,2 @@
-ckid0_4:@|S:my_pll.lscc_pll_inst.u_PLL_B.OUTCORE@|E:address_counter[15:0]@|F:@syn_dgcc_clockid0_4==1@|M:ClockId_0_4
-ckid0_5:@|S:CAMERA_PCLOCK@|E:reader.FSM_state[1:0]@|F:@syn_dgcc_clockid0_5==1@|M:ClockId_0_5
+ckid0_1:@|S:my_pll.lscc_pll_inst.u_PLL_B.OUTCORE@|E:address_counter[15:0]@|F:@syn_dgcc_clockid0_1==1@|M:ClockId_0_1
+ckid0_2:@|S:CAMERA_PCLOCK@|E:reader.FSM_state[1:0]@|F:@syn_dgcc_clockid0_2==1@|M:ClockId_0_2

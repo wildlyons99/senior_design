@@ -1,23 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/06/2015 02:41:55 PM
-// Design Name: 
-// Module Name: OV7670_config_rom
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
 
 module OV7670_config_rom(
@@ -58,16 +39,16 @@ module OV7670_config_rom(
     21: dout <= 16'h19_01; //VSTART     start high 8 bits
     22: dout <= 16'h1A_79; //VSTOP      stop high 8 bits
     23: dout <= 16'h03_0F; //VREF       vsync edge offset
-    //24: dout <= 16'h0F_41; //COM6       reset timings
-    //25: dout <= 16'h1E_00; //MVFP       disable mirror / flip //might have magic value of 03
-    //26: dout <= 16'h33_0B; //CHLF       //magic value from the internet
-    //27: dout <= 16'h3C_78; //COM12      no HREF when VSYNC low
-    //28: dout <= 16'h69_00; //GFIX       fix gain control
-    //29: dout <= 16'h74_00; //REG74      Digital gain control
-    //30: dout <= 16'hB0_84; //RSVD       magic value from the internet *required* for good color
-    //31: dout <= 16'hB1_0c; //ABLC1
-    //32: dout <= 16'hB2_0e; //RSVD       more magic internet values
-    //33: dout <= 16'hB3_80; //THL_ST
+    24: dout <= 16'h0F_41; //COM6       reset timings
+    25: dout <= 16'h1E_00; //MVFP       disable mirror / flip //might have magic value of 03
+    26: dout <= 16'h33_0B; //CHLF       //magic value from the internet
+    27: dout <= 16'h3C_78; //COM12      no HREF when VSYNC low
+    28: dout <= 16'h69_00; //GFIX       fix gain control
+    29: dout <= 16'h74_00; //REG74      Digital gain control
+    30: dout <= 16'hB0_84; //RSVD       magic value from the internet *required* for good color
+    31: dout <= 16'hB1_0c; //ABLC1
+    32: dout <= 16'hB2_0e; //RSVD       more magic internet values
+    33: dout <= 16'hB3_80; //THL_ST
     //begin mystery scaling numbers
     //34: dout <= 16'h70_3a;
     //35: dout <= 16'h71_35;

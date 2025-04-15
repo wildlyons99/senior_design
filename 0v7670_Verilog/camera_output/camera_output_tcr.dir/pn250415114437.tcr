@@ -1,0 +1,17 @@
+#Start recording tcl command: 4/15/2025 11:12:01
+#Project Location: Z:/senior_design/0v7670_Verilog/camera_output; Project name: camera_output
+prj_open "Z:/senior_design/0v7670_Verilog/camera_output/camera_output.rdf"
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+#Stop recording: 4/15/2025 11:44:37

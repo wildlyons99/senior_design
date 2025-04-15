@@ -46,7 +46,7 @@ if (a)
 <A name="Timing_rpt_top">Timing Report</A><B><U><big></big></U></B>
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2023.1.0.43.3
 
-Tue Mar 25 16:11:20 2025
+Tue Apr 15 11:09:05 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -94,7 +94,7 @@ Package Status:                     Preliminary    Version 1.5
 
 <A name="Timing_rpt_SDCConstraints"></A><B><U><big>1.1  SDC Constraints</big></U></B>
 
-[IGNORED:]create_generated_clock -name {test_clk_c} -source [get_pins cory_pll.lscc_pll_inst.u_PLL_B/REFERENCECLK] -divide_by 32 -multiply_by 67 [get_pins cory_pll.lscc_pll_inst.u_PLL_B/OUTCORE]
+[IGNORED:]create_generated_clock -name {clk_25MHz_c} -source [get_pins cory_pll.lscc_pll_inst.u_PLL_B/REFERENCECLK] -divide_by 32 -multiply_by 67 [get_pins cory_pll.lscc_pll_inst.u_PLL_B/OUTCORE]
 
 <A name="Timing_rpt_ConstraintCoverage"></A><B><U><big>1.2  Constraint Coverage</big></U></B>
 
@@ -118,24 +118,22 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
-config_1/timer_31__I_10/D               |    No arrival or required
-config_1/timer_31__I_11/D               |    No arrival or required
-{config_1/timer_31__I_11/SP   config_1/timer_31__I_10/SP}                           
-                                        |    No arrival or required
-{config_1/timer_31__I_11/SR   config_1/timer_31__I_10/SR}                           
-                                        |    No arrival or required
 config_1/timer_31__I_31/D               |    No arrival or required
-config_1/timer_31__I_32/D               |    No arrival or required
-{config_1/timer_31__I_32/SP   config_1/timer_31__I_31/SP}                           
+config_1/timer_31__I_31/SP              |    No arrival or required
+config_1/timer_31__I_31/SR              |    No arrival or required
+config_1/timer_31__I_0/D                |    No arrival or required
+config_1/timer_31__I_0/SP               |    No arrival or required
+config_1/timer_31__I_0/SR               |    No arrival or required
+config_1/timer_31__I_40/D               |    No arrival or required
+config_1/timer_31__I_41/D               |    No arrival or required
+{config_1/timer_31__I_41/SP   config_1/timer_31__I_40/SP}                           
                                         |    No arrival or required
-{config_1/timer_31__I_32/SR   config_1/timer_31__I_31/SR}                           
+{config_1/timer_31__I_41/SR   config_1/timer_31__I_40/SR}                           
                                         |    No arrival or required
-config_1/timer_31__I_34/D               |    No arrival or required
-config_1/timer_31__I_34/SP              |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
-ts                                      |                       295
+ts                                      |                       272
                                         |                          
 -------------------------------------------------------------------
 
@@ -154,10 +152,10 @@ create_generated_clock,
 -------------------------------------------------------------------
      Listing 10 Start or End Points     |           Type           
 -------------------------------------------------------------------
-href_in                                 |                     input
-vsync_in                                |                     input
-start                                   |                     input
 clk                                     |                     input
+start                                   |                     input
+vsync_in                                |                     input
+href_in                                 |                     input
 data_in[7]                              |                     input
 data_in[6]                              |                     input
 data_in[5]                              |                     input
@@ -166,7 +164,7 @@ data_in[3]                              |                     input
 data_in[2]                              |                     input
 -------------------------------------------------------------------
                                         |                          
-Number of I/O ports without constraint  |                        17
+Number of I/O ports without constraint  |                        16
                                         |                          
 -------------------------------------------------------------------
 
@@ -186,20 +184,20 @@ None
 <A name="Timing_rpt_ErrorWarningMessage"></A><B><U><big>1.6  Error/Warning Messages</big></U></B>
 
 WARNING "70001944" - No master clock for
-	generated clock	create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
+	generated clock	create_generated_clock -name {clk_25MHz_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
 
 
 <A name="Timing_rpt_SetupSlowCornerMaxDegree"></A><B><U><big>2  Setup at Speed Grade High-Performance_1.2V Corner at 100 Degrees</big></U></B>
 <A name="Timing_rpt_ClockSummarySetupSlowCornerMaxDegree"></A><B><U><big>2.1  Clock Summary</big></U></B>
-<A name="Timing_rpt_Clk_1"></A><B><U><big>2.1.1 Clock "test_clk_c"</big></U></B>
+<A name="Timing_rpt_Clk_1"></A><B><U><big>2.1.1 Clock "clk_25MHz_c"</big></U></B>
 
-create_generated_clock -name {test_clk_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] 
+create_generated_clock -name {clk_25MHz_c} -source [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {cory_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] 
 
 Single Clock Domain
 -------------------------------------------------------------------------------------------------------
-            Clock test_clk_c            |                    |       Period       |     Frequency      
+           Clock clk_25MHz_c            |                    |       Period       |     Frequency      
 -------------------------------------------------------------------------------------------------------
- From test_clk_c                        |             Target |               +INF |          0.000 MHz 
+ From clk_25MHz_c                       |             Target |               +INF |          0.000 MHz 
                                         | Actual (all paths) |               ---- |               ---- 
 -------------------------------------------------------------------------------------------------------
 

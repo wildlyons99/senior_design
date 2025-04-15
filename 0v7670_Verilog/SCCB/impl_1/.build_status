@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BuildStatus>
     <Strategy name="Strategy1">
-        <Milestone name="Export" build_result="2" build_time="1742933483">
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1742933483"/>
-            <Task name="IBIS" build_result="2" update_result="0" update_time="1742933486"/>
-            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1742933488"/>
+        <Milestone name="Export" build_result="2" build_time="1744729747">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1744729747"/>
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1744729750"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1744729751"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1742933463">
-            <Task name="Map" build_result="2" update_result="0" update_time="1742933463"/>
+        <Milestone name="Map" build_result="2" build_time="1744729734">
+            <Task name="Map" build_result="2" update_result="0" update_time="1744729734"/>
             <Task name="MapTrace" build_result="0" update_result="2" update_time="1741470499"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1742933479">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1742933479"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1742933481"/>
+        <Milestone name="PAR" build_result="2" build_time="1744729744">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1744729744"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1744729746"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1742933462">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1742933462"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1742933481"/>
-            <Task name="SynTrace" build_result="0" update_result="2" update_time="1741465404"/>
-            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1741465404"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1744729733">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1744729733"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1744729746"/>
+            <Task name="SynTrace" build_result="0" update_result="2" update_time="1744723966"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1744723966"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
             <Task name="HDLE" build_result="0" update_result="2" update_time="1741468001"/>
@@ -28,17 +28,16 @@
             <Task name="PIODRC" build_result="0" update_result="2" update_time="1741468001"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="1741468001"/>
         </Milestone>
-        <Report name="IBIS/SCCB_impl_1.ibs" last_build_time="1742933485" last_build_size="71561"/>
-        <Report name="SCCB_impl_1.bgn" last_build_time="1742933483" last_build_size="1023"/>
-        <Report name="SCCB_impl_1.bin" last_build_time="1742933483" last_build_size="104156"/>
+        <Report name="IBIS/SCCB_impl_1.ibs" last_build_time="1744729749" last_build_size="71504"/>
+        <Report name="SCCB_impl_1.bgn" last_build_time="1744729747" last_build_size="1023"/>
+        <Report name="SCCB_impl_1.bin" last_build_time="1744729747" last_build_size="104156"/>
         <Report name="SCCB_impl_1.lsedata" last_build_time="0" last_build_size="0"/>
-        <Report name="SCCB_impl_1.twr.html" last_build_time="1742933481" last_build_size="15229"/>
-        <Report name="SCCB_impl_1.udb" last_build_time="1742933479" last_build_size="81312"/>
-        <Report name="SCCB_impl_1_map.udb" last_build_time="1742933463" last_build_size="44180"/>
-        <Report name="SCCB_impl_1_rtl.udb" last_build_time="1742933457" last_build_size="34910"/>
-        <Report name="SCCB_impl_1_syn.udb" last_build_time="1742933462" last_build_size="28925"/>
-        <Report name="SCCB_impl_1_vo.sdf" last_build_time="1742933488" last_build_size="402553"/>
-        <Report name="SCCB_impl_1_vo.vo" last_build_time="1742933488" last_build_size="367617"/>
+        <Report name="SCCB_impl_1.twr.html" last_build_time="1744729746" last_build_size="15061"/>
+        <Report name="SCCB_impl_1.udb" last_build_time="1744729744" last_build_size="43410"/>
+        <Report name="SCCB_impl_1_map.udb" last_build_time="1744729734" last_build_size="26666"/>
+        <Report name="SCCB_impl_1_rtl.udb" last_build_time="1744729731" last_build_size="23111"/>
+        <Report name="SCCB_impl_1_syn.udb" last_build_time="1744729733" last_build_size="18776"/>
+        <Report name="SCCB_impl_1_vo.sdf" last_build_time="1744729751" last_build_size="223009"/>
+        <Report name="SCCB_impl_1_vo.vo" last_build_time="1744729751" last_build_size="215149"/>
     </Strategy>
 </BuildStatus>
-                

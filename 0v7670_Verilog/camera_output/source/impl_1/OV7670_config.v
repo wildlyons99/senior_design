@@ -1,6 +1,9 @@
+`timescale 1ns / 1ps
+
+
 module OV7670_config
 #(
-    parameter CLK_FREQ = 25000000
+    parameter CLK_FREQ = 25125000
 )
 (
     input wire clk,
@@ -11,7 +14,8 @@ module OV7670_config
     output reg done,
     output reg [7:0] SCCB_interface_addr,
     output reg [7:0] SCCB_interface_data,
-    output reg SCCB_interface_start
+    output reg SCCB_interface_start,
+	output wire TEST
     );
     
     initial begin
@@ -30,6 +34,8 @@ module OV7670_config
     reg [2:0] FSM_state = FSM_IDLE;
     reg [2:0] FSM_return_state;
     reg [31:0] timer = 0;
+	
+	assign TEST = FSM_state[1];
     
     always@(posedge clk) begin
     

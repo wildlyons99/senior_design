@@ -1,4 +1,4 @@
-# Mon Apr 14 23:47:35 2025
+# Tue Apr 15 16:35:01 2025
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -38,18 +38,19 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 185MB peak: 185MB)
 
 @N: MO111 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v":30:15:30:18|Tristate driver TEST (in view: work.top(verilog)) on net TEST (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v":18:16:18:19|Tristate driver done (in view: work.top(verilog)) on net done (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v":47:18:47:44|Tristate driver sioc_2 (in view: work.top(verilog)) on net sioc (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v":48:18:48:44|Tristate driver siod_2 (in view: work.top(verilog)) on net siod (in view: work.top(verilog)) has its enable tied to GND.
 @W: BN132 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\vga.v":10:4:10:9|Removing sequential instance vga_inst.row_rep[9:0] because it is equivalent to instance vga_inst.row[9:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 190MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 189MB)
 
-@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config.v":34:4:34:9|Removing sequential instance FSM_state[2] (in view: work.OV7670_config_25000000s_0s_1s_2s_3s(verilog)) because it does not drive other instances.
-@N: MO231 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":50:4:50:9|Found counter in view:work.SCCB_interface_Z1_layer0(verilog) instance timer[27:0] 
 @N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance FSM_state[1] (in view: work.camera_read(verilog)) because it does not drive other instances.
 
-Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 192MB peak: 192MB)
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 190MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 196MB peak: 196MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 193MB peak: 193MB)
 
 
 Available hyper_sources - for debug and ip models
@@ -58,95 +59,84 @@ Available hyper_sources - for debug and ip models
 NConnInternalConnection caching is on
 @W: BN132 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\vga.v":10:4:10:9|Removing sequential instance vga_inst.row_rep[9:0] because it is equivalent to instance vga_inst.row[9:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 196MB peak: 196MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 193MB peak: 193MB)
 
-@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[9] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[10] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[12] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[13] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[14] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[8] (in view: work.top(verilog)) because it does not drive other instances.
 @N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[15] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[14] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[13] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[12] (in view: work.top(verilog)) because it does not drive other instances.
 @N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[11] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[10] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[8] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[9] (in view: work.top(verilog)) because it does not drive other instances.
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 196MB peak: 196MB)
-
-
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 196MB peak: 197MB)
-
-
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 196MB peak: 197MB)
-
-@W: FX553 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config_rom.v":30:4:30:7|Could not implement Block ROM for rom1.dout_2_0[15:0].
-@N: MO106 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\ov7670_config_rom.v":30:4:30:7|Found ROM rom1.dout_2_0[15:0] (in view: work.top(verilog)) with 15 words by 16 bits.
-
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 197MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 193MB peak: 193MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 202MB peak: 208MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 193MB peak: 194MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 193MB peak: 194MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 193MB peak: 194MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 197MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:01s		    -7.75ns		 439 /       216
-   2		0h:00m:01s		    -7.75ns		 437 /       216
-   3		0h:00m:01s		    -7.75ns		 437 /       216
+   1		0h:00m:01s		    -4.98ns		 150 /        73
+   2		0h:00m:01s		    -4.98ns		 150 /        73
 
-   4		0h:00m:01s		    -7.75ns		 455 /       216
-   5		0h:00m:01s		    -7.75ns		 456 /       216
-   6		0h:00m:01s		    -4.98ns		 456 /       216
-   7		0h:00m:01s		    -4.98ns		 456 /       216
-@N: FX271 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":50:4:50:9|Replicating instance SCCB1.FSM_state[3] (in view: work.top(verilog)) with 26 loads 2 times to improve timing.
-@N: FX271 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":50:4:50:9|Replicating instance SCCB1.FSM_state[0] (in view: work.top(verilog)) with 23 loads 2 times to improve timing.
-@N: FX271 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\sccb_interface.v":50:4:50:9|Replicating instance SCCB1.FSM_state[1] (in view: work.top(verilog)) with 25 loads 2 times to improve timing.
-Timing driven replication report
-Added 6 Registers via timing driven replication
-Added 6 LUTs via timing driven replication
+   3		0h:00m:01s		    -2.65ns		 158 /        73
 
 
-   8		0h:00m:02s		    -4.98ns		 468 /       222
+   4		0h:00m:01s		    -2.21ns		 163 /        73
+@A: BN291 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v":226:4:226:9|Boundary register start_prev (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 204MB peak: 208MB)
-
-
-Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 204MB peak: 208MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 197MB)
 
 
-Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 204MB peak: 208MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 198MB)
 
 
-Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 204MB peak: 208MB)
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 198MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 155MB peak: 208MB)
+Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 198MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 151MB peak: 198MB)
 
 Writing Analyst data base Z:\senior_design\0v7670_Verilog\camera_output\impl_1\synwork\camera_output_impl_1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 203MB peak: 208MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 198MB peak: 198MB)
 
 Writing Verilog Simulation files
 
-Writing scf file... (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 204MB peak: 208MB)
+Writing scf file... (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 199MB peak: 199MB)
 
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 204MB peak: 208MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 199MB peak: 200MB)
 
 
-Finished Writing Netlists (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 204MB peak: 208MB)
+Finished Writing Netlists (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 199MB peak: 200MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 202MB peak: 208MB)
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 197MB peak: 200MB)
 
-@W: MT246 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v":149:29:149:46|Blackbox MAC16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v":197:11:197:16|Blackbox SP256K is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v":152:29:152:46|Blackbox MAC16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v":200:11:200:16|Blackbox SP256K is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"z:\senior_design\0v7670_verilog\camera_output\mypll\rtl\mypll.v":202:69:202:75|Blackbox PLL_B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT420 |Found inferred clock mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net my_pll.lscc_pll_inst.clk_25MHz_c.
+@W: MT420 |Found inferred clock mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net my_pll.lscc_pll_inst.clk_25MHz_c.
 @W: MT420 |Found inferred clock top|CAMERA_PCLOCK with period 5.00ns. Please declare a user-defined clock on port CAMERA_PCLOCK.
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Mon Apr 14 23:47:39 2025
+# Timing report written on Tue Apr 15 16:35:04 2025
 #
 
 
@@ -166,14 +156,14 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -9.028
+Worst slack in design: -9.237
 
                                                             Requested     Estimated     Requested     Estimated                Clock        Clock                
 Starting Clock                                              Frequency     Frequency     Period        Period        Slack      Type         Group                
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     200.0 MHz     88.9 MHz      5.000         11.244        -6.244     inferred     Inferred_clkgroup_0_1
+mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     200.0 MHz     106.7 MHz     5.000         9.372         -4.372     inferred     Inferred_clkgroup_0_1
 top|CAMERA_PCLOCK                                           200.0 MHz     NA            5.000         NA            NA         inferred     Inferred_clkgroup_0_2
-System                                                      200.0 MHz     82.6 MHz      5.000         12.107        -7.107     system       system_clkgroup      
+System                                                      200.0 MHz     83.7 MHz      5.000         11.941        -6.941     system       system_clkgroup      
 =================================================================================================================================================================
 Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
 
@@ -188,10 +178,10 @@ Clocks                                                                          
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Starting                                                 Ending                                                   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                                   System                                                   |  5.000       -7.107  |  No paths    -      |  No paths    -      |  No paths    -    
-System                                                   mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock  |  5.000       -6.001  |  No paths    -      |  No paths    -      |  No paths    -    
-mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock  System                                                   |  5.000       -9.029  |  No paths    -      |  No paths    -      |  No paths    -    
-mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock  mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock  |  5.000       -6.244  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                                   System                                                   |  5.000       -6.941  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                                   mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock  |  5.000       -7.609  |  No paths    -      |  No paths    -      |  No paths    -    
+mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock  System                                                   |  5.000       -9.237  |  No paths    -      |  No paths    -      |  No paths    -    
+mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock  mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock  |  5.000       -4.372  |  No paths    -      |  No paths    -      |  No paths    -    
 =========================================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -206,7 +196,7 @@ No IO constraint found
 
 
 ====================================
-Detailed Report for Clock: mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock
+Detailed Report for Clock: mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock
 ====================================
 
 
@@ -218,37 +208,37 @@ Starting Points with Worst Slack
 Instance            Reference                                                   Type        Pin     Net        Time        Slack 
                     Clock                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------
-vga_inst.col[6]     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[6]     0.796       -9.028
-vga_inst.row[0]     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       row[0]     0.796       -9.028
-vga_inst.col[7]     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[7]     0.796       -8.736
-vga_inst.col[8]     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[8]     0.796       -8.736
-vga_inst.row[1]     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       row[1]     0.796       -8.736
-vga_inst.col[9]     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[9]     0.796       -8.444
-vga_inst.row[5]     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       row[5]     0.796       -7.132
-vga_inst.row[6]     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       row[6]     0.796       -7.111
-vga_inst.row[7]     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       row[7]     0.796       -7.070
-vga_inst.row[8]     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       row[8]     0.796       -6.977
+vga_inst.row[5]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       row[5]     0.796       -9.237
+vga_inst.row[6]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       row[6]     0.796       -9.165
+vga_inst.row[7]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       row[7]     0.796       -9.134
+vga_inst.row[8]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       row[8]     0.796       -9.041
+vga_inst.col[6]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[6]     0.796       -8.863
+vga_inst.row[0]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       row[0]     0.796       -8.863
+vga_inst.col[7]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[7]     0.796       -8.571
+vga_inst.col[8]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[8]     0.796       -8.571
+vga_inst.row[1]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       row[1]     0.796       -8.571
+vga_inst.col[9]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3DZ     Q       col[9]     0.796       -8.279
 =================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                       Starting                                                                                        Required           
-Instance               Reference                                                   Type        Pin     Net             Time         Slack 
-                       Clock                                                                                                              
-------------------------------------------------------------------------------------------------------------------------------------------
-RGB_obuf[0]            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     OB          I       RGB_c[0]        5.000        -9.028
-RGB_obuf[1]            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     OB          I       RGB_c[1]        5.000        -9.028
-RGB_obuf[2]            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     OB          I       RGB_c[2]        5.000        -9.028
-RGB_obuf[3]            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     OB          I       RGB_c[3]        5.000        -9.028
-RGB_obuf[4]            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     OB          I       RGB_c[4]        5.000        -9.028
-RGB_obuf[5]            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     OB          I       RGB_c[5]        5.000        -9.028
-config_1.timer[27]     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3IZ     D       timer_5[27]     4.845        -6.244
-config_1.timer[25]     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3IZ     D       timer_5[25]     4.845        -5.952
-config_1.timer[26]     mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3IZ     D       timer_5[26]     4.845        -5.952
-fsm_state[0]           mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock     FD1P3DZ     D       fsm_state_1     4.845        -5.713
-==========================================================================================================================================
+                        Starting                                                                                                                Required           
+Instance                Reference                                                   Type        Pin     Net                                     Time         Slack 
+                        Clock                                                                                                                                      
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+RGB_obuf[2]             mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       N_26_i                                  5.000        -9.237
+RGB_obuf[3]             mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       N_24_i                                  5.000        -9.237
+RGB_obuf[1]             mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       N_16_i                                  5.000        -8.863
+RGB_obuf[5]             mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       N_257_i                                 5.000        -8.863
+RGB_obuf[0]             mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       N_256_i                                 5.000        -8.853
+RGB_obuf[4]             mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     OB          I       N_22_i                                  5.000        -8.853
+address_counter[15]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3IZ     D       address_counter_RNO_S0[15]              4.845        -4.372
+address_counter[13]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3IZ     D       un1_address_counter_4_cry_13_c_0_S0     4.845        -4.080
+address_counter[14]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3IZ     D       un1_address_counter_4_cry_13_c_0_S1     4.845        -4.080
+address_counter[11]     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     FD1P3IZ     D       un1_address_counter_4_cry_11_c_0_S0     4.845        -3.788
+===================================================================================================================================================================
 
 
 
@@ -263,54 +253,39 @@ Path information for path number 1:
     + Estimated clock delay at ending point: 0.000
     = Required time:                         5.000
 
-    - Propagation time:                      14.028
+    - Propagation time:                      14.237
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -9.028
+    = Slack (critical) :                     -9.237
 
-    Number of logic level(s):                10
-    Starting point:                          vga_inst.col[6] / Q
-    Ending point:                            RGB_obuf[2] / I
-    The start point is clocked by            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    Number of logic level(s):                5
+    Starting point:                          vga_inst.row[5] / Q
+    Ending point:                            RGB_obuf[3] / I
+    The start point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
     The end   point is clocked by            System [rising]
 
-Instance / Net                                     Pin      Pin               Arrival      No. of    
-Name                                   Type        Name     Dir     Delay     Time         Fan Out(s)
------------------------------------------------------------------------------------------------------
-vga_inst.col[6]                        FD1P3DZ     Q        Out     0.796     0.796 r      -         
-col[6]                                 Net         -        -       0.834     -            5         
-vga_read_address_cry_0_c_0             CCU2_B      B1       In      -         1.630 r      -         
-vga_read_address_cry_0_c_0             CCU2_B      COUT     Out     0.358     1.988 r      -         
-carry_pack.vga_read_address_cry_0      Net         -        -       0.014     -            1         
-vga_read_address_cry_1_c_0             CCU2_B      CIN      In      -         2.002 r      -         
-vga_read_address_cry_1_c_0             CCU2_B      COUT     Out     0.278     2.280 r      -         
-carry_pack.vga_read_address_cry_2      Net         -        -       0.014     -            1         
-vga_read_address_cry_3_c_0             CCU2_B      CIN      In      -         2.294 r      -         
-vga_read_address_cry_3_c_0             CCU2_B      COUT     Out     0.278     2.572 r      -         
-carry_pack.vga_read_address_cry_4      Net         -        -       0.014     -            1         
-vga_read_address_cry_5_c_0             CCU2_B      CIN      In      -         2.586 r      -         
-vga_read_address_cry_5_c_0             CCU2_B      COUT     Out     0.278     2.864 r      -         
-carry_pack.vga_read_address_cry_6      Net         -        -       0.014     -            1         
-vga_read_address_cry_7_c_0             CCU2_B      CIN      In      -         2.878 r      -         
-vga_read_address_cry_7_c_0             CCU2_B      COUT     Out     0.278     3.156 r      -         
-carry_pack.vga_read_address_cry_8      Net         -        -       0.014     -            1         
-vga_read_address_cry_7_c_0_RNIS839     CCU2_B      CIN      In      -         3.170 r      -         
-vga_read_address_cry_7_c_0_RNIS839     CCU2_B      S0       Out     0.477     3.647 r      -         
-vga_read_address[15]                   Net         -        -       0.386     -            8         
-config_1.grayscale_value_1[0]          LUT4        C        In      -         4.033 r      -         
-config_1.grayscale_value_1[0]          LUT4        Z        Out     0.558     4.591 r      -         
-N_291                                  Net         -        -       1.371     -            1         
-vga_inst.grayscale_value_3[0]          LUT4        A        In      -         5.962 r      -         
-vga_inst.grayscale_value_3[0]          LUT4        Z        Out     0.661     6.623 r      -         
-N_37                                   Net         -        -       1.371     -            1         
-vga_inst.col_RNIS94F2_0[1]             LUT4        A        In      -         7.995 r      -         
-vga_inst.col_RNIS94F2_0[1]             LUT4        Z        Out     0.661     8.656 r      -         
-grayscale_value[0]                     Net         -        -       1.371     -            3         
-vga_inst.col_RNI0AOT4[1]               LUT4        A        In      -         10.027 r     -         
-vga_inst.col_RNI0AOT4[1]               LUT4        Z        Out     0.661     10.688 r     -         
-RGB_c[2]                               Net         -        -       3.340     -            1         
-RGB_obuf[2]                            OB          I        In      -         14.028 r     -         
-=====================================================================================================
-Total path delay (propagation time + setup) of 14.028 is 5.286(37.7%) logic and 8.743(62.3%) route.
+Instance / Net                           Pin      Pin               Arrival      No. of    
+Name                         Type        Name     Dir     Delay     Time         Fan Out(s)
+-------------------------------------------------------------------------------------------
+vga_inst.row[5]              FD1P3DZ     Q        Out     0.796     0.796 r      -         
+row[5]                       Net         -        -       1.599     -            4         
+vga_inst.row_RNIUN23[5]      LUT4        A        In      -         2.395 r      -         
+vga_inst.row_RNIUN23[5]      LUT4        Z        Out     0.661     3.056 r      -         
+VGA_VSYNC_0_5                Net         -        -       1.371     -            2         
+vga_inst.col_RNIDEVM[8]      LUT4        A        In      -         4.427 r      -         
+vga_inst.col_RNIDEVM[8]      LUT4        Z        Out     0.661     5.089 r      -         
+RGB_i_o2_0_0[1]              Net         -        -       1.371     -            1         
+vga_inst.row_RNIDSKB1[9]     LUT4        D        In      -         6.460 r      -         
+vga_inst.row_RNIDSKB1[9]     LUT4        Z        Out     0.465     6.925 r      -         
+N_279                        Net         -        -       1.371     -            5         
+vga_inst.row_RNIQB8H1[9]     LUT4        A        In      -         8.296 r      -         
+vga_inst.row_RNIQB8H1[9]     LUT4        Z        Out     0.661     8.957 r      -         
+N_26_1                       Net         -        -       1.371     -            2         
+vga_inst.row_RNI8F6U3[9]     LUT4        A        In      -         10.329 r     -         
+vga_inst.row_RNI8F6U3[9]     LUT4        Z        Out     0.569     10.897 f     -         
+N_24_i                       Net         -        -       3.340     -            1         
+RGB_obuf[3]                  OB          I        In      -         14.237 f     -         
+===========================================================================================
+Total path delay (propagation time + setup) of 14.237 is 3.814(26.8%) logic and 10.423(73.2%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -321,54 +296,39 @@ Path information for path number 2:
     + Estimated clock delay at ending point: 0.000
     = Required time:                         5.000
 
-    - Propagation time:                      14.028
+    - Propagation time:                      14.237
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -9.028
+    = Slack (critical) :                     -9.237
 
-    Number of logic level(s):                10
-    Starting point:                          vga_inst.row[0] / Q
+    Number of logic level(s):                5
+    Starting point:                          vga_inst.row[5] / Q
     Ending point:                            RGB_obuf[2] / I
-    The start point is clocked by            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The start point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
     The end   point is clocked by            System [rising]
 
-Instance / Net                                     Pin      Pin               Arrival      No. of    
-Name                                   Type        Name     Dir     Delay     Time         Fan Out(s)
------------------------------------------------------------------------------------------------------
-vga_inst.row[0]                        FD1P3DZ     Q        Out     0.796     0.796 r      -         
-row[0]                                 Net         -        -       0.834     -            7         
-vga_read_address_cry_0_c_0             CCU2_B      C1       In      -         1.630 r      -         
-vga_read_address_cry_0_c_0             CCU2_B      COUT     Out     0.358     1.988 r      -         
-carry_pack.vga_read_address_cry_0      Net         -        -       0.014     -            1         
-vga_read_address_cry_1_c_0             CCU2_B      CIN      In      -         2.002 r      -         
-vga_read_address_cry_1_c_0             CCU2_B      COUT     Out     0.278     2.280 r      -         
-carry_pack.vga_read_address_cry_2      Net         -        -       0.014     -            1         
-vga_read_address_cry_3_c_0             CCU2_B      CIN      In      -         2.294 r      -         
-vga_read_address_cry_3_c_0             CCU2_B      COUT     Out     0.278     2.572 r      -         
-carry_pack.vga_read_address_cry_4      Net         -        -       0.014     -            1         
-vga_read_address_cry_5_c_0             CCU2_B      CIN      In      -         2.586 r      -         
-vga_read_address_cry_5_c_0             CCU2_B      COUT     Out     0.278     2.864 r      -         
-carry_pack.vga_read_address_cry_6      Net         -        -       0.014     -            1         
-vga_read_address_cry_7_c_0             CCU2_B      CIN      In      -         2.878 r      -         
-vga_read_address_cry_7_c_0             CCU2_B      COUT     Out     0.278     3.156 r      -         
-carry_pack.vga_read_address_cry_8      Net         -        -       0.014     -            1         
-vga_read_address_cry_7_c_0_RNIS839     CCU2_B      CIN      In      -         3.170 r      -         
-vga_read_address_cry_7_c_0_RNIS839     CCU2_B      S0       Out     0.477     3.647 r      -         
-vga_read_address[15]                   Net         -        -       0.386     -            8         
-config_1.grayscale_value_1[0]          LUT4        C        In      -         4.033 r      -         
-config_1.grayscale_value_1[0]          LUT4        Z        Out     0.558     4.591 r      -         
-N_291                                  Net         -        -       1.371     -            1         
-vga_inst.grayscale_value_3[0]          LUT4        A        In      -         5.962 r      -         
-vga_inst.grayscale_value_3[0]          LUT4        Z        Out     0.661     6.623 r      -         
-N_37                                   Net         -        -       1.371     -            1         
-vga_inst.col_RNIS94F2_0[1]             LUT4        A        In      -         7.995 r      -         
-vga_inst.col_RNIS94F2_0[1]             LUT4        Z        Out     0.661     8.656 r      -         
-grayscale_value[0]                     Net         -        -       1.371     -            3         
-vga_inst.col_RNI0AOT4[1]               LUT4        A        In      -         10.027 r     -         
-vga_inst.col_RNI0AOT4[1]               LUT4        Z        Out     0.661     10.688 r     -         
-RGB_c[2]                               Net         -        -       3.340     -            1         
-RGB_obuf[2]                            OB          I        In      -         14.028 r     -         
-=====================================================================================================
-Total path delay (propagation time + setup) of 14.028 is 5.286(37.7%) logic and 8.743(62.3%) route.
+Instance / Net                             Pin      Pin               Arrival      No. of    
+Name                           Type        Name     Dir     Delay     Time         Fan Out(s)
+---------------------------------------------------------------------------------------------
+vga_inst.row[5]                FD1P3DZ     Q        Out     0.796     0.796 r      -         
+row[5]                         Net         -        -       1.599     -            4         
+vga_inst.row_RNIUN23[5]        LUT4        A        In      -         2.395 r      -         
+vga_inst.row_RNIUN23[5]        LUT4        Z        Out     0.661     3.056 r      -         
+VGA_VSYNC_0_5                  Net         -        -       1.371     -            2         
+vga_inst.col_RNIDEVM[8]        LUT4        A        In      -         4.427 r      -         
+vga_inst.col_RNIDEVM[8]        LUT4        Z        Out     0.661     5.089 r      -         
+RGB_i_o2_0_0[1]                Net         -        -       1.371     -            1         
+vga_inst.row_RNIDSKB1[9]       LUT4        D        In      -         6.460 r      -         
+vga_inst.row_RNIDSKB1[9]       LUT4        Z        Out     0.465     6.925 r      -         
+N_279                          Net         -        -       1.371     -            5         
+vga_inst.row_RNIQB8H1[9]       LUT4        A        In      -         8.296 r      -         
+vga_inst.row_RNIQB8H1[9]       LUT4        Z        Out     0.661     8.957 r      -         
+N_26_1                         Net         -        -       1.371     -            2         
+vga_inst.row_RNI8F6U3_0[9]     LUT4        A        In      -         10.329 r     -         
+vga_inst.row_RNI8F6U3_0[9]     LUT4        Z        Out     0.569     10.897 f     -         
+N_26_i                         Net         -        -       3.340     -            1         
+RGB_obuf[2]                    OB          I        In      -         14.237 f     -         
+=============================================================================================
+Total path delay (propagation time + setup) of 14.237 is 3.814(26.8%) logic and 10.423(73.2%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -379,54 +339,39 @@ Path information for path number 3:
     + Estimated clock delay at ending point: 0.000
     = Required time:                         5.000
 
-    - Propagation time:                      14.028
+    - Propagation time:                      14.165
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -9.028
+    = Slack (non-critical) :                 -9.165
 
-    Number of logic level(s):                10
-    Starting point:                          vga_inst.col[6] / Q
+    Number of logic level(s):                5
+    Starting point:                          vga_inst.row[6] / Q
     Ending point:                            RGB_obuf[3] / I
-    The start point is clocked by            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The start point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
     The end   point is clocked by            System [rising]
 
-Instance / Net                                     Pin      Pin               Arrival      No. of    
-Name                                   Type        Name     Dir     Delay     Time         Fan Out(s)
------------------------------------------------------------------------------------------------------
-vga_inst.col[6]                        FD1P3DZ     Q        Out     0.796     0.796 r      -         
-col[6]                                 Net         -        -       0.834     -            5         
-vga_read_address_cry_0_c_0             CCU2_B      B1       In      -         1.630 r      -         
-vga_read_address_cry_0_c_0             CCU2_B      COUT     Out     0.358     1.988 r      -         
-carry_pack.vga_read_address_cry_0      Net         -        -       0.014     -            1         
-vga_read_address_cry_1_c_0             CCU2_B      CIN      In      -         2.002 r      -         
-vga_read_address_cry_1_c_0             CCU2_B      COUT     Out     0.278     2.280 r      -         
-carry_pack.vga_read_address_cry_2      Net         -        -       0.014     -            1         
-vga_read_address_cry_3_c_0             CCU2_B      CIN      In      -         2.294 r      -         
-vga_read_address_cry_3_c_0             CCU2_B      COUT     Out     0.278     2.572 r      -         
-carry_pack.vga_read_address_cry_4      Net         -        -       0.014     -            1         
-vga_read_address_cry_5_c_0             CCU2_B      CIN      In      -         2.586 r      -         
-vga_read_address_cry_5_c_0             CCU2_B      COUT     Out     0.278     2.864 r      -         
-carry_pack.vga_read_address_cry_6      Net         -        -       0.014     -            1         
-vga_read_address_cry_7_c_0             CCU2_B      CIN      In      -         2.878 r      -         
-vga_read_address_cry_7_c_0             CCU2_B      COUT     Out     0.278     3.156 r      -         
-carry_pack.vga_read_address_cry_8      Net         -        -       0.014     -            1         
-vga_read_address_cry_7_c_0_RNIS839     CCU2_B      CIN      In      -         3.170 r      -         
-vga_read_address_cry_7_c_0_RNIS839     CCU2_B      S0       Out     0.477     3.647 r      -         
-vga_read_address[15]                   Net         -        -       0.386     -            8         
-config_1.grayscale_value_1[1]          LUT4        C        In      -         4.033 r      -         
-config_1.grayscale_value_1[1]          LUT4        Z        Out     0.558     4.591 r      -         
-N_292                                  Net         -        -       1.371     -            1         
-vga_inst.grayscale_value_3[1]          LUT4        A        In      -         5.962 r      -         
-vga_inst.grayscale_value_3[1]          LUT4        Z        Out     0.661     6.623 r      -         
-N_38                                   Net         -        -       1.371     -            1         
-vga_inst.col_RNIS94F2[1]               LUT4        A        In      -         7.995 r      -         
-vga_inst.col_RNIS94F2[1]               LUT4        Z        Out     0.661     8.656 r      -         
-grayscale_value[1]                     Net         -        -       1.371     -            3         
-vga_inst.col_RNI0AOT4_0[1]             LUT4        A        In      -         10.027 r     -         
-vga_inst.col_RNI0AOT4_0[1]             LUT4        Z        Out     0.661     10.688 r     -         
-RGB_c[3]                               Net         -        -       3.340     -            1         
-RGB_obuf[3]                            OB          I        In      -         14.028 r     -         
-=====================================================================================================
-Total path delay (propagation time + setup) of 14.028 is 5.286(37.7%) logic and 8.743(62.3%) route.
+Instance / Net                           Pin      Pin               Arrival      No. of    
+Name                         Type        Name     Dir     Delay     Time         Fan Out(s)
+-------------------------------------------------------------------------------------------
+vga_inst.row[6]              FD1P3DZ     Q        Out     0.796     0.796 r      -         
+row[6]                       Net         -        -       1.599     -            4         
+vga_inst.row_RNIUN23[5]      LUT4        B        In      -         2.395 r      -         
+vga_inst.row_RNIUN23[5]      LUT4        Z        Out     0.589     2.984 r      -         
+VGA_VSYNC_0_5                Net         -        -       1.371     -            2         
+vga_inst.col_RNIDEVM[8]      LUT4        A        In      -         4.355 r      -         
+vga_inst.col_RNIDEVM[8]      LUT4        Z        Out     0.661     5.017 r      -         
+RGB_i_o2_0_0[1]              Net         -        -       1.371     -            1         
+vga_inst.row_RNIDSKB1[9]     LUT4        D        In      -         6.388 r      -         
+vga_inst.row_RNIDSKB1[9]     LUT4        Z        Out     0.465     6.853 r      -         
+N_279                        Net         -        -       1.371     -            5         
+vga_inst.row_RNIQB8H1[9]     LUT4        A        In      -         8.224 r      -         
+vga_inst.row_RNIQB8H1[9]     LUT4        Z        Out     0.661     8.885 r      -         
+N_26_1                       Net         -        -       1.371     -            2         
+vga_inst.row_RNI8F6U3[9]     LUT4        A        In      -         10.256 r     -         
+vga_inst.row_RNI8F6U3[9]     LUT4        Z        Out     0.569     10.825 f     -         
+N_24_i                       Net         -        -       3.340     -            1         
+RGB_obuf[3]                  OB          I        In      -         14.165 f     -         
+===========================================================================================
+Total path delay (propagation time + setup) of 14.165 is 3.742(26.4%) logic and 10.423(73.6%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -437,54 +382,39 @@ Path information for path number 4:
     + Estimated clock delay at ending point: 0.000
     = Required time:                         5.000
 
-    - Propagation time:                      14.028
+    - Propagation time:                      14.165
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -9.028
+    = Slack (non-critical) :                 -9.165
 
-    Number of logic level(s):                10
-    Starting point:                          vga_inst.col[6] / Q
-    Ending point:                            RGB_obuf[4] / I
-    The start point is clocked by            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    Number of logic level(s):                5
+    Starting point:                          vga_inst.row[6] / Q
+    Ending point:                            RGB_obuf[2] / I
+    The start point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
     The end   point is clocked by            System [rising]
 
-Instance / Net                                     Pin      Pin               Arrival      No. of    
-Name                                   Type        Name     Dir     Delay     Time         Fan Out(s)
------------------------------------------------------------------------------------------------------
-vga_inst.col[6]                        FD1P3DZ     Q        Out     0.796     0.796 r      -         
-col[6]                                 Net         -        -       0.834     -            5         
-vga_read_address_cry_0_c_0             CCU2_B      B1       In      -         1.630 r      -         
-vga_read_address_cry_0_c_0             CCU2_B      COUT     Out     0.358     1.988 r      -         
-carry_pack.vga_read_address_cry_0      Net         -        -       0.014     -            1         
-vga_read_address_cry_1_c_0             CCU2_B      CIN      In      -         2.002 r      -         
-vga_read_address_cry_1_c_0             CCU2_B      COUT     Out     0.278     2.280 r      -         
-carry_pack.vga_read_address_cry_2      Net         -        -       0.014     -            1         
-vga_read_address_cry_3_c_0             CCU2_B      CIN      In      -         2.294 r      -         
-vga_read_address_cry_3_c_0             CCU2_B      COUT     Out     0.278     2.572 r      -         
-carry_pack.vga_read_address_cry_4      Net         -        -       0.014     -            1         
-vga_read_address_cry_5_c_0             CCU2_B      CIN      In      -         2.586 r      -         
-vga_read_address_cry_5_c_0             CCU2_B      COUT     Out     0.278     2.864 r      -         
-carry_pack.vga_read_address_cry_6      Net         -        -       0.014     -            1         
-vga_read_address_cry_7_c_0             CCU2_B      CIN      In      -         2.878 r      -         
-vga_read_address_cry_7_c_0             CCU2_B      COUT     Out     0.278     3.156 r      -         
-carry_pack.vga_read_address_cry_8      Net         -        -       0.014     -            1         
-vga_read_address_cry_7_c_0_RNIS839     CCU2_B      CIN      In      -         3.170 r      -         
-vga_read_address_cry_7_c_0_RNIS839     CCU2_B      S0       Out     0.477     3.647 r      -         
-vga_read_address[15]                   Net         -        -       0.386     -            8         
-config_1.grayscale_value_1[0]          LUT4        C        In      -         4.033 r      -         
-config_1.grayscale_value_1[0]          LUT4        Z        Out     0.558     4.591 r      -         
-N_291                                  Net         -        -       1.371     -            1         
-vga_inst.grayscale_value_3[0]          LUT4        A        In      -         5.962 r      -         
-vga_inst.grayscale_value_3[0]          LUT4        Z        Out     0.661     6.623 r      -         
-N_37                                   Net         -        -       1.371     -            1         
-vga_inst.col_RNIS94F2_0[1]             LUT4        A        In      -         7.995 r      -         
-vga_inst.col_RNIS94F2_0[1]             LUT4        Z        Out     0.661     8.656 r      -         
-grayscale_value[0]                     Net         -        -       1.371     -            3         
-vga_inst.col_RNIJQ4O4[1]               LUT4        A        In      -         10.027 r     -         
-vga_inst.col_RNIJQ4O4[1]               LUT4        Z        Out     0.661     10.688 r     -         
-RGB_c[4]                               Net         -        -       3.340     -            1         
-RGB_obuf[4]                            OB          I        In      -         14.028 r     -         
-=====================================================================================================
-Total path delay (propagation time + setup) of 14.028 is 5.286(37.7%) logic and 8.743(62.3%) route.
+Instance / Net                             Pin      Pin               Arrival      No. of    
+Name                           Type        Name     Dir     Delay     Time         Fan Out(s)
+---------------------------------------------------------------------------------------------
+vga_inst.row[6]                FD1P3DZ     Q        Out     0.796     0.796 r      -         
+row[6]                         Net         -        -       1.599     -            4         
+vga_inst.row_RNIUN23[5]        LUT4        B        In      -         2.395 r      -         
+vga_inst.row_RNIUN23[5]        LUT4        Z        Out     0.589     2.984 r      -         
+VGA_VSYNC_0_5                  Net         -        -       1.371     -            2         
+vga_inst.col_RNIDEVM[8]        LUT4        A        In      -         4.355 r      -         
+vga_inst.col_RNIDEVM[8]        LUT4        Z        Out     0.661     5.017 r      -         
+RGB_i_o2_0_0[1]                Net         -        -       1.371     -            1         
+vga_inst.row_RNIDSKB1[9]       LUT4        D        In      -         6.388 r      -         
+vga_inst.row_RNIDSKB1[9]       LUT4        Z        Out     0.465     6.853 r      -         
+N_279                          Net         -        -       1.371     -            5         
+vga_inst.row_RNIQB8H1[9]       LUT4        A        In      -         8.224 r      -         
+vga_inst.row_RNIQB8H1[9]       LUT4        Z        Out     0.661     8.885 r      -         
+N_26_1                         Net         -        -       1.371     -            2         
+vga_inst.row_RNI8F6U3_0[9]     LUT4        A        In      -         10.256 r     -         
+vga_inst.row_RNI8F6U3_0[9]     LUT4        Z        Out     0.569     10.825 f     -         
+N_26_i                         Net         -        -       3.340     -            1         
+RGB_obuf[2]                    OB          I        In      -         14.165 f     -         
+=============================================================================================
+Total path delay (propagation time + setup) of 14.165 is 3.742(26.4%) logic and 10.423(73.6%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -495,54 +425,39 @@ Path information for path number 5:
     + Estimated clock delay at ending point: 0.000
     = Required time:                         5.000
 
-    - Propagation time:                      14.028
+    - Propagation time:                      14.134
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -9.028
+    = Slack (non-critical) :                 -9.134
 
-    Number of logic level(s):                10
-    Starting point:                          vga_inst.col[6] / Q
-    Ending point:                            RGB_obuf[0] / I
-    The start point is clocked by            mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    Number of logic level(s):                5
+    Starting point:                          vga_inst.row[7] / Q
+    Ending point:                            RGB_obuf[3] / I
+    The start point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
     The end   point is clocked by            System [rising]
 
-Instance / Net                                     Pin      Pin               Arrival      No. of    
-Name                                   Type        Name     Dir     Delay     Time         Fan Out(s)
------------------------------------------------------------------------------------------------------
-vga_inst.col[6]                        FD1P3DZ     Q        Out     0.796     0.796 r      -         
-col[6]                                 Net         -        -       0.834     -            5         
-vga_read_address_cry_0_c_0             CCU2_B      B1       In      -         1.630 r      -         
-vga_read_address_cry_0_c_0             CCU2_B      COUT     Out     0.358     1.988 r      -         
-carry_pack.vga_read_address_cry_0      Net         -        -       0.014     -            1         
-vga_read_address_cry_1_c_0             CCU2_B      CIN      In      -         2.002 r      -         
-vga_read_address_cry_1_c_0             CCU2_B      COUT     Out     0.278     2.280 r      -         
-carry_pack.vga_read_address_cry_2      Net         -        -       0.014     -            1         
-vga_read_address_cry_3_c_0             CCU2_B      CIN      In      -         2.294 r      -         
-vga_read_address_cry_3_c_0             CCU2_B      COUT     Out     0.278     2.572 r      -         
-carry_pack.vga_read_address_cry_4      Net         -        -       0.014     -            1         
-vga_read_address_cry_5_c_0             CCU2_B      CIN      In      -         2.586 r      -         
-vga_read_address_cry_5_c_0             CCU2_B      COUT     Out     0.278     2.864 r      -         
-carry_pack.vga_read_address_cry_6      Net         -        -       0.014     -            1         
-vga_read_address_cry_7_c_0             CCU2_B      CIN      In      -         2.878 r      -         
-vga_read_address_cry_7_c_0             CCU2_B      COUT     Out     0.278     3.156 r      -         
-carry_pack.vga_read_address_cry_8      Net         -        -       0.014     -            1         
-vga_read_address_cry_7_c_0_RNIS839     CCU2_B      CIN      In      -         3.170 r      -         
-vga_read_address_cry_7_c_0_RNIS839     CCU2_B      S0       Out     0.477     3.647 r      -         
-vga_read_address[15]                   Net         -        -       0.386     -            8         
-config_1.grayscale_value_1[0]          LUT4        C        In      -         4.033 r      -         
-config_1.grayscale_value_1[0]          LUT4        Z        Out     0.558     4.591 r      -         
-N_291                                  Net         -        -       1.371     -            1         
-vga_inst.grayscale_value_3[0]          LUT4        A        In      -         5.962 r      -         
-vga_inst.grayscale_value_3[0]          LUT4        Z        Out     0.661     6.623 r      -         
-N_37                                   Net         -        -       1.371     -            1         
-vga_inst.col_RNIS94F2_0[1]             LUT4        A        In      -         7.995 r      -         
-vga_inst.col_RNIS94F2_0[1]             LUT4        Z        Out     0.661     8.656 r      -         
-grayscale_value[0]                     Net         -        -       1.371     -            3         
-vga_inst.col_RNIU9EM3[1]               LUT4        A        In      -         10.027 r     -         
-vga_inst.col_RNIU9EM3[1]               LUT4        Z        Out     0.661     10.688 r     -         
-RGB_c[0]                               Net         -        -       3.340     -            1         
-RGB_obuf[0]                            OB          I        In      -         14.028 r     -         
-=====================================================================================================
-Total path delay (propagation time + setup) of 14.028 is 5.286(37.7%) logic and 8.743(62.3%) route.
+Instance / Net                           Pin      Pin               Arrival      No. of    
+Name                         Type        Name     Dir     Delay     Time         Fan Out(s)
+-------------------------------------------------------------------------------------------
+vga_inst.row[7]              FD1P3DZ     Q        Out     0.796     0.796 r      -         
+row[7]                       Net         -        -       1.599     -            4         
+vga_inst.row_RNIUN23[5]      LUT4        C        In      -         2.395 r      -         
+vga_inst.row_RNIUN23[5]      LUT4        Z        Out     0.558     2.953 r      -         
+VGA_VSYNC_0_5                Net         -        -       1.371     -            2         
+vga_inst.col_RNIDEVM[8]      LUT4        A        In      -         4.324 r      -         
+vga_inst.col_RNIDEVM[8]      LUT4        Z        Out     0.661     4.986 r      -         
+RGB_i_o2_0_0[1]              Net         -        -       1.371     -            1         
+vga_inst.row_RNIDSKB1[9]     LUT4        D        In      -         6.356 r      -         
+vga_inst.row_RNIDSKB1[9]     LUT4        Z        Out     0.465     6.822 r      -         
+N_279                        Net         -        -       1.371     -            5         
+vga_inst.row_RNIQB8H1[9]     LUT4        A        In      -         8.193 r      -         
+vga_inst.row_RNIQB8H1[9]     LUT4        Z        Out     0.661     8.854 r      -         
+N_26_1                       Net         -        -       1.371     -            2         
+vga_inst.row_RNI8F6U3[9]     LUT4        A        In      -         10.225 r     -         
+vga_inst.row_RNI8F6U3[9]     LUT4        Z        Out     0.569     10.794 f     -         
+N_24_i                       Net         -        -       3.340     -            1         
+RGB_obuf[3]                  OB          I        In      -         14.134 f     -         
+===========================================================================================
+Total path delay (propagation time + setup) of 14.134 is 3.711(26.3%) logic and 10.423(73.7%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -561,16 +476,16 @@ Starting Points with Worst Slack
 Instance                                Reference     Type      Pin     Net                   Time        Slack 
                                         Clock                                                                   
 ----------------------------------------------------------------------------------------------------------------
-un1_vga_read_address_mulonly_0[9:0]     System        MAC16     O2      O2                    0.000       -7.107
-un1_vga_read_address_mulonly_0[9:0]     System        MAC16     O3      O3                    0.000       -6.815
-un1_vga_read_address_mulonly_0[9:0]     System        MAC16     O4      O4                    0.000       -6.815
-un1_vga_read_address_mulonly_0[9:0]     System        MAC16     O5      O5                    0.000       -6.523
-un1_vga_read_address_mulonly_0[9:0]     System        MAC16     O6      O6                    0.000       -6.523
-un1_vga_read_address_mulonly_0[9:0]     System        MAC16     O7      O7                    0.000       -6.231
-un1_vga_read_address_mulonly_0[9:0]     System        MAC16     O8      O8                    0.000       -6.231
-start_ibuf                              System        IB        O       start_c               0.000       -6.001
-CAMERA_VSYNC_IN_ibuf                    System        IB        O       CAMERA_VSYNC_IN_c     0.000       -5.928
-un1_vga_read_address_mulonly_0[9:0]     System        MAC16     O9      O9                    0.000       -5.859
+start_ibuf                              System        IB        O       start_c               0.000       -7.609
+un1_vga_read_address_mulonly_0[9:0]     System        MAC16     O2      O2                    0.000       -6.941
+un1_vga_read_address_mulonly_0[9:0]     System        MAC16     O3      O3                    0.000       -6.649
+un1_vga_read_address_mulonly_0[9:0]     System        MAC16     O4      O4                    0.000       -6.649
+un1_vga_read_address_mulonly_0[9:0]     System        MAC16     O5      O5                    0.000       -6.357
+un1_vga_read_address_mulonly_0[9:0]     System        MAC16     O6      O6                    0.000       -6.357
+un1_vga_read_address_mulonly_0[9:0]     System        MAC16     O7      O7                    0.000       -6.065
+un1_vga_read_address_mulonly_0[9:0]     System        MAC16     O8      O8                    0.000       -6.065
+CAMERA_VSYNC_IN_ibuf                    System        IB        O       CAMERA_VSYNC_IN_c     0.000       -5.970
+un1_vga_read_address_mulonly_0[9:0]     System        MAC16     O9      O9                    0.000       -5.693
 ================================================================================================================
 
 
@@ -581,15 +496,15 @@ Ending Points with Worst Slack
 Instance                Reference     Type        Pin     Net                            Time         Slack 
                         Clock                                                                               
 ------------------------------------------------------------------------------------------------------------
-RGB_obuf[0]             System        OB          I       RGB_c[0]                       5.000        -7.107
-RGB_obuf[1]             System        OB          I       RGB_c[1]                       5.000        -7.107
-RGB_obuf[2]             System        OB          I       RGB_c[2]                       5.000        -7.107
-RGB_obuf[3]             System        OB          I       RGB_c[3]                       5.000        -7.107
-RGB_obuf[4]             System        OB          I       RGB_c[4]                       5.000        -7.107
-RGB_obuf[5]             System        OB          I       RGB_c[5]                       5.000        -7.107
-fsm_state[1]            System        FD1P3DZ     D       fsm_state_0                    4.845        -6.001
-fsm_state[0]            System        FD1P3DZ     D       fsm_state_1                    4.845        -5.928
-fsm_state[2]            System        FD1P3DZ     D       fsm_state                      4.845        -5.804
+fsm_state[1]            System        FD1P3DZ     D       fsm_state                      4.845        -7.609
+RGB_obuf[1]             System        OB          I       N_16_i                         5.000        -6.941
+RGB_obuf[3]             System        OB          I       N_24_i                         5.000        -6.941
+RGB_obuf[5]             System        OB          I       N_257_i                        5.000        -6.941
+RGB_obuf[0]             System        OB          I       N_256_i                        5.000        -6.931
+RGB_obuf[2]             System        OB          I       N_26_i                         5.000        -6.931
+RGB_obuf[4]             System        OB          I       N_22_i                         5.000        -6.931
+fsm_state[0]            System        FD1P3DZ     D       fsm_state_0                    4.845        -5.970
+fsm_state[2]            System        FD1P3DZ     SP      fsm_state_1_sqmuxa_3_i         4.845        -5.970
 address_counter[15]     System        FD1P3IZ     D       address_counter_RNO_S0[15]     4.845        -4.444
 ============================================================================================================
 
@@ -601,57 +516,38 @@ Worst Path Information
 
 Path information for path number 1: 
       Requested Period:                      5.000
-    - Setup time:                            0.000
+    - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    + Estimated clock delay at ending point: 0.000
-    = Required time:                         5.000
+    = Required time:                         4.845
 
-    - Propagation time:                      12.107
+    - Propagation time:                      12.454
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -7.107
+    = Slack (non-critical) :                 -7.609
 
-    Number of logic level(s):                9
-    Starting point:                          un1_vga_read_address_mulonly_0[9:0] / O2
-    Ending point:                            RGB_obuf[2] / I
+    Number of logic level(s):                3
+    Starting point:                          start_ibuf / O
+    Ending point:                            fsm_state[1] / D
     The start point is clocked by            System [rising]
-    The end   point is clocked by            System [rising]
+    The end   point is clocked by            mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
 
-Instance / Net                                     Pin      Pin               Arrival      No. of    
-Name                                    Type       Name     Dir     Delay     Time         Fan Out(s)
------------------------------------------------------------------------------------------------------
-un1_vga_read_address_mulonly_0[9:0]     MAC16      O2       Out     0.000     0.000 r      -         
-O2                                      Net        -        -       0.000     -            1         
-vga_read_address_cry_1_c_0              CCU2_B     C1       In      -         0.000 r      -         
-vga_read_address_cry_1_c_0              CCU2_B     COUT     Out     0.358     0.358 r      -         
-carry_pack.vga_read_address_cry_2       Net        -        -       0.014     -            1         
-vga_read_address_cry_3_c_0              CCU2_B     CIN      In      -         0.372 r      -         
-vga_read_address_cry_3_c_0              CCU2_B     COUT     Out     0.278     0.650 r      -         
-carry_pack.vga_read_address_cry_4       Net        -        -       0.014     -            1         
-vga_read_address_cry_5_c_0              CCU2_B     CIN      In      -         0.664 r      -         
-vga_read_address_cry_5_c_0              CCU2_B     COUT     Out     0.278     0.942 r      -         
-carry_pack.vga_read_address_cry_6       Net        -        -       0.014     -            1         
-vga_read_address_cry_7_c_0              CCU2_B     CIN      In      -         0.956 r      -         
-vga_read_address_cry_7_c_0              CCU2_B     COUT     Out     0.278     1.234 r      -         
-carry_pack.vga_read_address_cry_8       Net        -        -       0.014     -            1         
-vga_read_address_cry_7_c_0_RNIS839      CCU2_B     CIN      In      -         1.248 r      -         
-vga_read_address_cry_7_c_0_RNIS839      CCU2_B     S0       Out     0.477     1.725 r      -         
-vga_read_address[15]                    Net        -        -       0.386     -            8         
-config_1.grayscale_value_1[0]           LUT4       C        In      -         2.111 r      -         
-config_1.grayscale_value_1[0]           LUT4       Z        Out     0.558     2.669 r      -         
-N_291                                   Net        -        -       1.371     -            1         
-vga_inst.grayscale_value_3[0]           LUT4       A        In      -         4.040 r      -         
-vga_inst.grayscale_value_3[0]           LUT4       Z        Out     0.661     4.702 r      -         
-N_37                                    Net        -        -       1.371     -            1         
-vga_inst.col_RNIS94F2_0[1]              LUT4       A        In      -         6.073 r      -         
-vga_inst.col_RNIS94F2_0[1]              LUT4       Z        Out     0.661     6.734 r      -         
-grayscale_value[0]                      Net        -        -       1.371     -            3         
-vga_inst.col_RNI0AOT4[1]                LUT4       A        In      -         8.105 r      -         
-vga_inst.col_RNI0AOT4[1]                LUT4       Z        Out     0.661     8.767 r      -         
-RGB_c[2]                                Net        -        -       3.340     -            1         
-RGB_obuf[2]                             OB         I        In      -         12.107 r     -         
-=====================================================================================================
-Total path delay (propagation time + setup) of 12.107 is 4.212(34.8%) logic and 7.895(65.2%) route.
+Instance / Net                     Pin      Pin               Arrival      No. of    
+Name                   Type        Name     Dir     Delay     Time         Fan Out(s)
+-------------------------------------------------------------------------------------
+start_ibuf             IB          O        Out     0.000     0.000 r      -         
+start_c                Net         -        -       6.717     -            4         
+vga_inst.g0_i_0_x1     LUT4        D        In      -         6.717 r      -         
+vga_inst.g0_i_0_x1     LUT4        Z        Out     0.465     7.182 r      -         
+g0_i_0_x1              Net         -        -       1.371     -            1         
+vga_inst.g0_i_0_ns     LUT4        D        In      -         8.553 r      -         
+vga_inst.g0_i_0_ns     LUT4        Z        Out     0.465     9.018 r      -         
+g0_i_0                 Net         -        -       1.371     -            1         
+vga_inst.g0_0          LUT4        B        In      -         10.389 r     -         
+vga_inst.g0_0          LUT4        Z        Out     0.558     10.947 f     -         
+fsm_state              Net         -        -       1.507     -            1         
+fsm_state[1]           FD1P3DZ     D        In      -         12.454 f     -         
+=====================================================================================
+Total path delay (propagation time + setup) of 12.609 is 1.643(13.0%) logic and 10.966(87.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -662,10 +558,10 @@ Path information for path number 2:
     + Estimated clock delay at ending point: 0.000
     = Required time:                         5.000
 
-    - Propagation time:                      12.107
+    - Propagation time:                      11.941
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -7.107
+    = Slack (non-critical) :                 -6.941
 
     Number of logic level(s):                9
     Starting point:                          un1_vga_read_address_mulonly_0[9:0] / O2
@@ -692,22 +588,22 @@ vga_read_address_cry_7_c_0              CCU2_B     COUT     Out     0.278     1.
 carry_pack.vga_read_address_cry_8       Net        -        -       0.014     -            1         
 vga_read_address_cry_7_c_0_RNIS839      CCU2_B     CIN      In      -         1.248 r      -         
 vga_read_address_cry_7_c_0_RNIS839      CCU2_B     S0       Out     0.477     1.725 r      -         
-vga_read_address[15]                    Net        -        -       0.386     -            8         
-config_1.grayscale_value_1[1]           LUT4       C        In      -         2.111 r      -         
-config_1.grayscale_value_1[1]           LUT4       Z        Out     0.558     2.669 r      -         
-N_292                                   Net        -        -       1.371     -            1         
-vga_inst.grayscale_value_3[1]           LUT4       A        In      -         4.040 r      -         
-vga_inst.grayscale_value_3[1]           LUT4       Z        Out     0.661     4.702 r      -         
-N_38                                    Net        -        -       1.371     -            1         
-vga_inst.col_RNIS94F2[1]                LUT4       A        In      -         6.073 r      -         
-vga_inst.col_RNIS94F2[1]                LUT4       Z        Out     0.661     6.734 r      -         
-grayscale_value[1]                      Net        -        -       1.371     -            3         
-vga_inst.col_RNI0AOT4_0[1]              LUT4       A        In      -         8.105 r      -         
-vga_inst.col_RNI0AOT4_0[1]              LUT4       Z        Out     0.661     8.767 r      -         
-RGB_c[3]                                Net        -        -       3.340     -            1         
-RGB_obuf[3]                             OB         I        In      -         12.107 r     -         
+vga_read_address[15]                    Net        -        -       0.386     -            6         
+vga_inst.grayscale_value_4_i_m3[1]      LUT4       C        In      -         2.111 r      -         
+vga_inst.grayscale_value_4_i_m3[1]      LUT4       Z        Out     0.558     2.669 r      -         
+N_299                                   Net        -        -       1.371     -            1         
+vga_inst.col_RNIOREB1_0[1]              LUT4       A        In      -         4.040 r      -         
+vga_inst.col_RNIOREB1_0[1]              LUT4       Z        Out     0.661     4.702 r      -         
+N_295                                   Net        -        -       1.371     -            1         
+vga_inst.col_RNIU72B2[1]                LUT4       A        In      -         6.073 r      -         
+vga_inst.col_RNIU72B2[1]                LUT4       Z        Out     0.569     6.641 f      -         
+N_267                                   Net        -        -       1.371     -            3         
+vga_inst.row_RNI8F6U3[9]                LUT4       B        In      -         8.012 f      -         
+vga_inst.row_RNI8F6U3[9]                LUT4       Z        Out     0.589     8.601 r      -         
+N_24_i                                  Net        -        -       3.340     -            1         
+RGB_obuf[3]                             OB         I        In      -         11.941 r     -         
 =====================================================================================================
-Total path delay (propagation time + setup) of 12.107 is 4.212(34.8%) logic and 7.895(65.2%) route.
+Total path delay (propagation time + setup) of 11.941 is 4.046(33.9%) logic and 7.895(66.1%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -718,122 +614,10 @@ Path information for path number 3:
     + Estimated clock delay at ending point: 0.000
     = Required time:                         5.000
 
-    - Propagation time:                      12.107
+    - Propagation time:                      11.941
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -7.107
-
-    Number of logic level(s):                9
-    Starting point:                          un1_vga_read_address_mulonly_0[9:0] / O2
-    Ending point:                            RGB_obuf[4] / I
-    The start point is clocked by            System [rising]
-    The end   point is clocked by            System [rising]
-
-Instance / Net                                     Pin      Pin               Arrival      No. of    
-Name                                    Type       Name     Dir     Delay     Time         Fan Out(s)
------------------------------------------------------------------------------------------------------
-un1_vga_read_address_mulonly_0[9:0]     MAC16      O2       Out     0.000     0.000 r      -         
-O2                                      Net        -        -       0.000     -            1         
-vga_read_address_cry_1_c_0              CCU2_B     C1       In      -         0.000 r      -         
-vga_read_address_cry_1_c_0              CCU2_B     COUT     Out     0.358     0.358 r      -         
-carry_pack.vga_read_address_cry_2       Net        -        -       0.014     -            1         
-vga_read_address_cry_3_c_0              CCU2_B     CIN      In      -         0.372 r      -         
-vga_read_address_cry_3_c_0              CCU2_B     COUT     Out     0.278     0.650 r      -         
-carry_pack.vga_read_address_cry_4       Net        -        -       0.014     -            1         
-vga_read_address_cry_5_c_0              CCU2_B     CIN      In      -         0.664 r      -         
-vga_read_address_cry_5_c_0              CCU2_B     COUT     Out     0.278     0.942 r      -         
-carry_pack.vga_read_address_cry_6       Net        -        -       0.014     -            1         
-vga_read_address_cry_7_c_0              CCU2_B     CIN      In      -         0.956 r      -         
-vga_read_address_cry_7_c_0              CCU2_B     COUT     Out     0.278     1.234 r      -         
-carry_pack.vga_read_address_cry_8       Net        -        -       0.014     -            1         
-vga_read_address_cry_7_c_0_RNIS839      CCU2_B     CIN      In      -         1.248 r      -         
-vga_read_address_cry_7_c_0_RNIS839      CCU2_B     S0       Out     0.477     1.725 r      -         
-vga_read_address[15]                    Net        -        -       0.386     -            8         
-config_1.grayscale_value_1[0]           LUT4       C        In      -         2.111 r      -         
-config_1.grayscale_value_1[0]           LUT4       Z        Out     0.558     2.669 r      -         
-N_291                                   Net        -        -       1.371     -            1         
-vga_inst.grayscale_value_3[0]           LUT4       A        In      -         4.040 r      -         
-vga_inst.grayscale_value_3[0]           LUT4       Z        Out     0.661     4.702 r      -         
-N_37                                    Net        -        -       1.371     -            1         
-vga_inst.col_RNIS94F2_0[1]              LUT4       A        In      -         6.073 r      -         
-vga_inst.col_RNIS94F2_0[1]              LUT4       Z        Out     0.661     6.734 r      -         
-grayscale_value[0]                      Net        -        -       1.371     -            3         
-vga_inst.col_RNIJQ4O4[1]                LUT4       A        In      -         8.105 r      -         
-vga_inst.col_RNIJQ4O4[1]                LUT4       Z        Out     0.661     8.767 r      -         
-RGB_c[4]                                Net        -        -       3.340     -            1         
-RGB_obuf[4]                             OB         I        In      -         12.107 r     -         
-=====================================================================================================
-Total path delay (propagation time + setup) of 12.107 is 4.212(34.8%) logic and 7.895(65.2%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 4: 
-      Requested Period:                      5.000
-    - Setup time:                            0.000
-    + Clock delay at ending point:           0.000 (ideal)
-    + Estimated clock delay at ending point: 0.000
-    = Required time:                         5.000
-
-    - Propagation time:                      12.107
-    - Clock delay at starting point:         0.000 (ideal)
-    - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -7.107
-
-    Number of logic level(s):                9
-    Starting point:                          un1_vga_read_address_mulonly_0[9:0] / O2
-    Ending point:                            RGB_obuf[0] / I
-    The start point is clocked by            System [rising]
-    The end   point is clocked by            System [rising]
-
-Instance / Net                                     Pin      Pin               Arrival      No. of    
-Name                                    Type       Name     Dir     Delay     Time         Fan Out(s)
------------------------------------------------------------------------------------------------------
-un1_vga_read_address_mulonly_0[9:0]     MAC16      O2       Out     0.000     0.000 r      -         
-O2                                      Net        -        -       0.000     -            1         
-vga_read_address_cry_1_c_0              CCU2_B     C1       In      -         0.000 r      -         
-vga_read_address_cry_1_c_0              CCU2_B     COUT     Out     0.358     0.358 r      -         
-carry_pack.vga_read_address_cry_2       Net        -        -       0.014     -            1         
-vga_read_address_cry_3_c_0              CCU2_B     CIN      In      -         0.372 r      -         
-vga_read_address_cry_3_c_0              CCU2_B     COUT     Out     0.278     0.650 r      -         
-carry_pack.vga_read_address_cry_4       Net        -        -       0.014     -            1         
-vga_read_address_cry_5_c_0              CCU2_B     CIN      In      -         0.664 r      -         
-vga_read_address_cry_5_c_0              CCU2_B     COUT     Out     0.278     0.942 r      -         
-carry_pack.vga_read_address_cry_6       Net        -        -       0.014     -            1         
-vga_read_address_cry_7_c_0              CCU2_B     CIN      In      -         0.956 r      -         
-vga_read_address_cry_7_c_0              CCU2_B     COUT     Out     0.278     1.234 r      -         
-carry_pack.vga_read_address_cry_8       Net        -        -       0.014     -            1         
-vga_read_address_cry_7_c_0_RNIS839      CCU2_B     CIN      In      -         1.248 r      -         
-vga_read_address_cry_7_c_0_RNIS839      CCU2_B     S0       Out     0.477     1.725 r      -         
-vga_read_address[15]                    Net        -        -       0.386     -            8         
-config_1.grayscale_value_1[0]           LUT4       C        In      -         2.111 r      -         
-config_1.grayscale_value_1[0]           LUT4       Z        Out     0.558     2.669 r      -         
-N_291                                   Net        -        -       1.371     -            1         
-vga_inst.grayscale_value_3[0]           LUT4       A        In      -         4.040 r      -         
-vga_inst.grayscale_value_3[0]           LUT4       Z        Out     0.661     4.702 r      -         
-N_37                                    Net        -        -       1.371     -            1         
-vga_inst.col_RNIS94F2_0[1]              LUT4       A        In      -         6.073 r      -         
-vga_inst.col_RNIS94F2_0[1]              LUT4       Z        Out     0.661     6.734 r      -         
-grayscale_value[0]                      Net        -        -       1.371     -            3         
-vga_inst.col_RNIU9EM3[1]                LUT4       A        In      -         8.105 r      -         
-vga_inst.col_RNIU9EM3[1]                LUT4       Z        Out     0.661     8.767 r      -         
-RGB_c[0]                                Net        -        -       3.340     -            1         
-RGB_obuf[0]                             OB         I        In      -         12.107 r     -         
-=====================================================================================================
-Total path delay (propagation time + setup) of 12.107 is 4.212(34.8%) logic and 7.895(65.2%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 5: 
-      Requested Period:                      5.000
-    - Setup time:                            0.000
-    + Clock delay at ending point:           0.000 (ideal)
-    + Estimated clock delay at ending point: 0.000
-    = Required time:                         5.000
-
-    - Propagation time:                      12.107
-    - Clock delay at starting point:         0.000 (ideal)
-    - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -7.107
+    = Slack (non-critical) :                 -6.941
 
     Number of logic level(s):                9
     Starting point:                          un1_vga_read_address_mulonly_0[9:0] / O2
@@ -860,22 +644,134 @@ vga_read_address_cry_7_c_0              CCU2_B     COUT     Out     0.278     1.
 carry_pack.vga_read_address_cry_8       Net        -        -       0.014     -            1         
 vga_read_address_cry_7_c_0_RNIS839      CCU2_B     CIN      In      -         1.248 r      -         
 vga_read_address_cry_7_c_0_RNIS839      CCU2_B     S0       Out     0.477     1.725 r      -         
-vga_read_address[15]                    Net        -        -       0.386     -            8         
-config_1.grayscale_value_1[1]           LUT4       C        In      -         2.111 r      -         
-config_1.grayscale_value_1[1]           LUT4       Z        Out     0.558     2.669 r      -         
-N_292                                   Net        -        -       1.371     -            1         
-vga_inst.grayscale_value_3[1]           LUT4       A        In      -         4.040 r      -         
-vga_inst.grayscale_value_3[1]           LUT4       Z        Out     0.661     4.702 r      -         
-N_38                                    Net        -        -       1.371     -            1         
-vga_inst.col_RNIS94F2[1]                LUT4       A        In      -         6.073 r      -         
-vga_inst.col_RNIS94F2[1]                LUT4       Z        Out     0.661     6.734 r      -         
-grayscale_value[1]                      Net        -        -       1.371     -            3         
-vga_inst.col_RNIJQ4O4_0[1]              LUT4       A        In      -         8.105 r      -         
-vga_inst.col_RNIJQ4O4_0[1]              LUT4       Z        Out     0.661     8.767 r      -         
-RGB_c[5]                                Net        -        -       3.340     -            1         
-RGB_obuf[5]                             OB         I        In      -         12.107 r     -         
+vga_read_address[15]                    Net        -        -       0.386     -            6         
+vga_inst.grayscale_value_4_i_m3[1]      LUT4       C        In      -         2.111 r      -         
+vga_inst.grayscale_value_4_i_m3[1]      LUT4       Z        Out     0.558     2.669 r      -         
+N_299                                   Net        -        -       1.371     -            1         
+vga_inst.col_RNIOREB1_0[1]              LUT4       A        In      -         4.040 r      -         
+vga_inst.col_RNIOREB1_0[1]              LUT4       Z        Out     0.661     4.702 r      -         
+N_295                                   Net        -        -       1.371     -            1         
+vga_inst.col_RNIU72B2[1]                LUT4       A        In      -         6.073 r      -         
+vga_inst.col_RNIU72B2[1]                LUT4       Z        Out     0.569     6.641 f      -         
+N_267                                   Net        -        -       1.371     -            3         
+vga_inst.row_RNIOJAS3[9]                LUT4       B        In      -         8.012 f      -         
+vga_inst.row_RNIOJAS3[9]                LUT4       Z        Out     0.589     8.601 r      -         
+N_257_i                                 Net        -        -       3.340     -            1         
+RGB_obuf[5]                             OB         I        In      -         11.941 r     -         
 =====================================================================================================
-Total path delay (propagation time + setup) of 12.107 is 4.212(34.8%) logic and 7.895(65.2%) route.
+Total path delay (propagation time + setup) of 11.941 is 4.046(33.9%) logic and 7.895(66.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      5.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.000
+
+    - Propagation time:                      11.941
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -6.941
+
+    Number of logic level(s):                9
+    Starting point:                          un1_vga_read_address_mulonly_0[9:0] / O2
+    Ending point:                            RGB_obuf[1] / I
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                     Pin      Pin               Arrival      No. of    
+Name                                    Type       Name     Dir     Delay     Time         Fan Out(s)
+-----------------------------------------------------------------------------------------------------
+un1_vga_read_address_mulonly_0[9:0]     MAC16      O2       Out     0.000     0.000 r      -         
+O2                                      Net        -        -       0.000     -            1         
+vga_read_address_cry_1_c_0              CCU2_B     C1       In      -         0.000 r      -         
+vga_read_address_cry_1_c_0              CCU2_B     COUT     Out     0.358     0.358 r      -         
+carry_pack.vga_read_address_cry_2       Net        -        -       0.014     -            1         
+vga_read_address_cry_3_c_0              CCU2_B     CIN      In      -         0.372 r      -         
+vga_read_address_cry_3_c_0              CCU2_B     COUT     Out     0.278     0.650 r      -         
+carry_pack.vga_read_address_cry_4       Net        -        -       0.014     -            1         
+vga_read_address_cry_5_c_0              CCU2_B     CIN      In      -         0.664 r      -         
+vga_read_address_cry_5_c_0              CCU2_B     COUT     Out     0.278     0.942 r      -         
+carry_pack.vga_read_address_cry_6       Net        -        -       0.014     -            1         
+vga_read_address_cry_7_c_0              CCU2_B     CIN      In      -         0.956 r      -         
+vga_read_address_cry_7_c_0              CCU2_B     COUT     Out     0.278     1.234 r      -         
+carry_pack.vga_read_address_cry_8       Net        -        -       0.014     -            1         
+vga_read_address_cry_7_c_0_RNIS839      CCU2_B     CIN      In      -         1.248 r      -         
+vga_read_address_cry_7_c_0_RNIS839      CCU2_B     S0       Out     0.477     1.725 r      -         
+vga_read_address[15]                    Net        -        -       0.386     -            6         
+vga_inst.grayscale_value_4_i_m3[1]      LUT4       C        In      -         2.111 r      -         
+vga_inst.grayscale_value_4_i_m3[1]      LUT4       Z        Out     0.558     2.669 r      -         
+N_299                                   Net        -        -       1.371     -            1         
+vga_inst.col_RNIOREB1_0[1]              LUT4       A        In      -         4.040 r      -         
+vga_inst.col_RNIOREB1_0[1]              LUT4       Z        Out     0.661     4.702 r      -         
+N_295                                   Net        -        -       1.371     -            1         
+vga_inst.col_RNIU72B2[1]                LUT4       A        In      -         6.073 r      -         
+vga_inst.col_RNIU72B2[1]                LUT4       Z        Out     0.569     6.641 f      -         
+N_267                                   Net        -        -       1.371     -            3         
+vga_inst.row_RNIOJAS3_1[9]              LUT4       B        In      -         8.012 f      -         
+vga_inst.row_RNIOJAS3_1[9]              LUT4       Z        Out     0.589     8.601 r      -         
+N_16_i                                  Net        -        -       3.340     -            1         
+RGB_obuf[1]                             OB         I        In      -         11.941 r     -         
+=====================================================================================================
+Total path delay (propagation time + setup) of 11.941 is 4.046(33.9%) logic and 7.895(66.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      5.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.000
+
+    - Propagation time:                      11.931
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -6.931
+
+    Number of logic level(s):                9
+    Starting point:                          un1_vga_read_address_mulonly_0[9:0] / O2
+    Ending point:                            RGB_obuf[2] / I
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                     Pin      Pin               Arrival      No. of    
+Name                                    Type       Name     Dir     Delay     Time         Fan Out(s)
+-----------------------------------------------------------------------------------------------------
+un1_vga_read_address_mulonly_0[9:0]     MAC16      O2       Out     0.000     0.000 r      -         
+O2                                      Net        -        -       0.000     -            1         
+vga_read_address_cry_1_c_0              CCU2_B     C1       In      -         0.000 r      -         
+vga_read_address_cry_1_c_0              CCU2_B     COUT     Out     0.358     0.358 r      -         
+carry_pack.vga_read_address_cry_2       Net        -        -       0.014     -            1         
+vga_read_address_cry_3_c_0              CCU2_B     CIN      In      -         0.372 r      -         
+vga_read_address_cry_3_c_0              CCU2_B     COUT     Out     0.278     0.650 r      -         
+carry_pack.vga_read_address_cry_4       Net        -        -       0.014     -            1         
+vga_read_address_cry_5_c_0              CCU2_B     CIN      In      -         0.664 r      -         
+vga_read_address_cry_5_c_0              CCU2_B     COUT     Out     0.278     0.942 r      -         
+carry_pack.vga_read_address_cry_6       Net        -        -       0.014     -            1         
+vga_read_address_cry_7_c_0              CCU2_B     CIN      In      -         0.956 r      -         
+vga_read_address_cry_7_c_0              CCU2_B     COUT     Out     0.278     1.234 r      -         
+carry_pack.vga_read_address_cry_8       Net        -        -       0.014     -            1         
+vga_read_address_cry_7_c_0_RNIS839      CCU2_B     CIN      In      -         1.248 r      -         
+vga_read_address_cry_7_c_0_RNIS839      CCU2_B     S0       Out     0.477     1.725 r      -         
+vga_read_address[15]                    Net        -        -       0.386     -            6         
+vga_inst.grayscale_value_4_i_m3[0]      LUT4       C        In      -         2.111 r      -         
+vga_inst.grayscale_value_4_i_m3[0]      LUT4       Z        Out     0.558     2.669 r      -         
+N_300                                   Net        -        -       1.371     -            1         
+vga_inst.col_RNIOREB1[1]                LUT4       A        In      -         4.040 r      -         
+vga_inst.col_RNIOREB1[1]                LUT4       Z        Out     0.661     4.702 r      -         
+N_293                                   Net        -        -       1.371     -            1         
+vga_inst.col_RNIU72B2_0[1]              LUT4       B        In      -         6.073 r      -         
+vga_inst.col_RNIU72B2_0[1]              LUT4       Z        Out     0.558     6.631 f      -         
+N_266                                   Net        -        -       1.371     -            3         
+vga_inst.row_RNI8F6U3_0[9]              LUT4       B        In      -         8.002 f      -         
+vga_inst.row_RNI8F6U3_0[9]              LUT4       Z        Out     0.589     8.591 r      -         
+N_26_i                                  Net        -        -       3.340     -            1         
+RGB_obuf[2]                             OB         I        In      -         11.931 r     -         
+=====================================================================================================
+Total path delay (propagation time + setup) of 11.931 is 4.036(33.8%) logic and 7.895(66.2%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -884,51 +780,50 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 202MB peak: 208MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 198MB peak: 200MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 202MB peak: 208MB)
+Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 198MB peak: 200MB)
 
 ---------------------------------------
 Resource Usage Report for top 
 
 Mapping to part: ice40up5ksg48i-6
 Cell usage:
-CCU2_B          54 uses
-FD1P3DZ         169 uses
-FD1P3IZ         46 uses
-FD1P3JZ         7 uses
-INV             2 uses
+CCU2_B          25 uses
+FD1P3DZ         40 uses
+FD1P3IZ         17 uses
+FD1P3JZ         16 uses
 PLL_B           1 use
 SP256K          3 uses
-VHI             8 uses
-VLO             8 uses
+VHI             5 uses
+VLO             5 uses
 MAC16           1 use
-LUT4            387 uses
+LUT4            118 uses
 
 I/O ports: 30
 I/O primitives: 30
 IB             13 uses
-OB             14 uses
-OBZ_B          3 uses
+OB             13 uses
+OBZ_B          4 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   222 of 5280 (4%)
+Register bits not including I/Os:   73 of 5280 (1%)
 Total load per clock:
-   mypll_ipgen_lscc_pll_Z2_layer0|outcore_o_inferred_clock: 214
+   mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock: 65
    top|CAMERA_PCLOCK: 1
 
 @S |Mapping Summary:
-Total  LUTs: 387 (7%)
+Total  LUTs: 118 (2%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed LUTs 387 = 387 
+Distribution of All Consumed LUTs 118 = 118 
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 67MB peak: 208MB)
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 65MB peak: 200MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:03s cputime
-# Mon Apr 14 23:47:40 2025
+Process took 0h:00m:04s realtime, 0h:00m:02s cputime
+# Tue Apr 15 16:35:05 2025
 
 ###########################################################]

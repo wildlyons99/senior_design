@@ -48,22 +48,21 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Tue Mar 25 16:11:15 2025
+Tue Apr 15 11:09:02 2025
 
 Pinout by Port Name:
 +-------------+----------+--------------+-------+------------------------------------------+
 | Port Name   | Pin/Bank | Buffer Type  | Site  | Properties                               |
 +-------------+----------+--------------+-------+------------------------------------------+
-| clk         | 44/2     | LVCMOS33_IN  | PL7B  | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
-| done        | 6/1      | LVCMOS33_OUT | PL14B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| frame_done  | 26/0     | LVCMOS33_OUT | PR19A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| href_in     | 32/0     | LVCMOS33_IN  | PR17A | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
-| pixel_valid | 31/0     | LVCMOS33_OUT | PR17B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| sioc        | 46/2     | LVCMOS33_OUT | PL6A  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| siod        | 47/2     | LVCMOS33_OUT | PL7A  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| TEST        | 10/1     | LVCMOS33_OUT | PL17A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| clk         | 20/1     | LVCMOS33_IN  | PL20B | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
+| clk_25MHz   | 43/0     | LVCMOS33_OUT | PR10A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| done        | 34/0     | LVCMOS33_OUT | PR14B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| frame_done  | 11/1     | LVCMOS33_OUT | PL18A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| pixel_valid | 13/1     | LVCMOS33_OUT | PL20A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| sioc        | 12/1     | LVCMOS33_OUT | PL19A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| siod        | 21/1     | LVCMOS33_OUT | PL19B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | start       | 2/2      | LVCMOS33_IN  | PL9A  | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
-| test_clk    | 4/2      | LVCMOS33_OUT | PL10A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| vsync_in    | 28/0     | LVCMOS33_IN  | PR18A | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
 +-------------+----------+--------------+-------+------------------------------------------+
 
 Vccio by Bank:
@@ -81,29 +80,29 @@ Vccio by Bank:
 +----------+---------------------+------------+--------------+-------+------------------+
 | 2/2      | start               | LOCATED    | LVCMOS33_IN  | PL9A  |                  |
 | 3/2      |     unused, PULL:UP |            |              | PL10B |                  |
-| 4/2      | test_clk            | LOCATED    | LVCMOS33_OUT | PL10A |                  |
-| 6/1      | done                |            | LVCMOS33_OUT | PL14B |                  |
+| 4/2      |     unused, PULL:UP |            |              | PL10A |                  |
+| 6/1      |     unused, PULL:UP |            |              | PL14B |                  |
 | 9/1      |     unused, PULL:UP |            |              | PL16A |                  |
-| 10/1     |     unused, PULL:UP |            |              | PL17A |                  |
-| 11/1     |     unused, PULL:UP |            |              | PL18A |                  |
-| 12/1     |     unused, PULL:UP |            |              | PL19A |                  |
-| 13/1     |     unused, PULL:UP |            |              | PL20A |                  |
+| 10/1     | TEST                | LOCATED    | LVCMOS33_OUT | PL17A |                  |
+| 11/1     | frame_done          |            | LVCMOS33_OUT | PL18A |                  |
+| 12/1     | sioc                | LOCATED    | LVCMOS33_OUT | PL19A |                  |
+| 13/1     | pixel_valid         |            | LVCMOS33_OUT | PL20A |                  |
 | 14/1     |     unused, PULL:UP |            |              | PL24A | SPI_SO           |
 | 15/1     |     unused, PULL:UP |            |              | PL25A | SPISCK           |
 | 16/1     |     unused, PULL:UP |            |              | PL25B | SPI_SS           |
 | 17/1     |     unused, PULL:UP |            |              | PL24B | SPI_SI           |
 | 18/1     |     unused, PULL:UP |            |              | PL23B |                  |
 | 19/1     |     unused, PULL:UP |            |              | PL22B |                  |
-| 20/1     |     unused, PULL:UP |            |              | PL20B | PCLKT1_0         |
-| 21/1     |     unused, PULL:UP |            |              | PL19B |                  |
+| 20/1     | clk                 | LOCATED    | LVCMOS33_IN  | PL20B | PCLKT1_0         |
+| 21/1     | siod                | LOCATED    | LVCMOS33_OUT | PL19B |                  |
 | 23/0     |     unused, PULL:UP |            |              | PR20A |                  |
 | 25/0     |     unused, PULL:UP |            |              | PR20B |                  |
-| 26/0     | frame_done          |            | LVCMOS33_OUT | PR19A |                  |
+| 26/0     |     unused, PULL:UP |            |              | PR19A |                  |
 | 27/0     |     unused, PULL:UP |            |              | PR19B |                  |
-| 28/0     | vsync_in            |            | LVCMOS33_IN  | PR18A |                  |
-| 31/0     | pixel_valid         |            | LVCMOS33_OUT | PR17B |                  |
-| 32/0     | href_in             |            | LVCMOS33_IN  | PR17A |                  |
-| 34/0     |     unused, PULL:UP |            |              | PR14B |                  |
+| 28/0     |     unused, PULL:UP |            |              | PR18A |                  |
+| 31/0     |     unused, PULL:UP |            |              | PR17B |                  |
+| 32/0     |     unused, PULL:UP |            |              | PR17A |                  |
+| 34/0     | done                | LOCATED    | LVCMOS33_OUT | PR14B |                  |
 | 35/0     |     unused, PULL:UP |            |              | PR13B | GPLL_IN/PCLKT0_1 |
 | 36/0     |     unused, PULL:UP |            |              | PR10B |                  |
 | 37/0     |     unused, PULL:UP |            |              | PR14A | PCLKT0_0         |
@@ -112,11 +111,11 @@ Vccio by Bank:
 | 40/0     |                     |            |              | PR6A  | RGB1             |
 | 41/0     |                     |            |              | PR7A  | RGB2             |
 | 42/0     |     unused, PULL:UP |            |              | PR9A  |                  |
-| 43/0     |     unused, PULL:UP |            |              | PR10A |                  |
-| 44/2     | clk                 | LOCATED    | LVCMOS33_IN  | PL7B  | PCLKT2_0         |
+| 43/0     | clk_25MHz           | LOCATED    | LVCMOS33_OUT | PR10A |                  |
+| 44/2     |     unused, PULL:UP |            |              | PL7B  | PCLKT2_0         |
 | 45/2     |     unused, PULL:UP |            |              | PL8B  |                  |
-| 46/2     | sioc                | LOCATED    | LVCMOS33_OUT | PL6A  |                  |
-| 47/2     | siod                | LOCATED    | LVCMOS33_OUT | PL7A  |                  |
+| 46/2     |     unused, PULL:UP |            |              | PL6A  |                  |
+| 47/2     |     unused, PULL:UP |            |              | PL7A  |                  |
 | 48/2     |     unused, PULL:UP |            |              | PL8A  |                  |
 | PL6B/2   |     unused, PULL:UP |            |              | PL6B  |                  |
 | PL9B/2   |     unused, PULL:UP |            |              | PL9B  |                  |
@@ -140,16 +139,15 @@ Vccio by Bank:
 
 Locate Constraints for each Pin: 
 
-ldc_set_location -site {44} [ get_ports {clk} ]
-ldc_set_location -site {6} [ get_ports {done} ]
-ldc_set_location -site {26} [ get_ports {frame_done} ]
-ldc_set_location -site {32} [ get_ports {href_in} ]
-ldc_set_location -site {31} [ get_ports {pixel_valid} ]
-ldc_set_location -site {46} [ get_ports {sioc} ]
-ldc_set_location -site {47} [ get_ports {siod} ]
+ldc_set_location -site {10} [ get_ports {TEST} ]
+ldc_set_location -site {20} [ get_ports {clk} ]
+ldc_set_location -site {43} [ get_ports {clk_25MHz} ]
+ldc_set_location -site {34} [ get_ports {done} ]
+ldc_set_location -site {11} [ get_ports {frame_done} ]
+ldc_set_location -site {13} [ get_ports {pixel_valid} ]
+ldc_set_location -site {12} [ get_ports {sioc} ]
+ldc_set_location -site {21} [ get_ports {siod} ]
 ldc_set_location -site {2} [ get_ports {start} ]
-ldc_set_location -site {4} [ get_ports {test_clk} ]
-ldc_set_location -site {28} [ get_ports {vsync_in} ]
 
 
 
@@ -157,7 +155,7 @@ ldc_set_location -site {28} [ get_ports {vsync_in} ]
 
 Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
-Tue Mar 25 16:11:15 2025
+Tue Apr 15 11:09:02 2025
 
 
 

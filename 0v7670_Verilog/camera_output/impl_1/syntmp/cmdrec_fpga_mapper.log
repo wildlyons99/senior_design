@@ -1,14 +1,14 @@
 C:\lscc\radiant\2023.1\synpbase\bin64\m_generic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  Z:\senior_design\0v7670_Verilog\camera_output\impl_1  -sap  Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1.sap  -otap  Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1.tap  -omap  Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1.map   -part iCE40UP5K  -package SG48I  -grade -6    -software Radiant -maxfan 1000 -RWCheckOnRam 0 -pipe -lattice -infer_seqShift -fixgatedclocks 0 -fixgeneratedclocks 0 -gcc_allow_lat_combloops 0 -gcc_disable_clock_latches 0 -gcc_convert_lats_to_regs 0 -enable_gcc_in_premap -seqshift_no_replicate 0 -summaryfile Z:\senior_design\0v7670_Verilog\camera_output\impl_1\synlog\report\camera_output_impl_1_fpga_mapper.xml -merge_inferred_clocks 0  -top_level_module  top  -implementation  impl_1  -flow mapping  -multisrs  -ovm  Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1.vm   -freq 200.000   -tcl  Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1_cpe.ldc  Z:\senior_design\0v7670_Verilog\camera_output\impl_1\synwork\camera_output_impl_1_prem.srd  -devicelib  C:\lscc\radiant\2023.1\synpbase\lib\generic\ice40up.v  -ologparam  Z:\senior_design\0v7670_Verilog\camera_output\impl_1\syntmp\camera_output_impl_1.plg  -osyn  Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1.srm  -prjdir  Z:\senior_design\0v7670_Verilog\camera_output\impl_1\  -prjname  proj_1  -log  Z:\senior_design\0v7670_Verilog\camera_output\impl_1\synlog\camera_output_impl_1_fpga_mapper.srr  -sn  2023.03  -jobname  "fpga_mapper" 
 relcom:C:\lscc\radiant\2023.1\synpbase\bin64\m_generic.exe -prodtype synplify_pro -encrypt -pro -rundir ..\..\impl_1 -sap ..\camera_output_impl_1.sap -otap ..\camera_output_impl_1.tap -omap ..\camera_output_impl_1.map -part iCE40UP5K -package SG48I -grade -6 -software Radiant -maxfan 1000 -RWCheckOnRam 0 -pipe -lattice -infer_seqShift -fixgatedclocks 0 -fixgeneratedclocks 0 -gcc_allow_lat_combloops 0 -gcc_disable_clock_latches 0 -gcc_convert_lats_to_regs 0 -enable_gcc_in_premap -seqshift_no_replicate 0 -summaryfile ..\synlog\report\camera_output_impl_1_fpga_mapper.xml -merge_inferred_clocks 0 -top_level_module top -implementation impl_1 -flow mapping -multisrs -ovm ..\camera_output_impl_1.vm -freq 200.000 -tcl ..\camera_output_impl_1_cpe.ldc ..\synwork\camera_output_impl_1_prem.srd -devicelib C:\lscc\radiant\2023.1\synpbase\lib\generic\ice40up.v -ologparam camera_output_impl_1.plg -osyn ..\camera_output_impl_1.srm -prjdir ..\ -prjname proj_1 -log ..\synlog\camera_output_impl_1_fpga_mapper.srr -sn 2023.03 -jobname "fpga_mapper"
-rc:1 success:1 runtime:6
-file:..\camera_output_impl_1.sap|io:o|time:1744688855|size:2017|exec:0|csum:
+rc:1 success:1 runtime:5
+file:..\camera_output_impl_1.sap|io:o|time:1744749300|size:1375|exec:0|csum:
 file:..\camera_output_impl_1.tap|io:o|time:0|size:-1|exec:0|csum:
-file:..\camera_output_impl_1.map|io:o|time:1744688861|size:28|exec:0|csum:
-file:..\camera_output_impl_1.vm|io:o|time:1744688859|size:155410|exec:0|csum:
-file:..\camera_output_impl_1_cpe.ldc|io:i|time:1744688845|size:78|exec:0|csum:BDC62205760FB84EDE30E3486D5C83D8
-file:..\synwork\camera_output_impl_1_prem.srd|io:i|time:1744688854|size:40968|exec:0|csum:E55C57199111D4B459B2CF70B1266874
+file:..\camera_output_impl_1.map|io:o|time:1744749305|size:28|exec:0|csum:
+file:..\camera_output_impl_1.vm|io:o|time:1744749304|size:65329|exec:0|csum:
+file:..\camera_output_impl_1_cpe.ldc|io:i|time:1744749290|size:78|exec:0|csum:BDC62205760FB84EDE30E3486D5C83D8
+file:..\synwork\camera_output_impl_1_prem.srd|io:i|time:1744749300|size:24148|exec:0|csum:1643BF5358AEE771E34754C90E3BAEB4
 file:c:\lscc\radiant\2023.1\synpbase\lib\generic\ice40up.v|io:i|time:1685564443|size:26462|exec:0|csum:72B2E46EE2EB03A1019CFFB44E4E2628
-file:camera_output_impl_1.plg|io:o|time:1744688861|size:1129|exec:0|csum:
-file:..\camera_output_impl_1.srm|io:o|time:1744688859|size:26987|exec:0|csum:
-file:..\synlog\camera_output_impl_1_fpga_mapper.srr|io:o|time:1744688861|size:71764|exec:0|csum:
+file:camera_output_impl_1.plg|io:o|time:1744749305|size:1128|exec:0|csum:
+file:..\camera_output_impl_1.srm|io:o|time:1744749304|size:22725|exec:0|csum:
+file:..\synlog\camera_output_impl_1_fpga_mapper.srr|io:o|time:1744749305|size:60513|exec:0|csum:
 file:c:\lscc\radiant\2023.1\synpbase\bin64\m_generic.exe|io:i|time:1685564425|size:51322880|exec:1|csum:3332426F3458A7B038F8CE29C0540DB5

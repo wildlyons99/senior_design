@@ -2,10 +2,10 @@
 
 <clocks>
     <clockitem name = "clk"  type = "port" />
-    <clockitem name = "fast_clk"  type = "net" />
-    <clockitem name = "cory_pll/outglobal_o"  type = "net" />
-    <clockitem name = "cory_pll/lscc_pll_inst/outglobalb_o"  type = "net" />
+    <clockitem name = "clk_25MHz"  type = "net" />
     <clockitem name = "cory_pll/lscc_pll_inst/outcoreb_o"  type = "net" />
+    <clockitem name = "cory_pll/lscc_pll_inst/outglobalb_o"  type = "net" />
+    <clockitem name = "cory_pll/outglobal_o"  type = "net" />
 </clocks>
 
 <!--

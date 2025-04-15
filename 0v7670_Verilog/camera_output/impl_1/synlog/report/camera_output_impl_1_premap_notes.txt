@@ -2,7 +2,13 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 @N: MO111 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v":30:15:30:18|Tristate driver TEST (in view: work.top(verilog)) on net TEST (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v":18:16:18:19|Tristate driver done (in view: work.top(verilog)) on net done (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v":47:18:47:44|Tristate driver sioc_2 (in view: work.top(verilog)) on net sioc (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v":48:18:48:44|Tristate driver siod_2 (in view: work.top(verilog)) on net siod (in view: work.top(verilog)) has its enable tied to GND.
 @N: FX1184 |Applying syn_allowed_resources blockrams=30 on top level netlist top 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 @N: MO111 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v":30:15:30:18|Tristate driver TEST (in view: work.top(verilog)) on net TEST (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v":18:16:18:19|Tristate driver done (in view: work.top(verilog)) on net done (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v":47:18:47:44|Tristate driver sioc_2 (in view: work.top(verilog)) on net sioc (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"z:\senior_design\0v7670_verilog\camera_output\source\impl_1\single_capture.v":48:18:48:44|Tristate driver siod_2 (in view: work.top(verilog)) on net siod (in view: work.top(verilog)) has its enable tied to GND.
 @N: BN225 |Writing default property annotation file Z:\senior_design\0v7670_Verilog\camera_output\impl_1\camera_output_impl_1.sap.
