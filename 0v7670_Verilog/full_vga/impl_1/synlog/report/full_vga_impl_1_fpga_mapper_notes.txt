@@ -1,0 +1,16 @@
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: BN362 :"z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance FSM_state[1] (in view: work.camera_read(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[12] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[13] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[14] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[15] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[8] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[9] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[10] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v":38:1:38:6|Removing sequential instance reader.pixel_data[11] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

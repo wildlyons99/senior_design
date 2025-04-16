@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>71003005</ID>
+            <Severity>256</Severity>
+            <Dynamic>CAMERA_PCLOCK</Dynamic>
+            <Dynamic>11</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synthesis">
+        <Message>
+            <ID>35831026</ID>
+            <Severity>16</Severity>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM9</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM8</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM7</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM6</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>I</Dynamic>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/full_vga/mypll/rtl/mypll.v(11): </Dynamic>
+            <Dynamic>mypll</Dynamic>
+            <Navigation>Z:/senior_design/0v7670_Verilog/full_vga/mypll/rtl/mypll.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/full_vga/mypll/rtl/mypll.v(105): </Dynamic>
+            <Dynamic>mypll_ipgen_lscc_pll(DIVR=&quot;0&quot;,DIVF=&quot;66&quot;,DIVQ=&quot;5&quot;,FILTER_RANGE=&quot;1&quot;,PLLOUT_SELECT_PORTA=&quot;GENCLK&quot;,PLLOUT_SELECT_PORTB=&quot;GENCLK&quot;,FREQUENCY_PIN_REFERENCECLK=&quot;12.000000&quot;)</Dynamic>
+            <Navigation>Z:/senior_design/0v7670_Verilog/full_vga/mypll/rtl/mypll.v</Navigation>
+            <Navigation>105</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(428): </Dynamic>
+            <Dynamic>PLL_B(PLLOUT_SELECT_PORTA=&quot;GENCLK&quot;,PLLOUT_SELECT_PORTB=&quot;GENCLK&quot;,DIVF=&quot;66&quot;,DIVQ=&quot;5&quot;,FILTER_RANGE=&quot;1&quot;,FREQUENCY_PIN_REFERENCECLK=&quot;12.000000&quot;)</Dynamic>
+            <Navigation>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v</Navigation>
+            <Navigation>428</Navigation>
+        </Message>
+        <Message>
+            <ID>35935049</ID>
+            <Severity>16</Severity>
+            <Dynamic>sclk_i</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935049</ID>
+            <Severity>16</Severity>
+            <Dynamic>sdi_i</Dynamic>
+        </Message>
+        <Message>
+            <ID>35831038</ID>
+            <Severity>1</Severity>
+            <Dynamic>top</Dynamic>
+        </Message>
+        <Message>
+            <ID>35831026</ID>
+            <Severity>16</Severity>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM9</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM8</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM7</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM6</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>TRIM0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935050</ID>
+            <Severity>16</Severity>
+            <Dynamic>I</Dynamic>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/full_vga/source/impl_1/single_capture.v(1): </Dynamic>
+            <Dynamic>top</Dynamic>
+            <Navigation>Z:/senior_design/0v7670_Verilog/full_vga/source/impl_1/single_capture.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>mypll.v(63): </Dynamic>
+            <Dynamic>mypll</Dynamic>
+            <Navigation>mypll.v</Navigation>
+            <Navigation>63</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/full_vga/source/impl_1/camera_read.v(21): </Dynamic>
+            <Dynamic>camera_read</Dynamic>
+            <Navigation>Z:/senior_design/0v7670_Verilog/full_vga/source/impl_1/camera_read.v</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>Z:/senior_design/0v7670_Verilog/full_vga/source/impl_1/vga.v(1): </Dynamic>
+            <Dynamic>vga</Dynamic>
+            <Navigation>Z:/senior_design/0v7670_Verilog/full_vga/source/impl_1/vga.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(742): </Dynamic>
+            <Dynamic>SP256K</Dynamic>
+            <Navigation>C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v</Navigation>
+            <Navigation>742</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>CG781 :&quot;Z:\senior_design\0v7670_Verilog\full_vga\mypll\rtl\mypll.v&quot;:46:23:46:23|Input sclk_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration.</Dynamic>
+            <Navigation>CG781</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\full_vga\mypll\rtl\mypll.v</Navigation>
+            <Navigation>46</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>46</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Input sclk_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>CG781 :&quot;Z:\senior_design\0v7670_Verilog\full_vga\mypll\rtl\mypll.v&quot;:47:22:47:22|Input sdi_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration.</Dynamic>
+            <Navigation>CG781</Navigation>
+            <Navigation>Z:\senior_design\0v7670_Verilog\full_vga\mypll\rtl\mypll.v</Navigation>
+            <Navigation>47</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>47</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>Input sdi_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v&quot;:38:1:38:6|User-specified initial value defined for instance reader.FSM_state[1:0] is being ignored due to limitations in architecture.</Dynamic>
+            <Navigation>FX1172</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>User-specified initial value defined for instance reader.FSM_state[1:0] is being ignored due to limitations in architecture. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v&quot;:38:1:38:6|User-specified initial value defined for instance reader.pixel_data[15:0] is being ignored due to limitations in architecture.</Dynamic>
+            <Navigation>FX1172</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>User-specified initial value defined for instance reader.pixel_data[15:0] is being ignored due to limitations in architecture. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v&quot;:38:1:38:6|User-specified initial value defined for instance reader.pixel_half is being ignored due to limitations in architecture.</Dynamic>
+            <Navigation>FX1172</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>User-specified initial value defined for instance reader.pixel_half is being ignored due to limitations in architecture. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v&quot;:38:1:38:6|User-specified initial value defined for instance reader.frame_done is being ignored due to limitations in architecture.</Dynamic>
+            <Navigation>FX1172</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>User-specified initial value defined for instance reader.frame_done is being ignored due to limitations in architecture. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v&quot;:38:1:38:6|User-specified initial value defined for instance reader.pixel_valid is being ignored due to limitations in architecture.</Dynamic>
+            <Navigation>FX1172</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>User-specified initial value defined for instance reader.pixel_valid is being ignored due to limitations in architecture. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\full_vga\source\impl_1\single_capture.v&quot;:186:4:186:9|User-specified initial value defined for instance fsm_state[2:0] is being ignored due to limitations in architecture.</Dynamic>
+            <Navigation>FX1172</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\full_vga\source\impl_1\single_capture.v</Navigation>
+            <Navigation>186</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>186</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>User-specified initial value defined for instance fsm_state[2:0] is being ignored due to limitations in architecture. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\full_vga\source\impl_1\single_capture.v&quot;:186:4:186:9|User-specified initial value defined for instance pixel_accum[15:0] is being ignored due to limitations in architecture.</Dynamic>
+            <Navigation>FX1172</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\full_vga\source\impl_1\single_capture.v</Navigation>
+            <Navigation>186</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>186</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>User-specified initial value defined for instance pixel_accum[15:0] is being ignored due to limitations in architecture. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>FX1172 :&quot;z:\senior_design\0v7670_verilog\full_vga\source\impl_1\single_capture.v&quot;:186:4:186:9|User-specified initial value defined for instance bit_count[3:0] is being ignored due to limitations in architecture.</Dynamic>
+            <Navigation>FX1172</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\full_vga\source\impl_1\single_capture.v</Navigation>
+            <Navigation>186</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>186</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>User-specified initial value defined for instance bit_count[3:0] is being ignored due to limitations in architecture. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>BN114 :&quot;z:\senior_design\0v7670_verilog\full_vga\source\impl_1\single_capture.v&quot;:157:8:157:13|Removing instance SPRAM3 (in view: work.top(verilog)) because it does not drive other instances.</Dynamic>
+            <Navigation>BN114</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\full_vga\source\impl_1\single_capture.v</Navigation>
+            <Navigation>157</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>157</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>Removing instance SPRAM3 (in view: work.top(verilog)) because it does not drive other instances.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>MT530 :&quot;z:\senior_design\0v7670_verilog\full_vga\source\impl_1\vga.v&quot;:10:4:10:9|Found inferred clock mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock which controls 82 sequential elements including vga_inst.row[9:0]. This clock has no specified timing constraint which may adversely impact design performance.</Dynamic>
+            <Navigation>MT530</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\full_vga\source\impl_1\vga.v</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Found inferred clock mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock which controls 82 sequential elements including vga_inst.row[9:0]. This clock has no specified timing constraint which may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>MT530 :&quot;z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v&quot;:38:1:38:6|Found inferred clock top|CAMERA_PCLOCK which controls 20 sequential elements including reader.FSM_state[1:0]. This clock has no specified timing constraint which may adversely impact design performance.</Dynamic>
+            <Navigation>MT530</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Found inferred clock top|CAMERA_PCLOCK which controls 20 sequential elements including reader.FSM_state[1:0]. This clock has no specified timing constraint which may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>BN132 :&quot;z:\senior_design\0v7670_verilog\full_vga\source\impl_1\vga.v&quot;:10:4:10:9|Removing sequential instance vga_inst.row_rep[9:0] because it is equivalent to instance vga_inst.row[9:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\full_vga\source\impl_1\vga.v</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Removing sequential instance vga_inst.row_rep[9:0] because it is equivalent to instance vga_inst.row[9:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>BN132 :&quot;z:\senior_design\0v7670_verilog\full_vga\source\impl_1\vga.v&quot;:10:4:10:9|Removing sequential instance vga_inst.row_rep[9:0] because it is equivalent to instance vga_inst.row[9:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\full_vga\source\impl_1\vga.v</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Removing sequential instance vga_inst.row_rep[9:0] because it is equivalent to instance vga_inst.row[9:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>MT246 :&quot;z:\senior_design\0v7670_verilog\full_vga\source\impl_1\single_capture.v&quot;:106:25:106:34|Blackbox MAC16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\full_vga\source\impl_1\single_capture.v</Navigation>
+            <Navigation>106</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>106</Navigation>
+            <Navigation>34</Navigation>
+            <Navigation>Blackbox MAC16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>MT246 :&quot;z:\senior_design\0v7670_verilog\full_vga\source\impl_1\single_capture.v&quot;:144:8:144:13|Blackbox SP256K is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\full_vga\source\impl_1\single_capture.v</Navigation>
+            <Navigation>144</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>144</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>Blackbox SP256K is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>16</Severity>
+            <Dynamic>MT246 :&quot;z:\senior_design\0v7670_verilog\full_vga\mypll\rtl\mypll.v&quot;:202:69:202:75|Blackbox PLL_B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>z:\senior_design\0v7670_verilog\full_vga\mypll\rtl\mypll.v</Navigation>
+            <Navigation>202</Navigation>
+            <Navigation>69</Navigation>
+            <Navigation>202</Navigation>
+            <Navigation>75</Navigation>
+            <Navigation>Blackbox PLL_B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>16</Severity>
+            <Dynamic>MT420 |Found inferred clock mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net my_pll.lscc_pll_inst.clk_25MHz_c.</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net my_pll.lscc_pll_inst.clk_25MHz_c.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>16</Severity>
+            <Dynamic>MT420 |Found inferred clock top|CAMERA_PCLOCK with period 5.00ns. Please declare a user-defined clock on port CAMERA_PCLOCK.</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock top|CAMERA_PCLOCK with period 5.00ns. Please declare a user-defined clock on port CAMERA_PCLOCK.</Navigation>
+        </Message>
+        <Message>
+            <ID>35811146</ID>
+            <Severity>1</Severity>
+            <Dynamic>vga_inst/un3_row_1_cry_1_c_0.CIN</Dynamic>
+        </Message>
+        <Message>
+            <ID>35811146</ID>
+            <Severity>1</Severity>
+            <Dynamic>vga_inst/un2_col_cry_1_c_0.CIN</Dynamic>
+        </Message>
+        <Message>
+            <ID>35811146</ID>
+            <Severity>1</Severity>
+            <Dynamic>read_address_cry_7_c_0.CIN</Dynamic>
+        </Message>
+        <Message>
+            <ID>35811146</ID>
+            <Severity>1</Severity>
+            <Dynamic>un1_write_address_1_cry_0_c_0.CIN</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+    </Task>
+    <Task name="Export">
+        <Message>
+            <ID>1191031</ID>
+            <Severity>1</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>71003005</ID>
+            <Severity>256</Severity>
+            <Dynamic>CAMERA_PCLOCK</Dynamic>
+            <Dynamic>11</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {clk_25MHz_c} -source [get_pins {my_pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {my_pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

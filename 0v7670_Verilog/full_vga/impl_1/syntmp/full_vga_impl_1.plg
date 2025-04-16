@@ -1,0 +1,22 @@
+@P:  Worst Slack : -15.346
+@P:  mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock - Estimated Frequency : 70.2 MHz
+@P:  mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock - Requested Frequency : 200.0 MHz
+@P:  mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock - Estimated Period : 14.240
+@P:  mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock - Requested Period : 5.000
+@P:  mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock - Slack : -9.240
+@P:  top|CAMERA_PCLOCK - Estimated Frequency : NA
+@P:  top|CAMERA_PCLOCK - Requested Frequency : 200.0 MHz
+@P:  top|CAMERA_PCLOCK - Estimated Period : NA
+@P:  top|CAMERA_PCLOCK - Requested Period : 5.000
+@P:  top|CAMERA_PCLOCK - Slack : NA
+@P:  System - Estimated Frequency : 54.3 MHz
+@P:  System - Requested Frequency : 200.0 MHz
+@P:  System - Estimated Period : 18.424
+@P:  System - Requested Period : 5.000
+@P:  System - Slack : -13.424
+@P: top Part : ice40up5ksg48i-6
+@P: top I/O primitives : 24
+@P: top I/O Register bits : 0
+@P: top Register bits (Non I/O) : 92 (1%)
+@P: top Total Luts : 153 of 5280 (2%)
+@P:  CPU Time : 0h:00m:02s

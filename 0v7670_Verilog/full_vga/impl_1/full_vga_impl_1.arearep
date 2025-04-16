@@ -1,0 +1,51 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  52 of 5280 (0.985%)
+I/O cells:      16
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        23          100.0
+                            FD1P3XZ        52          100.0
+                                 IB         5          100.0
+                               LUT4        55          100.0
+                                 OB        11          100.0
+                              PLL_B         1          100.0
+SUB MODULES
+                        camera_read         1
+                              mypll         1
+mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
+                                vga         1
+                              TOTAL       151
+----------------------------------------------------------------------
+Report for cell vga.v1
+Instance Path : vga_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        12           52.2
+                            FD1P3XZ        20           38.5
+                               LUT4        17           30.9
+                              TOTAL        49
+----------------------------------------------------------------------
+Report for cell mypll.v1
+Instance Path : my_pll
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              PLL_B         1          100.0
+SUB MODULES
+mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000").v1
+Instance Path : my_pll.lscc_pll_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              PLL_B         1          100.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell camera_read.v1
+Instance Path : reader
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         3            5.8
+                               LUT4         4            7.3
+                              TOTAL         7

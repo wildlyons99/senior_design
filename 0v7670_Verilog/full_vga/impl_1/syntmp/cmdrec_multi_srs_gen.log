@@ -1,0 +1,7 @@
+C:\lscc\radiant\2023.1\synpbase\bin64\syn_nfilter.exe  -link  -top  top  -multisrs  Z:\senior_design\0v7670_Verilog\full_vga\impl_1\synwork\full_vga_impl_1_comp.srs  -osyn  Z:\senior_design\0v7670_Verilog\full_vga\impl_1\synwork\full_vga_impl_1_mult.srs  -log  Z:\senior_design\0v7670_Verilog\full_vga\impl_1\synlog\full_vga_impl_1_multi_srs_gen.srr 
+relcom:C:\lscc\radiant\2023.1\synpbase\bin64\syn_nfilter.exe -link -top top -multisrs ..\synwork\full_vga_impl_1_comp.srs -osyn ..\synwork\full_vga_impl_1_mult.srs -log ..\synlog\full_vga_impl_1_multi_srs_gen.srr
+rc:0 success:1 runtime:1
+file:..\synwork\full_vga_impl_1_comp.srs|io:i|time:1744761762|size:17206|exec:0|csum:904813645FE7F09C782AE8AFF82E4994
+file:..\synwork\full_vga_impl_1_mult.srs|io:o|time:1744761764|size:8417|exec:0|csum:
+file:..\synlog\full_vga_impl_1_multi_srs_gen.srr|io:o|time:1744761764|size:1150|exec:0|csum:
+file:c:\lscc\radiant\2023.1\synpbase\bin64\syn_nfilter.exe|io:i|time:1685564428|size:10600960|exec:1|csum:5D87BCE07D7E863695AC28DD65895E86
