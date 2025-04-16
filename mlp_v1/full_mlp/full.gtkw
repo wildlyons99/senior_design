@@ -1,0 +1,45 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Wed Apr 16 00:32:25 2025
+[*]
+[dumpfile] "/Users/kinanrabbat/Desktop/Code/senior_design/senior_design/mlp_v1/full_mlp/wave.vcd"
+[dumpfile_mtime] "Wed Apr 16 00:32:13 2025"
+[dumpfile_size] 3084666
+[savefile] "/Users/kinanrabbat/Desktop/Code/senior_design/senior_design/mlp_v1/full_mlp/full.gtkw"
+[timestart] 271781900
+[size] 1440 798
+[pos] -1 -1
+*-16.341303 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top_tb.
+[treeopen] top_tb.uut.
+[sst_width] 253
+[signals_width] 218
+[sst_expanded] 1
+[sst_vpaned_height] 424
+@28
+top_tb.uut.cu.clk
+@22
+top_tb.uut.cu.input_neuron_addr[11:0]
+@c00024
+top_tb.uut.cu.weight_ptr[8:0]
+@28
+(0)top_tb.uut.cu.weight_ptr[8:0]
+(1)top_tb.uut.cu.weight_ptr[8:0]
+(2)top_tb.uut.cu.weight_ptr[8:0]
+(3)top_tb.uut.cu.weight_ptr[8:0]
+(4)top_tb.uut.cu.weight_ptr[8:0]
+(5)top_tb.uut.cu.weight_ptr[8:0]
+(6)top_tb.uut.cu.weight_ptr[8:0]
+(7)top_tb.uut.cu.weight_ptr[8:0]
+(8)top_tb.uut.cu.weight_ptr[8:0]
+@1401200
+-group_end
+@24
+top_tb.uut.cu.neuron_ptr[4:0]
+@29
+top_tb.uut.cu.finished
+@28
+top_tb.uut.cu.done
+top_tb.uut.cu.layer_ptr[1:0]
+[pattern_trace] 1
+[pattern_trace] 0
