@@ -1,0 +1,80 @@
+{
+"Synplify Pro (R) Job Log" : {
+	"Date" : "23:48:16    16-Apr-2025",
+	"Working Directory" : "Z:/senior_design/0v7670_Verilog/full_vga/impl_1",
+	"Install" : "C:/lscc/radiant/2023.1/synpbase"
+},
+"impl_1" :{
+   "Start Time" : "23:48:04",
+   "Runtime" : "12s",
+   "Executable Run Time" : "11s",
+   "synthesis" : {
+      "Start Time" : "23:48:04",
+      "Runtime" : "12s",
+      "Executable Run Time" : "11s",
+      "compile" : {
+         "Start Time" : "23:48:04",
+         "Runtime" : "07s",
+         "Executable Run Time" : "06s",
+         "compile_flow" : {
+            "Start Time" : "23:48:04",
+            "Runtime" : "04s",
+            "Executable Run Time" : "03s",
+            "compiler" : {
+               "executable" : "bin64/c_hdl.exe",
+               "Run Directory" : "Z:/senior_design/0v7670_Verilog/full_vga/impl_1",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "23:48:04",
+               "Run Time" : "04s",
+               "Exe Run Time" : "03s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            },
+            "multi_srs_gen" : {
+               "executable" : "bin64/syn_nfilter.exe",
+               "Run Directory" : "Z:/senior_design/0v7670_Verilog/full_vga/impl_1",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "23:48:08",
+               "Run Time" : "00s",
+               "Exe Run Time" : "00s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            }
+         },
+         "premap" : {
+            "executable" : "bin64/m_generic.exe",
+            "Run Directory" : "Z:/senior_design/0v7670_Verilog/full_vga/impl_1",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "23:48:08",
+            "Run Time" : "03s",
+            "Exe Run Time" : "03s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      },
+      "map" : {
+         "Start Time" : "23:48:11",
+         "Runtime" : "05s",
+         "Executable Run Time" : "05s",
+         "fpga_mapper" : {
+            "executable" : "bin64/m_generic.exe",
+            "Run Directory" : "Z:/senior_design/0v7670_Verilog/full_vga/impl_1",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "23:48:11",
+            "Run Time" : "05s",
+            "Exe Run Time" : "05s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      }
+   }
+}
+}

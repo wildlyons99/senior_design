@@ -1,0 +1,272 @@
+                         Lattice Mapping Report File
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:  High-Performance_1.2V
+
+Mapper:    version Radiant Software (64-bit) 2023.1.0.43.3
+Mapped on: Wed Apr 16 23:48:18 2025
+
+Design Information
+------------------
+
+Command line:   map -i full_vga_impl_1_syn.udb -pdc
+     Z:/senior_design/0v7670_Verilog/full_vga/pins.pdc -o
+     full_vga_impl_1_map.udb -mp full_vga_impl_1.mrp -hierrpt -gui
+
+Design Summary
+--------------
+
+   Number of slice registers: 101 out of  5280 (2%)
+   Number of I/O registers:      0 out of   117 (0%)
+   Number of LUT4s:           295 out of  5280 (6%)
+      Number of logic LUT4s:             213
+      Number of inserted feedthru LUT4s:  25
+      Number of replicated LUT4s:          1
+      Number of ripple logic:             28 (56 LUT4s)
+   Number of IO sites used:   24 out of 39 (62%)
+      Number of IO sites used for general PIO: 24
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 24 out of 36 (67%)
+      Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 24 out of 39 (62%)
+   Number of DSPs:             0 out of 8 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  0 out of 1 (0%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            3 out of 4 (75%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             0 out of 30 (0%)
+   Number of PLLs:             1 out of 1 (100%)
+   Number of Clocks:  3
+      Net clk_12MHz_c: 1 loads, 1 rising, 0 falling (Driver: Port clk_12MHz)
+      Net clk_25MHz_c: 79 loads, 79 rising, 0 falling (Driver: Pin
+     my_pll.lscc_pll_inst.u_PLL_B/OUTCORE)
+      Net CAMERA_PCLOCK_c: 11 loads, 11 rising, 0 falling (Driver: Port
+     CAMERA_PCLOCK)
+   Number of Clock Enables:  9
+      Net spram_data_in_0_sqmuxa: 16 loads, 16 SLICEs
+      Net bit_count_r_1_0[1]: 16 loads, 16 SLICEs
+      Net VCC: 12 loads, 0 SLICEs
+      Net reader.FSM_state[0]: 1 loads, 1 SLICEs
+      Net reader.pixel_half_RNIKJ0O: 8 loads, 8 SLICEs
+      Net vga_inst.col11: 8 loads, 8 SLICEs
+
+                                    Page 1
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net WR1: 1 loads, 0 SLICEs
+      Net WR2: 1 loads, 0 SLICEs
+      Net WR0: 1 loads, 0 SLICEs
+   Number of LSRs:  2
+      Net un1_fsm_state27_2_0_a2: 13 loads, 13 SLICEs
+      Net un1_fsm_state28_4_0_i: 2 loads, 2 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net spram_data_in_0_sqmuxa: 35 loads
+      Net debug_state_c[1]: 25 loads
+      Net bit_count_r_1_0[1]: 21 loads
+      Net bit_count[2]: 19 loads
+      Net VCC: 19 loads
+      Net vga_inst.spram_address_Z[19]: 19 loads
+      Net bit_count[1]: 18 loads
+      Net bit_count[3]: 17 loads
+      Net fsm_state[2]: 16 loads
+      Net vga_inst.un2_spram_address: 16 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| clk_12MHz           | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| start               | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| CAMERA_VSYNC_IN     | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| CAMERA_HREF_IN      | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| CAMERA_DATA_IN[0]   | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| CAMERA_DATA_IN[1]   | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| CAMERA_DATA_IN[2]   | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| CAMERA_DATA_IN[3]   | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| CAMERA_DATA_IN[4]   | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| CAMERA_DATA_IN[5]   | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| CAMERA_DATA_IN[6]   | INPUT     |           |       |       |           |
+
+                                    Page 2
+
+
+
+
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+-------+-------+-----------+
+| CAMERA_DATA_IN[7]   | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| CAMERA_PCLOCK       | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| debug_state[0]      | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| debug_state[1]      | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RGB[0]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RGB[1]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RGB[2]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RGB[3]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RGB[4]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RGB[5]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| VGA_HSYNC           | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| VGA_VSYNC           | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| clk_25MHz           | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+Removed logic
+-------------
+
+Block GND_cZ was optimized away.
+
+PLL/DLL Summary
+---------------
+
+PLL 1:                                 Pin/Node Value
+  PLL Instance Name:                            my_pll/lscc_pll_inst/u_PLL_B
+  Input Reference Clock:               PIN      clk_12MHz_c
+  Output Clock(CoreA):                 PIN,NODE clk_25MHz_c
+  Output Clock(GlobalA):                        NONE
+  Output Clock(CoreB):                          NONE
+  Output Clock(GlobalB):                        NONE
+  Feedback input:                      NODE     my_pll.lscc_pll_inst.intfbout_w
+  Internal Feedback output:            NODE     my_pll.lscc_pll_inst.intfbout_w
+  BYPASS signal:                                GND
+  LATCH signal:                                 GND
+  Lock Signal:                                  NONE
+  Input Clock Frequency (MHz):                  NA
+  Reference Divider:                            0
+  Feedback Divider:                             66
+  VCO Divider:                                  5
+  ENABLE_ICEGATE_PORTA:                         0
+  ENABLE_ICEGATE_PORTB:                         0
+  PLLOUT_SELECT_PORTA:                          GENCLK
+  PLLOUT_SELECT_PORTB:                          GENCLK
+  SHIFTREG_DIV_MODE:                            0
+
+                                    Page 3
+
+
+
+
+
+PLL/DLL Summary (cont)
+----------------------
+  DELAY_ADJUSTMENT_MODE_RELATIVE:               FIXED
+  FDA_RELATIVE:                                 0
+  FEEDBACK_PATH:                                SIMPLE
+  DELAY_ADJUSTMENT_MODE_FEEDBACK:               FIXED
+  FDA_FEEDBACK:                                 0
+  FILTER_RANGE:                                 1
+  EXTERNAL_DIVIDE_FACTOR:                       NONE
+  TEST Mode:                                    0
+
+ASIC Components
+---------------
+
+Instance Name: my_pll/lscc_pll_inst/u_PLL_B
+         Type: PLL
+Instance Name: SPRAM2.vfb_b_inst
+         Type: SRAM
+Instance Name: SPRAM1.vfb_b_inst
+         Type: SRAM
+Instance Name: SPRAM0.vfb_b_inst
+         Type: SRAM
+
+Constraint Summary
+------------------
+
+   Total number of constraints: 25
+   Total number of constraints dropped: 0
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs
+   Total REAL Time: 0 secs
+   Peak Memory Usage: 61 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 4
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor
+     Corporation,  All rights reserved.

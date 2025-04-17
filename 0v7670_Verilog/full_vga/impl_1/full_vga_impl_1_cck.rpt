@@ -1,0 +1,98 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-1
+Install: C:\lscc\radiant\2023.1\synpbase
+OS: Windows 10 or later
+Hostname: H109W18
+
+Implementation : impl_1
+
+# Written on Wed Apr 16 23:48:11 2025
+
+##### DESIGN INFO #######################################################
+
+Top View:                "top"
+Constraint File(s):      "Z:\senior_design\0v7670_Verilog\full_vga\impl_1\full_vga_impl_1_cpe.ldc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 1 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                                                    Ending                                                      |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                      System                                                      |     5.000            |     No paths         |     No paths         |     No paths                         
+mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     System                                                      |     5.000            |     No paths         |     No paths         |     No paths                         
+mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     |     5.000            |     No paths         |     No paths         |     No paths                         
+top|CAMERA_PCLOCK                                           mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+top|CAMERA_PCLOCK                                           top|CAMERA_PCLOCK                                           |     5.000            |     No paths         |     No paths         |     No paths                         
+===================================================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:CAMERA_DATA_IN[0]
+p:CAMERA_DATA_IN[1]
+p:CAMERA_DATA_IN[2]
+p:CAMERA_DATA_IN[3]
+p:CAMERA_DATA_IN[4]
+p:CAMERA_DATA_IN[5]
+p:CAMERA_DATA_IN[6]
+p:CAMERA_DATA_IN[7]
+p:CAMERA_HREF_IN
+p:CAMERA_VSYNC_IN
+p:RGB[0]
+p:RGB[1]
+p:RGB[2]
+p:RGB[3]
+p:RGB[4]
+p:RGB[5]
+p:VGA_HSYNC
+p:VGA_VSYNC
+p:clk_12MHz
+p:debug_state[0]
+p:debug_state[1]
+p:start
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

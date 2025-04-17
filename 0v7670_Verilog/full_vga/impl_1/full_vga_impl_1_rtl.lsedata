@@ -1,0 +1,22 @@
+<top name = "top"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+    <clockitem name = "clk_12MHz"  type = "port" />
+    <clockitem name = "CAMERA_PCLOCK"  type = "port" />
+    <clockitem name = "clk_25MHz"  type = "net" />
+    <clockitem name = "my_pll/outglobal_o"  type = "net" />
+    <clockitem name = "my_pll/lscc_pll_inst/outcoreb_o"  type = "net" />
+    <clockitem name = "my_pll/lscc_pll_inst/outglobalb_o"  type = "net" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 6
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+</top>

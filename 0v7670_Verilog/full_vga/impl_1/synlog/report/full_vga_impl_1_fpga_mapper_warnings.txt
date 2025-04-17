@@ -1,0 +1,4 @@
+@W: MT246 :"z:\senior_design\0v7670_verilog\full_vga\source\impl_1\single_capture.v":147:8:147:13|Blackbox SP256K is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"z:\senior_design\0v7670_verilog\full_vga\mypll\rtl\mypll.v":202:69:202:75|Blackbox PLL_B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net my_pll.lscc_pll_inst.clk_25MHz_c.
+@W: MT420 |Found inferred clock top|CAMERA_PCLOCK with period 5.00ns. Please declare a user-defined clock on port CAMERA_PCLOCK.

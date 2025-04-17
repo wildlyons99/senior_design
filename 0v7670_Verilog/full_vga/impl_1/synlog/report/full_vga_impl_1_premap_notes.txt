@@ -1,0 +1,7 @@
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: BN362 :"z:\senior_design\0v7670_verilog\full_vga\source\impl_1\camera_read.v":20:1:20:6|Removing sequential instance frame_done (in view: work.camera_read(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: FX1184 |Applying syn_allowed_resources blockrams=30 on top level netlist top 
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+@N: BN225 |Writing default property annotation file Z:\senior_design\0v7670_Verilog\full_vga\impl_1\full_vga_impl_1.sap.

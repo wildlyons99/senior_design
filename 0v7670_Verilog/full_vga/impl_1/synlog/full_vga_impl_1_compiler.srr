@@ -1,0 +1,337 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-1
+Install: C:\lscc\radiant\2023.1\synpbase
+OS: Windows 10 or later
+Hostname: H109W18
+
+Implementation : impl_1
+Synopsys HDL Compiler, Version comp202303synp1, Build 100R, Built May 29 2023 11:23:06, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-1
+Install: C:\lscc\radiant\2023.1\synpbase
+OS: Windows 10 or later
+Hostname: H109W18
+
+Implementation : impl_1
+Synopsys VHDL Compiler, Version comp202303synp1, Build 100R, Built May 29 2023 11:23:06, @
+
+@N|Running in 64-bit mode
+@N:Can't find top module!
+Top entity isn't set yet!
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.vhd'.
+VHDL syntax check successful!
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 87MB peak: 88MB)
+
+
+Process completed successfully.
+# Wed Apr 16 23:48:04 2025
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-1
+Install: C:\lscc\radiant\2023.1\synpbase
+OS: Windows 10 or later
+Hostname: H109W18
+
+Implementation : impl_1
+Synopsys Verilog Compiler, Version comp202303synp1, Build 100R, Built May 29 2023 11:23:06, @
+
+@N|Running in 64-bit mode
+@I::"C:\lscc\radiant\2023.1\synpbase\lib\generic\ice40up.v" (library work)
+@I::"C:\lscc\radiant\2023.1\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\radiant\2023.1\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\radiant\2023.1\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_addsub.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_addsub.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":333:13:333:24|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_add.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_add.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/adder/rtl\lscc_adder.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/complex_mult/rtl\lscc_complex_mult.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_counter.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_counter.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/counter/rtl\lscc_cntr.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../common/counter/rtl\lscc_cntr.v":129:13:129:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../common/counter/rtl\lscc_cntr.v":143:13:143:24|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":3267:17:3267:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":3274:17:3274:28|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo_dc.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo_dc.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4907:25:4907:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4911:25:4911:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4942:29:4942:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4946:29:4946:40|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_accumulate/rtl\lscc_mult_accumulate.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v":94:11:94:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v":109:11:109:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub/rtl\lscc_mult_add_sub.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/multiplier/rtl\lscc_multiplier.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v":96:11:96:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1059:25:1059:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1063:25:1063:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1094:29:1094:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1098:29:1098:40|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v":1481:25:1481:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v":1487:25:1487:36|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_rom.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_rom.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/rom/rtl\lscc_rom.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/rom/rtl\lscc_rom.v":969:25:969:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/rom/rtl\lscc_rom.v":975:25:975:36|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_sub.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_sub.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/subtractor/rtl\lscc_subtractor.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v":146:11:146:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v":155:11:155:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v":95:11:95:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_dsp.v" (library work)
+@I::"Z:\senior_design\0v7670_Verilog\full_vga\source\impl_1\camera_read.v" (library work)
+@I::"Z:\senior_design\0v7670_Verilog\full_vga\source\impl_1\single_capture.v" (library work)
+@I::"Z:\senior_design\0v7670_Verilog\full_vga\source\impl_1\vga.v" (library work)
+@I::"Z:\senior_design\0v7670_Verilog\full_vga\mypll\rtl\mypll.v" (library work)
+Verilog syntax check successful!
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Process completed successfully.
+# Wed Apr 16 23:48:04 2025
+
+###########################################################]
+###########################################################[
+@I::"C:\lscc\radiant\2023.1\synpbase\lib\generic\ice40up.v" (library work)
+@I::"C:\lscc\radiant\2023.1\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\radiant\2023.1\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\radiant\2023.1\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_addsub.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_addsub.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":333:13:333:24|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_add.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_add.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/adder/rtl\lscc_adder.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/complex_mult/rtl\lscc_complex_mult.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_counter.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_counter.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/counter/rtl\lscc_cntr.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../common/counter/rtl\lscc_cntr.v":129:13:129:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../common/counter/rtl\lscc_cntr.v":143:13:143:24|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":3267:17:3267:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":3274:17:3274:28|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo_dc.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_fifo_dc.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4907:25:4907:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4911:25:4911:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4942:29:4942:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4946:29:4946:40|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_accumulate/rtl\lscc_mult_accumulate.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v":94:11:94:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mac.v":109:11:109:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/mult_add_sub/rtl\lscc_mult_add_sub.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/multiplier/rtl\lscc_multiplier.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_mult.v":96:11:96:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1059:25:1059:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1063:25:1063:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1094:29:1094:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1098:29:1098:40|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v":1481:25:1481:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v":1487:25:1487:36|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_rom.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_rom.v":"C:\lscc\radiant\2023.1\ip\pmi\../avant/rom/rtl\lscc_rom.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/rom/rtl\lscc_rom.v":969:25:969:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\../avant/rom/rtl\lscc_rom.v":975:25:975:36|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_sub.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_sub.v":"C:\lscc\radiant\2023.1\ip\pmi\../common/subtractor/rtl\lscc_subtractor.v" (library work)
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v":146:11:146:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dp_be.v":155:11:155:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.1\ip\pmi\pmi_ram_dq_be.v":95:11:95:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.1\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.1\ip\pmi\pmi_dsp.v" (library work)
+@I::"Z:\senior_design\0v7670_Verilog\full_vga\source\impl_1\camera_read.v" (library work)
+@I::"Z:\senior_design\0v7670_Verilog\full_vga\source\impl_1\single_capture.v" (library work)
+@I::"Z:\senior_design\0v7670_Verilog\full_vga\source\impl_1\vga.v" (library work)
+@I::"Z:\senior_design\0v7670_Verilog\full_vga\mypll\rtl\mypll.v" (library work)
+Verilog syntax check successful!
+File Z:\senior_design\0v7670_Verilog\full_vga\source\impl_1\single_capture.v changed - recompiling
+@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\generic\ice40up.v":438:7:438:11|Synthesizing module PLL_B in library work.
+Running optimization stage 1 on PLL_B .......
+Finished optimization stage 1 on PLL_B (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 112MB)
+@N: CG364 :"Z:\senior_design\0v7670_Verilog\full_vga\mypll\rtl\mypll.v":105:7:105:26|Synthesizing module mypll_ipgen_lscc_pll in library work.
+
+	DIVR=8'b00110000
+	DIVF=16'b0011011000110110
+	DIVQ=8'b00110101
+	DELAY_PORT_WIDTH=32'b00000000000000000000000000000100
+	FEEDBACK_PATH=48'b010100110100100101001101010100000100110001000101
+	FILTER_RANGE=8'b00110001
+	DELAY_ADJUSTMENT_MODE_FEEDBACK=40'b0100011001001001010110000100010101000100
+	FDA_FEEDBACK=8'b00110000
+	DELAY_ADJUSTMENT_MODE_RELATIVE=40'b0100011001001001010110000100010101000100
+	FDA_RELATIVE=8'b00110000
+	SHIFTREG_DIV_MODE=8'b00110000
+	PLLOUT_SELECT_PORTA=48'b010001110100010101001110010000110100110001001011
+	PLLOUT_SELECT_PORTB=48'b010001110100010101001110010000110100110001001011
+	EXTERNAL_DIVIDE_FACTOR=32'b01001110010011110100111001000101
+	ENABLE_ICEGATE_PORTA=8'b00110000
+	ENABLE_ICEGATE_PORTB=8'b00110000
+	FREQUENCY_PIN_REFERENCECLK=72'b001100010011001000101110001100000011000000110000001100000011000000110000
+   Generated name = mypll_ipgen_lscc_pll_Z1_layer0
+Running optimization stage 1 on mypll_ipgen_lscc_pll_Z1_layer0 .......
+Finished optimization stage 1 on mypll_ipgen_lscc_pll_Z1_layer0 (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
+@N: CG364 :"Z:\senior_design\0v7670_Verilog\full_vga\mypll\rtl\mypll.v":11:7:11:11|Synthesizing module mypll in library work.
+@W: CG781 :"Z:\senior_design\0v7670_Verilog\full_vga\mypll\rtl\mypll.v":46:23:46:23|Input sclk_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"Z:\senior_design\0v7670_Verilog\full_vga\mypll\rtl\mypll.v":47:22:47:22|Input sdi_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+Running optimization stage 1 on mypll .......
+Finished optimization stage 1 on mypll (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
+@N: CG364 :"Z:\senior_design\0v7670_Verilog\full_vga\source\impl_1\camera_read.v":3:7:3:17|Synthesizing module camera_read in library work.
+Running optimization stage 1 on camera_read .......
+Finished optimization stage 1 on camera_read (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+@N: CG364 :"Z:\senior_design\0v7670_Verilog\full_vga\source\impl_1\vga.v":1:7:1:9|Synthesizing module vga in library work.
+Running optimization stage 1 on vga .......
+Finished optimization stage 1 on vga (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+@N: CG364 :"C:\lscc\radiant\2023.1\synpbase\lib\generic\ice40up.v":753:7:753:12|Synthesizing module SP256K in library work.
+Running optimization stage 1 on SP256K .......
+Finished optimization stage 1 on SP256K (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+@N: CG364 :"Z:\senior_design\0v7670_Verilog\full_vga\source\impl_1\single_capture.v":1:7:1:9|Synthesizing module top in library work.
+Running optimization stage 1 on top .......
+Finished optimization stage 1 on top (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 114MB)
+Running optimization stage 2 on top .......
+@N: CL201 :"Z:\senior_design\0v7670_Verilog\full_vga\source\impl_1\single_capture.v":189:4:189:9|Trying to extract state machine for register fsm_state.
+Finished optimization stage 2 on top (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+Running optimization stage 2 on SP256K .......
+Finished optimization stage 2 on SP256K (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+Running optimization stage 2 on vga .......
+Finished optimization stage 2 on vga (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+Running optimization stage 2 on camera_read .......
+@N: CL201 :"Z:\senior_design\0v7670_Verilog\full_vga\source\impl_1\camera_read.v":20:1:20:6|Trying to extract state machine for register FSM_state.
+Finished optimization stage 2 on camera_read (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+Running optimization stage 2 on mypll .......
+Finished optimization stage 2 on mypll (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+Running optimization stage 2 on mypll_ipgen_lscc_pll_Z1_layer0 .......
+@N: CL159 :"Z:\senior_design\0v7670_Verilog\full_vga\mypll\rtl\mypll.v":130:10:130:19|Input feedback_i is unused.
+@N: CL159 :"Z:\senior_design\0v7670_Verilog\full_vga\mypll\rtl\mypll.v":131:37:131:51|Input dynamic_delay_i is unused.
+Finished optimization stage 2 on mypll_ipgen_lscc_pll_Z1_layer0 (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+Running optimization stage 2 on PLL_B .......
+Finished optimization stage 2 on PLL_B (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: Z:\senior_design\0v7670_Verilog\full_vga\impl_1\synwork\layer0.duruntime
+
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 115MB)
+
+
+Process completed successfully.
+# Wed Apr 16 23:48:06 2025
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-1
+Install: C:\lscc\radiant\2023.1\synpbase
+OS: Windows 10 or later
+Hostname: H109W18
+
+Implementation : impl_1
+Synopsys Synopsys Netlist Linker, Version comp202303synp1, Build 100R, Built May 29 2023 11:23:06, @
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 91MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Apr 16 23:48:06 2025
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: Z:\senior_design\0v7670_Verilog\full_vga\impl_1\synwork\full_vga_impl_1_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 23MB peak: 24MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Apr 16 23:48:07 2025
+
+###########################################################]
