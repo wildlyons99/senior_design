@@ -103,7 +103,10 @@ module top
 	reg  [19:0] write_address; 
 	assign spram_address = (fsm_state == COMPLETE) ? read_address : write_address;
 
-	assign read_address  = (row * 640) + col; // vga 
+	// assign read_address  = (row * 640) + col; // vga 
+	wire [19:0] row_times_640 = (row << 9) + (row << 7);
+	assign read_address = row_times_640 + col;
+
 	// write address is assigned while writing in fsm 
 	
 	
@@ -166,7 +169,7 @@ module top
       .PWROFF_N (1'b1),  
       .DO       (data_out3)             // Data output for VGA read mode
     ); 
-	
+
 	
 	
 	///////////////////////////////////////////
@@ -198,8 +201,9 @@ module top
                 WR <= 0;
                 write_address <= 0;
 				
-                //spram_data_in <= 16'hFFFF; // default value
-				// pixel_toggle <= 1'b0;     // First pixel goes to upper half
+				pixel_accum <= 16'd0;
+				bit_count <= 0;
+				
                 prev_pixel_valid <= 0;
                 
 				// wait for the start button to be pressed (active low)
@@ -223,22 +227,22 @@ module top
 				if (pixel_valid && !prev_pixel_valid) begin
 					
 					if (bit_count == 4'd15) begin
-						// For the 16th pixel, update accumulator with the MSB bit.
-						// the current sample forms bit 15 (MSB) via a left shift.
-						spram_data_in <= pixel_accum | (((pixel_data[7:0] > 8'd128) ? 1'b1 : 1'b0) << bit_count);
+						spram_data_in <= pixel_accum | (((pixel_data[7:0] > 8'd64) ? 1'b1 : 1'b0) << bit_count);
 						WR <= 1; //  SPRAM write.
-						
-						write_address <= write_address + 1;
 						
 						// Reset for the next 16-bit word.
 						bit_count <= 0;
 						pixel_accum <= 16'd0;
+						
 					end else begin
 						// For pixels 1 to 15, store the threshold bit at the proper position.
-						pixel_accum <= pixel_accum | (((pixel_data[7:0] > 8'd128) ? 1'b1 : 1'b0) << bit_count);
-						bit_count <= bit_count + 1;
+						pixel_accum <= pixel_accum | (((pixel_data[7:0] > 8'd64) ? 1'b1 : 1'b0) << bit_count);
 						WR <= 0;
+						//pixel_accum <= pixel_accum | ((pixel_data[7]) << bit_count);
+						bit_count <= bit_count + 1;
 					end
+					 
+					write_address <= write_address + 1;
 					
 				end else begin
 					WR <= 0; // Ensure WR is low when no new pixel is processed.
@@ -272,9 +276,12 @@ module top
 	
 	
     assign RGB = valid ? ((fsm_state == COMPLETE) ? 
-						 {grayscale_value, grayscale_value, grayscale_value, grayscale_value, grayscale_value, grayscale_value} :
-                         ((fsm_state == WAIT_FRAME) ? 6'b111100 : 6'b110000)) : 
-						 6'b000000;
+							{grayscale_value, grayscale_value, grayscale_value, grayscale_value, grayscale_value, grayscale_value} :
+                         (fsm_state == CONFIG || fsm_state == IDLE) ? 6'b110000 : // red until button
+						 (fsm_state == WAIT_FRAME) ? 6'b111100 :  // yellow when waiting for new frame
+						 (fsm_state == CAPTURE)    ? 6'b001100 :  // green while capturing
+						 6'b000011) : // blue in edge case
+				 6'b000000;                               // black when not valid
 	   
 	assign debug_state = fsm_state;
 

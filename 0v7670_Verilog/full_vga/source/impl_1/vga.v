@@ -26,12 +26,17 @@ module vga (
     // HORIZONTAL: Visible from 0-639 pixels. Front porch 640-655 pixels. 
     // HSYNC 656-751 pixels. Back porch 752-799
     // HSYNC is low during the sync time, otherwise high
-    assign HSYNC = (col >= 656) && (col <= 751);
+    //assign HSYNC = (col >= 656) && (col <= 751);
 
     // VERTICAL: Visible during 0-479 rows. Then front porch 480-489 rows. 
     // Then VSYNC 490-491 rows. Then back porch 492-524 rows.
     // VSYNC is low during sync time, otherwise high
-    assign VSYNC = (row <= 490) || (row >= 492);
+    //assign VSYNC = (row <= 490) || (row >= 492);
+	
+	// active-low: 656–751 for HSYNC, 490–491 for VSYNC
+	assign HSYNC = ~((col >= 656) && (col <= 751));
+	assign VSYNC = ~((row >= 490) && (row <= 491));
+
 
     assign valid = (row <= 479) && (col <= 639);
     

@@ -9,7 +9,7 @@ Reading constraint file 'Z:/senior_design/0v7670_Verilog/full_vga/impl_1/full_vg
 Removing unused logic ...
 INFO <35811146> - Signal vga_inst/un3_row_1_cry_1_c_0.CIN undriven or does not drive anything - clipped
 INFO <35811146> - Signal vga_inst/un2_col_cry_1_c_0.CIN undriven or does not drive anything - clipped
-INFO <35811146> - Signal read_address_cry_7_c_0.CIN undriven or does not drive anything - clipped
+INFO <35811146> - Signal read_address_cry_0_c_0.CIN undriven or does not drive anything - clipped
 INFO <35811146> - Signal un1_write_address_1_cry_0_c_0.CIN undriven or does not drive anything - clipped
 Starting design annotation....
 WARNING <70001944> - No master clock for
@@ -23,4 +23,4 @@ Writing output file 'full_vga_impl_1_syn.udb'.
 POSTSYN finished successfully.
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 36 MB
+Peak Memory Usage: 37 MB

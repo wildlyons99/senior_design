@@ -6,7 +6,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2023.1.0.43.3
-Mapped on: Tue Apr 15 20:02:53 2025
+Mapped on: Wed Apr 16 23:48:18 2025
 
 Design Information
 ------------------
@@ -18,12 +18,12 @@ Command line:   map -i full_vga_impl_1_syn.udb -pdc
 Design Summary
 --------------
 
-   Number of slice registers:  92 out of  5280 (2%)
+   Number of slice registers: 101 out of  5280 (2%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           235 out of  5280 (4%)
-      Number of logic LUT4s:             155
-      Number of inserted feedthru LUT4s:   9
-      Number of replicated LUT4s:         15
+   Number of LUT4s:           295 out of  5280 (6%)
+      Number of logic LUT4s:             213
+      Number of inserted feedthru LUT4s:  25
+      Number of replicated LUT4s:          1
       Number of ripple logic:             28 (56 LUT4s)
    Number of IO sites used:   24 out of 39 (62%)
       Number of IO sites used for general PIO: 24
@@ -34,7 +34,7 @@ Design Summary
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
       Number of IO sites used for PIO+I3C+OD+RGB: 24 out of 39 (62%)
-   Number of DSPs:             1 out of 8 (12%)
+   Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  0 out of 1 (0%)
    Number of Low Speed OSCs:   0 out of 1 (0%)
@@ -48,17 +48,17 @@ Design Summary
    Number of PLLs:             1 out of 1 (100%)
    Number of Clocks:  3
       Net clk_12MHz_c: 1 loads, 1 rising, 0 falling (Driver: Port clk_12MHz)
-      Net clk_25MHz_c: 69 loads, 69 rising, 0 falling (Driver: Pin
+      Net clk_25MHz_c: 79 loads, 79 rising, 0 falling (Driver: Pin
      my_pll.lscc_pll_inst.u_PLL_B/OUTCORE)
       Net CAMERA_PCLOCK_c: 11 loads, 11 rising, 0 falling (Driver: Port
      CAMERA_PCLOCK)
-   Number of Clock Enables:  11
-      Net fsm_state_1_sqmuxa_1_i: 1 loads, 1 SLICEs
-      Net un1_fsm_state30_1_0_0: 15 loads, 15 SLICEs
-      Net VCC: 13 loads, 0 SLICEs
+   Number of Clock Enables:  9
+      Net spram_data_in_0_sqmuxa: 16 loads, 16 SLICEs
+      Net bit_count_r_1_0[1]: 16 loads, 16 SLICEs
+      Net VCC: 12 loads, 0 SLICEs
       Net reader.FSM_state[0]: 1 loads, 1 SLICEs
       Net reader.pixel_half_RNIKJ0O: 8 loads, 8 SLICEs
-      Net un1_fsm_state_2: 1 loads, 1 SLICEs
+      Net vga_inst.col11: 8 loads, 8 SLICEs
 
                                     Page 1
 
@@ -68,25 +68,23 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net vga_inst.col11: 8 loads, 8 SLICEs
-      Net write_address_0_sqmuxa: 16 loads, 16 SLICEs
       Net WR1: 1 loads, 0 SLICEs
-      Net WR0: 1 loads, 0 SLICEs
       Net WR2: 1 loads, 0 SLICEs
+      Net WR0: 1 loads, 0 SLICEs
    Number of LSRs:  2
-      Net pixel_accum_30: 15 loads, 15 SLICEs
-      Net un1_fsm_state_3: 11 loads, 11 SLICEs
+      Net un1_fsm_state27_2_0_a2: 13 loads, 13 SLICEs
+      Net un1_fsm_state28_4_0_i: 2 loads, 2 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net bit_count[2]: 34 loads
-      Net bit_count[3]: 33 loads
-      Net VCC: 24 loads
-      Net spram_address[18]: 19 loads
-      Net spram_address[19]: 19 loads
-      Net debug_state_c[0]: 16 loads
+      Net spram_data_in_0_sqmuxa: 35 loads
+      Net debug_state_c[1]: 25 loads
+      Net bit_count_r_1_0[1]: 21 loads
+      Net bit_count[2]: 19 loads
+      Net VCC: 19 loads
+      Net vga_inst.spram_address_Z[19]: 19 loads
+      Net bit_count[1]: 18 loads
+      Net bit_count[3]: 17 loads
       Net fsm_state[2]: 16 loads
-      Net write_address_0_sqmuxa: 16 loads
-      Net debug_state_c[1]: 15 loads
-      Net pixel_accum_30: 15 loads
+      Net vga_inst.un2_spram_address: 16 loads
 
 
 
@@ -125,6 +123,8 @@ IO (PIO) Attributes
 | CAMERA_DATA_IN[4]   | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | CAMERA_DATA_IN[5]   | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| CAMERA_DATA_IN[6]   | INPUT     |           |       |       |           |
 
                                     Page 2
 
@@ -134,8 +134,6 @@ IO (PIO) Attributes
 
 IO (PIO) Attributes (cont)
 --------------------------
-+---------------------+-----------+-----------+-------+-------+-----------+
-| CAMERA_DATA_IN[6]   | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | CAMERA_DATA_IN[7]   | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -191,6 +189,8 @@ PLL 1:                                 Pin/Node Value
   ENABLE_ICEGATE_PORTA:                         0
   ENABLE_ICEGATE_PORTB:                         0
   PLLOUT_SELECT_PORTA:                          GENCLK
+  PLLOUT_SELECT_PORTB:                          GENCLK
+  SHIFTREG_DIV_MODE:                            0
 
                                     Page 3
 
@@ -200,8 +200,6 @@ PLL 1:                                 Pin/Node Value
 
 PLL/DLL Summary (cont)
 ----------------------
-  PLLOUT_SELECT_PORTB:                          GENCLK
-  SHIFTREG_DIV_MODE:                            0
   DELAY_ADJUSTMENT_MODE_RELATIVE:               FIXED
   FDA_RELATIVE:                                 0
   FEEDBACK_PATH:                                SIMPLE
@@ -214,8 +212,6 @@ PLL/DLL Summary (cont)
 ASIC Components
 ---------------
 
-Instance Name: un1_read_address_mulonly_0[12:0]
-         Type: DSP
 Instance Name: my_pll/lscc_pll_inst/u_PLL_B
          Type: PLL
 Instance Name: SPRAM2.vfb_b_inst
@@ -236,7 +232,11 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 60 MB
+   Peak Memory Usage: 61 MB
+
+
+
+
 
 
 

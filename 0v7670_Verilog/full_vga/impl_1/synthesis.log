@@ -1,15 +1,3 @@
-synthesis:  version Radiant Software (64-bit) 2023.1.0.43.3
-
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-Copyright (c) 1995 AT&T Corp.   All rights reserved.
-Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Apr 15 19:32:29 2025
-
-
-Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f full_vga_impl_1_lattice.synproj -gui -msgset Z:/senior_design/0v7670_Verilog/full_vga/promote.xml 
-
 Synthesis options:
 The -a option is iCE40UP.
 The -t option is SG48.
@@ -65,9 +53,8 @@ Remove Duplicate Registers = TRUE
 Output HDL file name = full_vga_impl_1.vm.
 ROM style = auto
 RAM style = auto
-The -comp option is FALSE.
+The -comp option is TRUE.
 The -syn option is FALSE.
--sdc option: SDC file input is full_vga_impl_1_cpe.ldc.
 -path C:/lscc/radiant/2023.1/ispfpga/ice40tp/data (searchpath added)
 -path Z:/senior_design/0v7670_Verilog/full_vga (searchpath added)
 -path Z:/senior_design/0v7670_Verilog/full_vga/impl_1 (searchpath added)
@@ -145,96 +132,13 @@ INFO <35901018> - synthesis: z:/senior_design/0v7670_verilog/full_vga/mypll/rtl/
 INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(428): compiling module PLL_B(PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",DIVF="66",DIVQ="5",FILTER_RANGE="1",FREQUENCY_PIN_REFERENCECLK="12.000000"). VERI-1018
 WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
 WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
-INFO <35901018> - synthesis: z:/senior_design/0v7670_verilog/full_vga/source/impl_1/camera_read.v(21): compiling module camera_read. VERI-1018
+INFO <35901018> - synthesis: z:/senior_design/0v7670_verilog/full_vga/source/impl_1/camera_read.v(3): compiling module camera_read. VERI-1018
 INFO <35901018> - synthesis: z:/senior_design/0v7670_verilog/full_vga/source/impl_1/vga.v(1): compiling module vga. VERI-1018
 WARNING <35901209> - synthesis: z:/senior_design/0v7670_verilog/full_vga/source/impl_1/vga.v(18): expression size 32 truncated to fit in target size 10. VERI-1209
 WARNING <35901209> - synthesis: z:/senior_design/0v7670_verilog/full_vga/source/impl_1/vga.v(22): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING <35901209> - synthesis: z:/senior_design/0v7670_verilog/full_vga/source/impl_1/single_capture.v(92): expression size 2 truncated to fit in target size 1. VERI-1209
-WARNING <35901209> - synthesis: z:/senior_design/0v7670_verilog/full_vga/source/impl_1/single_capture.v(106): expression size 32 truncated to fit in target size 20. VERI-1209
 INFO <35901018> - synthesis: C:/lscc/radiant/2023.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(742): compiling module SP256K. VERI-1018
-WARNING <35901209> - synthesis: z:/senior_design/0v7670_verilog/full_vga/source/impl_1/single_capture.v(231): expression size 32 truncated to fit in target size 20. VERI-1209
-WARNING <35901209> - synthesis: z:/senior_design/0v7670_verilog/full_vga/source/impl_1/single_capture.v(239): expression size 32 truncated to fit in target size 4. VERI-1209
-WARNING <35901209> - synthesis: z:/senior_design/0v7670_verilog/full_vga/source/impl_1/single_capture.v(281): expression size 3 truncated to fit in target size 2. VERI-1209
-                                                         
+WARNING <35901209> - synthesis: z:/senior_design/0v7670_verilog/full_vga/source/impl_1/single_capture.v(242): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: z:/senior_design/0v7670_verilog/full_vga/source/impl_1/single_capture.v(245): expression size 32 truncated to fit in target size 20. VERI-1209
+WARNING <35901209> - synthesis: z:/senior_design/0v7670_verilog/full_vga/source/impl_1/single_capture.v(286): expression size 3 truncated to fit in target size 2. VERI-1209
+LSE: Compile Design done
 
-
-### Number of Logic Cells: 5280
-
-
-### Number of RAM Blocks: 30
-
-
-### Number of DSP Blocks: 8
-
-
-### Number of PLLs: 1
-
-
-### Number of IO Pins: 56
-
-
-##########################################################
-
-
-                                                         
-
-
-WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
-WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
-WARNING <35931002> - synthesis: z:/senior_design/0v7670_verilog/full_vga/mypll/rtl/mypll.v(139): net \my_pll/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
-WARNING <35931002> - synthesis: z:/senior_design/0v7670_verilog/full_vga/mypll/rtl/mypll.v(140): net \my_pll/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
-######## Missing driver on net \my_pll/lscc_pll_inst/sclk_i. Patching with GND.
-######## Missing driver on net \my_pll/lscc_pll_inst/sdi_i. Patching with GND.
-
-
-
-CRITICAL <35001747> - synthesis: Bit 1 of Register \reader/FSM_state is stuck at Zero
-CRITICAL <35002028> - synthesis: I/O Port CAMERA_DATA_IN[7] 's net has no driver and is unused.
-CRITICAL <35002028> - synthesis: I/O Port CAMERA_DATA_IN[6] 's net has no driver and is unused.
-CRITICAL <35002028> - synthesis: I/O Port CAMERA_DATA_IN[5] 's net has no driver and is unused.
-CRITICAL <35002028> - synthesis: I/O Port CAMERA_DATA_IN[4] 's net has no driver and is unused.
-CRITICAL <35002028> - synthesis: I/O Port CAMERA_DATA_IN[3] 's net has no driver and is unused.
-CRITICAL <35002028> - synthesis: I/O Port CAMERA_DATA_IN[2] 's net has no driver and is unused.
-CRITICAL <35002028> - synthesis: I/O Port CAMERA_DATA_IN[1] 's net has no driver and is unused.
-CRITICAL <35002028> - synthesis: I/O Port CAMERA_DATA_IN[0] 's net has no driver and is unused.
-
-################### Begin Area Report (top)######################
-Number of register bits => 52 of 5280 (0 % )
-CCU2 => 23
-FD1P3XZ => 52
-IB => 5
-LUT4 => 55
-OB => 11
-PLL_B => 1
-################### End Area Report ##################
-Number of odd-length carry chains : 0
-Number of even-length carry chains : 3
-
-################### Begin Clock Report ######################
-Clock Nets
-Number of Clocks: 3
-  Net : my_pll/lscc_pll_inst/clk_25MHz_c, loads : 1
-  Net : CAMERA_PCLOCK_c, loads : 0
-  Net : clk_12MHz_c, loads : 1
-Clock Enable Nets
-Number of Clock Enables: 0
-Highest fanout non-clock nets
-Top 10 highest fanout non-clock nets:
-  Net : vga_inst/row_0__N_119, loads : 21
-  Net : write_address_0__N_62, loads : 20
-  Net : vga_inst/write_address_0__N_61, loads : 20
-  Net : debug_state_c_1, loads : 16
-  Net : debug_state_c_0, loads : 16
-  Net : fsm_state[2], loads : 15
-  Net : vga_inst/row_0__N_120, loads : 10
-  Net : start_c, loads : 5
-  Net : start_prev, loads : 4
-  Net : bit_count[1], loads : 4
-################### End Clock Report ##################
-
-Peak Memory Usage: 89 MB
-
---------------------------------------------------------------
-Total CPU Time: 2 secs 
-Total REAL Time: 4 secs 
---------------------------------------------------------------

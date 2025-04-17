@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version U-2023.03LR-1
 #--  Project file Z:\senior_design\0v7670_Verilog\full_vga\impl_1\run_options.txt
-#--  Written on Tue Apr 15 20:02:39 2025
+#--  Written on Wed Apr 16 23:48:03 2025
 
 
 #project files

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BuildStatus>
     <Strategy name="Strategy1">
-        <Milestone name="Export" build_result="2" build_time="1744761787">
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1744761787"/>
-            <Task name="IBIS" build_result="2" update_result="0" update_time="1744761789"/>
-            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1744761790"/>
+        <Milestone name="Export" build_result="2" build_time="1744861711">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1744861711"/>
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1744861713"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1744861714"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1744761774">
-            <Task name="Map" build_result="2" update_result="0" update_time="1744761774"/>
+        <Milestone name="Map" build_result="2" build_time="1744861698">
+            <Task name="Map" build_result="2" update_result="0" update_time="1744861698"/>
             <Task name="MapTrace" build_result="0" update_result="2" update_time="1744759945"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1744761784">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1744761784"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1744761786"/>
+        <Milestone name="PAR" build_result="2" build_time="1744861708">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1744861708"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1744861710"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1744761773">
-            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1744760271"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1744861698">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1744861698"/>
             <Task name="SynTrace" build_result="0" update_result="2" update_time="1744760271"/>
             <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1744760271"/>
-            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1744761773"/>
+            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1744856475"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
             <Task name="HDLE" build_result="0" update_result="2" update_time="1744760271"/>
@@ -28,16 +28,16 @@
             <Task name="PIODRC" build_result="0" update_result="2" update_time="1744760271"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="1744760271"/>
         </Milestone>
-        <Report name="IBIS/full_vga_impl_1.ibs" last_build_time="1744761788" last_build_size="55104"/>
-        <Report name="full_vga_impl_1.bgn" last_build_time="1744761787" last_build_size="992"/>
-        <Report name="full_vga_impl_1.bin" last_build_time="1744761787" last_build_size="104156"/>
+        <Report name="IBIS/full_vga_impl_1.ibs" last_build_time="1744861712" last_build_size="55104"/>
+        <Report name="full_vga_impl_1.bgn" last_build_time="1744861711" last_build_size="1035"/>
+        <Report name="full_vga_impl_1.bin" last_build_time="1744861711" last_build_size="104156"/>
         <Report name="full_vga_impl_1.lsedata" last_build_time="0" last_build_size="0"/>
-        <Report name="full_vga_impl_1.twr.html" last_build_time="1744761786" last_build_size="15743"/>
-        <Report name="full_vga_impl_1.udb" last_build_time="1744761784" last_build_size="45365"/>
-        <Report name="full_vga_impl_1_map.udb" last_build_time="1744761774" last_build_size="28505"/>
-        <Report name="full_vga_impl_1_rtl.udb" last_build_time="1744759952" last_build_size="11794"/>
-        <Report name="full_vga_impl_1_syn.udb" last_build_time="1744761773" last_build_size="18888"/>
-        <Report name="full_vga_impl_1_vo.sdf" last_build_time="1744761790" last_build_size="213007"/>
-        <Report name="full_vga_impl_1_vo.vo" last_build_time="1744761790" last_build_size="224653"/>
+        <Report name="full_vga_impl_1.twr.html" last_build_time="1744861710" last_build_size="15743"/>
+        <Report name="full_vga_impl_1.udb" last_build_time="1744861708" last_build_size="52303"/>
+        <Report name="full_vga_impl_1_map.udb" last_build_time="1744861698" last_build_size="32815"/>
+        <Report name="full_vga_impl_1_rtl.udb" last_build_time="1744856064" last_build_size="19017"/>
+        <Report name="full_vga_impl_1_syn.udb" last_build_time="1744861697" last_build_size="20608"/>
+        <Report name="full_vga_impl_1_vo.sdf" last_build_time="1744861714" last_build_size="230394"/>
+        <Report name="full_vga_impl_1_vo.vo" last_build_time="1744861714" last_build_size="244748"/>
     </Strategy>
 </BuildStatus>

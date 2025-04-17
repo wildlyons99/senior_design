@@ -3,17 +3,16 @@ Report for cell top
    Instance path: top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        235        100.0
-                               LUTGATE	        179        100.0
+                                  LUT4	        295        100.0
+                               LUTGATE	        239        100.0
                                 LUTCCU	         56        100.0
                                  IOBUF	         24        100.0
-                                PFUREG	         92        100.0
-                                   DSP	          1        100.0
+                                PFUREG	        101        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                           camera_read	          1         1.7
+                           camera_read	          1        15.9
                                  mypll	          1         0.0
-                                   vga	          1        61.7
+                                   vga	          1        46.1
 ---------------------------------------------------
 Report for cell mypll
    Instance path: top/my_pll
@@ -32,15 +31,15 @@ Report for cell camera_read
    Instance path: top/reader
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          4         1.7
-                               LUTGATE	          4         2.2
-                                PFUREG	         11        12.0
+                                  LUT4	         47        15.9
+                               LUTGATE	         47        19.7
+                                PFUREG	         11        10.9
 ---------------------------------------------------
 Report for cell vga
    Instance path: top/vga_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        145        61.7
-                               LUTGATE	        125        69.8
+                                  LUT4	        136        46.1
+                               LUTGATE	        116        48.5
                                 LUTCCU	         20        35.7
-                                PFUREG	         20        21.7
+                                PFUREG	         20        19.8

@@ -1,0 +1,3 @@
+@E: CG426 :"Z:\senior_design\0v7670_Verilog\full_vga\source\impl_1\single_capture.v":210:4:210:14|Assignment target pixel_valid must be of type reg or genvar
+@E::Verilog compiler failed
+

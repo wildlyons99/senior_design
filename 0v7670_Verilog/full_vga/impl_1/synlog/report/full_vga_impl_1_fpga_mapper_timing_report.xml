@@ -17,8 +17,8 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>mypll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock</data>
 <data>200.0 MHz</data>
-<data>70.2 MHz</data>
-<data>-9.240</data>
+<data>92.5 MHz</data>
+<data>-5.816</data>
 </row>
 <row>
 <data>top|CAMERA_PCLOCK</data>
@@ -29,7 +29,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>System</data>
 <data>200.0 MHz</data>
-<data>54.3 MHz</data>
-<data>-13.424</data>
+<data>49.8 MHz</data>
+<data>-15.075</data>
 </row>
 </report_table>

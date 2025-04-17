@@ -36,7 +36,6 @@
 
 -use_io_insertion 1
 -resolve_mixed_drivers 0
--sdc "full_vga_impl_1_cpe.ldc"
 -path "Z:/senior_design/0v7670_Verilog/full_vga/mypll"
 -path "C:/lscc/radiant/2023.1/ispfpga/ice40tp/data" "Z:/senior_design/0v7670_Verilog/full_vga/impl_1" "Z:/senior_design/0v7670_Verilog/full_vga"
 -ver "C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.v"
